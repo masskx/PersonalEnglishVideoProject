@@ -1028,4 +1028,4 @@ This file is the durable project handoff. Append a dated entry for every materia
 - 新增 `src/replica/vertical/`：同一 storyboard、配音、插图重排为 1080×1920。文字按原 y 顺序居中堆叠并放大，小黑插图在文字下方放大且裁在自身区域内，表格改为单列原生排版，箭头丢弃；字幕按旁白重切为单行短句、英文标蓝；顶部常驻系列名和“词根 = 释义”，词章节显示“第 n / N 个”；全片结尾 4.5 秒显示收藏/关注行动号召，不压黑以便循环。预告 = 钩子 + 词根总览 + 前两个不同的词 + “还有 N 个词在完整版”尾卡。
 - 新命令：`npm run vertical:render -- --project=<slug>`（完整版、预告、复习卡、报告、联系图）、`vertical:render:all`、`vertical:stills`；`project:test` 增加竖屏版式回归（21 期 265 场安全区、字幕不切词、预告结构）。
 - 新配置 `planning/growth-promotion.json`：系列/合集名、行动号召、话题标签、资料产品（首个为规划中的「小黑词根复习与自测」）与领取开关（默认关闭）。`douyinCopy.ts` 据此生成竖屏、预告与复习卡说明，并只在竖屏文件存在时写入。
-- 已渲染 ten-tain、pon-pos、cred、duc-duct 四期竖屏完整版、预告与复习卡，位于各自交付目录 `vertical/`；均未发布，发布前仍需手机外放与耳机完整听看。英文说明见 `docs/growth-playbook-EN.md`。
+- 云端会话已渲染并以对话附件交付 ten-tain、pon-pos、cred、duc-duct 四期竖屏完整版、预告与复习卡；该会话网络策略拒绝 `lfs.github.com`，二进制未进入仓库。本机运行 `npm run vertical:render -- --project=<slug>` 即可在交付目录 `vertical/` 重现，再运行 `npm run replica:copy`。均未发布，发布前仍需手机外放与耳机完整听看。英文说明见 `docs/growth-playbook-EN.md`。

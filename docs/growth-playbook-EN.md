@@ -75,8 +75,11 @@ npm run replica:copy -- --project=ten-tain
 Output goes to `outputs/<episode>/vertical/`: `<slug>-vertical.mp4`, `<slug>-teaser.mp4`,
 `review-card.png`, `vertical-report.json` and `review/*-contact-sheet.jpg`.
 
-Already rendered in this session: **ten-tain, pon-pos, cred, duc-duct** (the four newest episodes made
-to the current visual standard).
+The cloud session rendered **ten-tain, pon-pos, cred and duc-duct** (the four newest episodes made to
+the current visual standard) and sent the files to you as chat attachments. Its network policy
+blocks Git LFS uploads, so those binaries are **not** in the repository. To put them in
+`outputs/<episode>/vertical/` on your PC, run the command above (about 4–5 minutes per episode), then
+regenerate the publish copy.
 
 ## 4. How to publish
 
