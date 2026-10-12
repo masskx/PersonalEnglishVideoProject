@@ -1,7 +1,9 @@
-import {mkdirSync, writeFileSync} from 'node:fs';
+import {existsSync, mkdirSync, writeFileSync} from 'node:fs';
 import path from 'node:path';
 import type {ReplicaProjectDefinition} from '../../src/replica/projectTypes';
 import {resolveDeliveryPaths} from './deliveryPaths';
+import growth from '../../planning/growth-promotion.json';
+import {teaserWordList} from '../../src/replica/vertical/verticalProjects';
 
 const normalize = (value: string) => value.replace(/\s+/g, ' ').trim();
 const rootHashtag = (root: string) =>
@@ -64,19 +66,37 @@ export const buildDouyinCopy = (project: ReplicaProjectDefinition) => {
     project.slug,
     2,
   );
-  const hashtags = [
-    '#英语学习',
-    sound ? '#英语发音' : '#词根词缀',
-    '#单词记忆',
-    '#英语单词',
-    `#${rootHashtag(root)}`,
-  ].join(' ');
+  // Topic tags come from planning/growth-promotion.json: broad reach + exam intent + this episode's root.
+  const tagPool = [
+    ...growth.hashtags.always,
+    pick(growth.hashtags.rotateExam, project.slug),
+    ...(sound ? growth.hashtags.soundSymbolism : growth.hashtags.rootWord),
+  ];
+  const hashtags = [...new Set(tagPool)].slice(0, growth.hashtags.maxCount - 1).concat(`#${rootHashtag(root)}`).join(' ');
+  const series = growth.series.name;
+  const collection = growth.series.collectionName;
+  const teaserWords = teaserWordList(project);
+  const remaining = Math.max(1, words.length - teaserWords.length);
+  const leadMagnet = growth.cta.leadMagnet;
+  const verticalDir = path.join(resolveDeliveryPaths(project).directory, 'vertical');
+  const hasVertical = existsSync(path.join(verticalDir, `${project.slug}-vertical.mp4`));
+  const hasTeaser = existsSync(path.join(verticalDir, `${project.slug}-teaser.mp4`));
+  const hasCard = existsSync(path.join(verticalDir, 'review-card.png'));
+  const liveProduct = growth.products.find(
+    (product) => product.status === 'live' && product.link && product.pairsWith.includes(sound ? 'sound-symbolism' : 'root-word'),
+  );
 
   const titles = project.publishCopy?.titles ?? fallbackTitles;
   const opening = project.publishCopy?.opening ?? pick(fallbackOpenings, project.slug);
   const takeaway = project.publishCopy?.takeaway ?? learningTip;
   const viewerPrompt = project.publishCopy?.prompt ?? question;
-  const pinnedComment = project.publishCopy?.pinnedComment ?? `从 ${wordList} 里挑一个词造句，我帮你看搭配。`;
+  const basePinned = project.publishCopy?.pinnedComment ?? `从 ${wordList} 里挑一个词造句，我帮你看搭配。`;
+  const pinnedComment = leadMagnet.enabled ? `${basePinned}\n${leadMagnet.pinnedComment}` : basePinned;
+  const teaserTitle = teaserWords.length >= 2
+    ? sound
+      ? `${teaserWords[0]} 和 ${teaserWords[1]}，听起来哪里不一样？`
+      : `${teaserWords[0]} 和 ${teaserWords[1]} 怎么区分？看小黑做一遍`
+    : `${root} 先看这一个词`;
 
   return `# 抖音 / 小红书共用发布文案
 
@@ -107,8 +127,37 @@ ${hashtags}
 
 ${pinnedComment}
 
-## 发布备注
+${hasVertical ? `## 抖音竖屏发布（主推）
 
+- 上传文件：\`vertical/${project.slug}-vertical.mp4\`（1080×1920 竖屏完整版）。横屏原版留给 B 站、西瓜或小红书横版。
+- 封面：上传 \`cover.png\`（3:4，主页网格完整显示）。
+- 合集：加入「${collection}」，方便观众连看。
+- 发布后第一时间在评论区置顶下面的「置顶评论」，并回复前几条评论。
+${liveProduct ? `- 资料：本期可挂「${liveProduct.name}」，视频里不说价格，只说“${liveProduct.videoCta ?? '资料已整理好'}”。\n` : ''}
+` : `## 抖音竖屏发布（主推）
+
+- 本期还没有竖屏版：运行 \`npm run vertical:render -- --project=${project.slug}\` 生成后重新生成本文案。
+
+`}${hasTeaser ? `## 预告短片文案
+
+- 上传文件：\`vertical/${project.slug}-teaser.mp4\`（约 30–45 秒，只讲 ${teaserWords.join('、') || words[0]}）。
+- 建议先发预告，隔天发完整版；或完整版发布 2–3 天后再发预告拉新。
+
+标题：${teaserTitle}
+
+正文：${teaserWords.length ? `先用小黑的动作看懂 ${teaserWords.join('、')}。` : ''}剩下 ${remaining} 个词在合集「${collection}」里接着讲。
+
+${growth.cta.commentPrompt}
+
+${hashtags}
+
+` : ''}${hasCard ? `## 复习卡
+
+- 文件：\`vertical/review-card.png\`。可作为小红书图文第二张、粉丝群资料或私信回复。
+${leadMagnet.enabled ? `- 已开启领取：评论关键词「${leadMagnet.keyword}」后私信发送；不要在任何位置留微信号或外部链接。\n` : `- 领取引导默认关闭；准备好私信或粉丝群交付后，在 planning/growth-promotion.json 打开 leadMagnet。\n`}
+` : ''}## 发布备注
+
+- 系列名「${series}」保持不变，标题里保留词根，方便搜索和连看。
 - 抖音和小红书共用正文；发布时从三个标题中选择一个。
 - 不要把“标题备选”和“发布备注”粘贴到平台正文。
 - 下一次发布同一视频时更换标题角度，不要只替换表情符号。

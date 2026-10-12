@@ -4,6 +4,8 @@
 
 当前四级作文完整交付：[第二版](outputs/cet4-writing-paragraph-v2/index.html)；[原试片](work/experiments/cet4-writing-paragraph/index.html)保留。
 
+**抖音竖屏（2026-10-12 起默认）：** 每期在 `vertical/` 另有竖屏完整版、约 40 秒预告和复习卡，用 `npm run vertical:render -- --project=<slug>` 生成；推广与行动号召配置在 [growth-promotion.json](planning/growth-promotion.json)，英文增长说明见 [growth-playbook-EN.md](docs/growth-playbook-EN.md)。
+
 **新会话或更换智能体：先读 [当前视频制作基准](docs/当前制作基准.md) 和 [AGENTS.md](AGENTS.md)。**
 用户未指定题目时，自主选题、
 查重后直接制作；指定题目时按指定内容执行。详见 [长期选题规则](docs/选题与自动制作规则.md)
@@ -26,6 +28,35 @@
 新增栏目试片：[四级作文：把观点展开](work/experiments/cet4-writing-paragraph/index.html)，包含完整视频、双封面与可打印练习单。
 后续安排：[四六级内容与资料产品规划](docs/账号内容与资料产品规划.md)；新栏目直接继承当前视频制作基准，
 只按教学目标调整内容结构。
+
+## API keys: rules for Claude / 密钥使用规则
+
+The owner may give Claude API keys (DashScope voice, the OpenAI-compatible image relay, Seedream).
+Claude follows these rules in every session. 用户可能会把 API 密钥交给 Claude 使用，每次会话都必须遵守：
+
+1. **Keys stay out of git, always. 密钥永远不进 git。** Never write a key into any tracked file, commit,
+   PR, issue, comment, log, report, script output or generated artifact. 不得写入任何被跟踪的文件、提交、PR、
+   评论、日志、报告、脚本输出或产物。
+2. **Where keys live. 密钥放哪里。** In Claude cloud sessions: the environment's settings, as environment
+   variables (`DASHSCOPE_API_KEY`, `OPENAI_API_KEY`, `OPENAI_BASE_URL`, `HUOSHAN_API_KEY`). The matching
+   domain must be allowed under Network access. Do not paste keys into chat. On your own PC: the
+   gitignored `.env` (template: `.env.example`). 云端会话放环境设置里的环境变量，并在 Network access 允许对应域名，
+   不在对话里粘贴密钥；本机放被忽略的 `.env`。
+3. **Temporary use only. 只临时使用。** Keys are read from the environment at run time and are not copied
+   into other files, caches or memory. When a session ends, nothing keeps the key except your own settings.
+   只在运行时从环境读取，不复制到其他文件、缓存或记忆；会话结束后，除你自己的设置外不留副本。
+4. **Check before use. 用前检查。** Start with `npm run keys:check`: it shows which keys are set (length only,
+   never any characters) and whether each service is reachable. 先运行 `npm run keys:check`。
+5. **Scan before every commit. 每次提交前扫描。** `npm run hooks:install` once per clone enables a pre-commit
+   hook that runs `npm run secrets:scan --staged`. It blocks any commit containing a key pattern or the
+   exact value of a configured key. `npm run project:test` runs the same scan. 每个克隆执行一次
+   `npm run hooks:install`，提交时自动扫描暂存区；`project:test` 也包含此扫描。
+6. **If a key leaks. 万一泄漏。** Stop, remove it, and tell the owner immediately so they can revoke and
+   replace it at the provider. History rewriting alone is not enough once something is pushed.
+   立即停止并删除，马上告知用户到服务商后台作废并更换；已推送的内容仅改历史不够。
+7. **Spend carefully. 节约额度。** Paid generation (voice, images, video) only for the episode being produced.
+   Retry failed items a limited number of times; never loop on the whole batch. 只为当前制作的期数调用付费生成，
+   失败项有限重试，不整批循环重跑。
 
 ## 当前内容
 

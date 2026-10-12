@@ -1,0 +1,3 @@
+#!/bin/sh
+# 提交前密钥扫描：暂存区出现密钥则拒绝提交。安装：npm run hooks:install
+exec npx --no-install tsx scripts/replica/scanSecrets.ts --staged

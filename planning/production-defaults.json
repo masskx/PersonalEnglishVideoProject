@@ -34,6 +34,7 @@
     "stage_only_referenced_public_assets_then_render_full_video",
     "build_full_video_preview_and_pass_layout_gate",
     "render_two_covers_and_publish_copy",
+    "render_vertical_full_teaser_and_review_card",
     "run_media_and_content_review",
     "update_ledger_logs_and_workbench"
   ],
@@ -133,12 +134,33 @@
     "publicDirMode": "only-assets-referenced-by-current-project",
     "appliesTo": ["video", "cover", "review-stills"]
   },
+  "verticalDelivery": {
+    "since": "2026-10-12",
+    "reason": "douyin_feed_is_vertical_landscape_fills_one_third_of_screen",
+    "command": "npm run vertical:render -- --project=<slug>",
+    "layoutCheck": "npm run vertical:stills -- --project=<slug>",
+    "renderer": "src/replica/vertical/",
+    "size": [1080, 1920],
+    "outputs": ["vertical/<slug>-vertical.mp4", "vertical/<slug>-teaser.mp4", "vertical/review-card.png", "vertical/vertical-report.json"],
+    "reusesLandscapeNarrationAndArt": true,
+    "loopFriendlyEnding": true,
+    "growthConfig": "planning/growth-promotion.json",
+    "ownerGuideEnglish": "docs/growth-playbook-EN.md"
+  },
+  "ownerCommunication": {
+    "chatLanguage": "English",
+    "repositoryLanguage": "Chinese",
+    "note": "用户读英文、不读中文；对话用英文，仓库文档与画面文字保持中文。"
+  },
   "delivery": {
     "minimumDefaultDurationSeconds": 120,
     "required": [
       "video",
       "coverPortrait",
       "coverLandscape",
+      "verticalVideo",
+      "verticalTeaser",
+      "reviewCard",
       "publishCopy",
       "reviewEvidence",
       "topicLedgerUpdate",

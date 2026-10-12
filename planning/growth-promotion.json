@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "purpose": "抖音增长与资料推广的统一配置。竖屏成片、预告短片、片尾行动号召和发布文案都从这里读取；改文案只改本文件，不改代码。",
+  "updatedAt": "2026-10-12",
+  "series": {
+    "name": "小黑拆词根",
+    "collectionName": "小黑拆词根｜四六级词根动画",
+    "audience": "基础一般、备考四六级的大学生"
+  },
+  "vertical": {
+    "enabledByDefault": true,
+    "size": [1080, 1920],
+    "fps": 30,
+    "douyinSafeArea": {
+      "topReservedPx": 200,
+      "bottomReservedPx": 440,
+      "rightButtonColumnPx": 128,
+      "note": "抖音推荐页顶部标签、右侧点赞评论按钮和底部昵称/文案会覆盖画面；正文、字幕和小黑都放在安全区内。"
+    },
+    "teaser": {
+      "includeRootMap": true,
+      "wordScenes": 2,
+      "note": "预告片 = 开头钩子 + 词根总览 + 前两个词，约 30–45 秒；用于拉新和提高完播，完整版放合集。"
+    },
+    "endCardSeconds": 4.5,
+    "loopFriendlyEnding": true
+  },
+  "cta": {
+    "fullEndCard": {
+      "primary": "收藏这一页，考前翻出来复习",
+      "secondary": "关注{series}，每期拆一个词根"
+    },
+    "teaserEndCard": {
+      "primary": "还有 {remaining} 个词在完整版",
+      "secondary": "主页合集「{series}」接着看"
+    },
+    "commentPrompt": "评论区打出你最容易混的两个词，下期优先讲",
+    "leadMagnet": {
+      "enabled": false,
+      "keyword": "词卡",
+      "videoText": "评论「词卡」领取本期复习卡",
+      "pinnedComment": "想要本期打印版复习卡，评论「词卡」，我私信发你。",
+      "deliveryAsset": "outputs/<slug>/vertical/review-card.png",
+      "note": "开启前先确认能及时私信或用粉丝群交付。抖音限制站外导流：视频、文案和评论里不要出现微信号、二维码或外部链接。"
+    }
+  },
+  "hashtags": {
+    "maxCount": 6,
+    "always": ["#英语学习", "#四六级"],
+    "rootWord": ["#词根词缀", "#背单词", "#英语单词"],
+    "soundSymbolism": ["#英语发音", "#英语单词"],
+    "rotateExam": ["#英语四级", "#英语六级", "#大学英语", "#考研英语"]
+  },
+  "products": [
+    {
+      "id": "root-review-selftest",
+      "name": "小黑词根复习与自测",
+      "status": "planned",
+      "pairsWith": ["root-word"],
+      "format": "可打印 PDF + 可编辑模板",
+      "contents": "词素关系、常用搭配、3–5 道自测与逐题解析（以已复核的一期为样张）",
+      "videoCta": "本期复习与自测卡已整理好",
+      "link": null,
+      "note": "来源：docs/账号内容与资料产品规划.md 的「第一份产品」。上架、定价与链接由用户确认后再填写；未上架前视频不出现购买引导。"
+    },
+    {
+      "id": "cet-writing-frames",
+      "name": "四级写作场景句型与练习",
+      "status": "idea",
+      "pairsWith": ["cet4-writing"],
+      "format": "可编辑写作框架 + 示范",
+      "link": null
+    },
+    {
+      "id": "cet-reading-location",
+      "name": "六级阅读定位与排除训练单",
+      "status": "idea",
+      "pairsWith": ["cet6-reading"],
+      "format": "训练单 + 逐项解析",
+      "link": null
+    }
+  ],
+  "publishing": {
+    "versionsPerEpisode": [
+      "竖屏完整版 outputs/<slug>/vertical/<slug>-vertical.mp4：主发抖音",
+      "竖屏预告 outputs/<slug>/vertical/<slug>-teaser.mp4：先发或隔天发，拉新",
+      "横屏原版 outputs/<slug>/<slug>.mp4：B 站、西瓜或小红书横版"
+    ],
+    "collectionRule": "每期发布后加入抖音合集「小黑拆词根｜四六级词根动画」，标题保留期名便于连看。",
+    "reviewWindowDays": 7,
+    "metricsToRecord": ["播放", "5 秒完播率", "完播率", "收藏", "评论里的具体困难", "主页访问", "新增关注"]
+  }
+}
