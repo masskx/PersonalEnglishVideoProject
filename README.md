@@ -29,6 +29,9 @@
 后续安排：[四六级内容与资料产品规划](docs/账号内容与资料产品规划.md)；新栏目直接继承当前视频制作基准，
 只按教学目标调整内容结构。
 
+**Working locally with Codex (English):** [docs/LOCAL-CODEX-QUICKSTART-EN.md](docs/LOCAL-CODEX-QUICKSTART-EN.md) ·
+小红书图文卡：`npm run xhs:cards -- --project=<slug>`，输出到交付目录 `xiaohongshu/`。
+
 ## API keys: rules for Claude / 密钥使用规则
 
 The owner may give Claude API keys (DashScope voice, the OpenAI-compatible image relay, Seedream).

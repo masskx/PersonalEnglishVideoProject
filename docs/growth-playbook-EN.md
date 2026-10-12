@@ -56,6 +56,14 @@ edit this file; no code changes are needed.
   #大学英语 / #考研英语), topic tags and the root tag;
 - review-card and lead-magnet instructions.
 
+### Xiaohongshu image carousels (added later the same day)
+
+The owner found the lecture-style videos unappealing for Xiaohongshu. Xiaohongshu users skim covers
+and save practical notes, so each episode now also gets a 3:4 carousel. Run
+`npm run xhs:cards -- --project=<slug>`; output goes to `outputs/<episode>/xiaohongshu/` (cover,
+one card per word, summary, self-test, follow card, plus `xhs-note.md`). See
+`docs/LOCAL-CODEX-QUICKSTART-EN.md`.
+
 ## 3. Commands
 
 ```powershell

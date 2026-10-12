@@ -6,7 +6,7 @@
   "scripts": {
     "project:inventory": "tsx scripts/replica/projectInventory.ts",
     "project:check": "tsx scripts/replica/projectHealth.ts",
-    "project:test": "tsx scripts/replica/projectManagement.test.ts && tsx scripts/replica/verticalLayout.test.ts && tsx scripts/replica/scanSecrets.ts",
+    "project:test": "tsx scripts/replica/projectManagement.test.ts && tsx scripts/replica/verticalLayout.test.ts && tsx scripts/replica/xhsCards.test.ts && tsx scripts/replica/scanSecrets.ts",
     "keys:check": "tsx scripts/replica/checkCredentials.ts",
     "secrets:scan": "tsx scripts/replica/scanSecrets.ts",
     "hooks:install": "git config core.hooksPath .githooks",
@@ -25,6 +25,8 @@
     "vertical:render": "tsx scripts/replica/renderVertical.ts",
     "vertical:render:all": "tsx scripts/replica/renderVertical.ts --all",
     "vertical:stills": "tsx scripts/replica/verticalStills.ts",
+    "xhs:cards": "tsx scripts/replica/renderXhsCards.ts",
+    "xhs:cards:all": "tsx scripts/replica/renderXhsCards.ts --all",
     "replica:keyposes:review": "tsx scripts/replica/extractKeyposeCuts.ts",
     "replica:content:qa": "tsx scripts/replica/generateContentQa.ts",
     "typecheck": "tsc --noEmit",

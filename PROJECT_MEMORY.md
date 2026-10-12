@@ -1029,3 +1029,12 @@ This file is the durable project handoff. Append a dated entry for every materia
 - 新命令：`npm run vertical:render -- --project=<slug>`（完整版、预告、复习卡、报告、联系图）、`vertical:render:all`、`vertical:stills`；`project:test` 增加竖屏版式回归（21 期 265 场安全区、字幕不切词、预告结构）。
 - 新配置 `planning/growth-promotion.json`：系列/合集名、行动号召、话题标签、资料产品（首个为规划中的「小黑词根复习与自测」）与领取开关（默认关闭）。`douyinCopy.ts` 据此生成竖屏、预告与复习卡说明，并只在竖屏文件存在时写入。
 - 云端会话已渲染并以对话附件交付 ten-tain、pon-pos、cred、duc-duct 四期竖屏完整版、预告与复习卡；该会话网络策略拒绝 `lfs.github.com`，二进制未进入仓库。本机运行 `npm run vertical:render -- --project=<slug>` 即可在交付目录 `vertical/` 重现，再运行 `npm run replica:copy`。均未发布，发布前仍需手机外放与耳机完整听看。英文说明见 `docs/growth-playbook-EN.md`。
+
+## 2026-10-12 — 合并到 main、小红书图文卡与本地 Codex 工作流
+
+- PR #1 已 squash 合并到 main；ten-tain 竖屏样片二进制未进入 main（LFS 被云端网络策略拦截，用户也不满意该样片）。
+- 用户改为本机 Codex 制作，并认为现有视频对小红书用户吸引力不足。新增 `src/replica/xhs/` 与 `npm run xhs:cards`：
+  从本期 storyboard 抽取每词拆分、释义、结果姿态和讲稿例句，渲染 3:4 图文卡（暖白点阵纸、大标题、荧光笔重点、
+  浏览器端自动裁掉插图透明留白让小黑放大），并生成 `xhs-note.md`。ten-tain 已试渲 12 张，人工看过联系图。
+- `replica:produce --stage=deliver` 增加竖屏、预告、复习卡、小红书卡片与文案；`project:test` 增加小红书卡片回归
+  （当前基准期每词必须有拆分、释义、插图；卡片 ≤ 18；正文无站外联系方式）。英文上手说明见 `docs/LOCAL-CODEX-QUICKSTART-EN.md`。
