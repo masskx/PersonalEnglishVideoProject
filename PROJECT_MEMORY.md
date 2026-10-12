@@ -1038,3 +1038,10 @@ This file is the durable project handoff. Append a dated entry for every materia
   浏览器端自动裁掉插图透明留白让小黑放大），并生成 `xhs-note.md`。ten-tain 已试渲 12 张，人工看过联系图。
 - `replica:produce --stage=deliver` 增加竖屏、预告、复习卡、小红书卡片与文案；`project:test` 增加小红书卡片回归
   （当前基准期每词必须有拆分、释义、插图；卡片 ≤ 18；正文无站外联系方式）。英文上手说明见 `docs/LOCAL-CODEX-QUICKSTART-EN.md`。
+
+## 2026-10-12 — 四六级方法卡与提示词指南
+
+- 三期四六级（四级写作、四级翻译、六级阅读）新增小红书方法卡：`src/replica/xhs/methodDeck.ts`、`XhsMethodCard.tsx`，
+  各栏目在 `src/<栏目>/xhs.ts` 导出 deck（只取本期讲稿），`xhs:cards` 自动识别。插图少于 3 张的期数不再每张卡重复同图。
+- `renderXhsCards.ts` 联系图改用 ffmpeg concat 列表（Windows 版 ffmpeg 不支持 -pattern_type glob）。
+- 新增用户英文指南 `docs/CODEX-PROMPT-GUIDE-EN.md`：会话开场、按目标的提示词模板、续做、改单期、改全局规则、发布前检查与省钱方法。

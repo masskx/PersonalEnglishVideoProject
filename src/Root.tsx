@@ -19,6 +19,8 @@ import {VerticalReplicaVideo} from './replica/vertical/VerticalReplicaVideo';
 import {VERTICAL_CANVAS} from './replica/vertical/verticalLayout';
 import {buildVerticalProps, supportsTeaser, verticalCompositionId} from './replica/vertical/verticalProjects';
 import {XhsCard, XHS_CARD} from './replica/xhs/XhsCard';
+import {XhsMethodCard} from './replica/xhs/XhsMethodCard';
+import {cetTranslationDeck} from './cet-translation/xhs';
 import {buildXhsDeck} from './replica/xhs/xhsCardData';
 import {tenTainProject} from './replica/projects/tenTain';
 
@@ -94,6 +96,16 @@ export const RemotionRoot: React.FC = () => (
       width={XHS_CARD.width}
       height={XHS_CARD.height}
       defaultProps={{deck: buildXhsDeck(tenTainProject, '小黑拆词根'), card: {kind: 'cover' as const}, page: 1, total: 13,
+        saveCta: '建议收藏 · 考前翻一翻', followCta: '关注小黑，每期拆一个词根', commentPrompt: '评论区写一句话，用上今天的一个词'}}
+    />
+    <Composition
+      id="XhsMethodCard"
+      component={XhsMethodCard}
+      durationInFrames={1}
+      fps={XHS_CARD.fps}
+      width={XHS_CARD.width}
+      height={XHS_CARD.height}
+      defaultProps={{deck: cetTranslationDeck, card: {kind: 'cover' as const}, page: 1, total: 12,
         saveCta: '建议收藏 · 考前翻一翻', followCta: '关注小黑，每期拆一个词根', commentPrompt: '评论区写一句话，用上今天的一个词'}}
     />
     <Composition

@@ -26,6 +26,8 @@ Codex session in Codex's sandbox / approval settings. Codex blocks network by de
 
 ## 2. What to type into Codex
 
+Full prompt cookbook, resuming work and tips: [CODEX-PROMPT-GUIDE-EN.md](CODEX-PROMPT-GUIDE-EN.md).
+
 The rules are written in Chinese, so short Chinese prompts work best. Meanings in brackets.
 
 | You type | What happens |
@@ -35,6 +37,7 @@ The rules are written in Chinese, so short Chinese prompts work best. Meanings i
 | `做一个易混词视频` (make a confusing-words video) | Picks an unused word pair |
 | `给 ten-tain 生成小红书图文` (Xiaohongshu cards for ten-tain) | Runs `npm run xhs:cards -- --project=ten-tain` |
 | `把 pon-pos 做成竖屏` (vertical version of pon-pos) | Runs `npm run vertical:render -- --project=pon-pos` |
+| `给 cet4-translation-main-clause 生成小红书图文` (cards for a CET lesson) | Same command; CET lessons get method cards (problem → steps → checklist → practice → answer) |
 
 To make a finished episode in one go, Codex can run
 `npm run replica:produce -- --project=<slug> --stage=deliver`. The deliver stage renders the landscape

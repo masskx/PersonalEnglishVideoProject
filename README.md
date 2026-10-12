@@ -32,6 +32,8 @@
 **Working locally with Codex (English):** [docs/LOCAL-CODEX-QUICKSTART-EN.md](docs/LOCAL-CODEX-QUICKSTART-EN.md) ·
 小红书图文卡：`npm run xhs:cards -- --project=<slug>`，输出到交付目录 `xiaohongshu/`。
 
+**Prompts and how to keep producing (English):** [docs/CODEX-PROMPT-GUIDE-EN.md](docs/CODEX-PROMPT-GUIDE-EN.md)
+
 ## API keys: rules for Claude / 密钥使用规则
 
 The owner may give Claude API keys (DashScope voice, the OpenAI-compatible image relay, Seedream).
@@ -50,7 +52,7 @@ Claude follows these rules in every session. 用户可能会把 API 密钥交给
    只在运行时从环境读取，不复制到其他文件、缓存或记忆；会话结束后，除你自己的设置外不留副本。
 4. **Check before use. 用前检查。** Start with `npm run keys:check`: it shows which keys are set (length only,
    never any characters) and whether each service is reachable. 先运行 `npm run keys:check`。
-5. **Scan before every commit. 每次提交前扫描。** `npm run hooks:install` once per clone enables a pre-commit
+5. **Scan before every commit. 每次提交前扫描。** `npm run hooks:install` once per clone points git at `.githooks/` (which also carries the Git LFS hooks, so video uploads keep working) and enables a pre-commit
    hook that runs `npm run secrets:scan --staged`. It blocks any commit containing a key pattern or the
    exact value of a configured key. `npm run project:test` runs the same scan. 每个克隆执行一次
    `npm run hooks:install`，提交时自动扫描暂存区；`project:test` 也包含此扫描。

@@ -7,13 +7,13 @@ import type {XhsCardSpec, XhsDeck, XhsWordCard} from './xhsCardData';
 /** 小红书 3:4 图文卡（1080×1440）：暖白纸纹、大标题、荧光笔重点、大尺寸小黑。 */
 export const XHS_CARD = {width: 1080, height: 1440, fps: 30} as const;
 
-const PAD = 72;
-const INNER = XHS_CARD.width - PAD * 2;
-const PAPER = '#FFFBF3';
+export const PAD = 72;
+export const INNER = XHS_CARD.width - PAD * 2;
+export const PAPER = '#FFFBF3';
 const DOTS = '#EDE4D3';
-const HIGHLIGHTER = '#FFE36E';
-const SOFT_BLUE = '#EAF0FF';
-const SOFT_ORANGE = '#FFEEE2';
+export const HIGHLIGHTER = '#FFE36E';
+export const SOFT_BLUE = '#EAF0FF';
+export const SOFT_ORANGE = '#FFEEE2';
 
 export type XhsCardProps = {
   deck: XhsDeck;
@@ -25,14 +25,14 @@ export type XhsCardProps = {
   commentPrompt: string;
 };
 
-const img = (src: string) => (/^(?:https?:|data:)/.test(src) ? src : staticFile(src.replace(/^\/+/, '')));
+export const img = (src: string) => (/^(?:https?:|data:)/.test(src) ? src : staticFile(src.replace(/^\/+/, '')));
 
 /**
  * Pose art often sits small inside a wide transparent canvas. Measure the visible pixels once in the
  * browser (alpha or non-white) and crop the empty margin with object-view-box, so Xiaohei fills the
  * card without clipping wide scenes. Falls back to the full image if measuring fails.
  */
-const TrimmedImg: React.FC<{src: string; style: React.CSSProperties; pad?: number}> = ({src, style, pad = 0.05}) => {
+export const TrimmedImg: React.FC<{src: string; style: React.CSSProperties; pad?: number}> = ({src, style, pad = 0.05}) => {
   const [viewBox, setViewBox] = useState<string | undefined>(undefined);
   const [handle] = useState(() => delayRender(`trim ${src}`));
   useEffect(() => {
@@ -78,7 +78,7 @@ const TrimmedImg: React.FC<{src: string; style: React.CSSProperties; pad?: numbe
   return <Img src={src} style={{...style, objectFit: 'contain', ...(viewBox ? ({objectViewBox: viewBox} as React.CSSProperties) : {})}} />;
 };
 
-const fit = (text: string, max: number, width = INNER, min = 40) => {
+export const fit = (text: string, max: number, width = INNER, min = 40) => {
   let size = max;
   while (size > min && estimateTextLines([{text}], size, width) > 1) size -= 4;
   return size;
@@ -98,7 +98,7 @@ const Highlight: React.FC<{word: string; part: string; color?: string}> = ({word
   );
 };
 
-const Frame: React.FC<{series: string; page: number; total: number; children: React.ReactNode}> = ({series, page, total, children}) => (
+export const Frame: React.FC<{series: string; page: number; total: number; children: React.ReactNode}> = ({series, page, total, children}) => (
   <AbsoluteFill style={{background: PAPER, backgroundImage: `radial-gradient(${DOTS} 2.2px, transparent 2.2px)`, backgroundSize: '36px 36px',
     fontFamily: REPLICA_THEME.fontFamily, color: REPLICA_THEME.ink, letterSpacing: 0}}>
     <div style={{position: 'absolute', left: PAD, right: PAD, top: 52, display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
@@ -115,7 +115,7 @@ const Frame: React.FC<{series: string; page: number; total: number; children: Re
   </AbsoluteFill>
 );
 
-const Ribbon: React.FC<{text: string; top: number}> = ({text, top}) => (
+export const Ribbon: React.FC<{text: string; top: number}> = ({text, top}) => (
   <div style={{position: 'absolute', left: PAD, right: PAD, top, display: 'flex', justifyContent: 'center'}}>
     <div style={{background: REPLICA_THEME.accent, color: '#fff', fontSize: 40, fontWeight: 880, borderRadius: 20, padding: '14px 40px',
       boxShadow: '0 8px 0 rgba(232,88,16,0.18)'}}>{text}</div>

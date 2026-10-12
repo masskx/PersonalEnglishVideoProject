@@ -76,6 +76,14 @@
 - 一条命令完成交付：`npm run replica:produce -- --project=<slug> --stage=deliver`（横屏、抖音竖屏与预告、
   复习卡、小红书卡片、发布文案）。用户的英文上手说明见 [LOCAL-CODEX-QUICKSTART-EN.md](docs/LOCAL-CODEX-QUICKSTART-EN.md)。
 
+## 四六级方法卡（2026-10-12）
+
+- 四级写作、六级阅读、四级翻译等非词根栏目同样交付小红书图文：每期在自己的目录导出 `src/<栏目>/xhs.ts`
+  的 `MethodDeck`（题目、常见错误、3–8 个步骤、检查清单、练习、参考答案、≤20 字标题、话题），并加入
+  `src/replica/xhs/methodDecks.ts`；`npm run xhs:cards -- --project=<期名>` 出方法卡。内容只取本期讲稿与例句。
+- 新四六级栏目至少生成 3 张不同的小黑插图（题目、关键步骤、练习各一），否则图文卡只能重复同一张图。
+- 用户的提示词与续做指南见 [CODEX-PROMPT-GUIDE-EN.md](docs/CODEX-PROMPT-GUIDE-EN.md)。
+
 ## 密钥使用（2026-10-12，用户要求）
 
 - 用户可能提供 API 密钥供 Claude 临时使用。密钥只从环境变量或被 gitignore 的 `.env` 在运行时读取，
