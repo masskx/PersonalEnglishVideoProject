@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "id": "ten-tain-eight-words-reviewed",
+  "model": "gpt-image-2 (built-in image_gen)",
+  "size": "2048x1152",
+  "quality": "high",
+  "assetDir": "public/assets/replica/ten-tain-v3",
+  "runtimeAssetDirectoryMustBeEpisodeLocal": true,
+  "assetProvenance": {
+    "assetDir": "public/assets/replica/ten-tain-v3",
+    "generationMethod": "24 dedicated bitmap generations from the built-in image_gen model, three states per word, each using the accepted mit / miss keypose raster as a style and character reference",
+    "referenceAnchor": "public/assets/replica/mit-miss-images2-keyposes/",
+    "runtimeSourceScan": "all runtime state sources and storyboard image layers resolve under public/assets/replica/ten-tain-v3",
+    "reusedRuntimeSources": []
+  },
+  "visualReview": {
+    "status": "approved",
+    "reviewer": "Codex visual review",
+    "reviewedAt": "2026-09-28",
+    "notes": [
+      "All eight word scenes use 24 newly generated bitmap poses made for this episode; no vector or SVG stand-ins are in the runtime set.",
+      "The generated cutouts follow the accepted mit / miss grammar: one black Xiaohei, sparse hand-drawn ink, restrained orange/cyan/gray props, and transparent margins.",
+      "The continuous stage uses the same static-card and word-assembly choreography as mit / miss, with a visible before / change / result rhythm.",
+      "Every runtime source resolves under public/assets/replica/ten-tain-v3; failed provider outputs and the earlier vector experiment remain in work/experiments only."
+    ]
+  },
+  "shots": [
+    {
+      "id": "retain",
+      "word": "retain",
+      "sceneId": "retain-word",
+      "meaning": "keep or remember something",
+      "example": "retain information",
+      "visualAction": "The character gathers three blank note cards and closes them into a large orange folder held against the chest.",
+      "purpose": "Shows checked information staying with the holder instead of slipping away.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/",
+      "states": [
+        {
+          "id": "before",
+          "source": "public/assets/replica/ten-tain-v3/retain-before.png"
+        },
+        {
+          "id": "change",
+          "source": "public/assets/replica/ten-tain-v3/retain-change.png"
+        },
+        {
+          "id": "result",
+          "source": "public/assets/replica/ten-tain-v3/retain-result.png"
+        }
+      ]
+    },
+    {
+      "id": "contain",
+      "word": "contain",
+      "sceneId": "contain-word",
+      "meaning": "hold something within a space",
+      "example": "The box contains six books.",
+      "visualAction": "The character guides large blue books over the rim of an open cyan-and-white box until they are inside.",
+      "purpose": "Makes the idea of something being kept within a boundary concrete.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/",
+      "states": [
+        {
+          "id": "before",
+          "source": "public/assets/replica/ten-tain-v3/contain-before.png"
+        },
+        {
+          "id": "change",
+          "source": "public/assets/replica/ten-tain-v3/contain-change.png"
+        },
+        {
+          "id": "result",
+          "source": "public/assets/replica/ten-tain-v3/contain-result.png"
+        }
+      ]
+    },
+    {
+      "id": "maintain",
+      "word": "maintain",
+      "sceneId": "maintain-word",
+      "meaning": "keep a state steady",
+      "example": "maintain a routine",
+      "visualAction": "A three-piece orange-and-blue tower is aligned from a leaning state into a stable upright result.",
+      "purpose": "Uses a stable built arrangement to represent keeping a condition in place.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/",
+      "states": [
+        {
+          "id": "before",
+          "source": "public/assets/replica/ten-tain-v3/maintain-before.png"
+        },
+        {
+          "id": "change",
+          "source": "public/assets/replica/ten-tain-v3/maintain-change.png"
+        },
+        {
+          "id": "result",
+          "source": "public/assets/replica/ten-tain-v3/maintain-result.png"
+        }
+      ]
+    },
+    {
+      "id": "obtain",
+      "word": "obtain",
+      "sceneId": "obtain-word",
+      "meaning": "get and take possession of something",
+      "example": "obtain permission",
+      "visualAction": "A blank orange permission envelope is transferred from a small gray pedestal into the receiver's hand.",
+      "purpose": "Shows permission becoming available and held by the receiver.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/",
+      "states": [
+        {
+          "id": "before",
+          "source": "public/assets/replica/ten-tain-v3/obtain-before.png"
+        },
+        {
+          "id": "change",
+          "source": "public/assets/replica/ten-tain-v3/obtain-change.png"
+        },
+        {
+          "id": "result",
+          "source": "public/assets/replica/ten-tain-v3/obtain-result.png"
+        }
+      ]
+    },
+    {
+      "id": "detain",
+      "word": "detain",
+      "sceneId": "detain-word",
+      "meaning": "hold someone back from leaving",
+      "example": "Security detained a passenger.",
+      "visualAction": "The character lowers a striped orange barrier and stops a blank blue ball from crossing.",
+      "purpose": "Uses a clear boundary and stopped motion to convey being held back.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/",
+      "states": [
+        {
+          "id": "before",
+          "source": "public/assets/replica/ten-tain-v3/detain-before.png"
+        },
+        {
+          "id": "change",
+          "source": "public/assets/replica/ten-tain-v3/detain-change.png"
+        },
+        {
+          "id": "result",
+          "source": "public/assets/replica/ten-tain-v3/detain-result.png"
+        }
+      ]
+    },
+    {
+      "id": "sustain",
+      "word": "sustain",
+      "sceneId": "sustain-word",
+      "meaning": "support or keep something going",
+      "example": "A bridge sustains heavy traffic.",
+      "visualAction": "A Xiaohei pushes a wide orange bridge beam into a level, supported result.",
+      "purpose": "Shows effort being held up and guided toward a stable target.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/",
+      "states": [
+        {
+          "id": "before",
+          "source": "public/assets/replica/ten-tain-v3/sustain-before.png"
+        },
+        {
+          "id": "change",
+          "source": "public/assets/replica/ten-tain-v3/sustain-change.png"
+        },
+        {
+          "id": "result",
+          "source": "public/assets/replica/ten-tain-v3/sustain-result.png"
+        }
+      ]
+    },
+    {
+      "id": "entertain",
+      "word": "entertain",
+      "sceneId": "entertain-word",
+      "meaning": "hold attention and amuse",
+      "example": "entertain the audience",
+      "visualAction": "One Xiaohei performs with a large orange ball under a simple cyan stage arch and keeps attention on the show.",
+      "purpose": "Represents attention being held through an engaging performance.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/",
+      "states": [
+        {
+          "id": "before",
+          "source": "public/assets/replica/ten-tain-v3/entertain-before.png"
+        },
+        {
+          "id": "change",
+          "source": "public/assets/replica/ten-tain-v3/entertain-change.png"
+        },
+        {
+          "id": "result",
+          "source": "public/assets/replica/ten-tain-v3/entertain-result.png"
+        }
+      ]
+    },
+    {
+      "id": "abstain",
+      "word": "abstain",
+      "sceneId": "abstain-word",
+      "meaning": "hold yourself back from an action",
+      "example": "abstain from sweets",
+      "visualAction": "The character pulls both hands back and turns away from an untouched large orange sweet on a cyan tray.",
+      "purpose": "Shows deliberate restraint by leaving the tempting object alone.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/",
+      "states": [
+        {
+          "id": "before",
+          "source": "public/assets/replica/ten-tain-v3/abstain-before.png"
+        },
+        {
+          "id": "change",
+          "source": "public/assets/replica/ten-tain-v3/abstain-change.png"
+        },
+        {
+          "id": "result",
+          "source": "public/assets/replica/ten-tain-v3/abstain-result.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "assetDirectory": "public/assets/meme-vocab/interrupt",
+  "assets": [
+    {
+      "assetId": "interrupt-hook",
+      "path": "G:/抖音卡片英语白色/public/assets/meme-vocab/interrupt/placeholder.svg",
+      "status": "placeholder",
+      "purpose": "hook：老板正在宣布“下个月一定发奖金”，员工突然把工资",
+      "useTime": "0.000-1.980s",
+      "cropFocus": "人物和被拍到桌上的工资单",
+      "remotionMotion": "push-in",
+      "replacementRequired": true
+    },
+    {
+      "assetId": "interrupt-meeting",
+      "path": "G:/抖音卡片英语白色/public/assets/meme-vocab/interrupt/placeholder.svg",
+      "status": "placeholder",
+      "purpose": "meme_story：老板在会议室把奖金、期权和未来都画成了大饼。小黑",
+      "useTime": "1.980-5.940s",
+      "cropFocus": "老板的大饼与员工举起的工资单",
+      "remotionMotion": "shake",
+      "replacementRequired": true
+    },
+    {
+      "assetId": "interrupt-reveal",
+      "path": "G:/抖音卡片英语白色/public/assets/meme-vocab/interrupt/placeholder.svg",
+      "status": "placeholder",
+      "purpose": "word_reveal：interrupt，/ˌɪntəˈrʌpt/，意",
+      "useTime": "5.940-11.000s",
+      "cropFocus": "小黑卡在“正在说话”的断裂线中间",
+      "remotionMotion": "local-zoom",
+      "replacementRequired": true
+    },
+    {
+      "assetId": "interrupt-usage",
+      "path": "G:/抖音卡片英语白色/public/assets/meme-vocab/interrupt/placeholder.svg",
+      "status": "placeholder",
+      "purpose": "real_usage：Please don't interrupt m",
+      "useTime": "11.000-16.500s",
+      "cropFocus": "人物嘴边被截断的对话气泡和小黑",
+      "remotionMotion": "pan-right",
+      "replacementRequired": true
+    },
+    {
+      "assetId": "interrupt-quiz",
+      "path": "G:/抖音卡片英语白色/public/assets/meme-vocab/interrupt/placeholder.svg",
+      "status": "placeholder",
+      "purpose": "quiz_cta：插嘴打断会议用 interrupt；如果把整个会",
+      "useTime": "16.500-22.000s",
+      "cropFocus": "小黑指向两个空白选项框，问题区域留白",
+      "remotionMotion": "push-in",
+      "replacementRequired": true
+    }
+  ],
+  "pendingGeneration": [
+    "interrupt-hook",
+    "interrupt-meeting",
+    "interrupt-reveal",
+    "interrupt-usage",
+    "interrupt-quiz"
+  ]
+}

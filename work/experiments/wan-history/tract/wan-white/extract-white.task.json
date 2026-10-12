@@ -1,0 +1,22 @@
+{
+  "id": "extract-white",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "outputs/tract/wan-white/inputs/03_extract_out.jpg",
+  "inputSha256": "28ae8137c4162978931f6683496a52d7ada6963d9be2609af7e0f49d42cc3a01",
+  "prompt": "The same black character uses the existing tongs to pull the orange core upward and out of the blue shell. Locked camera, native speed, one continuous five-second shot. Preserve the exact original character identity, limb count, prop count, colors and hand-drawn line style. Background must remain perfectly uniform pure white RGB 255 255 255 in every frame, including all four corners. No green screen, no gray cast, no floor, no shadow, no gradient, no vignette, no texture, no border, no panel, no camera movement, no fade-in, no fade-out, no black opening frame, no text, no logo, no new object.",
+  "taskId": "dbd9fae9-9baf-4ffc-9e6f-f7827ce6b94c",
+  "requestId": "1d2c89eb-d7bd-9da2-9b41-e77b7bd43318",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-26T07:13:06.413Z",
+  "lastPolledAt": "2026-07-26T07:15:32.035Z",
+  "outputVideo": "outputs/tract/wan-white/extract-white.source.mp4",
+  "completedAt": "2026-07-26T07:15:37.604Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-26 15:13:06.351",
+    "scheduledTime": "2026-07-26 15:13:48.541",
+    "endTime": "2026-07-26 15:14:00.437"
+  }
+}

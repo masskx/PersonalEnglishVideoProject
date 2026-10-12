@@ -1,0 +1,8 @@
+{
+  "project": "press",
+  "reference": "样片/video_从press“压”记住这么多单词..._0.mp4",
+  "candidate": "outputs/press/press.mp4",
+  "contactSheet": "outputs/press/comparison/contact-sheet.png",
+  "timestamps": [0, 15.693939, 31.387879, 47.081818, 62.775758, 78.469697, 94.163637, 109.857576, 125.551515, 141.245455, 156.939394, 172.633334],
+  "note": "12 组等间隔样片/成片配对帧的联系表；视频仅迁移路径，画面内容未改。"
+}

@@ -1,0 +1,35 @@
+{
+  "project": "cet6-reading-location-paraphrase",
+  "assets": [
+    "assets/replica/cet6-reading-location-paraphrase/hook-locate.png",
+    "assets/replica/cet6-reading-location-paraphrase/evidence.png",
+    "assets/replica/cet6-reading-location-paraphrase/distractor.png",
+    "assets/replica/cet6-reading-location-paraphrase/assemble.png",
+    "assets/replica/cet6-reading-location-paraphrase/practice.png",
+    "assets/music/root-word-series-bgm.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/hook-2d1e08f6a896.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/task-d4d875003908.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/question-b634a0e65060.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/keywords-a93d37834550.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/locate-282fa83ed088.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/paraphrase-527ace4d261c.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/options-571d4deabaff.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/distractor-71bad5dc7e59.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/answer-d0b0b15fd705.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/practice-c2ffc3b005f1.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/practice-locate-91372360a8cb.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/practice-answer-02ab263a7740.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/check-d1f397fd6a45.mp3",
+    "assets/audio/cet6-reading-location-paraphrase/close-3184b5fa6062.mp3"
+  ],
+  "illustrations": [
+    "assets/replica/cet6-reading-location-paraphrase/hook-locate.png",
+    "assets/replica/cet6-reading-location-paraphrase/evidence.png",
+    "assets/replica/cet6-reading-location-paraphrase/distractor.png",
+    "assets/replica/cet6-reading-location-paraphrase/assemble.png",
+    "assets/replica/cet6-reading-location-paraphrase/practice.png"
+  ],
+  "generationMethod": "built-in image_gen raster",
+  "referenceAnchor": "mit-miss / ten-tain",
+  "runtimeSourceScan": "episode-local"
+}

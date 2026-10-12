@@ -1,0 +1,25 @@
+{
+  "createdAt": "2026-09-29T12:11:58.657Z",
+  "destination": "F:\\抖音卡片英语白色\\outputs\\ten-tain",
+  "stage": "F:\\抖音卡片英语白色\\work\\render-staging\\ten-tain-8EEq3a",
+  "files": [
+    "ten-tain.mp4",
+    "cover.png",
+    "cover-landscape.png",
+    "publish-copy.md",
+    "douyin-copy.md",
+    "render-report.json",
+    "cover-report.json",
+    "cover-landscape-report.json"
+  ],
+  "previous": [
+    "ten-tain.mp4",
+    "cover.png",
+    "cover-landscape.png",
+    "publish-copy.md",
+    "douyin-copy.md",
+    "render-report.json",
+    "cover-report.json",
+    "cover-landscape-report.json"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "input": "work/wan-white/script-scrib/tasks/subscribe-write-under.source.mp4",
+  "framesDir": "public/assets/replica/script-scrib-white-motion/frames/subscribe-write-under",
+  "width": 1664,
+  "height": 928,
+  "fps": 30,
+  "frames": 150,
+  "expectedFrames": 150,
+  "format": "RGB PNG; no alpha and no chroma key",
+  "whiteFloor": 198,
+  "neutralRange": 20,
+  "borderPixelsForcedWhite": 8,
+  "normalizedPixelPercent": 85.6775,
+  "badCornerSamples": 0,
+  "ok": true
+}

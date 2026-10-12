@@ -1,0 +1,294 @@
+{
+  "source": "F:\\抖音卡片英语白色\\public\\assets\\replica\\mit-miss\\00_send_hook.png",
+  "count": 18,
+  "assets": [
+    {
+      "file": "conduct-before.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.113159,
+      "status": "passed"
+    },
+    {
+      "file": "conduct-change.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.156194,
+      "status": "passed"
+    },
+    {
+      "file": "conduct-result.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.164665,
+      "status": "passed"
+    },
+    {
+      "file": "deduce-before.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.158044,
+      "status": "passed"
+    },
+    {
+      "file": "deduce-change.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.163728,
+      "status": "passed"
+    },
+    {
+      "file": "deduce-result.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.152435,
+      "status": "passed"
+    },
+    {
+      "file": "induce-before.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.213943,
+      "status": "passed"
+    },
+    {
+      "file": "induce-change.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.207723,
+      "status": "passed"
+    },
+    {
+      "file": "induce-result.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.205402,
+      "status": "passed"
+    },
+    {
+      "file": "introduce-before.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.161588,
+      "status": "passed"
+    },
+    {
+      "file": "introduce-change.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.157816,
+      "status": "passed"
+    },
+    {
+      "file": "introduce-result.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.151788,
+      "status": "passed"
+    },
+    {
+      "file": "produce-before.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.162523,
+      "status": "passed"
+    },
+    {
+      "file": "produce-change.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.172641,
+      "status": "passed"
+    },
+    {
+      "file": "produce-result.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.182769,
+      "status": "passed"
+    },
+    {
+      "file": "reduce-before.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.162228,
+      "status": "passed"
+    },
+    {
+      "file": "reduce-change.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.143408,
+      "status": "passed"
+    },
+    {
+      "file": "reduce-result.png",
+      "size": [
+        2048,
+        1152
+      ],
+      "mode": "RGBA",
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleCoverage": 0.134261,
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "predict",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "assets/green-screen/dict/01_predict_before.jpg",
+  "inputSha256": "0d3dc3f5596e4fa0be171dc29094d0738b12ffaba7b33b1eddac2a574687f568",
+  "prompt": "The single black character leans forward and speaks before the curtain opens slightly; the small cloud and sun appear. Locked camera, subtle anticipation then settle, identity stable.",
+  "taskId": "7a77a76f-a018-4290-a1b7-b2dcdfd7edc0",
+  "requestId": "bafd4c67-89a5-92d6-9411-3f4d70359b5e",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T11:48:34.295Z",
+  "lastPolledAt": "2026-07-24T11:49:15.096Z",
+  "outputVideo": "outputs/dict-wan/predict.source.mp4",
+  "completedAt": "2026-07-24T11:49:15.930Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 19:48:34.252",
+    "scheduledTime": "2026-07-24 19:48:34.385",
+    "endTime": "2026-07-24 19:48:47.008"
+  }
+}

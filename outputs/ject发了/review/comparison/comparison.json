@@ -1,0 +1,10 @@
+{
+  "project": "ject",
+  "mode": "established-series-style-alignment",
+  "reference": "outputs/press/press.mp4",
+  "candidate": "outputs/ject/ject.mp4",
+  "referenceTimestampsSec": [1.65, 11.31, 29.75, 52.34, 90.17, 132.05, 153.91, 171.377],
+  "candidateTimestampsSec": [5.25, 21.725, 31.5, 51.275, 61.775, 71.725, 92.5, 101.4],
+  "contactSheet": "outputs/ject/comparison/contact-sheet.png",
+  "note": "No exact target sample was supplied. These eight pairs compare representative settled frames for series typography, palette, whitespace, illustration density, captions, and summary treatment; they are not scene-time matches."
+}

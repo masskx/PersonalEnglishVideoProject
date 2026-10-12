@@ -1,0 +1,35 @@
+{
+  "assets": [
+    "assets/cet-translation/01-main-clause.png",
+    "assets/cet-translation/02-museum.png",
+    "assets/cet-translation/03-parallel-benefits.png",
+    "assets/cet-translation/04-volunteer.png",
+    "assets/music/root-word-series-bgm.mp3",
+    "assets/audio/cet4-translation-main-clause/hook-30c29e0220ae.mp3",
+    "assets/audio/cet4-translation-main-clause/task-8699905e424f.mp3",
+    "assets/audio/cet4-translation-main-clause/cut-intro-a307d5e8a805.mp3",
+    "assets/audio/cet4-translation-main-clause/main-cn-003e2fbe58f9.mp3",
+    "assets/audio/cet4-translation-main-clause/main-en-025974b457d2.mp3",
+    "assets/audio/cet4-translation-main-clause/time-808b42d3411f.mp3",
+    "assets/audio/cet4-translation-main-clause/museum-089947f88739.mp3",
+    "assets/audio/cet4-translation-main-clause/reason-b83474ffbdb5.mp3",
+    "assets/audio/cet4-translation-main-clause/benefit-one-7c4266783963.mp3",
+    "assets/audio/cet4-translation-main-clause/benefit-two-53bbd8207176.mp3",
+    "assets/audio/cet4-translation-main-clause/assemble-18c0a11fca8f.mp3",
+    "assets/audio/cet4-translation-main-clause/literal-8b24a0eb6396.mp3",
+    "assets/audio/cet4-translation-main-clause/practice-bf7990283ad8.mp3",
+    "assets/audio/cet4-translation-main-clause/practice-main-7e0153c6390d.mp3",
+    "assets/audio/cet4-translation-main-clause/practice-build-821d439a4f41.mp3",
+    "assets/audio/cet4-translation-main-clause/answer-88148b09b4e4.mp3",
+    "assets/audio/cet4-translation-main-clause/check-4751b80e8c0a.mp3",
+    "assets/audio/cet4-translation-main-clause/close-cf395bd87426.mp3"
+  ],
+  "illustrations": [
+    "assets/cet-translation/01-main-clause.png",
+    "assets/cet-translation/02-museum.png",
+    "assets/cet-translation/03-parallel-benefits.png",
+    "assets/cet-translation/04-volunteer.png"
+  ],
+  "roleAnchor": "public/assets/replica/script-scrib/00_write_hook.png",
+  "whiteBackgroundReview": "4/4 accepted; rejected duplicate-character benefit candidate kept outside runtime assets."
+}

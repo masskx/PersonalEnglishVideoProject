@@ -1,0 +1,62 @@
+{
+  "project": "flect-flex",
+  "orientation": "vertical",
+  "input": "outputs/flect-flex/cover.png",
+  "codec": "png",
+  "width": 1080,
+  "height": 1440,
+  "pixelFormat": "rgb24",
+  "corners": [
+    {
+      "x": 0,
+      "y": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 1079,
+      "y": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 0,
+      "y": 1439,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 1079,
+      "y": 1439,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    }
+  ],
+  "wordCount": 8,
+  "words": [
+    "reflect",
+    "reflection",
+    "deflect",
+    "inflect",
+    "flexible",
+    "flexibility",
+    "reflex",
+    "inflexible"
+  ],
+  "wordHighlights": null,
+  "illustration": "assets/replica/flect-flex/00_bend_hook.png",
+  "ok": true,
+  "errors": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "distract-white",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "outputs/tract/wan-white/inputs/02_distract_apart.jpg",
+  "inputSha256": "b966998e4111b259a386e5b1efc7c40bcc33268f2f5fe199db3ba7be6c5ef818",
+  "prompt": "The same black character wobbles gently as the existing cords tug in different directions; keep every existing object stable. Locked camera, native speed, one continuous five-second shot. Preserve the exact original character identity, limb count, prop count, colors and hand-drawn line style. Background must remain perfectly uniform pure white RGB 255 255 255 in every frame, including all four corners. No green screen, no gray cast, no floor, no shadow, no gradient, no vignette, no texture, no border, no panel, no camera movement, no fade-in, no fade-out, no black opening frame, no text, no logo, no new object.",
+  "taskId": "33acd440-2a68-4c49-a16b-0d83ec2a403c",
+  "requestId": "a9f922db-4f47-9a27-a878-e06b683d8334",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-26T07:13:04.606Z",
+  "lastPolledAt": "2026-07-26T07:15:20.977Z",
+  "outputVideo": "outputs/tract/wan-white/distract-white.source.mp4",
+  "completedAt": "2026-07-26T07:15:27.241Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-26 15:13:04.602",
+    "scheduledTime": "2026-07-26 15:13:36.869",
+    "endTime": "2026-07-26 15:13:48.925"
+  }
+}

@@ -1,0 +1,700 @@
+{
+  "project": "pon-pos",
+  "input": "outputs/pon-pos/pon-pos.mp4",
+  "durationSeconds": 168.512,
+  "intervalSeconds": 1,
+  "sampledFrames": 169,
+  "previewVideo": "outputs/pon-pos/review/full-preview/full-preview.mp4",
+  "contactSheets": "outputs/pon-pos/review/full-preview/full-preview-contact-*.jpg",
+  "safeArea": {
+    "left": 88,
+    "right": 1832,
+    "top": 54,
+    "bottom": 1008
+  },
+  "layoutIssues": [
+    {
+      "scene": "pon-pos-root-map",
+      "layer": "root-art",
+      "kind": "image",
+      "box": {
+        "x": 1040,
+        "y": 105,
+        "width": 820,
+        "height": 690
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "compose-word",
+      "layer": "compose-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "expose-word",
+      "layer": "expose-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "expose-word",
+      "layer": "expose-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "expose-word",
+      "layer": "expose-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "impose-word",
+      "layer": "impose-word-word",
+      "kind": "text",
+      "box": {
+        "x": 130,
+        "y": 50,
+        "width": 1660,
+        "height": 116
+      },
+      "message": "content crosses top safe margin"
+    },
+    {
+      "scene": "propose-word",
+      "layer": "propose-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "oppose-word",
+      "layer": "oppose-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "oppose-word",
+      "layer": "oppose-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "oppose-word",
+      "layer": "oppose-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "dispose-word",
+      "layer": "dispose-word-word",
+      "kind": "text",
+      "box": {
+        "x": 130,
+        "y": 50,
+        "width": 1660,
+        "height": 116
+      },
+      "message": "content crosses top safe margin"
+    },
+    {
+      "scene": "deposit-word",
+      "layer": "deposit-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "pon-pos-family-map",
+      "layer": "map-title",
+      "kind": "text",
+      "box": {
+        "x": 120,
+        "y": 45,
+        "width": 1680,
+        "height": 79
+      },
+      "message": "content crosses top safe margin"
+    },
+    {
+      "scene": "pon-pos-examples",
+      "layer": "examples-title",
+      "kind": "text",
+      "box": {
+        "x": 140,
+        "y": 35,
+        "width": 1640,
+        "height": 79
+      },
+      "message": "content crosses top safe margin"
+    },
+    {
+      "scene": "pon-pos-examples",
+      "layer": "example-art-1",
+      "kind": "image",
+      "box": {
+        "x": 1450,
+        "y": 210,
+        "width": 390,
+        "height": 470
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "pon-pos-examples",
+      "layer": "example-art-2",
+      "kind": "image",
+      "box": {
+        "x": 1450,
+        "y": 210,
+        "width": 390,
+        "height": 470
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "pon-pos-examples",
+      "layer": "example-art-3",
+      "kind": "image",
+      "box": {
+        "x": 1450,
+        "y": 210,
+        "width": 390,
+        "height": 470
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "pon-pos-examples",
+      "layer": "example-art-4",
+      "kind": "image",
+      "box": {
+        "x": 1450,
+        "y": 210,
+        "width": 390,
+        "height": 470
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "pon-pos-practice",
+      "layer": "practice-title",
+      "kind": "text",
+      "box": {
+        "x": 190,
+        "y": 35,
+        "width": 1540,
+        "height": 83
+      },
+      "message": "content crosses top safe margin"
+    },
+    {
+      "scene": "pon-pos-practice-explanation",
+      "layer": "answer-title",
+      "kind": "text",
+      "box": {
+        "x": 170,
+        "y": 50,
+        "width": 1580,
+        "height": 81
+      },
+      "message": "content crosses top safe margin"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-root",
+      "kind": "text",
+      "box": {
+        "x": 70,
+        "y": 45,
+        "width": 740,
+        "height": 114
+      },
+      "message": "content crosses left, top safe margin"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-meaning",
+      "kind": "text",
+      "box": {
+        "x": 80,
+        "y": 170,
+        "width": 720,
+        "height": 59
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-rows",
+      "kind": "table",
+      "box": {
+        "x": 75,
+        "y": 275,
+        "width": 930,
+        "height": 590
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-art-1",
+      "kind": "image",
+      "box": {
+        "x": 1115,
+        "y": 230,
+        "width": 720,
+        "height": 610
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-art-2",
+      "kind": "image",
+      "box": {
+        "x": 1115,
+        "y": 230,
+        "width": 720,
+        "height": 610
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-art-3",
+      "kind": "image",
+      "box": {
+        "x": 1115,
+        "y": 230,
+        "width": 720,
+        "height": 610
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-art-4",
+      "kind": "image",
+      "box": {
+        "x": 1115,
+        "y": 230,
+        "width": 720,
+        "height": 610
+      },
+      "message": "content crosses right safe margin"
+    }
+  ],
+  "layoutErrors": [],
+  "layoutWarnings": [
+    {
+      "scene": "pon-pos-root-map",
+      "layer": "root-art",
+      "kind": "image",
+      "box": {
+        "x": 1040,
+        "y": 105,
+        "width": 820,
+        "height": 690
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "compose-word",
+      "layer": "compose-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "expose-word",
+      "layer": "expose-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "expose-word",
+      "layer": "expose-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "expose-word",
+      "layer": "expose-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "impose-word",
+      "layer": "impose-word-word",
+      "kind": "text",
+      "box": {
+        "x": 130,
+        "y": 50,
+        "width": 1660,
+        "height": 116
+      },
+      "message": "content crosses top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "propose-word",
+      "layer": "propose-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "oppose-word",
+      "layer": "oppose-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "oppose-word",
+      "layer": "oppose-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "oppose-word",
+      "layer": "oppose-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "dispose-word",
+      "layer": "dispose-word-word",
+      "kind": "text",
+      "box": {
+        "x": 130,
+        "y": 50,
+        "width": 1660,
+        "height": 116
+      },
+      "message": "content crosses top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "deposit-word",
+      "layer": "deposit-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-family-map",
+      "layer": "map-title",
+      "kind": "text",
+      "box": {
+        "x": 120,
+        "y": 45,
+        "width": 1680,
+        "height": 79
+      },
+      "message": "content crosses top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-examples",
+      "layer": "examples-title",
+      "kind": "text",
+      "box": {
+        "x": 140,
+        "y": 35,
+        "width": 1640,
+        "height": 79
+      },
+      "message": "content crosses top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-examples",
+      "layer": "example-art-1",
+      "kind": "image",
+      "box": {
+        "x": 1450,
+        "y": 210,
+        "width": 390,
+        "height": 470
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-examples",
+      "layer": "example-art-2",
+      "kind": "image",
+      "box": {
+        "x": 1450,
+        "y": 210,
+        "width": 390,
+        "height": 470
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-examples",
+      "layer": "example-art-3",
+      "kind": "image",
+      "box": {
+        "x": 1450,
+        "y": 210,
+        "width": 390,
+        "height": 470
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-examples",
+      "layer": "example-art-4",
+      "kind": "image",
+      "box": {
+        "x": 1450,
+        "y": 210,
+        "width": 390,
+        "height": 470
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-practice",
+      "layer": "practice-title",
+      "kind": "text",
+      "box": {
+        "x": 190,
+        "y": 35,
+        "width": 1540,
+        "height": 83
+      },
+      "message": "content crosses top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-practice-explanation",
+      "layer": "answer-title",
+      "kind": "text",
+      "box": {
+        "x": 170,
+        "y": 50,
+        "width": 1580,
+        "height": 81
+      },
+      "message": "content crosses top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-root",
+      "kind": "text",
+      "box": {
+        "x": 70,
+        "y": 45,
+        "width": 740,
+        "height": 114
+      },
+      "message": "content crosses left, top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-meaning",
+      "kind": "text",
+      "box": {
+        "x": 80,
+        "y": 170,
+        "width": 720,
+        "height": 59
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-rows",
+      "kind": "table",
+      "box": {
+        "x": 75,
+        "y": 275,
+        "width": 930,
+        "height": 590
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-art-1",
+      "kind": "image",
+      "box": {
+        "x": 1115,
+        "y": 230,
+        "width": 720,
+        "height": 610
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-art-2",
+      "kind": "image",
+      "box": {
+        "x": 1115,
+        "y": 230,
+        "width": 720,
+        "height": 610
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-art-3",
+      "kind": "image",
+      "box": {
+        "x": 1115,
+        "y": 230,
+        "width": 720,
+        "height": 610
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "pon-pos-summary",
+      "layer": "summary-art-4",
+      "kind": "image",
+      "box": {
+        "x": 1115,
+        "y": 230,
+        "width": 720,
+        "height": 610
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    }
+  ],
+  "manualReviewRequired": [
+    "打开 full-preview.mp4 连续观看整片。",
+    "逐页查看 full-preview-contact-*.jpg，重点看文字溢出、大片空白、图文失衡和关键帧切换。",
+    "手机尺寸检查字幕和词义；发现问题后修订 storyboard，再重新渲染并重复本闸门。"
+  ]
+}

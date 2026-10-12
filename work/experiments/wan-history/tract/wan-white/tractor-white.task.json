@@ -1,0 +1,22 @@
+{
+  "id": "tractor-white",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "outputs/tract/wan-white/inputs/07_tractor_machine.jpg",
+  "inputSha256": "43c3354c0281d0d208792b307d195cff5887e5a1fb1778b8708bc7f9b95c348e",
+  "prompt": "The same tractor rolls slowly to the right and tows the existing cart; wheels rotate gently. Locked camera, native speed, one continuous five-second shot. Preserve the exact original character identity, limb count, prop count, colors and hand-drawn line style. Background must remain perfectly uniform pure white RGB 255 255 255 in every frame, including all four corners. No green screen, no gray cast, no floor, no shadow, no gradient, no vignette, no texture, no border, no panel, no camera movement, no fade-in, no fade-out, no black opening frame, no text, no logo, no new object.",
+  "taskId": "c529e5c0-96a4-4773-9e65-9ae51c141495",
+  "requestId": "231f164f-e63e-9346-b4dd-eae8530bb80b",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-26T07:13:13.910Z",
+  "lastPolledAt": "2026-07-26T07:13:44.804Z",
+  "outputVideo": "outputs/tract/wan-white/tractor-white.source.mp4",
+  "completedAt": "2026-07-26T07:13:45.711Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-26 15:13:13.904",
+    "scheduledTime": "2026-07-26 15:13:15.732",
+    "endTime": "2026-07-26 15:13:29.272"
+  }
+}

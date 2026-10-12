@@ -1,0 +1,50 @@
+{
+  "pull-hook": {
+    "src": "assets/audio/replica/tract/pull-hook.mp3",
+    "duration": 8.96
+  },
+  "pull-map": {
+    "src": "assets/audio/replica/tract/pull-map.mp3",
+    "duration": 10.188
+  },
+  "attract-pull-toward": {
+    "src": "assets/audio/replica/tract/attract-pull-toward.mp3",
+    "duration": 7.967
+  },
+  "distract-pull-apart": {
+    "src": "assets/audio/replica/tract/distract-pull-apart.mp3",
+    "duration": 7.967
+  },
+  "extract-pull-out": {
+    "src": "assets/audio/replica/tract/extract-pull-out.mp3",
+    "duration": 7.732
+  },
+  "contract-pull-together": {
+    "src": "assets/audio/replica/tract/contract-pull-together.mp3",
+    "duration": 7.628
+  },
+  "subtract-pull-away": {
+    "src": "assets/audio/replica/tract/subtract-pull-away.mp3",
+    "duration": 8.934
+  },
+  "retract-pull-back": {
+    "src": "assets/audio/replica/tract/retract-pull-back.mp3",
+    "duration": 9.378
+  },
+  "tractor-pulling-machine": {
+    "src": "assets/audio/replica/tract/tractor-pulling-machine.mp3",
+    "duration": 7.654
+  },
+  "traction-pulling-force": {
+    "src": "assets/audio/replica/tract/traction-pulling-force.mp3",
+    "duration": 7.811
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/tract/example-sentences.mp3",
+    "duration": 10.58
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/tract/final-summary.mp3",
+    "duration": 16.327
+  }
+}

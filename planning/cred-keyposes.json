@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "cred-reference-edit-keyposes",
+  "model": "gpt-image-2.5-sunburst",
+  "size": "1536x864",
+  "quality": "high",
+  "sourceDir": "work/experiments/cred/keypose-source",
+  "assetDir": "public/assets/replica/cred",
+  "negativePrompt": "new characters, changed camera, changed character size, writing, labels, logos, decorative arrows, shadow, gradient, paper texture, border, inset frame, cropped limbs, extra fingers, changed eyes, ring eyes, extra limbs, mouth, lips, facial expression marks, scenery, mechanical overlay, oversized geometric props",
+  "shots": [
+    {
+      "id": "credible",
+      "reference": "assets/visual-baselines/mit-miss-sunburst/reference.png",
+      "purpose": "用证据卡展示先核验、再相信的 credible",
+      "states": [
+        {"id":"before","prompt":"The lower Xiaohei holds one small plain orange rectangular evidence card below the tabletop. The upper Xiaohei waits with one hand open but has not accepted it. Replace only the envelope with the blank evidence card; preserve the desk and both characters."},
+        {"id":"change","prompt":"The lower Xiaohei presents the same small plain orange evidence card across the same tabletop. The upper Xiaohei leans closer to examine it carefully before deciding. Keep the same card, desk, characters, camera and positions; no writing or added tools."},
+        {"id":"result","prompt":"The upper Xiaohei now holds the same plain orange evidence card after checking it; the lower Xiaohei has let go with both hands empty. Preserve the same card, desk, characters, camera and positions; no stamp or writing."}
+      ]
+    },
+    {
+      "id": "credulous",
+      "reference": "assets/visual-baselines/mit-miss-sunburst/reference.png",
+      "purpose": "用未经核验就接受说法的动作表达 credulous",
+      "states": [
+        {"id":"before","prompt":"The lower Xiaohei offers the same small plain orange claim card. The upper Xiaohei is already leaning toward it before examining it. Replace only the envelope with the blank card; preserve the desk and both characters."},
+        {"id":"change","prompt":"The upper Xiaohei quickly reaches down and takes the same blank orange claim card without checking it; the lower Xiaohei still holds its far edge. Preserve the same camera, card, desk and character positions."},
+        {"id":"result","prompt":"The upper Xiaohei now holds the unverified orange claim card close to its body; the lower Xiaohei has let go. Preserve the same camera, card, desk and character positions. No text or added symbols."}
+      ]
+    },
+    {
+      "id": "incredulous",
+      "reference": "assets/visual-baselines/mit-miss-sunburst/reference.png",
+      "purpose": "用拒绝接受的动作表达 incredulous",
+      "states": [
+        {"id":"before","prompt":"The lower Xiaohei offers the same small plain orange claim card. The upper Xiaohei pauses with one hand held back, not yet accepting it. Replace only the envelope with the blank card; preserve the desk and both characters."},
+        {"id":"change","prompt":"The upper Xiaohei leans slightly away and keeps both hands back from the same orange card; the lower Xiaohei continues to offer it. Preserve the same camera, card, desk and character positions."},
+        {"id":"result","prompt":"The same blank orange rectangular card lies flat and untouched on the tabletop, clearly separated from both characters' hands. Neither character holds or touches it. The upper character leans backward with both hands visibly held away behind its body; the lower character has empty hands. Preserve the same camera, desk, character positions and scale. Keep both faces blank with only the two white oval eyes, no mouth or expression lines."}
+      ]
+    }
+  ]
+}

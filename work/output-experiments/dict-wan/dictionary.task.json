@@ -1,0 +1,22 @@
+{
+  "id": "dictionary",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "assets/green-screen/dict/05_dictionary_book.jpg",
+  "inputSha256": "0dee8c08d62534c4a2685f9e3e28bc367453c87ca127d7b7121fe7596b4ea00b",
+  "prompt": "The single black character catches one blank speech puff with the net and guides it into the open book. Locked camera, one controlled catch, identity and props stable.",
+  "taskId": "82c3568f-242f-488d-890c-e7ac63ccf573",
+  "requestId": "ff4f52b7-3ea0-95aa-aa17-0ef52437e534",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T11:48:42.301Z",
+  "lastPolledAt": "2026-07-24T11:49:21.824Z",
+  "outputVideo": "outputs/dict-wan/dictionary.source.mp4",
+  "completedAt": "2026-07-24T11:49:24.977Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 19:48:42.257",
+    "scheduledTime": "2026-07-24 19:48:44.430",
+    "endTime": "2026-07-24 19:48:56.591"
+  }
+}

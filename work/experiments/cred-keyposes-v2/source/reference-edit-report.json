@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-09-21T08:26:17.389Z",
+  "plan": "planning/cred-keyposes-v2.json",
+  "model": "gpt-image-2.5-sunburst",
+  "size": "1536x864",
+  "quality": "high",
+  "items": [
+    {
+      "shot": "discredit",
+      "state": "result",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/cred-keyposes-v2/source/discredit-result-source.png",
+      "alpha": "public/assets/replica/cred-v2/discredit-result.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\cred-v2\\discredit-result.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.06816270616319445,
+          "opaqueCoverage": 0.0680987040201823,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.095703125,
+          "maxInnerVerticalBandRatio": 0.2821180555555556,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 335,
+            "top": 357,
+            "right": 1708,
+            "bottom": 952
+          }
+        },
+        "errors": []
+      }
+    }
+  ]
+}

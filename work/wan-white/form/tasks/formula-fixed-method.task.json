@@ -1,0 +1,17 @@
+{
+  "id": "formula-fixed-method",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260737,
+  "input": "work/wan-white/form/inputs/formula-fixed-method.png",
+  "inputSha256": "00d07c73d2d33030621b8882cbcbf74fc1194f9f0f90d93ac0dbc2fb732bcff5",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. Sparse centered floating cutout: the character pours three small blank ingredient bowls into one compact orange mold and one repeatable object emerges. Keep every bowl, hand, mold, and result fully visible with generous green padding on all sides. No table, counter, floor, baseline, scenery, edge crop, symbols, or writing. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "1d9c7728-c78a-434e-a065-30eefe11c565",
+  "requestId": "2a91d52b-8e76-92c2-a49f-d7a97d22fd42",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-29T13:55:56.863Z",
+  "lastPolledAt": "2026-07-29T13:57:42.566Z",
+  "outputVideo": "work/wan-white/form/tasks/formula-fixed-method.source.mp4",
+  "completedAt": "2026-07-29T13:57:43.270Z"
+}

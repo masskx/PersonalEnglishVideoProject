@@ -1,0 +1,22 @@
+{
+  "id": "retract-white",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "outputs/tract/wan-white/inputs/06_retract_back.jpg",
+  "inputSha256": "3cc5b88fb3d54cd230fda97555838505acc40a6840c24d466b9aeb1417061d8c",
+  "prompt": "The same black character turns the existing reel while the orange measuring tape retracts smoothly into the round case. Locked camera, native speed, one continuous five-second shot. Preserve the exact original character identity, limb count, prop count, colors and hand-drawn line style. Background must remain perfectly uniform pure white RGB 255 255 255 in every frame, including all four corners. No green screen, no gray cast, no floor, no shadow, no gradient, no vignette, no texture, no border, no panel, no camera movement, no fade-in, no fade-out, no black opening frame, no text, no logo, no new object.",
+  "taskId": "4de60600-1fb6-4159-9a62-96279cc16428",
+  "requestId": "5c93c2ca-7b9f-93f6-b418-b50d538744d2",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-26T07:13:12.155Z",
+  "lastPolledAt": "2026-07-26T07:15:41.650Z",
+  "outputVideo": "outputs/tract/wan-white/retract-white.source.mp4",
+  "completedAt": "2026-07-26T07:15:43.889Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-26 15:13:12.161",
+    "scheduledTime": "2026-07-26 15:13:40.214",
+    "endTime": "2026-07-26 15:13:52.235"
+  }
+}

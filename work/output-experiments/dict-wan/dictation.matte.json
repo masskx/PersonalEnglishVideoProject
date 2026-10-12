@@ -1,0 +1,25 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\dict-wan\\dictation.source.mp4",
+  "output": null,
+  "framesDir": "G:\\抖音卡片英语白色\\public\\assets\\replica\\dict-motion\\frames\\dictation",
+  "width": 832,
+  "height": 464,
+  "fps": 30.0,
+  "frames": 150,
+  "expectedFrames": 150,
+  "duration": 5.0,
+  "visibleCoverage": {
+    "min": 0.31468366627984085,
+    "max": 0.32195737317639256,
+    "mean": 0.3191352370689655
+  },
+  "softAlphaCoverage": {
+    "max": 0.010897608587533157,
+    "mean": 0.010730133731211317
+  },
+  "enclosedGreenCoverage": {
+    "max": 0.03783467340848806,
+    "mean": 0.03680582034703801
+  },
+  "ok": true
+}

@@ -1,0 +1,16 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\tract\\wan-white\\hook-white.source.mp4",
+  "framesDir": "G:\\抖音卡片英语白色\\outputs\\tract\\wan-white\\skill-test\\frames",
+  "width": 1664,
+  "height": 928,
+  "fps": 30,
+  "frames": 150,
+  "expectedFrames": 150,
+  "format": "RGB PNG; no alpha and no chroma key",
+  "whiteFloor": 198,
+  "neutralRange": 20,
+  "borderPixelsForcedWhite": 8,
+  "normalizedPixelPercent": 92.159,
+  "badCornerSamples": 0,
+  "ok": true
+}

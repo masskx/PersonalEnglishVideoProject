@@ -1,0 +1,22 @@
+{
+  "id": "transcribe",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "assets/green-screen/script-scrib/04_transcribe_across.jpg",
+  "inputSha256": "707b2abf2334632bee6b57f9d1c6cfc42a32f1cdbc88e5c99df40dac09865983",
+  "prompt": "Locked camera. One orange sound ribbon flows from the horn toward the character while the pen hand moves across the bridge onto the blank sheet. Preserve identity, full limbs, props, flat green plate and composition.",
+  "taskId": "f3b4dd13-ee38-478a-bfbc-ef6e75a2c184",
+  "requestId": "deda9bb9-5fc5-9317-b1ec-514c3af7f754",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T12:44:34.444Z",
+  "lastPolledAt": "2026-07-24T12:45:18.499Z",
+  "outputVideo": "outputs/script-scrib/wan/transcribe.source.mp4",
+  "completedAt": "2026-07-24T12:45:20.894Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 20:44:34.277",
+    "scheduledTime": "2026-07-24 20:44:51.154",
+    "endTime": "2026-07-24 20:45:03.602"
+  }
+}

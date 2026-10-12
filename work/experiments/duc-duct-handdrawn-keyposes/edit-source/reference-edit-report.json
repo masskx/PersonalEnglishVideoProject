@@ -1,0 +1,795 @@
+{
+  "generatedAt": "2026-09-19T14:48:59.965Z",
+  "plan": "planning/visual-baselines/duc-duct-handdrawn-keyposes-plan.json",
+  "model": "gpt-image-2.5-sunburst",
+  "size": "1536x864",
+  "quality": "high",
+  "items": [
+    {
+      "shot": "conduct",
+      "state": "before",
+      "status": "reused",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/conduct-before-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/conduct-before.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\conduct-before.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.09877565171983507,
+          "opaqueCoverage": 0.09877565171983507,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.17626953125,
+          "maxInnerVerticalBandRatio": 0.18489583333333334,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 351,
+            "top": 152,
+            "right": 1897,
+            "bottom": 1028
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "conduct",
+      "state": "change",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/conduct-change-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/conduct-change.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\conduct-change.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.09358893500434028,
+          "opaqueCoverage": 0.09358893500434028,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.12744140625,
+          "maxInnerVerticalBandRatio": 0.1840277777777778,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 289,
+            "top": 200,
+            "right": 1896,
+            "bottom": 991
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "conduct",
+      "state": "result",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/conduct-result-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/conduct-result.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\conduct-result.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.042332967122395836,
+          "opaqueCoverage": 0.042332967122395836,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.14453125,
+          "maxInnerVerticalBandRatio": 0.19270833333333334,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 1032,
+            "top": 92,
+            "right": 1898,
+            "bottom": 936
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "induce",
+      "state": "before",
+      "status": "reused",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/induce-before-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/induce-before.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\induce-before.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.190765380859375,
+          "opaqueCoverage": 0.19076241387261283,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.38623046875,
+          "maxInnerVerticalBandRatio": 0.71875,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 344,
+            "top": 147,
+            "right": 1726,
+            "bottom": 974
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "induce",
+      "state": "change",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/induce-change-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/induce-change.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\induce-change.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.17563374837239584,
+          "opaqueCoverage": 0.17562993367513022,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.26806640625,
+          "maxInnerVerticalBandRatio": 0.71875,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 435,
+            "top": 145,
+            "right": 1725,
+            "bottom": 973
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "induce",
+      "state": "result",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/induce-result-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/induce-result.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\induce-result.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.1900999281141493,
+          "opaqueCoverage": 0.1900999281141493,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.38916015625,
+          "maxInnerVerticalBandRatio": 0.71875,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 342,
+            "top": 145,
+            "right": 1725,
+            "bottom": 973
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "reduce",
+      "state": "before",
+      "status": "reused",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/reduce-before-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/reduce-before.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\reduce-before.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.15337710910373265,
+          "opaqueCoverage": 0.1533576117621528,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.24072265625,
+          "maxInnerVerticalBandRatio": 0,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 412,
+            "top": 157,
+            "right": 1477,
+            "bottom": 1012
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "reduce",
+      "state": "change",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/reduce-change-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/reduce-change.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\reduce-change.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.15386835734049478,
+          "opaqueCoverage": 0.15386835734049478,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.23828125,
+          "maxInnerVerticalBandRatio": 0,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 413,
+            "top": 157,
+            "right": 1514,
+            "bottom": 1010
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "reduce",
+      "state": "result",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/reduce-result-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/reduce-result.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\reduce-result.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.13146675957573783,
+          "opaqueCoverage": 0.13146464029947916,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.2392578125,
+          "maxInnerVerticalBandRatio": 0,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 414,
+            "top": 155,
+            "right": 1476,
+            "bottom": 1010
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "produce",
+      "state": "before",
+      "status": "reused",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/produce-before-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/produce-before.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\produce-before.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.25135209825303817,
+          "opaqueCoverage": 0.25135209825303817,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.130859375,
+          "maxInnerVerticalBandRatio": 0.4105902777777778,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 334,
+            "top": 151,
+            "right": 1831,
+            "bottom": 992
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "produce",
+      "state": "change",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/produce-change-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/produce-change.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\produce-change.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.2510939704047309,
+          "opaqueCoverage": 0.2510939704047309,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.12548828125,
+          "maxInnerVerticalBandRatio": 0.4114583333333333,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 251,
+            "top": 172,
+            "right": 1831,
+            "bottom": 983
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "produce",
+      "state": "result",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/produce-result-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/produce-result.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\produce-result.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.25988006591796875,
+          "opaqueCoverage": 0.25988006591796875,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.13134765625,
+          "maxInnerVerticalBandRatio": 0.4123263888888889,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 334,
+            "top": 148,
+            "right": 1831,
+            "bottom": 991
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "introduce",
+      "state": "before",
+      "status": "reused",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/introduce-before-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/introduce-before.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\introduce-before.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.17482037014431423,
+          "opaqueCoverage": 0.16892962985568577,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.14111328125,
+          "maxInnerVerticalBandRatio": 0.0720486111111111,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 283,
+            "top": 151,
+            "right": 1675,
+            "bottom": 1028
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "introduce",
+      "state": "change",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/introduce-change-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/introduce-change.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\introduce-change.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.1674346923828125,
+          "opaqueCoverage": 0.1674346923828125,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.13916015625,
+          "maxInnerVerticalBandRatio": 0.07899305555555555,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 293,
+            "top": 147,
+            "right": 1675,
+            "bottom": 995
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "introduce",
+      "state": "result",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/introduce-result-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/introduce-result.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\introduce-result.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.16429943508572048,
+          "opaqueCoverage": 0.1642973158094618,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.138671875,
+          "maxInnerVerticalBandRatio": 0.058159722222222224,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 284,
+            "top": 150,
+            "right": 1674,
+            "bottom": 1027
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "deduce",
+      "state": "before",
+      "status": "reused",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/deduce-before-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/deduce-before.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\deduce-before.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.12827046712239584,
+          "opaqueCoverage": 0.12823189629448783,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.130859375,
+          "maxInnerVerticalBandRatio": 0.1371527777777778,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 340,
+            "top": 153,
+            "right": 1872,
+            "bottom": 1027
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "deduce",
+      "state": "change",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/deduce-change-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/deduce-change.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\deduce-change.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.1246303982204861,
+          "opaqueCoverage": 0.1246303982204861,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.12890625,
+          "maxInnerVerticalBandRatio": 0.13194444444444445,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 329,
+            "top": 155,
+            "right": 1872,
+            "bottom": 1025
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "deduce",
+      "state": "result",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/edit-source/deduce-result-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/deduce-result.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\deduce-result.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.1254001193576389,
+          "opaqueCoverage": 0.12005996704101562,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.1474609375,
+          "maxInnerVerticalBandRatio": 0.20225694444444445,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 390,
+            "top": 148,
+            "right": 1816,
+            "bottom": 1019
+          }
+        },
+        "errors": []
+      }
+    }
+  ]
+}

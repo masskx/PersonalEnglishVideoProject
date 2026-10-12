@@ -1,0 +1,47 @@
+{
+  "attract": {
+    "frames": 150,
+    "whiteNormalizedPercent": 84.029,
+    "allSampledCornersWhite": true
+  },
+  "contract": {
+    "frames": 150,
+    "whiteNormalizedPercent": 85.47,
+    "allSampledCornersWhite": false
+  },
+  "distract": {
+    "frames": 150,
+    "whiteNormalizedPercent": 89.307,
+    "allSampledCornersWhite": true
+  },
+  "extract": {
+    "frames": 150,
+    "whiteNormalizedPercent": 85.224,
+    "allSampledCornersWhite": false
+  },
+  "hook": {
+    "frames": 150,
+    "whiteNormalizedPercent": 92.159,
+    "allSampledCornersWhite": false
+  },
+  "retract": {
+    "frames": 150,
+    "whiteNormalizedPercent": 85.346,
+    "allSampledCornersWhite": true
+  },
+  "subtract": {
+    "frames": 150,
+    "whiteNormalizedPercent": 96.115,
+    "allSampledCornersWhite": false
+  },
+  "traction": {
+    "frames": 150,
+    "whiteNormalizedPercent": 94.606,
+    "allSampledCornersWhite": false
+  },
+  "tractor": {
+    "frames": 150,
+    "whiteNormalizedPercent": 92.465,
+    "allSampledCornersWhite": false
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "reference": {
+    "path": "G:\\抖音卡片英语白色\\样片\\video_从press“压”记住这么多单词..._0.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "44100",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "172.661995",
+          "nb_frames": "3722"
+        },
+        {
+          "index": 1,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "7113/259",
+          "duration": "172.666667",
+          "nb_frames": "4742"
+        }
+      ],
+      "format": {
+        "duration": "172.666667",
+        "size": "7732718",
+        "bit_rate": "358272"
+      }
+    }
+  },
+  "candidate": {
+    "path": "G:\\抖音卡片英语白色\\outputs\\script-scrib\\script-scrib.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuvj420p",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "112.000000",
+          "nb_frames": "3360",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "112.042667",
+          "nb_frames": "5252"
+        }
+      ],
+      "format": {
+        "duration": "112.042667",
+        "size": "18000597",
+        "bit_rate": "1285267"
+      }
+    }
+  },
+  "timestamps": [
+    4.4,
+    13.5,
+    31.175,
+    56.675,
+    82.175,
+    104.8,
+    111.5
+  ],
+  "contact_sheet": {
+    "columns": 2,
+    "rows": 4,
+    "file": "contact-sheet.png"
+  }
+}

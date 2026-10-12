@@ -1,0 +1,22 @@
+{
+  "id": "traction-white",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "outputs/tract/wan-white/inputs/08_traction_grip.jpg",
+  "inputSha256": "a67c11846a8c27e2bb30e0d4a8d09214eacafb25c99af292e96ea36c2cbf99d3",
+  "prompt": "The same black character leans and pulls while the oversized boots remain gripping the surface; use a tiny controlled body bounce. Locked camera, native speed, one continuous five-second shot. Preserve the exact original character identity, limb count, prop count, colors and hand-drawn line style. Background must remain perfectly uniform pure white RGB 255 255 255 in every frame, including all four corners. No green screen, no gray cast, no floor, no shadow, no gradient, no vignette, no texture, no border, no panel, no camera movement, no fade-in, no fade-out, no black opening frame, no text, no logo, no new object.",
+  "taskId": "ca619175-4a53-479a-8192-ace8e9e1f8af",
+  "requestId": "022d6ae3-f95c-9c09-8cb6-5bdab2b53fe2",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-26T07:13:15.902Z",
+  "lastPolledAt": "2026-07-26T07:13:46.707Z",
+  "outputVideo": "outputs/tract/wan-white/traction-white.source.mp4",
+  "completedAt": "2026-07-26T07:13:47.313Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-26 15:13:15.898",
+    "scheduledTime": "2026-07-26 15:13:23.777",
+    "endTime": "2026-07-26 15:13:37.178"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\dict-wan\\indict.source.mp4",
+  "output": null,
+  "framesDir": "G:\\抖音卡片英语白色\\public\\assets\\replica\\dict-motion\\frames\\indict",
+  "width": 832,
+  "height": 464,
+  "fps": 30.0,
+  "frames": 150,
+  "expectedFrames": 150,
+  "duration": 5.0,
+  "visibleCoverage": {
+    "min": 0.3921584880636605,
+    "max": 0.42496010858753314,
+    "mean": 0.39817216166556146
+  },
+  "softAlphaCoverage": {
+    "max": 0.021424796916445624,
+    "mean": 0.020167768429487185
+  },
+  "enclosedGreenCoverage": {
+    "max": 0.029949643567639257,
+    "mean": 0.0010806255526083113
+  },
+  "ok": true
+}

@@ -1,0 +1,24 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\ject-wan-motion\\03_project_forward.source.mp4",
+  "output": "G:\\抖音卡片英语白色\\public\\assets\\replica\\ject-motion\\03_project_forward.webm",
+  "width": 832,
+  "height": 464,
+  "fps": 30.0,
+  "frames": 150,
+  "expectedFrames": 150,
+  "duration": 5.0,
+  "visibleCoverage": {
+    "min": 0.04008050812334218,
+    "max": 0.061753978779840846,
+    "mean": 0.04180065691312998
+  },
+  "softAlphaCoverage": {
+    "max": 0.015891806200265254,
+    "mean": 0.00788370012709991
+  },
+  "enclosedGreenCoverage": {
+    "max": 0.0012977660809018567,
+    "mean": 0.0005613291611405835
+  },
+  "ok": true
+}

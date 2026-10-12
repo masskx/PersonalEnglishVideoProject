@@ -1,0 +1,62 @@
+{
+  "project": "struct",
+  "orientation": "landscape",
+  "input": "outputs/struct/cover-landscape.png",
+  "codec": "png",
+  "width": 1200,
+  "height": 900,
+  "pixelFormat": "rgb24",
+  "corners": [
+    {
+      "x": 0,
+      "y": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 1199,
+      "y": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 0,
+      "y": 899,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 1199,
+      "y": 899,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    }
+  ],
+  "wordCount": 8,
+  "words": [
+    "construct",
+    "construction",
+    "structure",
+    "instruct",
+    "instruction",
+    "reconstruct",
+    "destruct",
+    "obstruct"
+  ],
+  "wordHighlights": null,
+  "illustration": "assets/replica/struct/00_build_hook.png",
+  "ok": true,
+  "errors": []
+}

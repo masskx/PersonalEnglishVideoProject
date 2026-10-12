@@ -1,0 +1,221 @@
+{
+  "provider": "DashScope",
+  "voice": {
+    "model": "cosyvoice-v3-flash",
+    "voice": "longanhuan",
+    "rate": 1.1,
+    "pitch": 1,
+    "volume": 68,
+    "format": "mp3"
+  },
+  "englishRate": 1.02,
+  "timeline": {
+    "fps": 30,
+    "totalFrames": 5239,
+    "cues": [
+      {
+        "id": "hook",
+        "panel": "hook",
+        "voice": "四级翻译遇到中文长句，别从第一个字一路硬翻。给我两分钟，先把能站稳的英语主干找出来。",
+        "caption": "中文长句怎么翻？先让英语主干站稳。",
+        "from": 0,
+        "frames": 224,
+        "audioFrames": 219,
+        "src": "assets/audio/cet4-translation-main-clause/hook-30c29e0220ae.mp3",
+        "seconds": 7.288156
+      },
+      {
+        "id": "task",
+        "panel": "task",
+        "voice": "看一道原创练习。近年来，越来越多的年轻人选择在周末走进博物馆，因为这种方式既能帮助他们了解本地历史，也能让忙碌的生活慢下来。",
+        "caption": "原创四级风格练习 · 参考译法不唯一",
+        "from": 224,
+        "frames": 326,
+        "audioFrames": 321,
+        "src": "assets/audio/cet4-translation-main-clause/task-8699905e424f.mp3",
+        "seconds": 10.684063
+      },
+      {
+        "id": "cut-intro",
+        "panel": "cut",
+        "voice": "这句话信息很多。先暂时放下时间、周末和后面的原因，只问一句：谁，做了什么？",
+        "caption": "先圈主干：谁，做了什么？",
+        "from": 550,
+        "frames": 211,
+        "audioFrames": 206,
+        "src": "assets/audio/cet4-translation-main-clause/cut-intro-a307d5e8a805.mp3",
+        "seconds": 6.844063
+      },
+      {
+        "id": "main-cn",
+        "panel": "main",
+        "voice": "主干是：越来越多的年轻人选择走进博物馆。 主语是越来越多的年轻人，动作是选择参观博物馆。",
+        "caption": "主语 + 动作：年轻人选择参观博物馆",
+        "from": 761,
+        "frames": 237,
+        "audioFrames": 232,
+        "src": "assets/audio/cet4-translation-main-clause/main-cn-003e2fbe58f9.mp3",
+        "seconds": 7.706094
+      },
+      {
+        "id": "main-en",
+        "panel": "main",
+        "voice": "An increasing number of young people have chosen to visit museums.",
+        "caption": "An increasing number of young people + have chosen + to visit museums",
+        "english": true,
+        "from": 998,
+        "frames": 121,
+        "audioFrames": 116,
+        "src": "assets/audio/cet4-translation-main-clause/main-en-025974b457d2.mp3",
+        "seconds": 3.84
+      },
+      {
+        "id": "time",
+        "panel": "time",
+        "voice": "再补“近年来”。这个趋势从过去延续到现在，用现在完成时很顺。于是 choose 变成 have chosen。这里也可以根据语境换用一般现在时，关键是前后一致。",
+        "caption": "近年来 → 趋势延续至今 → have chosen",
+        "from": 1119,
+        "frames": 381,
+        "audioFrames": 376,
+        "src": "assets/audio/cet4-translation-main-clause/time-808b42d3411f.mp3",
+        "seconds": 12.512625
+      },
+      {
+        "id": "museum",
+        "panel": "museum",
+        "voice": "“走进博物馆”在这里说的是参观。英语直接用 visit museums 更自然。weekend 前面用 on，写成 on weekends。",
+        "caption": "走进博物馆 → visit museums · 在周末 → on weekends",
+        "from": 1500,
+        "frames": 269,
+        "audioFrames": 264,
+        "src": "assets/audio/cet4-translation-main-clause/museum-089947f88739.mp3",
+        "seconds": 8.777125
+      },
+      {
+        "id": "reason",
+        "panel": "reason",
+        "voice": "接着处理“因为这种方式”。如果直译成 because this way，句子会很生硬。前面已经有一个动作，可以用 because doing so，直接指代前面的选择。",
+        "caption": "因为这种方式 → because doing so",
+        "from": 1769,
+        "frames": 310,
+        "audioFrames": 305,
+        "src": "assets/audio/cet4-translation-main-clause/reason-b83474ffbdb5.mp3",
+        "seconds": 10.1355
+      },
+      {
+        "id": "benefit-one",
+        "panel": "benefits",
+        "voice": "后面有两个并列好处。第一个，“帮助他们了解本地历史”，写成 helps them learn about local history。",
+        "caption": "好处一：helps them learn about local history",
+        "from": 2079,
+        "frames": 216,
+        "audioFrames": 211,
+        "src": "assets/audio/cet4-translation-main-clause/benefit-one-7c4266783963.mp3",
+        "seconds": 7.026938
+      },
+      {
+        "id": "benefit-two",
+        "panel": "benefits",
+        "voice": "第二个，“让忙碌的生活慢下来”，可以写 slow down their busy lives。两个动词 learn 和 slow down 共用 helps，结构就齐了。",
+        "caption": "好处二：slow down their busy lives",
+        "from": 2295,
+        "frames": 258,
+        "audioFrames": 253,
+        "src": "assets/audio/cet4-translation-main-clause/benefit-two-53bbd8207176.mp3",
+        "seconds": 8.411406
+      },
+      {
+        "id": "assemble",
+        "panel": "assemble",
+        "voice": "把这些部分接回去：In recent years, an increasing number of young people have chosen to visit museums on weekends, because doing so helps them learn about local history and slow down their busy lives.",
+        "caption": "主干站稳，再把时间和原因接回来",
+        "english": true,
+        "from": 2553,
+        "frames": 364,
+        "audioFrames": 359,
+        "src": "assets/audio/cet4-translation-main-clause/assemble-18c0a11fca8f.mp3",
+        "seconds": 11.964063
+      },
+      {
+        "id": "literal",
+        "panel": "literal",
+        "voice": "对照一个常见的逐字版本。choose in weekends、walk into museums、let busy life slow down，都能看出中文词序留下的痕迹。修改时逐项检查搭配，句子会干净很多。",
+        "caption": "逐字翻译留下的三个痕迹：介词 · 动词 · 搭配",
+        "from": 2917,
+        "frames": 375,
+        "audioFrames": 370,
+        "src": "assets/audio/cet4-translation-main-clause/literal-8b24a0eb6396.mp3",
+        "seconds": 12.303656
+      },
+      {
+        "id": "practice",
+        "panel": "practice",
+        "voice": "轮到你。如今，许多大学生利用假期参加志愿活动，因为这些经历不仅能锻炼他们的沟通能力，也能让他们更好地了解社会。 先停三秒，只找主干。",
+        "caption": "迁移练习：先找“谁，做了什么”",
+        "pauseAfter": 3,
+        "from": 3292,
+        "frames": 420,
+        "audioFrames": 330,
+        "src": "assets/audio/cet4-translation-main-clause/practice-bf7990283ad8.mp3",
+        "seconds": 10.997531
+      },
+      {
+        "id": "practice-main",
+        "panel": "practice-main",
+        "voice": "主干是：许多大学生参加志愿活动。 可以先写 Many college students take part in volunteer activities。",
+        "caption": "Many college students + take part in + volunteer activities",
+        "from": 3712,
+        "frames": 228,
+        "audioFrames": 223,
+        "src": "assets/audio/cet4-translation-main-clause/practice-main-7e0153c6390d.mp3",
+        "seconds": 7.41875
+      },
+      {
+        "id": "practice-build",
+        "panel": "practice-main",
+        "voice": "然后补 during their vacations，再接 because these experiences。后面两个好处并列：improve their communication skills，和 help them better understand society。",
+        "caption": "假期 + 原因 + 两个并列好处",
+        "from": 3940,
+        "frames": 303,
+        "audioFrames": 298,
+        "src": "assets/audio/cet4-translation-main-clause/practice-build-821d439a4f41.mp3",
+        "seconds": 9.926531
+      },
+      {
+        "id": "answer",
+        "panel": "answer",
+        "voice": "Today, many college students take part in volunteer activities during their vacations, because these experiences improve their communication skills and help them better understand society.",
+        "caption": "一种参考译法 · 答案不唯一",
+        "english": true,
+        "from": 4243,
+        "frames": 322,
+        "audioFrames": 317,
+        "src": "assets/audio/cet4-translation-main-clause/answer-88148b09b4e4.mp3",
+        "seconds": 10.553469
+      },
+      {
+        "id": "check",
+        "panel": "check",
+        "voice": "考场上用四步检查。第一，主干能不能单独成立；第二，时间和地点放对位置；第三，中文动词有没有换成自然搭配；第四，并列部分的形式是否一致。",
+        "caption": "主干成立 · 修饰归位 · 搭配自然 · 并列一致",
+        "from": 4565,
+        "frames": 357,
+        "audioFrames": 352,
+        "src": "assets/audio/cet4-translation-main-clause/check-4751b80e8c0a.mp3",
+        "seconds": 11.702844
+      },
+      {
+        "id": "close",
+        "panel": "close",
+        "voice": "再遇到长句，就先写出谁做什么，再补修饰。今天这道原创练习和参考译文已经放进配套练习单，你可以遮住答案再做一次。",
+        "caption": "先主干，后修饰。把中文长句拆开再翻。",
+        "from": 4922,
+        "frames": 317,
+        "audioFrames": 294,
+        "src": "assets/audio/cet4-translation-main-clause/close-cf395bd87426.mp3",
+        "seconds": 9.795906
+      }
+    ]
+  },
+  "alignment": "Cue boundaries measured with ffprobe; narration is not playback accelerated."
+}

@@ -1,0 +1,65 @@
+{
+  "project": "bouba-kiki",
+  "orientation": "landscape",
+  "input": "outputs/bouba-kiki/cover-landscape.png",
+  "codec": "png",
+  "width": 1200,
+  "height": 900,
+  "pixelFormat": "rgb24",
+  "corners": [
+    {
+      "x": 0,
+      "y": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 1199,
+      "y": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 0,
+      "y": 899,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 1199,
+      "y": 899,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    }
+  ],
+  "wordCount": 5,
+  "words": [
+    "cr-",
+    "gl-",
+    "sl-",
+    "sn-",
+    "sp-"
+  ],
+  "wordHighlights": [
+    "cr",
+    "gl",
+    "sl",
+    "sn",
+    "sp"
+  ],
+  "illustration": "assets/replica/bouba-kiki/02_thinking_figure.png",
+  "ok": true,
+  "errors": []
+}

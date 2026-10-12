@@ -1,0 +1,293 @@
+{
+  "date": "2026-09-12",
+  "from": "output/interrupt",
+  "to": "work/experiments/meme-vocab/interrupt",
+  "metadataBackup": "archive/project-organization-2026-09-12/prototype-metadata",
+  "originalFiles": [
+    {
+      "path": "assets-manifest.json",
+      "bytes": 2381,
+      "sha256": "07c3ca3773fa00694ef7c6be0476990df9579e6f1283025ac44d9b88d75067e6"
+    },
+    {
+      "path": "audio-timing.json",
+      "bytes": 3054,
+      "sha256": "b64e782496e62fd776d1dc9014bbcba03939edf71083a94021dce0741c2be378"
+    },
+    {
+      "path": "final-with-tts.mp4",
+      "bytes": 1389850,
+      "sha256": "a0acbbf0db5dbf51a5499713a205a171899a84358d98914ab85398aecfaff381"
+    },
+    {
+      "path": "final.mp4",
+      "bytes": 1567217,
+      "sha256": "c8ffd30e6c0f7fcf54589d33367fdee3790d572f8d25150201bc95403f1a7fbb"
+    },
+    {
+      "path": "hooks.md",
+      "bytes": 633,
+      "sha256": "9028d5a23085b603c1bcb91ba1d816010713e7fabbc474aa03003221a81bd145"
+    },
+    {
+      "path": "jimeng-prompts.md",
+      "bytes": 9089,
+      "sha256": "2b492043d3a671e62205c1a4792432816090e6c2f05ffb6552f9798b102c51b0"
+    },
+    {
+      "path": "publish-copy.md",
+      "bytes": 559,
+      "sha256": "4a1819d7c8e390f6df716da018d1fe41c347d55ffd6ac2bb19bb89029aa28396"
+    },
+    {
+      "path": "qa-report.json",
+      "bytes": 1905,
+      "sha256": "04c017c7d45293b12f79d4b4a25c7194ad7e754e1b10625b8fbad1fb2eea12e5"
+    },
+    {
+      "path": "qa-report.md",
+      "bytes": 1520,
+      "sha256": "2370fdf6b23786022c2dd04e54adcbe250e90f3e90e1787f6eef440a07b47238"
+    },
+    {
+      "path": "schema.json",
+      "bytes": 1955,
+      "sha256": "e355a0dd2f7bb42f7c3c5d391cdec50fc2d664d127bf40385d2171357397c016"
+    },
+    {
+      "path": "script.md",
+      "bytes": 1647,
+      "sha256": "d796abef90869742ba7fb07dedfe5b5f943f63b60715e646136687e6fdc188b5"
+    },
+    {
+      "path": "storyboard.json",
+      "bytes": 21028,
+      "sha256": "52e1a11bd7850d66cac610bfb3a59049da31ff087e5aa1d7db4311f31cd8c196"
+    },
+    {
+      "path": "video-config.json",
+      "bytes": 28650,
+      "sha256": "1382bdc071ae69899f938beac12107e99aa467c4e37ffdd29731d84e78196b99"
+    },
+    {
+      "path": "audio/01-hook.wav",
+      "bytes": 276968,
+      "sha256": "f103bd8383b11056f62c45efcae4481da65b316b8a663f50eb4e7d83e698dc2b"
+    },
+    {
+      "path": "audio/02-story.wav",
+      "bytes": 518880,
+      "sha256": "8a07987002e8a35d6166e2ad90a3a4d96bcab601f06d7884a83f0684d837f8a7"
+    },
+    {
+      "path": "audio/03-word-reveal.wav",
+      "bytes": 738572,
+      "sha256": "6b7aed213d0fb46054263e92649b2c2296c0e7c15f7e3dc496ff89330cd45fe6"
+    },
+    {
+      "path": "audio/04-example.wav",
+      "bytes": 545592,
+      "sha256": "de80c29e173926b2299f7bd9ad44df32916ff5f65b1f8776533f54996a82b6c3"
+    },
+    {
+      "path": "audio/05-quiz.wav",
+      "bytes": 675488,
+      "sha256": "a63b8c91436d96d4d096929df773e65dd5bf163330f23ce49bfcb864981cca1d"
+    },
+    {
+      "path": "audio/narration.wav",
+      "bytes": 3187116,
+      "sha256": "55199d7682e56f69737b9b30a466b5b703e7b66e242aa25e9b231c9e51496bdd"
+    }
+  ],
+  "preservationStatus": "verified",
+  "publicAssets": [
+    {
+      "path": "public/assets/meme-vocab/interrupt/placeholder.svg",
+      "sha256": "8f339d58b84fa582fdaac83ac9e245b05d07c273d83682b8286aca1f7dd1ea4e"
+    },
+    {
+      "path": "public/assets/audio/meme-vocab/interrupt/narration.wav",
+      "sha256": "55199d7682e56f69737b9b30a466b5b703e7b66e242aa25e9b231c9e51496bdd"
+    },
+    {
+      "path": "public/assets/audio/meme-vocab/interrupt/01-hook.wav",
+      "sha256": "f103bd8383b11056f62c45efcae4481da65b316b8a663f50eb4e7d83e698dc2b"
+    },
+    {
+      "path": "public/assets/audio/meme-vocab/interrupt/02-story.wav",
+      "sha256": "8a07987002e8a35d6166e2ad90a3a4d96bcab601f06d7884a83f0684d837f8a7"
+    },
+    {
+      "path": "public/assets/audio/meme-vocab/interrupt/03-word-reveal.wav",
+      "sha256": "6b7aed213d0fb46054263e92649b2c2296c0e7c15f7e3dc496ff89330cd45fe6"
+    },
+    {
+      "path": "public/assets/audio/meme-vocab/interrupt/04-example.wav",
+      "sha256": "de80c29e173926b2299f7bd9ad44df32916ff5f65b1f8776533f54996a82b6c3"
+    },
+    {
+      "path": "public/assets/audio/meme-vocab/interrupt/05-quiz.wav",
+      "sha256": "a63b8c91436d96d4d096929df773e65dd5bf163330f23ce49bfcb864981cca1d"
+    }
+  ],
+  "metadataChanges": [
+    {
+      "file": "video-config.json",
+      "fields": [
+        "input.outputDirectory",
+        "assets.assets[*].path",
+        "assets.assets[*].useTime"
+      ]
+    },
+    {
+      "file": "assets-manifest.json",
+      "fields": [
+        "assets[*].path",
+        "assets[*].useTime"
+      ]
+    },
+    {
+      "file": "schema.json",
+      "fields": [
+        "properties.outputDirectory.default"
+      ]
+    }
+  ],
+  "metadataNotes": [
+    "audio-timing.json already uses portable public and package-relative paths and was preserved byte-for-byte.",
+    "The original 22-second estimated storyboard/timeline was preserved; asset useTime now follows the existing 542-frame / 18.067-second resolved timeline.",
+    "All five asset entries remain placeholder with replacementRequired=true; no content or media was generated.",
+    "All original JSON files were backed up before editing."
+  ],
+  "fileVerification": [
+    {
+      "path": "assets-manifest.json",
+      "sha256After": "996ec9fc41cd37952e5c4ce8bcdbc646d86ba72761e28e7f8c093102232863cd",
+      "unchanged": false
+    },
+    {
+      "path": "audio-timing.json",
+      "sha256After": "b64e782496e62fd776d1dc9014bbcba03939edf71083a94021dce0741c2be378",
+      "unchanged": true
+    },
+    {
+      "path": "final-with-tts.mp4",
+      "sha256After": "a0acbbf0db5dbf51a5499713a205a171899a84358d98914ab85398aecfaff381",
+      "unchanged": true
+    },
+    {
+      "path": "final.mp4",
+      "sha256After": "c8ffd30e6c0f7fcf54589d33367fdee3790d572f8d25150201bc95403f1a7fbb",
+      "unchanged": true
+    },
+    {
+      "path": "hooks.md",
+      "sha256After": "9028d5a23085b603c1bcb91ba1d816010713e7fabbc474aa03003221a81bd145",
+      "unchanged": true
+    },
+    {
+      "path": "jimeng-prompts.md",
+      "sha256After": "2b492043d3a671e62205c1a4792432816090e6c2f05ffb6552f9798b102c51b0",
+      "unchanged": true
+    },
+    {
+      "path": "publish-copy.md",
+      "sha256After": "4a1819d7c8e390f6df716da018d1fe41c347d55ffd6ac2bb19bb89029aa28396",
+      "unchanged": true
+    },
+    {
+      "path": "qa-report.json",
+      "sha256After": "04c017c7d45293b12f79d4b4a25c7194ad7e754e1b10625b8fbad1fb2eea12e5",
+      "unchanged": true
+    },
+    {
+      "path": "qa-report.md",
+      "sha256After": "2370fdf6b23786022c2dd04e54adcbe250e90f3e90e1787f6eef440a07b47238",
+      "unchanged": true
+    },
+    {
+      "path": "schema.json",
+      "sha256After": "9aa8c05289933da4b1a4a86d42f589dc902e0e34b25a13810228d6af75bf6379",
+      "unchanged": false
+    },
+    {
+      "path": "script.md",
+      "sha256After": "d796abef90869742ba7fb07dedfe5b5f943f63b60715e646136687e6fdc188b5",
+      "unchanged": true
+    },
+    {
+      "path": "storyboard.json",
+      "sha256After": "52e1a11bd7850d66cac610bfb3a59049da31ff087e5aa1d7db4311f31cd8c196",
+      "unchanged": true
+    },
+    {
+      "path": "video-config.json",
+      "sha256After": "0157ecea65eaf6b5e182a6ad4ba73df5cb76771e46687a8ff4f5e6fa213c6f4c",
+      "unchanged": false
+    },
+    {
+      "path": "audio/01-hook.wav",
+      "sha256After": "f103bd8383b11056f62c45efcae4481da65b316b8a663f50eb4e7d83e698dc2b",
+      "unchanged": true
+    },
+    {
+      "path": "audio/02-story.wav",
+      "sha256After": "8a07987002e8a35d6166e2ad90a3a4d96bcab601f06d7884a83f0684d837f8a7",
+      "unchanged": true
+    },
+    {
+      "path": "audio/03-word-reveal.wav",
+      "sha256After": "6b7aed213d0fb46054263e92649b2c2296c0e7c15f7e3dc496ff89330cd45fe6",
+      "unchanged": true
+    },
+    {
+      "path": "audio/04-example.wav",
+      "sha256After": "de80c29e173926b2299f7bd9ad44df32916ff5f65b1f8776533f54996a82b6c3",
+      "unchanged": true
+    },
+    {
+      "path": "audio/05-quiz.wav",
+      "sha256After": "a63b8c91436d96d4d096929df773e65dd5bf163330f23ce49bfcb864981cca1d",
+      "unchanged": true
+    },
+    {
+      "path": "audio/narration.wav",
+      "sha256After": "55199d7682e56f69737b9b30a466b5b703e7b66e242aa25e9b231c9e51496bdd",
+      "unchanged": true
+    }
+  ],
+  "preservationSummary": {
+    "originalFiles": 19,
+    "unchangedOriginalFiles": 16,
+    "authorizedMetadataEdits": 3,
+    "originalJsonBackupsVerified": 6,
+    "mediaFilesUnchanged": 8,
+    "publicAssetsVerifiedUnchanged": 7,
+    "teachingContentUnchanged": true,
+    "audioTimingUnchanged": true,
+    "storyboardUnchanged": true,
+    "historicalQaUnchanged": true
+  },
+  "validation": {
+    "npmTest": "PASS",
+    "npmLint": "PASS",
+    "qaStatus": "PASS_WITH_WARNINGS",
+    "qaReportDirectory": "docs/project-organization/prototype-qa",
+    "qaInputVideo": "work/experiments/meme-vocab/interrupt/final-with-tts.mp4",
+    "qaWarnings": [
+      "placeholder assets require replacement: interrupt-hook, interrupt-meeting, interrupt-reveal, interrupt-usage, interrupt-quiz",
+      "render is low-resolution draft: 540x960"
+    ],
+    "renderingPerformed": false,
+    "generationPerformed": false
+  },
+  "rollback": {
+    "move": {
+      "from": "work/experiments/meme-vocab/interrupt",
+      "to": "output/interrupt"
+    },
+    "restoreMetadataFrom": "archive/project-organization-2026-09-12/prototype-metadata",
+    "note": "Before moving back, verify both absolute locations are within this repository and the original location does not exist. Restore backed-up JSON files if the original metadata is needed. Reverting source paths must accompany a full rollback."
+  }
+}

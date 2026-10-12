@@ -1,0 +1,50 @@
+{
+  "say-hook": {
+    "src": "assets/audio/replica/dict/say-hook.mp3",
+    "duration": 7.941
+  },
+  "speech-map": {
+    "src": "assets/audio/replica/dict/speech-map.mp3",
+    "duration": 9.953
+  },
+  "predict-before-say": {
+    "src": "assets/audio/replica/dict/predict-before-say.mp3",
+    "duration": 7.393
+  },
+  "contradict-opposite-say": {
+    "src": "assets/audio/replica/dict/contradict-opposite-say.mp3",
+    "duration": 8.255
+  },
+  "verdict-true-say": {
+    "src": "assets/audio/replica/dict/verdict-true-say.mp3",
+    "duration": 7.811
+  },
+  "dictate-command-say": {
+    "src": "assets/audio/replica/dict/dictate-command-say.mp3",
+    "duration": 9.247
+  },
+  "dictionary-word-book": {
+    "src": "assets/audio/replica/dict/dictionary-word-book.mp3",
+    "duration": 7.967
+  },
+  "diction-word-choice": {
+    "src": "assets/audio/replica/dict/diction-word-choice.mp3",
+    "duration": 8.046
+  },
+  "dictation-hear-write": {
+    "src": "assets/audio/replica/dict/dictation-hear-write.mp3",
+    "duration": 9.561
+  },
+  "indict-formal-charge": {
+    "src": "assets/audio/replica/dict/indict-formal-charge.mp3",
+    "duration": 8.124
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/dict/example-sentences.mp3",
+    "duration": 11.233
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/dict/final-summary.mp3",
+    "duration": 16.797
+  }
+}

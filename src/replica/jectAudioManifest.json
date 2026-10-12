@@ -1,0 +1,46 @@
+{
+  "throw-hook": {
+    "src": "assets/audio/replica/ject/throw-hook.mp3",
+    "duration": 7.758
+  },
+  "prefix-direction-machine": {
+    "src": "assets/audio/replica/ject/prefix-direction-machine.mp3",
+    "duration": 8.777
+  },
+  "reject-throw-back": {
+    "src": "assets/audio/replica/ject/reject-throw-back.mp3",
+    "duration": 9.3
+  },
+  "project-throw-forward": {
+    "src": "assets/audio/replica/ject/project-throw-forward.mp3",
+    "duration": 10.919
+  },
+  "inject-throw-in": {
+    "src": "assets/audio/replica/ject/inject-throw-in.mp3",
+    "duration": 9.247
+  },
+  "object-throw-against": {
+    "src": "assets/audio/replica/ject/object-throw-against.mp3",
+    "duration": 11.18
+  },
+  "subject-throw-under": {
+    "src": "assets/audio/replica/ject/subject-throw-under.mp3",
+    "duration": 11.311
+  },
+  "noun-verb-stress": {
+    "src": "assets/audio/replica/ject/noun-verb-stress.mp3",
+    "duration": 9.404
+  },
+  "prefix-map-recap": {
+    "src": "assets/audio/replica/ject/prefix-map-recap.mp3",
+    "duration": 10.58
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/ject/example-sentences.mp3",
+    "duration": 10.214
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/ject/final-summary.mp3",
+    "duration": 8.124
+  }
+}

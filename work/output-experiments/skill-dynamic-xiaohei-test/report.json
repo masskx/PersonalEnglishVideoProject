@@ -1,0 +1,22 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\ject-wan-test\\00_throw_hook-clean.source.mp4",
+  "framesDir": "G:\\抖音卡片英语白色\\outputs\\skill-dynamic-xiaohei-test\\frames",
+  "sourceWidth": 832,
+  "sourceHeight": 464,
+  "outputWidth": 1664,
+  "outputHeight": 928,
+  "fps": 30.0,
+  "frames": 150,
+  "expectedFrames": 150,
+  "duration": 5.0,
+  "visibleCoverage": {
+    "min": 0.02541134781167109,
+    "max": 0.03920755968169761,
+    "mean": 0.034775796446728555
+  },
+  "softAlphaCoverage": {
+    "max": 0.0071131051061007955,
+    "mean": 0.005389278017241379
+  },
+  "ok": true
+}

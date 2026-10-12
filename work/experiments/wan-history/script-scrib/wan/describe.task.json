@@ -1,0 +1,22 @@
+{
+  "id": "describe",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "assets/green-screen/script-scrib/01_describe_trace.jpg",
+  "inputSha256": "8b28f1d9dde5de51f1f619100b6169218b2cd51daa4b49eb635471b7f110c6c7",
+  "prompt": "Locked camera. The black character looks from the teapot to the blank sheet and slowly draws one smooth orange arc. The teapot stays still. Preserve identity, full limbs, props, flat green plate and composition.",
+  "taskId": "95213408-95b8-4273-9ee8-f06fc1ec7c3c",
+  "requestId": "af4e2640-9acc-9c3c-93bf-b4ff795d635e",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T12:44:28.958Z",
+  "lastPolledAt": "2026-07-24T12:45:13.119Z",
+  "outputVideo": "outputs/script-scrib/wan/describe.source.mp4",
+  "completedAt": "2026-07-24T12:45:14.421Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 20:44:28.780",
+    "scheduledTime": "2026-07-24 20:44:28.829",
+    "endTime": "2026-07-24 20:44:41.167"
+  }
+}

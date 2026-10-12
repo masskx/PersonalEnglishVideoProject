@@ -1,0 +1,22 @@
+{
+  "id": "00_throw_hook-clean",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 2202,
+  "input": "assets/wan-input/ject/00_throw_hook.png",
+  "inputSha256": "d10cbb922ae7e92d852cbc5cd1aca7a1022e221e5a32e1cd0190c834a8e1c34d",
+  "prompt": "固定镜头，背景是一整块完全均匀、没有纹理、没有边框、没有地面线、没有阴影的纯绿色。保持原始手绘小黑角色、白色方块和构图一致。小黑先轻微蓄力，再用双手把白色方块向右抛出，身体自然回弹并站稳。动作幅度克制，线条稳定，四肢和物体始终完整，不新增任何元素。",
+  "taskId": "b1fc278b-4889-420c-9b22-4fc0d501f3c8",
+  "requestId": "6472d24e-62ae-9886-b8af-3e5704192df7",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T09:28:53.656Z",
+  "lastPolledAt": "2026-07-24T09:29:07.563Z",
+  "outputVideo": "outputs/ject-wan-test/00_throw_hook-clean.source.mp4",
+  "completedAt": "2026-07-24T09:29:12.563Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 17:28:53.599",
+    "scheduledTime": "2026-07-24 17:28:53.647",
+    "endTime": "2026-07-24 17:29:06.041"
+  }
+}

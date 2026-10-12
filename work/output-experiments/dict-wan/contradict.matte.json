@@ -1,0 +1,25 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\dict-wan\\contradict.source.mp4",
+  "output": null,
+  "framesDir": "G:\\抖音卡片英语白色\\public\\assets\\replica\\dict-motion\\frames\\contradict",
+  "width": 832,
+  "height": 464,
+  "fps": 30.0,
+  "frames": 150,
+  "expectedFrames": 150,
+  "duration": 5.0,
+  "visibleCoverage": {
+    "min": 0.10342755305039787,
+    "max": 0.1090253025530504,
+    "mean": 0.10792908308465961
+  },
+  "softAlphaCoverage": {
+    "max": 0.010861343667108753,
+    "mean": 0.009769562334217507
+  },
+  "enclosedGreenCoverage": {
+    "max": 0.0006139132957559682,
+    "mean": 0.00043927180039787805
+  },
+  "ok": true
+}

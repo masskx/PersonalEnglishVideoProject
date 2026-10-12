@@ -1,0 +1,25 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\tract\\wan\\distract.source.mp4",
+  "output": null,
+  "framesDir": "G:\\抖音卡片英语白色\\public\\assets\\replica\\tract-motion\\frames\\distract",
+  "width": 832,
+  "height": 464,
+  "fps": 30.0,
+  "frames": 150,
+  "expectedFrames": 150,
+  "duration": 5.0,
+  "visibleCoverage": {
+    "min": 0.1271189074933687,
+    "max": 1.0,
+    "mean": 0.3751687009560124
+  },
+  "softAlphaCoverage": {
+    "max": 0.036443654675066314,
+    "mean": 0.016218881244473918
+  },
+  "enclosedGreenCoverage": {
+    "max": 0.03551371850132626,
+    "mean": 0.009361357482316535
+  },
+  "ok": true
+}

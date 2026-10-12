@@ -1,0 +1,25 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\tract\\wan\\tractor.source.mp4",
+  "output": null,
+  "framesDir": "G:\\抖音卡片英语白色\\public\\assets\\replica\\tract-motion\\frames\\tractor",
+  "width": 832,
+  "height": 464,
+  "fps": 30.0,
+  "frames": 150,
+  "expectedFrames": 150,
+  "duration": 5.0,
+  "visibleCoverage": {
+    "min": 0.06682847728779841,
+    "max": 1.0,
+    "mean": 0.1123640065484085
+  },
+  "softAlphaCoverage": {
+    "max": 0.009009242374005305,
+    "mean": 0.007561633095711757
+  },
+  "enclosedGreenCoverage": {
+    "max": 0.01671035726127321,
+    "mean": 0.012201038903625111
+  },
+  "ok": true
+}

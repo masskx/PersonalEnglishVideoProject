@@ -1,0 +1,50 @@
+{
+  "see-hook": {
+    "src": "assets/audio/replica/vis-vid/see-hook.mp3",
+    "duration": 8.15
+  },
+  "two-form-map": {
+    "src": "assets/audio/replica/vis-vid/two-form-map.mp3",
+    "duration": 10.632
+  },
+  "vision-image-seen": {
+    "src": "assets/audio/replica/vis-vid/vision-image-seen.mp3",
+    "duration": 7.837
+  },
+  "visible-able-seen": {
+    "src": "assets/audio/replica/vis-vid/visible-able-seen.mp3",
+    "duration": 10.083
+  },
+  "video-i-see": {
+    "src": "assets/audio/replica/vis-vid/video-i-see.mp3",
+    "duration": 8.751
+  },
+  "visual-related-seeing": {
+    "src": "assets/audio/replica/vis-vid/visual-related-seeing.mp3",
+    "duration": 7.837
+  },
+  "evidence-seen-proof": {
+    "src": "assets/audio/replica/vis-vid/evidence-seen-proof.mp3",
+    "duration": 10.58
+  },
+  "evident-clearly-seen": {
+    "src": "assets/audio/replica/vis-vid/evident-clearly-seen.mp3",
+    "duration": 8.855
+  },
+  "visit-go-see": {
+    "src": "assets/audio/replica/vis-vid/visit-go-see.mp3",
+    "duration": 9.482
+  },
+  "revise-see-again": {
+    "src": "assets/audio/replica/vis-vid/revise-see-again.mp3",
+    "duration": 10.005
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/vis-vid/example-sentences.mp3",
+    "duration": 12.513
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/vis-vid/final-summary.mp3",
+    "duration": 15.517
+  }
+}

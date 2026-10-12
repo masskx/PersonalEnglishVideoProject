@@ -1,0 +1,100 @@
+{
+  "ten-tain-hook": {
+    "src": "assets/audio/replica/ten-tain/ten-tain-hook.mp3",
+    "duration": 10.214,
+    "textHash": "f503840a710aa6b12481118849e20f0b609ca7ffac3c4293bb5712a16e5e9a82",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:01:38.626Z"
+  },
+  "ten-tain-root-map": {
+    "src": "assets/audio/replica/ten-tain/ten-tain-root-map.mp3",
+    "duration": 11.781,
+    "textHash": "d362b42862d21aa40b987fca59f69d8d84927d17a2d2f871ba4030675f175517",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:01:39.246Z"
+  },
+  "contain-word": {
+    "src": "assets/audio/replica/ten-tain/contain-word.mp3",
+    "duration": 9.117,
+    "textHash": "13179d7ef802d65dd102606cdaa9f4b53ccbefa9ff2b949a0db756f743071a85",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:01:42.785Z"
+  },
+  "retain-word": {
+    "src": "assets/audio/replica/ten-tain/retain-word.mp3",
+    "duration": 10.998,
+    "textHash": "23b9c9f8708e1776dd77b032f029f207c470e7127e59f63a6115a82a058726d6",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:01:43.385Z"
+  },
+  "maintain-word": {
+    "src": "assets/audio/replica/ten-tain/maintain-word.mp3",
+    "duration": 8.229,
+    "textHash": "0793127f3aedda50af9f01c668e2cd8f5c3f86c4aa6b2e1cf9b485822f340f8d",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:01:46.065Z"
+  },
+  "obtain-word": {
+    "src": "assets/audio/replica/ten-tain/obtain-word.mp3",
+    "duration": 8.568,
+    "textHash": "c6333780bb7ad5f2cb15d82c465c137ce4b6d8bb5fb843da45675f2af2fbbeaf",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:01:46.607Z"
+  },
+  "detain-word": {
+    "src": "assets/audio/replica/ten-tain/detain-word.mp3",
+    "duration": 9.273,
+    "textHash": "d684ebabf4be7736cf7ea3fc54b57d494c42df320142bf4541510f2eeb487954",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:01:49.904Z"
+  },
+  "sustain-word": {
+    "src": "assets/audio/replica/ten-tain/sustain-word.mp3",
+    "duration": 8.229,
+    "textHash": "0bd9297f265591291f5a4be26d962552c6c57b6250e83fe9edad03b054b39a54",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:01:50.352Z"
+  },
+  "entertain-word": {
+    "src": "assets/audio/replica/ten-tain/entertain-word.mp3",
+    "duration": 7.967,
+    "textHash": "2686c89b4b6a97d56a40dfe702119cbbb5f718c9b0956d4b61b73dc6107f4eb2",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:01:53.562Z"
+  },
+  "abstain-word": {
+    "src": "assets/audio/replica/ten-tain/abstain-word.mp3",
+    "duration": 8.438,
+    "textHash": "754e3e67fd34b7281e626745834779e7c3495ac609be44bb8884aae113c74a1c",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:01:54.304Z"
+  },
+  "practice": {
+    "src": "assets/audio/replica/ten-tain/practice.mp3",
+    "duration": 9.718,
+    "textHash": "b528dfdae5035db114ed0b26b6b3c03df0e20ae6d86aa7f9f1551dce585fe379",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:01:58.411Z"
+  },
+  "ten-tain-family-map": {
+    "src": "assets/audio/replica/ten-tain/ten-tain-family-map.mp3",
+    "duration": 15.308,
+    "textHash": "edbee62fde338b763d2cb4bbd497d16cd0f8310e8db34c592ddfed2afe83616e",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:02:00.146Z"
+  },
+  "practice-answer": {
+    "src": "assets/audio/replica/ten-tain/practice-answer.mp3",
+    "duration": 10.553,
+    "textHash": "6304152d66398e293e9afc749bc90f86200ad43073b4b8068321157598e50b32",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:02:02.633Z"
+  },
+  "ten-tain-summary": {
+    "src": "assets/audio/replica/ten-tain/ten-tain-summary.mp3",
+    "duration": 20.01,
+    "textHash": "15b16a97068fac0ce256cc6f8b68753034b468e057f0f75ea9b7b3bf3018d539",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-28T12:02:12.355Z"
+  }
+}

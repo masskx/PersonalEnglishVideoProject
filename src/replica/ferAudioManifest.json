@@ -1,0 +1,54 @@
+{
+  "ferry-memory-hook": {
+    "src": "assets/audio/replica/fer/ferry-memory-hook.mp3",
+    "duration": 6.478
+  },
+  "carry-to-fer": {
+    "src": "assets/audio/replica/fer/carry-to-fer.mp3",
+    "duration": 3.709
+  },
+  "prefix-family-preview": {
+    "src": "assets/audio/replica/fer/prefix-family-preview.mp3",
+    "duration": 3.422
+  },
+  "transfer-across-carry": {
+    "src": "assets/audio/replica/fer/transfer-across-carry.mp3",
+    "duration": 19.096
+  },
+  "offer-toward-you": {
+    "src": "assets/audio/replica/fer/offer-toward-you.mp3",
+    "duration": 21.943
+  },
+  "prefer-before-carry": {
+    "src": "assets/audio/replica/fer/prefer-before-carry.mp3",
+    "duration": 12.852
+  },
+  "refer-bring-back": {
+    "src": "assets/audio/replica/fer/refer-bring-back.mp3",
+    "duration": 22.936
+  },
+  "defer-back-or-yield": {
+    "src": "assets/audio/replica/fer/defer-back-or-yield.mp3",
+    "duration": 16.144
+  },
+  "confer-together-give": {
+    "src": "assets/audio/replica/fer/confer-together-give.mp3",
+    "duration": 17.528
+  },
+  "fer-to-ference-nouns": {
+    "src": "assets/audio/replica/fer/fer-to-ference-nouns.mp3",
+    "duration": 8.777
+  },
+  "ferry-recap": {
+    "src": "assets/audio/replica/fer/ferry-recap.mp3",
+    "duration": 2.795
+  },
+  "carry-recap": {
+    "src": "assets/audio/replica/fer/carry-recap.mp3",
+    "duration": 2.429
+  },
+  "dual-summary": {
+    "src": "assets/audio/replica/fer/dual-summary.mp3",
+    "duration": 4.754
+  }
+}

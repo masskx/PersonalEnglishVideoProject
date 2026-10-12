@@ -1,0 +1,17 @@
+{
+  "id": "instruction-guidance",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260734,
+  "input": "work/wan-white/struct/inputs/instruction-guidance.png",
+  "inputSha256": "aebfd948193c434407eeb5891d256478bbe03760782a1e2ae772f0c54c96adda",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character follows three floating blank tiles in sequence and uses them to assemble one small object. No symbols, text, arrows, or numbers. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "08a0899e-6753-4759-b8e3-0f8b5d0208b8",
+  "requestId": "d133b2aa-1091-9983-9882-c2e4b5da3140",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-29T13:56:34.575Z",
+  "lastPolledAt": "2026-07-29T13:57:39.397Z",
+  "outputVideo": "work/wan-white/struct/tasks/instruction-guidance.source.mp4",
+  "completedAt": "2026-07-29T13:57:39.555Z"
+}

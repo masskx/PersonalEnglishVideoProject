@@ -1,0 +1,100 @@
+{
+  "pon-pos-hook": {
+    "src": "assets/audio/replica/pon-pos/pon-pos-hook.mp3",
+    "duration": 6.295,
+    "textHash": "cf1cd0f14c1a6fe6ed0d5897147b707d7d547b5151c6657765d9e636d1ba100e",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:01:56.582Z"
+  },
+  "pon-pos-root-map": {
+    "src": "assets/audio/replica/pon-pos/pon-pos-root-map.mp3",
+    "duration": 8.594,
+    "textHash": "87b73f5a25cfb4bb6ed7689afcec222147362c9db0e27c71437d4b0aa51298b0",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:01:57.792Z"
+  },
+  "compose-word": {
+    "src": "assets/audio/replica/pon-pos/compose-word.mp3",
+    "duration": 8.829,
+    "textHash": "7cb481b61c06e98eac11b7afd90f0b43c710ae167436b099a5ea7250f47710c1",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:02:00.564Z"
+  },
+  "expose-word": {
+    "src": "assets/audio/replica/pon-pos/expose-word.mp3",
+    "duration": 9.9,
+    "textHash": "c798548cad583a700c553cf6c48c0197518abea7776dee1f610e55f15fd6d142",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:02:01.993Z"
+  },
+  "impose-word": {
+    "src": "assets/audio/replica/pon-pos/impose-word.mp3",
+    "duration": 10.214,
+    "textHash": "f48c2553a81dd7e335ef245cac931faf0edff67c1fd86fb9709ed51bcda28db9",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:02:04.425Z"
+  },
+  "propose-word": {
+    "src": "assets/audio/replica/pon-pos/propose-word.mp3",
+    "duration": 8.124,
+    "textHash": "b31e661e9760a25f483dc2b45336fcd68781e5279f08464ba4174f1a9c3ba2bb",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:02:07.970Z"
+  },
+  "oppose-word": {
+    "src": "assets/audio/replica/pon-pos/oppose-word.mp3",
+    "duration": 10.632,
+    "textHash": "27abed4c0e8a2050683641ed27c65ff10d1e2aa64169faad89670bd4f4256f4f",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:02:10.049Z"
+  },
+  "dispose-word": {
+    "src": "assets/audio/replica/pon-pos/dispose-word.mp3",
+    "duration": 11.755,
+    "textHash": "9df215a8047e1bc05744900667ff35effb881f40c90221f8555ae1128d88df93",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:02:14.507Z"
+  },
+  "deposit-word": {
+    "src": "assets/audio/replica/pon-pos/deposit-word.mp3",
+    "duration": 9.927,
+    "textHash": "476ff32c798bef71c4393f03ef1c38873c173cd0919f38306d832d421b26bf69",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:02:16.297Z"
+  },
+  "pon-pos-family-map": {
+    "src": "assets/audio/replica/pon-pos/pon-pos-family-map.mp3",
+    "duration": 14.263,
+    "textHash": "fadddee857e81da40ecb81487cfd759efb52a9fbbc63977dadc9492737cb682c",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:02:21.417Z"
+  },
+  "pon-pos-examples": {
+    "src": "assets/audio/replica/pon-pos/pon-pos-examples.mp3",
+    "duration": 17.894,
+    "textHash": "dab21cce82cecf3f10af5730fedc22d8c56b020211f5a3ac100dda275c81aa29",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:02:25.342Z"
+  },
+  "pon-pos-practice": {
+    "src": "assets/audio/replica/pon-pos/pon-pos-practice.mp3",
+    "duration": 16.771,
+    "textHash": "d5da56d7aea9f48e17fe03712936111bdd116d39880a080600024a3a45b1e14b",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:02:29.497Z"
+  },
+  "pon-pos-practice-explanation": {
+    "src": "assets/audio/replica/pon-pos/pon-pos-practice-explanation.mp3",
+    "duration": 15.36,
+    "textHash": "d6a82b724c36f9cfcb49ab07b6009e908db10cd3c4f9e70afd77d43eab2f93b2",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:02:32.887Z"
+  },
+  "pon-pos-summary": {
+    "src": "assets/audio/replica/pon-pos/pon-pos-summary.mp3",
+    "duration": 16.744,
+    "textHash": "f806f75c321d0ba63fa80990aa6e6b635c266caf6d6ebc0471370104312ba236",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-09-29T16:02:36.755Z"
+  }
+}

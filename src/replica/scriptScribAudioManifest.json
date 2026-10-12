@@ -1,0 +1,50 @@
+{
+  "write-hook": {
+    "src": "assets/audio/replica/script-scrib/write-hook.mp3",
+    "duration": 8.464
+  },
+  "writing-map": {
+    "src": "assets/audio/replica/script-scrib/writing-map.mp3",
+    "duration": 10.789
+  },
+  "describe-write-out": {
+    "src": "assets/audio/replica/script-scrib/describe-write-out.mp3",
+    "duration": 7.523
+  },
+  "prescribe-write-before": {
+    "src": "assets/audio/replica/script-scrib/prescribe-write-before.mp3",
+    "duration": 7.915
+  },
+  "subscribe-write-under": {
+    "src": "assets/audio/replica/script-scrib/subscribe-write-under.mp3",
+    "duration": 8.046
+  },
+  "transcribe-write-across": {
+    "src": "assets/audio/replica/script-scrib/transcribe-write-across.mp3",
+    "duration": 7.523
+  },
+  "manuscript-handwritten": {
+    "src": "assets/audio/replica/script-scrib/manuscript-handwritten.mp3",
+    "duration": 8.124
+  },
+  "inscription-write-into": {
+    "src": "assets/audio/replica/script-scrib/inscription-write-into.mp3",
+    "duration": 7.732
+  },
+  "postscript-write-after": {
+    "src": "assets/audio/replica/script-scrib/postscript-write-after.mp3",
+    "duration": 7.941
+  },
+  "scribble-write-messily": {
+    "src": "assets/audio/replica/script-scrib/scribble-write-messily.mp3",
+    "duration": 7.758
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/script-scrib/example-sentences.mp3",
+    "duration": 9.848
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/script-scrib/final-summary.mp3",
+    "duration": 16.013
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "attract-white",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "outputs/tract/wan-white/inputs/01_attract_toward.jpg",
+  "inputSha256": "926e6bd073e60295dbec2a88529565ef95770908e51741fb3fbf955cc04eade0",
+  "prompt": "The same black character pulls the existing magnet slightly closer while the three existing pebbles glide toward it. Locked camera, native speed, one continuous five-second shot. Preserve the exact original character identity, limb count, prop count, colors and hand-drawn line style. Background must remain perfectly uniform pure white RGB 255 255 255 in every frame, including all four corners. No green screen, no gray cast, no floor, no shadow, no gradient, no vignette, no texture, no border, no panel, no camera movement, no fade-in, no fade-out, no black opening frame, no text, no logo, no new object.",
+  "taskId": "eca306eb-1c3b-4a8b-bcae-509a4645ede8",
+  "requestId": "9eedb3c1-ccdd-98f6-aacd-8b209cc6a909",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-26T07:13:03.140Z",
+  "lastPolledAt": "2026-07-26T07:13:35.891Z",
+  "outputVideo": "outputs/tract/wan-white/attract-white.source.mp4",
+  "completedAt": "2026-07-26T07:13:38.299Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-26 15:13:03.134",
+    "scheduledTime": "2026-07-26 15:13:03.183",
+    "endTime": "2026-07-26 15:13:15.213"
+  }
+}

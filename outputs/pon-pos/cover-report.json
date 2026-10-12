@@ -1,0 +1,69 @@
+{
+  "project": "pon-pos",
+  "orientation": "vertical",
+  "input": "work/render-staging/pon-pos-HaptWU/cover.png",
+  "codec": "png",
+  "width": 1080,
+  "height": 1440,
+  "pixelFormat": "rgb24",
+  "corners": [
+    {
+      "x": 0,
+      "y": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 1079,
+      "y": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 0,
+      "y": 1439,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 1079,
+      "y": 1439,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    }
+  ],
+  "wordCount": 7,
+  "words": [
+    "compose",
+    "expose",
+    "impose",
+    "propose",
+    "oppose",
+    "dispose",
+    "deposit"
+  ],
+  "wordHighlights": [
+    "pos",
+    "pos",
+    "pos",
+    "pos",
+    "pos",
+    "pos",
+    "posit"
+  ],
+  "illustration": "assets/replica/pon-pos/compose-result.png",
+  "ok": true,
+  "errors": []
+}

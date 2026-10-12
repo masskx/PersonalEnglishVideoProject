@@ -1,0 +1,50 @@
+{
+  "look-hook": {
+    "src": "assets/audio/replica/spect/look-hook.mp3",
+    "duration": 8.934
+  },
+  "viewfinder-map": {
+    "src": "assets/audio/replica/spect/viewfinder-map.mp3",
+    "duration": 13.244
+  },
+  "inspect-look-inside": {
+    "src": "assets/audio/replica/spect/inspect-look-inside.mp3",
+    "duration": 8.986
+  },
+  "respect-look-back": {
+    "src": "assets/audio/replica/spect/respect-look-back.mp3",
+    "duration": 10.501
+  },
+  "suspect-look-under": {
+    "src": "assets/audio/replica/spect/suspect-look-under.mp3",
+    "duration": 10.606
+  },
+  "expect-look-out": {
+    "src": "assets/audio/replica/spect/expect-look-out.mp3",
+    "duration": 10.397
+  },
+  "prospect-look-forward": {
+    "src": "assets/audio/replica/spect/prospect-look-forward.mp3",
+    "duration": 10.214
+  },
+  "spectator-person-watching": {
+    "src": "assets/audio/replica/spect/spectator-person-watching.mp3",
+    "duration": 9.169
+  },
+  "spectacle-thing-seen": {
+    "src": "assets/audio/replica/spect/spectacle-thing-seen.mp3",
+    "duration": 10.475
+  },
+  "retrospect-look-backwards": {
+    "src": "assets/audio/replica/spect/retrospect-look-backwards.mp3",
+    "duration": 10.214
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/spect/example-sentences.mp3",
+    "duration": 12.617
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/spect/final-summary.mp3",
+    "duration": 14.916
+  }
+}

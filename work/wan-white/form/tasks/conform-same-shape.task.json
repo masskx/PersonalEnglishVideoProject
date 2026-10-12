@@ -1,0 +1,17 @@
+{
+  "id": "conform-same-shape",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260734,
+  "input": "work/wan-white/form/inputs/conform-same-shape.png",
+  "inputSha256": "1eb3e65a91e393c498f1a14ad1d38a0416f0e1ae0d6d11357fb7d19745b9cdd3",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character squeezes one odd-shaped piece into a row of three identical outline molds until it matches them. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "318c956d-e321-4ff5-aa09-deb9ce7e4c5a",
+  "requestId": "64085a4e-e8a3-9651-ac81-96286be648a5",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-29T13:55:39.429Z",
+  "lastPolledAt": "2026-07-29T13:57:39.412Z",
+  "outputVideo": "work/wan-white/form/tasks/conform-same-shape.source.mp4",
+  "completedAt": "2026-07-29T13:57:39.728Z"
+}

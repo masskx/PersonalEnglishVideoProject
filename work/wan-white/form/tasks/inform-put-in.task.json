@@ -1,0 +1,17 @@
+{
+  "id": "inform-put-in",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260731,
+  "input": "work/wan-white/form/inputs/inform-put-in.png",
+  "inputSha256": "c73d7b9a61dd8134ecc275e162b1dcfd6ee6ae8034655e49427f2ff5ae7559bf",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character feeds three tiny blank cards into a large black-outline head-shaped mold, causing one orange idea pebble to form inside. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "d384f5b5-115a-426b-be0e-18ac77ff7a78",
+  "requestId": "7bfbb6d3-ee14-9c18-9fd9-1d62b7af8f7e",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-29T13:55:21.071Z",
+  "lastPolledAt": "2026-07-29T13:57:33.274Z",
+  "outputVideo": "work/wan-white/form/tasks/inform-put-in.source.mp4",
+  "completedAt": "2026-07-29T13:57:35.588Z"
+}

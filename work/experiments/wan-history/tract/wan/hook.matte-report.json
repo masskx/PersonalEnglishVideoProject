@@ -1,0 +1,25 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\tract\\wan\\hook.source.mp4",
+  "output": null,
+  "framesDir": "G:\\抖音卡片英语白色\\public\\assets\\replica\\tract-motion\\frames\\hook",
+  "width": 832,
+  "height": 464,
+  "fps": 30.0,
+  "frames": 150,
+  "expectedFrames": 150,
+  "duration": 5.0,
+  "visibleCoverage": {
+    "min": 0.11236944628647215,
+    "max": 1.0,
+    "mean": 0.23246114472811666
+  },
+  "softAlphaCoverage": {
+    "max": 0.030118016412466843,
+    "mean": 0.009164283543324494
+  },
+  "enclosedGreenCoverage": {
+    "max": 0.012275675563660477,
+    "mean": 0.005738509200928382
+  },
+  "ok": true
+}

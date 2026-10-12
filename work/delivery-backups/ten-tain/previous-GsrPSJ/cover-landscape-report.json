@@ -1,0 +1,71 @@
+{
+  "project": "ten-tain",
+  "orientation": "landscape",
+  "input": "work/render-staging/ten-tain-g5hyPs/cover-landscape.png",
+  "codec": "png",
+  "width": 1200,
+  "height": 900,
+  "pixelFormat": "rgb24",
+  "corners": [
+    {
+      "x": 0,
+      "y": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 1199,
+      "y": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 0,
+      "y": 899,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 1199,
+      "y": 899,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    }
+  ],
+  "wordCount": 8,
+  "words": [
+    "retain",
+    "contain",
+    "maintain",
+    "obtain",
+    "detain",
+    "sustain",
+    "entertain",
+    "abstain"
+  ],
+  "wordHighlights": [
+    "tain",
+    "tain",
+    "tain",
+    "tain",
+    "tain",
+    "tain",
+    "tain",
+    "tain"
+  ],
+  "illustration": "assets/replica/ten-tain/retain-result.png",
+  "ok": true,
+  "errors": []
+}

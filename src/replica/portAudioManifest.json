@@ -1,0 +1,50 @@
+{
+  "carry-hook": {
+    "src": "assets/audio/replica/port/carry-hook.mp3",
+    "duration": 9.587
+  },
+  "route-machine": {
+    "src": "assets/audio/replica/port/route-machine.mp3",
+    "duration": 11.207
+  },
+  "import-carry-in": {
+    "src": "assets/audio/replica/port/import-carry-in.mp3",
+    "duration": 9.064
+  },
+  "export-carry-out": {
+    "src": "assets/audio/replica/port/export-carry-out.mp3",
+    "duration": 9.404
+  },
+  "transport-carry-across": {
+    "src": "assets/audio/replica/port/transport-carry-across.mp3",
+    "duration": 10.527
+  },
+  "support-carry-under": {
+    "src": "assets/audio/replica/port/support-carry-under.mp3",
+    "duration": 10.475
+  },
+  "report-carry-back": {
+    "src": "assets/audio/replica/port/report-carry-back.mp3",
+    "duration": 9.091
+  },
+  "portable-able-to-carry": {
+    "src": "assets/audio/replica/port/portable-able-to-carry.mp3",
+    "duration": 7.758
+  },
+  "porter-person-who-carries": {
+    "src": "assets/audio/replica/port/porter-person-who-carries.mp3",
+    "duration": 8.647
+  },
+  "deport-carry-away": {
+    "src": "assets/audio/replica/port/deport-carry-away.mp3",
+    "duration": 10.789
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/port/example-sentences.mp3",
+    "duration": 12.513
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/port/final-summary.mp3",
+    "duration": 11.807
+  }
+}

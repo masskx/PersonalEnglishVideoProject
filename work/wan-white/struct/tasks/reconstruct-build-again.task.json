@@ -1,0 +1,17 @@
+{
+  "id": "reconstruct-build-again",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260735,
+  "input": "work/wan-white/struct/inputs/reconstruct-build-again.png",
+  "inputSha256": "199247ff3974fa9dd36b8bcf59c6d30dc57a34597e237aa4612b15340c46b6b7",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character gathers pieces of one broken floating frame and rebuilds them into a clean orange frame with both hands. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "1fba5002-5e79-4de4-bfd0-a691150a34c2",
+  "requestId": "bfc7d8fc-d3c2-924a-9ca3-b1b020b28720",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-29T13:56:40.315Z",
+  "lastPolledAt": "2026-07-29T13:57:39.690Z",
+  "outputVideo": "work/wan-white/struct/tasks/reconstruct-build-again.source.mp4",
+  "completedAt": "2026-07-29T13:57:40.373Z"
+}

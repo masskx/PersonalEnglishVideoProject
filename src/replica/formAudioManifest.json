@@ -1,0 +1,50 @@
+{
+  "shape-hook": {
+    "src": "assets/audio/replica/form/shape-hook.mp3",
+    "duration": 8.046
+  },
+  "shape-map": {
+    "src": "assets/audio/replica/form/shape-map.mp3",
+    "duration": 10.71
+  },
+  "formation-result": {
+    "src": "assets/audio/replica/form/formation-result.mp3",
+    "duration": 9.247
+  },
+  "inform-put-in": {
+    "src": "assets/audio/replica/form/inform-put-in.mp3",
+    "duration": 8.359
+  },
+  "reform-shape-again": {
+    "src": "assets/audio/replica/form/reform-shape-again.mp3",
+    "duration": 9.195
+  },
+  "transform-change-shape": {
+    "src": "assets/audio/replica/form/transform-change-shape.mp3",
+    "duration": 9.848
+  },
+  "conform-same-shape": {
+    "src": "assets/audio/replica/form/conform-same-shape.mp3",
+    "duration": 9.404
+  },
+  "deform-ruin-shape": {
+    "src": "assets/audio/replica/form/deform-ruin-shape.mp3",
+    "duration": 9.038
+  },
+  "uniform-one-shape": {
+    "src": "assets/audio/replica/form/uniform-one-shape.mp3",
+    "duration": 9.195
+  },
+  "formula-fixed-method": {
+    "src": "assets/audio/replica/form/formula-fixed-method.mp3",
+    "duration": 9.639
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/form/example-sentences.mp3",
+    "duration": 9.169
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/form/final-summary.mp3",
+    "duration": 16.327
+  }
+}

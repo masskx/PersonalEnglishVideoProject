@@ -1,0 +1,22 @@
+{
+  "id": "diction",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "assets/green-screen/dict/06_diction_word_choice.jpg",
+  "inputSha256": "4587285c01123401331069dc66fb669f48da962a83ce9746681aae4ca3e6316f",
+  "prompt": "The single black character uses tongs to choose the orange speech pebble and moves it toward the horn. Locked camera, small precise motion, identity and props stable.",
+  "taskId": "e3135427-01dc-49ef-9328-da091954651c",
+  "requestId": "176173a7-50e7-95e5-8aba-e4bfbaa6cece",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T11:48:44.718Z",
+  "lastPolledAt": "2026-07-24T11:49:25.945Z",
+  "outputVideo": "outputs/dict-wan/diction.source.mp4",
+  "completedAt": "2026-07-24T11:49:26.639Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 19:48:44.572",
+    "scheduledTime": "2026-07-24 19:49:08.675",
+    "endTime": "2026-07-24 19:49:22.940"
+  }
+}

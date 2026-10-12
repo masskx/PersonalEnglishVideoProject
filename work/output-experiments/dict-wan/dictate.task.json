@@ -1,0 +1,22 @@
+{
+  "id": "dictate",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "assets/green-screen/dict/04_dictate_command.jpg",
+  "inputSha256": "d426df55599989877b7d8e17cefd05206fbd13d4141b0d8d919b88e1e46745b6",
+  "prompt": "The single black character speaks into the horn and turns the crank; the mechanical hand places one blank tile. Locked camera, one controlled action, identity and props stable.",
+  "taskId": "5bd5130e-a5fa-486b-bd14-4998c96e2796",
+  "requestId": "cfd46f6e-2614-9de8-811d-e58b23ea069a",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T11:48:40.401Z",
+  "lastPolledAt": "2026-07-24T11:49:19.624Z",
+  "outputVideo": "outputs/dict-wan/dictate.source.mp4",
+  "completedAt": "2026-07-24T11:49:20.814Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 19:48:40.352",
+    "scheduledTime": "2026-07-24 19:48:56.299",
+    "endTime": "2026-07-24 19:49:09.298"
+  }
+}

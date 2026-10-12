@@ -1,0 +1,22 @@
+{
+  "id": "subtract",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "public/assets/replica/tract/05_subtract_away.png",
+  "inputSha256": "b3e4f1d8b2a0f1e6273d1cf13d4a408304e2b4878e8cd74c326b913f97a58899",
+  "prompt": "Locked camera. The same black line character pulls the bottom tile out with the existing orange rope; the remaining stack settles slightly. Preserve exact identity, exact number of limbs and props, flat solid green background, no text, no new objects.",
+  "taskId": "bf597ea7-be71-4c6a-860b-e9221741e90d",
+  "requestId": "eb70bd03-6d0b-9e7e-ba51-9a90c4fbcb5d",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-26T06:37:29.576Z",
+  "lastPolledAt": "2026-07-26T06:38:28.130Z",
+  "outputVideo": "outputs/tract/wan/subtract.source.mp4",
+  "completedAt": "2026-07-26T06:38:28.752Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-26 14:37:29.604",
+    "scheduledTime": "2026-07-26 14:38:02.822",
+    "endTime": "2026-07-26 14:38:14.903"
+  }
+}

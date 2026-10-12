@@ -1,0 +1,87 @@
+[
+  {
+    "project": "press",
+    "exitCode": 0,
+    "output": "Replica press valid: 16 scenes, 172.667s, 119 layers, 11 illustrations.\nWARN: hook: playbackRate 1.158 is near the upper limit.\nWARN: repress: playbackRate 1.133 is near the upper limit.\nWARN: compress: playbackRate 1.155 is near the upper limit.\nWARN: final-summary-table: playbackRate 1.148 is near the upper limit.\n"
+  },
+  {
+    "project": "reg",
+    "exitCode": 0,
+    "output": "Replica reg valid: 15 scenes, 103.333s, 82 layers, 9 illustrations.\nWARN: regulate-examples: playbackRate 1.143 is near the upper limit.\nWARN: reign-spelling-change: playbackRate 1.142 is near the upper limit.\nWARN: final-summary: playbackRate 1.152 is near the upper limit.\n"
+  },
+  {
+    "project": "fer",
+    "exitCode": 0,
+    "output": "Replica fer valid: 13 scenes, 136.033s, 117 layers, 13 illustrations.\nWARN: refer-bring-back: playbackRate 1.157 is near the upper limit.\nWARN: defer-back-or-yield: playbackRate 1.135 is near the upper limit.\nWARN: dual-summary: playbackRate 1.142 is near the upper limit.\n"
+  },
+  {
+    "project": "bouba-kiki",
+    "exitCode": 0,
+    "output": "Replica bouba-kiki valid: 11 scenes, 102.300s, 102 layers, 12 illustrations.\nWARN: question-characters: playbackRate 1.134 is near the upper limit.\nWARN: cr-family: playbackRate 1.147 is near the upper limit.\nWARN: outro-fade: playbackRate 1.155 is near the upper limit.\n"
+  },
+  {
+    "project": "ject",
+    "exitCode": 0,
+    "output": "Replica ject valid: 11 scenes, 105.000s, 65 layers, 7 illustrations.\n"
+  },
+  {
+    "project": "port",
+    "exitCode": 0,
+    "output": "Replica port valid: 12 scenes, 112.500s, 57 layers, 9 illustrations.\nWARN: carry-hook: playbackRate 1.128 is near the upper limit.\nWARN: route-machine: playbackRate 1.121 is near the upper limit.\nWARN: deport-carry-away: playbackRate 1.136 is near the upper limit.\nWARN: example-sentences: playbackRate 1.138 is near the upper limit.\nWARN: final-summary: playbackRate 1.135 is near the upper limit.\n"
+  },
+  {
+    "project": "spect",
+    "exitCode": 0,
+    "output": "Replica spect valid: 12 scenes, 117.900s, 56 layers, 9 illustrations.\nWARN: viewfinder-map: playbackRate 1.152 is near the upper limit.\nWARN: respect-look-back: playbackRate 1.154 is near the upper limit.\nWARN: suspect-look-under: playbackRate 1.153 is near the upper limit.\nWARN: expect-look-out: playbackRate 1.155 is near the upper limit.\nWARN: prospect-look-forward: playbackRate 1.135 is near the upper limit.\nWARN: spectacle-thing-seen: playbackRate 1.151 is near the upper limit.\nWARN: retrospect-look-backwards: playbackRate 1.135 is near the upper limit.\n"
+  },
+  {
+    "project": "vis-vid",
+    "exitCode": 0,
+    "output": "Replica vis-vid valid: 12 scenes, 118.500s, 54 layers, 9 illustrations.\nWARN: visible-able-seen: playbackRate 1.120 is near the upper limit.\nWARN: final-summary: playbackRate 1.149 is near the upper limit.\n"
+  },
+  {
+    "project": "aud",
+    "exitCode": 0,
+    "output": "Replica aud valid: 12 scenes, 112.200s, 44 layers, 9 illustrations.\nWARN: final-summary: playbackRate 1.144 is near the upper limit.\n"
+  },
+  {
+    "project": "dict",
+    "exitCode": 0,
+    "output": "Replica dict valid: 12 scenes, 112.000s, 45 layers, 9 illustrations.\nWARN: dictation-hear-write: playbackRate 1.125 is near the upper limit.\nWARN: example-sentences: playbackRate 1.123 is near the upper limit.\n"
+  },
+  {
+    "project": "script-scrib",
+    "exitCode": 0,
+    "output": "Replica script-scrib valid: 12 scenes, 112.000s, 45 layers, 9 illustrations.\n"
+  },
+  {
+    "project": "tract",
+    "exitCode": 0,
+    "output": "Replica tract valid: 12 scenes, 112.000s, 45 layers, 9 illustrations.\n"
+  },
+  {
+    "project": "form",
+    "exitCode": 0,
+    "output": "Replica form valid: 12 scenes, 112.000s, 45 layers, 9 illustrations.\nWARN: transform-change-shape: playbackRate 1.159 is near the upper limit.\nWARN: formula-fixed-method: playbackRate 1.134 is near the upper limit.\n"
+  },
+  {
+    "project": "struct",
+    "exitCode": 0,
+    "output": "Replica struct valid: 12 scenes, 112.000s, 44 layers, 9 illustrations.\nWARN: construct-build-together: playbackRate 1.159 is near the upper limit.\n"
+  },
+  {
+    "project": "flect-flex",
+    "exitCode": 0,
+    "output": "Replica flect-flex valid: 12 scenes, 112.000s, 48 layers, 9 illustrations.\nWARN: reflect-bend-back: playbackRate 1.152 is near the upper limit.\n"
+  },
+  {
+    "project": "rupt",
+    "exitCode": 0,
+    "output": "Replica rupt valid: 12 scenes, 122.100s, 49 layers, 9 illustrations.\nWARN: rupt-hook: playbackRate 1.120 is near the upper limit.\n"
+  },
+  {
+    "project": "mit-miss",
+    "exitCode": 0,
+    "output": "Replica mit-miss valid: 12 scenes, 122.100s, 50 layers, 9 illustrations.\n"
+  }
+]

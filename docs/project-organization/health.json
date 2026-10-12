@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-09-29T16:33:49.080Z",
+  "status": "PASS_WITH_NOTES",
+  "projectCount": 21,
+  "filesChecked": 6961,
+  "dynamicDirectories": 42,
+  "errors": [],
+  "notes": [
+    "4 publication records disagree with folder labels; factual confirmation remains pending.",
+    "19 episodes have pending content review; file completeness is not content approval."
+  ],
+  "scope": "Existence, nonempty files, output layout and runtime paths. Does not render, generate, decode all media, or approve teaching content."
+}

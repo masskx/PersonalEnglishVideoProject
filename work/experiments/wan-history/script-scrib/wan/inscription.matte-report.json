@@ -1,0 +1,25 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\script-scrib\\wan\\inscription.source.mp4",
+  "output": null,
+  "framesDir": "G:\\抖音卡片英语白色\\public\\assets\\replica\\script-scrib-motion\\frames\\inscription",
+  "width": 832,
+  "height": 464,
+  "fps": 30.0,
+  "frames": 150,
+  "expectedFrames": 150,
+  "duration": 5.0,
+  "visibleCoverage": {
+    "min": 0.1471293725132626,
+    "max": 0.17132066478779842,
+    "mean": 0.15527207324823164
+  },
+  "softAlphaCoverage": {
+    "max": 0.01354494777851459,
+    "mean": 0.011172479415340407
+  },
+  "enclosedGreenCoverage": {
+    "max": 0.026090019893899204,
+    "mean": 0.008617909344606545
+  },
+  "ok": true
+}

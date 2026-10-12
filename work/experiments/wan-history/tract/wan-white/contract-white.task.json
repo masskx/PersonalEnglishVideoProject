@@ -1,0 +1,22 @@
+{
+  "id": "contract-white",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "outputs/tract/wan-white/inputs/04_contract_together.jpg",
+  "inputSha256": "72acc7a8dbbd6ecbde9528527cb275d184745a2a375f838e14dcf16e40e7d3cf",
+  "prompt": "The same black character turns the existing winch while the accordion tube compresses inward slightly. Locked camera, native speed, one continuous five-second shot. Preserve the exact original character identity, limb count, prop count, colors and hand-drawn line style. Background must remain perfectly uniform pure white RGB 255 255 255 in every frame, including all four corners. No green screen, no gray cast, no floor, no shadow, no gradient, no vignette, no texture, no border, no panel, no camera movement, no fade-in, no fade-out, no black opening frame, no text, no logo, no new object.",
+  "taskId": "5d82cecb-cd5a-453f-bb96-98f05eecd818",
+  "requestId": "8f449691-d385-93ad-b013-4472bd0a73b5",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-26T07:13:08.293Z",
+  "lastPolledAt": "2026-07-26T07:13:41.025Z",
+  "outputVideo": "outputs/tract/wan-white/contract-white.source.mp4",
+  "completedAt": "2026-07-26T07:13:41.741Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-26 15:13:08.282",
+    "scheduledTime": "2026-07-26 15:13:12.063",
+    "endTime": "2026-07-26 15:13:24.012"
+  }
+}

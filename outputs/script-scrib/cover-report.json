@@ -1,0 +1,71 @@
+{
+  "project": "script-scrib",
+  "orientation": "vertical",
+  "input": "outputs/script-scrib/cover.png",
+  "codec": "png",
+  "width": 1080,
+  "height": 1440,
+  "pixelFormat": "rgb24",
+  "corners": [
+    {
+      "x": 0,
+      "y": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 1079,
+      "y": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 0,
+      "y": 1439,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "x": 1079,
+      "y": 1439,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    }
+  ],
+  "wordCount": 8,
+  "words": [
+    "describe",
+    "prescribe",
+    "subscribe",
+    "transcribe",
+    "manuscript",
+    "inscription",
+    "postscript",
+    "scribble"
+  ],
+  "wordHighlights": [
+    "scrib",
+    "scrib",
+    "scrib",
+    "scrib",
+    "script",
+    "script",
+    "script",
+    "scrib"
+  ],
+  "illustration": "assets/replica/script-scrib/00_write_hook.png",
+  "ok": true,
+  "errors": []
+}

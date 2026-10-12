@@ -1,0 +1,54 @@
+
+> douyin-root-word-generator@1.0.0 typecheck
+> tsc --noEmit
+
+
+> douyin-root-word-generator@1.0.0 replica:assets:verify
+> tsx scripts/replica/verifyAssets.ts --project=flect-flex
+
+PASS 00_bend_hook: 2848x1600, coverage 5.68%, green 0.000%
+PASS 01_reflect_bend_back: 2848x1600, coverage 9.93%, green 0.000%
+PASS 02_reflection_return_image: 2848x1600, coverage 6.85%, green 0.000%
+PASS 03_deflect_turn_aside: 2848x1600, coverage 4.43%, green 0.000%
+PASS 04_inflect_bend_voice: 2848x1600, coverage 6.01%, green 0.000%
+PASS 05_flexible_easy_bend: 2848x1600, coverage 8.56%, green 0.000%
+PASS 06_flexibility_many_shapes: 2848x1600, coverage 7.73%, green 0.000%
+PASS 07_reflex_bend_back_fast: 2848x1600, coverage 2.30%, green 0.000%
+PASS 08_inflexible_wont_bend: 2848x1600, coverage 11.08%, green 0.000%
+9/9 flect-flex assets passed QA.
+
+> douyin-root-word-generator@1.0.0 replica:validate
+> tsx scripts/replica/validateProject.ts --project=flect-flex
+
+Replica flect-flex valid: 12 scenes, 112.000s, 48 layers, 9 illustrations.
+
+> douyin-root-word-generator@1.0.0 replica:render:verify
+> tsx scripts/replica/verifyRender.ts --project=flect-flex
+
+Render flect-flex verified: 3360 frames, 4 pixel samples, max volume -2.76 dBFS, 0 allowed long-silence window(s).
+Report: outputs\flect-flex\render-report.json.
+
+> douyin-root-word-generator@1.0.0 replica:cover:verify
+> tsx scripts/replica/verifyCover.ts --project=flect-flex
+
+Cover flect-flex vertical verified: 1080x1440 opaque PNG, four white corners, 8 words.
+Report: outputs\flect-flex\cover-report.json.
+Cover flect-flex landscape verified: 1200x900 opaque PNG, four white corners, 8 words.
+Report: outputs\flect-flex\cover-landscape-report.json.
+
+> douyin-root-word-generator@1.0.0 replica:stills
+> tsx scripts/replica/renderReviewStills.ts --project=flect-flex
+
+01_bend-hook_f132.jpg	4.400s
+02_bend-map_f405.jpg	13.500s
+03_reflect-bend-back_f680.jpg	22.675s
+04_reflection-returned-image_f935.jpg	31.175s
+05_deflect-turn-aside_f1190.jpg	39.675s
+06_inflect-bend-voice_f1445.jpg	48.175s
+07_flexible-easy-bend_f1700.jpg	56.675s
+08_flexibility-many-bends_f1955.jpg	65.175s
+09_reflex-fast-return_f2210.jpg	73.675s
+10_inflexible-wont-bend_f2465.jpg	82.175s
+11_example-sentences_f2745.jpg	91.500s
+12_final-summary_f3144.jpg	104.800s
+Rendered 12 midpoints stills to outputs\flect-flex\review-stills\midpoints.

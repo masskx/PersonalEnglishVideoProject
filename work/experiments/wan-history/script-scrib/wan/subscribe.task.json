@@ -1,0 +1,22 @@
+{
+  "id": "subscribe",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "assets/green-screen/script-scrib/03_subscribe_under.jpg",
+  "inputSha256": "be402b8afac01ac7559a5f67624c2dc4db161a5dd41b2c6cdb16112bba0f7e3d",
+  "prompt": "Locked camera. The black character crouches under the scroll and signs one short orange stroke at the bottom, then lifts the pen. Preserve the blank scroll, identity, full limbs, flat green plate and composition.",
+  "taskId": "ee625a10-44b6-45bb-b300-cea03e5eb89b",
+  "requestId": "fd280eb2-f814-9aee-bf84-8ab4791b378b",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T12:44:32.312Z",
+  "lastPolledAt": "2026-07-24T12:45:16.745Z",
+  "outputVideo": "outputs/script-scrib/wan/subscribe.source.mp4",
+  "completedAt": "2026-07-24T12:45:17.531Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 20:44:32.278",
+    "scheduledTime": "2026-07-24 20:44:39.007",
+    "endTime": "2026-07-24 20:44:51.606"
+  }
+}

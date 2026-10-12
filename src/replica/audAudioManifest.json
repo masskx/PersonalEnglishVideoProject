@@ -1,0 +1,50 @@
+{
+  "hear-hook": {
+    "src": "assets/audio/replica/aud/hear-hook.mp3",
+    "duration": 9.848
+  },
+  "ear-map": {
+    "src": "assets/audio/replica/aud/ear-map.mp3",
+    "duration": 9.143
+  },
+  "audio-sound": {
+    "src": "assets/audio/replica/aud/audio-sound.mp3",
+    "duration": 9.195
+  },
+  "audience-listeners": {
+    "src": "assets/audio/replica/aud/audience-listeners.mp3",
+    "duration": 8.359
+  },
+  "audit-hear-check": {
+    "src": "assets/audio/replica/aud/audit-hear-check.mp3",
+    "duration": 10.527
+  },
+  "audible-able-heard": {
+    "src": "assets/audio/replica/aud/audible-able-heard.mp3",
+    "duration": 8.464
+  },
+  "audition-try-hearing": {
+    "src": "assets/audio/replica/aud/audition-try-hearing.mp3",
+    "duration": 7.915
+  },
+  "auditorium-hearing-place": {
+    "src": "assets/audio/replica/aud/auditorium-hearing-place.mp3",
+    "duration": 8.333
+  },
+  "inaudible-not-heard": {
+    "src": "assets/audio/replica/aud/inaudible-not-heard.mp3",
+    "duration": 8.333
+  },
+  "audiobook-heard-book": {
+    "src": "assets/audio/replica/aud/audiobook-heard-book.mp3",
+    "duration": 8.96
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/aud/example-sentences.mp3",
+    "duration": 9.509
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/aud/final-summary.mp3",
+    "duration": 15.673
+  }
+}

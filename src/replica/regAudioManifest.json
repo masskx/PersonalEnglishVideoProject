@@ -1,0 +1,62 @@
+{
+  "ruler-straight": {
+    "src": "assets/audio/replica/reg/ruler-straight.mp3",
+    "duration": 6.06
+  },
+  "rules-one-direction": {
+    "src": "assets/audio/replica/reg/rules-one-direction.mp3",
+    "duration": 5.799
+  },
+  "ruler-governor-bridge": {
+    "src": "assets/audio/replica/reg/ruler-governor-bridge.mp3",
+    "duration": 6.06
+  },
+  "reg-root-branches": {
+    "src": "assets/audio/replica/reg/reg-root-branches.mp3",
+    "duration": 13.113
+  },
+  "regulate": {
+    "src": "assets/audio/replica/reg/regulate.mp3",
+    "duration": 8.986
+  },
+  "regulate-examples": {
+    "src": "assets/audio/replica/reg/regulate-examples.mp3",
+    "duration": 6.06
+  },
+  "regulation": {
+    "src": "assets/audio/replica/reg/regulation.mp3",
+    "duration": 6.818
+  },
+  "regent": {
+    "src": "assets/audio/replica/reg/regent.mp3",
+    "duration": 11.128
+  },
+  "regime": {
+    "src": "assets/audio/replica/reg/regime.mp3",
+    "duration": 5.773
+  },
+  "region": {
+    "src": "assets/audio/replica/reg/region.mp3",
+    "duration": 4.963
+  },
+  "regal": {
+    "src": "assets/audio/replica/reg/regal.mp3",
+    "duration": 7.706
+  },
+  "regal-royal": {
+    "src": "assets/audio/replica/reg/regal-royal.mp3",
+    "duration": 7.915
+  },
+  "reign-spelling-change": {
+    "src": "assets/audio/replica/reg/reign-spelling-change.mp3",
+    "duration": 6.74
+  },
+  "root-callback": {
+    "src": "assets/audio/replica/reg/root-callback.mp3",
+    "duration": 7.628
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/reg/final-summary.mp3",
+    "duration": 3.84
+  }
+}

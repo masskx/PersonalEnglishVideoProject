@@ -1,0 +1,25 @@
+{
+  "project": "duc-duct",
+  "orientation": "vertical",
+  "input": "outputs/duc-duct",
+  "corners": [],
+  "wordCount": 6,
+  "words": [
+    "conduct",
+    "induce",
+    "reduce",
+    "produce",
+    "introduce",
+    "deduce"
+  ],
+  "wordHighlights": null,
+  "illustration": "assets/replica/duc-duct/00_lead_hook.png",
+  "ok": false,
+  "errors": [
+    "ffprobe failed: F:\\抖音卡片英语白色\\outputs\\duc-duct: No such file or directory\r\n",
+    "cover has no decodable image stream",
+    "expected PNG, got unknown",
+    "expected 1080x1440, got 0x0",
+    "expected an opaque rgb24 canvas, got unknown"
+  ]
+}

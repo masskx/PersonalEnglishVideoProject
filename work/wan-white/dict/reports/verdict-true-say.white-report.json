@@ -1,0 +1,16 @@
+{
+  "input": "work/wan-white/dict/tasks/verdict-true-say.source.mp4",
+  "framesDir": "public/assets/replica/dict-white-motion/frames/verdict-true-say",
+  "width": 1664,
+  "height": 928,
+  "fps": 30,
+  "frames": 150,
+  "expectedFrames": 150,
+  "format": "RGB PNG; no alpha and no chroma key",
+  "whiteFloor": 198,
+  "neutralRange": 20,
+  "borderPixelsForcedWhite": 8,
+  "normalizedPixelPercent": 91.5521,
+  "badCornerSamples": 0,
+  "ok": true
+}

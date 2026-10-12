@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "duc-duct-handdrawn-keyposes",
+  "model": "gpt-image-2.5-sunburst",
+  "size": "1536x864",
+  "quality": "high",
+  "sourceDir": "work/experiments/duc-duct-handdrawn-keyposes/edit-source",
+  "assetDir": "public/assets/replica/duc-duct-handdrawn-keyposes",
+  "negativePrompt": "new characters, changed camera, changed character size, text, letters, numbers, labels, logos, watermark, signature, arrow, diagram, infographic, PPT slide, UI panel, chart, geometric icon set, SVG mechanics, full-canvas overlay, blue mechanism overlay, ground line, room, horizon, shadow, reflection, gradient, paper texture, border, inset frame, collage, duplicated body, cropped limbs, covered Xiaohei, generic stickman, cute mascot, commercial vector, glossy 3D, photorealistic",
+  "shots": [
+    {
+      "id": "conduct",
+      "reference": "public/assets/replica/duc-duct-handdrawn-keyposes/conduct-before.png",
+      "purpose": "同一手绘母版中完成 conduct 的 before/change/result",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/duc-duct-handdrawn-keyposes/conduct-before.png"},
+        {"id": "change", "prompt": "The Xiaohei leans forward and moves the baton along the orange route, actively guiding the direction. The route and flag stay in the same right-side area, with the hand-drawn style and exact framing preserved."},
+        {"id": "result", "prompt": "The Xiaohei has reached the end of the orange route and now holds the baton beside the red destination flag, clearly completing the act of leading. Preserve the same route, flag, character identity and framing."}
+      ]
+    },
+    {
+      "id": "induce",
+      "reference": "public/assets/replica/duc-duct-handdrawn-keyposes/induce-before.png",
+      "purpose": "同一手绘母版中完成 induce 的 before/change/result",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/duc-duct-handdrawn-keyposes/induce-before.png"},
+        {"id": "change", "prompt": "The Xiaohei bends forward and pushes the same round object halfway through the orange doorway. The doorway stays fixed on the right; show one clear moment of guiding the object inward, not a collage."},
+        {"id": "result", "prompt": "The round object is now inside the orange doorway and the Xiaohei has both hands extended toward it, showing that the result has been brought in. Preserve the same doorway, object identity and framing."}
+      ]
+    },
+    {
+      "id": "reduce",
+      "reference": "public/assets/replica/duc-duct-handdrawn-keyposes/reduce-before.png",
+      "purpose": "同一手绘母版中完成 reduce 的 before/change/result",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/duc-duct-handdrawn-keyposes/reduce-before.png"},
+        {"id": "change", "prompt": "The Xiaohei pulls one orange block away from the stack toward the red boundary marker. Show two blocks still stacked and one block in the Xiaohei's hands. Preserve the same hand-drawn prop style and framing."},
+        {"id": "result", "prompt": "Only one smaller orange block remains beside the red boundary marker, while the Xiaohei holds the removed blocks off to the side. The visible amount has clearly been reduced. Preserve the same character identity and framing."}
+      ]
+    },
+    {
+      "id": "produce",
+      "reference": "public/assets/replica/duc-duct-handdrawn-keyposes/produce-before.png",
+      "purpose": "同一手绘母版中完成 produce 的 before/change/result",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/duc-duct-handdrawn-keyposes/produce-before.png"},
+        {"id": "change", "prompt": "The Xiaohei pushes the cart forward and one blank orange product is halfway out of the workshop hatch. Keep the hatch, cart and character in the same right-side composition."},
+        {"id": "result", "prompt": "Two blank orange products now sit in the cart in front of the open workshop hatch, and the Xiaohei presents them with both hands. Preserve the same hand-drawn style, character identity and framing."}
+      ]
+    },
+    {
+      "id": "introduce",
+      "reference": "public/assets/replica/duc-duct-handdrawn-keyposes/introduce-before.png",
+      "purpose": "同一手绘母版中完成 introduce 的 before/change/result",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/duc-duct-handdrawn-keyposes/introduce-before.png"},
+        {"id": "change", "prompt": "The Xiaohei extends the same blank card halfway into the warm yellow circle of light. Keep the circle and its restrained hand-drawn rays in the same right-side location."},
+        {"id": "result", "prompt": "The blank card is now fully inside the warm yellow circle of light, while the Xiaohei releases it and gestures toward the new setting. Preserve the same character, circle, hand-drawn style and framing."}
+      ]
+    },
+    {
+      "id": "deduce",
+      "reference": "public/assets/replica/duc-duct-handdrawn-keyposes/deduce-before.png",
+      "purpose": "同一手绘母版中完成 deduce 的 before/change/result",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/duc-duct-handdrawn-keyposes/deduce-before.png"},
+        {"id": "change", "prompt": "The Xiaohei lifts the first evidence card and brings it closer to the other two, tracing the facts toward the red conclusion flag. Keep all three cards and the flag in the same area, with no arrows or text."},
+        {"id": "result", "prompt": "The three evidence cards are gathered into a neat small group beside the red conclusion flag, and the Xiaohei points at the flag as the inferred conclusion. Keep the background transparent, preserve the same hand-drawn style, and do not add any large circle or background plate."}
+      ]
+    }
+  ]
+}

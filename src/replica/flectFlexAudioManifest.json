@@ -1,0 +1,50 @@
+{
+  "bend-hook": {
+    "src": "assets/audio/replica/flect-flex/bend-hook.mp3",
+    "duration": 8.829
+  },
+  "bend-map": {
+    "src": "assets/audio/replica/flect-flex/bend-map.mp3",
+    "duration": 9.3
+  },
+  "reflect-bend-back": {
+    "src": "assets/audio/replica/flect-flex/reflect-bend-back.mp3",
+    "duration": 9.796
+  },
+  "reflection-returned-image": {
+    "src": "assets/audio/replica/flect-flex/reflection-returned-image.mp3",
+    "duration": 9.456
+  },
+  "deflect-turn-aside": {
+    "src": "assets/audio/replica/flect-flex/deflect-turn-aside.mp3",
+    "duration": 8.438
+  },
+  "inflect-bend-voice": {
+    "src": "assets/audio/replica/flect-flex/inflect-bend-voice.mp3",
+    "duration": 9.3
+  },
+  "flexible-easy-bend": {
+    "src": "assets/audio/replica/flect-flex/flexible-easy-bend.mp3",
+    "duration": 8.516
+  },
+  "flexibility-many-bends": {
+    "src": "assets/audio/replica/flect-flex/flexibility-many-bends.mp3",
+    "duration": 8.882
+  },
+  "reflex-fast-return": {
+    "src": "assets/audio/replica/flect-flex/reflex-fast-return.mp3",
+    "duration": 8.751
+  },
+  "inflexible-wont-bend": {
+    "src": "assets/audio/replica/flect-flex/inflexible-wont-bend.mp3",
+    "duration": 8.438
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/flect-flex/example-sentences.mp3",
+    "duration": 9.482
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/flect-flex/final-summary.mp3",
+    "duration": 17.032
+  }
+}

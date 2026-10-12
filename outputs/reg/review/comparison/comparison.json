@@ -1,0 +1,8 @@
+{
+  "project": "reg",
+  "reference": "样片/video_这么多带reg的单词怎么记住啊？..._0.mp4",
+  "candidate": "outputs/reg/reg.mp4",
+  "contactSheet": "outputs/reg/comparison/contact-sheet.png",
+  "timestamps": [0, 9.390909, 18.781818, 28.172727, 37.563636, 46.954545, 56.345454, 65.736363, 75.127272, 84.518182, 93.909091, 103.3],
+  "note": "12 组等间隔样片/成片配对帧的联系表；视频仅迁移路径，画面内容未改。"
+}

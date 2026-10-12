@@ -1,0 +1,42 @@
+[
+  {
+    "file": "xiaohei-root-upbeat-01-v1.mp3",
+    "estimatedBpm": 112.3,
+    "tempoConfidence": 5.65,
+    "medianRmsDb": -22.9,
+    "p90RmsDb": -16.5,
+    "dynamicRangeDb": 14.6,
+    "silenceFractionBelowMinus45Db": 0.0,
+    "energyPeaksPerSecond": 3.49
+  },
+  {
+    "file": "xiaohei-root-upbeat-01-v2.mp3",
+    "estimatedBpm": 107.7,
+    "tempoConfidence": 5.54,
+    "medianRmsDb": -25.1,
+    "p90RmsDb": -15.4,
+    "dynamicRangeDb": 21.2,
+    "silenceFractionBelowMinus45Db": 0.0455,
+    "energyPeaksPerSecond": 3.88
+  },
+  {
+    "file": "xiaohei-root-upbeat-01-v3.mp3",
+    "estimatedBpm": 123.0,
+    "tempoConfidence": 1.58,
+    "medianRmsDb": -20.1,
+    "p90RmsDb": -12.4,
+    "dynamicRangeDb": 24.2,
+    "silenceFractionBelowMinus45Db": 0.0346,
+    "energyPeaksPerSecond": 3.77
+  },
+  {
+    "file": "xiaohei-root-upbeat-01-v4.mp3",
+    "estimatedBpm": 103.4,
+    "tempoConfidence": 5.52,
+    "medianRmsDb": -20.5,
+    "p90RmsDb": -13.4,
+    "dynamicRangeDb": 19.9,
+    "silenceFractionBelowMinus45Db": 0.0188,
+    "energyPeaksPerSecond": 3.82
+  }
+]

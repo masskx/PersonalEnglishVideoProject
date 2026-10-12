@@ -1,0 +1,17 @@
+{
+  "id": "reflex-fast-return",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20262736,
+  "input": "work/wan-white/flect-flex/inputs/reflex-fast-return.png",
+  "inputSha256": "ba1c9cd265aaeef3371e4d3db56628b4cda7c750e0b95692c96ffd3323256234",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. One isolated floating action only: one bean-shaped solid-black creature with exactly two white dot eyes, no mouth, squeezes a tiny orange U-shaped spring between both thin hands; the spring is visibly snapping back outward. Include only the creature and the small spring in the central 55 percent. No medical scene, hot dot, platform, oval, ring, floor, horizon, baseline, shadow, frame, labels, writing, pseudo-text, or signature. Every outer edge and the lower 25 percent remain uninterrupted flat green. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "de96a90b-98b6-4c48-8c62-3a302dd54400",
+  "requestId": "f248299b-0094-94e8-9d04-15a0167390ae",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-30T00:12:30.861Z",
+  "lastPolledAt": "2026-07-30T00:13:02.295Z",
+  "outputVideo": "work/wan-white/flect-flex/tasks/reflex-fast-return.r2.source.mp4",
+  "completedAt": "2026-07-30T00:13:02.733Z"
+}

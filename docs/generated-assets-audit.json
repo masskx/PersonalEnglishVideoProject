@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-07-29T13:52:29.408Z",
+  "totalBytes": 2592887823,
+  "referencedBytes": 2214069420,
+  "archiveCandidates": [
+    {
+      "path": "assets/replica/ject-motion",
+      "bytes": 286500134,
+      "referencedByDynamicStage": false
+    }
+  ],
+  "entries": [
+    {
+      "path": "assets/replica/press",
+      "bytes": 12217514,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/reg",
+      "bytes": 3585561,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/fer",
+      "bytes": 8922643,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/bouba-kiki",
+      "bytes": 6886226,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/ject",
+      "bytes": 2210233,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/port",
+      "bytes": 2227626,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/spect",
+      "bytes": 3091510,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/vis-vid",
+      "bytes": 5283824,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/aud",
+      "bytes": 5213238,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/ject-motion",
+      "bytes": 286500134,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/dict",
+      "bytes": 11969242,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/dict-motion",
+      "bytes": 1154044130,
+      "referencedByDynamicStage": true
+    },
+    {
+      "path": "assets/replica/script-scrib",
+      "bytes": 5301449,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/script-scrib-motion",
+      "bytes": 715815359,
+      "referencedByDynamicStage": true
+    },
+    {
+      "path": "assets/replica/tract",
+      "bytes": 6725170,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/tract-white-motion",
+      "bytes": 344209931,
+      "referencedByDynamicStage": true
+    },
+    {
+      "path": "assets/replica/form",
+      "bytes": 8910092,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/struct",
+      "bytes": 5908266,
+      "referencedByDynamicStage": false
+    },
+    {
+      "path": "assets/replica/flect-flex",
+      "bytes": 3865675,
+      "referencedByDynamicStage": false
+    }
+  ]
+}

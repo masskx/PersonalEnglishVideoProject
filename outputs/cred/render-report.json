@@ -1,0 +1,110 @@
+{
+  "project": "cred",
+  "input": "work/render-staging/cred-RM5lwC/cred.mp4",
+  "expectedFrames": 5358,
+  "metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuvj420p",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "duration": "178.600000",
+        "nb_frames": "5358",
+        "nb_read_frames": "5358",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "duration": "178.645333",
+        "nb_frames": "8374",
+        "nb_read_frames": "8374"
+      }
+    ],
+    "format": {
+      "duration": "178.645333",
+      "size": "14586898",
+      "bit_rate": "653222"
+    }
+  },
+  "pixelSamples": [
+    {
+      "frame": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "frame": 5336,
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "frame": 5347,
+      "rgb": [
+        150,
+        150,
+        150
+      ]
+    },
+    {
+      "frame": 5357,
+      "rgb": [
+        46,
+        46,
+        46
+      ]
+    }
+  ],
+  "fade": {
+    "frames": 21,
+    "startFrame": 5337,
+    "endOpacity": 0.82
+  },
+  "maxVolumeDb": -2.3283376170564014,
+  "fullDecode": {
+    "video": true,
+    "audio": true
+  },
+  "backgroundMusic": {
+    "src": "assets/music/root-word-series-bgm.mp3",
+    "volume": 0.18,
+    "duckedVolume": 0.11,
+    "fadeInSec": 1.2,
+    "fadeOutSec": 2,
+    "duckAttackSec": 0.25,
+    "duckReleaseSec": 0.55,
+    "loop": true,
+    "source": "public/assets/music/root-word-series-bgm.mp3",
+    "sourceExists": true
+  },
+  "silenceConfig": {
+    "thresholdDb": -45,
+    "minimumDurationSec": 1.2
+  },
+  "narrationCoverageGaps": [],
+  "unexplainedNarrationCoverageGaps": [],
+  "longSilences": [],
+  "unexplainedSilences": [],
+  "errors": []
+}

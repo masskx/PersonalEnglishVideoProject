@@ -1,0 +1,600 @@
+{
+  "project": "ten-tain",
+  "input": "outputs/ten-tain/ten-tain.mp4",
+  "durationSeconds": 146.858667,
+  "intervalSeconds": 1,
+  "sampledFrames": 147,
+  "previewVideo": "outputs/ten-tain/review/full-preview/full-preview.mp4",
+  "contactSheets": "outputs/ten-tain/review/full-preview/full-preview-contact-*.jpg",
+  "safeArea": {
+    "left": 88,
+    "right": 1832,
+    "top": 54,
+    "bottom": 1008
+  },
+  "layoutIssues": [
+    {
+      "scene": "ten-tain-root-map",
+      "layer": "root-xiaohei",
+      "kind": "image",
+      "box": {
+        "x": 1020,
+        "y": 95,
+        "width": 820,
+        "height": 690
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "retain-word",
+      "layer": "retain-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "contain-word",
+      "layer": "contain-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "contain-word",
+      "layer": "contain-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "contain-word",
+      "layer": "contain-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "maintain-word",
+      "layer": "maintain-word-word",
+      "kind": "text",
+      "box": {
+        "x": 130,
+        "y": 50,
+        "width": 1660,
+        "height": 114
+      },
+      "message": "content crosses top safe margin"
+    },
+    {
+      "scene": "obtain-word",
+      "layer": "obtain-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "obtain-word",
+      "layer": "obtain-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "obtain-word",
+      "layer": "obtain-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "detain-word",
+      "layer": "detain-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "sustain-word",
+      "layer": "sustain-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "sustain-word",
+      "layer": "sustain-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "sustain-word",
+      "layer": "sustain-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "entertain-word",
+      "layer": "entertain-word-word",
+      "kind": "text",
+      "box": {
+        "x": 130,
+        "y": 50,
+        "width": 1660,
+        "height": 114
+      },
+      "message": "content crosses top safe margin"
+    },
+    {
+      "scene": "abstain-word",
+      "layer": "abstain-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "abstain-word",
+      "layer": "abstain-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "abstain-word",
+      "layer": "abstain-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "ten-tain-family-map",
+      "layer": "map-title",
+      "kind": "text",
+      "box": {
+        "x": 160,
+        "y": 38,
+        "width": 1600,
+        "height": 79
+      },
+      "message": "content crosses top safe margin"
+    },
+    {
+      "scene": "practice",
+      "layer": "practice-title",
+      "kind": "text",
+      "box": {
+        "x": 160,
+        "y": 45,
+        "width": 1600,
+        "height": 81
+      },
+      "message": "content crosses top safe margin"
+    },
+    {
+      "scene": "ten-tain-summary",
+      "layer": "summary-title",
+      "kind": "text",
+      "box": {
+        "x": 160,
+        "y": 35,
+        "width": 1600,
+        "height": 79
+      },
+      "message": "content crosses top safe margin"
+    },
+    {
+      "scene": "ten-tain-summary",
+      "layer": "summary-art-1",
+      "kind": "image",
+      "box": {
+        "x": 1515,
+        "y": 155,
+        "width": 320,
+        "height": 285
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "ten-tain-summary",
+      "layer": "summary-art-2",
+      "kind": "image",
+      "box": {
+        "x": 1515,
+        "y": 355,
+        "width": 320,
+        "height": 285
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "ten-tain-summary",
+      "layer": "summary-art-3",
+      "kind": "image",
+      "box": {
+        "x": 1515,
+        "y": 555,
+        "width": 320,
+        "height": 285
+      },
+      "message": "content crosses right safe margin"
+    }
+  ],
+  "layoutErrors": [],
+  "layoutWarnings": [
+    {
+      "scene": "ten-tain-root-map",
+      "layer": "root-xiaohei",
+      "kind": "image",
+      "box": {
+        "x": 1020,
+        "y": 95,
+        "width": 820,
+        "height": 690
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "retain-word",
+      "layer": "retain-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "contain-word",
+      "layer": "contain-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "contain-word",
+      "layer": "contain-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "contain-word",
+      "layer": "contain-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "maintain-word",
+      "layer": "maintain-word-word",
+      "kind": "text",
+      "box": {
+        "x": 130,
+        "y": 50,
+        "width": 1660,
+        "height": 114
+      },
+      "message": "content crosses top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "obtain-word",
+      "layer": "obtain-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "obtain-word",
+      "layer": "obtain-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "obtain-word",
+      "layer": "obtain-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "detain-word",
+      "layer": "detain-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "sustain-word",
+      "layer": "sustain-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "sustain-word",
+      "layer": "sustain-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "sustain-word",
+      "layer": "sustain-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "entertain-word",
+      "layer": "entertain-word-word",
+      "kind": "text",
+      "box": {
+        "x": 130,
+        "y": 50,
+        "width": 1660,
+        "height": 114
+      },
+      "message": "content crosses top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "abstain-word",
+      "layer": "abstain-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "abstain-word",
+      "layer": "abstain-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "abstain-word",
+      "layer": "abstain-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "ten-tain-family-map",
+      "layer": "map-title",
+      "kind": "text",
+      "box": {
+        "x": 160,
+        "y": 38,
+        "width": 1600,
+        "height": 79
+      },
+      "message": "content crosses top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "practice",
+      "layer": "practice-title",
+      "kind": "text",
+      "box": {
+        "x": 160,
+        "y": 45,
+        "width": 1600,
+        "height": 81
+      },
+      "message": "content crosses top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "ten-tain-summary",
+      "layer": "summary-title",
+      "kind": "text",
+      "box": {
+        "x": 160,
+        "y": 35,
+        "width": 1600,
+        "height": 79
+      },
+      "message": "content crosses top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "ten-tain-summary",
+      "layer": "summary-art-1",
+      "kind": "image",
+      "box": {
+        "x": 1515,
+        "y": 155,
+        "width": 320,
+        "height": 285
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "ten-tain-summary",
+      "layer": "summary-art-2",
+      "kind": "image",
+      "box": {
+        "x": 1515,
+        "y": 355,
+        "width": 320,
+        "height": 285
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "ten-tain-summary",
+      "layer": "summary-art-3",
+      "kind": "image",
+      "box": {
+        "x": 1515,
+        "y": 555,
+        "width": 320,
+        "height": 285
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    }
+  ],
+  "manualReviewRequired": [
+    "打开 full-preview.mp4 连续观看整片。",
+    "逐页查看 full-preview-contact-*.jpg，重点看文字溢出、大片空白、图文失衡和关键帧切换。",
+    "手机尺寸检查字幕和词义；发现问题后修订 storyboard，再重新渲染并重复本闸门。"
+  ]
+}

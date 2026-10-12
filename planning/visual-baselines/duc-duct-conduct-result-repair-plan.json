@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "duc-duct-conduct-result-repair",
+  "model": "gpt-image-2.5-sunburst",
+  "size": "1536x864",
+  "quality": "high",
+  "sourceDir": "work/experiments/duc-duct-handdrawn-keyposes/conduct-repair-source",
+  "assetDir": "public/assets/replica/duc-duct-handdrawn-keyposes",
+  "negativePrompt": "new characters, changed camera, changed framing, changed character size, tiny character, character moved to the right, text, labels, logos, arrows, diagram, UI panel, SVG mechanics, full-canvas overlay, background plate, shadow, gradient, texture, collage, cropped limbs, covered Xiaohei, generic stickman",
+  "shots": [
+    {
+      "id": "conduct",
+      "reference": "public/assets/replica/duc-duct-handdrawn-keyposes/conduct-change.png",
+      "purpose": "修复 conduct result 的角色尺寸与机位",
+      "states": [
+        {
+          "id": "result",
+          "prompt": "Keep the Xiaohei large on the left half at exactly the same scale and camera position as the attached reference. Do not move or resize the character. Only bend the baton arm slightly so the baton points toward the red flag at the end of the orange route, showing the completed lead action. Preserve the full orange route and flag, transparent background, and hand-drawn style."
+        }
+      ]
+    }
+  ]
+}

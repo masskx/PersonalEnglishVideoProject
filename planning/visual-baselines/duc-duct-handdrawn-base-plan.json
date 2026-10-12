@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "duc-duct-handdrawn-base",
+  "model": "gpt-image-2.5-sunburst",
+  "size": "1536x864",
+  "quality": "high",
+  "sourceDir": "work/experiments/duc-duct-handdrawn-keyposes/base-source",
+  "assetDir": "public/assets/replica/duc-duct-handdrawn-keyposes",
+  "negativePrompt": "new characters, changed camera, changed character size, text, letters, numbers, labels, logos, watermark, signature, arrow, diagram, infographic, PPT slide, UI panel, chart, geometric icon set, SVG mechanics, full-canvas overlay, blue mechanism overlay, ground line, room, horizon, shadow, reflection, gradient, paper texture, border, inset frame, collage, duplicated body, cropped limbs, covered Xiaohei, generic stickman, cute mascot, commercial vector, glossy 3D, photorealistic",
+  "shots": [
+    {
+      "id": "conduct",
+      "reference": "public/assets/replica/mit-miss-keyposes/emit-1.png",
+      "purpose": "先建立 conduct 的手绘带路母版",
+      "states": [
+        {
+          "id": "before",
+          "prompt": "Replace the spray tank and nozzle with one sparse hand-drawn orange route on the right, ending at a small red destination flag. The Xiaohei stands on the left holding a short black baton toward the route, clearly acting as a guide. Keep the character large and fully visible. Use a tactile hand-drawn prop with slightly wobbly black ink outlines and restrained color, not geometric UI shapes."
+        }
+      ]
+    },
+    {
+      "id": "induce",
+      "reference": "public/assets/replica/mit-miss-keyposes/emit-1.png",
+      "purpose": "先建立 induce 的手绘促使进入母版",
+      "states": [
+        {
+          "id": "before",
+          "prompt": "Replace the spray tank and nozzle with a simple hand-drawn orange doorway on the right and one plain round object just outside it. The Xiaohei reaches toward the object and the doorway, suggesting guiding something inward. Keep the character large and fully visible. Use a tactile hand-drawn prop with slightly wobbly black ink outlines and restrained color, not geometric UI shapes."
+        }
+      ]
+    },
+    {
+      "id": "reduce",
+      "reference": "public/assets/replica/mit-miss-keyposes/emit-1.png",
+      "purpose": "先建立 reduce 的手绘缩小母版",
+      "states": [
+        {
+          "id": "before",
+          "prompt": "Replace the spray tank and nozzle with a hand-drawn stack of three uneven orange blocks on the right and a small red boundary marker behind them. The Xiaohei holds the stack and pulls it back toward the marker, making the idea of reducing the amount readable. Keep the character large and fully visible. Use a tactile hand-drawn prop with slightly wobbly black ink outlines and restrained color, not geometric UI shapes."
+        }
+      ]
+    },
+    {
+      "id": "produce",
+      "reference": "public/assets/replica/mit-miss-keyposes/emit-1.png",
+      "purpose": "先建立 produce 的手绘带出母版",
+      "states": [
+        {
+          "id": "before",
+          "prompt": "Replace the spray tank and nozzle with a small hand-drawn orange workshop hatch and an empty low cart on the right. The Xiaohei pushes the first blank orange object out of the hatch toward the viewer. Keep the character large and fully visible. Use a tactile hand-drawn prop with slightly wobbly black ink outlines and restrained color, not geometric UI shapes."
+        }
+      ]
+    },
+    {
+      "id": "introduce",
+      "reference": "public/assets/replica/mit-miss-keyposes/emit-1.png",
+      "purpose": "先建立 introduce 的手绘带入新场合母版",
+      "states": [
+        {
+          "id": "before",
+          "prompt": "Replace the spray tank and nozzle with one loose hand-drawn warm yellow circle of light on the right and a small blank card held by the Xiaohei at its edge. The Xiaohei is presenting the card into the circle, suggesting introducing an idea into a new group. Keep the character large and fully visible. Use a tactile hand-drawn prop with slightly wobbly black ink outlines and restrained color, not geometric UI shapes."
+        }
+      ]
+    },
+    {
+      "id": "deduce",
+      "reference": "public/assets/replica/mit-miss-keyposes/emit-1.png",
+      "purpose": "先建立 deduce 的手绘事实到结论母版",
+      "states": [
+        {
+          "id": "before",
+          "prompt": "Replace the spray tank and nozzle with three separate hand-drawn blank evidence cards arranged loosely on the right and one small red conclusion flag farther right. The Xiaohei reaches toward the cards as if tracing facts toward a conclusion. Keep the character large and fully visible. Use a tactile hand-drawn prop with slightly wobbly black ink outlines and restrained color, not geometric UI shapes."
+        }
+      ]
+    }
+  ]
+}

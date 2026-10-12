@@ -1,0 +1,17 @@
+{
+  "id": "deform-ruin-shape",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20263735,
+  "input": "work/wan-white/form/inputs/deform-ruin-shape.png",
+  "inputSha256": "5bbaa1de4a68499ec6d7220333d235eb64da893ec8340c132ea578797f94d991",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. Sparse floating cutout only: the character pulls one handle and visibly warps a small plain round object into a lopsided shape, with one restrained red stress mark. Absolutely no floor, baseline, ground scribble, shadow, scenery, giant balloon, or edge crop. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "0184ced4-b7a1-474f-a59b-c2d5daacc37d",
+  "requestId": "cd57226e-1cc3-90e9-a8bf-892e514a419b",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-30T00:17:04.068Z",
+  "lastPolledAt": "2026-07-30T00:17:28.822Z",
+  "outputVideo": "work/wan-white/form/tasks/deform-ruin-shape.r3.source.mp4",
+  "completedAt": "2026-07-30T00:17:28.951Z"
+}

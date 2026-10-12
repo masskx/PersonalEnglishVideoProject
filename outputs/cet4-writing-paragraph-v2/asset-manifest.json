@@ -1,0 +1,27 @@
+{
+  "writerSource": "public/assets/replica/script-scrib/00_write_hook.png",
+  "newImageGeneration": false,
+  "assets": [
+    "assets/cet-writing/writer.png",
+    "assets/music/root-word-series-bgm.mp3",
+    "assets/audio/cet4-writing-paragraph/hook-582e01b046b5.mp3",
+    "assets/audio/cet4-writing-paragraph/task-95e9b6f442ec.mp3",
+    "assets/audio/cet4-writing-paragraph/weak-3496236d877d.mp3",
+    "assets/audio/cet4-writing-paragraph/claim-intro-84d206996b05.mp3",
+    "assets/audio/cet4-writing-paragraph/claim-en-999aaa4465e0.mp3",
+    "assets/audio/cet4-writing-paragraph/reason-intro-aa2179ca369b.mp3",
+    "assets/audio/cet4-writing-paragraph/reason-en-d39de49b0a8b.mp3",
+    "assets/audio/cet4-writing-paragraph/reason-explain-65e9a67549ef.mp3",
+    "assets/audio/cet4-writing-paragraph/example-intro-f0b7fe9f7019.mp3",
+    "assets/audio/cet4-writing-paragraph/example-en-de2f6c8c6663.mp3",
+    "assets/audio/cet4-writing-paragraph/example-explain-a45daa50751a.mp3",
+    "assets/audio/cet4-writing-paragraph/paragraph-8273d50a9907.mp3",
+    "assets/audio/cet4-writing-paragraph/exam-fit-1a2210beca6b.mp3",
+    "assets/audio/cet4-writing-paragraph/trap-56894e9e9830.mp3",
+    "assets/audio/cet4-writing-paragraph/practice-ed5f268d7a5d.mp3",
+    "assets/audio/cet4-writing-paragraph/answer-en-fa33b22cf588.mp3",
+    "assets/audio/cet4-writing-paragraph/transfer-aac37477ea75.mp3",
+    "assets/audio/cet4-writing-paragraph/check-3f98165dd6e3.mp3",
+    "assets/audio/cet4-writing-paragraph/close-a73ac64877bb.mp3"
+  ]
+}

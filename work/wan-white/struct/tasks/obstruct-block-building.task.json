@@ -1,0 +1,17 @@
+{
+  "id": "obstruct-block-building",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260737,
+  "input": "work/wan-white/struct/inputs/obstruct-block-building.png",
+  "inputSha256": "8216b5fce42e5aa225a53c18faf3afdfa21da0c0bc3568b093aa97d6a47d99d3",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character braces one oversized plain block directly across the opening of a small floating scaffold, visibly preventing another beam from entering. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "9bb6eced-3e6f-4212-8e1f-53d0d31a1cba",
+  "requestId": "33fd560c-ef42-91d9-ab32-241a271921ff",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-29T13:56:51.884Z",
+  "lastPolledAt": "2026-07-29T13:57:42.559Z",
+  "outputVideo": "work/wan-white/struct/tasks/obstruct-block-building.source.mp4",
+  "completedAt": "2026-07-29T13:57:43.787Z"
+}

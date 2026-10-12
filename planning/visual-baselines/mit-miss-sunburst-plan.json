@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "mit-miss-sunburst-reference-edit",
+  "model": "gpt-image-2.5-sunburst",
+  "size": "1536x864",
+  "quality": "high",
+  "sourceDir": "work/experiments/mit-miss-images2-keyposes/source",
+  "assetDir": "public/assets/replica/mit-miss-images2-keyposes",
+  "negativePrompt": "new characters, changed desk, changed camera, changed character size, writing, labels, logos, decorative arrows, SVG mechanics, blue mechanism overlay, shadow, gradient, paper texture, border, inset frame, cropped limbs",
+  "shots": [
+    {
+      "id": "submit",
+      "reference": "assets/visual-baselines/mit-miss-sunburst/reference.png",
+      "purpose": "用同一张母版表达从下方向上递交信封的三个离散姿态",
+      "states": [
+        {
+          "id": "before",
+          "source": "assets/visual-baselines/mit-miss-sunburst/reference.png"
+        },
+        {
+          "id": "change",
+          "prompt": "The small worker below the desk is stretching both arms upward. The supervisor above the desk is reaching down. Both characters touch the same orange envelope exactly at the desk edge; the transfer is in progress."
+        },
+        {
+          "id": "result",
+          "source": "assets/visual-baselines/mit-miss-sunburst/result.png"
+        }
+      ]
+    },
+    {
+      "id": "transmit",
+      "reference": "public/assets/replica/mit-miss-keyposes/transmit-1.png",
+      "purpose": "用同一张母版表达消息胶囊从发送端传到接收端",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-keyposes/transmit-1.png"},
+        {"id": "change", "prompt": "The worker on the left inserts the orange message capsule into the left radio terminal. The worker on the right reaches toward the receiving terminal. Keep both terminals and both characters in exactly the same places."},
+        {"id": "result", "prompt": "The worker on the right now holds the same orange message capsule beside the receiving terminal. The worker on the left has empty hands. Keep both terminals and both characters in exactly the same places."}
+      ]
+    },
+    {
+      "id": "emit",
+      "reference": "public/assets/replica/mit-miss-keyposes/emit-1.png",
+      "purpose": "用同一张母版表达气体从喷嘴向外释放",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-keyposes/emit-1.png"},
+        {"id": "change", "prompt": "The worker turns the nozzle valve. Add exactly one small orange gas puff just outside the nozzle mouth. Preserve the tank, nozzle and character positions."},
+        {"id": "result", "prompt": "The worker holds the valve open. Show exactly three orange gas puffs clearly outside the nozzle, moving away from it. Preserve the tank, nozzle and character positions."}
+      ]
+    },
+    {
+      "id": "admit",
+      "reference": "public/assets/replica/mit-miss-keyposes/admit-1.png",
+      "purpose": "用同一张母版表达访客从门外被允许进入",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-keyposes/admit-1.png"},
+        {"id": "change", "prompt": "The gatekeeper on the right opens the door wide. The visitor moves from the left to the center and is halfway through the doorway. Keep only the two characters and doorway; no capsule or extra object."},
+        {"id": "result", "prompt": "The visitor has moved through the doorway and now stands with the gatekeeper on the right side. The left side is empty and the door remains open. Keep only the two characters and doorway; no capsule or extra object."}
+      ]
+    },
+    {
+      "id": "permit",
+      "reference": "public/assets/replica/mit-miss-keyposes/permit-1.png",
+      "purpose": "用同一张母版表达出示通行证后被放行",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-keyposes/permit-1.png"},
+        {"id": "change", "prompt": "The worker presents the small orange pass toward the gatekeeper. The gatekeeper begins lifting the barrier. Preserve the same gate, lever, characters and framing."},
+        {"id": "result", "prompt": "The barrier is fully raised. The worker carrying the same orange pass now stands beyond the barrier. The gatekeeper remains at the lever. Preserve the same gate and framing."}
+      ]
+    },
+    {
+      "id": "commit",
+      "reference": "public/assets/replica/mit-miss-keyposes/commit-1.png",
+      "purpose": "用同一张母版表达把承诺胶囊正式放入卡槽",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-keyposes/commit-1.png"},
+        {"id": "change", "prompt": "The worker uses both hands to push the same orange capsule deeply into the commitment slot. Preserve the exact slot box, character and framing."},
+        {"id": "result", "prompt": "The orange capsule is secured inside the slot behind a closed latch. The worker has released it and shows empty hands. Preserve the exact slot box, character and framing."}
+      ]
+    },
+    {
+      "id": "dismiss",
+      "reference": "public/assets/replica/mit-miss-keyposes/dismiss-1.png",
+      "purpose": "用同一张母版表达把两个人从面前送走",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-keyposes/dismiss-1.png"},
+        {"id": "change", "prompt": "The leader extends one hand toward the open exit. The other two workers turn and take one step toward the doorway. Preserve all three character identities, doorway and framing."},
+        {"id": "result", "prompt": "The two workers have passed outside the doorway and separate in different directions. The leader remains inside alone. Preserve all three character identities, doorway and framing."}
+      ]
+    },
+    {
+      "id": "mission",
+      "reference": "public/assets/replica/mit-miss-keyposes/mission-1.png",
+      "purpose": "用同一张母版表达接到任务后走向目标旗帜",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-keyposes/mission-1.png"},
+        {"id": "change", "prompt": "The worker grips the same orange task envelope and takes a deliberate first step away from the dispatcher toward the distant flag. Preserve the dispatcher, flag, characters and framing."},
+        {"id": "result", "prompt": "The worker has arrived at the flag carrying the same orange task envelope. The dispatcher remains behind in the original area. Preserve both character identities, flag and framing."}
+      ]
+    }
+  ]
+}

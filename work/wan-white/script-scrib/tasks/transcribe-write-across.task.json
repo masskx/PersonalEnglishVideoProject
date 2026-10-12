@@ -1,0 +1,17 @@
+{
+  "id": "transcribe-write-across",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20261733,
+  "input": "work/wan-white/script-scrib/inputs/transcribe-write-across.png",
+  "inputSha256": "f5da98908af599f500431c4088df1675382c89775ee3818f5e3deebe5f77dc29",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character listens to one plain horn on the left and carries a pen across a tiny arched bridge to one blank white sheet on the right. One orange sound ribbon enters the ear side and becomes one orange ink ribbon at the pen tip. No waveform, notes, writing, or arrows. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "3f1493a6-1b79-429c-bcfd-b26de81be901",
+  "requestId": "c5e2b4ba-91d3-99f0-a787-52ad8aa4c583",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-30T00:35:52.328Z",
+  "lastPolledAt": "2026-07-30T00:36:34.371Z",
+  "outputVideo": "work/wan-white/script-scrib/tasks/transcribe-write-across.source.mp4",
+  "completedAt": "2026-07-30T00:36:34.614Z"
+}

@@ -1,0 +1,25 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\script-scrib\\wan\\hook.source.mp4",
+  "output": null,
+  "framesDir": "G:\\抖音卡片英语白色\\public\\assets\\replica\\script-scrib-motion\\frames\\hook",
+  "width": 832,
+  "height": 464,
+  "fps": 30.0,
+  "frames": 150,
+  "expectedFrames": 150,
+  "duration": 5.0,
+  "visibleCoverage": {
+    "min": 0.13057443633952254,
+    "max": 0.13916404177718833,
+    "mean": 0.13419053243810786
+  },
+  "softAlphaCoverage": {
+    "max": 0.017738726790450927,
+    "mean": 0.017261428630636604
+  },
+  "enclosedGreenCoverage": {
+    "max": 0.004698897546419098,
+    "mean": 0.0017234989776746242
+  },
+  "ok": true
+}

@@ -1,0 +1,107 @@
+{
+  "reference": {
+    "path": "F:\\抖音卡片英语白色\\work\\experiments\\mit-miss-sunburst-full\\mit-miss-sunburst-full.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuvj420p",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "122.100000",
+          "nb_frames": "3663",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "122.154667",
+          "nb_frames": "5726"
+        }
+      ],
+      "format": {
+        "duration": "122.154667",
+        "size": "9225140",
+        "bit_rate": "604161"
+      }
+    }
+  },
+  "candidate": {
+    "path": "F:\\抖音卡片英语白色\\outputs\\cred\\cred.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuvj420p",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "196.800000",
+          "nb_frames": "5904",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "196.842667",
+          "nb_frames": "9227"
+        }
+      ],
+      "format": {
+        "duration": "196.842667",
+        "size": "13506210",
+        "bit_rate": "548913"
+      }
+    }
+  },
+  "timestamps": [
+    0.0,
+    8.1369778,
+    16.2739556,
+    24.4109334,
+    32.5479112,
+    40.684889000000005,
+    48.8218668,
+    56.958844600000006,
+    65.0958224,
+    73.2328002,
+    81.36977800000001,
+    89.50675580000001,
+    97.6437336,
+    105.7807114,
+    113.91768920000001,
+    122.05466700000001
+  ],
+  "contact_sheet": {
+    "columns": 2,
+    "rows": 8,
+    "file": "contact-sheet.png"
+  }
+}

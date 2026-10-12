@@ -1,0 +1,46 @@
+{
+  "lead-hook": {
+    "src": "assets/audio/replica/duc-duct/lead-hook.mp3",
+    "duration": 11.311
+  },
+  "direction-map": {
+    "src": "assets/audio/replica/duc-duct/direction-map.mp3",
+    "duration": 13.27
+  },
+  "conduct-together": {
+    "src": "assets/audio/replica/duc-duct/conduct-together.mp3",
+    "duration": 10.292
+  },
+  "induce-in": {
+    "src": "assets/audio/replica/duc-duct/induce-in.mp3",
+    "duration": 9.117
+  },
+  "reduce-back": {
+    "src": "assets/audio/replica/duc-duct/reduce-back.mp3",
+    "duration": 9.3
+  },
+  "produce-forth": {
+    "src": "assets/audio/replica/duc-duct/produce-forth.mp3",
+    "duration": 9.587
+  },
+  "introduce-inward": {
+    "src": "assets/audio/replica/duc-duct/introduce-inward.mp3",
+    "duration": 11.677
+  },
+  "deduce-down": {
+    "src": "assets/audio/replica/duc-duct/deduce-down.mp3",
+    "duration": 9.326
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/duc-duct/example-sentences.mp3",
+    "duration": 22.622
+  },
+  "practice": {
+    "src": "assets/audio/replica/duc-duct/practice.mp3",
+    "duration": 17.659
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/duc-duct/final-summary.mp3",
+    "duration": 17.789
+  }
+}

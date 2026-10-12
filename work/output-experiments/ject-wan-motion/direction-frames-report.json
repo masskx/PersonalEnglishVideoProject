@@ -1,0 +1,25 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\ject-wan-motion\\01_direction_machine.source.mp4",
+  "output": null,
+  "framesDir": "G:\\抖音卡片英语白色\\public\\assets\\replica\\ject-motion\\frames\\direction",
+  "width": 832,
+  "height": 464,
+  "fps": 30.0,
+  "frames": 150,
+  "expectedFrames": 150,
+  "duration": 5.0,
+  "visibleCoverage": {
+    "min": 0.05545424403183024,
+    "max": 0.060842175066312995,
+    "mean": 0.05714900737732097
+  },
+  "softAlphaCoverage": {
+    "max": 0.024266412466843502,
+    "mean": 0.022752455653183023
+  },
+  "enclosedGreenCoverage": {
+    "max": 0.0010879476127320954,
+    "mean": 0.0008882660532714412
+  },
+  "ok": true
+}

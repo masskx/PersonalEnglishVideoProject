@@ -1,0 +1,16 @@
+{
+  "input": "work/wan-white/script-scrib/tasks/describe-write-out.r3.source.mp4",
+  "framesDir": "public/assets/replica/script-scrib-white-motion/frames/describe-write-out",
+  "width": 1664,
+  "height": 928,
+  "fps": 30,
+  "frames": 150,
+  "expectedFrames": 150,
+  "format": "RGB PNG; no alpha and no chroma key",
+  "whiteFloor": 198,
+  "neutralRange": 20,
+  "borderPixelsForcedWhite": 8,
+  "normalizedPixelPercent": 94.1683,
+  "badCornerSamples": 0,
+  "ok": true
+}

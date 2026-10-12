@@ -1,0 +1,17 @@
+{
+  "id": "reform-shape-again",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260732,
+  "input": "work/wan-white/form/inputs/reform-shape-again.png",
+  "inputSha256": "d0080845f199ae906d4ad806aa9fd2e3a045cad05957794a78001f05a7e9ea54",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. Sparse floating cutout only: the character takes one bent plain object apart and presses it through a small orange hand-cranked mold so it emerges straight. All pieces float. Absolutely no floor, baseline, platform, ground scribble, shadow, scenery, or edge crop. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "df61d060-3811-48b6-bd5b-2d287516fc54",
+  "requestId": "ebd5f625-1a3c-9604-9171-5c855e2d7ab5",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-29T13:55:27.112Z",
+  "lastPolledAt": "2026-07-29T13:57:37.549Z",
+  "outputVideo": "work/wan-white/form/tasks/reform-shape-again.source.mp4",
+  "completedAt": "2026-07-29T13:57:37.761Z"
+}

@@ -1,0 +1,25 @@
+{
+  "input": "G:\\抖音卡片英语白色\\outputs\\dict-wan\\hook.source.mp4",
+  "output": null,
+  "framesDir": "G:\\抖音卡片英语白色\\public\\assets\\replica\\dict-motion\\frames\\hook",
+  "width": 832,
+  "height": 464,
+  "fps": 30.0,
+  "frames": 150,
+  "expectedFrames": 150,
+  "duration": 5.0,
+  "visibleCoverage": {
+    "min": 0.20812696866710875,
+    "max": 0.28510962367374004,
+    "mean": 0.2238013753039346
+  },
+  "softAlphaCoverage": {
+    "max": 0.023103344661803714,
+    "mean": 0.016649173159814328
+  },
+  "enclosedGreenCoverage": {
+    "max": 0.004657451923076923,
+    "mean": 0.0001637102122015915
+  },
+  "ok": true
+}

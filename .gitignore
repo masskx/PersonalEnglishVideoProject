@@ -1,0 +1,33 @@
+# Personal credentials and authentication data must never be committed.
+.env
+.env.*
+!.env.example
+!.env.template
+**/credentials.json
+**/*credentials*.local.*
+**/secrets.json
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/id_rsa*
+**/id_ed25519*
+**/chrome-print-profile/
+**/chrome-profile/
+**/browser-profile/
+.playwright-cli/
+
+# Reinstallable dependencies and disposable runtime caches.
+node_modules/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/python-libs/
+**/python-libs-v2/
+public/.render-stage/
+work/render-public/
+work/render-staging/
+*.tmp
+*.pid
+
+# Source, media, production logs, drafts and archives are intentionally included.

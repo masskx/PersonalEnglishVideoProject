@@ -1,0 +1,17 @@
+{
+  "id": "uniform-one-shape",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260736,
+  "input": "work/wan-white/form/inputs/uniform-one-shape.png",
+  "inputSha256": "f8f9efda9ba7997972ff73f73c5863cb82b90c6cf4996c421cf3f8e32964bcce",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. Minimal floating cutout with exactly one black character. The character grips one plain orange star-shaped cookie cutter with both hands and presses it onto one small floating clay blob; three identical star-shaped clay pieces float nearby as the result. There is no surface under anything. Absolutely no table, counter, floor, horizontal line, baseline, machine, ruler, tools, measurement ticks, numbers, letters, pseudo-text, extra people, clothing, shadow, or scenery. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "84d8bab6-11ee-46b5-bdb1-c173c622a1d4",
+  "requestId": "b9befba2-d634-9ef2-884b-8946c8d8f652",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-29T13:55:51.101Z",
+  "lastPolledAt": "2026-07-29T13:57:40.527Z",
+  "outputVideo": "work/wan-white/form/tasks/uniform-one-shape.source.mp4",
+  "completedAt": "2026-07-29T13:57:42.368Z"
+}

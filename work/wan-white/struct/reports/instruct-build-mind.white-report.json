@@ -1,0 +1,16 @@
+{
+  "input": "work/wan-white/struct/tasks/instruct-build-mind.source.mp4",
+  "framesDir": "public/assets/replica/struct-white-motion/frames/instruct-build-mind",
+  "width": 1664,
+  "height": 928,
+  "fps": 30,
+  "frames": 150,
+  "expectedFrames": 150,
+  "format": "RGB PNG; no alpha and no chroma key",
+  "whiteFloor": 198,
+  "neutralRange": 20,
+  "borderPixelsForcedWhite": 8,
+  "normalizedPixelPercent": 87.6325,
+  "badCornerSamples": 0,
+  "ok": true
+}

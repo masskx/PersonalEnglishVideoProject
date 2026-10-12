@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-09-19T14:56:36.608Z",
+  "plan": "planning/visual-baselines/duc-duct-conduct-result-repair-plan.json",
+  "model": "gpt-image-2.5-sunburst",
+  "size": "1536x864",
+  "quality": "high",
+  "items": [
+    {
+      "shot": "conduct",
+      "state": "result",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/duc-duct-handdrawn-keyposes/conduct-repair-source/conduct-result-source.png",
+      "alpha": "public/assets/replica/duc-duct-handdrawn-keyposes/conduct-result.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\duc-duct-handdrawn-keyposes\\conduct-result.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.0874599880642361,
+          "opaqueCoverage": 0.08282725016276042,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.12841796875,
+          "maxInnerVerticalBandRatio": 0.1840277777777778,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 290,
+            "top": 199,
+            "right": 1897,
+            "bottom": 990
+          }
+        },
+        "errors": []
+      }
+    }
+  ]
+}

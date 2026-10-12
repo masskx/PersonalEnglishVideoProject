@@ -1,0 +1,17 @@
+{
+  "id": "describe-write-out",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20263730,
+  "input": "work/wan-white/script-scrib/inputs/describe-write-out.png",
+  "inputSha256": "0806ac943ca28f3420cd4cb8c618f146cc1462548d63b6252418799b21e3a4d7",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. A sparse isolated cutout: the character stands between one small floating plain teapot and one small floating blank sheet, looking at the teapot while drawing one single smooth orange arc on the sheet. No viewing circle, board, easel, room, floor, ground, shadow, texture, black background, hatching, handwriting, glyph, or pseudo-text. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "9270c19b-6130-4aa7-b964-0e2c33bde979",
+  "requestId": "cad706d0-b4f4-988d-917e-adfb6957ae9f",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-30T00:52:46.328Z",
+  "lastPolledAt": "2026-07-30T00:53:22.776Z",
+  "outputVideo": "work/wan-white/script-scrib/tasks/describe-write-out.r3.source.mp4",
+  "completedAt": "2026-07-30T00:53:24.597Z"
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "cred-eight-words-sunburst-v2",
+  "model": "gpt-image-2.5-sunburst",
+  "size": "1536x864",
+  "quality": "high",
+  "sourceDir": "work/experiments/cred-keyposes-v2/source",
+  "assetDir": "public/assets/replica/cred-v2",
+  "contactSheet": "outputs/cred/review/keyposes-v2-contact.png",
+  "visualReview": {"status": "approved", "reviewer": "Codex visual review", "reviewedAt": "2026-09-21", "notes": ["Eight words have distinct meanings and unique three-pose assets.", "Credulous accepts the claim; incredulous refuses it.", "Incredible is represented as a surprising event, not a skeptical person.", "Creditable shows a completed task receiving a medal; discredit leaves the claim presenter alone after contradictory evidence.", "White-background contact sheet and mobile reduction reviewed. Encoded scene and cut checks still required after render."]},
+  "negativePrompt": "new or changed Xiaohei identity, generic stick figure, changed camera, changed main character size, writing, labels, logos, decorative arrows, SVG mechanics, blue mechanism overlay, shadow, gradient, paper texture, border, inset frame, cropped limbs, extra unrelated props, duplicated characters, fused hands",
+  "shots": [
+    {
+      "id": "credible",
+      "word": "credible",
+      "sceneId": "credible-word",
+      "meaning": "a claim or piece of evidence has good reasons to be believed",
+      "example": "credible evidence",
+      "visualAction": "A reviewer checks a submitted evidence card before accepting it as trustworthy.",
+      "purpose": "Expresses evidence that deserves belief after checking, without claiming it is already proven true.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/submit-before.png",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-images2-keyposes/submit-before.png"},
+        {"id": "change", "prompt": "The reviewer bends toward the same orange evidence envelope and carefully opens and checks it. The lower Xiaohei keeps offering it with one hand. Preserve the desk, exact two Xiaohei identities, scale and positions. This is only the inspection moment; do not show acceptance yet."},
+        {"id": "result", "prompt": "The reviewer now holds the same orange evidence envelope upright after checking it; the lower Xiaohei's hand is empty. Both remain at the same desk and positions. Make the reviewer calmly accept the evidence as trustworthy, with no stamp or written mark."}
+      ]
+    },
+    {
+      "id": "credibility",
+      "word": "credibility",
+      "sceneId": "credibility-word",
+      "meaning": "the degree to which a source can be trusted",
+      "example": "A source loses credibility.",
+      "visualAction": "A receiving Xiaohei compares repeated messages from the same source; matching messages build trust.",
+      "purpose": "Makes the noun credibility a track record or degree of trust, distinct from one credible piece of evidence.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/transmit-before.png",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-images2-keyposes/transmit-before.png"},
+        {"id": "change", "prompt": "The sender on the left sends a second small orange message capsule through the same terminal. The receiver on the right holds the first capsule and compares it with the arriving second one. Preserve exactly two Xiaohei, both terminals and the framing; no text."},
+        {"id": "result", "prompt": "The receiver on the right holds the two matching orange message capsules together and stands with a calm, trusting posture. The sender on the left has empty hands. Preserve both terminals and both Xiaohei identities and positions; no labels or decorative marks."}
+      ]
+    },
+    {
+      "id": "credulous",
+      "word": "credulous",
+      "sceneId": "credulous-word",
+      "meaning": "too ready to believe what other people say",
+      "example": "A credulous reader forwarded the rumor.",
+      "visualAction": "A visitor eagerly accepts an orange claim card and walks through the open door without inspecting it.",
+      "purpose": "Shows the person accepting a claim too easily; the door and claim card remain small, local props.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/admit-before.png",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-images2-keyposes/admit-before.png"},
+        {"id": "change", "prompt": "The visitor immediately reaches for the small orange blank claim card offered by the gatekeeper and steps halfway through the same open doorway, without stopping to inspect it. Keep the exact two Xiaohei, door, scale and framing. No writing on the card."},
+        {"id": "result", "prompt": "The visitor is now inside the doorway, eagerly holding the same orange blank card. The gatekeeper's offering hand is empty. Preserve the exact two Xiaohei identities, doorway, camera and white background; no words or extra objects."}
+      ]
+    },
+    {
+      "id": "incredulous",
+      "word": "incredulous",
+      "sceneId": "incredulous-word",
+      "meaning": "unwilling or unable to believe something; showing doubt",
+      "example": "Mina gave an incredulous look.",
+      "visualAction": "On hearing a claim, one Xiaohei pulls back and refuses the orange card while staying on the other side of a barrier.",
+      "purpose": "Shows a person's doubtful reaction, opposite the credulous visitor who accepts too quickly.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/permit-before.png",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-images2-keyposes/permit-before.png"},
+        {"id": "change", "prompt": "The Xiaohei on the right leans back from the orange pass and raises one hand to stop it, clearly doubting the offer. The Xiaohei on the left still holds the pass. Keep the barrier, exact characters and sides, proportions and camera fixed."},
+        {"id": "result", "prompt": "The skeptical Xiaohei on the right stays behind the barrier, turns slightly away, and still refuses the same orange pass. The Xiaohei on the left keeps holding it. Preserve the same two characters, gate and framing; no text or added marks."}
+      ]
+    },
+    {
+      "id": "incredible",
+      "word": "incredible",
+      "sceneId": "incredible-word",
+      "meaning": "difficult to believe; in everyday use, also amazing",
+      "example": "an incredible turn of events",
+      "visualAction": "An ordinary small puff from a bottle unexpectedly becomes a striking cluster of orange puffs.",
+      "purpose": "The surprising event is incredible; the image is about what happened, not a person refusing to believe it.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/emit-before.png",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-images2-keyposes/emit-before.png"},
+        {"id": "change", "prompt": "The Xiaohei turns the same bottle nozzle. Exactly one small orange puff has just appeared beyond the nozzle. Keep the bottle, character and framing fixed; no particles or motion streaks."},
+        {"id": "result", "prompt": "An unexpectedly large but tidy cluster of exactly six orange puffs now rises from the same bottle nozzle, clearly much more than expected. The Xiaohei looks up at the surprising result. Preserve the same character, bottle and framing. No text, starbursts, shadows or extra characters."}
+      ]
+    },
+    {
+      "id": "credit",
+      "word": "credit",
+      "sceneId": "credit-word",
+      "meaning": "recognition or trust; especially financial trust that allows borrowing",
+      "example": "give someone credit; buy on credit",
+      "visualAction": "A lender gives a small orange trust token to a borrower; the borrower receives value before repayment.",
+      "purpose": "Connects credit to recognition or trust being granted, including the financial sense of borrowing.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/commit-before.png",
+      "states": [
+        {"id": "before", "editFromReference": true, "prompt": "Keep the original large Xiaohei, open slot box and camera. Add one smaller borrower Xiaohei beside the box facing the lender. The lender still holds the single orange capsule; the borrower has empty hands. The two-character arrangement must fit the original composition."},
+        {"id": "change", "prompt": "The lender Xiaohei offers the same orange capsule across the same open slot box. The borrower reaches for it, halfway through the transfer. Preserve both character identities and sizes, the box and framing."},
+        {"id": "result", "prompt": "The borrower now holds the same orange capsule, and the lender's hand is empty. Both Xiaohei remain beside the same open slot box. Show the transfer as trust or credit granted before anything is repaid; no text or currency symbols."}
+      ]
+    },
+    {
+      "id": "creditable",
+      "word": "creditable",
+      "sceneId": "creditable-word",
+      "meaning": "good enough to deserve praise or recognition",
+      "example": "a creditable result",
+      "visualAction": "A worker completes a task at the flag and receives a small orange medal from the teammate.",
+      "purpose": "Shows an achievement worthy of praise, distinct from evidence that is merely credible.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/mission-before.png",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-images2-keyposes/mission-before.png"},
+        {"id": "change", "prompt": "The worker carrying the same small orange task envelope reaches the flag and plants it. The teammate begins offering one small orange medal. Preserve both Xiaohei, the flag, proportions and framing."},
+        {"id": "result", "prompt": "The worker now stands at the flag holding the same task envelope and the small orange medal. The teammate's hand is empty after awarding it. Keep both original Xiaohei and flag in the same positions. The medal is the only new prop; no words."}
+      ]
+    },
+    {
+      "id": "discredit",
+      "word": "discredit",
+      "sceneId": "discredit-word",
+      "meaning": "to damage a person's reputation or make a claim seem untrustworthy",
+      "example": "New evidence may discredit an old theory.",
+      "visualAction": "A worker reveals a contradictory orange evidence card; the two listeners turn away from the claim's presenter.",
+      "purpose": "Shows new evidence undermining trust in a claim or its presenter, not merely a person refusing to believe.",
+      "reference": "public/assets/replica/mit-miss-images2-keyposes/dismiss-before.png",
+      "states": [
+        {"id": "before", "source": "public/assets/replica/mit-miss-images2-keyposes/dismiss-before.png"},
+        {"id": "change", "prompt": "The Xiaohei nearest the doorway holds up one small orange evidence card beside the claim presenter's own orange card. The two listeners turn their bodies toward the evidence. Preserve all three Xiaohei identities, doorway and framing."},
+        {"id": "result", "prompt": "The two listeners have now clearly passed through the same doorway and stand on its right/outside side, with their backs turned to the original claim presenter. The presenter is left alone on the room side, holding the same orange claim card lowered. The evidence-presenting Xiaohei remains beside the doorway holding the single orange evidence card. Preserve all three Xiaohei identities and relative sizes; keep the doorway fixed. No text or extra props."}
+      ]
+    }
+  ]
+}

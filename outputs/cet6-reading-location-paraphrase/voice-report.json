@@ -1,0 +1,178 @@
+{
+  "provider": "DashScope",
+  "voice": {
+    "model": "cosyvoice-v3-flash",
+    "voice": "longanhuan",
+    "rate": 1.08,
+    "pitch": 1,
+    "volume": 68,
+    "format": "mp3"
+  },
+  "englishRate": 1.02,
+  "timeline": {
+    "fps": 30,
+    "totalFrames": 4943,
+    "cues": [
+      {
+        "id": "hook",
+        "panel": "hook",
+        "voice": "六级阅读遇到抽象段落，别从头到尾逐句翻译。给我两分钟，学会先定位，再识别同义替换。",
+        "caption": "六级阅读：先定位，再认同义替换。",
+        "from": 0,
+        "frames": 236,
+        "audioFrames": 231,
+        "src": "assets/audio/cet6-reading-location-paraphrase/hook-2d1e08f6a896.mp3",
+        "seconds": 7.68
+      },
+      {
+        "id": "task",
+        "panel": "task",
+        "voice": "看一道原创六级风格练习。Cities are redesigning some public spaces to make them more resilient to extreme heat. Instead of adding more air-conditioning, planners are combining shade trees, reflective materials, and water-sensitive landscaping. These measures do not merely lower surface temperatures; they also encourage residents to spend more time outdoors.",
+        "caption": "原创六级风格练习 · 先读问题，再回原文",
+        "pauseAfter": 1,
+        "from": 236,
+        "frames": 625,
+        "audioFrames": 595,
+        "src": "assets/audio/cet6-reading-location-paraphrase/task-d4d875003908.mp3",
+        "seconds": 19.826938
+      },
+      {
+        "id": "question",
+        "panel": "question",
+        "voice": "题目问：What is the passage mainly about?。先别急着选答案，先找题干里的方向词。",
+        "caption": "题目问主旨：先抓方向，不急着逐句翻",
+        "from": 861,
+        "frames": 194,
+        "audioFrames": 189,
+        "src": "assets/audio/cet6-reading-location-paraphrase/question-b634a0e65060.mp3",
+        "seconds": 6.2955
+      },
+      {
+        "id": "keywords",
+        "panel": "keywords",
+        "voice": "这道题的两个抓手是：redesigning public spaces · extreme heat。它们告诉我们，文章在讲城市怎样应对极端高温。",
+        "caption": "关键词：redesign public spaces · extreme heat",
+        "from": 1055,
+        "frames": 281,
+        "audioFrames": 276,
+        "src": "assets/audio/cet6-reading-location-paraphrase/keywords-a93d37834550.mp3",
+        "seconds": 9.195094
+      },
+      {
+        "id": "locate",
+        "panel": "locate",
+        "voice": "回到原文，先找和关键词同义的表达。第一句出现 redesigning public spaces，说明对象和动作；后面 extreme heat 给出问题背景。",
+        "caption": "定位句：对象 + 动作 + 问题背景",
+        "english": true,
+        "from": 1336,
+        "frames": 344,
+        "audioFrames": 339,
+        "src": "assets/audio/cet6-reading-location-paraphrase/locate-282fa83ed088.mp3",
+        "seconds": 11.284875
+      },
+      {
+        "id": "paraphrase",
+        "panel": "paraphrase",
+        "voice": "题干不会原样重复。redesigning public spaces，被概括成 use several measures；to make them more resilient to extreme heat，被概括成 cope with extreme heat。",
+        "caption": "原文动作 → 题干概括：use several measures · cope with extreme heat",
+        "from": 1680,
+        "frames": 360,
+        "audioFrames": 355,
+        "src": "assets/audio/cet6-reading-location-paraphrase/paraphrase-527ace4d261c.mp3",
+        "seconds": 11.807344
+      },
+      {
+        "id": "options",
+        "panel": "options",
+        "voice": "现在看四个选项。先把能被原文直接支持的范围圈出来，再排除只抓到一个细节的选项。",
+        "caption": "选项要覆盖全文主线，不能只抓一个细节",
+        "from": 2040,
+        "frames": 213,
+        "audioFrames": 208,
+        "src": "assets/audio/cet6-reading-location-paraphrase/options-571d4deabaff.mp3",
+        "seconds": 6.922438
+      },
+      {
+        "id": "distractor",
+        "panel": "distractor",
+        "voice": "A 只说空调商场，原文没有比较居民偏好；C 把一个措施说成重点；D 只问测温方法。它们都碰到局部词，却没有覆盖全文。",
+        "caption": "干扰项常见陷阱：局部正确，主线缺失",
+        "from": 2253,
+        "frames": 329,
+        "audioFrames": 324,
+        "src": "assets/audio/cet6-reading-location-paraphrase/distractor-71bad5dc7e59.mp3",
+        "seconds": 10.788563
+      },
+      {
+        "id": "answer",
+        "panel": "answer",
+        "voice": "答案是：How cities use several measures to cope with extreme heat.。这句话把“多种措施”和“应对极端高温”都保留下来，覆盖了原文的主线。",
+        "caption": "正确答案：保留动作范围 + 问题背景",
+        "english": true,
+        "from": 2582,
+        "frames": 322,
+        "audioFrames": 317,
+        "src": "assets/audio/cet6-reading-location-paraphrase/answer-d0b0b15fd705.mp3",
+        "seconds": 10.553469
+      },
+      {
+        "id": "practice",
+        "panel": "practice",
+        "voice": "轮到你。Universities are rethinking orientation programs. Rather than filling the first week with formal talks, some schools are giving new students small team projects and guided visits around campus. The aim is to help them build connections before classes become demanding. 题目是：What is the main purpose of the new orientation programs?。先看题干，再找原文的目的句。",
+        "caption": "迁移练习：先找目的，再看同义改写",
+        "pauseAfter": 3,
+        "from": 2904,
+        "frames": 733,
+        "audioFrames": 643,
+        "src": "assets/audio/cet6-reading-location-paraphrase/practice-c2ffc3b005f1.mp3",
+        "seconds": 21.420406
+      },
+      {
+        "id": "practice-locate",
+        "panel": "practice-locate",
+        "voice": "目的句在最后：The aim is to help them build connections before classes become demanding。这里的 help new students build connections，就是题目里的核心改写。",
+        "caption": "目的句：The aim is to help them build connections",
+        "english": true,
+        "from": 3637,
+        "frames": 324,
+        "audioFrames": 319,
+        "src": "assets/audio/cet6-reading-location-paraphrase/practice-locate-91372360a8cb.mp3",
+        "seconds": 10.605688
+      },
+      {
+        "id": "practice-answer",
+        "panel": "practice-answer",
+        "voice": "参考答案：To help new students build connections before classes become demanding.。主旨题要优先保留目的和对象，不要被 small team projects 这样的细节带走。",
+        "caption": "参考答案：保留目的与对象，删掉无关细节",
+        "from": 3961,
+        "frames": 317,
+        "audioFrames": 312,
+        "src": "assets/audio/cet6-reading-location-paraphrase/practice-answer-02ab263a7740.mp3",
+        "seconds": 10.370594
+      },
+      {
+        "id": "check",
+        "panel": "check",
+        "voice": "考场上用四步检查：第一，题干问主旨、细节还是态度；第二，圈出两个关键词；第三，回原文找同义表达；第四，选能覆盖主线的选项。",
+        "caption": "题型 → 关键词 → 同义定位 → 主线选项",
+        "from": 4278,
+        "frames": 370,
+        "audioFrames": 365,
+        "src": "assets/audio/cet6-reading-location-paraphrase/check-d1f397fd6a45.mp3",
+        "seconds": 12.146938
+      },
+      {
+        "id": "close",
+        "panel": "close",
+        "voice": "记住，六级阅读不是逐句翻译比赛。先知道题目要找什么，再回原文找同义表达，最后检查选项有没有覆盖主线。",
+        "caption": "先定位，再认改写；主线比局部细节更重要。",
+        "from": 4648,
+        "frames": 295,
+        "audioFrames": 272,
+        "src": "assets/audio/cet6-reading-location-paraphrase/close-3184b5fa6062.mp3",
+        "seconds": 9.064469
+      }
+    ]
+  },
+  "alignment": "Cue boundaries measured with ffprobe; narration is not playback accelerated."
+}

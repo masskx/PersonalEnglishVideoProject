@@ -1,0 +1,15 @@
+index	time_sec	reference	candidate	pair
+1	0.000000	reference_001.png	candidate_001.png	pair_001.png
+2	8.500000	reference_002.png	candidate_002.png	pair_002.png
+3	19.000000	reference_003.png	candidate_003.png	pair_003.png
+4	28.000000	reference_004.png	candidate_004.png	pair_004.png
+5	37.000000	reference_005.png	candidate_005.png	pair_005.png
+6	46.000000	reference_006.png	candidate_006.png	pair_006.png
+7	55.000000	reference_007.png	candidate_007.png	pair_007.png
+8	65.000000	reference_008.png	candidate_008.png	pair_008.png
+9	74.000000	reference_009.png	candidate_009.png	pair_009.png
+10	83.000000	reference_010.png	candidate_010.png	pair_010.png
+11	93.000000	reference_011.png	candidate_011.png	pair_011.png
+12	104.500000	reference_012.png	candidate_012.png	pair_012.png
+13	112.000000	reference_013.png	candidate_013.png	pair_013.png
+14	117.500000	reference_014.png	candidate_014.png	pair_014.png

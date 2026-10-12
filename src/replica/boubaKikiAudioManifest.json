@@ -1,0 +1,46 @@
+{
+  "question-characters": {
+    "src": "assets/audio/replica/bouba-kiki/question-characters.mp3",
+    "duration": 7.941
+  },
+  "experiment-classroom": {
+    "src": "assets/audio/replica/bouba-kiki/experiment-classroom.mp3",
+    "duration": 10.527
+  },
+  "sound-symbolism-explanation": {
+    "src": "assets/audio/replica/bouba-kiki/sound-symbolism-explanation.mp3",
+    "duration": 9.404
+  },
+  "family-preview": {
+    "src": "assets/audio/replica/bouba-kiki/family-preview.mp3",
+    "duration": 12.852
+  },
+  "cr-family": {
+    "src": "assets/audio/replica/bouba-kiki/cr-family.mp3",
+    "duration": 17.554
+  },
+  "sp-family": {
+    "src": "assets/audio/replica/bouba-kiki/sp-family.mp3",
+    "duration": 10.423
+  },
+  "sn-family": {
+    "src": "assets/audio/replica/bouba-kiki/sn-family.mp3",
+    "duration": 12.565
+  },
+  "sl-family": {
+    "src": "assets/audio/replica/bouba-kiki/sl-family.mp3",
+    "duration": 10.632
+  },
+  "gl-family": {
+    "src": "assets/audio/replica/bouba-kiki/gl-family.mp3",
+    "duration": 10.188
+  },
+  "historical-modern-recap": {
+    "src": "assets/audio/replica/bouba-kiki/historical-modern-recap.mp3",
+    "duration": 2.194
+  },
+  "outro-fade": {
+    "src": "assets/audio/replica/bouba-kiki/outro-fade.mp3",
+    "duration": 3.004
+  }
+}

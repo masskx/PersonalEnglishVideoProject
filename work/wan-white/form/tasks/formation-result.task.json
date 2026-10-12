@@ -1,0 +1,17 @@
+{
+  "id": "formation-result",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260730,
+  "input": "work/wan-white/form/inputs/formation-result.png",
+  "inputSha256": "2ccd549e738380c5329745bf047d476e7afecbdfb760f620dbe7d2aad36cf34e",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character assembles four plain floating pieces into one stable geometric formation using both hands. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "bb2dfdc9-f971-4a6e-9e55-32d3f55c6dec",
+  "requestId": "79b17eb4-1d9b-93f8-8a0b-1f4411fb93bd",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-29T13:55:14.459Z",
+  "lastPolledAt": "2026-07-29T13:57:32.955Z",
+  "outputVideo": "work/wan-white/form/tasks/formation-result.source.mp4",
+  "completedAt": "2026-07-29T13:57:33.133Z"
+}

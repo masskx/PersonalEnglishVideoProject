@@ -1,0 +1,22 @@
+{
+  "id": "postscript",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "assets/green-screen/script-scrib/07_postscript_after.jpg",
+  "inputSha256": "5870871e0719aa69e9b4c4f2436e42e7e26388cd0cb1a0e3073c0b7ae0b39c3e",
+  "prompt": "Locked camera. The black character reaches behind the sealed envelope and clips the tiny blank card after it with one careful hand motion. Preserve all blank surfaces, identity, full limbs, flat green plate and composition.",
+  "taskId": "02467543-6903-41e5-80f7-6df4f752a8e7",
+  "requestId": "80fe4551-5726-96a7-b46d-a0d3d0aeb397",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T12:44:40.749Z",
+  "lastPolledAt": "2026-07-24T12:45:24.457Z",
+  "outputVideo": "outputs/script-scrib/wan/postscript.source.mp4",
+  "completedAt": "2026-07-24T12:45:25.034Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 20:44:40.712",
+    "scheduledTime": "2026-07-24 20:45:04.334",
+    "endTime": "2026-07-24 20:45:16.614"
+  }
+}

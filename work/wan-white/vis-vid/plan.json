@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "project": "vis-vid",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "durationSec": 5,
+  "fps": 30,
+  "estimatedCostCny": 4.5,
+  "entries": [
+    {
+      "id": "see-hook",
+      "index": 0,
+      "imageLayerId": "hi",
+      "source": "public/assets/replica/vis-vid/00_see_hook.png",
+      "input": "work/wan-white/vis-vid/inputs/see-hook.png",
+      "taskManifest": "work/wan-white/vis-vid/tasks/see-hook.task.json",
+      "framesDir": "public/assets/replica/vis-vid-white-motion/frames/see-hook",
+      "report": "work/wan-white/vis-vid/reports/see-hook.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The observer presses one eye to an absurd oversized freestanding eye-shaped lens while turning a tiny orange focus knob. Show the full lens, character, hands and feet. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "vision-image-seen",
+      "index": 1,
+      "imageLayerId": "vision-image-seeni",
+      "source": "public/assets/replica/vis-vid/01_vision.png",
+      "input": "work/wan-white/vis-vid/inputs/vision-image-seen.png",
+      "taskManifest": "work/wan-white/vis-vid/tasks/vision-image-seen.task.json",
+      "framesDir": "public/assets/replica/vis-vid-white-motion/frames/vision-image-seen",
+      "report": "work/wan-white/vis-vid/reports/vision-image-seen.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The observer looks through compact binoculars at one floating pale-blue sprout enclosed only by three loose black contour strokes, never a rectangular screen. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "visible-able-seen",
+      "index": 2,
+      "imageLayerId": "visible-able-seeni",
+      "source": "public/assets/replica/vis-vid/02_visible.png",
+      "input": "work/wan-white/vis-vid/inputs/visible-able-seen.png",
+      "taskManifest": "work/wan-white/vis-vid/tasks/visible-able-seen.task.json",
+      "framesDir": "public/assets/replica/vis-vid-white-motion/frames/visible-able-seen",
+      "report": "work/wan-white/vis-vid/reports/visible-able-seen.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The observer pulls one small white cloth completely away from one floating orange sphere, making the revealed object unmistakably visible. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "video-i-see",
+      "index": 3,
+      "imageLayerId": "video-i-seei",
+      "source": "public/assets/replica/vis-vid/03_video.png",
+      "input": "work/wan-white/vis-vid/inputs/video-i-see.png",
+      "taskManifest": "work/wan-white/vis-vid/tasks/video-i-see.task.json",
+      "framesDir": "public/assets/replica/vis-vid-white-motion/frames/video-i-see",
+      "report": "work/wan-white/vis-vid/reports/video-i-see.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The observer seriously turns the crank of one simple black-outline film projector while three blank white film circles float from it. No screen, film text, perforations, or frame. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "visual-related-seeing",
+      "index": 4,
+      "imageLayerId": "visual-related-seeingi",
+      "source": "public/assets/replica/vis-vid/04_visual.png",
+      "input": "work/wan-white/vis-vid/inputs/visual-related-seeing.png",
+      "taskManifest": "work/wan-white/vis-vid/tasks/visual-related-seeing.task.json",
+      "framesDir": "public/assets/replica/vis-vid-white-motion/frames/visual-related-seeing",
+      "report": "work/wan-white/vis-vid/reports/visual-related-seeing.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The observer closes one eye and carefully aligns one pale-blue circle, one orange triangle, and one white square in midair as a clean visual composition. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "evidence-seen-proof",
+      "index": 5,
+      "imageLayerId": "evidence-seen-proofi",
+      "source": "public/assets/replica/vis-vid/05_evidence.png",
+      "input": "work/wan-white/vis-vid/inputs/evidence-seen-proof.png",
+      "taskManifest": "work/wan-white/vis-vid/tasks/evidence-seen-proof.task.json",
+      "framesDir": "public/assets/replica/vis-vid-white-motion/frames/evidence-seen-proof",
+      "report": "work/wan-white/vis-vid/reports/evidence-seen-proof.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The observer holds one oversized magnifying glass over one simple black spiral fingerprint-like mark on a floating white pebble. One orange focus spark, no detective scenery. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "evident-clearly-seen",
+      "index": 6,
+      "imageLayerId": "evident-clearly-seeni",
+      "source": "public/assets/replica/vis-vid/06_evident.png",
+      "input": "work/wan-white/vis-vid/inputs/evident-clearly-seen.png",
+      "taskManifest": "work/wan-white/vis-vid/tasks/evident-clearly-seen.task.json",
+      "framesDir": "public/assets/replica/vis-vid-white-motion/frames/evident-clearly-seen",
+      "report": "work/wan-white/vis-vid/reports/evident-clearly-seen.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The observer operates one tiny lamp that casts a sparse orange cone toward one plain white floating object, making it plainly seen. No floor or dark background. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "visit-go-see",
+      "index": 7,
+      "imageLayerId": "visit-go-seei",
+      "source": "public/assets/replica/vis-vid/07_visit.png",
+      "input": "work/wan-white/vis-vid/inputs/visit-go-see.png",
+      "taskManifest": "work/wan-white/vis-vid/tasks/visit-go-see.task.json",
+      "framesDir": "public/assets/replica/vis-vid-white-motion/frames/visit-go-see",
+      "report": "work/wan-white/vis-vid/reports/visit-go-see.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The observer knocks on one sparse freestanding doorway outline and leans forward to look through the opening. Exactly one character; no wall, building, room, or second person. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "revise-see-again",
+      "index": 8,
+      "imageLayerId": "revise-see-againi",
+      "source": "public/assets/replica/vis-vid/08_revise.png",
+      "input": "work/wan-white/vis-vid/inputs/revise-see-again.png",
+      "taskManifest": "work/wan-white/vis-vid/tasks/revise-see-again.task.json",
+      "framesDir": "public/assets/replica/vis-vid-white-motion/frames/revise-see-again",
+      "report": "work/wan-white/vis-vid/reports/revise-see-again.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The observer looks again at one blank floating sheet while holding a simple pencil and eraser, with two short orange revision strokes beside the sheet but no writing or symbols. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    }
+  ]
+}

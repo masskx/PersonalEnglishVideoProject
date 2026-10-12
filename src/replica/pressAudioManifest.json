@@ -1,0 +1,66 @@
+{
+  "word-family-preview": {
+    "src": "assets/audio/replica/press/word-family-preview.mp3",
+    "duration": 3.37
+  },
+  "hook": {
+    "src": "assets/audio/replica/press/hook.mp3",
+    "duration": 3.474
+  },
+  "press-core-action": {
+    "src": "assets/audio/replica/press/press-core-action.mp3",
+    "duration": 8.647
+  },
+  "printing-media-bridge": {
+    "src": "assets/audio/replica/press/printing-media-bridge.mp3",
+    "duration": 11.938
+  },
+  "press-semantic-radial": {
+    "src": "assets/audio/replica/press/press-semantic-radial.mp3",
+    "duration": 5.068
+  },
+  "pressure": {
+    "src": "assets/audio/replica/press/pressure.mp3",
+    "duration": 10.423
+  },
+  "impress": {
+    "src": "assets/audio/replica/press/impress.mp3",
+    "duration": 19.383
+  },
+  "express": {
+    "src": "assets/audio/replica/press/express.mp3",
+    "duration": 16.509
+  },
+  "depress": {
+    "src": "assets/audio/replica/press/depress.mp3",
+    "duration": 26.802
+  },
+  "suppress": {
+    "src": "assets/audio/replica/press/suppress.mp3",
+    "duration": 21.499
+  },
+  "repress": {
+    "src": "assets/audio/replica/press/repress.mp3",
+    "duration": 21.525
+  },
+  "compress": {
+    "src": "assets/audio/replica/press/compress.mp3",
+    "duration": 10.162
+  },
+  "oppress": {
+    "src": "assets/audio/replica/press/oppress.mp3",
+    "duration": 8.281
+  },
+  "derived-nouns": {
+    "src": "assets/audio/replica/press/derived-nouns.mp3",
+    "duration": 7.027
+  },
+  "root-callback": {
+    "src": "assets/audio/replica/press/root-callback.mp3",
+    "duration": 5.799
+  },
+  "final-summary-table": {
+    "src": "assets/audio/replica/press/final-summary-table.mp3",
+    "duration": 2.717
+  }
+}

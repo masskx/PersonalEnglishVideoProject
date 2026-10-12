@@ -1,0 +1,18 @@
+{
+  "source": "https://www.iconfont.cn/",
+  "searchedAt": "2026-08-02",
+  "queries": ["发送", "传输", "放行", "任务"],
+  "icons": [],
+  "rejected": [
+    {
+      "name": "发送信息 / 寄件 / 邮件 / send 候选组",
+      "sourceUrl": "https://www.iconfont.cn/search/index?searchType=icon&q=%E5%8F%91%E9%80%81",
+      "reason": "搜索页显示大量候选，但没有逐项可核验的明确商用授权证据；同时信封和发送箭头会重复本期由小黑、胶囊和代码道具承担的语义动作。"
+    },
+    {
+      "name": "传输 / 放行 / 任务候选组",
+      "sourceUrl": "https://www.iconfont.cn/",
+      "reason": "未取得满足发布要求的逐项商用许可链路；继电、闸门与任务发射已由小黑主导的代码动画清楚表达，因此零采用更利于视觉层级。"
+    }
+  ]
+}

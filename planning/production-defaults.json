@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "authority": "AGENTS.md",
+  "currentProductionBaseline": "docs/当前制作基准.md",
+  "baselineScope": "all_english_video_columns",
+  "currentAcceptedSample": "outputs/ten-tain/ten-tain.mp4",
+  "visualReferenceSample": "work/experiments/mit-miss-sunburst-full/mit-miss-sunburst-full.mp4",
+  "deprecatedProductionRules": [
+    "seedream_or_jimeng_as_default_image_generation",
+    "svg_or_code_geometry_as_primary_illustration",
+    "repeated_ppt_like_card_template",
+    "perpetual_drift_or_random_bounce_motion",
+    "midpoint_stills_without_whole_video_preview",
+    "separate_low_spec_cet_visual_pipeline"
+  ],
+  "startupGuide": "docs/新会话制作入口.md",
+  "productionRouterSkill": ".agents/skills/make-xiaohei-english-video/SKILL.md",
+  "requestDecision": {
+    "concreteTopic": "follow_user_topic_and_preserve_old_versions",
+    "columnOnly": "autonomously_select_unused_topic_and_complete_production",
+    "discussionOrAudit": "do_not_start_video_production"
+  },
+  "defaultChain": [
+    "classify_column",
+    "cross_check_topic_history_and_actual_artifacts",
+    "register_in_progress",
+    "verify_sources",
+    "write_natural_spoken_script",
+    "preflight_per_word_visual_meaning_and_summary_coverage",
+    "produce_narration",
+    "build_xiaohei_semantic_key_poses",
+    "review_contact_sheet_on_white_and_run_visual_coverage_gate",
+    "apply_frame_driven_typography",
+    "stage_only_referenced_public_assets_then_render_full_video",
+    "build_full_video_preview_and_pass_layout_gate",
+    "render_two_covers_and_publish_copy",
+    "run_media_and_content_review",
+    "update_ledger_logs_and_workbench"
+  ],
+  "visualBaseline": {
+    "method": "same_anchor_reference_edit_before_change_result",
+    "reference": "assets/visual-baselines/mit-miss-sunburst/README.md",
+    "reviewVideo": "work/experiments/mit-miss-sunburst-full/mit-miss-sunburst-full.mp4",
+    "fullCanvasSvgOverlay": false,
+    "xiaoheiRequired": true,
+    "whiteCanvas": true,
+    "smoothFrameDrivenTypography": true
+  },
+  "douyinPacing": {
+    "targetFeel": "slightly_fast_bright_forward_motion",
+    "hookBeatBySeconds": 1.5,
+    "secondVisualTurnBySeconds": 3,
+    "avoidRepeatedCardLayouts": true,
+    "majorTeachingBeatUsesSemanticImage": true
+  },
+  "visualImpact": {
+    "wordPageSafeWidthOccupancyPercent": [78, 84],
+    "semanticActorScaleVsLegacy": [1.25, 1.45],
+    "minimumIntentionalCompositionsPerEpisode": 3,
+    "generateMultipleAnchorCandidatesForMajorBeats": true,
+    "supportScenesNeedMeaningfulVisualChanges": true,
+    "banPptLikeRepeatedTextImageCards": true
+  },
+  "visualStyleContract": {
+    "imageGeneration": "built_in_image_gen_raster",
+    "referenceAnchor": "mit-miss",
+    "canvas": "pure_white_1920x1080",
+    "character": "solid_black_xiaohei_white_dot_eyes_wobbly_ink",
+    "requiredPoseSequence": ["before", "change", "result"],
+    "animation": ["smooth_rise_reveal_slide", "morpheme_assembly", "semantic_pose_cut", "white_fade"],
+    "forbidden": ["svg_image_placeholder", "ppt_card_repeat", "perpetual_drift", "random_bounce"]
+  },
+  "finalPreviewGate": {
+    "command": "npm run replica:full-preview -- --project=<slug>",
+    "required": true,
+    "intervalSeconds": 1,
+    "includePlayablePreview": true,
+    "checks": ["text_overflow", "safe_margins", "large_blank_area", "layout_balance", "scene_cuts", "phone_readability"],
+    "evidence": "outputs/<slug>/review/full-preview/full-preview.mp4 + full-preview-contact-*.jpg + full-preview-report.json",
+    "humanApprovalRequired": true
+  },
+  "coverSystem": {
+    "template": "RootWordCover",
+    "landscapeTemplate": "RootWordLandscapeCover",
+    "portraitSize": [1080, 1440],
+    "landscapeSize": [1200, 900],
+    "allColumnsUseSharedRootCover": true,
+    "requiredElements": ["blue rounded frame", "Xiaohei brand mark", "orange pill", "eyebrow", "primary title", "motion arrow", "hero illustration", "orange hook strip", "family pills", "series footer"]
+  },
+  "backgroundMusic": {
+    "sourceLibrary": "assets/background-music/minimax",
+    "runtimeMaster": "public/assets/music/root-word-series-bgm.mp3",
+    "targetBpm": [104, 112],
+    "instrumentalOnly": true,
+    "memorableFourBarMotif": true,
+    "phoneSpeakerAudibilityRequired": true,
+      "defaultVolume": 0.08,
+      "narrationDuckedVolume": 0.07,
+    "mixPriority": "narration_first",
+    "dynamicDuckingRequired": true,
+    "listeningGate": "check_dense_chinese_and_english_on_phone_speaker"
+  },
+  "editorialVoice": {
+    "naturalSpokenChinese": true,
+    "preferConcreteSceneAndAction": true,
+    "avoidFormulaicContrast": ["不是……而是……", "别再……", "先别……", "抓住……立刻……", "一个动作串起……"],
+    "avoidGenericLearningClaims": true,
+    "requireManualReadAloudPass": true
+  },
+  "wordVisualPreflight": {
+    "planOnlyBeforeGeneration": "npm run replica:preflight -- --project=<slug> --plan-only",
+    "fullAfterWhiteBackgroundReview": "npm run replica:preflight -- --project=<slug>",
+    "requiredStates": ["before", "change", "result"],
+    "oneUniqueSetPerTaughtWord": true,
+    "summaryMustCoverAllTaughtWords": true,
+    "failClosedOnRender": true,
+    "runtimeAssetProvenanceRequired": true,
+    "runtimeAssetDirectoryMustBeEpisodeLocal": true,
+    "referenceReuseAllowedOnlyForGeneration": true,
+    "failOnCrossEpisodeRuntimeSource": true,
+    "assetProvenanceFields": ["assetDir", "generationMethod", "referenceAnchor", "runtimeSourceScan"]
+  },
+  "productionRouting": {
+    "englishVideoRequestLoadsRouterSkill": ".agents/skills/make-xiaohei-english-video/SKILL.md",
+    "columnSkills": {
+      "rootWords": ".agents/skills/build-root-word-video/SKILL.md",
+      "vocabulary": ".agents/skills/build-root-word-video/SKILL.md",
+      "writingReadingTranslation": ".agents/skills/make-xiaohei-english-video/SKILL.md"
+    },
+    "neverSimplifyWithoutUserInstruction": true
+  },
+  "renderAssets": {
+    "publicDirMode": "only-assets-referenced-by-current-project",
+    "appliesTo": ["video", "cover", "review-stills"]
+  },
+  "delivery": {
+    "minimumDefaultDurationSeconds": 120,
+    "required": [
+      "video",
+      "coverPortrait",
+      "coverLandscape",
+      "publishCopy",
+      "reviewEvidence",
+      "topicLedgerUpdate",
+      "workbenchRefresh"
+    ],
+    "autoPublish": false,
+    "workbenchFirstScreen": "current_deliverables_only",
+    "archiveDisplay": "collapsed_history_and_technical_evidence"
+  }
+}

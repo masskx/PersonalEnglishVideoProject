@@ -1,0 +1,50 @@
+{
+  "rupt-hook": {
+    "src": "assets/audio/replica/rupt/rupt-hook.mp3",
+    "duration": 10.083
+  },
+  "rupt-map": {
+    "src": "assets/audio/replica/rupt/rupt-map.mp3",
+    "duration": 12.513
+  },
+  "rupture-break-open": {
+    "src": "assets/audio/replica/rupt/rupture-break-open.mp3",
+    "duration": 10.475
+  },
+  "interrupt-break-in": {
+    "src": "assets/audio/replica/rupt/interrupt-break-in.mp3",
+    "duration": 9.482
+  },
+  "disrupt-break-apart": {
+    "src": "assets/audio/replica/rupt/disrupt-break-apart.mp3",
+    "duration": 10.371
+  },
+  "erupt-break-out": {
+    "src": "assets/audio/replica/rupt/erupt-break-out.mp3",
+    "duration": 9.77
+  },
+  "corrupt-break-down": {
+    "src": "assets/audio/replica/rupt/corrupt-break-down.mp3",
+    "duration": 8.647
+  },
+  "bankrupt-break-the-bank": {
+    "src": "assets/audio/replica/rupt/bankrupt-break-the-bank.mp3",
+    "duration": 9.639
+  },
+  "abrupt-break-off": {
+    "src": "assets/audio/replica/rupt/abrupt-break-off.mp3",
+    "duration": 8.516
+  },
+  "incorruptible-not-broken": {
+    "src": "assets/audio/replica/rupt/incorruptible-not-broken.mp3",
+    "duration": 9.953
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/rupt/example-sentences.mp3",
+    "duration": 8.777
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/rupt/final-summary.mp3",
+    "duration": 18.233
+  }
+}

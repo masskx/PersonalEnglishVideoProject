@@ -1,0 +1,22 @@
+{
+  "id": "indict",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "assets/green-screen/dict/08_indict_charge.jpg",
+  "inputSha256": "2bd4ea4e1dc989d2de87fa4da6389115924dcc46b53d554ff00e686696106146",
+  "prompt": "The single black character pushes the serious speech puff down into the file box; the red alert spark pulses once. Locked camera, one controlled push, identity and props stable.",
+  "taskId": "d8b33fb0-7c8b-4c61-83de-eafd8b080a39",
+  "requestId": "64c6dbc4-f079-9625-9036-0b09831e5303",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T11:48:48.478Z",
+  "lastPolledAt": "2026-07-24T11:52:50.943Z",
+  "outputVideo": "outputs/dict-wan/indict.source.mp4",
+  "completedAt": "2026-07-24T11:52:51.696Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 19:48:48.405",
+    "scheduledTime": "2026-07-24 19:49:20.657",
+    "endTime": "2026-07-24 19:49:35.142"
+  }
+}

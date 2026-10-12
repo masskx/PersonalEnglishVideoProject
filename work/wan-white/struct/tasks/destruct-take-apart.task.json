@@ -1,0 +1,17 @@
+{
+  "id": "destruct-take-apart",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260736,
+  "input": "work/wan-white/struct/inputs/destruct-take-apart.png",
+  "inputSha256": "d6a8538eec7ea3182a08e20fee3f46893bab1a8a55ee044eeb70efc7bcd9fc7d",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. One isolated action only: the character uses a tiny wrench to remove one beam from an ordinary small floating orange block frame made from cubes and straight bars; one small cube is falling away. The structure must be abstract and generic. Absolutely no Eiffel Tower, tower, landmark, bridge, building, floor, scenery, writing, pseudo-text, letters, numbers, or arrows. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "31a67a7c-1589-4c04-b2f1-79b2793b1a7e",
+  "requestId": "ec01cd6b-d1ac-96c0-b142-83af52133d10",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-29T13:56:46.069Z",
+  "lastPolledAt": "2026-07-29T13:57:40.504Z",
+  "outputVideo": "work/wan-white/struct/tasks/destruct-take-apart.source.mp4",
+  "completedAt": "2026-07-29T13:57:41.797Z"
+}

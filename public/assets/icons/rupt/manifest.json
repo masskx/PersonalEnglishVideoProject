@@ -1,0 +1,13 @@
+{
+  "source": "https://www.iconfont.cn/",
+  "searchedAt": "2026-08-02",
+  "queries": ["裂开", "打断", "爆发", "边界", "破产"],
+  "icons": [],
+  "rejected": [
+    {
+      "name": "optional semantic icons",
+      "sourceUrl": "https://www.iconfont.cn/",
+      "reason": "Code-drawn semantic props and Xiaohei actions already explain each beat more clearly; no external icon was inserted, avoiding an unnecessary license dependency."
+    }
+  ]
+}

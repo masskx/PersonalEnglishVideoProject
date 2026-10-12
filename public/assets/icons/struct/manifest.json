@@ -1,0 +1,9 @@
+{
+  "theme": "-struct",
+  "searchedAt": "2026-07-29",
+  "source": "https://www.iconfont.cn/",
+  "queries": ["建造", "结构", "积木"],
+  "accepted": [],
+  "decision": "zero-adoption",
+  "reason": "本集没有采用外部图标。建造方向、构词拆分、流程箭头与总结表格均以项目代码绘制，避免引入无法完整核验作者、图标 ID 与商用许可链路的素材；小黑继续承担每个核心语义动作。"
+}

@@ -1,0 +1,9 @@
+{
+  "theme": "-form",
+  "searchedAt": "2026-07-29",
+  "source": "https://www.iconfont.cn/",
+  "queries": ["形状", "模具", "变形"],
+  "accepted": [],
+  "decision": "zero-adoption",
+  "reason": "在应用内浏览器中打开 Iconfont 的“形状”定向检索时页面超时，未能取得可逐项核验的作者、图标 ID 与商用许可证据。为避免把公开可见误判为可商用，本集不采用外部图标；方向、模具、构词组装和总结表全部由代码绘制，小黑仍是每个核心语义动作的主角。"
+}

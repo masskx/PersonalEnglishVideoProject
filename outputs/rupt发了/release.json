@@ -1,0 +1,16 @@
+{
+  "slug": "rupt",
+  "status": "approved",
+  "video": "rupt.mp4",
+  "cover": "cover.png",
+  "landscapeCover": "cover-landscape.png",
+  "douyinCopy": "douyin-copy.md",
+  "voiceoverDir": "audio/voiceover",
+  "backgroundMusicFile": "audio/music/root-word-series-bgm.mp3",
+  "transparentAssetsDir": "assets/transparent",
+  "durationSec": 122.1,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "backgroundMusic": "public/assets/music/root-word-series-bgm.mp3",
+  "verifiedAt": "2026-08-02"
+}

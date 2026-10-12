@@ -1,0 +1,17 @@
+{
+  "id": "flexible-easy-bend",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260734,
+  "input": "work/wan-white/flect-flex/inputs/flexible-easy-bend.png",
+  "inputSha256": "c926c16a5fc96661029a8627682b332f1d0d5779d42265a2c3b3d436114f7f68",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. One isolated floating action only: the character bends a short orange ribbon into a smooth U-shape around one small floating gray cube without touching the cube. The ribbon has two clean ends and is not a cable, hose, plug, or wire. No floor, shadow, grass, baseline, writing, or signature. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "8b43f18f-d84b-4c86-984a-61194a23c775",
+  "requestId": "6e57d8af-caac-9bf3-a7a3-2d0b272b4267",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-29T13:54:15.154Z",
+  "lastPolledAt": "2026-07-29T13:57:40.511Z",
+  "outputVideo": "work/wan-white/flect-flex/tasks/flexible-easy-bend.source.mp4",
+  "completedAt": "2026-07-29T13:57:42.360Z"
+}

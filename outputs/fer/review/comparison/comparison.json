@@ -1,0 +1,8 @@
+{
+  "project": "fer",
+  "reference": "样片/video_这么多带fer的单词，到底怎么记..._0.mp4",
+  "candidate": "outputs/fer/fer.mp4",
+  "contactSheet": "outputs/fer/comparison/contact-sheet.png",
+  "timestamps": [0, 12.363636, 24.727273, 37.090909, 49.454545, 61.818182, 74.181818, 86.545454, 98.909091, 111.272727, 123.636363, 136],
+  "note": "12 组等间隔样片/成片配对帧的联系表；视频仅迁移路径，画面内容未改。"
+}

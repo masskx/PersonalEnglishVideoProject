@@ -1,0 +1,50 @@
+{
+  "send-hook": {
+    "src": "assets/audio/replica/mit-miss/send-hook.mp3",
+    "duration": 9.352
+  },
+  "send-map": {
+    "src": "assets/audio/replica/mit-miss/send-map.mp3",
+    "duration": 10.371
+  },
+  "submit-send-up": {
+    "src": "assets/audio/replica/mit-miss/submit-send-up.mp3",
+    "duration": 9.195
+  },
+  "transmit-send-across": {
+    "src": "assets/audio/replica/mit-miss/transmit-send-across.mp3",
+    "duration": 10.397
+  },
+  "emit-send-out": {
+    "src": "assets/audio/replica/mit-miss/emit-send-out.mp3",
+    "duration": 9.482
+  },
+  "admit-send-in": {
+    "src": "assets/audio/replica/mit-miss/admit-send-in.mp3",
+    "duration": 9.9
+  },
+  "permit-send-through": {
+    "src": "assets/audio/replica/mit-miss/permit-send-through.mp3",
+    "duration": 9.143
+  },
+  "commit-send-over": {
+    "src": "assets/audio/replica/mit-miss/commit-send-over.mp3",
+    "duration": 9.639
+  },
+  "dismiss-send-away": {
+    "src": "assets/audio/replica/mit-miss/dismiss-send-away.mp3",
+    "duration": 10.397
+  },
+  "mission-sent-task": {
+    "src": "assets/audio/replica/mit-miss/mission-sent-task.mp3",
+    "duration": 9.848
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/mit-miss/example-sentences.mp3",
+    "duration": 9.639
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/mit-miss/final-summary.mp3",
+    "duration": 17.371
+  }
+}

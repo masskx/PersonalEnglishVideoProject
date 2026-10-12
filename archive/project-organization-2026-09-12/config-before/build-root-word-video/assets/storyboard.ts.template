@@ -1,0 +1,18 @@
+import type {ReplicaStoryboard} from './types';
+
+export const __SLUG__Storyboard: ReplicaStoryboard = {
+  id: '__SLUG__-replica',
+  duration: __DURATION__,
+  fadeToBlackSec: __FADE_SECONDS__,
+  fadeEndOpacity: __FADE_OPACITY__,
+  scenes: [
+    {
+      id: 'hook',
+      start: 0,
+      duration: __HOOK_DURATION__,
+      narration: '__NARRATION__',
+      captions: [{from: 0.25, to: __CAPTION_END__, text: '__CAPTION__'}],
+      layers: [],
+    },
+  ],
+};

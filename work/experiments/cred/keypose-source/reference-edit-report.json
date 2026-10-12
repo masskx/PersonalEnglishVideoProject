@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-09-21T05:58:38.505Z",
+  "plan": "planning/cred-keyposes.json",
+  "model": "gpt-image-2.5-sunburst",
+  "size": "1536x864",
+  "quality": "high",
+  "items": [
+    {
+      "shot": "incredulous",
+      "state": "result",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "work/experiments/cred/keypose-source/incredulous-result-source.png",
+      "alpha": "public/assets/replica/cred/incredulous-result.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "F:\\抖音卡片英语白色\\public\\assets\\replica\\cred\\incredulous-result.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.1134232415093316,
+          "opaqueCoverage": 0.1134219699435764,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.1123046875,
+          "maxInnerVerticalBandRatio": 0.042534722222222224,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 390,
+            "top": 157,
+            "right": 1662,
+            "bottom": 1046
+          }
+        },
+        "errors": []
+      }
+    }
+  ]
+}

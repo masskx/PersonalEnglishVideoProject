@@ -1,0 +1,22 @@
+{
+  "id": "extract",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "public/assets/replica/tract/03_extract_out.png",
+  "inputSha256": "9ee31a5761431473df823fa89b4911df732c5f514dd4ca786cc831b48fa79680",
+  "prompt": "Locked camera. The same black line character uses the existing tongs to pull the orange core upward and out of the blue shell. Preserve exact identity, exact props, flat solid green background, no text, no new objects.",
+  "taskId": "09538e76-999f-4258-854c-16ad078d8fc8",
+  "requestId": "46ae7fe7-cd8f-9bec-9a0b-960aec229bb4",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-26T06:37:26.063Z",
+  "lastPolledAt": "2026-07-26T06:38:24.620Z",
+  "outputVideo": "outputs/tract/wan/extract.source.mp4",
+  "completedAt": "2026-07-26T06:38:25.831Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-26 14:37:26.091",
+    "scheduledTime": "2026-07-26 14:37:49.099",
+    "endTime": "2026-07-26 14:38:03.226"
+  }
+}

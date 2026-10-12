@@ -1,0 +1,114 @@
+{
+  "cred-hook": {
+    "src": "assets/audio/replica/cred/cred-hook.mp3",
+    "duration": 8.594,
+    "textHash": "b5555b226c9f31132046c9b85c347ed925d8a0ed55d12d9180d19dced38bc3da",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:19:11.564Z"
+  },
+  "cred-root-map": {
+    "src": "assets/audio/replica/cred/cred-root-map.mp3",
+    "duration": 9.117,
+    "textHash": "220fb493ff9e802c9c5122e61d158acf00da5a3328b1afd311831ec59f1249e2",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:16:58.979Z"
+  },
+  "credible-word": {
+    "src": "assets/audio/replica/cred/credible-word.mp3",
+    "duration": 7.68,
+    "textHash": "0e3d5aa5592706e0eafbdfa2a6bc56920102653df1996b6a01d1d184dd72abc0",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:17:02.065Z"
+  },
+  "credibility-word": {
+    "src": "assets/audio/replica/cred/credibility-word.mp3",
+    "duration": 8.307,
+    "textHash": "ca6b41f170c85d1512aba0ebb6d081560b44e2c9f084aae772d1982fbdfe5dc5",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:17:02.477Z"
+  },
+  "credulous-word": {
+    "src": "assets/audio/replica/cred/credulous-word.mp3",
+    "duration": 8.124,
+    "textHash": "19c3b8db3683068350f8cd8fa305cafe67d324c80d1c79bf03f88488773c6586",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:17:05.319Z"
+  },
+  "incredulous-word": {
+    "src": "assets/audio/replica/cred/incredulous-word.mp3",
+    "duration": 8.229,
+    "textHash": "b8e149fd90b8c5cbc840ab4866cfd7e0a8e34d92f5d993ce9194353a5f8548a3",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:17:05.639Z"
+  },
+  "incredible-word": {
+    "src": "assets/audio/replica/cred/incredible-word.mp3",
+    "duration": 7.915,
+    "textHash": "81748983cf8fbd25df6ecdf75e3d7a2a6bd1e764bd44817d549fb3b705c0ba73",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:17:08.437Z"
+  },
+  "credit-word": {
+    "src": "assets/audio/replica/cred/credit-word.mp3",
+    "duration": 8.934,
+    "textHash": "ee6fb30bf0fa4a180f1298ddab47f2a4d7db1572e69543672e0ca066c6a3fbd3",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:17:09.053Z"
+  },
+  "creditable-word": {
+    "src": "assets/audio/replica/cred/creditable-word.mp3",
+    "duration": 7.105,
+    "textHash": "3c15e6560d4a478d057359acbb30253b67c40cd233dd9ac06815e3c1ea367324",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:17:11.411Z"
+  },
+  "discredit-word": {
+    "src": "assets/audio/replica/cred/discredit-word.mp3",
+    "duration": 7.889,
+    "textHash": "ed96582c34425c09407daaf2c5819f6adc5191d284a36980db9e82d747ad7f9a",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:17:12.045Z"
+  },
+  "word-family-map": {
+    "src": "assets/audio/replica/cred/word-family-map.mp3",
+    "duration": 15.255,
+    "textHash": "5ce9b6b389e8a5478f5b286216e0bdf6df36d3aa8e2b1068db29452fbc770977",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:19:14.410Z"
+  },
+  "examples-in-context": {
+    "src": "assets/audio/replica/cred/examples-in-context.mp3",
+    "duration": 14.707,
+    "textHash": "79dc548c2ebc16279af63904083a9dd5cf9f51b84a72a0ebf85111a194569fe0",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:17:17.818Z"
+  },
+  "credible-vs-credulous": {
+    "src": "assets/audio/replica/cred/credible-vs-credulous.mp3",
+    "duration": 12.513,
+    "textHash": "bfc2ac74e1ea1cc2e09329f8a87a48f06a1bef1bbff0187f20af453ffc742af2",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:17:23.461Z"
+  },
+  "practice": {
+    "src": "assets/audio/replica/cred/practice.mp3",
+    "duration": 14.629,
+    "textHash": "08a4cc070776a9a5822245c290f15904e46b6a34760c18779895f95aaad8675b",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:17:24.850Z"
+  },
+  "practice-explanation": {
+    "src": "assets/audio/replica/cred/practice-explanation.mp3",
+    "duration": 12.304,
+    "textHash": "51363158c9b6264fbb56d1ef961b01ec0580d5da37e9c4b500ab6fcc4d9f8b9c",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:17:28.338Z"
+  },
+  "cred-summary": {
+    "src": "assets/audio/replica/cred/cred-summary.mp3",
+    "duration": 19.331,
+    "textHash": "c54c46d21c60b397a9c682d0437d9e59e79cddefd4dfb7841347db1d3289a565",
+    "profileHash": "6422de46461e6897b4e5421036a65f0b22b4b24cbe06810a91799e9d04c5fd0c",
+    "generatedAt": "2026-09-22T01:19:20.368Z"
+  }
+}

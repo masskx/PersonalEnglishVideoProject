@@ -1,0 +1,33 @@
+{
+  "slug": "mit-miss",
+  "status": "approved",
+  "topic": "-mit / -miss",
+  "coreMeaning": "send / 发送",
+  "words": [
+    "submit",
+    "transmit",
+    "emit",
+    "admit",
+    "permit",
+    "commit",
+    "dismiss",
+    "mission"
+  ],
+  "durationSeconds": 122.1,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "frames": 3663,
+  "voice": "longanhuan",
+  "backgroundMusic": "root-word-series-bgm.mp3",
+  "assetMethod": "transparent static Xiaohei illustrations plus Remotion code animation",
+  "paidVideoGenerationUsed": false,
+  "qa": {
+    "typecheck": "pass",
+    "storyboard": "pass: 12 scenes, 50 layers",
+    "illustrations": "pass: 9/9, 0.000% green residue",
+    "draftGateReview": "pass: hook, action peaks, all boundaries",
+    "render": "pass: 3663 frames, max volume -2.83 dBFS, no allowed long-silence windows",
+    "verticalCover": "pass: 1080x1440",
+    "landscapeCover": "pass: 1200x900"
+  }
+}

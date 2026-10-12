@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "project": "script-scrib",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "durationSec": 5,
+  "fps": 30,
+  "estimatedCostCny": 4.5,
+  "entries": [
+    {
+      "id": "write-hook",
+      "index": 0,
+      "imageLayerId": "hook-image",
+      "source": "public/assets/replica/script-scrib/00_write_hook.png",
+      "input": "work/wan-white/script-scrib/inputs/write-hook.png",
+      "taskManifest": "work/wan-white/script-scrib/tasks/write-hook.task.json",
+      "framesDir": "public/assets/replica/script-scrib-white-motion/frames/write-hook",
+      "report": "work/wan-white/script-scrib/reports/write-hook.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character pulls one oversized fountain pen like a plow across three floating blank white paper strips. A single clean orange ink ribbon trails from the pen tip. Show the full character, pen, ribbon, and paper strips floating in isolation. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "describe-write-out",
+      "index": 1,
+      "imageLayerId": "describe-write-out-image",
+      "source": "public/assets/replica/script-scrib/01_describe_trace.png",
+      "input": "work/wan-white/script-scrib/inputs/describe-write-out.png",
+      "taskManifest": "work/wan-white/script-scrib/tasks/describe-write-out.task.json",
+      "framesDir": "public/assets/replica/script-scrib-white-motion/frames/describe-write-out",
+      "report": "work/wan-white/script-scrib/reports/describe-write-out.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. A sparse isolated cutout: the character stands between one small floating plain teapot and one small floating blank sheet, looking at the teapot while drawing one single smooth orange arc on the sheet. No viewing circle, board, easel, room, floor, ground, shadow, texture, black background, hatching, handwriting, glyph, or pseudo-text. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "prescribe-write-before",
+      "index": 2,
+      "imageLayerId": "prescribe-write-before-image",
+      "source": "public/assets/replica/script-scrib/02_prescribe_before.png",
+      "input": "work/wan-white/script-scrib/inputs/prescribe-write-before.png",
+      "taskManifest": "work/wan-white/script-scrib/tasks/prescribe-write-before.task.json",
+      "framesDir": "public/assets/replica/script-scrib-white-motion/frames/prescribe-write-before",
+      "report": "work/wan-white/script-scrib/reports/prescribe-write-before.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character writes one single abstract orange straight stroke on a floating blank white instruction card, then firmly hands the card toward one extremely plain cylindrical medicine bottle. The bottle is one unmarked white silhouette with black outline: absolutely no label panel, cross, plus sign, logo, stripe, cap text, or marks. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "subscribe-write-under",
+      "index": 3,
+      "imageLayerId": "subscribe-write-under-image",
+      "source": "public/assets/replica/script-scrib/03_subscribe_under.png",
+      "input": "work/wan-white/script-scrib/inputs/subscribe-write-under.png",
+      "taskManifest": "work/wan-white/script-scrib/tasks/subscribe-write-under.task.json",
+      "framesDir": "public/assets/replica/script-scrib-white-motion/frames/subscribe-write-under",
+      "report": "work/wan-white/script-scrib/reports/subscribe-write-under.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character crouches underneath one floating blank scroll and signs it with a large orange pen stroke along the lower edge. A simple empty paper tube waits beside the scroll. No writing, symbols, checkmarks, or postal marks. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "transcribe-write-across",
+      "index": 4,
+      "imageLayerId": "transcribe-write-across-image",
+      "source": "public/assets/replica/script-scrib/04_transcribe_across.png",
+      "input": "work/wan-white/script-scrib/inputs/transcribe-write-across.png",
+      "taskManifest": "work/wan-white/script-scrib/tasks/transcribe-write-across.task.json",
+      "framesDir": "public/assets/replica/script-scrib-white-motion/frames/transcribe-write-across",
+      "report": "work/wan-white/script-scrib/reports/transcribe-write-across.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character listens to one plain horn on the left and carries a pen across a tiny arched bridge to one blank white sheet on the right. One orange sound ribbon enters the ear side and becomes one orange ink ribbon at the pen tip. No waveform, notes, writing, or arrows. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "manuscript-handwritten",
+      "index": 5,
+      "imageLayerId": "manuscript-handwritten-image",
+      "source": "public/assets/replica/script-scrib/05_manuscript_hand.png",
+      "input": "work/wan-white/script-scrib/inputs/manuscript-handwritten.png",
+      "taskManifest": "work/wan-white/script-scrib/tasks/manuscript-handwritten.task.json",
+      "framesDir": "public/assets/replica/script-scrib-white-motion/frames/manuscript-handwritten",
+      "report": "work/wan-white/script-scrib/reports/manuscript-handwritten.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character uses both hands to guide one oversized quill across a long floating rolled manuscript sheet. The sheet stays completely blank except for one abstract orange ink trail with no glyphs or pseudo-writing. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "inscription-write-into",
+      "index": 6,
+      "imageLayerId": "inscription-write-into-image",
+      "source": "public/assets/replica/script-scrib/06_inscription_carve.png",
+      "input": "work/wan-white/script-scrib/inputs/inscription-write-into.png",
+      "taskManifest": "work/wan-white/script-scrib/tasks/inscription-write-into.task.json",
+      "framesDir": "public/assets/replica/script-scrib-white-motion/frames/inscription-write-into",
+      "report": "work/wan-white/script-scrib/reports/inscription-write-into.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character braces a chisel and small hammer against one thin floating plain stone tablet, carving one shallow orange groove into the surface. The tablet and full character float separately in empty green space with no floor, shadow, ground scribble, baseline, debris, scenery, or support. The groove is abstract and contains no letters or symbols. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "postscript-write-after",
+      "index": 7,
+      "imageLayerId": "postscript-write-after-image",
+      "source": "public/assets/replica/script-scrib/07_postscript_after.png",
+      "input": "work/wan-white/script-scrib/inputs/postscript-write-after.png",
+      "taskManifest": "work/wan-white/script-scrib/tasks/postscript-write-after.task.json",
+      "framesDir": "public/assets/replica/script-scrib-white-motion/frames/postscript-write-after",
+      "report": "work/wan-white/script-scrib/reports/postscript-write-after.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. A sparse isolated cutout with exactly three elements: one plain sealed envelope floating on the left, one tiny completely blank rectangular card floating just behind it on the right, and the character using a small paper clip to attach the extra card after the envelope. No pen and no open paper. Everything floats inside empty flat green. No writing lines, handwriting, alphabetic shapes, words, glyphs, patterns, pseudo-text, ground, floor, shadow, scenery, or texture. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "scribble-write-messily",
+      "index": 8,
+      "imageLayerId": "scribble-write-messily-image",
+      "source": "public/assets/replica/script-scrib/08_scribble_tangle.png",
+      "input": "work/wan-white/script-scrib/inputs/scribble-write-messily.png",
+      "taskManifest": "work/wan-white/script-scrib/tasks/scribble-write-messily.task.json",
+      "framesDir": "public/assets/replica/script-scrib-white-motion/frames/scribble-write-messily",
+      "report": "work/wan-white/script-scrib/reports/scribble-write-messily.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character struggles to control one runaway oversized pen that pulls a loose tangled orange ink cord through the air. The tangle is abstract with no letters, symbols, arrows, or pseudo-writing. Show both feet, both hands, full pen, and full cord. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    }
+  ]
+}

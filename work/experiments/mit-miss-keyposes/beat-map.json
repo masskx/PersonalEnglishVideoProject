@@ -1,0 +1,69 @@
+{
+  "basis": "Existing caption phrases; not forced-alignment or a completed human listening review",
+  "words": {
+    "submit": {
+      "cuts": [
+        0,
+        3.13,
+        5.27
+      ],
+      "trigger": "把文件递到上级手里 → 正式送交"
+    },
+    "transmit": {
+      "cuts": [
+        0,
+        2.03,
+        5.13
+      ],
+      "trigger": "从这一端 → 送到另一端"
+    },
+    "emit": {
+      "cuts": [
+        0,
+        4.13,
+        6.13
+      ],
+      "trigger": "光、热、声音或气体 → 从源头送出来"
+    },
+    "admit": {
+      "cuts": [
+        0,
+        1.17,
+        3.47
+      ],
+      "trigger": "把一个人送进门里 → 允许他进入"
+    },
+    "permit": {
+      "cuts": [
+        0,
+        1.97,
+        4.4
+      ],
+      "trigger": "送过关卡 → 不再拦住"
+    },
+    "commit": {
+      "cuts": [
+        0,
+        3.13,
+        6.67
+      ],
+      "trigger": "正式交给一件事 → 不能反悔的卡槽"
+    },
+    "dismiss": {
+      "cuts": [
+        0,
+        4.23,
+        6.6
+      ],
+      "trigger": "把人从面前送走 → 让大家散开"
+    },
+    "mission": {
+      "cuts": [
+        0,
+        4.3,
+        6.5
+      ],
+      "trigger": "被派出去 → 完成的任务"
+    }
+  }
+}

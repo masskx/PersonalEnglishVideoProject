@@ -1,0 +1,22 @@
+{
+  "id": "contract",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "public/assets/replica/tract/04_contract_together.png",
+  "inputSha256": "534fa87401536fc05c91624220e0d826680dde3a02044a3bdf189857f4dbbf94",
+  "prompt": "Locked camera. The same black line character turns the existing winch; the accordion tube compresses inward by a small amount. Preserve exact identity and props, flat solid green background, no text, no new objects.",
+  "taskId": "a5817d43-d83e-4b7e-a963-98ff7a2906ab",
+  "requestId": "747b8697-750c-96c4-b2c5-610cd099e664",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-26T06:37:27.902Z",
+  "lastPolledAt": "2026-07-26T06:38:26.782Z",
+  "outputVideo": "outputs/tract/wan/contract.source.mp4",
+  "completedAt": "2026-07-26T06:38:27.362Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-26 14:37:27.926",
+    "scheduledTime": "2026-07-26 14:38:02.825",
+    "endTime": "2026-07-26 14:38:15.038"
+  }
+}

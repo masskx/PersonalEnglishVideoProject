@@ -1,0 +1,22 @@
+{
+  "id": "01_direction_machine",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 2203,
+  "input": "assets/wan-input/ject/01_direction_machine.png",
+  "inputSha256": "aca8422a874db5b64cfe660bf85d02e5b34b6cb40ab2f692f339758658db0061",
+  "prompt": "固定镜头，纯绿背景完全均匀静止。保持原构图和手绘风格。小黑有节奏地摇动橙色手柄，投掷机器轻微弹动，白球在发射碗中小幅跳动后归位。所有部件完整，动作克制，无新增元素。",
+  "taskId": "6176aaad-bb79-4337-849a-d81fe3151ee3",
+  "requestId": "d05efbd3-1f7e-9cf2-9505-32de9ade35ab",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T09:36:11.087Z",
+  "lastPolledAt": "2026-07-24T09:36:30.367Z",
+  "outputVideo": "outputs/ject-wan-motion/01_direction_machine.source.mp4",
+  "completedAt": "2026-07-24T09:36:34.173Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 17:36:11.019",
+    "scheduledTime": "2026-07-24 17:36:11.057",
+    "endTime": "2026-07-24 17:36:23.194"
+  }
+}

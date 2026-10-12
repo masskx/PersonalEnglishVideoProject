@@ -1,0 +1,22 @@
+{
+  "id": "02_reject_return",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 2203,
+  "input": "assets/wan-input/ject/02_reject_return.png",
+  "inputSha256": "1e71f5fa1c0a404120f4185fba6182a0aab2de69c953b40ce9561b14ab9d44d5",
+  "prompt": "固定镜头，纯绿背景完全均匀静止。保持原构图和手绘风格。小黑先接住白球，身体后仰蓄力，再把白球明确向左扔回去，手臂和身体自然回弹并站稳。四肢完整，无新增元素。",
+  "taskId": "403e28d4-4c7c-46e0-b207-7121491b9a09",
+  "requestId": "c8e4b4ff-ef4a-9234-85cf-92b7daf758cb",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T09:36:12.451Z",
+  "lastPolledAt": "2026-07-24T09:36:38.768Z",
+  "outputVideo": "outputs/ject-wan-motion/02_reject_return.source.mp4",
+  "completedAt": "2026-07-24T09:36:40.896Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 17:36:12.397",
+    "scheduledTime": "2026-07-24 17:36:12.455",
+    "endTime": "2026-07-24 17:36:24.389"
+  }
+}

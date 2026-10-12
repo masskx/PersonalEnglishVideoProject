@@ -1,0 +1,99 @@
+{
+  "reference": {
+    "path": "F:\\抖音卡片英语白色\\work\\experiments\\mit-miss-sunburst-full\\mit-miss-sunburst-full.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuvj420p",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "122.100000",
+          "nb_frames": "3663",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "122.154667",
+          "nb_frames": "5726"
+        }
+      ],
+      "format": {
+        "duration": "122.154667",
+        "size": "9225140",
+        "bit_rate": "604161"
+      }
+    }
+  },
+  "candidate": {
+    "path": "F:\\抖音卡片英语白色\\outputs\\cred\\cred.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuvj420p",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "188.800000",
+          "nb_frames": "5664",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "188.842667",
+          "nb_frames": "8852"
+        }
+      ],
+      "format": {
+        "duration": "188.842667",
+        "size": "13012449",
+        "bit_rate": "551250"
+      }
+    }
+  },
+  "timestamps": [
+    4.5,
+    15.0,
+    24.9,
+    34.3,
+    43.7,
+    62.5,
+    90.7,
+    113.5
+  ],
+  "contact_sheet": {
+    "columns": 2,
+    "rows": 4,
+    "file": "contact-sheet.png"
+  }
+}

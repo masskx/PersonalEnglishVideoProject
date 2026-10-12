@@ -1,0 +1,22 @@
+{
+  "id": "contradict",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260724,
+  "input": "assets/green-screen/dict/02_contradict_opposite.jpg",
+  "inputSha256": "55d037569a002789f4b01a1778fb2ad985acbecb0738df6d8d712012e282c39e",
+  "prompt": "The orange and red speech puffs move toward each other and meet with a restrained impact while the single black character braces. Locked camera, no extra character, identity stable.",
+  "taskId": "ea5f27e2-b454-4c21-a72a-6058696cc757",
+  "requestId": "2bda1467-6cf8-92a1-8be8-3f60d8209060",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-24T11:48:36.005Z",
+  "lastPolledAt": "2026-07-24T11:52:49.035Z",
+  "outputVideo": "outputs/dict-wan/contradict.source.mp4",
+  "completedAt": "2026-07-24T11:52:50.017Z",
+  "remoteTiming": {
+    "submitTime": "2026-07-24 19:48:35.963",
+    "scheduledTime": "2026-07-24 19:49:39.763",
+    "endTime": "2026-07-24 19:49:52.131"
+  }
+}

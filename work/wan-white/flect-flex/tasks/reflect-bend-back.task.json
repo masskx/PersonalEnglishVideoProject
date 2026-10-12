@@ -1,0 +1,17 @@
+{
+  "id": "reflect-bend-back",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "duration": 5,
+  "seed": 20260730,
+  "input": "work/wan-white/flect-flex/inputs/reflect-bend-back.png",
+  "inputSha256": "3e869519e1be173e06ec43ad4eba20a9a25b7eb4a57c748e5c6ea7304acbbb35",
+  "prompt": "Locked camera. One continuous natural five-second action at normal speed. The character holds a small plain black-outline mirror panel while one orange beam strikes it and bends back as a pale-blue beam. The beams contain no arrowheads. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle.",
+  "taskId": "f3d632a4-2114-4cb7-be02-a0bc67972fda",
+  "requestId": "b7a5c563-dcbc-9866-a8b8-52650417e9e1",
+  "status": "SUCCEEDED",
+  "submittedAt": "2026-07-29T13:54:12.992Z",
+  "lastPolledAt": "2026-07-29T13:57:32.991Z",
+  "outputVideo": "work/wan-white/flect-flex/tasks/reflect-bend-back.source.mp4",
+  "completedAt": "2026-07-29T13:57:33.153Z"
+}

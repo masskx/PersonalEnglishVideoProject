@@ -1,0 +1,25 @@
+{
+  "createdAt": "2026-09-22T01:48:56.109Z",
+  "destination": "F:\\抖音卡片英语白色\\outputs\\cred",
+  "stage": "F:\\抖音卡片英语白色\\work\\render-staging\\cred-RM5lwC",
+  "files": [
+    "cred.mp4",
+    "cover.png",
+    "cover-landscape.png",
+    "publish-copy.md",
+    "douyin-copy.md",
+    "render-report.json",
+    "cover-report.json",
+    "cover-landscape-report.json"
+  ],
+  "previous": [
+    "cred.mp4",
+    "cover.png",
+    "cover-landscape.png",
+    "publish-copy.md",
+    "douyin-copy.md",
+    "render-report.json",
+    "cover-report.json",
+    "cover-landscape-report.json"
+  ]
+}

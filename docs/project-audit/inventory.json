@@ -1,0 +1,1500 @@
+{
+  "generatedAt": "2026-09-29T16:35:58.348Z",
+  "scope": "Local file existence and configured metadata; not platform publication or content approval.",
+  "projects": [
+    {
+      "slug": "press",
+      "title": "press 词根讲解",
+      "directory": "outputs/press",
+      "configuredSeconds": 172.667,
+      "sceneCount": 16,
+      "renderer": "continuous",
+      "words": [
+        "pressure",
+        "impress",
+        "express",
+        "depress",
+        "compress"
+      ],
+      "searchTerms": "PRESS PRESS DOWN 按 / 压",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "draft",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "press.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/press/press.mp4",
+        "cover": "outputs/press/cover.png",
+        "landscapeCover": "outputs/press/cover-landscape.png",
+        "copy": "outputs/press/publish-copy.md",
+        "draft": "work/drafts/press/draft.mp4",
+        "review": "outputs/press/review",
+        "audio": "public/assets/audio/replica/press",
+        "illustrations": "public/assets/replica/press",
+        "imageSources": "assets/green-screen/press"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/press/render-report.json",
+          "recordedInput": "outputs/press/press.mp4",
+          "currentFile": "outputs/press/press.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/press/cover-report.json",
+          "recordedInput": "outputs/press/cover.png",
+          "currentFile": "outputs/press/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/press/cover-landscape-report.json",
+          "recordedInput": "outputs/press/cover-landscape.png",
+          "currentFile": "outputs/press/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "reg",
+      "title": "reg 词根讲解",
+      "directory": "outputs/reg",
+      "configuredSeconds": 103.33333333333333,
+      "sceneCount": 15,
+      "renderer": "continuous",
+      "words": [
+        "regulate",
+        "regulation",
+        "regent",
+        "regime",
+        "regal"
+      ],
+      "searchTerms": "REG STRAIGHT / RULE 直 · 规则",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "draft",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "reg.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/reg/reg.mp4",
+        "cover": "outputs/reg/cover.png",
+        "landscapeCover": "outputs/reg/cover-landscape.png",
+        "copy": "outputs/reg/publish-copy.md",
+        "draft": "work/drafts/reg/draft.mp4",
+        "review": "outputs/reg/review",
+        "audio": "public/assets/audio/replica/reg",
+        "illustrations": "public/assets/replica/reg",
+        "imageSources": "assets/green-screen/reg"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/reg/render-report.json",
+          "recordedInput": "outputs/reg/reg.mp4",
+          "currentFile": "outputs/reg/reg.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/reg/cover-report.json",
+          "recordedInput": "outputs/reg/cover.png",
+          "currentFile": "outputs/reg/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/reg/cover-landscape-report.json",
+          "recordedInput": "outputs/reg/cover-landscape.png",
+          "currentFile": "outputs/reg/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "fer",
+      "title": "fer 词根讲解",
+      "directory": "outputs/fer",
+      "configuredSeconds": 136.033,
+      "sceneCount": 13,
+      "renderer": "continuous",
+      "words": [
+        "transfer",
+        "offer",
+        "prefer",
+        "refer",
+        "defer"
+      ],
+      "searchTerms": "FER CARRY 携带 / 搬运",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "draft",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "fer.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/fer/fer.mp4",
+        "cover": "outputs/fer/cover.png",
+        "landscapeCover": "outputs/fer/cover-landscape.png",
+        "copy": "outputs/fer/publish-copy.md",
+        "draft": "work/drafts/fer/draft.mp4",
+        "review": "outputs/fer/review",
+        "audio": "public/assets/audio/replica/fer",
+        "illustrations": "public/assets/replica/fer",
+        "imageSources": "assets/green-screen/fer"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/fer/render-report.json",
+          "recordedInput": "outputs/fer/fer.mp4",
+          "currentFile": "outputs/fer/fer.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/fer/cover-report.json",
+          "recordedInput": "outputs/fer/cover.png",
+          "currentFile": "outputs/fer/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/fer/cover-landscape-report.json",
+          "recordedInput": "outputs/fer/cover-landscape.png",
+          "currentFile": "outputs/fer/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "bouba-kiki",
+      "title": "Bouba/Kiki 语音象征讲解",
+      "directory": "outputs/bouba-kiki",
+      "configuredSeconds": 102.3,
+      "sceneCount": 11,
+      "renderer": "continuous",
+      "words": [
+        "cr-",
+        "gl-",
+        "sl-",
+        "sn-",
+        "sp-"
+      ],
+      "searchTerms": "BOUBA KIKI SOUND SHAPE 声音也有形状",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "draft",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "bouba-kiki.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/bouba-kiki/bouba-kiki.mp4",
+        "cover": "outputs/bouba-kiki/cover.png",
+        "landscapeCover": "outputs/bouba-kiki/cover-landscape.png",
+        "copy": "outputs/bouba-kiki/publish-copy.md",
+        "draft": "work/drafts/bouba-kiki/draft.mp4",
+        "review": "outputs/bouba-kiki/review",
+        "audio": "public/assets/audio/replica/bouba-kiki",
+        "illustrations": "public/assets/replica/bouba-kiki",
+        "imageSources": "assets/green-screen/bouba-kiki"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/bouba-kiki/render-report.json",
+          "recordedInput": "outputs/bouba-kiki/bouba-kiki.mp4",
+          "currentFile": "outputs/bouba-kiki/bouba-kiki.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/bouba-kiki/cover-report.json",
+          "recordedInput": "outputs/bouba-kiki/cover.png",
+          "currentFile": "outputs/bouba-kiki/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/bouba-kiki/cover-landscape-report.json",
+          "recordedInput": "outputs/bouba-kiki/cover-landscape.png",
+          "currentFile": "outputs/bouba-kiki/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "ject",
+      "title": "ject = throw 词根讲解",
+      "directory": "outputs/ject发了",
+      "configuredSeconds": 105,
+      "sceneCount": 11,
+      "renderer": "ject-continuous",
+      "words": [
+        "reject",
+        "project",
+        "inject",
+        "object",
+        "subject"
+      ],
+      "searchTerms": "JECT THROW 投出去",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "published",
+      "folderSaysPublished": true,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "ject.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/ject发了/ject.mp4",
+        "cover": "outputs/ject发了/cover.png",
+        "landscapeCover": "outputs/ject发了/cover-landscape.png",
+        "copy": "outputs/ject发了/publish-copy.md",
+        "draft": "work/drafts/ject/draft.mp4",
+        "review": "outputs/ject发了/review",
+        "audio": "public/assets/audio/replica/ject",
+        "illustrations": "public/assets/replica/ject",
+        "imageSources": "assets/green-screen/ject"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/ject发了/render-report.json",
+          "recordedInput": "outputs/ject/ject.mp4",
+          "currentFile": "outputs/ject发了/ject.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/ject发了/cover-report.json",
+          "recordedInput": "outputs/ject/cover.png",
+          "currentFile": "outputs/ject发了/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/ject发了/cover-landscape-report.json",
+          "recordedInput": "outputs/ject发了/cover-landscape.png",
+          "currentFile": "outputs/ject发了/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "port",
+      "title": "port = carry 词根讲解",
+      "directory": "outputs/port发了",
+      "configuredSeconds": 112.5,
+      "sceneCount": 12,
+      "renderer": "continuous",
+      "words": [
+        "import",
+        "export",
+        "transport",
+        "support",
+        "report",
+        "portable",
+        "porter",
+        "deport"
+      ],
+      "searchTerms": "PORT CARRY 携带、运输",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "published",
+      "folderSaysPublished": true,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "port.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/port发了/port.mp4",
+        "cover": "outputs/port发了/cover.png",
+        "landscapeCover": "outputs/port发了/cover-landscape.png",
+        "copy": "outputs/port发了/publish-copy.md",
+        "draft": "work/drafts/port/draft.mp4",
+        "review": "outputs/port发了/review",
+        "audio": "public/assets/audio/replica/port",
+        "illustrations": "public/assets/replica/port",
+        "imageSources": "assets/green-screen/port"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/port发了/render-report.json",
+          "recordedInput": "outputs/port发了/port.mp4",
+          "currentFile": "outputs/port发了/port.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/port发了/cover-report.json",
+          "recordedInput": "outputs/port/cover.png",
+          "currentFile": "outputs/port发了/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/port发了/cover-landscape-report.json",
+          "recordedInput": "outputs/port发了/cover-landscape.png",
+          "currentFile": "outputs/port发了/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "spect",
+      "title": "spect = look 词根讲解",
+      "directory": "outputs/spect发了",
+      "configuredSeconds": 117.9,
+      "sceneCount": 12,
+      "renderer": "continuous",
+      "words": [
+        "inspect",
+        "respect",
+        "suspect",
+        "expect",
+        "prospect",
+        "spectator",
+        "spectacle",
+        "retrospect"
+      ],
+      "searchTerms": "SPECT LOOK 看、观察",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "published",
+      "folderSaysPublished": true,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "spect.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/spect发了/spect.mp4",
+        "cover": "outputs/spect发了/cover.png",
+        "landscapeCover": "outputs/spect发了/cover-landscape.png",
+        "copy": "outputs/spect发了/publish-copy.md",
+        "draft": "work/drafts/spect/draft.mp4",
+        "review": "outputs/spect发了/review",
+        "audio": "public/assets/audio/replica/spect",
+        "illustrations": "public/assets/replica/spect",
+        "imageSources": "assets/green-screen/spect"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/spect发了/render-report.json",
+          "recordedInput": "outputs/spect发了/spect.mp4",
+          "currentFile": "outputs/spect发了/spect.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/spect发了/cover-report.json",
+          "recordedInput": "outputs/spect/cover.png",
+          "currentFile": "outputs/spect发了/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/spect发了/cover-landscape-report.json",
+          "recordedInput": "outputs/spect发了/cover-landscape.png",
+          "currentFile": "outputs/spect发了/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "vis-vid",
+      "title": "vis / vid = see 词根讲解",
+      "directory": "outputs/vis-vid",
+      "configuredSeconds": 118.5,
+      "sceneCount": 12,
+      "renderer": "continuous",
+      "words": [
+        "vision",
+        "visible",
+        "video",
+        "visual",
+        "evidence",
+        "evident",
+        "visit",
+        "revise"
+      ],
+      "searchTerms": "VIS / VID SEE 看见",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "draft",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "vis-vid.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/vis-vid/vis-vid.mp4",
+        "cover": "outputs/vis-vid/cover.png",
+        "landscapeCover": "outputs/vis-vid/cover-landscape.png",
+        "copy": "outputs/vis-vid/publish-copy.md",
+        "draft": "work/drafts/vis-vid/draft.mp4",
+        "review": "outputs/vis-vid/review",
+        "audio": "public/assets/audio/replica/vis-vid",
+        "illustrations": "public/assets/replica/vis-vid",
+        "imageSources": "assets/green-screen/vis-vid"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/vis-vid/render-report.json",
+          "recordedInput": "outputs/vis-vid/vis-vid.mp4",
+          "currentFile": "outputs/vis-vid/vis-vid.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/vis-vid/cover-report.json",
+          "recordedInput": "outputs/vis-vid/cover.png",
+          "currentFile": "outputs/vis-vid/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/vis-vid/cover-landscape-report.json",
+          "recordedInput": "outputs/vis-vid/cover-landscape.png",
+          "currentFile": "outputs/vis-vid/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "aud",
+      "title": "aud = hear 词根讲解",
+      "directory": "outputs/aud发了",
+      "configuredSeconds": 112.2,
+      "sceneCount": 12,
+      "renderer": "continuous",
+      "words": [
+        "audio",
+        "audience",
+        "audit",
+        "audible",
+        "audition",
+        "auditorium",
+        "inaudible",
+        "audiobook"
+      ],
+      "searchTerms": "AUD HEAR 听",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "published",
+      "folderSaysPublished": true,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "aud.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/aud发了/aud.mp4",
+        "cover": "outputs/aud发了/cover.png",
+        "landscapeCover": "outputs/aud发了/cover-landscape.png",
+        "copy": "outputs/aud发了/publish-copy.md",
+        "draft": "work/drafts/aud/draft.mp4",
+        "review": "outputs/aud发了/review",
+        "audio": "public/assets/audio/replica/aud",
+        "illustrations": "public/assets/replica/aud",
+        "imageSources": "assets/green-screen/aud"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/aud发了/render-report.json",
+          "recordedInput": "outputs/aud发了/aud.mp4",
+          "currentFile": "outputs/aud发了/aud.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/aud发了/cover-report.json",
+          "recordedInput": "outputs/aud/cover.png",
+          "currentFile": "outputs/aud发了/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/aud发了/cover-landscape-report.json",
+          "recordedInput": "outputs/aud发了/cover-landscape.png",
+          "currentFile": "outputs/aud发了/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "dict",
+      "title": "dict = say / 说 词根讲解",
+      "directory": "outputs/dict发了",
+      "configuredSeconds": 112,
+      "sceneCount": 12,
+      "renderer": "continuous",
+      "words": [
+        "predict",
+        "contradict",
+        "verdict",
+        "dictate",
+        "dictionary",
+        "diction",
+        "dictation",
+        "indict"
+      ],
+      "searchTerms": "DICT SAY 说",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "published",
+      "folderSaysPublished": true,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "dict.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/dict发了/dict.mp4",
+        "cover": "outputs/dict发了/cover.png",
+        "landscapeCover": "outputs/dict发了/cover-landscape.png",
+        "copy": "outputs/dict发了/publish-copy.md",
+        "draft": "work/drafts/dict/draft.mp4",
+        "review": "outputs/dict发了/review",
+        "audio": "public/assets/audio/replica/dict",
+        "illustrations": "public/assets/replica/dict",
+        "imageSources": "assets/green-screen/dict"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/dict发了/render-report.json",
+          "recordedInput": "outputs/dict发了/dict.mp4",
+          "currentFile": "outputs/dict发了/dict.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/dict发了/cover-report.json",
+          "recordedInput": "outputs/dict/cover.png",
+          "currentFile": "outputs/dict发了/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/dict发了/cover-landscape-report.json",
+          "recordedInput": "outputs/dict/cover-landscape.png",
+          "currentFile": "outputs/dict发了/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "script-scrib",
+      "title": "script / scrib = write / 写 词根讲解",
+      "directory": "outputs/script-scrib",
+      "configuredSeconds": 112,
+      "sceneCount": 12,
+      "renderer": "continuous",
+      "words": [
+        "describe",
+        "prescribe",
+        "subscribe",
+        "transcribe",
+        "manuscript",
+        "inscription",
+        "postscript",
+        "scribble"
+      ],
+      "searchTerms": "SCRIPT / SCRIB WRITE 写",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "draft",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "script-scrib.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/script-scrib/script-scrib.mp4",
+        "cover": "outputs/script-scrib/cover.png",
+        "landscapeCover": "outputs/script-scrib/cover-landscape.png",
+        "copy": "outputs/script-scrib/publish-copy.md",
+        "draft": "work/drafts/script-scrib/draft.mp4",
+        "review": "outputs/script-scrib/review",
+        "audio": "public/assets/audio/replica/script-scrib",
+        "illustrations": "public/assets/replica/script-scrib",
+        "imageSources": "assets/green-screen/script-scrib"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/script-scrib/render-report.json",
+          "recordedInput": "outputs/script-scrib/script-scrib.mp4",
+          "currentFile": "outputs/script-scrib/script-scrib.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/script-scrib/cover-report.json",
+          "recordedInput": "outputs/script-scrib/cover.png",
+          "currentFile": "outputs/script-scrib/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/script-scrib/cover-landscape-report.json",
+          "recordedInput": "outputs/script-scrib/cover-landscape.png",
+          "currentFile": "outputs/script-scrib/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "tract",
+      "title": "tract = pull / 拉，拖 词根讲解",
+      "directory": "outputs/tract发了",
+      "configuredSeconds": 112,
+      "sceneCount": 12,
+      "renderer": "continuous",
+      "words": [
+        "attract",
+        "distract",
+        "extract",
+        "contract",
+        "subtract",
+        "retract",
+        "tractor",
+        "traction"
+      ],
+      "searchTerms": "TRACT PULL 拉，拖",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "draft",
+      "folderSaysPublished": true,
+      "statusConflict": true,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "tract.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/tract发了/tract.mp4",
+        "cover": "outputs/tract发了/cover.png",
+        "landscapeCover": "outputs/tract发了/cover-landscape.png",
+        "copy": "outputs/tract发了/publish-copy.md",
+        "draft": "work/drafts/tract/draft.mp4",
+        "review": "outputs/tract发了/review",
+        "audio": "public/assets/audio/replica/tract",
+        "illustrations": "public/assets/replica/tract",
+        "imageSources": "assets/green-screen/tract"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/tract发了/render-report.json",
+          "recordedInput": "outputs/tract/tract.mp4",
+          "currentFile": "outputs/tract发了/tract.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/tract发了/cover-report.json",
+          "recordedInput": "outputs/tract/cover.png",
+          "currentFile": "outputs/tract发了/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/tract发了/cover-landscape-report.json",
+          "recordedInput": "outputs/tract/cover-landscape.png",
+          "currentFile": "outputs/tract发了/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "form",
+      "title": "form = shape / 形状，形成 词根讲解",
+      "directory": "outputs/form",
+      "configuredSeconds": 112,
+      "sceneCount": 12,
+      "renderer": "continuous",
+      "words": [
+        "formation",
+        "inform",
+        "reform",
+        "transform",
+        "conform",
+        "deform",
+        "uniform",
+        "formula"
+      ],
+      "searchTerms": "FORM SHAPE 形状；形成",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "draft",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "form.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/form/form.mp4",
+        "cover": "outputs/form/cover.png",
+        "landscapeCover": "outputs/form/cover-landscape.png",
+        "copy": "outputs/form/publish-copy.md",
+        "draft": "work/drafts/form/draft.mp4",
+        "review": "outputs/form/review",
+        "audio": "public/assets/audio/replica/form",
+        "illustrations": "public/assets/replica/form",
+        "imageSources": "assets/green-screen/form"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/form/render-report.json",
+          "recordedInput": "outputs/form/form.mp4",
+          "currentFile": "outputs/form/form.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/form/cover-report.json",
+          "recordedInput": "outputs/form/cover.png",
+          "currentFile": "outputs/form/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/form/cover-landscape-report.json",
+          "recordedInput": "outputs/form/cover-landscape.png",
+          "currentFile": "outputs/form/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "struct",
+      "title": "struct = build / 建造 词根讲解",
+      "directory": "outputs/struct发了",
+      "configuredSeconds": 112,
+      "sceneCount": 12,
+      "renderer": "continuous",
+      "words": [
+        "construct",
+        "construction",
+        "structure",
+        "instruct",
+        "instruction",
+        "reconstruct",
+        "destruct",
+        "obstruct"
+      ],
+      "searchTerms": "STRUCT BUILD 建造；搭建",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "draft",
+      "folderSaysPublished": true,
+      "statusConflict": true,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "struct.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/struct发了/struct.mp4",
+        "cover": "outputs/struct发了/cover.png",
+        "landscapeCover": "outputs/struct发了/cover-landscape.png",
+        "copy": "outputs/struct发了/publish-copy.md",
+        "draft": "work/drafts/struct/draft.mp4",
+        "review": "outputs/struct发了/review",
+        "audio": "public/assets/audio/replica/struct",
+        "illustrations": "public/assets/replica/struct",
+        "imageSources": "assets/green-screen/struct"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/struct发了/render-report.json",
+          "recordedInput": "outputs/struct/struct.mp4",
+          "currentFile": "outputs/struct发了/struct.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/struct发了/cover-report.json",
+          "recordedInput": "outputs/struct/cover.png",
+          "currentFile": "outputs/struct发了/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/struct发了/cover-landscape-report.json",
+          "recordedInput": "outputs/struct/cover-landscape.png",
+          "currentFile": "outputs/struct发了/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "flect-flex",
+      "title": "flect / flex = bend / 弯曲词根讲解",
+      "directory": "outputs/flect-flex发了",
+      "configuredSeconds": 112,
+      "sceneCount": 12,
+      "renderer": "continuous",
+      "words": [
+        "reflect",
+        "reflection",
+        "deflect",
+        "inflect",
+        "flexible",
+        "flexibility",
+        "reflex",
+        "inflexible"
+      ],
+      "searchTerms": "FLECT / FLEX BEND 弯曲；使转向",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "draft",
+      "folderSaysPublished": true,
+      "statusConflict": true,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "flect-flex.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/flect-flex发了/flect-flex.mp4",
+        "cover": "outputs/flect-flex发了/cover.png",
+        "landscapeCover": "outputs/flect-flex发了/cover-landscape.png",
+        "copy": "outputs/flect-flex发了/publish-copy.md",
+        "draft": "work/drafts/flect-flex/draft.mp4",
+        "review": "outputs/flect-flex发了/review",
+        "audio": "public/assets/audio/replica/flect-flex",
+        "illustrations": "public/assets/replica/flect-flex",
+        "imageSources": "assets/green-screen/flect-flex"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/flect-flex发了/render-report.json",
+          "recordedInput": "outputs/flect-flex/flect-flex.mp4",
+          "currentFile": "outputs/flect-flex发了/flect-flex.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/flect-flex发了/cover-report.json",
+          "recordedInput": "outputs/flect-flex/cover.png",
+          "currentFile": "outputs/flect-flex发了/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/flect-flex发了/cover-landscape-report.json",
+          "recordedInput": "outputs/flect-flex/cover-landscape.png",
+          "currentFile": "outputs/flect-flex发了/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "rupt",
+      "title": "rupt = break / 破裂，打断",
+      "directory": "outputs/rupt发了",
+      "configuredSeconds": 122.1,
+      "sceneCount": 12,
+      "renderer": "continuous",
+      "words": [
+        "rupture",
+        "interrupt",
+        "disrupt",
+        "erupt",
+        "corrupt",
+        "bankrupt",
+        "abrupt",
+        "incorruptible"
+      ],
+      "searchTerms": "RUPT BREAK 破裂；打断",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "approved",
+      "folderSaysPublished": true,
+      "statusConflict": true,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "rupt.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/rupt发了/rupt.mp4",
+        "cover": "outputs/rupt发了/cover.png",
+        "landscapeCover": "outputs/rupt发了/cover-landscape.png",
+        "copy": "outputs/rupt发了/publish-copy.md",
+        "draft": "work/drafts/rupt/draft.mp4",
+        "review": "outputs/rupt发了/review",
+        "audio": "public/assets/audio/replica/rupt",
+        "illustrations": "public/assets/replica/rupt",
+        "imageSources": "assets/green-screen/rupt"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/rupt发了/render-report.json",
+          "recordedInput": "outputs/rupt/rupt.mp4",
+          "currentFile": "outputs/rupt发了/rupt.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/rupt发了/cover-report.json",
+          "recordedInput": "outputs/rupt/cover.png",
+          "currentFile": "outputs/rupt发了/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/rupt发了/cover-landscape-report.json",
+          "recordedInput": "outputs/rupt/cover-landscape.png",
+          "currentFile": "outputs/rupt发了/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "mit-miss",
+      "title": "mit / miss = send / 发送",
+      "directory": "outputs/mit-miss",
+      "configuredSeconds": 122.1,
+      "sceneCount": 12,
+      "renderer": "continuous",
+      "words": [
+        "submit",
+        "transmit",
+        "emit",
+        "admit",
+        "permit",
+        "commit",
+        "dismiss",
+        "mission"
+      ],
+      "searchTerms": "MIT / MISS SEND 发送",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "doubao-seedream-4-0-250828",
+      "releaseStatus": "approved",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "mit-miss.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/mit-miss/mit-miss.mp4",
+        "cover": "outputs/mit-miss/cover.png",
+        "landscapeCover": "outputs/mit-miss/cover-landscape.png",
+        "copy": "outputs/mit-miss/publish-copy.md",
+        "draft": "work/drafts/mit-miss/draft.mp4",
+        "review": "outputs/mit-miss/review",
+        "audio": "public/assets/audio/replica/mit-miss",
+        "illustrations": "public/assets/replica/mit-miss",
+        "imageSources": "assets/green-screen/mit-miss"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/mit-miss/render-report.json",
+          "recordedInput": "outputs/mit-miss/mit-miss.mp4",
+          "currentFile": "outputs/mit-miss/mit-miss.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/mit-miss/cover-report.json",
+          "recordedInput": "outputs/mit-miss/cover.png",
+          "currentFile": "outputs/mit-miss/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/mit-miss/cover-landscape-report.json",
+          "recordedInput": "outputs/mit-miss/cover-landscape.png",
+          "currentFile": "outputs/mit-miss/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "duc-duct",
+      "title": "duc / duct = lead / 带领，引导 词根讲解",
+      "directory": "outputs/duc-duct",
+      "configuredSeconds": 134,
+      "sceneCount": 11,
+      "renderer": "default",
+      "words": [
+        "conduct",
+        "induce",
+        "reduce",
+        "produce",
+        "introduce",
+        "deduce"
+      ],
+      "searchTerms": "DUC / DUCT LEAD 带领，引导",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "gpt-image-2",
+      "releaseStatus": "draft",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "present-needs-review",
+      "files": {
+        "duc-duct.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/duc-duct/duc-duct.mp4",
+        "cover": "outputs/duc-duct/cover.png",
+        "landscapeCover": "outputs/duc-duct/cover-landscape.png",
+        "copy": "outputs/duc-duct/publish-copy.md",
+        "draft": "work/drafts/duc-duct/draft.mp4",
+        "review": "outputs/duc-duct/review",
+        "audio": "public/assets/audio/replica/duc-duct",
+        "illustrations": "public/assets/replica/duc-duct",
+        "imageSources": "assets/green-screen/duc-duct"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/duc-duct/render-report.json",
+          "recordedInput": "outputs/duc-duct/duc-duct.mp4",
+          "currentFile": "outputs/duc-duct/duc-duct.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/duc-duct/cover-report.json",
+          "recordedInput": "outputs/duc-duct/cover.png",
+          "currentFile": "outputs/duc-duct/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/duc-duct/cover-landscape-report.json",
+          "recordedInput": "outputs/duc-duct/cover-landscape.png",
+          "currentFile": "outputs/duc-duct/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "cred",
+      "title": "cred = believe / trust 词根讲解",
+      "directory": "outputs/cred",
+      "configuredSeconds": 178.6,
+      "sceneCount": 16,
+      "renderer": "default",
+      "words": [
+        "credible",
+        "credibility",
+        "credulous",
+        "incredulous",
+        "incredible",
+        "credit",
+        "creditable",
+        "discredit"
+      ],
+      "searchTerms": "CRED BELIEVE · TRUST 相信 · 信任",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "gpt-image-2.5-sunburst",
+      "releaseStatus": "draft",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "cred.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/cred/cred.mp4",
+        "cover": "outputs/cred/cover.png",
+        "landscapeCover": "outputs/cred/cover-landscape.png",
+        "copy": "outputs/cred/publish-copy.md",
+        "draft": "work/drafts/cred/draft.mp4",
+        "review": "outputs/cred/review",
+        "audio": "public/assets/audio/replica/cred",
+        "illustrations": "public/assets/replica/cred",
+        "imageSources": "assets/green-screen/cred"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/cred/render-report.json",
+          "recordedInput": "work/render-staging/cred-RM5lwC/cred.mp4",
+          "currentFile": "outputs/cred/cred.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/cred/cover-report.json",
+          "recordedInput": "work/render-staging/cred-RM5lwC/cover.png",
+          "currentFile": "outputs/cred/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/cred/cover-landscape-report.json",
+          "recordedInput": "work/render-staging/cred-RM5lwC/cover-landscape.png",
+          "currentFile": "outputs/cred/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "ten-tain",
+      "title": "ten / tain = hold / keep 词根讲解",
+      "directory": "outputs/ten-tain",
+      "configuredSeconds": 146.79999999999998,
+      "sceneCount": 14,
+      "renderer": "continuous",
+      "words": [
+        "retain",
+        "contain",
+        "maintain",
+        "obtain",
+        "detain",
+        "sustain",
+        "entertain",
+        "abstain"
+      ],
+      "searchTerms": "TEN / TAIN HOLD · KEEP 持有 · 保持",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "gpt-image-2 (built-in image_gen)",
+      "releaseStatus": "draft",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "ten-tain.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/ten-tain/ten-tain.mp4",
+        "cover": "outputs/ten-tain/cover.png",
+        "landscapeCover": "outputs/ten-tain/cover-landscape.png",
+        "copy": "outputs/ten-tain/publish-copy.md",
+        "draft": "work/drafts/ten-tain/draft.mp4",
+        "review": "outputs/ten-tain/review",
+        "audio": "public/assets/audio/replica/ten-tain",
+        "illustrations": "public/assets/replica/ten-tain-v3",
+        "imageSources": "assets/green-screen/ten-tain-v3"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/ten-tain/render-report.json",
+          "recordedInput": "outputs/ten-tain/ten-tain.mp4",
+          "currentFile": "outputs/ten-tain/ten-tain.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/ten-tain/cover-report.json",
+          "recordedInput": "work/render-staging/ten-tain-YbhnGl/cover.png",
+          "currentFile": "outputs/ten-tain/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/ten-tain/cover-landscape-report.json",
+          "recordedInput": "work/render-staging/ten-tain-YbhnGl/cover-landscape.png",
+          "currentFile": "outputs/ten-tain/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "pon-pos",
+      "title": "pon / pos = put / place 词根讲解",
+      "directory": "outputs/pon-pos",
+      "configuredSeconds": 168.45000000000002,
+      "sceneCount": 14,
+      "renderer": "default",
+      "words": [
+        "compose",
+        "expose",
+        "impose",
+        "propose",
+        "oppose",
+        "dispose",
+        "deposit"
+      ],
+      "searchTerms": "PON / POS PUT · PLACE 放置 · 安放",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "gpt-image-2 (built-in image_gen)",
+      "releaseStatus": "draft",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "present-needs-review",
+      "files": {
+        "pon-pos.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/pon-pos/pon-pos.mp4",
+        "cover": "outputs/pon-pos/cover.png",
+        "landscapeCover": "outputs/pon-pos/cover-landscape.png",
+        "copy": "outputs/pon-pos/publish-copy.md",
+        "draft": "work/drafts/pon-pos/draft.mp4",
+        "review": "outputs/pon-pos/review",
+        "audio": "public/assets/audio/replica/pon-pos",
+        "illustrations": "public/assets/replica/pon-pos",
+        "imageSources": "assets/green-screen/pon-pos"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/pon-pos/render-report.json",
+          "recordedInput": "work/render-staging/pon-pos-HaptWU/pon-pos.mp4",
+          "currentFile": "outputs/pon-pos/pon-pos.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/pon-pos/cover-report.json",
+          "recordedInput": "work/render-staging/pon-pos-HaptWU/cover.png",
+          "currentFile": "outputs/pon-pos/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/pon-pos/cover-landscape-report.json",
+          "recordedInput": "work/render-staging/pon-pos-HaptWU/cover-landscape.png",
+          "currentFile": "outputs/pon-pos/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    }
+  ]
+}

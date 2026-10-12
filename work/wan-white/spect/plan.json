@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "project": "spect",
+  "model": "wan2.2-i2v-flash",
+  "resolution": "480P",
+  "durationSec": 5,
+  "fps": 30,
+  "estimatedCostCny": 4.5,
+  "entries": [
+    {
+      "id": "look-hook",
+      "index": 0,
+      "imageLayerId": "hook-image",
+      "source": "public/assets/replica/spect/00_look_hook.png",
+      "input": "work/wan-white/spect/inputs/look-hook.png",
+      "taskManifest": "work/wan-white/spect/tasks/look-hook.task.json",
+      "framesDir": "public/assets/replica/spect-white-motion/frames/look-hook",
+      "report": "work/wan-white/spect/reports/look-hook.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The single solid-black observer leans into one absurd oversized freestanding telescope made from sparse black outlines. One eye aligns with the eyepiece, the far lens is pale blue, and two short orange focus marks make the looking action unmistakable. Show the full observer and complete telescope with wide empty green padding. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "inspect-look-inside",
+      "index": 1,
+      "imageLayerId": "inspect-look-inside-image",
+      "source": "public/assets/replica/spect/01_inspect_inside.png",
+      "input": "work/wan-white/spect/inputs/inspect-look-inside.png",
+      "taskManifest": "work/wan-white/spect/tasks/inspect-look-inside.task.json",
+      "framesDir": "public/assets/replica/spect-white-motion/frames/inspect-look-inside",
+      "report": "work/wan-white/spect/reports/inspect-look-inside.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The single solid-black observer bends forward and uses one large black-outline magnifying glass to peer deep inside one open plain white box. The face, lens, hands, both feet, and complete box remain visible. Add one tiny orange focus mark inside the box. No writing, tools, floor, or second person. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "respect-look-back",
+      "index": 2,
+      "imageLayerId": "respect-look-back-image",
+      "source": "public/assets/replica/spect/02_respect_back.png",
+      "input": "work/wan-white/spect/inputs/respect-look-back.png",
+      "taskManifest": "work/wan-white/spect/tasks/respect-look-back.task.json",
+      "framesDir": "public/assets/replica/spect-white-motion/frames/respect-look-back",
+      "report": "work/wan-white/spect/reports/respect-look-back.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. Exactly one and only one solid-black observer turns its own head backward while respectfully tipping one simple black-outline hat toward one small floating orange starburst. Never depict a reflection, duplicate, portrait, statue, silhouette, audience, pedestal, platform, or any other humanoid form. The single head, white dot eyes, hat, body, both arms, and both feet are complete. No horizontal bar, ceremony scenery, or support object. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "suspect-look-under",
+      "index": 3,
+      "imageLayerId": "suspect-look-under-image",
+      "source": "public/assets/replica/spect/03_suspect_under.png",
+      "input": "work/wan-white/spect/inputs/suspect-look-under.png",
+      "taskManifest": "work/wan-white/spect/tasks/suspect-look-under.task.json",
+      "framesDir": "public/assets/replica/spect-white-motion/frames/suspect-look-under",
+      "report": "work/wan-white/spect/reports/suspect-look-under.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The single solid-black observer crouches beneath one short floating black-outline ledge and peeks upward at one closed plain white parcel resting above it. Add exactly three tiny separate orange suspicion dots in a loose arc, not punctuation and not a question mark. Keep every object isolated and fully visible. Absolutely no glyphs, punctuation, writing, floor, room, detective props, or second character. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "expect-look-out",
+      "index": 4,
+      "imageLayerId": "expect-look-out-image",
+      "source": "public/assets/replica/spect/04_expect_out.png",
+      "input": "work/wan-white/spect/inputs/expect-look-out.png",
+      "taskManifest": "work/wan-white/spect/tasks/expect-look-out.task.json",
+      "framesDir": "public/assets/replica/spect-white-motion/frames/expect-look-out",
+      "report": "work/wan-white/spect/reports/expect-look-out.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The single solid-black observer and one complete sparse freestanding lookout tube together fill about 40% of the canvas width and height. The observer stretches forward through the tube while waiting for one small plain white parcel floating in the distance. Add two tiny separate orange anticipation sparks near the observer, never arrows or directional marks. Show the full observer, both feet, complete tube, and parcel. No arrowheads, horizon, window, building, clock, punctuation, or text. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "prospect-look-forward",
+      "index": 5,
+      "imageLayerId": "prospect-look-forward-image",
+      "source": "public/assets/replica/spect/05_prospect_forward.png",
+      "input": "work/wan-white/spect/inputs/prospect-look-forward.png",
+      "taskManifest": "work/wan-white/spect/tasks/prospect-look-forward.task.json",
+      "framesDir": "public/assets/replica/spect-white-motion/frames/prospect-look-forward",
+      "report": "work/wan-white/spect/reports/prospect-look-forward.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The single solid-black observer stands upright and looks through one compact black-outline telescope toward a tiny floating pale-blue sprout and three rising white stepping blocks. One orange ray marks the promising view. Keep the whole arrangement centered with no ground, horizon, landscape, chart, or arrows. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "spectator-person-watching",
+      "index": 6,
+      "imageLayerId": "spectator-person-watching-image",
+      "source": "public/assets/replica/spect/06_spectator_watch.png",
+      "input": "work/wan-white/spect/inputs/spectator-person-watching.png",
+      "taskManifest": "work/wan-white/spect/tasks/spectator-person-watching.task.json",
+      "framesDir": "public/assets/replica/spect-white-motion/frames/spectator-person-watching",
+      "report": "work/wan-white/spect/reports/spectator-person-watching.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The single solid-black observer sits seriously on one minimal floating black-outline chair while watching one small plain white juggling ball in the air. The character holds one tiny blank ticket with no marks. Show the full chair, both feet, ticket, and ball. No stage, screen, crowd, frame, floor, or second performer. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "spectacle-thing-seen",
+      "index": 7,
+      "imageLayerId": "spectacle-thing-seen-image",
+      "source": "public/assets/replica/spect/07_spectacle_show.png",
+      "input": "work/wan-white/spect/inputs/spectacle-thing-seen.png",
+      "taskManifest": "work/wan-white/spect/tasks/spectacle-thing-seen.task.json",
+      "framesDir": "public/assets/replica/spect-white-motion/frames/spectacle-thing-seen",
+      "report": "work/wan-white/spect/reports/spectacle-thing-seen.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The single solid-black observer pulls away one small plain white cloth to reveal one absurd oversized floating black-outline lens with a pale-blue center. Three restrained orange sparks surround the lens. Show the full observer, cloth, lens, and sparks. No stage, curtains, scenery, audience, text, or second character. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    },
+    {
+      "id": "retrospect-look-backwards",
+      "index": 8,
+      "imageLayerId": "retrospect-look-backwards-image",
+      "source": "public/assets/replica/spect/08_retrospect_backwards.png",
+      "input": "work/wan-white/spect/inputs/retrospect-look-backwards.png",
+      "taskManifest": "work/wan-white/spect/tasks/retrospect-look-backwards.task.json",
+      "framesDir": "public/assets/replica/spect-white-motion/frames/retrospect-look-backwards",
+      "report": "work/wan-white/spect/reports/retrospect-look-backwards.white-report.json",
+      "prompt": "Locked camera. One continuous natural five-second action at normal speed. The single solid-black observer walks forward while holding one complete small rear-view mirror and looking backward into it. Behind the observer float three tiny blank white memory cards with no border text or images, indicated only by sparse black outlines and one curved orange trail. No road, floor, timeline, arrows, scenery, or second person. The same single solid-black character actively performs the action with the same props. Preserve the exact character identity, two white dot eyes, thin complete limbs, prop count, composition, and sparse black hand-drawn line style. The background must remain perfectly uniform pure white from edge to edge for the entire clip. No floor, shadow, scenery, texture, gradient, border, panel, text, logo, extra character, extra limb, camera movement, cut, fade, morph, or object replacement. Begin with anticipation, complete one readable semantic action, then settle."
+    }
+  ]
+}

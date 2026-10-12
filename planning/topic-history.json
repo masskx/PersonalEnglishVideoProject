@@ -1,0 +1,819 @@
+{
+  "schemaVersion": 1,
+  "initializedAt": "2026-09-12",
+  "maintenance": "人工维护的长期台账；自动清单刷新不得覆盖。制作前查实际历史并登记，完成后补产物。",
+  "statusDefinitions": {
+    "in_progress": "已开始制作，占用选题",
+    "produced": "已有产物（包括试片），不代表审核通过或发布"
+  },
+  "dedupPolicy": "docs/选题与自动制作规则.md",
+  "initialHistorySources": [
+    "docs/project-audit/inventory.json",
+    "src/replica/projects/registry.ts",
+    "outputs/",
+    "work/experiments/",
+    "planning/content-plan.json",
+    "PROJECT_MEMORY.md",
+    "docs/production-log.md"
+  ],
+  "topics": [
+    {
+      "id": "press",
+      "column": "root-word",
+      "title": "press 词根讲解",
+      "aliases": [
+        "press"
+      ],
+      "coreTeachingObjective": "按压词根及相关词的构词与含义",
+      "status": "produced",
+      "artifacts": [
+        "outputs/press"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "reg",
+      "column": "root-word",
+      "title": "reg 词根讲解",
+      "aliases": [
+        "reg"
+      ],
+      "coreTeachingObjective": "reg 词根及相关词的构词与含义",
+      "status": "produced",
+      "artifacts": [
+        "outputs/reg"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "fer",
+      "column": "root-word",
+      "title": "fer 词根讲解",
+      "aliases": [
+        "fer"
+      ],
+      "coreTeachingObjective": "fer 词根及相关词的构词与含义",
+      "status": "produced",
+      "artifacts": [
+        "outputs/fer"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "bouba-kiki",
+      "column": "sound-symbolism",
+      "title": "Bouba/Kiki 语音象征讲解",
+      "aliases": [
+        "bouba-kiki"
+      ],
+      "coreTeachingObjective": "Bouba/Kiki 语音象征与声音形状联想",
+      "status": "produced",
+      "artifacts": [
+        "outputs/bouba-kiki"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "ject",
+      "column": "root-word",
+      "title": "ject = throw 词根讲解",
+      "aliases": [
+        "ject"
+      ],
+      "coreTeachingObjective": "throw：投掷词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/ject发了"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "port",
+      "column": "root-word",
+      "title": "port = carry 词根讲解",
+      "aliases": [
+        "port"
+      ],
+      "coreTeachingObjective": "carry：携带词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/port发了"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "spect",
+      "column": "root-word",
+      "title": "spect = look 词根讲解",
+      "aliases": [
+        "spect"
+      ],
+      "coreTeachingObjective": "look：看词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/spect发了"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "vis-vid",
+      "column": "root-word",
+      "title": "vis / vid = see 词根讲解",
+      "aliases": [
+        "vis",
+        "vid"
+      ],
+      "coreTeachingObjective": "see：看见词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/vis-vid"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "aud",
+      "column": "root-word",
+      "title": "aud = hear 词根讲解",
+      "aliases": [
+        "aud"
+      ],
+      "coreTeachingObjective": "hear：听词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/aud发了"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "dict",
+      "column": "root-word",
+      "title": "dict = say / 说 词根讲解",
+      "aliases": [
+        "dict"
+      ],
+      "coreTeachingObjective": "say：说词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/dict发了"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "script-scrib",
+      "column": "root-word",
+      "title": "script / scrib = write / 写 词根讲解",
+      "aliases": [
+        "script",
+        "scrib"
+      ],
+      "coreTeachingObjective": "write：写词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/script-scrib"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "tract",
+      "column": "root-word",
+      "title": "tract = pull / 拉，拖 词根讲解",
+      "aliases": [
+        "tract"
+      ],
+      "coreTeachingObjective": "pull：拉拖词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/tract发了"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "form",
+      "column": "root-word",
+      "title": "form = shape / 形状，形成 词根讲解",
+      "aliases": [
+        "form"
+      ],
+      "coreTeachingObjective": "shape：形状、形成词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/form"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "struct",
+      "column": "root-word",
+      "title": "struct = build / 建造 词根讲解",
+      "aliases": [
+        "struct"
+      ],
+      "coreTeachingObjective": "build：建造词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/struct发了"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "flect-flex",
+      "column": "root-word",
+      "title": "flect / flex = bend / 弯曲词根讲解",
+      "aliases": [
+        "flect",
+        "flex"
+      ],
+      "coreTeachingObjective": "bend：弯曲词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/flect-flex发了"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "rupt",
+      "column": "root-word",
+      "title": "rupt = break / 破裂，打断",
+      "aliases": [
+        "rupt"
+      ],
+      "coreTeachingObjective": "break：破裂、打断词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/rupt发了"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": []
+    },
+    {
+      "id": "mit-miss",
+      "column": "root-word",
+      "title": "mit / miss = send / 发送",
+      "aliases": [
+        "mit",
+        "miss"
+      ],
+      "coreTeachingObjective": "send：发送词根及相关词",
+      "status": "produced",
+      "artifacts": [
+        "outputs/mit-miss"
+      ],
+      "reviewStatus": "待核对历史审核记录，不因存在产物推定审核通过",
+      "publicationStatus": "未在本台账判定，查原发布记录",
+      "versions": [
+        {
+          "id": "keyposes",
+          "artifacts": [
+            "work/experiments/mit-miss-keyposes/mit-miss-keyposes.mp4"
+          ]
+        },
+        {
+          "id": "smooth",
+          "artifacts": [
+            "work/experiments/mit-miss-smooth/mit-miss-smooth.mp4"
+          ]
+        },
+        {
+          "id": "images2-sunburst-keyposes",
+          "artifacts": [
+            "work/experiments/mit-miss-images2-keyposes/README.md",
+            "work/experiments/mit-miss-images2-keyposes/contact-sheet.png",
+            "assets/visual-baselines/mit-miss-sunburst/README.md"
+          ]
+        },
+        {
+          "id": "sunburst-full",
+          "artifacts": [
+            "work/experiments/mit-miss-sunburst-full/mit-miss-sunburst-full.mp4",
+            "work/experiments/mit-miss-sunburst-full/render-report.json",
+            "work/experiments/mit-miss-sunburst-full/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duc-duct",
+      "column": "root-word",
+      "title": "duc / duct = lead / 带领，引导",
+      "aliases": [
+        "duc",
+        "duct",
+        "duce"
+      ],
+      "coreTeachingObjective": "lead：带领、引导词根，以及前缀如何改变引导方向",
+      "status": "produced",
+      "artifacts": [
+        "outputs/duc-duct"
+      ],
+      "selectionReason": "核对 topic-history、src/replica/projects/registry.ts、outputs/、work/drafts/、work/experiments/、planning/content-plan.json、PROJECT_MEMORY.md 和 docs/production-log.md 后，未发现 duc/duct/duce 主题或在制产物；该词根可用前缀方向串联高频四六级词并形成清晰小黑动作。",
+      "checkedSources": [
+        "planning/topic-history.json",
+        "src/replica/projects/registry.ts",
+        "outputs/",
+        "work/drafts/",
+        "work/experiments/",
+        "planning/content-plan.json",
+        "PROJECT_MEMORY.md",
+        "docs/production-log.md"
+      ],
+      "reviewStatus": "内容、角色素材、成片与封面技术验收通过；待用户试看",
+      "publicationStatus": "未发布",
+      "versions": [
+        {
+          "id": "role-locked-final",
+          "status": "produced",
+          "directory": "outputs/duc-duct",
+          "durationSeconds": 134,
+          "artifacts": [
+            "outputs/duc-duct/duc-duct.mp4",
+            "outputs/duc-duct/cover.png",
+            "outputs/duc-duct/cover-landscape.png",
+            "outputs/duc-duct/publish-copy.md",
+            "outputs/duc-duct/content-qa.md",
+            "outputs/duc-duct/render-report.json"
+          ],
+          "technicalReview": "角色锁定素材 7/7 通过；成片 4020 帧、音频峰值 -2.54 dBFS、无异常长静音；双封面通过验收",
+          "humanReview": "待用户试看；未发布"
+        },
+        {
+          "id": "handdrawn-keyposes-v2",
+          "status": "produced",
+          "directory": "outputs/duc-duct",
+          "durationSeconds": 134,
+          "artifacts": [
+            "outputs/duc-duct/duc-duct.mp4",
+            "outputs/duc-duct/cover.png",
+            "outputs/duc-duct/cover-landscape.png",
+            "outputs/duc-duct/publish-copy.md",
+            "outputs/duc-duct/content-qa.md",
+            "outputs/duc-duct/render-report.json",
+            "outputs/duc-duct/review/handdrawn-keypose-contact-sheet.jpg"
+          ],
+          "technicalReview": "按 mit-miss Sunburst 参考图编辑链路生成 6 张手绘母版与 18 张 before/change/result 关键姿态；1920×1080、30fps、4020 帧、音频峰值 -2.87 dBFS、无异常长静音；双封面通过验收",
+          "humanReview": "待用户试看；未发布"
+        }
+      ],
+      "latestDelivery": "outputs/duc-duct"
+    },
+    {
+      "id": "interrupt-prototype",
+      "column": "vocabulary",
+      "title": "interrupt 竖屏词汇原型",
+      "aliases": [
+        "interrupt"
+      ],
+      "coreTeachingObjective": "interrupt 的含义与词汇记忆",
+      "status": "produced",
+      "artifacts": [
+        "work/experiments/meme-vocab/interrupt/final-with-tts.mp4"
+      ],
+      "reviewStatus": "原型试片，配图仍有占位内容；不代表可发布",
+      "publicationStatus": "未判定",
+      "versions": []
+    },
+    {
+      "id": "cet4-writing-paragraph",
+      "column": "cet4-writing",
+      "title": "四级作文：从一句空话到一段论证",
+      "aliases": [
+        "把观点展开",
+        "主体段展开",
+        "观点—原因—例子"
+      ],
+      "coreTeachingObjective": "用具体观点、因果解释、具体例子展开一个论证主体段；只替换例子仍属同一教学主题",
+      "material": {
+        "type": "original-practice",
+        "prompt": "Why should college students read regularly?",
+        "startingSentence": "Reading is very important.",
+        "transferExercise": "Regular exercise helps college students manage stress."
+      },
+      "status": "produced",
+      "artifacts": [
+        "work/experiments/cet4-writing-paragraph/cet4-writing-paragraph.mp4"
+      ],
+      "reviewStatus": "技术检查已有记录，完整人工听审与独立教学审核待完成",
+      "publicationStatus": "未判定",
+      "versions": [
+        {
+          "id": "exam-focused-v2",
+          "requestedByUser": true,
+          "status": "produced",
+          "directory": "outputs/cet4-writing-paragraph-v2",
+          "changes": "两分钟以上；考场应用、辨析与迁移讲评；清除导航旁注；平滑进出场",
+          "durationSeconds": 158.66666666666666,
+          "artifacts": [
+            "outputs/cet4-writing-paragraph-v2/cet4-writing-paragraph.mp4",
+            "outputs/cet4-writing-paragraph-v2/cover.png",
+            "outputs/cet4-writing-paragraph-v2/cover-landscape.png",
+            "outputs/cet4-writing-paragraph-v2/publish-copy.md",
+            "outputs/cet4-writing-paragraph-v2/index.html",
+            "outputs/cet4-writing-paragraph-v2/worksheet.pdf",
+            "outputs/cet4-writing-paragraph-v2/review/REVIEW.md"
+          ],
+          "technicalReview": "完整解码、时长帧数、音频规格及静音检查通过；混音峰值 -5.7 dBFS",
+          "humanReview": "待用户试看及完整人工听审"
+        }
+      ],
+      "latestDelivery": "outputs/cet4-writing-paragraph-v2"
+    },
+    {
+      "id": "cet4-translation-main-clause",
+      "column": "cet4-translation",
+      "title": "四级翻译：先找主干，再处理修饰",
+      "aliases": [
+        "先找主干再翻译",
+        "四级长句翻译",
+        "中文长句拆译"
+      ],
+      "coreTeachingObjective": "把中文长句先拆成英语主干，再补时间、地点、原因和并列信息，避免逐字硬译。",
+      "material": {
+        "type": "original-practice",
+        "prompt": "近年来，越来越多的年轻人选择在周末走进博物馆，因为这种方式既能帮助他们了解本地历史，也能让忙碌的生活慢下来。",
+        "transferExercise": "如今，许多大学生利用假期参加志愿活动，因为这些经历不仅能锻炼他们的沟通能力，也能让他们更好地了解社会。"
+      },
+      "status": "produced",
+      "artifacts": [
+        "outputs/cet4-translation-main-clause/cet4-translation-main-clause.mp4",
+        "outputs/cet4-translation-main-clause/cover.png",
+        "outputs/cet4-translation-main-clause/cover-landscape.png",
+        "outputs/cet4-translation-main-clause/publish-copy.md",
+        "outputs/cet4-translation-main-clause/worksheet.pdf",
+        "outputs/cet4-translation-main-clause/review/REVIEW.md"
+      ],
+      "selectionReason": "核对长期选题台账、项目注册表、正式输出、草稿、试验目录和制作记录后，未发现已制作的四级翻译成片；该题目已列入内容计划，适合用一条原创长句演示可迁移的拆句方法。",
+      "checkedSources": [
+        "planning/topic-history.json",
+        "planning/content-plan.json",
+        "src/",
+        "outputs/",
+        "work/drafts/",
+        "work/experiments/",
+        "PROJECT_MEMORY.md",
+        "docs/production-log.md"
+      ],
+      "reviewStatus": "内容结构、插图白底、双封面及成片技术检查通过；完整人工观看与手机外放/耳机听审待完成",
+      "publicationStatus": "未发布",
+      "versions": [
+        {
+          "id": "main-clause-v1",
+          "status": "produced",
+          "directory": "outputs/cet4-translation-main-clause",
+          "durationSeconds": 174.63333333333333,
+          "artifacts": [
+            "outputs/cet4-translation-main-clause/cet4-translation-main-clause.mp4",
+            "outputs/cet4-translation-main-clause/cover.png",
+            "outputs/cet4-translation-main-clause/cover-landscape.png",
+            "outputs/cet4-translation-main-clause/publish-copy.md",
+            "outputs/cet4-translation-main-clause/worksheet.pdf",
+            "outputs/cet4-translation-main-clause/render-report.json",
+            "outputs/cet4-translation-main-clause/review/contact-sheet.jpg"
+          ],
+          "technicalReview": "1920×1080、30fps、5239 帧、174.63 秒；H.264/AAC，完整解码通过，动态背景音乐在人声段降至 0.035、停顿最高 0.06，峰值 -5.0 dBFS、整片约 -19.8 LUFS，无异常长静音；4 张小黑插图和双封面已复核。",
+          "humanReview": "代表性抽帧已检查；整片人工观看、手机外放与耳机听审待完成，当前为草稿。"
+        }
+      ],
+      "latestDelivery": "outputs/cet4-translation-main-clause"
+    },
+    {
+      "id": "ten-tain",
+      "column": "root-word",
+      "title": "ten / tain = hold / keep 词根讲解",
+      "aliases": [
+        "ten",
+        "tain",
+        "tenere"
+      ],
+      "coreTeachingObjective": "用 hold / keep 串起 retain、contain、maintain、obtain、detain、sustain、entertain、abstain，解释前缀如何改变持有方向。",
+      "status": "produced",
+      "artifacts": [
+        "outputs/ten-tain/ten-tain.mp4",
+        "outputs/ten-tain/cover.png",
+        "outputs/ten-tain/cover-landscape.png",
+        "outputs/ten-tain/publish-copy.md",
+        "outputs/ten-tain/content-qa.md",
+        "outputs/ten-tain/review/REVIEW-2026-09-28.md",
+        "outputs/ten-tain/review/stills/final-v3-generated-midpoints-contact.png",
+        "outputs/ten-tain/review/stills/final-v3-generated-keyposes-contact.png"
+      ],
+      "selectionRecord": {
+        "checkedAt": "2026-09-28",
+        "checkedSources": [
+          "planning/topic-history.json",
+          "src/replica/projects/registry.ts",
+          "docs/project-audit/inventory.json",
+          "outputs/",
+          "work/drafts/",
+          "work/experiments/",
+          "planning/content-plan.json",
+          "PROJECT_MEMORY.md",
+          "docs/production-log.md"
+        ],
+        "result": "No ten / tain root episode, draft, experiment, or registered project was found.",
+        "rationale": "ten / tain gives a compact hold / keep anchor with eight high-frequency words that can be taught through distinct everyday actions."
+      },
+      "reviewStatus": "v3 生图模型返工完成；24 张 mit/miss 参考位图、连续动画、正式成片、双封面和技术校验通过；等待用户整片及手机外放/耳机听审；未发布",
+      "publicationStatus": "未发布",
+      "versions": [
+        {
+          "id": "douyin-upbeat-v3-imagegen-mit-miss-style",
+          "status": "produced",
+          "directory": "outputs/ten-tain",
+          "durationSeconds": 146.8,
+          "artifacts": [
+            "outputs/ten-tain/ten-tain.mp4",
+            "outputs/ten-tain/cover.png",
+            "outputs/ten-tain/cover-landscape.png",
+            "outputs/ten-tain/publish-copy.md",
+            "outputs/ten-tain/content-qa.md",
+            "outputs/ten-tain/review/stills/final-v3-generated-midpoints-contact.png",
+            "outputs/ten-tain/review/stills/final-v3-generated-keyposes-contact.png"
+          ],
+          "technicalReview": "1920×1080、30fps、4404 帧、146.8 秒、H.264/AAC；峰值 -2.72 dBFS；render verify、cover verify、来源扫描和 24/24 生图位图 QA 通过。",
+          "humanReview": "对照 mit/miss 视觉语法的接触表和成片关键姿态已复核；完整人工观看、手机外放和耳机听审待用户完成；未发布。"
+        },
+        {
+          "id": "douyin-upbeat-v2-dedicated-visuals",
+          "status": "produced",
+          "directory": "outputs/ten-tain",
+          "durationSeconds": 146.8,
+          "artifacts": [
+            "outputs/ten-tain/ten-tain.mp4",
+            "outputs/ten-tain/cover.png",
+            "outputs/ten-tain/cover-landscape.png",
+            "outputs/ten-tain/publish-copy.md",
+            "outputs/ten-tain/render-report.json",
+            "outputs/ten-tain/cover-report.json",
+            "outputs/ten-tain/cover-landscape-report.json",
+            "outputs/ten-tain/review/stills/final-v2-contact.jpg"
+          ],
+          "technicalReview": "1920×1080、30fps、4404 帧、H.264/AAC；完整媒体校验通过，峰值 -2.72 dBFS，无异常长静音；双封面验证通过；24 张本期专属透明素材全部通过资产 QA。",
+          "humanReview": "新配图接触表与成片代表性抽帧已检查；完整人工观看、手机外放和耳机听审待完成；未发布。"
+        },
+        {
+          "id": "douyin-upbeat-v1",
+          "status": "produced",
+          "directory": "outputs/ten-tain",
+          "durationSeconds": 146.8,
+          "artifacts": [
+            "outputs/ten-tain/ten-tain.mp4",
+            "outputs/ten-tain/cover.png",
+            "outputs/ten-tain/cover-landscape.png",
+            "outputs/ten-tain/publish-copy.md",
+            "outputs/ten-tain/render-report.json",
+            "outputs/ten-tain/cover-report.json",
+            "outputs/ten-tain/cover-landscape-report.json"
+          ],
+          "technicalReview": "1920×1080、30fps、4404 帧、H.264/AAC；完整媒体校验通过，峰值 -2.72 dBFS，无异常长静音；双封面验证通过。",
+          "humanReview": "代表性抽帧已检查；完整人工观看、手机外放和耳机听审待完成；未发布。"
+        }
+      ],
+      "latestDelivery": "outputs/ten-tain"
+    },
+    {
+      "id": "cred",
+      "column": "root-word",
+      "title": "cred = believe / trust 词根讲解",
+      "aliases": [
+        "cred",
+        "credit",
+        "credere"
+      ],
+      "coreTeachingObjective": "用 cred = believe/trust 连接 credible、credulous、incredulous、creditable 等词，辨析“可信的”与“轻信的”，并把词源助记与现代词义区分开",
+      "status": "produced",
+      "artifacts": [
+        "outputs/cred/cred.mp4",
+        "outputs/cred/cover.png",
+        "outputs/cred/cover-landscape.png",
+        "outputs/cred/publish-copy.md",
+        "outputs/cred/content-qa.md",
+        "outputs/cred/review/REWORK-2026-09-21.md",
+        "outputs/cred/review/REVIEW.md"
+      ],
+      "reviewStatus": "v2 语义映射、编码切点、技术与移动端检查通过；整片人工观看和逐段听审待完成，维持草稿。",
+      "publicationStatus": "未发布",
+      "selectionAudit": {
+        "date": "2026-09-21",
+        "checked": [
+          "planning/topic-history.json",
+          "src/replica/projects/registry.ts and src/replica/projects/",
+          "docs/project-audit/inventory.json",
+          "outputs/",
+          "work/drafts/",
+          "work/experiments/",
+          "planning/content-plan.json",
+          "PROJECT_MEMORY.md",
+          "docs/production-log.md"
+        ],
+        "result": "No cred root episode, draft, or experiment found in the checked project history.",
+        "rationale": "The full ledger and current registered root episodes cover other roots; cred is unused here and supports a practical credible/credulous/incredulous distinction relevant to reading and writing."
+      },
+      "versions": [
+        {
+          "id": "sunburst-full-v1",
+          "status": "produced",
+          "directory": "work/delivery-backups/cred/previous-XGNEoN",
+          "durationSeconds": 188.8,
+          "artifacts": [
+            "work/delivery-backups/cred/previous-XGNEoN/cred.mp4",
+            "work/delivery-backups/cred/previous-XGNEoN/cover.png",
+            "work/delivery-backups/cred/previous-XGNEoN/cover-landscape.png",
+            "work/delivery-backups/cred/previous-XGNEoN/publish-copy.md",
+            "work/delivery-backups/cred/previous-XGNEoN/render-report.json",
+            "outputs/cred/review/AUDIT-2026-09-21.md"
+          ],
+          "technicalReview": "编码与解码技术检查通过：1920×1080、30fps、5664帧、188.8秒、峰值 -2.75 dBFS、无异常长静音；语义画面审核未通过，发现姿态复用错配，需返工。",
+          "humanReview": "错配修复后再完整听审；当前未发布"
+        },
+        {
+          "id": "sunburst-full-v2-semantic-rework",
+          "status": "produced",
+          "directory": "outputs/cred",
+          "durationSeconds": 196.8,
+          "artifacts": [
+            "outputs/cred/cred.mp4",
+            "outputs/cred/cover.png",
+            "outputs/cred/cover-landscape.png",
+            "outputs/cred/publish-copy.md",
+            "outputs/cred/content-qa.md",
+            "outputs/cred/render-report.json",
+            "outputs/cred/review/REWORK-2026-09-21.md",
+            "outputs/cred/review/stills/keypose-cuts-encoded/contact-sheet.png",
+            "outputs/cred/review/stills/mobile-v2/contact-sheet.jpg",
+            "outputs/cred/review/comparison-mit-miss-v2/contact-sheet.png"
+          ],
+          "technicalReview": "1920x1080, 30fps, 5904 frames, H.264/AAC; full video/audio decode passed; peak -2.79 dBFS; zero long-silence windows and narration coverage gaps; both covers verified; 32 encoded pose-cut frames reviewed.",
+          "humanReview": "Full end-to-end watch and scene-by-scene listening remain pending; current status is draft, not release approved."
+        },
+        {
+          "id": "douyin-upbeat-v3",
+          "status": "produced",
+          "directory": "outputs/cred",
+          "durationSeconds": 178.6,
+          "changes": "全段自然口语改写与重新配音；三种词汇页构图；支持页多图切换与主体放大；MiniMax 112 BPM 纯音乐母版；可听背景音乐混音门禁",
+          "artifacts": [
+            "outputs/cred/cred.mp4",
+            "outputs/cred/cover.png",
+            "outputs/cred/cover-landscape.png",
+            "outputs/cred/publish-copy.md",
+            "outputs/cred/content-qa.md",
+            "outputs/cred/render-report.json",
+            "assets/background-music/minimax/reviews/xiaohei-root-upbeat-01-review.md"
+          ],
+          "technicalReview": "1920x1080、30fps、5358 帧、178.6 秒；最终媒体校验通过，峰值 -2.33 dBFS，无超限长静音；双封面验证通过；编辑风格与背景音乐可听度门禁通过。",
+          "humanReview": "代表性中点抽帧已复核；手机外放、耳机完整听审和整片观看待用户完成；当前为草稿，未发布。"
+        }
+      ],
+      "latestDelivery": "outputs/cred"
+    },
+    {
+      "id": "cet6-reading-location-paraphrase",
+      "column": "cet6-reading",
+      "title": "六级阅读：先定位，再认同义替换",
+      "aliases": [
+        "四六级阅读定位",
+        "六级主旨题",
+        "同义替换排除干扰项"
+      ],
+      "coreTeachingObjective": "用题型、关键词、同义定位和主线选项四步处理六级阅读主旨题，并通过迁移练习巩固方法。",
+      "material": {
+        "type": "original-practice",
+        "passage": "Cities are redesigning some public spaces to make them more resilient to extreme heat.",
+        "practicePassage": "Universities are rethinking orientation programs."
+      },
+      "status": "produced",
+      "artifacts": [
+        "outputs/cet6-reading-location-paraphrase/cet6-reading-location-paraphrase.mp4",
+        "outputs/cet6-reading-location-paraphrase/cover.png",
+        "outputs/cet6-reading-location-paraphrase/cover-landscape.png",
+        "outputs/cet6-reading-location-paraphrase/publish-copy.md",
+        "outputs/cet6-reading-location-paraphrase/worksheet.html",
+        "outputs/cet6-reading-location-paraphrase/review/REVIEW.md",
+        "outputs/cet6-reading-location-paraphrase/review/full-preview/full-preview.mp4"
+      ],
+      "selectionReason": "核对长期选题台账、内容计划、src、outputs、work/drafts、work/experiments、项目记忆和制作日志后，未发现该六级阅读主题已有成片；内容计划已列出“定位句与同义替换”，适合扩展为主旨题定位与排除训练。",
+      "checkedSources": [
+        "planning/topic-history.json",
+        "planning/content-plan.json",
+        "src/",
+        "outputs/",
+        "work/drafts/",
+        "work/experiments/",
+        "PROJECT_MEMORY.md",
+        "docs/production-log.md"
+      ],
+      "reviewStatus": "脚本、内置 image_gen 栅格插图、双封面、成片技术检查和整片预览通过；完整人工观看与手机外放/耳机听审待完成。",
+      "publicationStatus": "未发布",
+      "versions": [
+        {
+          "id": "location-paraphrase-v1",
+          "status": "produced",
+          "directory": "outputs/cet6-reading-location-paraphrase",
+          "durationSeconds": 164.82133333333334,
+          "artifacts": [
+            "outputs/cet6-reading-location-paraphrase/cet6-reading-location-paraphrase.mp4",
+            "outputs/cet6-reading-location-paraphrase/cover.png",
+            "outputs/cet6-reading-location-paraphrase/cover-landscape.png",
+            "outputs/cet6-reading-location-paraphrase/publish-copy.md",
+            "outputs/cet6-reading-location-paraphrase/review/full-preview/full-preview-report.json"
+          ],
+          "technicalReview": "1920×1080、30fps、4943 帧、约 164.82 秒；H.264/AAC，完整解码通过；动态背景音乐按旁白段压低；5 张本期专属 image_gen 栅格插图；双封面和整片预览通过。",
+          "humanReview": "代表性联系页已检查；整片人工观看、手机外放与耳机听审待完成，当前为草稿。"
+        }
+      ],
+      "latestDelivery": "outputs/cet6-reading-location-paraphrase"
+    },
+    {
+      "id": "pon-pos",
+      "column": "root-word",
+      "title": "pon / pos = put / place 词根讲解",
+      "aliases": [
+        "pon",
+        "pos",
+        "posit",
+        "ponere"
+      ],
+      "coreTeachingObjective": "用 put / place 连接 compose、expose、impose、propose、oppose、dispose、deposit，解释前缀如何改变放置方向，并通过搭配与小练习巩固现代词义。",
+    "status": "produced",
+      "selectionRecord": {
+        "checkedAt": "2026-09-29",
+        "checkedSources": [
+          "planning/topic-history.json",
+          "src/replica/projects/registry.ts",
+          "outputs/",
+          "work/drafts/",
+          "work/experiments/",
+          "planning/content-plan.json",
+          "PROJECT_MEMORY.md",
+          "docs/production-log.md"
+        ],
+        "result": "No pon / pos root episode, registered project, draft, experiment, or runtime asset directory was found before this production run.",
+        "rationale": "pon / pos provides a clean put / place anchor with distinct direction-based actions and high-frequency exam vocabulary.",
+        "dictionarySource": "Cambridge Dictionary entries for compose, expose, impose, and propose.",
+        "etymologySource": "Online Etymology Dictionary entries for compose, impose, oppose, propose, and dispose."
+      },
+    "artifacts": [
+      "outputs/pon-pos/pon-pos.mp4",
+      "outputs/pon-pos/cover.png",
+      "outputs/pon-pos/cover-landscape.png",
+      "outputs/pon-pos/publish-copy.md",
+      "outputs/pon-pos/content-qa.md",
+      "outputs/pon-pos/review/REVIEW.md",
+      "outputs/pon-pos/review/full-preview/full-preview.mp4",
+      "outputs/pon-pos/review/full-preview/full-preview-report.json"
+    ],
+    "reviewStatus": "21/21 episode-local image assets passed QA；7 个词各有独立 before/change/result 姿态；配音、项目校验、媒体验证、双封面、手机抽帧、关键姿态切点和整片预览通过；内容 QA 已核对 Cambridge Dictionary 与 Etymonline；release 保持 draft，手机外放与耳机听审仍是发布前人工步骤",
+      "publicationStatus": "未发布",
+    "versions": [
+      {
+        "id": "pon-pos-v1",
+        "status": "produced",
+        "directory": "outputs/pon-pos",
+        "durationSeconds": 168.45,
+        "artifacts": [
+          "outputs/pon-pos/pon-pos.mp4",
+          "outputs/pon-pos/cover.png",
+          "outputs/pon-pos/cover-landscape.png",
+          "outputs/pon-pos/publish-copy.md",
+          "outputs/pon-pos/content-qa.md",
+          "outputs/pon-pos/review/REVIEW.md",
+          "outputs/pon-pos/review/full-preview/full-preview-report.json"
+        ],
+        "technicalReview": "1920×1080、30fps、5054 帧、约 168.45 秒；H.264/AAC；render verify 通过，峰值 -2.75 dBFS，0 个允许的长静音窗口；21/21 透明素材通过 QA；双封面通过；full-preview layout gate 通过；与 ten / tain 最新接受样片完成 16 点 contact-sheet 对照。",
+        "humanReview": "全片预览已在 Codex 面板打开；每秒联系页、手机版 14 场抽帧和 28 个关键姿态切点已检查，未发现文字溢出或动作语义断裂。release 保持 draft；发布前仍需手机外放与耳机听审。"
+      }
+    ],
+    "latestDelivery": "outputs/pon-pos"
+    }
+  ]
+}

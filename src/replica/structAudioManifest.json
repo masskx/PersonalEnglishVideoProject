@@ -1,0 +1,50 @@
+{
+  "build-hook": {
+    "src": "assets/audio/replica/struct/build-hook.mp3",
+    "duration": 8.647
+  },
+  "build-map": {
+    "src": "assets/audio/replica/struct/build-map.mp3",
+    "duration": 10.371
+  },
+  "construct-build-together": {
+    "src": "assets/audio/replica/struct/construct-build-together.mp3",
+    "duration": 9.848
+  },
+  "construction-building-process": {
+    "src": "assets/audio/replica/struct/construction-building-process.mp3",
+    "duration": 7.967
+  },
+  "structure-built-result": {
+    "src": "assets/audio/replica/struct/structure-built-result.mp3",
+    "duration": 8.568
+  },
+  "instruct-build-mind": {
+    "src": "assets/audio/replica/struct/instruct-build-mind.mp3",
+    "duration": 8.542
+  },
+  "instruction-guidance": {
+    "src": "assets/audio/replica/struct/instruction-guidance.mp3",
+    "duration": 9.456
+  },
+  "reconstruct-build-again": {
+    "src": "assets/audio/replica/struct/reconstruct-build-again.mp3",
+    "duration": 8.882
+  },
+  "destruct-take-apart": {
+    "src": "assets/audio/replica/struct/destruct-take-apart.mp3",
+    "duration": 8.96
+  },
+  "obstruct-block-building": {
+    "src": "assets/audio/replica/struct/obstruct-block-building.mp3",
+    "duration": 8.568
+  },
+  "example-sentences": {
+    "src": "assets/audio/replica/struct/example-sentences.mp3",
+    "duration": 9.352
+  },
+  "final-summary": {
+    "src": "assets/audio/replica/struct/final-summary.mp3",
+    "duration": 16.222
+  }
+}

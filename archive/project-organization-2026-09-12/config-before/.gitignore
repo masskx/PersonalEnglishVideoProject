@@ -1,0 +1,10 @@
+node_modules/
+.env
+outputs/*/draft.mp4
+outputs/*/review-stills/
+work/
+archive/
+public/.render-stage/
+*.source.mp4
+*.tmp
+*.log

@@ -1,0 +1,16 @@
+{
+  "input": "work/wan-white/form/tasks/reform-shape-again.source.mp4",
+  "framesDir": "public/assets/replica/form-white-motion/frames/reform-shape-again",
+  "width": 1664,
+  "height": 928,
+  "fps": 30,
+  "frames": 150,
+  "expectedFrames": 150,
+  "format": "RGB PNG; no alpha and no chroma key",
+  "whiteFloor": 198,
+  "neutralRange": 20,
+  "borderPixelsForcedWhite": 8,
+  "normalizedPixelPercent": 94.561,
+  "badCornerSamples": 0,
+  "ok": true
+}

@@ -1,0 +1,64 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "mode": "meme_vocab_short",
+  "targetWord": "interrupt",
+  "duration": 18.067,
+  "sceneProportions": [
+    {
+      "sceneId": "interrupt-hook",
+      "duration": 1.767,
+      "proportion": 0.0978
+    },
+    {
+      "sceneId": "interrupt-meeting",
+      "duration": 3.133,
+      "proportion": 0.1734
+    },
+    {
+      "sceneId": "interrupt-reveal",
+      "duration": 4.367,
+      "proportion": 0.2417
+    },
+    {
+      "sceneId": "interrupt-usage",
+      "duration": 3.267,
+      "proportion": 0.1808
+    },
+    {
+      "sceneId": "interrupt-quiz",
+      "duration": 5.533,
+      "proportion": 0.3062
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "placeholder assets require replacement: interrupt-hook, interrupt-meeting, interrupt-reveal, interrupt-usage, interrupt-quiz",
+    "render is low-resolution draft: 540x960"
+  ],
+  "passedChecks": [
+    "duration 15-28s",
+    "Hook starts at frame 0",
+    "no still visual exceeds 3 seconds",
+    "single-screen text heuristic",
+    "word, phonetic and meaning consistency",
+    "ending interaction question",
+    "quiz answer gating",
+    "1080x1920 vertical canvas",
+    "example sentence exists",
+    "background music path",
+    "narration/composition duration within 2 frames",
+    "core word reveal is not earlier than TTS start",
+    "rendered video stream",
+    "rendered audio stream",
+    "audio/video duration bound",
+    "media/composition duration within 2 frames",
+    "no continuous silence >= 1.5s",
+    "sampled black-frame scan"
+  ],
+  "manualChecklist": [
+    "[ ] Replace every PLACEHOLDER ASSET with the intended Jimeng image",
+    "[ ] Generate and listen to TTS voiceover against the storyboard",
+    "[ ] Review subtitle size, lower Douyin UI occlusion, and first 2 seconds on a phone",
+    "[ ] Human-check the interrupt/disrupt meaning boundary and naturalness of the example sentence"
+  ]
+}
