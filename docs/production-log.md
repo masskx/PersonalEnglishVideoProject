@@ -1162,3 +1162,9 @@ Validated 2256 exclusive image-frame intervals; extracted/reviewed 128 encoded f
 - 内容 QA 已核对 Cambridge Dictionary 与 Etymonline，并明确 pon / pos / posit 与前缀方向是记忆桥梁，不把简化拆分冒充严格词源。与最新 `ten / tain` 接受样片完成 16 点接触表对照，确认白底留白、三姿态动作、构图变化和节奏属于同一制作基准。
 - 台账已更新为 `produced`，工作台已刷新；`release.json` 保持 `draft`，未发布。项目校验仅保留既有背景音乐偏轻提醒，发布前仍需手机外放与耳机听审。
 
+
+## 2026-10-12 抖音竖屏交付与增长配置
+
+- 新增竖屏重排渲染器 `src/replica/vertical/` 与 `scripts/replica/renderVertical.ts`，复用横屏期配音和插图，不重新生图、不改讲稿。编码 CRF 16、x264 slow、JPEG 帧质量 95；全局 `remotion.config.ts` 同步改为 JPEG 95。
+- 交付目录新增 `vertical/<slug>-vertical.mp4`、`vertical/<slug>-teaser.mp4`、`vertical/review-card.png`、`vertical-report.json` 与 `vertical/review/*-contact-sheet.jpg`；工作台交付区增加竖屏完整版、预告和复习卡入口。
+- 推广与行动号召统一由 `planning/growth-promotion.json` 配置；资料未上架、领取未开启时不出现购买或领取引导，不放站外联系方式。

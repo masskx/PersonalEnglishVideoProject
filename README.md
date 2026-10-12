@@ -4,6 +4,8 @@
 
 当前四级作文完整交付：[第二版](outputs/cet4-writing-paragraph-v2/index.html)；[原试片](work/experiments/cet4-writing-paragraph/index.html)保留。
 
+**抖音竖屏（2026-10-12 起默认）：** 每期在 `vertical/` 另有竖屏完整版、约 40 秒预告和复习卡，用 `npm run vertical:render -- --project=<slug>` 生成；推广与行动号召配置在 [growth-promotion.json](planning/growth-promotion.json)，英文增长说明见 [growth-playbook-EN.md](docs/growth-playbook-EN.md)。
+
 **新会话或更换智能体：先读 [当前视频制作基准](docs/当前制作基准.md) 和 [AGENTS.md](AGENTS.md)。**
 用户未指定题目时，自主选题、
 查重后直接制作；指定题目时按指定内容执行。详见 [长期选题规则](docs/选题与自动制作规则.md)

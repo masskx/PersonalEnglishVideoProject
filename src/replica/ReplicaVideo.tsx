@@ -54,7 +54,7 @@ const narrationPlaybackDuration = (
   return audio.duration > 0 ? audio.duration / playbackRate : targetDuration;
 };
 
-const BackgroundMusic: React.FC<{
+export const BackgroundMusic: React.FC<{
   storyboard: ReplicaStoryboard;
   audioManifest: ReplicaAudioManifest;
   music: ReplicaBackgroundMusicDefinition;
@@ -125,7 +125,7 @@ const BackgroundMusic: React.FC<{
   );
 };
 
-const SceneNarration: React.FC<{
+export const SceneNarration: React.FC<{
   scene: ReplicaScene;
   storyboard: ReplicaStoryboard;
   audioManifest: ReplicaAudioManifest;
@@ -163,7 +163,7 @@ const SceneNarration: React.FC<{
   );
 };
 
-const SceneSfx: React.FC<{scene: ReplicaScene}> = ({scene}) => (
+export const SceneSfx: React.FC<{scene: ReplicaScene}> = ({scene}) => (
   <>
     {(scene.sfx ?? []).map((cue, index) => (
       <Sequence

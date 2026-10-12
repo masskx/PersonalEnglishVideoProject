@@ -15,6 +15,9 @@ import {defaultMemeVocabConfig} from './meme-vocab/default';
 import type {MemeVocabShortProps} from './meme-vocab/types';
 import {CetTranslationVideo,CetTranslationCover,translationTimeline} from './cet-translation/CetTranslationVideo';
 import {Cet6ReadingVideo,Cet6ReadingCover,readingTimeline} from './cet6-reading/Cet6ReadingVideo';
+import {VerticalReplicaVideo} from './replica/vertical/VerticalReplicaVideo';
+import {VERTICAL_CANVAS} from './replica/vertical/verticalLayout';
+import {buildVerticalProps, supportsTeaser, verticalCompositionId} from './replica/vertical/verticalProjects';
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -63,6 +66,23 @@ export const RemotionRoot: React.FC = () => (
         }}
       />
     ))}
+    {replicaProjects.filter((project) => project.cover).flatMap((project) =>
+      (supportsTeaser(project) ? (['full', 'teaser'] as const) : (['full'] as const)).map((cut) => {
+        const props = buildVerticalProps(project, cut);
+        return (
+          <Composition
+            key={`${project.slug}-vertical-${cut}`}
+            id={verticalCompositionId(project, cut)}
+            component={VerticalReplicaVideo}
+            durationInFrames={Math.round(props.storyboard.duration * VERTICAL_CANVAS.fps)}
+            fps={VERTICAL_CANVAS.fps}
+            width={VERTICAL_CANVAS.width}
+            height={VERTICAL_CANVAS.height}
+            defaultProps={props}
+          />
+        );
+      }),
+    )}
     <Composition
       id="MemeVocabShort"
       component={MemeVocabShortVideo}

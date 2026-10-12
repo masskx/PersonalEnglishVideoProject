@@ -31,3 +31,6 @@ work/render-staging/
 *.pid
 
 # Source, media, production logs, drafts and archives are intentionally included.
+
+# 竖屏版式抽查（npm run vertical:stills）的过程截图
+work/vertical-stills/

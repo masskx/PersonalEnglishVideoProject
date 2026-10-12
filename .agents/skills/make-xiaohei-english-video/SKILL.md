@@ -81,7 +81,7 @@ episode as reviewed. Midpoint stills alone are not sufficient evidence.
 ## Required completion
 
 Unless the user explicitly narrows the task, complete research/source checking, script, narration,
-visuals, Remotion timing, full MP4, two covers, publish copy, appropriate worksheet or review
+visuals, Remotion timing, full MP4, vertical full/teaser/review card, two covers, publish copy, appropriate worksheet or review
 evidence, media QA, topic-ledger update, production log, and workbench refresh. Do not publish or
 message others.
 
@@ -94,6 +94,22 @@ pose sheets, and assembly intermediates in the collapsed history/technical archi
 
 Do not revive rules from dated audit snapshots or historical production notes. Those records explain
 how an old episode was made; they do not override the current production baseline.
+
+## Douyin vertical delivery (default since 2026-10-12)
+
+- Douyin's feed is vertical; a 16:9 upload fills about a third of the phone screen. After the
+  landscape master passes its gates, run `npm run vertical:render -- --project=<slug>` to produce
+  `vertical/<slug>-vertical.mp4`, a ~40 s `vertical/<slug>-teaser.mp4`, and `vertical/review-card.png`
+  in the episode's delivery folder, then regenerate the publish copy.
+- The vertical renderer (`src/replica/vertical/`) re-flows the same storyboard, narration and episode
+  art into a 1080×1920 phone layout. It never regenerates art or changes the script. Check the
+  contact sheets: hook and Xiaohei visible on frame 0, content and captions inside Douyin's safe area,
+  no split English words, white loop-friendly ending.
+- Calls to action, collection name, hashtags, products and lead-magnet switches live in
+  `planning/growth-promotion.json`. Never add purchase or giveaway prompts for products that are not
+  live, and never place WeChat IDs, QR codes or external links anywhere.
+- The owner reads English, not Chinese: talk to the owner in English (see
+  `docs/growth-playbook-EN.md`); keep repository docs, scripts and on-screen text in Chinese.
 
 ## Narration-first background music
 

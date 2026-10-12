@@ -1020,3 +1020,12 @@ This file is the durable project handoff. Append a dated entry for every materia
 - 正式交付在 `outputs/pon-pos/`：168.45 秒、1920×1080、30fps；配音、渲染、媒体验证、双封面、内容 QA、手机抽帧、关键姿态切点和整片预览均已落盘，工作台已刷新。
 - `content-qa.md` 记录了 Cambridge Dictionary 与 Etymonline 核对结果，并明确“放置方向”只是记忆桥梁；`release.json` 仍为 draft，未发布。项目校验的唯一新增提醒是背景音乐在手机外放上可能偏轻，发布前需按规则用手机外放与耳机试听。
 
+
+## 2026-10-12 — 抖音竖屏、预告与推广配置
+
+- 用户（读英文、不读中文）反馈粉丝和播放卡住，要求优化仓库以提升抖音播放并便于以后推广资料。对话改用英文；仓库文档、讲稿与画面文字仍用中文。
+- 诊断：全部成片为 1920×1080 横屏，在抖音竖屏推荐流只占约三分之一屏；字幕 38px，手机内约 7–8pt；首帧小标题偏角落、插图晚进；结尾黑场且无收藏/关注引导；`remotion.config.ts` 中间帧为默认 JPEG 80；`narrationToCaptions` 每 34 字硬切，会切断英文单词（如 “thousands of v”）。
+- 新增 `src/replica/vertical/`：同一 storyboard、配音、插图重排为 1080×1920。文字按原 y 顺序居中堆叠并放大，小黑插图在文字下方放大且裁在自身区域内，表格改为单列原生排版，箭头丢弃；字幕按旁白重切为单行短句、英文标蓝；顶部常驻系列名和“词根 = 释义”，词章节显示“第 n / N 个”；全片结尾 4.5 秒显示收藏/关注行动号召，不压黑以便循环。预告 = 钩子 + 词根总览 + 前两个不同的词 + “还有 N 个词在完整版”尾卡。
+- 新命令：`npm run vertical:render -- --project=<slug>`（完整版、预告、复习卡、报告、联系图）、`vertical:render:all`、`vertical:stills`；`project:test` 增加竖屏版式回归（21 期 265 场安全区、字幕不切词、预告结构）。
+- 新配置 `planning/growth-promotion.json`：系列/合集名、行动号召、话题标签、资料产品（首个为规划中的「小黑词根复习与自测」）与领取开关（默认关闭）。`douyinCopy.ts` 据此生成竖屏、预告与复习卡说明，并只在竖屏文件存在时写入。
+- 已渲染 ten-tain、pon-pos、cred、duc-duct 四期竖屏完整版、预告与复习卡，位于各自交付目录 `vertical/`；均未发布，发布前仍需手机外放与耳机完整听看。英文说明见 `docs/growth-playbook-EN.md`。
