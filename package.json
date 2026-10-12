@@ -6,7 +6,10 @@
   "scripts": {
     "project:inventory": "tsx scripts/replica/projectInventory.ts",
     "project:check": "tsx scripts/replica/projectHealth.ts",
-    "project:test": "tsx scripts/replica/projectManagement.test.ts && tsx scripts/replica/verticalLayout.test.ts",
+    "project:test": "tsx scripts/replica/projectManagement.test.ts && tsx scripts/replica/verticalLayout.test.ts && tsx scripts/replica/scanSecrets.ts",
+    "keys:check": "tsx scripts/replica/checkCredentials.ts",
+    "secrets:scan": "tsx scripts/replica/scanSecrets.ts",
+    "hooks:install": "git config core.hooksPath .githooks",
     "preview": "remotion preview src/index.ts --browser-executable=\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\"",
     "compositions": "remotion compositions src/index.ts --browser-executable=\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\"",
     "replica:render": "tsx scripts/replica/renderProject.ts",
