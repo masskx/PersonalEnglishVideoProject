@@ -1,9 +1,0 @@
-{
-  "theme": "-flect / -flex",
-  "searchedAt": "2026-07-29",
-  "source": "https://www.iconfont.cn/",
-  "queries": ["弯曲", "反射", "柔韧"],
-  "accepted": [],
-  "decision": "zero-adoption",
-  "reason": "本集没有采用外部图标。弯曲方向、反射路径、构词关系和总结表均由项目代码绘制；在无法逐项确认作者、稳定图标 ID 与明确商用许可链路时，不把公开可见或可下载等同于可发布使用。小黑承担所有核心语义动作。"
-}

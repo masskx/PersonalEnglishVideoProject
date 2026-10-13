@@ -16,40 +16,7 @@ type ExperimentEntry = {
   preview?: string;
 };
 
-const experimentMeta: Record<string, Pick<ExperimentEntry, 'title'|'description'>> = {
-  'mit-miss-sunburst-full': {
-    title: 'mit / miss · Sunburst 完整重制版',
-    description: '122 秒完整成片：Images2 同母版三姿态、丝滑文字动效、无蓝色 SVG 遮挡；本轮首选审片版本。',
-  },
-  'mit-miss-keyposes': {
-    title: 'mit / miss · 静态关键姿态版',
-    description: '动作前、关键变化、结果三段式；用静态图加局部关键帧替代整屏 SVG 遮挡。',
-  },
-  'mit-miss-smooth': {
-    title: 'mit / miss · 流畅文字版',
-    description: '关键姿态试验的流畅文字动效与节奏对照，保留旧版以便复看。',
-  },
-  'mit-miss-humanized': {
-    title: 'mit / miss · 人味化动效隔离试片',
-    description: '当前新基线：静态语义图、局部动作关键帧、去掉章节角标；还未替换正式成片。',
-  },
-  'mit-miss-images2-keyposes': {
-    title: 'mit / miss · Sunburst 参考图编辑三姿态',
-    description: '已确认的新视觉基线：同一母版分别编辑动作中和结果，保持小黑、机位与道具连续。',
-  },
-  'cet4-writing-paragraph': {
-    title: '四级作文 · 把观点展开（原试片）',
-    description: '新栏目试片，包含视频、双封面、练习单和脚本，作为非词根栏目的版式参考。',
-  },
-  'images2-relay-test': {
-    title: 'Images2 中转站 · 绘图测试',
-    description: '实际调用后的图片、透明度检查和尺寸归一化报告，不是视频成片。',
-  },
-  'openai-image-endpoint-test': {
-    title: 'Sunburst 参考图编辑 · 原始金样',
-    description: '用户已确认的视觉金样：同一构图只改变信封归属，后续连续姿态链路由此固化。',
-  },
-};
+// work/ 是本机临时目录（不进 git）；这里只把本机试验收进默认折叠的档案，不在首屏冒充交付。
 
 const fileIfExists=(directory:string, file:string)=>existsSync(`${directory}/${file}`)?file:undefined;
 
@@ -68,24 +35,19 @@ function scanExperiments(): ExperimentEntry[] {
     const report=fileIfExists(directory, 'report.json') ?? fileIfExists(directory, 'render-report.json') ?? fileIfExists(directory, 'generation-plan.json');
     const preview=fileIfExists(directory, 'contact-sheet.png') ?? fileIfExists(directory, 'preview-sheet.jpg') ?? fileIfExists(directory, 'comparison.jpg') ?? fileIfExists(directory, 'cover-landscape.png') ?? fileIfExists(directory, '00_send_hook-alpha.png');
     if(!videos.length && !page && !readme && !report && !preview)return [];
-    const meta=experimentMeta[slug];
     const video=files.includes(`${slug}.mp4`)?`${slug}.mp4`:videos[0];
     return [{
       slug,
-      title:meta?.title ?? slug,
-      description:meta?.description ?? '工作台自动发现的本地试验材料。',
+      title:slug,
+      description:'本机 work/experiments 中的试验材料（不进 git）。',
       directory,
       video, page, readme, report, preview,
     }];
-  }).sort((a,b)=>{
-    const order=['mit-miss-sunburst-full','mit-miss-images2-keyposes','openai-image-endpoint-test','mit-miss-humanized','mit-miss-keyposes','mit-miss-smooth','cet4-writing-paragraph','images2-relay-test'];
-    return (order.indexOf(a.slug)+1||999)-(order.indexOf(b.slug)+1||999) || a.title.localeCompare(b.title,'zh-CN');
-  });
+  }).sort((a,b)=>a.slug.localeCompare(b.slug));
 }
 
 function buildExperimentWorkbench(): string {
-  const hiddenIntermediates=new Set(['mit-miss-sunburst-keyposes']);
-  const entries=scanExperiments().filter(entry=>!hiddenIntermediates.has(entry.slug));
+  const entries=scanExperiments();
   if(!entries.length)return '';
   const renderCards=(group:ExperimentEntry[])=>group.map(entry=>{
     const href=(file:string)=>webPath(`${entry.directory}/${file}`);
@@ -132,7 +94,7 @@ export function buildDeliveryWorkbench(projects:readonly DashboardProject[]){
   <label for="delivery-select">选择作品</label><select class="delivery-choice" id="delivery-select">${entries.map((p,i)=>`<option value="${i}">${esc(p.title)}</option>`).join('')}</select>
   <div class="delivery-layout"><div><h3>1. 播放 / 保存成片原文件</h3><video id="delivery-video" controls preload="metadata"></video><div id="delivery-video-links" class="delivery-files"></div><p class="delivery-path" id="delivery-path"></p><h3>2. 取两种封面</h3><div class="delivery-covers" id="delivery-covers"></div><div class="delivery-files" id="delivery-cover-links"></div></div>
   <div><h3>3. 复制标题、正文与话题</h3><textarea id="delivery-copy" readonly aria-label="发布文案"></textarea><div class="delivery-files"><button id="copy-caption">复制全部文案</button><span id="delivery-copy-link"></span></div><p role="status" id="delivery-status">发布前先完整看一遍，确认内容和封面。</p><h3>4. 进入平台投稿</h3><div class="publish-sites"><a href="https://creator.douyin.com/" target="_blank" rel="noopener">抖音创作者中心 ↗</a><a href="https://creator.xiaohongshu.com/" target="_blank" rel="noopener">小红书创作服务 ↗</a><a href="https://member.bilibili.com/platform/upload/video/frame" target="_blank" rel="noopener">B站投稿 ↗</a></div><p>登录自己的账号，上传 MP4、设置封面，再粘贴文案。本工作台提供材料与入口，发布由你在平台完成。</p><div id="delivery-extras" class="delivery-files"></div></div></div>
-  <div class="delivery-help"><strong>文件夹只需要记住两个位置</strong><p><b>outputs</b>：每期交付的视频、封面和文案。<br><b>work</b>：旧试片、草稿与试验。src / scripts / public 是制作程序与素材，日常发布不用进入。</p><a href="work/experiments/cet4-writing-paragraph/index.html">查看四级作文第一版（保留对照）</a></div></section>${buildExperimentWorkbench()}
+  <div class="delivery-help"><strong>文件夹只需要记住两个位置</strong><p><b>outputs</b>：每期交付的视频、封面和文案。<br><b>vertical / xiaohongshu</b>：每期交付目录里的抖音竖屏与小红书图文。src / scripts / public 是制作程序与素材，work 只放临时文件，日常发布不用进入。</p></div></section>${buildExperimentWorkbench()}
   <script>(()=>{const items=${json},q=s=>document.querySelector(s);const link=(container,path,label,download=false)=>{const a=document.createElement('a');a.href=path.split('/').map(encodeURIComponent).join('/');a.textContent=label;if(download)a.download=path.split('/').pop();else{a.target='_blank';a.rel='noopener'}q(container).append(a)};
   function render(){const p=items[Number(q('#delivery-select').value)];if(!p)return;for(const id of ['#delivery-video-links','#delivery-cover-links','#delivery-copy-link','#delivery-extras','#delivery-covers'])q(id).replaceChildren();const v=q('#delivery-video');v.pause();if(p.files[p.id+'.mp4']){v.src=p.dir+'/'+p.id+'.mp4';link('#delivery-video-links',v.getAttribute('src'),'保存 MP4 原文件',true);link('#delivery-video-links',v.getAttribute('src'),'单独打开视频')}else v.removeAttribute('src');v.poster=p.dir+'/cover-landscape.png';v.load();q('#delivery-path').textContent='文件位置：'+p.dir+'/';q('#delivery-copy').value=p.copy;link('#delivery-copy-link',p.dir+'/publish-copy.md','文案文件');for(const [file,label] of [['cover.png','竖封面'],['cover-landscape.png','横封面']]){if(!p.files[file])continue;const image=document.createElement('img');image.src=p.dir+'/'+file;image.alt=label;q('#delivery-covers').append(image);link('#delivery-cover-links',p.dir+'/'+file,'保存'+label,true)}if(p.files['vertical/'+p.id+'-vertical.mp4'])link('#delivery-video-links',p.dir+'/vertical/'+p.id+'-vertical.mp4','抖音竖屏完整版（主推）',true);if(p.files['vertical/'+p.id+'-teaser.mp4'])link('#delivery-video-links',p.dir+'/vertical/'+p.id+'-teaser.mp4','竖屏预告短片',true);if(p.files['vertical/review-card.png'])link('#delivery-extras',p.dir+'/vertical/review-card.png','复习卡图片',true);if(p.files['worksheet.pdf'])link('#delivery-extras',p.dir+'/worksheet.pdf','配套练习 PDF',true);if(p.files['index.html'])link('#delivery-extras',p.dir+'/index.html','章节播放与资料');q('#delivery-status').textContent='已切换材料；发布前完整试看，文件成套不代表内容已经审核。'}
   q('#delivery-select').onchange=render;q('#copy-caption').onclick=async()=>{const t=q('#delivery-copy');try{if(!navigator.clipboard)throw Error();await navigator.clipboard.writeText(t.value);q('#delivery-status').textContent='文案已复制，可以粘贴到投稿页面。'}catch{t.focus();t.select();q('#delivery-status').textContent='文案已选中，请按 Ctrl+C 复制。'}};render();})();</script>`;

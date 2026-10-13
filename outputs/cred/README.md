@@ -14,7 +14,7 @@
 | 内容检查 | [content-qa.md](content-qa.md) |
 | 本地状态 | [release.json](release.json) |
 | 画面复核与历史资料 | [review/](review/) |
-| 草稿 | [draft.mp4](../../work/drafts/cred/draft.mp4) |
+
 
 时长：178.60 秒；场景：16；本地 release：draft。
 本地状态不等于平台发布证据。

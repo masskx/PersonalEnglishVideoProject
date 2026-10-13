@@ -158,4 +158,7 @@ planning/growth-promotion.json，然后用 <ten-tain> 重新出一次卡片给�
 | Codex can't reach the API | Allow network access in Codex's sandbox settings for that session |
 | Images or audio are tiny text files | Run `git lfs pull` (they are LFS pointers until downloaded) |
 | Render can't find Chrome | Install Google Chrome, or set `REMOTION_BROWSER_EXECUTABLE` to its path |
+| ffmpeg / ffprobe not found | Run `npm ci` again (Remotion ships them), or set `FFMPEG_PATH` / `FFPROBE_PATH` |
+| Codex wants to use an old method (Wan video, Seedream, SVG drawings) | Say `按 AGENTS.md 第 9 节，不要恢复已停用路线。` (Follow AGENTS.md section 9; don't revive retired methods.) |
+| `work/` is getting big | Delete it. It is local scratch and not in git |
 | A key ended up in a file | Stop. The pre-commit hook should block it; revoke the key at the provider |

@@ -10,9 +10,6 @@ import {
   ROOT_WORD_LANDSCAPE_COVER,
 } from './replica/RootWordCover';
 import {jectProject} from './replica/projects/ject';
-import {MemeVocabShortVideo} from './meme-vocab/MemeVocabShortVideo';
-import {defaultMemeVocabConfig} from './meme-vocab/default';
-import type {MemeVocabShortProps} from './meme-vocab/types';
 import {CetTranslationVideo,CetTranslationCover,translationTimeline} from './cet-translation/CetTranslationVideo';
 import {Cet6ReadingVideo,Cet6ReadingCover,readingTimeline} from './cet6-reading/Cet6ReadingVideo';
 import {VerticalReplicaVideo} from './replica/vertical/VerticalReplicaVideo';
@@ -107,21 +104,6 @@ export const RemotionRoot: React.FC = () => (
       height={XHS_CARD.height}
       defaultProps={{deck: cetTranslationDeck, card: {kind: 'cover' as const}, page: 1, total: 12,
         saveCta: '建议收藏 · 考前翻一翻', followCta: '关注小黑，每期拆一个词根', commentPrompt: '评论区写一句话，用上今天的一个词'}}
-    />
-    <Composition
-      id="MemeVocabShort"
-      component={MemeVocabShortVideo}
-      durationInFrames={defaultMemeVocabConfig.resolvedTimeline.totalFrames}
-      fps={defaultMemeVocabConfig.storyboard.fps}
-      width={defaultMemeVocabConfig.storyboard.width}
-      height={defaultMemeVocabConfig.storyboard.height}
-      defaultProps={{config: defaultMemeVocabConfig}}
-      calculateMetadata={({props}: {props: MemeVocabShortProps}) => ({
-        durationInFrames: props.config.resolvedTimeline.totalFrames,
-        fps: props.config.storyboard.fps,
-        width: props.config.storyboard.width,
-        height: props.config.storyboard.height,
-      })}
     />
   </>
 );

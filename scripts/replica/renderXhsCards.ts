@@ -11,6 +11,7 @@ import {findMethodDeck, methodDecks} from '../../src/replica/xhs/methodDecks';
 import {buildMethodNote, buildXhsNote} from '../../src/replica/xhs/xhsNote';
 import {prepareRenderPublicDir} from './prepareRenderPublicDir';
 import {resolveDeliveryPaths} from './deliveryPaths';
+import {browserExecutable, ffmpegPath} from './renderEnv';
 
 /**
  * 小红书图文笔记：npm run xhs:cards -- --project=<slug>（或 --all）
@@ -82,15 +83,7 @@ const jobs: Job[] = args.includes('--all')
   ? [...replicaProjects.filter((project) => project.cover).map((project) => rootWordJob(project.slug)), ...methodDecks.map(methodJob)]
   : [jobFor(arg('project') ?? (() => { throw new Error('Missing --project=<slug> or --all.'); })())];
 
-const windowsChrome = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
-const linuxHeadless = '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell';
-const browserExecutable =
-  process.env.REMOTION_BROWSER_EXECUTABLE ??
-  (process.platform === 'win32' && existsSync(windowsChrome) ? windowsChrome : existsSync(linuxHeadless) ? linuxHeadless : null);
-const compositorDir = path.resolve('node_modules/@remotion/compositor-win32-x64-msvc');
-const ffmpeg =
-  process.env.FFMPEG_PATH ??
-  (process.platform === 'win32' && existsSync(path.join(compositorDir, 'ffmpeg.exe')) ? path.join(compositorDir, 'ffmpeg.exe') : 'ffmpeg');
+const ffmpeg = ffmpegPath;
 
 /** Tiled overview of every card. Uses a concat list instead of -pattern_type glob, which Windows ffmpeg lacks. */
 const contactSheet = (files: string[], output: string, stage: string) => {

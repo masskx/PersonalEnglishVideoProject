@@ -1,4 +1,0 @@
-interface:
-  display_name: "白底小黑词根视频"
-  short_description: "制作静态小黑词根视频、双封面、混音与发布文案"
-  default_prompt: "使用 $build-root-word-video 制作一条默认采用静态小黑与代码动画、完整配音混音和交付包的白底词根讲解视频；仅在我明确指定时使用 Wan。"

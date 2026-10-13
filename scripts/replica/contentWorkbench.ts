@@ -5,7 +5,7 @@ export const buildContentWorkbench = () => {
   const json = JSON.stringify(seed).replace(/</g, '\\u003c');
   return `<style>#planning button{padding:9px 14px;border:1px solid #c8d4e7;border-radius:7px;background:#eef3fc;color:#173c85}#planning select,#planning textarea,#planning input:not([type=file]){padding:8px;border:1px solid #d2ddeb;border-radius:6px;background:white;color:#243e61;font:inherit}#planning summary{font-size:12px;color:#123ea2;cursor:pointer;margin-top:12px}#planning label{font-size:12px}#planning article>input{width:100%;font-weight:700!important}</style><section class="panel" id="planning" style="margin-bottom:28px">
 <h2>内容与资料工作台</h2><p>先定版词根，再试做四六级阅读、写作、翻译。每条内容配一份观众能用的练习或模板。</p>
-<p><a href="outputs/cet4-writing-paragraph-v2/index.html">观看四级作文完整版</a> · <a href="docs/账号内容与资料产品规划.md">查看分阶段规划</a> · <a href="work/experiments/mit-miss-smooth/compare.html">词根动效对比</a> · <a href="planning/content-plan.json">项目计划源文件</a></p>
+<p><a href="outputs/cet4-writing-paragraph-v2/index.html">观看四级作文完整版</a> · <a href="docs/账号内容与资料产品规划.md">查看分阶段规划</a> · <a href="planning/content-plan.json">项目计划源文件</a></p>
 <p id="plan-storage" role="status">改动保存在当前浏览器；请导出备份。更换浏览器或清理缓存后需导入。刷新项目清单不更新计划源文件。</p>
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0"><button id="plan-add">新增选题</button><button id="plan-export">导出计划与复盘</button><label>导入 JSON <input id="plan-import" type="file" accept="application/json,.json"></label></div>
 <div id="plan-items" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px"></div>

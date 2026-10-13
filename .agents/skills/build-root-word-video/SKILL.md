@@ -40,10 +40,8 @@ same imagegen style, Xiaohei identity, motion restraint, sound balance, cover fa
 gate. For inventory, organization, or format exploration, inspect and document the project without
 automatically generating assets, rendering an episode, or publishing.
 
-Start with the repository [README](../../../README.md) and
-[project overview](../../../docs/project-audit/OPTIMIZATION.md). The
-[skill inventory and boundaries](../../../docs/project-audit/SKILLS.md) explains the local build
-skill, embedded illustration source, external helpers, and what can change in later experiments.
+Start with the repository [AGENTS.md](../../../AGENTS.md) and
+[新会话制作入口](../../../docs/新会话制作入口.md); they list the current rules, commands and folders.
 Apply sample-matching instructions when an authoritative sample exists; for an original episode,
 use its explicit storyboard and beat map as the timing/content authority.
 
@@ -54,8 +52,8 @@ See `docs/项目管理流程.md` for the current organization. Keep final MP4, b
 copy beside the release record. Node production commands use `scripts/replica/deliveryPaths.ts`
 to resolve an existing `outputs/<slug>发了/` folder; never recreate a second canonical folder.
 Drafts belong in `work/drafts/<slug>/draft.mp4`; review evidence belongs under the episode's
-`review/` directory and new review stills under `review/stills/`. Historical Wan source jobs
-belong in `work/experiments/`, while runtime assets remain in `public/`. Do not infer publication
+`review/` directory and new review stills under `review/stills/`. Experiments and discarded
+generations stay in the gitignored scratch folder `work/`, while runtime assets remain in `public/`. Do not infer publication
 from conflicting legacy labels. Preserve filled content QA documents unless explicitly rebuilding.
 The workbench first screen is for current delivery artifacts. Historical renders, endpoint tests,
 pose evidence and assembly intermediates belong under a collapsed archive and must not compete with
@@ -158,8 +156,6 @@ dominant subject, or reduce Xiaohei's readable action.
 - Read `references/background-music.md` before selecting, replacing, mixing, or reviewing music.
 - Read `references/iconfont.md` before searching, downloading, adapting, or publishing an external
   icon.
-- Read `references/dynamic-xiaohei.md` before generating, matting, looping, or reviewing dynamic
-  Xiaohei footage.
 - Read `references/whiteboard-hand-drawing.md` when the user asks for a hand-drawn, whiteboard,
   pen-cursor, or “hand holding a pen” reveal on existing raster illustration layers.
 - Read `references/quality-gates.md` before generating assets, rendering, comparing, or cleaning.
@@ -306,8 +302,8 @@ dominant subject, or reduce Xiaohei's readable action.
     `outputs/<slug>发了/` for `published`. Changing a published project back to `draft` or
     `approved` must restore `outputs/<slug>/`. Never keep both forms for one project.
 12. Keep `outputs/` limited to delivery files and direct acceptance evidence. Move experiments,
-    source clips, discarded generations, and one-off previews to gitignored `work/`; move
-    recoverable superseded assets to `archive/`. Before moving a large generated asset out of
+    source clips, discarded generations, and one-off previews to gitignored `work/`; delete
+    superseded assets (git history keeps them; there is no archive folder). Before moving a large generated asset out of
     `public/`, scan both generic project data and specialized renderers for references and write
     an asset-audit report. Do not trust a generic dynamic-assets scan for specialized stages.
 
@@ -434,10 +430,9 @@ npm run replica:keyposes:review -- --project=<slug>
 npm run replica:full-preview -- --project=<slug>
 ```
 
-For dynamic Xiaohei, copy/adapt the bundled `scripts/wan_i2v_submit.ts`,
-`scripts/wan_i2v_poll.ts`, and `scripts/white_wan_video.py` into the target repository. Use
-`scripts/key_wan_video.py` only for the documented green-screen fallback. Follow
-`references/dynamic-xiaohei.md`; keep the API key only in the project `.env`.
+Wan / image-to-video dynamic Xiaohei is retired (2026-10-13). Existing frame sequences under
+`public/assets/replica/*-motion/` still render for their episodes, but new episodes use static
+before/change/result key poses with Remotion keyframes.
 
 Do not call generation endpoints during the dry-run commands. Use `--scene=<id>` for one voice
 scene and `--only=<id[,id...]>` for selected illustrations when iterating.

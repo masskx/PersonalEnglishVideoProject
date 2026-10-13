@@ -6,6 +6,7 @@ import {openBrowser, renderStill, selectComposition} from '@remotion/renderer';
 import {getReplicaProject} from '../../src/replica/projects/registry';
 import {resolveDeliveryPaths} from './deliveryPaths';
 import {prepareRenderPublicDir} from './prepareRenderPublicDir';
+import {browserExecutable} from './renderEnv';
 
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => arg.startsWith('--project='))?.slice('--project='.length);
@@ -39,7 +40,6 @@ const serveUrl = await bundle({
   enableCaching: true,
   onProgress: () => undefined,
 });
-const browserExecutable = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 const browser = await openBrowser('chrome', {browserExecutable, logLevel: 'error'});
 let sampleCount = 0;
 

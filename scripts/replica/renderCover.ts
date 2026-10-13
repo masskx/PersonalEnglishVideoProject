@@ -5,6 +5,7 @@ import {renderStill, selectComposition} from '@remotion/renderer';
 import {getReplicaProject} from '../../src/replica/projects/registry';
 import {resolveDeliveryPaths} from './deliveryPaths';
 import {prepareRenderPublicDir} from './prepareRenderPublicDir';
+import {browserExecutable} from './renderEnv';
 
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => arg.startsWith('--project='))?.slice('--project='.length);
@@ -36,7 +37,6 @@ const landscapeOutput = path.resolve(
   landscapeOutputArg ?? delivery.landscapeCover,
 );
 
-const chrome = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 const inputProps = {cover: project.cover};
 const serveUrl = await bundle({
   entryPoint: path.resolve(process.cwd(), 'src/index.ts'),
@@ -52,7 +52,7 @@ const renderOne = async ({id, output}: {id: string; output: string}) => {
     serveUrl,
     id,
     inputProps,
-    browserExecutable: chrome,
+    browserExecutable,
   });
   await renderStill({
     serveUrl,
@@ -61,7 +61,7 @@ const renderOne = async ({id, output}: {id: string; output: string}) => {
     output,
     imageFormat: 'png',
     overwrite: true,
-    browserExecutable: chrome,
+    browserExecutable,
   });
   if (!existsSync(output)) throw new Error(`Cover render completed without output: ${output}.`);
   console.log(`Rendered ${project.slug} ${id}: ${path.relative(process.cwd(), output)}.`);

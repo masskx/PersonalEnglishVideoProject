@@ -157,26 +157,11 @@ the subject about 40-60% of the canvas. Xiaohei is a deadpan worker, never a cut
 
 ### Dynamic Xiaohei motion
 
-- Default to accepted static Xiaohei key poses with deterministic Remotion timing. Generate
-  Wan actions only when the user explicitly requests Wan, image-to-video, or generated dynamic
-  Xiaohei for the current task; an available credential does not authorize generation. Keep exact
-  replicas sample-authoritative. Follow `dynamic-xiaohei.md` for this opt-in branch.
-- Generate locked-camera five-second native-speed actions. Prefer literal-white RGB PNG frames
-  with neutral white-level normalization and no subject matte. Render one frame at a time; use
-  the documented single-frame ping-pong or one action plus still holds for longer chapters.
-  Do not slow 150 frames across a longer chapter or dissolve two opaque white frames.
-- Use green-screen RGBA only when repeated white-background attempts cannot pass the white-plate
-  and semantic-action gates. For that fallback, use premultiplied-alpha scaling and the approved
-  short loop-boundary dissolve or a single action plus still holds.
-- Preserve the solid-black body, white dot eyes, thin complete limbs, deadpan identity, semantic
-  direction, and prop relationship across every frame. Reject character drift even when motion is
-  fluid.
+- Retired. Use accepted static Xiaohei key poses (before / change / result) with deterministic
+  Remotion timing. Existing `*-motion` frame sequences keep rendering for their own episodes only.
 - Keep code-drawn arrows and effects off the illustration unless they encode a narrated
   relationship. Remove crosshairs, trajectories, borders, or sweep lines that cover Xiaohei or
   text merely to add activity.
-- Inspect 100% and 200% white-background frames or composites. For RGBA fallback, also inspect
-  alpha-only views and use a soft subpixel matte. Reject broken limbs, hard stair steps,
-  green/cyan halos, gray fringes, tinted plates, or blur.
 
 ## Repeated chapter composition and collision safety
 

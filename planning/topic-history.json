@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "initializedAt": "2026-09-12",
   "maintenance": "人工维护的长期台账；自动清单刷新不得覆盖。制作前查实际历史并登记，完成后补产物。",
+  "cleanupNote": "2026-10-13 全项目整理：archive/、work/（试验、草稿、备份）、一次性审计记录、Wan/即梦脚本与 interrupt 原型源码已删除；本台账里指向 work/ 或 archive/ 的旧 artifacts 路径只作历史记录，可用 git 历史恢复。查重仍以本台账 + outputs/ + 注册表为准。",
   "statusDefinitions": {
     "in_progress": "已开始制作，占用选题",
     "produced": "已有产物（包括试片），不代表审核通过或发布"

@@ -14,7 +14,7 @@
 | 内容检查 | [content-qa.md](content-qa.md) |
 | 本地状态 | [release.json](release.json) |
 | 画面复核与历史资料 | [review/](review/) |
-| 草稿 | [draft.mp4](../../work/drafts/rupt/draft.mp4) |
+
 
 时长：122.10 秒；场景：12；本地 release：approved。
 **发布记录待核对：目录名有“发了”，release 尚未标为 published。保留原记录，不据此推断平台发布。**

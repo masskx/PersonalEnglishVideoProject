@@ -5,6 +5,7 @@ import {getReplicaProject} from '../../src/replica/projects/registry';
 import {resolveDeliveryPaths} from './deliveryPaths';
 import {promoteDelivery} from './promoteDelivery';
 import {prepareRenderPublicDir} from './prepareRenderPublicDir';
+import {browserCliArgs} from './renderEnv';
 
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => arg.startsWith('--project='))?.slice('--project='.length);
@@ -79,7 +80,6 @@ if (project.illustrations.length > 0) {
   run('npm', ['run', 'replica:assets:verify', '--', `--project=${project.slug}`]);
 }
 
-const chrome = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 const renderArgs = [
   'remotion',
   'render',
@@ -92,7 +92,7 @@ const renderArgs = [
   '--audio-codec=aac',
   '--audio-bitrate=192k',
   `--concurrency=${draft ? 4 : highQuality ? 2 : 2}`,
-  `--browser-executable="${chrome}"`,
+  ...browserCliArgs(),
 ];
 if (draft) renderArgs.push('--scale=0.5');
 renderArgs.push(`--public-dir=${publicDir}`);
