@@ -10,7 +10,7 @@ Codex session without you repeating them.
 git clone https://github.com/masskx/PersonalEnglishVideoProject.git
 cd PersonalEnglishVideoProject
 git lfs install
-git lfs pull          # downloads videos, images and audio (several GB)
+git lfs pull          # downloads videos, images and audio (about 4 GB; was 7.4 GB before the cleanup)
 npm ci
 copy .env.example .env
 notepad .env          # paste your NEW keys here (rotate the ones shared in chat)

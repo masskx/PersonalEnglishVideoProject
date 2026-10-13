@@ -14,7 +14,7 @@
 | 内容检查 | [content-qa.md](content-qa.md) |
 | 本地状态 | [release.json](release.json) |
 | 画面复核与历史资料 | [review/](review/) |
-| 草稿 | [draft.mp4](../../work/drafts/mit-miss/draft.mp4) |
+
 
 时长：122.10 秒；场景：12；本地 release：approved。
 本地状态不等于平台发布证据。
