@@ -47,6 +47,10 @@ if (stage === 'assemble') {
 }
 
 run('replica:render:hq', [`--project=${project}`]);
+// 抖音竖屏完整版/预告/复习卡、小红书图文卡，最后重新生成带竖屏与预告说明的发布文案。
+run('vertical:render', [`--project=${project}`]);
+run('xhs:cards', [`--project=${project}`]);
+run('replica:copy', [`--project=${project}`]);
 run('replica:release', [`--project=${project}`, '--status=draft']);
 run('project:inventory', []);
 console.log('\n[production] Delivery complete. Status remains draft until human review.');

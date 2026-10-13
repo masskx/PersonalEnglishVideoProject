@@ -35,6 +35,7 @@
     "build_full_video_preview_and_pass_layout_gate",
     "render_two_covers_and_publish_copy",
     "render_vertical_full_teaser_and_review_card",
+    "render_xiaohongshu_cards_and_note",
     "run_media_and_content_review",
     "update_ledger_logs_and_workbench"
   ],
@@ -147,6 +148,16 @@
     "growthConfig": "planning/growth-promotion.json",
     "ownerGuideEnglish": "docs/growth-playbook-EN.md"
   },
+  "xiaohongshuDelivery": {
+    "since": "2026-10-12",
+    "reason": "owner_found_lecture_videos_unappealing_for_xiaohongshu_feed",
+    "command": "npm run xhs:cards -- --project=<slug>",
+    "size": [1080, 1440],
+    "outputs": ["xiaohongshu/NN-*.png", "xiaohongshu/xhs-note.md", "xiaohongshu/contact-sheet.jpg"],
+    "maxImages": 18,
+    "maxTitleChars": 20,
+    "config": "planning/growth-promotion.json#xiaohongshu"
+  },
   "ownerCommunication": {
     "chatLanguage": "English",
     "repositoryLanguage": "Chinese",
@@ -161,6 +172,7 @@
       "verticalVideo",
       "verticalTeaser",
       "reviewCard",
+      "xiaohongshuCards",
       "publishCopy",
       "reviewEvidence",
       "topicLedgerUpdate",

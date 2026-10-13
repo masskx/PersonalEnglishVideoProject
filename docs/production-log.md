@@ -1168,3 +1168,8 @@ Validated 2256 exclusive image-frame intervals; extracted/reviewed 128 encoded f
 - 新增竖屏重排渲染器 `src/replica/vertical/` 与 `scripts/replica/renderVertical.ts`，复用横屏期配音和插图，不重新生图、不改讲稿。编码 CRF 16、x264 slow、JPEG 帧质量 95；全局 `remotion.config.ts` 同步改为 JPEG 95。
 - 交付目录新增 `vertical/<slug>-vertical.mp4`、`vertical/<slug>-teaser.mp4`、`vertical/review-card.png`、`vertical-report.json` 与 `vertical/review/*-contact-sheet.jpg`；工作台交付区增加竖屏完整版、预告和复习卡入口。
 - 推广与行动号召统一由 `planning/growth-promotion.json` 配置；资料未上架、领取未开启时不出现购买或领取引导，不放站外联系方式。
+
+## 2026-10-12 小红书图文卡与本地 Codex
+
+- 新增 `npm run xhs:cards`（`scripts/replica/renderXhsCards.ts`、`src/replica/xhs/`）：1080×1440 图文卡与 `xhs-note.md`，只复用本期素材，独立 public 目录渲染。
+- `replica:produce --stage=deliver` 串联横屏、竖屏、小红书卡片和文案；新增 `scripts/replica/xhsCards.test.ts` 并入 `project:test`。

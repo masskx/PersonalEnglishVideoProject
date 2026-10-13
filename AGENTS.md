@@ -66,6 +66,24 @@
 - 面向用户的英文说明见 [growth-playbook-EN.md](docs/growth-playbook-EN.md)。用户读英文、不读中文：
   与用户沟通用英文；仓库内文档、讲稿和画面文字仍用中文。
 
+## 小红书图文与本地 Codex（2026-10-12）
+
+- 用户在本机用 Codex 制作，并认为长横屏/竖屏讲解对小红书用户吸引力不足。小红书默认交付图文笔记：
+  `npm run xhs:cards -- --project=<slug>` 输出交付目录 `xiaohongshu/`（3:4 卡片：封面、每词一张、
+  一页总结、自测、关注卡，最多 18 张）和 `xhs-note.md`（20 字内标题、短句正文、话题）。
+- 卡片只复用本期已审核的插图、拆分、释义和讲稿例句，不新增讲解；抽取不全的老期数可以先补数据再出图。
+  小红书文案、行动号召和话题统一改 `planning/growth-promotion.json` 的 `xiaohongshu` 段。
+- 一条命令完成交付：`npm run replica:produce -- --project=<slug> --stage=deliver`（横屏、抖音竖屏与预告、
+  复习卡、小红书卡片、发布文案）。用户的英文上手说明见 [LOCAL-CODEX-QUICKSTART-EN.md](docs/LOCAL-CODEX-QUICKSTART-EN.md)。
+
+## 四六级方法卡（2026-10-12）
+
+- 四级写作、六级阅读、四级翻译等非词根栏目同样交付小红书图文：每期在自己的目录导出 `src/<栏目>/xhs.ts`
+  的 `MethodDeck`（题目、常见错误、3–8 个步骤、检查清单、练习、参考答案、≤20 字标题、话题），并加入
+  `src/replica/xhs/methodDecks.ts`；`npm run xhs:cards -- --project=<期名>` 出方法卡。内容只取本期讲稿与例句。
+- 新四六级栏目至少生成 3 张不同的小黑插图（题目、关键步骤、练习各一），否则图文卡只能重复同一张图。
+- 用户的提示词与续做指南见 [CODEX-PROMPT-GUIDE-EN.md](docs/CODEX-PROMPT-GUIDE-EN.md)。
+
 ## 密钥使用（2026-10-12，用户要求）
 
 - 用户可能提供 API 密钥供 Claude 临时使用。密钥只从环境变量或被 gitignore 的 `.env` 在运行时读取，

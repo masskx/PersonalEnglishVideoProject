@@ -101,4 +101,6 @@ declare module 'remotion' {
   export const registerRoot: (component: ComponentType) => void;
   export const staticFile: (path: string) => string;
   export const useCurrentFrame: () => number;
+  export const delayRender: (label?: string) => number;
+  export const continueRender: (handle: number) => void;
 }
