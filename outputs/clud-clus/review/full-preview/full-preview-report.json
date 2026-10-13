@@ -1,0 +1,250 @@
+{
+  "project": "clud-clus",
+  "input": "outputs/clud-clus/clud-clus.mp4",
+  "durationSeconds": 182.229333,
+  "intervalSeconds": 1,
+  "sampledFrames": 183,
+  "previewVideo": "outputs/clud-clus/review/full-preview/full-preview.mp4",
+  "contactSheets": "outputs/clud-clus/review/full-preview/full-preview-contact-*.jpg",
+  "safeArea": {
+    "left": 88,
+    "right": 1832,
+    "top": 54,
+    "bottom": 1008
+  },
+  "layoutIssues": [
+    {
+      "scene": "include-word",
+      "layer": "include-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "exclude-word",
+      "layer": "exclude-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "exclude-word",
+      "layer": "exclude-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "exclude-word",
+      "layer": "exclude-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "conclude-word",
+      "layer": "conclude-word-word",
+      "kind": "text",
+      "box": {
+        "x": 130,
+        "y": 50,
+        "width": 1660,
+        "height": 116
+      },
+      "message": "content crosses top safe margin"
+    },
+    {
+      "scene": "preclude-word",
+      "layer": "preclude-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "seclude-word",
+      "layer": "seclude-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "seclude-word",
+      "layer": "seclude-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "seclude-word",
+      "layer": "seclude-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin"
+    }
+  ],
+  "layoutErrors": [],
+  "layoutWarnings": [
+    {
+      "scene": "include-word",
+      "layer": "include-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "exclude-word",
+      "layer": "exclude-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "exclude-word",
+      "layer": "exclude-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "exclude-word",
+      "layer": "exclude-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "conclude-word",
+      "layer": "conclude-word-word",
+      "kind": "text",
+      "box": {
+        "x": 130,
+        "y": 50,
+        "width": 1660,
+        "height": 116
+      },
+      "message": "content crosses top safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "preclude-word",
+      "layer": "preclude-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "seclude-word",
+      "layer": "seclude-word-before",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "seclude-word",
+      "layer": "seclude-word-change",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "seclude-word",
+      "layer": "seclude-word-result",
+      "kind": "image",
+      "box": {
+        "x": 55,
+        "y": 105,
+        "width": 835,
+        "height": 675
+      },
+      "message": "content crosses left safe margin",
+      "severity": "warning"
+    }
+  ],
+  "manualReviewRequired": [
+    "打开 full-preview.mp4 连续观看整片。",
+    "逐页查看 full-preview-contact-*.jpg，重点看文字溢出、大片空白、图文失衡和关键帧切换。",
+    "手机尺寸检查字幕和词义；发现问题后修订 storyboard，再重新渲染并重复本闸门。"
+  ]
+}

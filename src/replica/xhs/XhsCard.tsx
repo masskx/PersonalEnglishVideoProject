@@ -127,7 +127,7 @@ const CoverCard: React.FC<{deck: XhsDeck; saveCta: string}> = ({deck, saveCta}) 
   return (
     <>
       <div style={{position: 'absolute', left: PAD, top: 150}}>
-        <span style={{background: REPLICA_THEME.primary, color: '#fff', fontSize: 34, fontWeight: 850, borderRadius: 999, padding: '10px 28px'}}>四六级高频词根</span>
+        <span style={{background: REPLICA_THEME.primary, color: '#fff', fontSize: 34, fontWeight: 850, borderRadius: 999, padding: '10px 28px'}}>{deck.familyLabel ?? '英语词根学习'}</span>
       </div>
       <div style={{position: 'absolute', left: PAD, top: 235, width: INNER, fontSize: rootSize, fontWeight: 900, lineHeight: 1.05, color: REPLICA_THEME.accent, whiteSpace: 'nowrap'}}>
         {deck.root}
@@ -137,7 +137,7 @@ const CoverCard: React.FC<{deck: XhsDeck; saveCta: string}> = ({deck, saveCta}) 
         <span style={{background: `linear-gradient(transparent 60%, ${HIGHLIGHTER} 60%)`}}>{deck.chineseMeaning}</span>
       </div>
       <div style={{position: 'absolute', left: PAD, top: 375 + rootSize * 1.08, width: INNER, fontSize: 44, fontWeight: 760, color: REPLICA_THEME.muted}}>
-        {deck.words.length} 个四六级高频词 · 看图就能记
+        {deck.words.length} 个相关词 · 对照动作与例句
       </div>
       <div style={{position: 'absolute', left: (XHS_CARD.width - 700) / 2, top: 640, width: 700, height: 520, borderRadius: 260, background: SOFT_BLUE}} />
       <TrimmedImg src={img(deck.heroArt)} style={{position: 'absolute', left: 190, top: 610, width: 700, height: 580}} pad={0.08} />

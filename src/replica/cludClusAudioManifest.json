@@ -1,0 +1,79 @@
+{
+  "clud-clus-hook": {
+    "src": "assets/audio/replica/clud-clus/clud-clus-hook.mp3",
+    "duration": 8.229,
+    "textHash": "9ddcb1a396d8db87ded8676ec6fbe865ac58ab2b52f8d7adfb7e94768b68c5cf",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-10-13T05:51:16.753Z"
+  },
+  "clud-clus-root-map": {
+    "src": "assets/audio/replica/clud-clus/clud-clus-root-map.mp3",
+    "duration": 14.55,
+    "textHash": "fdb2055276cd334f8f2e1330d8343f56a9f7d55359a670ce49b7060de26ef188",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-10-13T05:51:18.614Z"
+  },
+  "include-word": {
+    "src": "assets/audio/replica/clud-clus/include-word.mp3",
+    "duration": 18.495,
+    "textHash": "a66385b3e359ece937519024022a693370533dae8e77fac76170eaf0a152d564",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-10-13T05:51:26.541Z"
+  },
+  "exclude-word": {
+    "src": "assets/audio/replica/clud-clus/exclude-word.mp3",
+    "duration": 16.457,
+    "textHash": "7a4cb2997408c4fd3ca3a3ab132903b96a893d6d25f6c81a0ceaf96d27497bdf",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-10-13T05:51:27.215Z"
+  },
+  "conclude-word": {
+    "src": "assets/audio/replica/clud-clus/conclude-word.mp3",
+    "duration": 18.26,
+    "textHash": "7677dcc688240e34f2485f84d874608ed6310fa58b3d938cfe547aa69b1780d9",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-10-13T05:51:37.741Z"
+  },
+  "preclude-word": {
+    "src": "assets/audio/replica/clud-clus/preclude-word.mp3",
+    "duration": 19.749,
+    "textHash": "7aaca422750c348af0c928d1455a50dc407eba9b9ae1ab56b97e72c441491f85",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-10-13T05:51:38.410Z"
+  },
+  "seclude-word": {
+    "src": "assets/audio/replica/clud-clus/seclude-word.mp3",
+    "duration": 20.323,
+    "textHash": "a2ab769469180ef625cf4620f3773d5ee040a28c028c28b943f6df8ca62ebad6",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-10-13T05:51:48.883Z"
+  },
+  "clud-clus-examples": {
+    "src": "assets/audio/replica/clud-clus/clud-clus-examples.mp3",
+    "duration": 20.271,
+    "textHash": "b9c1c722064a4b8aaea43c070ffd7169a1444acf7d759dcdd102a980ba104881",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-10-13T05:51:49.425Z"
+  },
+  "clud-clus-practice": {
+    "src": "assets/audio/replica/clud-clus/clud-clus-practice.mp3",
+    "duration": 18.051,
+    "textHash": "39a198c7e9fa06d434dcda3f12e8e72ad74b03cb5a1e37de468d715f226cb733",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-10-13T05:51:58.974Z"
+  },
+  "clud-clus-answers": {
+    "src": "assets/audio/replica/clud-clus/clud-clus-answers.mp3",
+    "duration": 20.741,
+    "textHash": "34a423560705203aa4d903116e236d1e0cdcd38868814519bff5111d65254b3b",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-10-13T05:51:59.653Z"
+  },
+  "clud-clus-summary": {
+    "src": "assets/audio/replica/clud-clus/clud-clus-summary.mp3",
+    "duration": 20.375,
+    "textHash": "d4021ccfeeb84095f523e3389487922b2d414d41630f95837a8cbabca674dc8a",
+    "profileHash": "8d8d928f2e518fca62f57e29b00d85a9c39fa3e22841d4ae93b49b7793a7ae24",
+    "generatedAt": "2026-10-13T05:52:09.762Z"
+  }
+}

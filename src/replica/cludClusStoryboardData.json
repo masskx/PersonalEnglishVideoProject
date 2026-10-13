@@ -1,0 +1,1699 @@
+{
+  "id": "clud-clus",
+  "duration": 182.16666666666666,
+  "fadeToBlackSec": 0,
+  "fadeEndOpacity": 0,
+  "scenes": [
+    {
+      "id": "clud-clus-hook",
+      "duration": 7.566666666666666,
+      "narration": "同一份早餐，include 算在价格里，exclude 却要另外付钱。只换前面两个字母，意思就翻了个面。",
+      "transitionOut": {
+        "type": "white-fade",
+        "duration": 0.12
+      },
+      "layers": [
+        {
+          "kind": "text",
+          "id": "hook-question",
+          "from": 0,
+          "duration": 7.566666666666666,
+          "enter": "none",
+          "enterDuration": 0.35,
+          "x": 110,
+          "y": 100,
+          "width": 1500,
+          "fontSize": 68,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "早餐算在价格里吗？",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "hook-include",
+          "from": 0,
+          "duration": 7.566666666666666,
+          "enter": "none",
+          "enterDuration": 0.35,
+          "x": 110,
+          "y": 300,
+          "width": 860,
+          "fontSize": 78,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "include：包含",
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "hook-exclude",
+          "from": 2.1754166666666666,
+          "duration": 5.39125,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 110,
+          "y": 500,
+          "width": 860,
+          "fontSize": 78,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "exclude：不包含",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "id": "hook-in",
+          "src": "assets/replica/clud-clus/include-result.png",
+          "from": 0,
+          "duration": 2.1754166666666666,
+          "enter": "none",
+          "exit": "none",
+          "x": 1100,
+          "y": 180,
+          "width": 700,
+          "height": 600,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "hook-out",
+          "src": "assets/replica/clud-clus/exclude-result.png",
+          "from": 2.1754166666666666,
+          "duration": 5.39125,
+          "enter": "none",
+          "exit": "none",
+          "x": 1100,
+          "y": 180,
+          "width": 700,
+          "height": 600,
+          "fit": "contain",
+          "contentScale": 1.18
+        }
+      ],
+      "captions": [
+        {
+          "from": 0,
+          "to": 2.866602564102564,
+          "text": "同一份早餐，include 算在价格里，"
+        },
+        {
+          "from": 2.866602564102564,
+          "to": 5.016554487179487,
+          "text": "exclude 却要另外付钱。"
+        },
+        {
+          "from": 5.016554487179487,
+          "to": 7.453166666666666,
+          "text": "只换前面两个字母，意思就翻了个面。"
+        }
+      ],
+      "start": 0
+    },
+    {
+      "id": "clud-clus-root-map",
+      "duration": 13.3,
+      "narration": "这组词来自拉丁语里关、合拢的动作。CLUD 和 CLUS 是同一个词根家族的两种形式，可以用 close、shut 来记。前缀改变关的位置，现代词义还要结合搭配。",
+      "transitionOut": {
+        "type": "white-fade",
+        "duration": 0.12
+      },
+      "layers": [
+        {
+          "kind": "text",
+          "id": "root-main",
+          "from": 0,
+          "duration": 13.3,
+          "enter": "none",
+          "enterDuration": 0.35,
+          "x": 110,
+          "y": 100,
+          "width": 920,
+          "fontSize": 100,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "CLUD / CLUS",
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "root-en",
+          "from": 0.7758333333333334,
+          "duration": 12.524166666666668,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 120,
+          "y": 300,
+          "width": 860,
+          "fontSize": 56,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "CLOSE · SHUT",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "root-cn",
+          "from": 1.5516666666666667,
+          "duration": 11.748333333333333,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 120,
+          "y": 440,
+          "width": 850,
+          "fontSize": 48,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "关 · 合拢",
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "root-link",
+          "from": 5.541666666666667,
+          "duration": 7.758333333333334,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 120,
+          "y": 620,
+          "width": 890,
+          "fontSize": 40,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "include → inclusion",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "id": "root-art",
+          "src": "assets/replica/clud-clus/include-result.png",
+          "from": 0,
+          "duration": 13.3,
+          "enter": "none",
+          "exit": "none",
+          "x": 1100,
+          "y": 180,
+          "width": 700,
+          "height": 600,
+          "fit": "contain",
+          "contentScale": 1.18
+        }
+      ],
+      "captions": [
+        {
+          "from": 0,
+          "to": 2.763444444444445,
+          "text": "这组词来自拉丁语里关、合拢的动作。"
+        },
+        {
+          "from": 2.763444444444445,
+          "to": 6.989888888888889,
+          "text": "CLUD 和 CLUS 是同一个词根家族的两种形式，"
+        },
+        {
+          "from": 6.989888888888889,
+          "to": 9.91588888888889,
+          "text": "可以用 close、shut 来记。"
+        },
+        {
+          "from": 9.91588888888889,
+          "to": 13.167000000000002,
+          "text": "前缀改变关的位置，现代词义还要结合搭配。"
+        }
+      ],
+      "start": 7.566666666666666
+    },
+    {
+      "id": "include-word",
+      "duration": 16.9,
+      "narration": "include，in 表示里面。小黑把橙色餐盘收进盒子，再合上盖子，餐盘成为整体的一部分。现代英语里，include 就是包括。The price includes breakfast，价格包含早餐。这里说的是费用包含什么，不需要真的有一个盒子。",
+      "captions": [
+        {
+          "from": 0,
+          "to": 2.1807869918699185,
+          "text": "include，in 表示里面。"
+        },
+        {
+          "from": 2.1807869918699185,
+          "to": 6.133463414634146,
+          "text": "小黑把橙色餐盘收进盒子，再合上盖子，餐盘成为整体的一部分。"
+        },
+        {
+          "from": 6.133463414634146,
+          "to": 8.723147967479674,
+          "text": "现代英语里，include 就是包括。"
+        },
+        {
+          "from": 8.723147967479674,
+          "to": 12.675824390243902,
+          "text": "The price includes breakfast，"
+        },
+        {
+          "from": 12.675824390243902,
+          "to": 13.629918699186991,
+          "text": "价格包含早餐。"
+        },
+        {
+          "from": 13.629918699186991,
+          "to": 16.7648,
+          "text": "这里说的是费用包含什么，不需要真的有一个盒子。"
+        }
+      ],
+      "transitionOut": {
+        "type": "white-fade",
+        "duration": 0.12
+      },
+      "layers": [
+        {
+          "kind": "text",
+          "id": "include-word-word",
+          "from": 0.056333333333333326,
+          "duration": 16.595799999999997,
+          "enter": "smooth-rise",
+          "enterDuration": 0.45,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 95,
+          "y": 125,
+          "width": 830,
+          "fontSize": 88,
+          "fontWeight": 820,
+          "runs": [
+            {
+              "text": "in",
+              "color": "primary"
+            },
+            {
+              "text": "clude",
+              "color": "accent"
+            },
+            {
+              "text": "",
+              "color": "primary"
+            }
+          ],
+          "runMotion": "assemble"
+        },
+        {
+          "kind": "text",
+          "id": "include-word-formula",
+          "from": 0.9576666666666664,
+          "duration": 15.694466666666663,
+          "enter": "smooth-slide",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 103,
+          "y": 295,
+          "width": 790,
+          "fontSize": 36,
+          "fontWeight": 740,
+          "runs": [
+            {
+              "text": "in- + clude：关在里面",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "id": "include-word-before",
+          "src": "assets/replica/clud-clus/include-before.png",
+          "from": 0,
+          "duration": 3.492666666666666,
+          "enter": "none",
+          "exit": "none",
+          "x": 995,
+          "y": 105,
+          "width": 835,
+          "height": 675,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "include-word-change",
+          "src": "assets/replica/clud-clus/include-change.png",
+          "from": 3.492666666666666,
+          "duration": 3.0419999999999994,
+          "enter": "none",
+          "exit": "none",
+          "x": 995,
+          "y": 105,
+          "width": 835,
+          "height": 675,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "include-word-result",
+          "src": "assets/replica/clud-clus/include-result.png",
+          "from": 6.5346666666666655,
+          "duration": 10.36533333333333,
+          "enter": "none",
+          "exit": "none",
+          "x": 995,
+          "y": 105,
+          "width": 835,
+          "height": 675,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "text",
+          "id": "include-word-meaning",
+          "from": 4.450333333333333,
+          "duration": 12.201799999999999,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 83,
+          "y": 515,
+          "width": 825,
+          "fontSize": 46,
+          "fontWeight": 800,
+          "align": "center",
+          "runs": [
+            {
+              "text": "包括；包含",
+              "color": "accent"
+            }
+          ]
+        }
+      ],
+      "start": 20.866666666666667
+    },
+    {
+      "id": "exclude-word",
+      "duration": 15.033333333333333,
+      "narration": "exclude，ex 表示外面。这次小黑合上盒子，把餐盘留在外面，就是不包括。The price excludes breakfast，价格不含早餐。include 和 exclude 放进同一个句子，早餐算不算在费用里，答案正好相反。",
+      "captions": [
+        {
+          "from": 0,
+          "to": 2.022110734463277,
+          "text": "exclude，ex 表示外面。"
+        },
+        {
+          "from": 2.022110734463277,
+          "to": 4.928894915254237,
+          "text": "这次小黑合上盒子，把餐盘留在外面，就是不包括。"
+        },
+        {
+          "from": 4.928894915254237,
+          "to": 8.593970621468927,
+          "text": "The price excludes breakfast，"
+        },
+        {
+          "from": 8.593970621468927,
+          "to": 9.47864406779661,
+          "text": "价格不含早餐。"
+        },
+        {
+          "from": 9.47864406779661,
+          "to": 12.764574011299434,
+          "text": "include 和 exclude 放进同一个句子，"
+        },
+        {
+          "from": 12.764574011299434,
+          "to": 14.913066666666666,
+          "text": "早餐算不算在费用里，答案正好相反。"
+        }
+      ],
+      "transitionOut": {
+        "type": "white-fade",
+        "duration": 0.12
+      },
+      "layers": [
+        {
+          "kind": "text",
+          "id": "exclude-word-word",
+          "from": 0.050111111111111106,
+          "duration": 14.76273333333333,
+          "enter": "smooth-rise",
+          "enterDuration": 0.45,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 980,
+          "y": 125,
+          "width": 830,
+          "fontSize": 88,
+          "fontWeight": 820,
+          "runs": [
+            {
+              "text": "ex",
+              "color": "primary"
+            },
+            {
+              "text": "clude",
+              "color": "accent"
+            },
+            {
+              "text": "",
+              "color": "primary"
+            }
+          ],
+          "runMotion": "assemble"
+        },
+        {
+          "kind": "text",
+          "id": "exclude-word-formula",
+          "from": 0.8518888888888888,
+          "duration": 13.960955555555554,
+          "enter": "smooth-slide",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 988,
+          "y": 295,
+          "width": 790,
+          "fontSize": 36,
+          "fontWeight": 740,
+          "runs": [
+            {
+              "text": "ex- + clude：关在外面",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "id": "exclude-word-before",
+          "src": "assets/replica/clud-clus/exclude-before.png",
+          "from": 0,
+          "duration": 2.5055555555555555,
+          "enter": "none",
+          "exit": "none",
+          "x": 55,
+          "y": 105,
+          "width": 835,
+          "height": 675,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "exclude-word-change",
+          "src": "assets/replica/clud-clus/exclude-change.png",
+          "from": 2.5055555555555555,
+          "duration": 1.8039999999999996,
+          "enter": "none",
+          "exit": "none",
+          "x": 55,
+          "y": 105,
+          "width": 835,
+          "height": 675,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "exclude-word-result",
+          "src": "assets/replica/clud-clus/exclude-result.png",
+          "from": 4.309555555555555,
+          "duration": 10.723777777777777,
+          "enter": "none",
+          "exit": "none",
+          "x": 55,
+          "y": 105,
+          "width": 835,
+          "height": 675,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "text",
+          "id": "exclude-word-meaning",
+          "from": 3.9587777777777777,
+          "duration": 10.854066666666666,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 968,
+          "y": 515,
+          "width": 825,
+          "fontSize": 46,
+          "fontWeight": 800,
+          "align": "center",
+          "runs": [
+            {
+              "text": "排除；不包括",
+              "color": "accent"
+            }
+          ]
+        }
+      ],
+      "start": 37.766666666666666
+    },
+    {
+      "id": "conclude-word",
+      "duration": 16.666666666666668,
+      "narration": "conclude 带着合拢、收束的词源线索。小黑整理完桌上的材料，合上文件夹，讨论告一段落。它可以表示结束，也可以表示得出结论。We concluded that the plan was workable，我们得出结论，方案可行。conclude that 后面接完整的判断。",
+      "captions": [
+        {
+          "from": 0,
+          "to": 2.6382495026996304,
+          "text": "conclude 带着合拢、收束的词源线索。"
+        },
+        {
+          "from": 2.6382495026996304,
+          "to": 5.516339869281047,
+          "text": "小黑整理完桌上的材料，合上文件夹，讨论告一段落。"
+        },
+        {
+          "from": 5.516339869281047,
+          "to": 7.674907644217108,
+          "text": "它可以表示结束，也可以表示得出结论。"
+        },
+        {
+          "from": 7.674907644217108,
+          "to": 12.351804489911906,
+          "text": "We concluded that the plan was workable，"
+        },
+        {
+          "from": 12.351804489911906,
+          "to": 13.790849673202615,
+          "text": "我们得出结论，方案可行。"
+        },
+        {
+          "from": 13.790849673202615,
+          "to": 16.54901960784314,
+          "text": "conclude that 后面接完整的判断。"
+        }
+      ],
+      "transitionOut": {
+        "type": "white-fade",
+        "duration": 0.12
+      },
+      "layers": [
+        {
+          "kind": "text",
+          "id": "conclude-word-word",
+          "from": 0.04901960784313726,
+          "duration": 16.401960784313726,
+          "enter": "smooth-rise",
+          "enterDuration": 0.4,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 130,
+          "y": 50,
+          "width": 1660,
+          "fontSize": 88,
+          "fontWeight": 840,
+          "align": "center",
+          "runs": [
+            {
+              "text": "con",
+              "color": "primary"
+            },
+            {
+              "text": "clude",
+              "color": "accent"
+            },
+            {
+              "text": "",
+              "color": "primary"
+            }
+          ],
+          "runMotion": "assemble"
+        },
+        {
+          "kind": "text",
+          "id": "conclude-word-formula",
+          "from": 0.6862745098039216,
+          "duration": 15.764705882352944,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.32,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 310,
+          "y": 165,
+          "width": 1300,
+          "fontSize": 35,
+          "fontWeight": 740,
+          "align": "center",
+          "runs": [
+            {
+              "text": "con- + clude：合拢、收束",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "id": "conclude-word-before",
+          "src": "assets/replica/clud-clus/conclude-before.png",
+          "from": 0,
+          "duration": 3.3333333333333335,
+          "enter": "none",
+          "exit": "none",
+          "x": 425,
+          "y": 215,
+          "width": 1070,
+          "height": 590,
+          "fit": "contain",
+          "contentScale": 1.22
+        },
+        {
+          "kind": "image",
+          "id": "conclude-word-change",
+          "src": "assets/replica/clud-clus/conclude-change.png",
+          "from": 3.3333333333333335,
+          "duration": 2.6470588235294117,
+          "enter": "none",
+          "exit": "none",
+          "x": 425,
+          "y": 215,
+          "width": 1070,
+          "height": 590,
+          "fit": "contain",
+          "contentScale": 1.22
+        },
+        {
+          "kind": "image",
+          "id": "conclude-word-result",
+          "src": "assets/replica/clud-clus/conclude-result.png",
+          "from": 5.980392156862745,
+          "duration": 10.686274509803923,
+          "enter": "none",
+          "exit": "none",
+          "x": 425,
+          "y": 215,
+          "width": 1070,
+          "height": 590,
+          "fit": "contain",
+          "contentScale": 1.22
+        },
+        {
+          "kind": "text",
+          "id": "conclude-word-meaning",
+          "from": 3.9215686274509807,
+          "duration": 12.529411764705882,
+          "enter": "smooth-rise",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 410,
+          "y": 765,
+          "width": 1100,
+          "fontSize": 43,
+          "fontWeight": 820,
+          "align": "center",
+          "runs": [
+            {
+              "text": "结束；得出结论",
+              "color": "accent"
+            }
+          ]
+        }
+      ],
+      "start": 52.8
+    },
+    {
+      "id": "preclude-word",
+      "duration": 18.033333333333335,
+      "narration": "preclude，pre 表示在前。小黑在球滚过去之前，关上小闸门，通路被堵住。这个画面用来记阻止、使不可能。Heavy rain precluded outdoor activities，大雨使户外活动无法进行。留意 preclude someone from doing something，表示使某人无法做某事。",
+      "captions": [
+        {
+          "from": 0,
+          "to": 2.0537324840764333,
+          "text": "preclude，pre 表示在前。"
+        },
+        {
+          "from": 2.0537324840764333,
+          "to": 4.563849964614295,
+          "text": "小黑在球滚过去之前，关上小闸门，通路被堵住。"
+        },
+        {
+          "from": 4.563849964614295,
+          "to": 6.275293701344657,
+          "text": "这个画面用来记阻止、使不可能。"
+        },
+        {
+          "from": 6.275293701344657,
+          "to": 10.725047416843596,
+          "text": "Heavy rain precluded outdoor activities，"
+        },
+        {
+          "from": 10.725047416843596,
+          "to": 12.094202406227884,
+          "text": "大雨使户外活动无法进行。"
+        },
+        {
+          "from": 12.094202406227884,
+          "to": 16.65805237084218,
+          "text": "留意 preclude someone from doing something，"
+        },
+        {
+          "from": 16.65805237084218,
+          "to": 17.913111111111114,
+          "text": "表示使某人无法做某事。"
+        }
+      ],
+      "transitionOut": {
+        "type": "white-fade",
+        "duration": 0.12
+      },
+      "layers": [
+        {
+          "kind": "text",
+          "id": "preclude-word-word",
+          "from": 0.050092592592592605,
+          "duration": 17.762833333333337,
+          "enter": "smooth-rise",
+          "enterDuration": 0.45,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 95,
+          "y": 125,
+          "width": 830,
+          "fontSize": 88,
+          "fontWeight": 820,
+          "runs": [
+            {
+              "text": "pre",
+              "color": "primary"
+            },
+            {
+              "text": "clude",
+              "color": "accent"
+            },
+            {
+              "text": "",
+              "color": "primary"
+            }
+          ],
+          "runMotion": "assemble"
+        },
+        {
+          "kind": "text",
+          "id": "preclude-word-formula",
+          "from": 0.8515740740740741,
+          "duration": 16.961351851851855,
+          "enter": "smooth-slide",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 103,
+          "y": 295,
+          "width": 790,
+          "fontSize": 36,
+          "fontWeight": 740,
+          "runs": [
+            {
+              "text": "pre- + clude：提前堵住",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "id": "preclude-word-before",
+          "src": "assets/replica/clud-clus/preclude-before.png",
+          "from": 0,
+          "duration": 3.005555555555556,
+          "enter": "none",
+          "exit": "none",
+          "x": 995,
+          "y": 105,
+          "width": 835,
+          "height": 675,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "preclude-word-change",
+          "src": "assets/replica/clud-clus/preclude-change.png",
+          "from": 3.005555555555556,
+          "duration": 2.5046296296296298,
+          "enter": "none",
+          "exit": "none",
+          "x": 995,
+          "y": 105,
+          "width": 835,
+          "height": 675,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "preclude-word-result",
+          "src": "assets/replica/clud-clus/preclude-result.png",
+          "from": 5.510185185185186,
+          "duration": 12.52314814814815,
+          "enter": "none",
+          "exit": "none",
+          "x": 995,
+          "y": 105,
+          "width": 835,
+          "height": 675,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "text",
+          "id": "preclude-word-meaning",
+          "from": 3.9573148148148154,
+          "duration": 13.855611111111113,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 83,
+          "y": 515,
+          "width": 825,
+          "fontSize": 46,
+          "fontWeight": 800,
+          "align": "center",
+          "runs": [
+            {
+              "text": "阻止；使不可能",
+              "color": "accent"
+            }
+          ]
+        }
+      ],
+      "start": 69.46666666666667
+    },
+    {
+      "id": "seclude-word",
+      "duration": 18.566666666666666,
+      "narration": "seclude，se 带着分开、离开的意思。小黑把自己的小阅读角用帘子隔开，安静独处。seclude 是使隔离、使独处，日常更容易遇到形容词 secluded，比如 a secluded village，一个僻静的村庄。它强调远离人群，不能直接等同于排除名单。",
+      "captions": [
+        {
+          "from": 0,
+          "to": 3.1184858974358973,
+          "text": "seclude，se 带着分开、离开的意思。"
+        },
+        {
+          "from": 3.1184858974358973,
+          "to": 6.095222435897437,
+          "text": "小黑把自己的小阅读角用帘子隔开，安静独处。"
+        },
+        {
+          "from": 6.095222435897437,
+          "to": 8.50496153846154,
+          "text": "seclude 是使隔离、使独处，"
+        },
+        {
+          "from": 8.50496153846154,
+          "to": 11.339948717948719,
+          "text": "日常更容易遇到形容词 secluded，"
+        },
+        {
+          "from": 11.339948717948719,
+          "to": 15.592429487179489,
+          "text": "比如 a secluded village，一个僻静的村庄。"
+        },
+        {
+          "from": 15.592429487179489,
+          "to": 18.427416666666666,
+          "text": "它强调远离人群，不能直接等同于排除名单。"
+        }
+      ],
+      "transitionOut": {
+        "type": "white-fade",
+        "duration": 0.12
+      },
+      "layers": [
+        {
+          "kind": "text",
+          "id": "seclude-word-word",
+          "from": 0.058020833333333334,
+          "duration": 18.253354166666664,
+          "enter": "smooth-rise",
+          "enterDuration": 0.45,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 980,
+          "y": 125,
+          "width": 830,
+          "fontSize": 88,
+          "fontWeight": 820,
+          "runs": [
+            {
+              "text": "se",
+              "color": "primary"
+            },
+            {
+              "text": "clude",
+              "color": "accent"
+            },
+            {
+              "text": "",
+              "color": "primary"
+            }
+          ],
+          "runMotion": "assemble"
+        },
+        {
+          "kind": "text",
+          "id": "seclude-word-formula",
+          "from": 0.9863541666666666,
+          "duration": 17.325020833333333,
+          "enter": "smooth-slide",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 988,
+          "y": 295,
+          "width": 790,
+          "fontSize": 36,
+          "fontWeight": 740,
+          "runs": [
+            {
+              "text": "se- + clude：隔开、关起",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "id": "seclude-word-before",
+          "src": "assets/replica/clud-clus/seclude-before.png",
+          "from": 0,
+          "duration": 3.8293749999999998,
+          "enter": "none",
+          "exit": "none",
+          "x": 55,
+          "y": 105,
+          "width": 835,
+          "height": 675,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "seclude-word-change",
+          "src": "assets/replica/clud-clus/seclude-change.png",
+          "from": 3.8293749999999998,
+          "duration": 3.133125,
+          "enter": "none",
+          "exit": "none",
+          "x": 55,
+          "y": 105,
+          "width": 835,
+          "height": 675,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "seclude-word-result",
+          "src": "assets/replica/clud-clus/seclude-result.png",
+          "from": 6.9625,
+          "duration": 11.604166666666666,
+          "enter": "none",
+          "exit": "none",
+          "x": 55,
+          "y": 105,
+          "width": 835,
+          "height": 675,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "text",
+          "id": "seclude-word-meaning",
+          "from": 4.583645833333334,
+          "duration": 13.727729166666666,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 968,
+          "y": 515,
+          "width": 825,
+          "fontSize": 46,
+          "fontWeight": 800,
+          "align": "center",
+          "runs": [
+            {
+              "text": "使隔离；使独处",
+              "color": "accent"
+            }
+          ]
+        }
+      ],
+      "start": 87.5
+    },
+    {
+      "id": "clud-clus-examples",
+      "duration": 18.5,
+      "narration": "把词放进句子，先看它控制什么。价格包括早餐，用 includes；价格不含早餐，用 excludes。研究得出结论，可以写 conclude that。天气让活动办不成，用 preclude。词源负责帮助回忆，句子的意思和搭配负责最后判断。",
+      "transitionOut": {
+        "type": "white-fade",
+        "duration": 0.12
+      },
+      "layers": [
+        {
+          "kind": "text",
+          "id": "examples-title",
+          "from": 0,
+          "duration": 18.5,
+          "enter": "none",
+          "enterDuration": 0.35,
+          "x": 110,
+          "y": 65,
+          "width": 1500,
+          "fontSize": 64,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "搭配决定怎么用",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "example-1",
+          "from": 0.4625,
+          "duration": 18.037499999999998,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 100,
+          "y": 230,
+          "width": 1350,
+          "fontSize": 40,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "The price includes breakfast.",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "example-2",
+          "from": 4.046875,
+          "duration": 14.453125,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 100,
+          "y": 365,
+          "width": 1350,
+          "fontSize": 40,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "The price excludes breakfast.",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "example-3",
+          "from": 7.515625,
+          "duration": 10.984375,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 100,
+          "y": 505,
+          "width": 1320,
+          "fontSize": 42,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "conclude that + 完整句子",
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "example-4",
+          "from": 10.984375,
+          "duration": 7.515625,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 100,
+          "y": 645,
+          "width": 1380,
+          "fontSize": 37,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "preclude someone from doing sth",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "id": "examples-art",
+          "src": "assets/replica/clud-clus/exclude-result.png",
+          "from": 0,
+          "duration": 9.25,
+          "enter": "none",
+          "exit": "none",
+          "x": 1440,
+          "y": 180,
+          "width": 360,
+          "height": 320,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "examples-art2",
+          "src": "assets/replica/clud-clus/preclude-result.png",
+          "from": 9.25,
+          "duration": 9.25,
+          "enter": "none",
+          "exit": "none",
+          "x": 1430,
+          "y": 540,
+          "width": 360,
+          "height": 300,
+          "fit": "contain",
+          "contentScale": 1.18
+        }
+      ],
+      "captions": [
+        {
+          "from": 0,
+          "to": 2.2951562500000002,
+          "text": "把词放进句子，先看它控制什么。"
+        },
+        {
+          "from": 2.2951562500000002,
+          "to": 5.04934375,
+          "text": "价格包括早餐，用 includes；"
+        },
+        {
+          "from": 5.04934375,
+          "to": 7.803531250000001,
+          "text": "价格不含早餐，用 excludes。"
+        },
+        {
+          "from": 7.803531250000001,
+          "to": 11.628791666666668,
+          "text": "研究得出结论，可以写 conclude that。"
+        },
+        {
+          "from": 11.628791666666668,
+          "to": 14.689,
+          "text": "天气让活动办不成，用 preclude。"
+        },
+        {
+          "from": 14.689,
+          "to": 18.361250000000002,
+          "text": "词源负责帮助回忆，句子的意思和搭配负责最后判断。"
+        }
+      ],
+      "start": 106.06666666666666
+    },
+    {
+      "id": "clud-clus-practice",
+      "duration": 20.066666666666666,
+      "narration": "试两道小题。第一句，The fee blank meals，费用不包含餐食，选 includes 还是 excludes？第二句，The injury blank him from playing，受伤使他无法参赛，选 concluded 还是 precluded？给自己两秒钟，把句子里的意思想完整。",
+      "transitionOut": {
+        "type": "white-fade",
+        "duration": 0.12
+      },
+      "layers": [
+        {
+          "kind": "text",
+          "id": "practice-title",
+          "from": 0,
+          "duration": 20.066666666666666,
+          "enter": "none",
+          "enterDuration": 0.35,
+          "x": 110,
+          "y": 65,
+          "width": 1700,
+          "fontSize": 58,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "选词：不包含，还是无法进行？",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "practice-1",
+          "from": 0.6688888888888889,
+          "duration": 19.397777777777776,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 120,
+          "y": 235,
+          "width": 1360,
+          "fontSize": 52,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "The fee ____ meals.",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "practice-hint1",
+          "from": 1.4715555555555557,
+          "duration": 18.595111111111112,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 120,
+          "y": 350,
+          "width": 1380,
+          "fontSize": 42,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "费用不包含餐食：includes / excludes",
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "practice-2",
+          "from": 8.026666666666667,
+          "duration": 12.04,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 120,
+          "y": 540,
+          "width": 1590,
+          "fontSize": 47,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "The injury ____ him from playing.",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "practice-hint2",
+          "from": 8.829333333333333,
+          "duration": 11.237333333333334,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 120,
+          "y": 670,
+          "width": 1580,
+          "fontSize": 40,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "受伤使他无法参赛：concluded / precluded",
+              "color": "accent"
+            }
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "from": 0,
+          "to": 0.7022192941176469,
+          "text": "试两道小题。"
+        },
+        {
+          "from": 0.7022192941176469,
+          "to": 4.447388862745098,
+          "text": "第一句，The fee blank meals，费用不包含餐食，"
+        },
+        {
+          "from": 4.447388862745098,
+          "to": 7.139229490196078,
+          "text": "选 includes 还是 excludes？"
+        },
+        {
+          "from": 7.139229490196078,
+          "to": 7.841448784313725,
+          "text": "第二句，"
+        },
+        {
+          "from": 7.841448784313725,
+          "to": 11.820691450980389,
+          "text": "The injury blank him from playing，"
+        },
+        {
+          "from": 11.820691450980389,
+          "to": 15.799934117647057,
+          "text": "受伤使他无法参赛，选 concluded 还是 precluded？"
+        },
+        {
+          "from": 15.799934117647057,
+          "to": 17.906591999999996,
+          "text": "给自己两秒钟，把句子里的意思想完整。"
+        }
+      ],
+      "start": 124.56666666666666
+    },
+    {
+      "id": "clud-clus-answers",
+      "duration": 18.933333333333334,
+      "narration": "第一空填 excludes，餐食没有算进费用。第二空填 precluded，受伤让参赛这件事无法进行。excluded him from the team 也能成立，但说的是把他排除出队伍。这两句分别强调是否纳入、能否发生。有些语境会重叠，选择时还要看搭配和上下文。",
+      "transitionOut": {
+        "type": "white-fade",
+        "duration": 0.12
+      },
+      "layers": [
+        {
+          "kind": "text",
+          "id": "answer-title",
+          "from": 0,
+          "duration": 18.933333333333334,
+          "enter": "none",
+          "enterDuration": 0.35,
+          "x": 110,
+          "y": 65,
+          "width": 1700,
+          "fontSize": 62,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "答案：excludes / precluded",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "answer-1",
+          "from": 0.6311111111111111,
+          "duration": 18.30222222222222,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 100,
+          "y": 245,
+          "width": 1040,
+          "fontSize": 58,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "exclude：没有纳入",
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "answer-2",
+          "from": 5.806222222222221,
+          "duration": 13.12711111111111,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 100,
+          "y": 425,
+          "width": 1150,
+          "fontSize": 52,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "preclude：使事情无法发生",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "answer-3",
+          "from": 11.36,
+          "duration": 7.573333333333332,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 100,
+          "y": 630,
+          "width": 1210,
+          "fontSize": 38,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "exclude him from the team\n把他排除出队伍",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "id": "answers-ex",
+          "src": "assets/replica/clud-clus/exclude-result.png",
+          "from": 0,
+          "duration": 6.311111111111111,
+          "enter": "none",
+          "exit": "none",
+          "x": 1350,
+          "y": 190,
+          "width": 450,
+          "height": 420,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "answers-pre",
+          "src": "assets/replica/clud-clus/preclude-result.png",
+          "from": 6.311111111111111,
+          "duration": 12.622222222222222,
+          "enter": "none",
+          "exit": "none",
+          "x": 1300,
+          "y": 380,
+          "width": 500,
+          "height": 430,
+          "fit": "contain",
+          "contentScale": 1.18
+        }
+      ],
+      "captions": [
+        {
+          "from": 0,
+          "to": 3.2479919799498744,
+          "text": "第一空填 excludes，餐食没有算进费用。"
+        },
+        {
+          "from": 3.2479919799498744,
+          "to": 7.202069172932331,
+          "text": "第二空填 precluded，受伤让参赛这件事无法进行。"
+        },
+        {
+          "from": 7.202069172932331,
+          "to": 11.721014536340853,
+          "text": "excluded him from the team 也能成立，"
+        },
+        {
+          "from": 11.721014536340853,
+          "to": 13.415619047619048,
+          "text": "但说的是把他排除出队伍。"
+        },
+        {
+          "from": 13.415619047619048,
+          "to": 15.816308771929824,
+          "text": "这两句分别强调是否纳入、能否发生。"
+        },
+        {
+          "from": 15.816308771929824,
+          "to": 18.781866666666666,
+          "text": "有些语境会重叠，选择时还要看搭配和上下文。"
+        }
+      ],
+      "start": 144.63333333333333
+    },
+    {
+      "id": "clud-clus-summary",
+      "duration": 18.6,
+      "narration": "最后收一下：include 包括，exclude 排除，conclude 结束或得出结论，preclude 阻止，seclude 使独处。CLUD 和 CLUS 都保留关、合拢的词源线索。看到新词，可以先用这个动作帮助回忆，再检查它的现代词义和常见搭配。",
+      "transitionOut": {
+        "type": "none",
+        "duration": 0
+      },
+      "layers": [
+        {
+          "kind": "text",
+          "id": "summary-root",
+          "from": 0,
+          "duration": 18.6,
+          "enter": "none",
+          "enterDuration": 0.35,
+          "x": 100,
+          "y": 60,
+          "width": 1000,
+          "fontSize": 90,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "CLUD / CLUS",
+              "color": "accent"
+            }
+          ],
+          "exit": "none"
+        },
+        {
+          "kind": "text",
+          "id": "summary-core",
+          "from": 0.4650000000000001,
+          "duration": 18.135,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 110,
+          "y": 190,
+          "width": 920,
+          "fontSize": 42,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "CLOSE · SHUT",
+              "color": "primary"
+            }
+          ],
+          "exit": "none"
+        },
+        {
+          "kind": "table",
+          "id": "summary-rows",
+          "from": 1.1625,
+          "duration": 17.4375,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.35,
+          "x": 100,
+          "y": 300,
+          "width": 1030,
+          "height": 550,
+          "rows": [
+            {
+              "word": "include",
+              "meaning": "包括；包含",
+              "accent": "clude"
+            },
+            {
+              "word": "exclude",
+              "meaning": "排除；不包括",
+              "accent": "clude"
+            },
+            {
+              "word": "conclude",
+              "meaning": "结束；得出结论",
+              "accent": "clude"
+            },
+            {
+              "word": "preclude",
+              "meaning": "阻止；使不可能",
+              "accent": "clude"
+            },
+            {
+              "word": "seclude",
+              "meaning": "使隔离；使独处",
+              "accent": "clude"
+            }
+          ],
+          "rowFromStep": 0.55,
+          "wordFontSize": 42,
+          "meaningFontSize": 40,
+          "wordColumnFraction": 0.8,
+          "compact": true,
+          "columns": 1,
+          "exit": "none"
+        },
+        {
+          "kind": "image",
+          "id": "summary-art1",
+          "src": "assets/replica/clud-clus/include-result.png",
+          "from": 0,
+          "duration": 5.8125,
+          "enter": "none",
+          "exit": "none",
+          "x": 1230,
+          "y": 250,
+          "width": 580,
+          "height": 520,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "summary-art2",
+          "src": "assets/replica/clud-clus/preclude-result.png",
+          "from": 5.8125,
+          "duration": 5.8125,
+          "enter": "none",
+          "exit": "none",
+          "x": 1230,
+          "y": 250,
+          "width": 580,
+          "height": 520,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "summary-art3",
+          "src": "assets/replica/clud-clus/seclude-result.png",
+          "from": 11.625,
+          "duration": 6.9750000000000005,
+          "enter": "none",
+          "exit": "none",
+          "x": 1230,
+          "y": 250,
+          "width": 580,
+          "height": 520,
+          "fit": "contain",
+          "contentScale": 1.18
+        }
+      ],
+      "captions": [
+        {
+          "from": 0,
+          "to": 4.070031496062993,
+          "text": "最后收一下：include 包括，exclude 排除，"
+        },
+        {
+          "from": 4.070031496062993,
+          "to": 8.285421259842522,
+          "text": "conclude 结束或得出结论，preclude 阻止，"
+        },
+        {
+          "from": 8.285421259842522,
+          "to": 10.029720472440946,
+          "text": "seclude 使独处。"
+        },
+        {
+          "from": 10.029720472440946,
+          "to": 13.663677165354333,
+          "text": "CLUD 和 CLUS 都保留关、合拢的词源线索。"
+        },
+        {
+          "from": 13.663677165354333,
+          "to": 18.460500000000003,
+          "text": "看到新词，可以先用这个动作帮助回忆，再检查它的现代词义和常见搭配。"
+        }
+      ],
+      "start": 163.56666666666666
+    }
+  ]
+}

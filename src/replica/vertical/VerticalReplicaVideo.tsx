@@ -12,7 +12,6 @@ import {
   estimateTextLines,
   planVerticalScene,
   verticalCaptionsForScene,
-  wordIndexForScene,
   type VerticalCut,
 } from './verticalLayout';
 
@@ -58,17 +57,6 @@ const Headline: React.FC<{cover: ReplicaCoverDefinition; opacity: number}> = ({c
     <div style={{position: 'absolute', left: C.columnLeft, top: C.headerTop + 82, width: C.columnWidth, fontSize: size, fontWeight: 880, lineHeight: 1.15, whiteSpace: 'nowrap', opacity}}>
       <span style={{color: REPLICA_THEME.accent}}>{cover.root}</span>
       <span style={{color: REPLICA_THEME.primary}}> = {cover.chineseMeaning}</span>
-    </div>
-  );
-};
-
-const WordCounter: React.FC<{index: number; total: number}> = ({index, total}) => {
-  const frame = useCurrentFrame();
-  const enter = smoothProgress(frame, 0, 10);
-  return (
-    <div style={{position: 'absolute', right: 1080 - C.columnLeft - C.columnWidth, top: C.headerTop + 4, zIndex: 960, opacity: enter, transform: `translateY(${8 * (1 - enter)}px)`,
-      border: `3px solid ${REPLICA_THEME.accent}`, borderRadius: 999, padding: '4px 20px', fontSize: 32, fontWeight: 850, color: REPLICA_THEME.accent, background: '#fff'}}>
-      第 {index + 1} / {total} 个
     </div>
   );
 };
@@ -159,13 +147,11 @@ export const VerticalReplicaVideo: React.FC<VerticalReplicaVideoProps> = ({story
     <AbsoluteFill style={{backgroundColor: REPLICA_THEME.background, color: REPLICA_THEME.primary, fontFamily: REPLICA_THEME.fontFamily, letterSpacing: 0, overflow: 'hidden'}}>
       <BackgroundMusic storyboard={storyboard} audioManifest={audioManifest} music={backgroundMusic} />
       {storyboard.scenes.map((scene) => {
-        const wordIndex = wordIndexForScene(scene, cover.words);
         return (
           <Sequence key={scene.id} from={sceneStartFrame(scene)} durationInFrames={sceneFrames(scene)} name={scene.id}>
             <SceneNarration scene={scene} storyboard={storyboard} audioManifest={audioManifest} />
             <SceneSfx scene={scene} />
             <VerticalSceneVisuals scene={scene} />
-            {!hideOverlays && wordIndex >= 0 ? <WordCounter index={wordIndex} total={cover.words.length} /> : null}
             {!hideOverlays ? (captionsByScene.get(scene.id) ?? []).map((cue, index) => <CaptionLine key={`${scene.id}-${index}`} cue={cue} />) : null}
           </Sequence>
         );

@@ -1,0 +1,107 @@
+{
+  "reference": {
+    "path": "F:\\抖音卡片英语白色\\outputs\\ten-tain\\ten-tain.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuvj420p",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "146.800000",
+          "nb_frames": "4404",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "146.858667",
+          "nb_frames": "6884"
+        }
+      ],
+      "format": {
+        "duration": "146.858667",
+        "size": "17589725",
+        "bit_rate": "958185"
+      }
+    }
+  },
+  "candidate": {
+    "path": "F:\\抖音卡片英语白色\\outputs\\clud-clus\\clud-clus.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuvj420p",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "182.166667",
+          "nb_frames": "5465",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "182.229333",
+          "nb_frames": "8542"
+        }
+      ],
+      "format": {
+        "duration": "182.229333",
+        "size": "12301367",
+        "bit_rate": "540038"
+      }
+    }
+  },
+  "timestamps": [
+    0.0,
+    9.783911133333334,
+    19.567822266666667,
+    29.3517334,
+    39.135644533333334,
+    48.919555666666675,
+    58.7034668,
+    68.48737793333333,
+    78.27128906666667,
+    88.0552002,
+    97.83911133333335,
+    107.62302246666667,
+    117.4069336,
+    127.19084473333334,
+    136.97475586666667,
+    146.758667
+  ],
+  "contact_sheet": {
+    "columns": 2,
+    "rows": 8,
+    "file": "contact-sheet.png"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "clud-clus",
+  "renderedAt": "2026-10-13T06:46:58.905Z",
+  "draft": false,
+  "cuts": {
+    "full": {
+      "file": "outputs\\clud-clus\\vertical\\clud-clus-vertical.mp4",
+      "compositionId": "CludClusReplicaVertical",
+      "durationSec": 182.16666666666666,
+      "scenes": [
+        {
+          "id": "clud-clus-hook",
+          "start": 0,
+          "word": null
+        },
+        {
+          "id": "clud-clus-root-map",
+          "start": 7.57,
+          "word": null
+        },
+        {
+          "id": "include-word",
+          "start": 20.87,
+          "word": "include"
+        },
+        {
+          "id": "exclude-word",
+          "start": 37.77,
+          "word": "exclude"
+        },
+        {
+          "id": "conclude-word",
+          "start": 52.8,
+          "word": "conclude"
+        },
+        {
+          "id": "preclude-word",
+          "start": 69.47,
+          "word": "preclude"
+        },
+        {
+          "id": "seclude-word",
+          "start": 87.5,
+          "word": "seclude"
+        },
+        {
+          "id": "clud-clus-examples",
+          "start": 106.07,
+          "word": null
+        },
+        {
+          "id": "clud-clus-practice",
+          "start": 124.57,
+          "word": null
+        },
+        {
+          "id": "clud-clus-answers",
+          "start": 144.63,
+          "word": null
+        },
+        {
+          "id": "clud-clus-summary",
+          "start": 163.57,
+          "word": null
+        }
+      ],
+      "media": {
+        "durationSec": 182.229333,
+        "bitRate": 517894,
+        "width": 1080,
+        "height": 1920,
+        "videoCodec": "h264",
+        "audioCodec": "aac"
+      },
+      "contactSheet": "outputs\\clud-clus\\vertical\\review\\full-contact-sheet.jpg",
+      "errors": []
+    },
+    "teaser": {
+      "file": "outputs\\clud-clus\\vertical\\clud-clus-teaser.mp4",
+      "compositionId": "CludClusReplicaVerticalTeaser",
+      "durationSec": 42.9,
+      "scenes": [
+        {
+          "id": "clud-clus-hook",
+          "start": 0,
+          "word": null
+        },
+        {
+          "id": "include-word",
+          "start": 7.57,
+          "word": "include"
+        },
+        {
+          "id": "exclude-word",
+          "start": 24.47,
+          "word": "exclude"
+        },
+        {
+          "id": "vertical-teaser-tail",
+          "start": 39.5,
+          "word": null
+        }
+      ],
+      "media": {
+        "durationSec": 42.944,
+        "bitRate": 512731,
+        "width": 1080,
+        "height": 1920,
+        "videoCodec": "h264",
+        "audioCodec": "aac"
+      },
+      "contactSheet": "outputs\\clud-clus\\vertical\\review\\teaser-contact-sheet.jpg",
+      "errors": []
+    }
+  },
+  "reviewCard": "outputs\\clud-clus\\vertical\\review-card.png"
+}

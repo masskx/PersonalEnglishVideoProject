@@ -322,7 +322,12 @@ for (const [index, scene] of scenes.entries()) {
   const nextSceneStart = scenes[index + 1]?.start ?? storyboard.duration;
   const narrationGap = nextSceneStart - scheduledNarrationEnd;
   const minimumNarrationCoverage = project.quality?.audioSilence?.minimumDurationSec ?? 1.2;
-  if (narrationGap >= minimumNarrationCoverage - EPSILON) {
+  // 与成片 verifier 一致：只允许已记录且覆盖整个间隙的窄暂停窗口。
+  const allowedNarrationPause = (project.quality?.audioSilence?.allowedWindows ?? []).some(
+    (window) => Boolean(window.reason.trim()) &&
+      scheduledNarrationEnd >= window.start - 0.15 && nextSceneStart <= window.end + 0.15,
+  );
+  if (narrationGap >= minimumNarrationCoverage - EPSILON && !allowedNarrationPause) {
     errors.push(
       `${scene.id}: narration ends ${narrationGap.toFixed(3)}s before the next scene; ` +
         `this exceeds the ${minimumNarrationCoverage.toFixed(3)}s coverage gate and would leave ` +

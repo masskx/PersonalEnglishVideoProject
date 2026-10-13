@@ -1,4 +1,4 @@
-import {existsSync, mkdirSync, mkdtempSync, renameSync, rmSync, writeFileSync} from 'node:fs';
+import {existsSync, mkdirSync, mkdtempSync, readFileSync, renameSync, rmSync, writeFileSync} from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
@@ -66,9 +66,33 @@ for (const project of projects) {
   const stageRoot = path.resolve(repoRoot, 'work', 'render-staging');
   mkdirSync(stageRoot, {recursive: true});
   const stage = mkdtempSync(path.join(stageRoot, `${project.slug}-vertical-`));
-  const prepared = prepareRenderPublicDir(project, path.join(stage, 'public'));
+  // 派生的预告尾卡也会新增 SFX；隔离包必须包含实际剪辑引用的全部素材。
+  const derivedScenes = cuts.flatMap((cut) => buildVerticalProps(project, cut).storyboard.scenes);
+  const prepared = prepareRenderPublicDir({...project, storyboard: {
+    ...project.storyboard, scenes: [...project.storyboard.scenes, ...derivedScenes],
+  }}, path.join(stage, 'public'));
   console.log(`Prepared ${prepared.copiedFiles} assets for ${project.slug} (vertical).`);
-  const report: Record<string, unknown> = {slug: project.slug, renderedAt: new Date().toISOString(), draft, cuts: {}};
+  const reportFile = path.join(outDir, `vertical-report${draft ? '-draft' : ''}.json`);
+  const previousCuts = existsSync(reportFile)
+    ? (JSON.parse(readFileSync(reportFile, 'utf8')).cuts ?? {}) : {};
+  const report: Record<string, unknown> = {slug: project.slug, renderedAt: new Date().toISOString(), draft, cuts: {...previousCuts}};
+  // 仅续跑失败的预告时，保留已经存在且尺寸/时长验证通过的完整版记录。
+  if (!cuts.includes('full')) {
+    const fullFile = path.join(outDir, `${project.slug}-vertical${draft ? '-draft' : ''}.mp4`);
+    if (existsSync(fullFile)) {
+      const media = probe(fullFile);
+      const expected = describeVerticalCut(project, 'full');
+      const width = draft ? 540 : 1080;
+      if (media.width !== width || media.height !== width * 16 / 9 ||
+          Math.abs(media.durationSec - expected.durationSec) > 0.25 || media.audioCodec !== 'aac') {
+        throw new Error('Existing full vertical video failed validation; render --cut=full before resuming the teaser.');
+      }
+      (report.cuts as Record<string, unknown>).full = {
+        file: path.relative(repoRoot, fullFile), ...expected, media,
+        contactSheet: path.relative(repoRoot, path.join(outDir, 'review', `full-contact-sheet${draft ? '-draft' : ''}.jpg`)), errors: [],
+      };
+    }
+  }
 
   for (const cut of cuts) {
     const file = path.join(outDir, `${project.slug}-${cut === 'full' ? 'vertical' : 'teaser'}${draft ? '-draft' : ''}.mp4`);
@@ -89,6 +113,7 @@ for (const project of projects) {
     contactSheet(file, sheet, media.durationSec);
     (report.cuts as Record<string, unknown>)[cut] = {file: path.relative(repoRoot, file), ...expected, media, contactSheet: path.relative(repoRoot, sheet), errors};
     if (errors.length) throw new Error(`${project.slug} ${cut}: ${errors.join('; ')}`);
+    writeFileSync(reportFile, `${JSON.stringify(report, null, 2)}\n`, 'utf8');
     console.log(`${project.slug} ${cut}: ${media.durationSec.toFixed(1)}s ${media.width}x${media.height} → ${path.relative(repoRoot, file)}`);
   }
 

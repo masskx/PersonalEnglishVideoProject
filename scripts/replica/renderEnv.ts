@@ -29,5 +29,10 @@ const bundled = (name: string) => {
   return process.platform === 'win32' && existsSync(file) ? file : undefined;
 };
 
-export const ffmpegPath = process.env.FFMPEG_PATH ?? bundled('ffmpeg') ?? 'ffmpeg';
-export const ffprobePath = process.env.FFPROBE_PATH ?? bundled('ffprobe') ?? 'ffprobe';
+// 联系图需要 fps/tile 等完整滤镜；Remotion 的精简版只作未安装系统版时的后备。
+const onPath = (name: string) => (process.env.PATH ?? process.env.Path ?? '')
+  .split(path.delimiter)
+  .some((directory) => existsSync(path.join(directory.replace(/^"|"$/g, ''),
+    process.platform === 'win32' ? `${name}.exe` : name)));
+export const ffmpegPath = process.env.FFMPEG_PATH ?? (onPath('ffmpeg') ? 'ffmpeg' : bundled('ffmpeg')) ?? 'ffmpeg';
+export const ffprobePath = process.env.FFPROBE_PATH ?? (onPath('ffprobe') ? 'ffprobe' : bundled('ffprobe')) ?? 'ffprobe';

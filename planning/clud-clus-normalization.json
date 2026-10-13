@@ -1,0 +1,82 @@
+[
+  {
+    "word": "include",
+    "sources": [
+      "work\\experiments\\clud-clus-anchors\\include-a.png",
+      "work\\experiments\\clud-clus-anchors\\include-change.png",
+      "work\\experiments\\clud-clus-anchors\\include-result.png"
+    ],
+    "commonCrop": [
+      649,
+      264,
+      1473,
+      927
+    ],
+    "scale": 1.3205429864253393,
+    "method": "同组三态统一裁掉透明外边并同比例居中；未修改角色或道具内容。"
+  },
+  {
+    "word": "exclude",
+    "sources": [
+      "work\\experiments\\clud-clus-anchors\\exclude-a.png",
+      "work\\experiments\\clud-clus-anchors\\exclude-change.png",
+      "work\\experiments\\clud-clus-anchors\\exclude-result.png"
+    ],
+    "commonCrop": [
+      754,
+      351,
+      1604,
+      916
+    ],
+    "scale": 1.5495929203539822,
+    "method": "同组三态统一裁掉透明外边并同比例居中；未修改角色或道具内容。"
+  },
+  {
+    "word": "conclude",
+    "sources": [
+      "work\\experiments\\clud-clus-anchors\\conclude-a.png",
+      "work\\experiments\\clud-clus-anchors\\conclude-change.png",
+      "work\\experiments\\clud-clus-anchors\\conclude-result.png"
+    ],
+    "commonCrop": [
+      538,
+      254,
+      1569,
+      948
+    ],
+    "scale": 1.2615561959654178,
+    "method": "同组三态统一裁掉透明外边并同比例居中；未修改角色或道具内容。"
+  },
+  {
+    "word": "preclude",
+    "sources": [
+      "work\\experiments\\clud-clus-anchors\\preclude-a.png",
+      "work\\experiments\\clud-clus-anchors\\preclude-change.png",
+      "work\\experiments\\clud-clus-anchors\\preclude-result.png"
+    ],
+    "commonCrop": [
+      582,
+      378,
+      1514,
+      843
+    ],
+    "scale": 1.6700429184549357,
+    "method": "同组三态统一裁掉透明外边并同比例居中；未修改角色或道具内容。"
+  },
+  {
+    "word": "seclude",
+    "sources": [
+      "work\\experiments\\clud-clus-anchors\\seclude-a.png",
+      "work\\experiments\\clud-clus-anchors\\seclude-change.png",
+      "work\\experiments\\clud-clus-anchors\\seclude-result.png"
+    ],
+    "commonCrop": [
+      641,
+      189,
+      1395,
+      958
+    ],
+    "scale": 1.13851755526658,
+    "method": "同组三态统一裁掉透明外边并同比例居中；未修改角色或道具内容。"
+  }
+]

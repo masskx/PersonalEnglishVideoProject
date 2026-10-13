@@ -1180,3 +1180,12 @@ Validated 2256 exclusive image-frame intervals; extracted/reviewed 128 encoded f
 - 已验收视觉锚点 `mit-miss-sunburst-full` 从 `work/experiments/` 移到 `references/visual-baseline/`；`production-defaults.json` 同步。`work/` 改为本机临时目录，整个 gitignore。
 - `AGENTS.md` 重写为单一规则入口（判断请求、仓库地图、命令顺序、交付清单、标准、禁止事项、收尾检查）；`新会话制作入口`、README、PROJECT_MEMORY、`00-新手先看.txt`、英文指南同步。PROJECT_MEMORY 精简为当前状态与教训。
 - 新增 `scripts/replica/renderEnv.ts` 统一 Chrome 与 ffmpeg/ffprobe 路径（Windows / macOS / Linux，可用环境变量覆盖）；`vertical:stills` 联系图改用 concat 列表以兼容 Windows ffmpeg。`package.json` 去掉已停用命令，新增 `writing:*` 命令，`lint`/`test` 指向真实检查。
+
+## 2026-10-13 — CLUD / CLUS 词根视频交付
+
+- 按台账、注册表、各栏目、outputs 与本机 work 查重后，选择未制作的 CLUD / CLUS 家族，覆盖 include、exclude、conclude、preclude、seclude；词源助记与现代义分开说明，词典核对与原创练习见本期 content-qa.md。
+- 内置 image_gen 生成本期 15 张独立 before/change/result 透明位图，沿用已验收小黑锚点；每词先比较两张母版候选，再从同一母版编辑动作。淘汰图仅在 work，运行时没有跨期引用。
+- 正式交付 outputs/clud-clus：横屏 1920×1080 与竖屏 1080×1920 完整版均约 182.167 秒；另有 42.9 秒预告、复习卡、双封面、9 张小红书词卡、发布文案、draft release 和整片预览。
+- 最终横屏全时间轴 8 页、183 张每秒抽帧、20 个三态切点和 16 组品牌配对画面已检查；最终竖屏五页联系图、首尾帧、预告、复习卡和小红书联系图已检查。总结单列、末帧白底保留，竖屏移除词序导航标签。
+- 修正校验器读取有理由的窄思考窗口、竖屏按期隔离素材、完整版 FFmpeg 路径选择、衍生预告音效打包及分段报告保存；本期预告省略独立词根地图以保持 30–45 秒，配置集中在 growth-promotion。
+- TypeScript、project:test（含密钥扫描）与媒体验证通过；project:check 为 PASS_WITH_NOTES，仅保留既有全仓发布冲突与人工复核提醒。台账登记 produced，release 仍为 draft，未发布；完整连续观看、手机外放与耳机听审待完成，本地密钥未改动。

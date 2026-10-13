@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "clud-clus-five-words",
+  "model": "built-in image_gen",
+  "size": "2048x1152",
+  "assetDir": "public/assets/replica/clud-clus",
+  "runtimeAssetDirectoryMustBeEpisodeLocal": true,
+  "assetProvenance": {
+    "assetDir": "public/assets/replica/clud-clus",
+    "generationMethod": "内置 image_gen，每词选定母版，再从同一母版分别编辑 change / result。",
+    "referenceAnchor": "assets/visual-baselines/mit-miss-sunburst/result.png",
+    "runtimeSourceScan": "本期所有路径仅指向 public/assets/replica/clud-clus。",
+    "reusedRuntimeSources": []
+  },
+  "visualReview": {
+    "reviewedAt": "2026-10-13",
+    "status": "approved",
+    "reviewer": "Codex white-background visual review",
+    "notes": [
+      "五词均有独立三态；白底联系页已逐组查看，实心白点眼、厚实黑色主体、完整手脚通过。",
+      "餐盘进盒与留在外面可区分；文件夹收束、闸门闭合、帘子隔开动作清楚。",
+      "每个词选择 a 母版；change 与 result 分别从同一母版编辑。include-b 的方形餐盘、preclude-b 的脚印构图未采用。",
+      "preclude-result 初版地线过粗未通过边缘 QA，已从原母版重绘，旧图只存 work。",
+      "15/15 图像通过 2048×1152、透明角、覆盖率与零残绿检查；本期运行时无跨期图片。"
+    ]
+  },
+  "shots": [
+    {
+      "id": "include",
+      "word": "include",
+      "sceneId": "include-word",
+      "meaning": "包括；包含",
+      "example": "The price includes breakfast.",
+      "visualAction": "小黑把餐盘收进盒子，再合上盖子；餐盘成为整体的一部分。",
+      "purpose": "in- + clude：关在里面",
+      "summaryRow": "包括；包含",
+      "reference": "public/assets/replica/clud-clus/include-before.png",
+      "states": [
+        {
+          "id": "before",
+          "prompt": "One solid-black worker stands left of a small open pale-blue lunch box and holds one orange plate outside it. The lid is upright, box only half the character height."
+        },
+        {
+          "id": "change",
+          "prompt": "The same worker lowers the same orange plate halfway into the same open lunch box; lid, box, camera and character scale unchanged."
+        },
+        {
+          "id": "result",
+          "prompt": "The same worker has placed the plate fully inside the same box and closes the lid; one hand rests on the closed lid. No plate remains outside."
+        }
+      ]
+    },
+    {
+      "id": "exclude",
+      "word": "exclude",
+      "sceneId": "exclude-word",
+      "meaning": "排除；不包括",
+      "example": "The price excludes breakfast.",
+      "visualAction": "小黑合上盒子，把橙色餐盘留在外面，表示不纳入整体。",
+      "purpose": "ex- + clude：关在外面",
+      "summaryRow": "排除；不包括",
+      "reference": "public/assets/replica/clud-clus/exclude-before.png",
+      "states": [
+        {
+          "id": "before",
+          "prompt": "One solid-black worker stands left of a small open pale-blue box. One orange plate lies clearly outside the box on its right. Worker holds the lid open."
+        },
+        {
+          "id": "change",
+          "prompt": "Same worker starts closing the lid of the same box while the orange plate stays outside, untouched on the right."
+        },
+        {
+          "id": "result",
+          "prompt": "Same worker firmly holds the closed lid. The same orange plate is still clearly outside on the right, excluded from the box."
+        }
+      ]
+    },
+    {
+      "id": "conclude",
+      "word": "conclude",
+      "sceneId": "conclude-word",
+      "meaning": "结束；得出结论",
+      "example": "We concluded that the plan was workable.",
+      "visualAction": "小黑收齐材料并合上文件夹，以讨论收束助记结束和得出结论。",
+      "purpose": "con- + clude：合拢、收束",
+      "summaryRow": "结束；得出结论",
+      "reference": "public/assets/replica/clud-clus/conclude-before.png",
+      "states": [
+        {
+          "id": "before",
+          "prompt": "One solid-black worker faces a small open orange folder on a short pale-blue desk. Two blank cream sheets are beside the folder; worker reaches for them."
+        },
+        {
+          "id": "change",
+          "prompt": "Same worker gathers the two blank sheets inside the same open orange folder on the same desk."
+        },
+        {
+          "id": "result",
+          "prompt": "Same worker presses the same orange folder closed on the same desk. The two sheets are inside. Calm resolved posture, no text or symbols."
+        }
+      ]
+    },
+    {
+      "id": "preclude",
+      "word": "preclude",
+      "sceneId": "preclude-word",
+      "meaning": "阻止；使不可能",
+      "example": "Heavy rain precluded outdoor activities.",
+      "visualAction": "小黑在球通过之前关上局部小闸门，把通路堵住，助记阻止发生。",
+      "purpose": "pre- + clude：提前堵住",
+      "summaryRow": "阻止；使不可能",
+      "reference": "public/assets/replica/clud-clus/preclude-before.png",
+      "states": [
+        {
+          "id": "before",
+          "prompt": "One solid-black worker stands next to a small hand-drawn orange hinged gate on a short blue ground line, gate open. One small orange ball sits well before the gate. Gate lower than the worker shoulders."
+        },
+        {
+          "id": "change",
+          "prompt": "Same worker swings the same small gate shut across the local path. Same ball is closer but has not crossed the gate."
+        },
+        {
+          "id": "result",
+          "prompt": "Same worker holds the small gate fully closed. The orange ball is stopped on the near side, path beyond remains empty. Keep the worker dominant and gate subordinate."
+        }
+      ]
+    },
+    {
+      "id": "seclude",
+      "word": "seclude",
+      "sceneId": "seclude-word",
+      "meaning": "使隔离；使独处",
+      "example": "a secluded village",
+      "visualAction": "小黑拉起阅读角的帘子，将自己与外界隔开，助记独处、僻静。",
+      "purpose": "se- + clude：隔开、关起",
+      "summaryRow": "使隔离；使独处",
+      "reference": "public/assets/replica/clud-clus/seclude-before.png",
+      "states": [
+        {
+          "id": "before",
+          "prompt": "One solid-black worker sits holding a small blank orange book on a low stool. A small pale-blue curtain is gathered on the right of the reading nook; worker holds its cord."
+        },
+        {
+          "id": "change",
+          "prompt": "Same worker pulls the curtain halfway across the same reading nook. Keep eyes, book, stool and body visible; thin hand-drawn curtain, not a huge panel."
+        },
+        {
+          "id": "result",
+          "prompt": "Same worker sits quietly with the orange book inside a partly enclosed nook, curtain drawn to the side leaving a generous opening with face and body visible. No extra person."
+        }
+      ]
+    }
+  ],
+  "sourceDir": "assets/green-screen/clud-clus",
+  "contactSheet": "outputs/clud-clus/review/poses-white.jpg"
+}

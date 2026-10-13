@@ -6,6 +6,7 @@ import {renderStill, selectComposition} from '@remotion/renderer';
 import {getReplicaProject} from '../../src/replica/projects/registry';
 import {buildVerticalProps, verticalCompositionId} from '../../src/replica/vertical/verticalProjects';
 import {browserExecutable, ffmpegPath} from './renderEnv';
+import {prepareRenderPublicDir} from './prepareRenderPublicDir';
 
 /**
  * 竖屏版式快速抽查：一次打包，按场景中点和结尾各取一帧，拼成联系图。
@@ -16,9 +17,11 @@ const projectsArg = process.argv.find((value) => value.startsWith('--project='))
 if (!projectsArg) throw new Error('Missing --project=<slug>[,<slug>].');
 const ffmpeg = ffmpegPath;
 
-const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts'), publicDir: path.resolve('public')});
 for (const slug of projectsArg.split(',')) {
   const project = getReplicaProject(slug);
+  const stagedPublic = prepareRenderPublicDir(project,
+    path.resolve('work', 'render-staging', `${project.slug}-vertical-stills-public`));
+  const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts'), publicDir: stagedPublic.directory});
   const props = buildVerticalProps(project, 'full');
   const id = verticalCompositionId(project, 'full');
   const composition = await selectComposition({serveUrl, id, inputProps: props, browserExecutable});

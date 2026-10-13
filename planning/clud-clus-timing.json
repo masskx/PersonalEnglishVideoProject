@@ -1,0 +1,77 @@
+{
+  "duration": 182.16666666666666,
+  "maxPlaybackRate": 1.1,
+  "practicePause": {
+    "start": 142.61766666666665,
+    "end": 144.63333333333333,
+    "reason": "原创检索练习：旁白要求给自己两秒，题目保持可读，随后讲答案。"
+  },
+  "scenes": [
+    {
+      "id": "clud-clus-hook",
+      "start": 0,
+      "duration": 7.566666666666666,
+      "audioDuration": 8.229
+    },
+    {
+      "id": "clud-clus-root-map",
+      "start": 7.566666666666666,
+      "duration": 13.3,
+      "audioDuration": 14.55
+    },
+    {
+      "id": "include-word",
+      "start": 20.866666666666667,
+      "duration": 16.9,
+      "audioDuration": 18.495
+    },
+    {
+      "id": "exclude-word",
+      "start": 37.766666666666666,
+      "duration": 15.033333333333333,
+      "audioDuration": 16.457
+    },
+    {
+      "id": "conclude-word",
+      "start": 52.8,
+      "duration": 16.666666666666668,
+      "audioDuration": 18.26
+    },
+    {
+      "id": "preclude-word",
+      "start": 69.46666666666667,
+      "duration": 18.033333333333335,
+      "audioDuration": 19.749
+    },
+    {
+      "id": "seclude-word",
+      "start": 87.5,
+      "duration": 18.566666666666666,
+      "audioDuration": 20.323
+    },
+    {
+      "id": "clud-clus-examples",
+      "start": 106.06666666666666,
+      "duration": 18.5,
+      "audioDuration": 20.271
+    },
+    {
+      "id": "clud-clus-practice",
+      "start": 124.56666666666666,
+      "duration": 20.066666666666666,
+      "audioDuration": 18.051
+    },
+    {
+      "id": "clud-clus-answers",
+      "start": 144.63333333333333,
+      "duration": 18.933333333333334,
+      "audioDuration": 20.741
+    },
+    {
+      "id": "clud-clus-summary",
+      "start": 163.56666666666666,
+      "duration": 18.6,
+      "audioDuration": 20.375
+    }
+  ]
+}

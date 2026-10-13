@@ -1,3 +1,4 @@
+import {cludClusProject} from './cludClus';
 import {pressProject} from './press';
 import {regProject} from './reg';
 import {ferProject} from './fer';
@@ -43,6 +44,7 @@ export const replicaProjects: readonly ReplicaProjectDefinition[] = [
   credProject,
   tenTainProject,
   ponPosProject,
+  cludClusProject,
 ];
 
 export const getReplicaProject = (slug: string) => {

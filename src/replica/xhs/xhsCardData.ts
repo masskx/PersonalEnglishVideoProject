@@ -23,6 +23,7 @@ export type XhsDeck = {
   englishMeaning: string;
   chineseMeaning: string;
   hook: string;
+  familyLabel?: string;
   heroArt: string;
   words: XhsWordCard[];
 };
@@ -69,6 +70,7 @@ export const buildXhsDeck = (project: ReplicaProjectDefinition, series: string):
     englishMeaning: cover.englishMeaning,
     chineseMeaning: cover.chineseMeaning,
     hook: cover.hook,
+    familyLabel: cover.familyLabel,
     heroArt: cover.illustrationPath,
     words,
   };

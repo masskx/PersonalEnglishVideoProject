@@ -1,0 +1,91 @@
+{
+  "root": "CLUD / CLUS",
+  "core": "close / shut",
+  "words": [
+    {
+      "word": "include",
+      "prefix": "in",
+      "meaning": "包括；包含",
+      "duration": 15,
+      "layout": "left",
+      "formula": "in- + clude：关在里面",
+      "example": "The price includes breakfast.",
+      "translation": "价格包含早餐。",
+      "narration": "include，in 表示里面。小黑把橙色餐盘收进盒子，再合上盖子，餐盘成为整体的一部分。现代英语里，include 就是包括。The price includes breakfast，价格包含早餐。这里说的是费用包含什么，不需要真的有一个盒子。",
+      "action": "小黑把餐盘收进盒子，再合上盖子；餐盘成为整体的一部分。",
+      "states": [
+        "One solid-black worker stands left of a small open pale-blue lunch box and holds one orange plate outside it. The lid is upright, box only half the character height.",
+        "The same worker lowers the same orange plate halfway into the same open lunch box; lid, box, camera and character scale unchanged.",
+        "The same worker has placed the plate fully inside the same box and closes the lid; one hand rests on the closed lid. No plate remains outside."
+      ]
+    },
+    {
+      "word": "exclude",
+      "prefix": "ex",
+      "meaning": "排除；不包括",
+      "duration": 15,
+      "layout": "right",
+      "formula": "ex- + clude：关在外面",
+      "example": "The price excludes breakfast.",
+      "translation": "价格不含早餐。",
+      "narration": "exclude，ex 表示外面。这次小黑合上盒子，把餐盘留在外面，就是不包括。The price excludes breakfast，价格不含早餐。include 和 exclude 放进同一个句子，早餐算不算在费用里，答案正好相反。",
+      "action": "小黑合上盒子，把橙色餐盘留在外面，表示不纳入整体。",
+      "states": [
+        "One solid-black worker stands left of a small open pale-blue box. One orange plate lies clearly outside the box on its right. Worker holds the lid open.",
+        "Same worker starts closing the lid of the same box while the orange plate stays outside, untouched on the right.",
+        "Same worker firmly holds the closed lid. The same orange plate is still clearly outside on the right, excluded from the box."
+      ]
+    },
+    {
+      "word": "conclude",
+      "prefix": "con",
+      "meaning": "结束；得出结论",
+      "duration": 17,
+      "layout": "hero",
+      "formula": "con- + clude：合拢、收束",
+      "example": "We concluded that the plan was workable.",
+      "translation": "我们得出结论：方案可行。",
+      "narration": "conclude 带着合拢、收束的词源线索。小黑整理完桌上的材料，合上文件夹，讨论告一段落。它可以表示结束，也可以表示得出结论。We concluded that the plan was workable，我们得出结论，方案可行。conclude that 后面接完整的判断。",
+      "action": "小黑收齐材料并合上文件夹，以讨论收束助记结束和得出结论。",
+      "states": [
+        "One solid-black worker faces a small open orange folder on a short pale-blue desk. Two blank cream sheets are beside the folder; worker reaches for them.",
+        "Same worker gathers the two blank sheets inside the same open orange folder on the same desk.",
+        "Same worker presses the same orange folder closed on the same desk. The two sheets are inside. Calm resolved posture, no text or symbols."
+      ]
+    },
+    {
+      "word": "preclude",
+      "prefix": "pre",
+      "meaning": "阻止；使不可能",
+      "duration": 18,
+      "layout": "left",
+      "formula": "pre- + clude：提前堵住",
+      "example": "Heavy rain precluded outdoor activities.",
+      "translation": "大雨使户外活动无法进行。",
+      "narration": "preclude，pre 表示在前。小黑在球滚过去之前，关上小闸门，通路被堵住。这个画面用来记阻止、使不可能。Heavy rain precluded outdoor activities，大雨使户外活动无法进行。留意 preclude someone from doing something，表示使某人无法做某事。",
+      "action": "小黑在球通过之前关上局部小闸门，把通路堵住，助记阻止发生。",
+      "states": [
+        "One solid-black worker stands next to a small hand-drawn orange hinged gate on a short blue ground line, gate open. One small orange ball sits well before the gate. Gate lower than the worker shoulders.",
+        "Same worker swings the same small gate shut across the local path. Same ball is closer but has not crossed the gate.",
+        "Same worker holds the small gate fully closed. The orange ball is stopped on the near side, path beyond remains empty. Keep the worker dominant and gate subordinate."
+      ]
+    },
+    {
+      "word": "seclude",
+      "prefix": "se",
+      "meaning": "使隔离；使独处",
+      "duration": 16,
+      "layout": "right",
+      "formula": "se- + clude：隔开、关起",
+      "example": "a secluded village",
+      "translation": "一个僻静的村庄",
+      "narration": "seclude，se 带着分开、离开的意思。小黑把自己的小阅读角用帘子隔开，安静独处。seclude 是使隔离、使独处，日常更容易遇到形容词 secluded，比如 a secluded village，一个僻静的村庄。它强调远离人群，不能直接等同于排除名单。",
+      "action": "小黑拉起阅读角的帘子，将自己与外界隔开，助记独处、僻静。",
+      "states": [
+        "One solid-black worker sits holding a small blank orange book on a low stool. A small pale-blue curtain is gathered on the right of the reading nook; worker holds its cord.",
+        "Same worker pulls the curtain halfway across the same reading nook. Keep eyes, book, stool and body visible; thin hand-drawn curtain, not a huge panel.",
+        "Same worker sits quietly with the orange book inside a partly enclosed nook, curtain drawn to the side leaving a generous opening with face and body visible. No extra person."
+      ]
+    }
+  ]
+}

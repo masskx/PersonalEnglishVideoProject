@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T01:13:05.944Z",
+  "generatedAt": "2026-10-13T06:59:22.351Z",
   "scope": "Local file existence and configured metadata; not platform publication or content approval.",
   "projects": [
     {
@@ -1491,6 +1491,75 @@
           "report": "outputs/pon-pos/cover-landscape-report.json",
           "recordedInput": "work/render-staging/pon-pos-HaptWU/cover-landscape.png",
           "currentFile": "outputs/pon-pos/cover-landscape.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        }
+      ]
+    },
+    {
+      "slug": "clud-clus",
+      "title": "CLUD / CLUS = close / shut 词根讲解",
+      "directory": "outputs/clud-clus",
+      "configuredSeconds": 182.16666666666666,
+      "sceneCount": 11,
+      "renderer": "default",
+      "words": [
+        "include",
+        "exclude",
+        "conclude",
+        "preclude",
+        "seclude"
+      ],
+      "searchTerms": "CLUD / CLUS CLOSE · SHUT 关 · 合拢",
+      "ttsModel": "cosyvoice-v3-flash",
+      "voice": "longanhuan",
+      "imageModel": "gpt-image-2 (built-in image_gen)",
+      "releaseStatus": "draft",
+      "folderSaysPublished": false,
+      "statusConflict": false,
+      "duplicateDirectories": false,
+      "contentQa": "pending",
+      "files": {
+        "clud-clus.mp4": true,
+        "cover.png": true,
+        "cover-landscape.png": true,
+        "publish-copy.md": true,
+        "release.json": true,
+        "content-qa.md": true,
+        "render-report.json": true,
+        "cover-report.json": true,
+        "cover-landscape-report.json": true
+      },
+      "locations": {
+        "video": "outputs/clud-clus/clud-clus.mp4",
+        "cover": "outputs/clud-clus/cover.png",
+        "landscapeCover": "outputs/clud-clus/cover-landscape.png",
+        "copy": "outputs/clud-clus/publish-copy.md",
+        "draft": "work/drafts/clud-clus/draft.mp4",
+        "review": "outputs/clud-clus/review",
+        "audio": "public/assets/audio/replica/clud-clus",
+        "illustrations": "public/assets/replica/clud-clus",
+        "imageSources": "assets/green-screen/clud-clus"
+      },
+      "historicalReports": [
+        {
+          "report": "outputs/clud-clus/render-report.json",
+          "recordedInput": "work/render-staging/clud-clus-MeZRV7/clud-clus.mp4",
+          "currentFile": "outputs/clud-clus/clud-clus.mp4",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/clud-clus/cover-report.json",
+          "recordedInput": "work/render-staging/clud-clus-MeZRV7/cover.png",
+          "currentFile": "outputs/clud-clus/cover.png",
+          "currentFileExists": true,
+          "note": "Historical report retained; current file mapping is not a new acceptance."
+        },
+        {
+          "report": "outputs/clud-clus/cover-landscape-report.json",
+          "recordedInput": "work/render-staging/clud-clus-MeZRV7/cover-landscape.png",
+          "currentFile": "outputs/clud-clus/cover-landscape.png",
           "currentFileExists": true,
           "note": "Historical report retained; current file mapping is not a new acceptance."
         }

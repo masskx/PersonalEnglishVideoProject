@@ -41,11 +41,12 @@ export const buildVerticalProps = (project: ReplicaProjectDefinition, cut: Verti
   const words = project.cover.words;
   const taught = countTaughtWordScenes(project.storyboard, words);
   const shown = Math.min(growth.vertical.teaser.wordScenes, taught);
+  const overrides = growth.vertical.teaser.episodeOverrides as Record<string, {includeRootMap?: boolean}>;
   const storyboard = buildVerticalStoryboard(project.storyboard, {
     cut,
     words,
     teaserWordScenes: growth.vertical.teaser.wordScenes,
-    teaserIncludeRootMap: growth.vertical.teaser.includeRootMap,
+    teaserIncludeRootMap: overrides[project.slug]?.includeRootMap ?? growth.vertical.teaser.includeRootMap,
     teaserTail: cut === 'teaser' ? teaserTail(project, Math.max(1, words.length - shown)) : undefined,
   });
   return {storyboard, audioManifest: project.audioManifest, backgroundMusic: project.backgroundMusic, cover: project.cover, cut};

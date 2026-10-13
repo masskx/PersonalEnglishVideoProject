@@ -1,0 +1,9 @@
+{
+  "source": "https://www.iconfont.cn/",
+  "searchedAt": "2026-10-13",
+  "queries": ["关门"],
+  "resultsObserved": 377,
+  "icons": [],
+  "rejected": [{"name":"关门、关门中、Open close关门候选","sourceUrl":"https://www.iconfont.cn/search/index?searchType=icon&q=%E5%85%B3%E9%97%A8","reason":"与本期小黑亲自关盒子、关闸门的动作重复；搜索页没有单个作品明确商用许可，未下载或使用。"}],
+  "decision": "本期不加入外部图标；语义已由小黑动作和词素文字表达。"
+}

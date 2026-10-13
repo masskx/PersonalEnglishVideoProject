@@ -20,6 +20,9 @@
     "teaser": {
       "includeRootMap": true,
       "wordScenes": 2,
+      "episodeOverrides": {
+        "clud-clus": {"includeRootMap": false}
+      },
       "note": "预告片 = 开头钩子 + 词根总览 + 前两个词，约 30–45 秒；用于拉新和提高完播，完整版放合集。"
     },
     "endCardSeconds": 4.5,

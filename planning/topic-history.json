@@ -815,6 +815,54 @@
       }
     ],
     "latestDelivery": "outputs/pon-pos"
+    },
+    {
+      "id": "clud-clus",
+      "column": "root-word",
+      "title": "CLUD / CLUS：关在里面、挡在外面与结束",
+      "aliases": [
+        "clud",
+        "clude",
+        "clus",
+        "claud",
+        "claus",
+        "claudere"
+      ],
+      "coreTeachingObjective": "用 close / shut 的词源线索解释 include、exclude、conclude、preclude、seclude，辨析排除与阻止，并练习现代搭配。",
+      "status": "produced",
+      "selectionRecord": {
+        "checkedAt": "2026-10-13",
+        "checkedSources": [
+          "planning/topic-history.json",
+          "src/replica/projects/registry.ts",
+          "src/cet-*",
+          "outputs/",
+          "work/",
+          "planning/content-plan.json",
+          "docs/production-log.md"
+        ],
+        "result": "未发现此词根家族的成片或进行中草稿。"
+      },
+      "artifacts": [
+        "outputs/clud-clus/clud-clus.mp4",
+        "outputs/clud-clus/cover.png",
+        "outputs/clud-clus/cover-landscape.png",
+        "outputs/clud-clus/publish-copy.md",
+        "outputs/clud-clus/content-qa.md",
+        "outputs/clud-clus/release.json",
+        "outputs/clud-clus/review/REVIEW.md",
+        "outputs/clud-clus/review/full-preview/full-preview.mp4",
+        "outputs/clud-clus/review/full-preview/full-preview-report.json",
+        "outputs/clud-clus/vertical/clud-clus-vertical.mp4",
+        "outputs/clud-clus/vertical/clud-clus-teaser.mp4",
+        "outputs/clud-clus/vertical/review-card.png",
+        "outputs/clud-clus/vertical/vertical-report.json",
+        "outputs/clud-clus/xiaohongshu/contact-sheet.jpg",
+        "outputs/clud-clus/xiaohongshu/xhs-note.md"
+      ],
+      "latestDelivery": "outputs/clud-clus",
+      "publicationStatus": "未发布",
+      "reviewStatus": "15/15 本期三态插图通过；182.167 秒横屏与竖屏、42.9 秒预告、双封面及 9 张小红书卡已交付；全时间轴联系图、关键切点与首尾帧已检查；TypeScript、project:test、密钥扫描与媒体验证通过，project:check 为 PASS_WITH_NOTES。完整连续观看、手机外放与耳机听审待完成，release 保持 draft。"
     }
   ]
 }

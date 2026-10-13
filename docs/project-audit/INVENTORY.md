@@ -1,6 +1,6 @@
 # 作品清单
 
-自动扫描时间：2026-10-13T01:13:05.944Z。更新命令：npm run project:inventory。日常使用 [项目管理页](../../PROJECTS.html)。
+自动扫描时间：2026-10-13T06:59:22.351Z。更新命令：npm run project:inventory。日常使用 [项目管理页](../../PROJECTS.html)。
 
 读取当前注册表和真实目录，时长来自配置。目录后缀、release 状态和平台实际发布是不同证据，冲突保留待核对。此命令只更新导航页和清单，不改视频、封面、文案、release 或内容检查单。
 
@@ -27,6 +27,7 @@
 | cred | 178.60 | 16 | draft | 普通目录 | 一致 | 待人工核对 | [打开](../../outputs/cred/README.md) |
 | ten-tain | 146.80 | 14 | draft | 普通目录 | 一致 | 待人工核对 | [打开](../../outputs/ten-tain/README.md) |
 | pon-pos | 168.45 | 14 | draft | 普通目录 | 一致 | 有文件，待审 | [打开](../../outputs/pon-pos/README.md) |
+| clud-clus | 182.17 | 11 | draft | 普通目录 | 一致 | 待人工核对 | [打开](../../outputs/clud-clus/README.md) |
 
 
 [详细机器清单](inventory.json) · [项目入口](../../README.md)
