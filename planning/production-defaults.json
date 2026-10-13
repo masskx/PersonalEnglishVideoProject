@@ -4,14 +4,15 @@
   "currentProductionBaseline": "docs/当前制作基准.md",
   "baselineScope": "all_english_video_columns",
   "currentAcceptedSample": "outputs/ten-tain/ten-tain.mp4",
-  "visualReferenceSample": "work/experiments/mit-miss-sunburst-full/mit-miss-sunburst-full.mp4",
+  "visualReferenceSample": "references/visual-baseline/mit-miss-sunburst-full/mit-miss-sunburst-full.mp4",
   "deprecatedProductionRules": [
     "seedream_or_jimeng_as_default_image_generation",
     "svg_or_code_geometry_as_primary_illustration",
     "repeated_ppt_like_card_template",
     "perpetual_drift_or_random_bounce_motion",
     "midpoint_stills_without_whole_video_preview",
-    "separate_low_spec_cet_visual_pipeline"
+    "separate_low_spec_cet_visual_pipeline",
+    "wan_image_to_video_dynamic_xiaohei"
   ],
   "startupGuide": "docs/新会话制作入口.md",
   "productionRouterSkill": ".agents/skills/make-xiaohei-english-video/SKILL.md",
@@ -42,7 +43,7 @@
   "visualBaseline": {
     "method": "same_anchor_reference_edit_before_change_result",
     "reference": "assets/visual-baselines/mit-miss-sunburst/README.md",
-    "reviewVideo": "work/experiments/mit-miss-sunburst-full/mit-miss-sunburst-full.mp4",
+    "reviewVideo": "references/visual-baseline/mit-miss-sunburst-full/mit-miss-sunburst-full.mp4",
     "fullCanvasSvgOverlay": false,
     "xiaoheiRequired": true,
     "whiteCanvas": true,

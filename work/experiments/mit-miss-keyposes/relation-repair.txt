@@ -1,1 +1,0 @@
-admit / permit / dismiss / mission: rejected generated triplets changed actor counts or failed the spatial relationship. Reused the accepted first-pass raster actor and composited three discrete, fixed-camera states with code-drawn door/barrier/direction/flag. No interpolation, image floating or Wan. Source: work\experiments\mit-miss-keyposes\rejected\1789220655769-admit-1.png

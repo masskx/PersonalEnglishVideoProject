@@ -17,5 +17,5 @@
     "jsx": "react-jsx",
     "types": ["node"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "scripts/replica/**/*.ts", "scripts/meme-vocab/**/*.ts", "remotion.config.ts"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "scripts/replica/**/*.ts", "remotion.config.ts"]
 }

@@ -108,9 +108,8 @@ writeChanged(path.join(outputDir, 'INVENTORY.md'), `# 作品清单
 | --- | ---: | ---: | --- | --- | --- | --- | --- |
 ${rows.join('\n')}
 
-另有 [interrupt 竖屏原型](../../work/experiments/meme-vocab/interrupt/)，已归入试验区，保留占位图和草稿标记。
 
-[详细机器清单及历史报告路径映射](inventory.json) · [2026-09-11 历史审计](ARTIFACT_AUDIT.md) · [项目入口](../../README.md)
+[详细机器清单](inventory.json) · [项目入口](../../README.md)
 `);
 writeChanged(path.join(root, 'PROJECTS.html'), buildProjectDashboard(projects, generatedAt));
 console.log(`Updated PROJECTS.html and ${projects.length} project indexes; ${projects.filter((p) => p.statusConflict).length} status conflicts remain explicit. No media or release records changed.`);

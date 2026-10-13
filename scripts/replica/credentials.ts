@@ -18,9 +18,9 @@ export type CredentialSpec = {
 export const CREDENTIALS: readonly CredentialSpec[] = [
   {
     name: 'DASHSCOPE_API_KEY',
-    purpose: '阿里云百炼：CosyVoice 配音、Wan 图生视频',
+    purpose: '阿里云百炼：CosyVoice 配音',
     host: 'dashscope.aliyuncs.com',
-    commands: ['replica:voice', 'translation:voice', 'cet6:voice', 'replica:wan:*'],
+    commands: ['replica:voice', 'translation:voice', 'cet6:voice'],
   },
   {
     name: 'OPENAI_API_KEY',
