@@ -8,6 +8,7 @@ import {buildVerticalProps, describeVerticalCut, reviewCardFrame, supportsTeaser
 import type {VerticalCut} from '../../src/replica/vertical/verticalLayout';
 import {prepareRenderPublicDir} from './prepareRenderPublicDir';
 import {resolveDeliveryPaths} from './deliveryPaths';
+import {browserCliArgs, ffmpegPath, ffprobePath} from './renderEnv';
 
 /**
  * 抖音竖屏交付：完整版、预告短片和复习卡。复用横屏期的配音、插图与音乐，不重新生成素材。
@@ -26,18 +27,8 @@ const projects: ReplicaProjectDefinition[] = args.includes('--all')
   ? replicaProjects.filter((project) => project.cover)
   : [getReplicaProject(arg('project') ?? (() => { throw new Error('Missing --project=<slug> or --all.'); })())];
 
-const windowsChrome = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
-const linuxHeadless = '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell';
-const browser =
-  process.env.REMOTION_BROWSER_EXECUTABLE ??
-  (process.platform === 'win32' && existsSync(windowsChrome) ? windowsChrome : existsSync(linuxHeadless) ? linuxHeadless : undefined);
-const compositorDir = path.resolve(repoRoot, 'node_modules/@remotion/compositor-win32-x64-msvc');
-const ffprobe =
-  process.env.FFPROBE_PATH ??
-  (process.platform === 'win32' && existsSync(path.join(compositorDir, 'ffprobe.exe')) ? path.join(compositorDir, 'ffprobe.exe') : 'ffprobe');
-const ffmpeg =
-  process.env.FFMPEG_PATH ??
-  (process.platform === 'win32' && existsSync(path.join(compositorDir, 'ffmpeg.exe')) ? path.join(compositorDir, 'ffmpeg.exe') : 'ffmpeg');
+const ffprobe = ffprobePath;
+const ffmpeg = ffmpegPath;
 const concurrency = Math.max(1, Math.min(4, os.cpus().length));
 
 const run = (command: string, commandArgs: string[]) => {
@@ -47,8 +38,7 @@ const run = (command: string, commandArgs: string[]) => {
   if (result.status !== 0) throw new Error(`${executable} ${commandArgs.join(' ')} failed with exit ${result.status}.`);
 };
 
-const quote = (value: string) => (process.platform === 'win32' ? `"${value}"` : value);
-const browserArgs = browser ? [`--browser-executable=${quote(browser)}`] : [];
+const browserArgs = browserCliArgs();
 
 const probe = (file: string) => {
   const result = spawnSync(ffprobe, ['-v', 'error', '-show_entries', 'format=duration,bit_rate:stream=codec_type,codec_name,width,height', '-of', 'json', file], {encoding: 'utf8'});

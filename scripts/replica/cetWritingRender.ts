@@ -3,10 +3,10 @@ import path from 'node:path';
 import {bundle} from '@remotion/bundler';
 import {getCompositions, renderStill, renderMedia} from '@remotion/renderer';
 import timeline from '../../src/cet-writing/timeline.json';
+import {browserExecutable} from './renderEnv';
 
 const base='outputs/cet4-writing-paragraph-v2';
 mkdirSync(`${base}/review`,{recursive:true});
-const browserExecutable='C:/Program Files/Google/Chrome/Application/chrome.exe';
 const serveUrl=await bundle({entryPoint:path.resolve('src/index.ts'),publicDir:path.resolve(`${base}/public`)});
 const compositions=await getCompositions(serveUrl,{browserExecutable});
 const composition=compositions.find(c=>c.id==='Cet4WritingParagraph')!;
