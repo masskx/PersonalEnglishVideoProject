@@ -1173,3 +1173,10 @@ Validated 2256 exclusive image-frame intervals; extracted/reviewed 128 encoded f
 
 - 新增 `npm run xhs:cards`（`scripts/replica/renderXhsCards.ts`、`src/replica/xhs/`）：1080×1440 图文卡与 `xhs-note.md`，只复用本期素材，独立 public 目录渲染。
 - `replica:produce --stage=deliver` 串联横屏、竖屏、小红书卡片和文案；新增 `scripts/replica/xhsCards.test.ts` 并入 `project:test`。
+
+## 2026-10-13 全项目整理（为本机 Codex 接手）
+
+- 删除可能干扰后续制作的旧内容约 9,300 个文件：`archive/`、`docs/history/`、一次性审计与整理报告、`work/` 下全部试验与草稿、即梦/Seedream 与 Wan 图生视频脚本、meme-vocab 原型、旧关键姿态试验脚本、未被任何分镜或渲染器引用的 `public/assets/` 素材与旧素材源。全部 `outputs/` 交付保留。
+- 已验收视觉锚点 `mit-miss-sunburst-full` 从 `work/experiments/` 移到 `references/visual-baseline/`；`production-defaults.json` 同步。`work/` 改为本机临时目录，整个 gitignore。
+- `AGENTS.md` 重写为单一规则入口（判断请求、仓库地图、命令顺序、交付清单、标准、禁止事项、收尾检查）；`新会话制作入口`、README、PROJECT_MEMORY、`00-新手先看.txt`、英文指南同步。PROJECT_MEMORY 精简为当前状态与教训。
+- 新增 `scripts/replica/renderEnv.ts` 统一 Chrome 与 ffmpeg/ffprobe 路径（Windows / macOS / Linux，可用环境变量覆盖）；`vertical:stills` 联系图改用 concat 列表以兼容 Windows ffmpeg。`package.json` 去掉已停用命令，新增 `writing:*` 命令，`lint`/`test` 指向真实检查。

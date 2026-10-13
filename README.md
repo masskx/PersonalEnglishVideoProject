@@ -1,42 +1,81 @@
-# 小黑英语视频项目
+# 小黑英语视频项目 · Xiaohei English Videos
 
-**第一次使用：双击 [00-打开工作台.html](00-打开工作台.html)。** 首页直接找视频、双封面、文案和投稿入口。无需浏览程序文件夹。
+Short Chinese-language English lessons (root words, word pairs, CET-4/6 methods) starring the black bean
+character 小黑, made with Remotion. Deliveries target Douyin (vertical video) and Xiaohongshu (image cards).
 
-当前四级作文完整交付：[第二版](outputs/cet4-writing-paragraph-v2/index.html)；[原试片](work/experiments/cet4-writing-paragraph/index.html)保留。
+## Start here (English)
 
-**抖音竖屏（2026-10-12 起默认）：** 每期在 `vertical/` 另有竖屏完整版、约 40 秒预告和复习卡，用 `npm run vertical:render -- --project=<slug>` 生成；推广与行动号召配置在 [growth-promotion.json](planning/growth-promotion.json)，英文增长说明见 [growth-playbook-EN.md](docs/growth-playbook-EN.md)。
+| You want to… | Open |
+| --- | --- |
+| Get a finished video, covers, publish text | Double-click [00-打开工作台.html](00-打开工作台.html) (the workbench) |
+| Make videos with local Codex | [docs/LOCAL-CODEX-QUICKSTART-EN.md](docs/LOCAL-CODEX-QUICKSTART-EN.md) |
+| Know what to type to Codex | [docs/CODEX-PROMPT-GUIDE-EN.md](docs/CODEX-PROMPT-GUIDE-EN.md) |
+| Grow views and promote products later | [docs/growth-playbook-EN.md](docs/growth-playbook-EN.md) |
 
-**新会话或更换智能体：先读 [当前视频制作基准](docs/当前制作基准.md) 和 [AGENTS.md](AGENTS.md)。**
-用户未指定题目时，自主选题、
-查重后直接制作；指定题目时按指定内容执行。详见 [长期选题规则](docs/选题与自动制作规则.md)
-和 [主题台账](planning/topic-history.json)。
+Codex reads [AGENTS.md](AGENTS.md) automatically. That file is the single rule set for agents; everything an
+agent needs (commands, folders, quality bar) is linked from it. Old trials and archives were deleted on
+2026-10-13; git history still has them.
 
-跨会话恢复入口：[新会话制作入口](docs/新会话制作入口.md) ·
-[机器默认配置](planning/production-defaults.json) ·
-[项目总制作 Skill](.agents/skills/make-xiaohei-english-video/SKILL.md)。这些文件保存在项目
-磁盘中，新智能体不需要继承旧聊天记忆也能恢复制作判断和当前链路。
+## 中文速览
 
-**日常找作品：双击 [PROJECTS.html](PROJECTS.html)。** 修改或新增项目后，双击根目录的 `刷新项目管理.cmd`，会更新清单并打开管理页。
+- **成片与发布材料：** 双击 [00-打开工作台.html](00-打开工作台.html)；完整作品表见 [PROJECTS.html](PROJECTS.html)，
+  修改后双击 `刷新项目管理.cmd` 或运行 `npm run project:inventory` 刷新。
+- **智能体规则：** [AGENTS.md](AGENTS.md) → [当前视频制作基准](docs/当前制作基准.md) →
+  [新会话制作入口](docs/新会话制作入口.md)（命令顺序与目录）。
+- **当前作品：** 21 期词根/词汇横屏成片（`outputs/<期名>/`，已发布的带“发了”后缀），3 期四六级方法课
+  （四级写作 `cet4-writing-paragraph-v2`、四级翻译 `cet4-translation-main-clause`、六级阅读
+  `cet6-reading-location-paraphrase`）。每期另可生成 `vertical/`（抖音竖屏完整版、预告、复习卡）和
+  `xiaohongshu/`（3:4 图文卡）。
+- **当前基准成片：** [ten / tain](outputs/ten-tain/ten-tain.mp4)；视觉锚点
+  [mit / miss Sunburst](references/visual-baseline/mit-miss-sunburst-full/mit-miss-sunburst-full.mp4)。
 
-管理页可以按词根、单词、中文含义搜索，按本地发布记录筛选，并直接播放最终视频、打开两种封面与发布文案。
+## 下制作指令的方式
 
-新增内容工作台：新建/编辑选题、推进阶段、记录配套资料与复盘数据，支持浏览器保存和 JSON 导入导出。
-当前制作基准：[ten / tain 最新验收成片](outputs/ten-tain/ten-tain.mp4)；视觉动作锚点为
-[mit / miss Sunburst 完整重制版](work/experiments/mit-miss-sunburst-full/README.md)。历史正式版与旧试片继续保留，
-但不再作为新视频规则。
-当前视觉金样：[Sunburst 参考图编辑三姿态](work/experiments/mit-miss-images2-keyposes/README.md)。后续小黑连续动作默认采用“同一母版编辑姿态 + 局部关键帧”，不再叠加遮挡主体的全画布 SVG 机械层。
-新增栏目试片：[四级作文：把观点展开](work/experiments/cet4-writing-paragraph/index.html)，包含完整视频、双封面与可打印练习单。
-后续安排：[四六级内容与资料产品规划](docs/账号内容与资料产品规划.md)；新栏目直接继承当前视频制作基准，
-只按教学目标调整内容结构。
+- 指定题目：`做一期易混词 affect / effect，完整制作并放工作台。`
+- 只指定栏目：`做一个词根视频。`、`做一个四级写作视频。`、`做一个六级阅读定位视频。`
+- 指定材料：`用这道题做一期四级阅读定位，保留题目来源，完整制作。`
 
-**Working locally with Codex (English):** [docs/LOCAL-CODEX-QUICKSTART-EN.md](docs/LOCAL-CODEX-QUICKSTART-EN.md) ·
-小红书图文卡：`npm run xhs:cards -- --project=<slug>`，输出到交付目录 `xiaohongshu/`。
+“完整制作”包含查重、讲稿、配音、小黑关键姿态、文字动效、横屏成片、双封面、抖音竖屏、小红书图文卡、
+发布文案、检查记录和工作台刷新；不会自动发布到平台。
 
-**Prompts and how to keep producing (English):** [docs/CODEX-PROMPT-GUIDE-EN.md](docs/CODEX-PROMPT-GUIDE-EN.md)
+## 目录
+
+```text
+00-打开工作台.html             日常入口：当前成片、封面、文案、投稿入口
+PROJECTS.html                 全部作品表
+outputs/<期名>/                交付：成片、双封面、文案、release.json、content-qa.md、review/、vertical/、xiaohongshu/
+src/replica/                  词根期：注册表、各期分镜与配音清单、vertical/ 竖屏、xhs/ 小红书
+src/cet-writing/ src/cet-translation/ src/cet6-reading/   四六级方法课
+scripts/                      配音、生图、渲染、封面、文案、检查命令
+public/assets/                渲染运行时素材（每期独立目录）
+assets/                       生图源图、视觉基线源图、音乐源、品牌
+references/                   小黑风格来源与已验收视觉锚点
+planning/                     默认配置、选题台账、关键姿态计划、增长配置
+docs/                         规则与说明；*-EN.md 为英文指南
+.agents/skills/               制作 Skill
+work/                         本机临时目录（不进 git，可清空）
+样片/                         早期参照样片
+```
+
+## 常用命令
+
+```bash
+npm run keys:check                                   # 密钥是否设置（只显示长度）
+npm run replica:produce -- --project=<期名> --stage=deliver   # 词根期一条命令交付
+npm run xhs:cards -- --project=<期名>                 # 小红书图文卡（词根期或四六级）
+npm run vertical:render -- --project=<期名>           # 抖音竖屏完整版 + 预告 + 复习卡
+npm run project:test                                 # 回归测试 + 密钥扫描
+npm run project:check                                # 交付文件与运行时素材完整性
+npm run project:inventory                            # 刷新工作台与作品表
+npm run typecheck                                    # TypeScript 检查
+```
+
+更多：[项目管理流程](docs/项目管理流程.md) · [配音与绘图说明](docs/制作说明-配音与绘图.md) ·
+[选题规则](docs/选题与自动制作规则.md) · [选题台账](planning/topic-history.json)。
 
 ## API keys: rules for Claude / 密钥使用规则
 
-The owner may give Claude API keys (DashScope voice, the OpenAI-compatible image relay, Seedream).
+The owner may give Claude API keys (DashScope voice, the OpenAI-compatible image relay; the Seedream key is optional and its route is retired).
 Claude follows these rules in every session. 用户可能会把 API 密钥交给 Claude 使用，每次会话都必须遵守：
 
 1. **Keys stay out of git, always. 密钥永远不进 git。** Never write a key into any tracked file, commit,
@@ -63,75 +102,7 @@ Claude follows these rules in every session. 用户可能会把 API 密钥交给
    Retry failed items a limited number of times; never loop on the whole batch. 只为当前制作的期数调用付费生成，
    失败项有限重试，不整批循环重跑。
 
-## 当前内容
+## 待办
 
-- 保留 17 期横屏视频、34 张封面、配音、绘图素材和发布文案。
-- `interrupt` 竖屏原型归入试验区，现有视频与配音保留，5 张图仍是占位。
-- 原成片保持不变；关键姿态、流畅文字与首条四级作文试片另存 work/experiments。
-
-## 三个常用入口
-
-| 要做什么 | 入口 |
-| --- | --- |
-| 找视频、封面、文案和每期资料 | [项目管理页](PROJECTS.html) |
-| 知道从制作到发布怎么管理 | [项目管理流程](docs/项目管理流程.md) |
-| 了解配音、绘图、素材位置和参数 | [配音与绘图说明](docs/制作说明-配音与绘图.md) |
-
-## 以后怎么下制作指令
-
-- 指定题目：`按当前小黑 Sunburst 链路，做一期易混词 affect / effect，完整制作并放工作台。`
-- 只指定栏目：`做一个四级写作视频。`、`做一个阅读定位视频。`、`做一个翻译拆解视频。`
-- 指定材料：`用这道题做一期四级阅读定位，保留题目来源，完整制作。`
-
-“完整制作”默认包含查重、脚本、配音、小黑画面、关键姿态、文字动效、完整视频、双封面、发布文案、检查记录和工作台刷新；不会自动发布到平台。
-
-工作台首屏只展示当前交付。旧试片、绘图证据和接口测试在页面底部默认收起的“历史版本与技术档案”中；纯中间装配目录不会显示。当前目录盘点见 [工作目录与工作台盘点](docs/project-audit/CURRENT-WORKSPACE-2026-09-19.md)。
-
-## 文件现在放在哪里
-
-```text
-PROJECTS.html                 日常管理页，可直接双击
-outputs/<期名或期名发了>/       最终视频、双封面、文案、发布记录
-  review/                     该期分镜、截图、对比与历史验收资料
-work/drafts/<期名>/             草稿
-work/experiments/              竖屏原型、Wan 历史试验
-work/                         其他既有试验与旧版本（见其 README）
-public/assets/                渲染用音频、透明插图、动态序列、音乐、音效
-assets/                       生图原图、品牌资料、音乐候选等来源素材
-references/                   小黑风格来源、绘图规范等参考资料
-src/                          每期内容、配置与渲染器
-scripts/                      配音、绘图、渲染、整理与检查命令
-.agents/skills/               本项目制作 Skill
-archive/                      可恢复归档、整理前配置与旧文档
-样片/                         原有参考视频
-```
-
-`public/assets/` 保持现有运行时路径，序列帧即使体积较大也保留。原根目录 `bg`、`output`、双层小黑来源文件夹已归位；空的 `config` 已移除。
-
-## 常用管理命令
-
-```powershell
-# 更新管理页、每期导航和作品清单，不生成媒体
-npm run project:inventory
-
-# 检查目录、交付文件和运行时素材
-npm run project:check
-
-# 管理路径和发布记录的回归测试
-npm run project:test
-
-# 检查全部 TypeScript
-npm run typecheck
-```
-
-记录某期状态的命令见 [管理流程](docs/项目管理流程.md)。`published` 只是本地记录，命令不会向抖音或小红书发布。
-
-## 整理中保留的待办
-
-4 期文件夹的“发了”后缀与 release.json 不一致，已在管理页明确标记，未猜测实际发布状态。17 期都已有内容检查单，但需填写真实核对结论；rupt 源稿有一处英文否定缺失，已列入内容待办，本轮保留原内容。
-
-[本次整理与保全结果](docs/project-organization/RESULTS.md) · [当前作品清单](docs/project-audit/INVENTORY.md) · [历史结构审计](docs/project-audit/ARCHITECTURE.md) · [技能资料索引](docs/project-audit/SKILLS.md)
-
-## 当前形式试验
-
-[MIT / MISS 关键姿态测试](work/experiments/mit-miss-keyposes/README.md)：用动作前、关键变化、结果的静态画面替代强行叠加的动效。试验与原版分开，包含完整视频、原版切换播放器、两种封面和检查证据。
+部分“发了”目录与 release.json 不一致，已在工作台标记，未猜测实际发布状态。各期 `content-qa.md` 需填写真实人工核对结论；
+rupt 源稿有一处英文否定缺失，已列入内容待办。

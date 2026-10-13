@@ -1,23 +1,28 @@
-﻿小黑英语：从这里开始
+﻿小黑英语 · START HERE / 从这里开始
 
+[English]
+1. Double-click "00-打开工作台.html" (the workbench). No coding tools needed.
+2. Pick an episode in the first section, play or save the MP4.
+   Each episode folder in outputs\ also has: vertical\ (Douyin vertical cut, teaser, recap card)
+   and xiaohongshu\ (3:4 image cards + xhs-note.md).
+3. Save the two covers, copy the publish text, upload by hand on Douyin / Xiaohongshu / Bilibili.
+4. To make a new video with local Codex, read docs\LOCAL-CODEX-QUICKSTART-EN.md and
+   docs\CODEX-PROMPT-GUIDE-EN.md. Codex reads AGENTS.md automatically.
+
+Folders: outputs = finished deliveries. src, scripts, public, assets = production code and art.
+work = local scratch (not in git; safe to empty). Old trials were deleted on 2026-10-13; git history keeps them.
+
+[中文]
 1. 双击「00-打开工作台.html」。无需启动编程工具。
-2. 首页「拿到成片，准备发布」里选一期，播放或保存 MP4。
-3. 保存竖封面、横封面，复制发布文案。
-4. 点击抖音 / 小红书 / B站投稿入口，登录后手动上传。
+2. 首页选一期，播放或保存 MP4。每期 outputs 目录还有 vertical\（抖音竖屏完整版、预告、复习卡）
+   和 xiaohongshu\（3:4 图文卡与 xhs-note.md）。
+3. 保存竖封面、横封面，复制发布文案，登录抖音 / 小红书 / B站手动上传。
+4. 用本机 Codex 做新视频：直接说“做一个词根视频”或“做一期 spect 词根”“做一个四级翻译视频”。
+   智能体按 AGENTS.md 自主选题、查重、完整制作并刷新工作台。
 
-本轮首选 mit / miss 新版：work\experiments\mit-miss-sunburst-full\mit-miss-sunburst-full.mp4
-最新四级作文新版：outputs\cet4-writing-paragraph-v2\
-旧版仍保留：work\experiments\cet4-writing-paragraph\
+指令判断：
+- 说了具体词根、词组、试题或材料：严格按指定内容制作。
+- 只说“做一个某栏目视频”：自动选择没做过的题目，复用当前完整链路直接制作。
 
-目录分工：outputs 是交付；work 是草稿和旧试验；src、scripts、public 是制作程序与素材，一般不用打开。
-新视频完成后工作台会由智能体刷新，也可双击「刷新项目管理.cmd」。
-以后可直接说“按当前小黑 Sunburst 链路，做一期易混词 affect/effect，完整制作并放工作台”。
-也可以只说“做一个四级作文 / 阅读定位 / 翻译拆解视频”，智能体会按 AGENTS.md 自主选题、查重、完整制作并刷新工作台。
-
-指令判断规则：
-- 你说了具体词根、词组、试题或材料：严格按你指定的内容制作。
-- 你只说“做一个某栏目视频”：自动选择没做过的题目，复用当前完整链路直接制作。
-- 旧试片和技术测试默认收在工作台底部档案中，不占首屏。
-
-换窗口或新开智能体也没关系：项目根 AGENTS.md 会指向“新会话制作入口”、机器默认配置
-和项目总制作 Skill。它们都保存在本项目磁盘中，不依赖当前聊天记录。
+目录分工：outputs 是交付；src、scripts、public、assets 是制作程序与素材；work 是本机临时目录（不进 git，可清空）。
+新视频完成后工作台由智能体刷新，也可双击「刷新项目管理.cmd」。

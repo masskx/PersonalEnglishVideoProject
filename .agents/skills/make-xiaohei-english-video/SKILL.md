@@ -23,7 +23,7 @@ Before production, read `docs/当前制作基准.md`, the repository-root `AGENT
 - If the user supplies a concrete topic, root, word pair, question, or source material, make that
   requested subject. If it already exists, preserve the old version and make a new version.
 - If the user supplies only a column or video type, autonomously choose a suitable unused topic,
-  cross-check the topic ledger and actual outputs/drafts/experiments, register it as in progress,
+  cross-check the topic ledger, the registry, `outputs/` and local `work/` drafts, register it as in progress,
   and continue to a complete deliverable. Do not ask the user to choose an ordinary topic.
 - Discussion, auditing, rule recording, or asking what could be made does not itself authorize a
   new production run.
@@ -50,7 +50,7 @@ Before production, read `docs/当前制作基准.md`, the repository-root `AGENT
   generation or identity reference, never as the runtime source for the new episode.
 - Record `assetDir`, `generationMethod`, `referenceAnchor`, and `runtimeSourceScan` in the
   keypose plan. The white-background contact sheet must label the current episode slug and be
-  reviewed before the full preflight. Keep superseded runtime assets in `work/` or the archive,
+  reviewed before the full preflight. Delete superseded runtime assets or move them to local `work/` (gitignored),
   not in the active episode directory.
 - For new raster illustrations, use the built-in `image_gen` model by default; do not replace a
   requested generated image with SVG, canvas, or code-drawn geometry.
@@ -90,7 +90,7 @@ If a hard gate can be represented as project data, run the project preflight bef
 generation and fail closed when scene bindings or summary coverage are incomplete.
 
 Keep the workbench first screen for current deliverables. Put superseded renders, endpoint tests,
-pose sheets, and assembly intermediates in the collapsed history/technical archive or `work/`.
+pose sheets, and assembly intermediates in local `work/` (gitignored), never in `outputs/`.
 
 Do not revive rules from dated audit snapshots or historical production notes. Those records explain
 how an old episode was made; they do not override the current production baseline.

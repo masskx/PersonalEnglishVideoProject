@@ -10,7 +10,7 @@ Codex session without you repeating them.
 git clone https://github.com/masskx/PersonalEnglishVideoProject.git
 cd PersonalEnglishVideoProject
 git lfs install
-git lfs pull          # downloads videos, images and audio (about 7 GB)
+git lfs pull          # downloads videos, images and audio (several GB)
 npm ci
 copy .env.example .env
 notepad .env          # paste your NEW keys here (rotate the ones shared in chat)
@@ -23,6 +23,36 @@ npm run project:test  # all checks should pass
 
 If Codex reports that it cannot reach DashScope or the image relay, allow network access for that
 Codex session in Codex's sandbox / approval settings. Codex blocks network by default.
+
+## 1b. Every time you start work
+
+```powershell
+git pull
+git lfs pull
+npm run keys:check
+```
+
+Then just type your request to Codex (section 2). Codex reads `AGENTS.md` → `docs/当前制作基准.md` →
+`docs/新会话制作入口.md` on its own; these three files hold the rules, the quality bar and the exact command
+order.
+
+## 1c. How the repository is organised (after the 2026-10-13 cleanup)
+
+| Folder | What it is |
+| --- | --- |
+| `outputs/<episode>/` | Finished deliveries. A `发了` suffix means "already posted" |
+| `src/replica/` | Root-word episodes (registry, storyboards, vertical and Xiaohongshu layouts) |
+| `src/cet-writing/`, `src/cet-translation/`, `src/cet6-reading/` | CET-4/6 method lessons |
+| `scripts/` | Voice, image, render, cover, post-text and check commands |
+| `public/assets/` | Art, audio and music the renderer uses, one folder per episode |
+| `assets/`, `references/` | Source art, the accepted Xiaohei style anchors |
+| `planning/` | Defaults, topic ledger, growth/CTA settings |
+| `docs/` | Rules (Chinese) and these English guides |
+| `work/` | Local scratch only: render staging, drafts, rejected images. Not in git; safe to empty |
+
+Old archives, audit reports, early trials and retired methods (Jimeng/Seedream images, Wan image-to-video
+"dynamic Xiaohei", the meme-vocab prototype) were deleted so Codex cannot pick them up by mistake. Git
+history still has them if you ever need to look back.
 
 ## 2. What to type into Codex
 

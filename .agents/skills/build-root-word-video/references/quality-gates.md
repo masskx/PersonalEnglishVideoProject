@@ -141,39 +141,9 @@ corner-only check; combine row/column occupancy with a white-composite review.
 
 ## 3b. Dynamic Xiaohei gate
 
-Apply this gate when reviewing generated dynamic footage. New Wan generation requires the
-explicit current-task opt-in described in `dynamic-xiaohei.md`; static episodes do not need Wan.
-
-- Require one recorded semantic action, task manifest, source MP4, processing report, and frame
-  directory for every dynamic asset. Use a white-frame report for the preferred RGB path or a
-  matte report for the green-screen fallback. Never record the API key.
-- For the preferred white-background path, require one source MP4, RGB frame directory, and
-  `white_wan_video.py` report per action. Require exactly 150 readable 1664×928 RGB PNGs, no
-  Alpha, four literal-white corners in every source frame, and no visible gray/tinted plate in
-  the final render.
-- Treat global near-neutral highlight normalization as allowed white-level correction, not
-  matting. Reject any method that creates a foreground mask, erases non-neutral pale props, or
-  uses destructive thresholds without reviewing the corrected contact sheet.
-- Render opaque white-backed sequences one frame at a time. Reject two-frame dissolves because
-  they create ghosted characters; use native-speed single-frame ping-pong over a trimmed stable
-  range when the scene exceeds the clip duration.
-- Default a five-second 30fps Wan action to exactly 150 readable RGBA PNGs at one consistent
-  dimension when using the green-screen fallback. For the approved 480P fallback, rebuild to
-  1664x928 with premultiplied alpha.
-- Require no empty frame, unexplained frozen run, identity drift, extra character, camera/scene
-  change, generated text/logo, clipped extremity, broken limb, or changed prop relationship.
-- For the RGBA fallback, inspect alpha-only and 100%/200% white-composite views. Reject green/cyan
-  spill, gray matte, transparent rectangles, hard stair steps, or over-blurred black outlines.
-  Protect thin limbs with soft subpixel alpha rather than a hard binary dilation.
-- For the RGBA fallback, despill the complete nonzero-alpha fringe before and after scaling.
-  Resize premultiplied RGB and alpha separately; straight-RGBA scaling is a failure because
-  invisible green RGB can reappear.
-- Drive PNG frames directly from the Remotion frame at native 30fps. Reject transparent VP9
-  playback, fractional slow-down, duplicate/dropped cadence, or a hard `149 -> 0` loop cut.
-- Review the encoded MP4 at action anticipation, climax, settle, and loop seam. Source-frame QA
-  alone is insufficient.
-- Record accepted/rejected attempts and estimated generation cost. Start at 480P; pay for a higher
-  resolution only when a 480P matte/antialias pass proves source detail is still insufficient.
+Wan / image-to-video generation is retired. Existing `*-motion` frame sequences may be re-rendered
+as they are (150 frames per referenced directory, checked by `npm run project:check`); new episodes
+use static key poses and Remotion keyframes.
 
 ## 4. Typography and safe-area gate
 
