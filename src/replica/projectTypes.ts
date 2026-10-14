@@ -15,6 +15,8 @@ export type ReplicaCoverDefinition = {
   landscapeBadgeLabel?: string;
   footerLabel?: string;
   landscapeFooterLabel?: string;
+  /** 封面左下角的一行说明；默认是词根期的“看动作 · 拆前缀 · 记词族”。 */
+  footerTagline?: string;
   eyebrow?: string;
   root: string;
   englishMeaning: string;

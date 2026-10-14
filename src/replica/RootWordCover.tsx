@@ -201,7 +201,7 @@ export const RootWordCover: React.FC<RootWordCoverProps> = ({cover}) => {
       </div>
 
       <div style={{position: 'absolute', left: 76, right: 76, bottom: 66, display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-        <div style={{fontSize: 24, fontWeight: 700, color: REPLICA_THEME.muted}}>看动作 · 拆前缀 · 记词族</div>
+        <div style={{fontSize: 24, fontWeight: 700, color: REPLICA_THEME.muted}}>{cover.footerTagline ?? '看动作 · 拆前缀 · 记词族'}</div>
         <div style={{fontSize: 24, fontWeight: 900, color: REPLICA_THEME.primary}}>{cover.footerLabel ?? 'ROOT WORDS'}</div>
       </div>
     </AbsoluteFill>
@@ -292,7 +292,7 @@ export const RootWordLandscapeCover: React.FC<RootWordCoverProps> = ({cover}) =>
       </div>
 
       <div style={{position: 'absolute', left: 58, right: 58, bottom: 42, display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-        <div style={{fontSize: 23, fontWeight: 700, color: REPLICA_THEME.muted}}>看动作 · 拆前缀 · 记词族</div>
+        <div style={{fontSize: 23, fontWeight: 700, color: REPLICA_THEME.muted}}>{cover.footerTagline ?? '看动作 · 拆前缀 · 记词族'}</div>
         <div style={{fontSize: 23, fontWeight: 900, color: REPLICA_THEME.primary}}>{cover.landscapeFooterLabel ?? 'ROOT WORDS · 4:3'}</div>
       </div>
     </AbsoluteFill>

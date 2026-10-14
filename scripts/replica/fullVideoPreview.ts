@@ -16,7 +16,7 @@ try {
 } catch {
   // CET and other non-replica compositions use the same preview gate but do not live in the
   // root-word registry. Their delivery folder is still deterministic: outputs/<slug>/.
-  if (projectArg !== 'cet6-reading-location-paraphrase') throw new Error(`Unknown project: ${projectArg}`);
+  if (!existsSync(path.join(repoRoot, 'outputs', projectArg, `${projectArg}.mp4`))) throw new Error(`Unknown project: ${projectArg}`);
 }
 const inputArg = args.find((arg) => arg.startsWith('--input='))?.slice('--input='.length);
 const intervalArg = args.find((arg) => arg.startsWith('--interval='))?.slice('--interval='.length);
