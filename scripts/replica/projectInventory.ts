@@ -79,7 +79,6 @@ const projects = replicaProjects.map((project) => {
 | 内容检查 | [content-qa.md](${to(delivery.contentQa)}) |
 | 本地状态 | [release.json](release.json) |
 | 画面复核与历史资料 | [review/](review/) |
-${existsSync(delivery.draftVideo) ? `| 草稿 | [draft.mp4](${to(delivery.draftVideo)}) |` : ''}
 
 时长：${project.storyboard.duration.toFixed(2)} 秒；场景：${project.storyboard.scenes.length}；本地 release：${String(record.releaseStatus)}。
 ${record.statusConflict ? '**发布记录待核对：目录名有“发了”，release 尚未标为 published。保留原记录，不据此推断平台发布。**' : '本地状态不等于平台发布证据。'}

@@ -15,7 +15,6 @@
 | 本地状态 | [release.json](release.json) |
 | 画面复核与历史资料 | [review/](review/) |
 
-
 时长：136.03 秒；场景：13；本地 release：draft。
 本地状态不等于平台发布证据。
 内容复核：请查看检查单；文件存在不代表已通过。

@@ -18,8 +18,8 @@
           "id": "hook-question",
           "from": 0,
           "duration": 7.566666666666666,
-          "enter": "none",
-          "enterDuration": 0.35,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.3,
           "x": 110,
           "y": 100,
           "width": 1500,
@@ -35,10 +35,10 @@
         {
           "kind": "text",
           "id": "hook-include",
-          "from": 0,
-          "duration": 7.566666666666666,
-          "enter": "none",
-          "enterDuration": 0.35,
+          "from": 0.55,
+          "duration": 7.016666666666667,
+          "enter": "smooth-rise",
+          "enterDuration": 0.34,
           "x": 110,
           "y": 300,
           "width": 860,
@@ -72,10 +72,40 @@
         },
         {
           "kind": "image",
+          "id": "hook-in-before",
+          "src": "assets/replica/clud-clus/include-before.png",
+          "from": 0,
+          "duration": 0.75,
+          "enter": "none",
+          "exit": "none",
+          "x": 1100,
+          "y": 180,
+          "width": 700,
+          "height": 600,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "hook-in-change",
+          "src": "assets/replica/clud-clus/include-change.png",
+          "from": 0.75,
+          "duration": 0.7,
+          "enter": "none",
+          "exit": "none",
+          "x": 1100,
+          "y": 180,
+          "width": 700,
+          "height": 600,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "image",
           "id": "hook-in",
           "src": "assets/replica/clud-clus/include-result.png",
-          "from": 0,
-          "duration": 2.1754166666666666,
+          "from": 1.45,
+          "duration": 0.7254166666666666,
           "enter": "none",
           "exit": "none",
           "x": 1100,
@@ -89,8 +119,8 @@
           "kind": "image",
           "id": "hook-out",
           "src": "assets/replica/clud-clus/exclude-result.png",
-          "from": 2.1754166666666666,
-          "duration": 5.39125,
+          "from": 2.8754166666666663,
+          "duration": 4.69125,
           "enter": "none",
           "exit": "none",
           "x": 1100,
@@ -99,6 +129,46 @@
           "height": 600,
           "fit": "contain",
           "contentScale": 1.18
+        },
+        {
+          "kind": "image",
+          "id": "hook-out-change",
+          "src": "assets/replica/clud-clus/exclude-change.png",
+          "from": 2.1754166666666666,
+          "duration": 0.7,
+          "enter": "none",
+          "exit": "none",
+          "x": 1100,
+          "y": 180,
+          "width": 700,
+          "height": 600,
+          "fit": "contain",
+          "contentScale": 1.18
+        },
+        {
+          "kind": "text",
+          "id": "hook-flip",
+          "from": 5.02,
+          "duration": 2.276666666666667,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 110,
+          "y": 690,
+          "width": 900,
+          "fontSize": 52,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "in → ex",
+              "color": "accent"
+            },
+            {
+              "text": "：只换两个字母",
+              "color": "primary"
+            }
+          ]
         }
       ],
       "captions": [
@@ -219,6 +289,31 @@
           "height": 600,
           "fit": "contain",
           "contentScale": 1.18
+        },
+        {
+          "kind": "text",
+          "id": "root-prefixes",
+          "from": 9.92,
+          "duration": 3.1100000000000008,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 120,
+          "y": 740,
+          "width": 900,
+          "fontSize": 44,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "in- · ex- · con- · pre- · se- + ",
+              "color": "primary"
+            },
+            {
+              "text": "clude",
+              "color": "accent"
+            }
+          ]
         }
       ],
       "captions": [
@@ -403,6 +498,77 @@
               "color": "accent"
             }
           ]
+        },
+        {
+          "kind": "text",
+          "id": "include-word-example",
+          "from": 8.72,
+          "duration": 7.909999999999998,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 95,
+          "y": 665,
+          "width": 860,
+          "fontSize": 36,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "The price ",
+              "color": "primary"
+            },
+            {
+              "text": "includes",
+              "color": "accent"
+            },
+            {
+              "text": " breakfast.",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "include-word-gloss",
+          "from": 12.68,
+          "duration": 3.949999999999999,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 95,
+          "y": 722,
+          "width": 860,
+          "fontSize": 32,
+          "fontWeight": 720,
+          "runs": [
+            {
+              "text": "价格包含早餐",
+              "color": "muted"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "include-word-note",
+          "from": 13.63,
+          "duration": 2.999999999999998,
+          "enter": "smooth-rise",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 95,
+          "y": 800,
+          "width": 860,
+          "fontSize": 34,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "说的是费用包含什么",
+              "color": "primary"
+            }
+          ]
         }
       ],
       "start": 20.866666666666667
@@ -565,6 +731,81 @@
               "color": "accent"
             }
           ]
+        },
+        {
+          "kind": "text",
+          "id": "exclude-word-example",
+          "from": 4.93,
+          "duration": 9.833333333333334,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 980,
+          "y": 665,
+          "width": 860,
+          "fontSize": 36,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "The price ",
+              "color": "primary"
+            },
+            {
+              "text": "excludes",
+              "color": "accent"
+            },
+            {
+              "text": " breakfast.",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "exclude-word-gloss",
+          "from": 8.59,
+          "duration": 6.173333333333334,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 980,
+          "y": 722,
+          "width": 860,
+          "fontSize": 32,
+          "fontWeight": 720,
+          "runs": [
+            {
+              "text": "价格不含早餐",
+              "color": "muted"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "exclude-word-note",
+          "from": 9.48,
+          "duration": 5.283333333333333,
+          "enter": "smooth-rise",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 980,
+          "y": 800,
+          "width": 860,
+          "fontSize": 34,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "include ↔ exclude",
+              "color": "accent"
+            },
+            {
+              "text": "：答案正好相反",
+              "color": "primary"
+            }
+          ]
         }
       ],
       "start": 37.766666666666666
@@ -619,12 +860,11 @@
           "enterDuration": 0.4,
           "exit": "smooth-out",
           "exitDuration": 0.2,
-          "x": 130,
-          "y": 50,
-          "width": 1660,
+          "x": 95,
+          "y": 125,
+          "width": 830,
           "fontSize": 88,
           "fontWeight": 840,
-          "align": "center",
           "runs": [
             {
               "text": "con",
@@ -646,16 +886,15 @@
           "id": "conclude-word-formula",
           "from": 0.6862745098039216,
           "duration": 15.764705882352944,
-          "enter": "smooth-reveal",
+          "enter": "smooth-slide",
           "enterDuration": 0.32,
           "exit": "smooth-out",
           "exitDuration": 0.2,
-          "x": 310,
-          "y": 165,
-          "width": 1300,
-          "fontSize": 35,
+          "x": 103,
+          "y": 295,
+          "width": 790,
+          "fontSize": 36,
           "fontWeight": 740,
-          "align": "center",
           "runs": [
             {
               "text": "con- + clude：合拢、收束",
@@ -671,10 +910,10 @@
           "duration": 3.3333333333333335,
           "enter": "none",
           "exit": "none",
-          "x": 425,
-          "y": 215,
-          "width": 1070,
-          "height": 590,
+          "x": 995,
+          "y": 105,
+          "width": 835,
+          "height": 675,
           "fit": "contain",
           "contentScale": 1.22
         },
@@ -686,10 +925,10 @@
           "duration": 2.6470588235294117,
           "enter": "none",
           "exit": "none",
-          "x": 425,
-          "y": 215,
-          "width": 1070,
-          "height": 590,
+          "x": 995,
+          "y": 105,
+          "width": 835,
+          "height": 675,
           "fit": "contain",
           "contentScale": 1.22
         },
@@ -701,10 +940,10 @@
           "duration": 10.686274509803923,
           "enter": "none",
           "exit": "none",
-          "x": 425,
-          "y": 215,
-          "width": 1070,
-          "height": 590,
+          "x": 995,
+          "y": 105,
+          "width": 835,
+          "height": 675,
           "fit": "contain",
           "contentScale": 1.22
         },
@@ -717,16 +956,91 @@
           "enterDuration": 0.34,
           "exit": "smooth-out",
           "exitDuration": 0.2,
-          "x": 410,
-          "y": 765,
-          "width": 1100,
-          "fontSize": 43,
+          "x": 83,
+          "y": 515,
+          "width": 825,
+          "fontSize": 46,
           "fontWeight": 820,
           "align": "center",
           "runs": [
             {
               "text": "结束；得出结论",
               "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "conclude-word-example",
+          "from": 7.67,
+          "duration": 8.726666666666668,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 95,
+          "y": 665,
+          "width": 860,
+          "fontSize": 36,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "We ",
+              "color": "primary"
+            },
+            {
+              "text": "concluded",
+              "color": "accent"
+            },
+            {
+              "text": " that the plan was workable.",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "conclude-word-gloss",
+          "from": 12.35,
+          "duration": 4.046666666666669,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 95,
+          "y": 722,
+          "width": 860,
+          "fontSize": 32,
+          "fontWeight": 720,
+          "runs": [
+            {
+              "text": "我们得出结论，方案可行",
+              "color": "muted"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "conclude-word-note",
+          "from": 13.79,
+          "duration": 2.6066666666666687,
+          "enter": "smooth-rise",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 95,
+          "y": 800,
+          "width": 860,
+          "fontSize": 34,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "conclude that",
+              "color": "accent"
+            },
+            {
+              "text": " + 完整判断",
+              "color": "primary"
             }
           ]
         }
@@ -896,6 +1210,81 @@
               "color": "accent"
             }
           ]
+        },
+        {
+          "kind": "text",
+          "id": "preclude-word-example",
+          "from": 6.28,
+          "duration": 11.483333333333334,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 95,
+          "y": 665,
+          "width": 860,
+          "fontSize": 36,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "Heavy rain ",
+              "color": "primary"
+            },
+            {
+              "text": "precluded",
+              "color": "accent"
+            },
+            {
+              "text": " outdoor activities.",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "preclude-word-gloss",
+          "from": 10.73,
+          "duration": 7.033333333333335,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 95,
+          "y": 722,
+          "width": 860,
+          "fontSize": 32,
+          "fontWeight": 720,
+          "runs": [
+            {
+              "text": "大雨使户外活动无法进行",
+              "color": "muted"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "preclude-word-note",
+          "from": 12.09,
+          "duration": 5.673333333333336,
+          "enter": "smooth-rise",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 95,
+          "y": 800,
+          "width": 860,
+          "fontSize": 34,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "preclude",
+              "color": "accent"
+            },
+            {
+              "text": " sb from doing sth",
+              "color": "primary"
+            }
+          ]
         }
       ],
       "start": 69.46666666666667
@@ -1058,6 +1447,81 @@
               "color": "accent"
             }
           ]
+        },
+        {
+          "kind": "text",
+          "id": "seclude-word-example",
+          "from": 8.5,
+          "duration": 9.796666666666667,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 980,
+          "y": 665,
+          "width": 860,
+          "fontSize": 36,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "常见形容词：",
+              "color": "primary"
+            },
+            {
+              "text": "secluded",
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "seclude-word-gloss",
+          "from": 11.34,
+          "duration": 6.956666666666667,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 980,
+          "y": 722,
+          "width": 860,
+          "fontSize": 32,
+          "fontWeight": 720,
+          "runs": [
+            {
+              "text": "a ",
+              "color": "muted"
+            },
+            {
+              "text": "secluded",
+              "color": "accent"
+            },
+            {
+              "text": " village 僻静的村庄",
+              "color": "muted"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "seclude-word-note",
+          "from": 15.59,
+          "duration": 2.7066666666666666,
+          "enter": "smooth-rise",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 980,
+          "y": 800,
+          "width": 860,
+          "fontSize": 34,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "远离人群 ≠ 排除名单",
+              "color": "primary"
+            }
+          ]
         }
       ],
       "start": 87.5
@@ -1195,6 +1659,31 @@
           "height": 300,
           "fit": "contain",
           "contentScale": 1.18
+        },
+        {
+          "kind": "text",
+          "id": "examples-rule",
+          "from": 14.69,
+          "duration": 3.5400000000000005,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 100,
+          "y": 790,
+          "width": 1320,
+          "fontSize": 40,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "词源帮回忆，",
+              "color": "primary"
+            },
+            {
+              "text": "搭配做判断",
+              "color": "accent"
+            }
+          ]
         }
       ],
       "captions": [
@@ -1281,8 +1770,8 @@
         {
           "kind": "text",
           "id": "practice-hint1",
-          "from": 1.4715555555555557,
-          "duration": 18.595111111111112,
+          "from": 3.0,
+          "duration": 17.06666666666667,
           "enter": "smooth-reveal",
           "enterDuration": 0.35,
           "x": 120,
@@ -1319,8 +1808,8 @@
         {
           "kind": "text",
           "id": "practice-hint2",
-          "from": 8.829333333333333,
-          "duration": 11.237333333333334,
+          "from": 11.82,
+          "duration": 8.246666666666666,
           "enter": "smooth-reveal",
           "enterDuration": 0.35,
           "x": 120,
@@ -1332,6 +1821,27 @@
             {
               "text": "受伤使他无法参赛：concluded / precluded",
               "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "practice-timer",
+          "from": 15.8,
+          "duration": 3.9966666666666657,
+          "enter": "smooth-rise",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 120,
+          "y": 800,
+          "width": 1200,
+          "fontSize": 44,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "给自己两秒钟，想完整再看答案",
+              "color": "muted"
             }
           ]
         }
@@ -1489,6 +1999,56 @@
           "height": 430,
           "fit": "contain",
           "contentScale": 1.18
+        },
+        {
+          "kind": "text",
+          "id": "answer-contrast",
+          "from": 13.42,
+          "duration": 5.243333333333334,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 100,
+          "y": 790,
+          "width": 1200,
+          "fontSize": 38,
+          "fontWeight": 780,
+          "runs": [
+            {
+              "text": "exclude 看是否纳入 · ",
+              "color": "primary"
+            },
+            {
+              "text": "preclude",
+              "color": "accent"
+            },
+            {
+              "text": " 看能否发生",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "id": "answer-context",
+          "from": 15.82,
+          "duration": 2.8433333333333333,
+          "enter": "smooth-reveal",
+          "enterDuration": 0.34,
+          "exit": "smooth-out",
+          "exitDuration": 0.2,
+          "x": 100,
+          "y": 860,
+          "width": 1200,
+          "fontSize": 34,
+          "fontWeight": 720,
+          "runs": [
+            {
+              "text": "语境重叠时，看搭配和上下文",
+              "color": "muted"
+            }
+          ]
         }
       ],
       "captions": [

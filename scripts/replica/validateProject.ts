@@ -5,6 +5,7 @@ import {getReplicaProject} from '../../src/replica/projects/registry';
 import type {ReplicaAudioManifest} from '../../src/replica/ReplicaVideo';
 import {checkWordVisualCoverage} from './wordVisualCoverage';
 import {findEditorialStyleIssues} from './editorialStyle';
+import {measurePacing, PACING_LEGACY_EPISODES} from '../../src/replica/pacing';
 
 const EPSILON = 0.002;
 const repoRoot = process.cwd();
@@ -136,6 +137,19 @@ if (project.visualRenderer === 'continuous') {
       }
     }
   }
+}
+
+// 画面节奏与 ten-tain 同款连续舞台：新期数必须通过，2026-10-14 之前的老期数只提示。
+{
+  const pacing = measurePacing(storyboard);
+  const legacy = PACING_LEGACY_EPISODES.has(project.slug);
+  const pacingIssues = [...pacing.errors];
+  if (project.visualRenderer !== 'continuous') {
+    pacingIssues.push("visualRenderer 必须是 'continuous'，并用 buildContinuousStage(storyboard, cover) 生成 continuousStage（ten-tain 同款）。");
+  }
+  (legacy ? warnings : errors).push(...pacingIssues.map((issue) => `Pacing: ${issue}`));
+  console.log(`Pacing: longest still ${pacing.maxStillSec.toFixed(1)}s (${pacing.maxStillAt}), ` +
+    `still time over 3.5s ${(pacing.stillShare * 100).toFixed(0)}%, first changes at ${pacing.firstChangeSec ?? '-'}s / ${pacing.secondChangeSec ?? '-'}s.`);
 }
 
 const finalScene = scenes.at(-1);

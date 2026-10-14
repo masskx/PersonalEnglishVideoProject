@@ -19,7 +19,8 @@ export const exampleProject: ReplicaProjectDefinition = {
   storyboard: exampleStoryboard,
   audioManifest: audioManifestJson as ReplicaAudioManifest,
   backgroundMusic: SERIES_BACKGROUND_MUSIC,
-  visualRenderer: 'default', // or a typed episode continuous-stage renderer
+  visualRenderer: 'continuous', // ten-tain stage; required for new episodes
+  continuousStage: buildContinuousStage(exampleStoryboard, exampleCover), // src/replica/autoContinuousStage.ts
   paths: {
     audioManifestFile: 'src/replica/exampleAudioManifest.json',
     publicAudioDir: 'public/assets/audio/replica/example',

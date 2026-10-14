@@ -155,6 +155,8 @@ planning/growth-promotion.json，然后用 <ten-tain> 重新出一次卡片给�
 | Problem | What to tell Codex / do |
 | --- | --- |
 | "Missing DASHSCOPE_API_KEY" | Check `.env` exists and has the key; run `npm run keys:check` |
+| `Pacing:` error from `replica:validate` (the picture stays still too long) | Say `按节奏闸门的提示，在那段旁白里加画面层（例句、释义、搭配、对比），不要放宽阈值。` (Add on-screen beats where the gate points; don't loosen the limits.) |
+| The new episode looks plainer than ten-tain | Check that Codex copied `src/replica/projects/cludClus.ts` (not an older episode) and that `replica:validate` passed |
 | Codex can't reach the API | Allow network access in Codex's sandbox settings for that session |
 | Images or audio are tiny text files | Run `git lfs pull` (they are LFS pointers until downloaded) |
 | Render can't find Chrome | Install Google Chrome, or set `REMOTION_BROWSER_EXECUTABLE` to its path |

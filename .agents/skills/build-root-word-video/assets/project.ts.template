@@ -1,9 +1,24 @@
 import audioManifestJson from '../__SLUG__AudioManifest.json';
 import {__SLUG__Illustrations, __SLUG__NegativePrompt} from '../__SLUG__IllustrationPrompts';
+import {buildContinuousStage} from '../autoContinuousStage';
 import {__SLUG__Storyboard} from '../__SLUG__Storyboard';
 import {SERIES_BACKGROUND_MUSIC} from '../seriesAudio';
 import type {ReplicaAudioManifest} from '../ReplicaVideo';
-import type {ReplicaProjectDefinition} from '../projectTypes';
+import type {ReplicaCoverDefinition, ReplicaProjectDefinition} from '../projectTypes';
+
+// 封面数据同时驱动 ten-tain 同款连续舞台（词素组装、左右版式），新期不要改成 'default'。
+const __SLUG__Cover: ReplicaCoverDefinition = {
+  seriesLabel: '小黑拆词根',
+  root: '__ROOT__',
+  englishMeaning: '__ENGLISH_MEANING__',
+  chineseMeaning: '__CHINESE_MEANING__',
+  hook: '__COVER_HOOK__',
+  words: [__COVER_WORDS__],
+  // 每个词里词根的写法（如 'clude'），用于词素组装动画。
+  wordHighlights: [__WORD_HIGHLIGHTS__],
+  illustrationPath: 'assets/replica/__SLUG__/__COVER_ILLUSTRATION__.png',
+  illustrationPosition: '50% 50%',
+};
 
 export const __SLUG__Project: ReplicaProjectDefinition = {
   slug: '__SLUG__',
@@ -13,6 +28,8 @@ export const __SLUG__Project: ReplicaProjectDefinition = {
   storyboard: __SLUG__Storyboard,
   audioManifest: audioManifestJson as ReplicaAudioManifest,
   backgroundMusic: SERIES_BACKGROUND_MUSIC,
+  visualRenderer: 'continuous',
+  continuousStage: buildContinuousStage(__SLUG__Storyboard, __SLUG__Cover),
   paths: {
     audioManifestFile: 'src/replica/__SLUG__AudioManifest.json',
     publicAudioDir: 'public/assets/audio/replica/__SLUG__',
@@ -23,16 +40,7 @@ export const __SLUG__Project: ReplicaProjectDefinition = {
     outputLandscapeCover: 'outputs/__SLUG__/cover-landscape.png',
     outputDouyinCopy: 'outputs/__SLUG__/publish-copy.md',
   },
-  cover: {
-    seriesLabel: '小黑拆词根',
-    root: '__ROOT__',
-    englishMeaning: '__ENGLISH_MEANING__',
-    chineseMeaning: '__CHINESE_MEANING__',
-    hook: '__COVER_HOOK__',
-    words: [__COVER_WORDS__],
-    illustrationPath: 'assets/replica/__SLUG__/__COVER_ILLUSTRATION__.png',
-    illustrationPosition: '50% 50%',
-  },
+  cover: __SLUG__Cover,
   quality: {maxPlaybackRate: 1.16, warnPlaybackRate: 1.12},
   tts: {
     model: 'cosyvoice-v3-flash',

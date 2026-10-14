@@ -309,12 +309,18 @@ dominant subject, or reduce Xiaohei's readable action.
 
 ## Continuous semantic stage
 
-This is an optional continuous-motion branch, used when continuous trajectories materially
-explain the lesson or the user requests this treatment. Static key-pose storytelling is the
-default for new episodes and static-image improvements. A request to improve pacing alone
-does not require a continuous stage. Exact sample
-replication remains authoritative: do not replace a sampled visual grammar merely because the
-continuous stage is more elaborate.
+**Default for every new root-word episode (since 2026-10-14):** `visualRenderer: 'continuous'`
+with `continuousStage: buildContinuousStage(storyboard, cover)` from `src/replica/autoContinuousStage.ts`.
+This is exactly the ten-tain stage: static same-anchor key poses (`staticCardMode`), morpheme word
+assembly and alternating text-left / text-right layouts. Copy `src/replica/projects/cludClus.ts` as the
+project template. `replica:validate` fails a new episode that uses `'default'` or fails the pacing gate
+(`src/replica/pacing.ts`: no visual hold over 8 s, at most 20% of runtime in holds over 3.5 s, first
+visual change before 1.5 s and second before 3 s; captions do not count as visual change).
+
+The rest of this section describes the optional trajectory extras (semantic prop tracks, dynamic
+frame assets). Use them only when continuous trajectories materially explain the lesson or the user
+requests them. Exact sample replication remains authoritative: do not replace a sampled visual
+grammar merely because the continuous stage is more elaborate.
 
 1. Preserve narration, captions, teaching order, aspect ratio, FPS, and accepted duration. Keep
    scene records as the audio/caption timing authority, but separate those tracks from visual

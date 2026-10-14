@@ -6,7 +6,7 @@
   "scripts": {
     "project:inventory": "tsx scripts/replica/projectInventory.ts",
     "project:check": "tsx scripts/replica/projectHealth.ts",
-    "project:test": "tsx scripts/replica/projectManagement.test.ts && tsx scripts/replica/verticalLayout.test.ts && tsx scripts/replica/xhsCards.test.ts && tsx scripts/replica/scanSecrets.ts",
+    "project:test": "tsx scripts/replica/projectManagement.test.ts && tsx scripts/replica/verticalLayout.test.ts && tsx scripts/replica/xhsCards.test.ts && tsx scripts/replica/pacing.test.ts && tsx scripts/replica/scanSecrets.ts",
     "keys:check": "tsx scripts/replica/checkCredentials.ts",
     "secrets:scan": "tsx scripts/replica/scanSecrets.ts",
     "hooks:install": "git config core.hooksPath .githooks",

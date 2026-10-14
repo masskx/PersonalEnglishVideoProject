@@ -51,12 +51,18 @@
 
 1. 查重选题 → 台账登记 `in_progress`。
 2. 资料核对（可靠词典、词源；区分真实构词与记忆联想）→ 自然口语讲稿。
-3. 写词图映射（每个词：释义、动作因果、场景、before/change/result 路径、总结行）→
+3. 建期：**复制 `src/replica/projects/cludClus.ts`**（唯一模板，ten-tain 同款连续舞台：
+   `visualRenderer: 'continuous'` + `buildContinuousStage(storyboard, cover)`），分镜用同名 JSON；
+   不要复制老期数（pon-pos、cred、duc-duct 等用的是已淘汰的 `'default'` 渲染）。
+   写词图映射（每个词：释义、动作因果、场景、before/change/result 路径、总结行）→
    `npm run replica:preflight -- --project=<期名> --plan-only`。
 4. 生图：以已验收小黑为锚点，同一母版编辑 before / change / result（`npm run replica:keyposes:edit -- --plan=<计划> --generate`
    或 `npm run replica:images -- --project=<期名> --generate`）→ 纯白底角色复核 →
    `npm run replica:preflight -- --project=<期名>`。未通过不得继续。
 5. 配音：`npm run replica:voice -- --project=<期名> --generate` → `npm run replica:validate -- --project=<期名>`。
+   validate 含**画面节奏闸门**（字幕换句不算画面变化）：任何一段画面静止不超过 8 秒；超过 3.5 秒的静止
+   合计不超过全片 20%；第一次画面变化早于 1.5 秒、第二次早于 3 秒。不通过就在那段旁白里加画面层
+   （例句卡、中文释义、搭配、对比、姿态切换），或把讲稿写短重配；不要放宽阈值。
 6. 交付：`npm run replica:produce -- --project=<期名> --stage=deliver`（横屏高质量成片、双封面、
    抖音竖屏完整版 + 预告 + 复习卡、小红书图文卡、发布文案、`release.json` 保持 draft、刷新工作台）。
 7. 人工终审：打开 `review/full-preview/` 整片低清预览连续观看；手机外放和耳机都听一遍。
@@ -86,6 +92,8 @@
   少量橙红蓝。词根动作用同母版 before / change / result。每个词有自己的姿态，不同意思不复用同一组。
 - 动画：Remotion 帧驱动的丝滑文字（smooth-rise / reveal / slide、词素组装、语义姿态切换、白底淡出），
   英文留足阅读时间。前 1.5 秒给具体钩子，3 秒内第二次画面变化；至少三种有教学意义的构图。
+- 节奏：旁白里说到的例句、中文释义、搭配和对比都要在画面上出现（与旁白同时进场），不能只放在字幕里；
+  一个词页约 9–12 秒，讲稿更长就加画面节拍。
 - 声音：可听见的纯音乐（104–112 BPM），旁白时压低、空档轻抬；人声永远在前。
 - 文风：具体场景、动作、自然短句；避免“不是……而是……”“别再……”“先别……”“抓住……立刻……”
   “一个动作串起……”等模板腔。改稿后让对应配音缓存失效重配。
@@ -131,7 +139,7 @@
 
 ## 10. 收尾检查
 
-`npm run project:test`（管理、竖屏版式、小红书卡片回归 + 密钥扫描）、`npm run project:check`
+`npm run project:test`（管理、竖屏版式、小红书卡片、模板与节奏回归 + 密钥扫描）、`npm run project:check`
 （文件与运行时路径完整性）、`npm run project:inventory`（刷新工作台 `00-打开工作台.html` 与 `PROJECTS.html`）。
 
 给用户的英文指南：[本机 Codex 上手](docs/LOCAL-CODEX-QUICKSTART-EN.md) ·
