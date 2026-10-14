@@ -21,6 +21,9 @@ import {XhsMethodCard} from './replica/xhs/XhsMethodCard';
 import {cetTranslationDeck} from './cet-translation/xhs';
 import {buildXhsDeck} from './replica/xhs/xhsCardData';
 import {tenTainProject} from './replica/projects/tenTain';
+import {DouyinShort, SHORT, calculateShortMetadata, type DouyinShortProps} from './shorts/DouyinShort';
+
+const SHORT_PREVIEW: DouyinShortProps = {series: '小黑英语', topicLabel: '四六级30秒', timeline: {shortId: 'preview', variant: 'A', fps: 30, totalFrames: 60, beats: []}};
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -33,6 +36,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Cet6ReadingLocationParaphrase" component={Cet6ReadingVideo} durationInFrames={readingTimeline.totalFrames} fps={30} width={1920} height={1080}/>
     <Composition id="Cet6ReadingCover" component={Cet6ReadingCover} durationInFrames={1} fps={ROOT_WORD_COVER.fps} width={ROOT_WORD_COVER.width} height={ROOT_WORD_COVER.height} defaultProps={{landscape:false}}/>
     <Composition id="Cet6ReadingLandscapeCover" component={Cet6ReadingCover} durationInFrames={1} fps={ROOT_WORD_LANDSCAPE_COVER.fps} width={ROOT_WORD_LANDSCAPE_COVER.width} height={ROOT_WORD_LANDSCAPE_COVER.height} defaultProps={{landscape:true}}/>
+    <Composition id="DouyinShort" component={DouyinShort} durationInFrames={60} fps={SHORT.fps} width={SHORT.width} height={SHORT.height} defaultProps={SHORT_PREVIEW} calculateMetadata={calculateShortMetadata}/>
     <Composition id="Cet6WritingConcession" component={Cet6WritingVideo} durationInFrames={cet6WritingTimeline.totalFrames} fps={30} width={1920} height={1080}/>
     <Composition id="Cet6WritingCover" component={Cet6WritingCover} durationInFrames={1} fps={ROOT_WORD_COVER.fps} width={ROOT_WORD_COVER.width} height={ROOT_WORD_COVER.height} defaultProps={{landscape:false}}/>
     <Composition id="Cet6WritingLandscapeCover" component={Cet6WritingCover} durationInFrames={1} fps={ROOT_WORD_LANDSCAPE_COVER.fps} width={ROOT_WORD_LANDSCAPE_COVER.width} height={ROOT_WORD_LANDSCAPE_COVER.height} defaultProps={{landscape:true}}/>

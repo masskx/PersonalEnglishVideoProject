@@ -95,6 +95,21 @@ pose sheets, and assembly intermediates in local `work/` (gitignored), never in 
 Do not revive rules from dated audit snapshots or historical production notes. Those records explain
 how an old episode was made; they do not override the current production baseline.
 
+## Douyin shorts (main Douyin format since 2026-10-14)
+
+- The main Douyin format is a native 30–40 s vertical short: one point, a 0–2 s hook (mistake,
+  challenge, contrast or result first), one or two teaching beats, a pause-and-answer test with a
+  3 s countdown, the answer, then one line asking viewers to save and follow. No "today we learn" or
+  channel-name openings; frame 0 shows the big headline and Xiaohei with no fade-in.
+- Scripts live in `src/shorts/library.ts` (A/B hooks, shared body, title/body/tags/pinned comment).
+  They reuse the source episode's art. Use `arts` for before/change/result pose switches inside a
+  beat, and `example` for a sentence the narration says, so it appears on screen at the same time.
+- Commands: `npm run shorts:voice -- --short=<id> [--generate]` → `npm run shorts:render -- --short=<id>`.
+  Output: `outputs/<episode>/douyin-shorts/`. Daily data from the owner goes into
+  `planning/douyin-metrics.json`; `npm run metrics:report` compares hooks (see `docs/DOUYIN-DATA-EN.md`).
+  The next round keeps the stronger hook type and rewrites the weakest part.
+- The full-length vertical below stays as the long version for collections.
+
 ## Douyin vertical delivery (default since 2026-10-12)
 
 - Douyin's feed is vertical; a 16:9 upload fills about a third of the phone screen. After the

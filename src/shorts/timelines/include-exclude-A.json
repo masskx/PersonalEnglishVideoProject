@@ -1,0 +1,91 @@
+{
+  "shortId": "include-exclude",
+  "variant": "A",
+  "fps": 30,
+  "totalFrames": 995,
+  "beats": [
+    {
+      "id": "hook-a",
+      "kind": "hook",
+      "headline": "早餐另付钱\n填 **include** 还是 **exclude**？",
+      "voice": "早餐另付钱，用 include 还是 exclude？先选一个。",
+      "art": "assets/replica/clud-clus/exclude-result.png",
+      "from": 0,
+      "frames": 142,
+      "audioFrames": 134,
+      "src": "assets/audio/shorts/include-exclude/hook-a-d899ec5e3403.mp3"
+    },
+    {
+      "id": "fix-in",
+      "kind": "fix",
+      "headline": "**in-** = 收进里面",
+      "voice": "in 是收进里面。餐盘放进盒子，盖上，早餐算在价格里。",
+      "arts": [
+        "assets/replica/clud-clus/include-before.png",
+        "assets/replica/clud-clus/include-change.png",
+        "assets/replica/clud-clus/include-result.png"
+      ],
+      "example": "Breakfast is included.  含早餐",
+      "from": 142,
+      "frames": 171,
+      "audioFrames": 163,
+      "src": "assets/audio/shorts/include-exclude/fix-in-20ff699519ea.mp3"
+    },
+    {
+      "id": "fix-ex",
+      "kind": "fix",
+      "headline": "**ex-** = 留在外面",
+      "voice": "ex 是留在外面。盒子盖上了，餐盘还在外面，早餐不算。",
+      "arts": [
+        "assets/replica/clud-clus/exclude-before.png",
+        "assets/replica/clud-clus/exclude-change.png",
+        "assets/replica/clud-clus/exclude-result.png"
+      ],
+      "example": "Breakfast is excluded.  不含早餐",
+      "from": 313,
+      "frames": 169,
+      "audioFrames": 161,
+      "src": "assets/audio/shorts/include-exclude/fix-ex-62fb79b75343.mp3"
+    },
+    {
+      "id": "test",
+      "kind": "test",
+      "headline": "The fee ___ meals.\n（费用不含餐）",
+      "options": [
+        "includes",
+        "excludes"
+      ],
+      "correct": 1,
+      "pause": 3,
+      "voice": "考考你：费用不含餐，选哪个？",
+      "from": 482,
+      "frames": 186,
+      "audioFrames": 96,
+      "src": "assets/audio/shorts/include-exclude/test-b1a7c29cfb02.mp3"
+    },
+    {
+      "id": "answer",
+      "kind": "answer",
+      "headline": "答案：**excludes**",
+      "voice": "答案是 excludes。in 收进来，ex 留外面。",
+      "art": "assets/replica/clud-clus/exclude-result.png",
+      "example": "The fee excludes meals.",
+      "exampleAt": 0.1,
+      "from": 668,
+      "frames": 135,
+      "audioFrames": 127,
+      "src": "assets/audio/shorts/include-exclude/answer-68666a63dfe0.mp3"
+    },
+    {
+      "id": "cta",
+      "kind": "cta",
+      "headline": "收藏这条\n订酒店、写作文都用得上",
+      "voice": "收藏这条，考前翻出来。关注小黑，每天一个四六级小技巧。",
+      "art": "assets/replica/clud-clus/include-result.png",
+      "from": 803,
+      "frames": 192,
+      "audioFrames": 164,
+      "src": "assets/audio/shorts/include-exclude/cta-015f8e633ab3.mp3"
+    }
+  ]
+}
