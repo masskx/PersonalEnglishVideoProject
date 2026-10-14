@@ -1204,3 +1204,17 @@ Validated 2256 exclusive image-frame intervals; extracted/reviewed 128 encoded f
 - `verifyRender` / `verifyCover` 改为按 `PAPER_RGB` 检查四角。规则文件（AGENTS、当前制作基准、制作说明、角色验收、Skill）统一改写：成片底色为纸面；“白底复核”只指把插图放在纯白上检查角色本身。
 - 自动连续舞台插图改为 100% 不透明（原沿用 ten-tain 的 0.9，小黑变深灰）。
 
+## 2026-10-14 六级作文：先让步，再反驳（云端完整制作）
+
+- 用户只说“做一个六级视频”。查重后选六级写作（已有六级阅读、四级写作、四级翻译），主题为议论段的让步与反驳：让步一句 → 转折一句 → 理由加例子，并讲清两条边界（对准同一个点；让步一句、全文用一次）。原创六级风格题目与练习，未冒充真题。
+- 新栏目 `src/cet6-writing/` 与 `scripts/cet6-writing/`（`cet6w:*` 命令），纸面配色；首帧即有题目与小黑，结尾停在总结页。
+- 5 张插图在云端经 gpt-image-2 中转站，从 `mit-miss/00_send_hook.png` 参考编辑生成（计划 `planning/cet6-writing-concession-art.json`），白底复核见交付目录 `review/art-contact-sheet.png`。修正两处只在非 Windows 出现的问题：参考图上传缺少 image/png 类型（`imageRelayClient.ts`）、生成脚本误用 Windows ffmpeg。
+- 15 段 CosyVoice 旁白共约 175 秒；整片预览布局检查通过；小红书方法卡 13 张。四六级课暂无抖音竖屏排版。release 保持 draft，人工整片观看与手机外放、耳机听审待完成。
+
+
+## 2026-10-14 抖音 30–40 秒短视频（主推格式）与数据闭环
+
+- 用户要求按抖音增长重做流程（完播率低、点赞少、涨粉慢），并从今天起连续 5 天发数据。诊断：长讲解 147–196 秒、开头 7–11 秒才进主题、静止画面占比高、行动号召只在结尾、定位混杂。
+- 新增原生竖屏短视频链路：`src/shorts/`（`library.ts` 脚本库、`DouyinShort.tsx` 1080×1920 组件）、`scripts/shorts/`（`shorts:voice`、`shorts:render`、`metrics:report`）、`scripts/shorts/shorts.test.ts` 回归（并入 `project:test`）。结构：0–2 秒钩子 → 讲点 → 暂停作答（3 秒倒计时）→ 答案 → 收藏 + 关注；每条 A/B 两个钩子。
+- 首批 3 条 × 2 钩子 = 6 条，33–35 秒：`include-exclude`、`exclude-preclude`（素材来自 clud-clus）、`concession-sentence`（来自 cet6-writing-concession）。成片、首帧封面、联系图、发布文案（标题、正文、话题、置顶评论）在 `outputs/<来源期>/douyin-shorts/`。
+- 数据台账 `planning/douyin-metrics.json`，用户指南 `docs/DOUYIN-DATA-EN.md`；规则写入 AGENTS.md 第 7 节、新会话制作入口 4b 节、制作 Skill。

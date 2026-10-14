@@ -1,0 +1,36 @@
+{
+  "project": "cet6-writing-concession",
+  "assets": [
+    "assets/replica/cet6-writing-concession/hook-scale.png",
+    "assets/replica/cet6-writing-concession/concede-nod.png",
+    "assets/replica/cet6-writing-concession/turn-arrow.png",
+    "assets/replica/cet6-writing-concession/support-blocks.png",
+    "assets/replica/cet6-writing-concession/practice-write.png",
+    "assets/music/root-word-series-bgm.mp3",
+    "assets/audio/cet6-writing-concession/hook-0fc1be5295ac.mp3",
+    "assets/audio/cet6-writing-concession/task-79d86484974e.mp3",
+    "assets/audio/cet6-writing-concession/weak-1a4009f4b7f5.mp3",
+    "assets/audio/cet6-writing-concession/structure-28dd1b30bced.mp3",
+    "assets/audio/cet6-writing-concession/concede-65fb23c437e1.mp3",
+    "assets/audio/cet6-writing-concession/turn-3c8af5eb091d.mp3",
+    "assets/audio/cet6-writing-concession/support-51ed880c5a78.mp3",
+    "assets/audio/cet6-writing-concession/assemble-f97e73cd11ac.mp3",
+    "assets/audio/cet6-writing-concession/match-d49635c99849.mp3",
+    "assets/audio/cet6-writing-concession/limits-d84bf1f3cbe9.mp3",
+    "assets/audio/cet6-writing-concession/phrases-d3fc4da14a44.mp3",
+    "assets/audio/cet6-writing-concession/practice-2d1ed9373062.mp3",
+    "assets/audio/cet6-writing-concession/practice-answer-5a335625e7de.mp3",
+    "assets/audio/cet6-writing-concession/check-33a59884e6d6.mp3",
+    "assets/audio/cet6-writing-concession/close-c9b2c4a4db75.mp3"
+  ],
+  "illustrations": [
+    "assets/replica/cet6-writing-concession/hook-scale.png",
+    "assets/replica/cet6-writing-concession/concede-nod.png",
+    "assets/replica/cet6-writing-concession/turn-arrow.png",
+    "assets/replica/cet6-writing-concession/support-blocks.png",
+    "assets/replica/cet6-writing-concession/practice-write.png"
+  ],
+  "generationMethod": "gpt-image-2 relay reference edit (planning/cet6-writing-concession-art.json)",
+  "referenceAnchor": "public/assets/replica/mit-miss/00_send_hook.png",
+  "runtimeSourceScan": "episode-local"
+}

@@ -1,0 +1,194 @@
+{
+  "provider": "DashScope",
+  "voice": {
+    "model": "cosyvoice-v3-flash",
+    "voice": "longanhuan",
+    "rate": 1.08,
+    "pitch": 1,
+    "volume": 68,
+    "format": "mp3"
+  },
+  "englishRate": 1.02,
+  "timeline": {
+    "fps": 30,
+    "totalFrames": 5252,
+    "cues": [
+      {
+        "id": "hook",
+        "panel": "hook",
+        "voice": "六级作文写观点，很多同学开头就是“我完全同意”，然后一条条列好处，读起来像喊口号。今天学一个小技巧：先让一步，再把话转回来。",
+        "caption": "六级作文：先让步，再反驳",
+        "from": 0,
+        "frames": 332,
+        "audioFrames": 327,
+        "src": "assets/audio/cet6-writing-concession/hook-0fc1be5295ac.mp3",
+        "seconds": 10.866938
+      },
+      {
+        "id": "task",
+        "panel": "task",
+        "voice": "看一道原创六级风格题目：Some people think college students should take part-time jobs, while others believe they should focus on their studies. Write an essay to state your view. 题目让你选一边，也默认你知道另一边在担心什么。",
+        "caption": "原创六级风格题目 · 两种观点，选一边",
+        "english": true,
+        "pauseAfter": 0.6,
+        "from": 332,
+        "frames": 464,
+        "audioFrames": 446,
+        "src": "assets/audio/cet6-writing-concession/task-79d86484974e.mp3",
+        "seconds": 14.837531
+      },
+      {
+        "id": "weak",
+        "panel": "weak",
+        "voice": "很多人会这样写：Part-time jobs are good for students. They can earn money and gain experience. So students should take part-time jobs. 三句都在说好处，读者心里那句“会不会耽误学习”，没有人回应。",
+        "caption": "一边倒：只有好处，没人回应担心",
+        "english": true,
+        "from": 796,
+        "frames": 444,
+        "audioFrames": 439,
+        "src": "assets/audio/cet6-writing-concession/weak-1a4009f4b7f5.mp3",
+        "seconds": 14.628563
+      },
+      {
+        "id": "structure",
+        "panel": "structure",
+        "voice": "让步段可以记成三句：第一句承认对方的担心，第二句用转折词转回来，第三句给出更重要的理由和一个例子。",
+        "caption": "让步一句 → 转折一句 → 理由 + 例子",
+        "from": 1240,
+        "frames": 274,
+        "audioFrames": 269,
+        "src": "assets/audio/cet6-writing-concession/structure-28dd1b30bced.mp3",
+        "seconds": 8.96
+      },
+      {
+        "id": "concede",
+        "panel": "concede",
+        "voice": "第一句先承认：It is true that a part-time job may take time away from study. 意思是，打工确实可能占用学习时间。把对方的担心先说出来，读者会觉得你想得周全。",
+        "caption": "It is true that…：先把对方的担心说出来",
+        "english": true,
+        "from": 1514,
+        "frames": 383,
+        "audioFrames": 378,
+        "src": "assets/audio/cet6-writing-concession/concede-65fb23c437e1.mp3",
+        "seconds": 12.591
+      },
+      {
+        "id": "turn",
+        "panel": "turn",
+        "voice": "第二句转回来：However, a well-chosen job can teach students to manage their time better. 你承认时间会变少，同时指出，时间会被安排得更好。",
+        "caption": "However：转回自己的观点",
+        "english": true,
+        "from": 1897,
+        "frames": 332,
+        "audioFrames": 327,
+        "src": "assets/audio/cet6-writing-concession/turn-3c8af5eb091d.mp3",
+        "seconds": 10.866938
+      },
+      {
+        "id": "support",
+        "panel": "support",
+        "voice": "第三句给例子：For example, a student who tutors twice a week has to plan revision in advance, and this habit helps when exams come. 例子具体到人、频率和结果，比一句“获得经验”更有说服力。",
+        "caption": "例子：具体的人 + 频率 + 结果",
+        "english": true,
+        "from": 2229,
+        "frames": 439,
+        "audioFrames": 434,
+        "src": "assets/audio/cet6-writing-concession/support-51ed880c5a78.mp3",
+        "seconds": 14.445688
+      },
+      {
+        "id": "assemble",
+        "panel": "assemble",
+        "voice": "三句连起来，就是一个完整的论证小段。让步只占一句，篇幅留给你自己的理由。",
+        "caption": "让步一句，主体留给自己的理由",
+        "from": 2668,
+        "frames": 192,
+        "audioFrames": 187,
+        "src": "assets/audio/cet6-writing-concession/assemble-f97e73cd11ac.mp3",
+        "seconds": 6.217125
+      },
+      {
+        "id": "match",
+        "panel": "match",
+        "voice": "用的时候注意两点。第一，让步和反驳要说同一件事：前面说时间被占用，后面就回应时间管理，不能突然跳到赚钱。",
+        "caption": "让步和反驳要对准同一个点",
+        "from": 2860,
+        "frames": 291,
+        "audioFrames": 286,
+        "src": "assets/audio/cet6-writing-concession/match-d49635c99849.mp3",
+        "seconds": 9.508563
+      },
+      {
+        "id": "limits",
+        "panel": "limits",
+        "voice": "第二，让步要短，也要真诚。一句承认就够，写成一大段，读者会搞不清你站哪边。也不必每段都用，全文用一次最自然。",
+        "caption": "一句就够；全文用一次最自然",
+        "from": 3151,
+        "frames": 314,
+        "audioFrames": 309,
+        "src": "assets/audio/cet6-writing-concession/limits-d84bf1f3cbe9.mp3",
+        "seconds": 10.292219
+      },
+      {
+        "id": "phrases",
+        "panel": "phrases",
+        "voice": "换几种说法，免得每次都写 It is true that。让步可以用 Admittedly，或者 Some may argue that；转折可以用 However、Even so，或者 But this does not mean that。",
+        "caption": "让步：Admittedly / Some may argue that · 转折：However / Even so",
+        "english": true,
+        "from": 3465,
+        "frames": 376,
+        "audioFrames": 371,
+        "src": "assets/audio/cet6-writing-concession/phrases-d3fc4da14a44.mp3",
+        "seconds": 12.355906
+      },
+      {
+        "id": "practice",
+        "panel": "practice",
+        "voice": "轮到你。题目是：Some people believe online courses will replace classroom teaching. 写一句让步，再写一句转折。给自己三秒。",
+        "caption": "练习：写一句让步 + 一句转折",
+        "english": true,
+        "pauseAfter": 3,
+        "from": 3841,
+        "frames": 380,
+        "audioFrames": 290,
+        "src": "assets/audio/cet6-writing-concession/practice-2d1ed9373062.mp3",
+        "seconds": 9.639156
+      },
+      {
+        "id": "practice-answer",
+        "panel": "practice-answer",
+        "voice": "参考写法：Admittedly, online courses are flexible and cheap. However, classroom teaching gives students instant feedback that a screen cannot fully replace. 前一句承认网课灵活便宜，后一句转到课堂的即时反馈，两句说的都是学习效果。",
+        "caption": "参考：Admittedly… However…",
+        "english": true,
+        "from": 4221,
+        "frames": 537,
+        "audioFrames": 532,
+        "src": "assets/audio/cet6-writing-concession/practice-answer-5a335625e7de.mp3",
+        "seconds": 17.711
+      },
+      {
+        "id": "check",
+        "panel": "check",
+        "voice": "交卷前查三件事：有没有一句让步；转折词后面是不是你的观点；理由和让步是不是对准同一个点。",
+        "caption": "让步一句 → 转折到观点 → 对准同一个点",
+        "from": 4758,
+        "frames": 239,
+        "audioFrames": 234,
+        "src": "assets/audio/cet6-writing-concession/check-33a59884e6d6.mp3",
+        "seconds": 7.784469
+      },
+      {
+        "id": "close",
+        "panel": "close",
+        "voice": "记住，承认一点对方的道理，你的观点反而更站得住。下次写六级作文，先让一步，再把话说回来。",
+        "caption": "先让一步，再把话说回来。",
+        "from": 4997,
+        "frames": 255,
+        "audioFrames": 232,
+        "src": "assets/audio/cet6-writing-concession/close-c9b2c4a4db75.mp3",
+        "seconds": 7.732219
+      }
+    ]
+  },
+  "alignment": "Cue boundaries measured with ffprobe; narration is not playback accelerated."
+}

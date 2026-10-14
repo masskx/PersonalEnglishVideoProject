@@ -1,0 +1,43 @@
+{
+  "short": "exclude-preclude",
+  "variant": "A",
+  "seconds": 34.5,
+  "beats": [
+    {
+      "id": "hook-a",
+      "kind": "hook",
+      "from": 0,
+      "seconds": 5.4
+    },
+    {
+      "id": "fix-ex",
+      "kind": "fix",
+      "from": 5.4,
+      "seconds": 4.87
+    },
+    {
+      "id": "fix-pre",
+      "kind": "fix",
+      "from": 10.27,
+      "seconds": 6.4
+    },
+    {
+      "id": "test",
+      "kind": "test",
+      "from": 16.67,
+      "seconds": 6.63
+    },
+    {
+      "id": "answer",
+      "kind": "answer",
+      "from": 23.3,
+      "seconds": 4.33
+    },
+    {
+      "id": "cta",
+      "kind": "cta",
+      "from": 27.63,
+      "seconds": 6.87
+    }
+  ]
+}

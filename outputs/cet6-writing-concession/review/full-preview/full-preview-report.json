@@ -1,0 +1,23 @@
+{
+  "project": "cet6-writing-concession",
+  "input": "outputs/cet6-writing-concession/cet6-writing-concession.mp4",
+  "durationSeconds": 175.125333,
+  "intervalSeconds": 1,
+  "sampledFrames": 176,
+  "previewVideo": "outputs/cet6-writing-concession/review/full-preview/full-preview.mp4",
+  "contactSheets": "outputs/cet6-writing-concession/review/full-preview/full-preview-contact-*.jpg",
+  "safeArea": {
+    "left": 88,
+    "right": 1832,
+    "top": 54,
+    "bottom": 1008
+  },
+  "layoutIssues": [],
+  "layoutErrors": [],
+  "layoutWarnings": [],
+  "manualReviewRequired": [
+    "打开 full-preview.mp4 连续观看整片。",
+    "逐页查看 full-preview-contact-*.jpg，重点看文字溢出、大片空白、图文失衡和关键帧切换。",
+    "手机尺寸检查字幕和词义；发现问题后修订 storyboard，再重新渲染并重复本闸门。"
+  ]
+}

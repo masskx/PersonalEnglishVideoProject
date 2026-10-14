@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "cet6-writing-concession",
+  "sourceDir": "assets/green-screen/cet6-writing-concession",
+  "assetDir": "public/assets/replica/cet6-writing-concession",
+  "generationMethod": "gpt-image-2 relay reference edit from the accepted Xiaohei anchor (cloud session)",
+  "referenceAnchor": "public/assets/replica/mit-miss/00_send_hook.png",
+  "runtimeSourceScan": "episode-local: public/assets/replica/cet6-writing-concession only",
+  "negativePrompt": "text, letters, words, numbers, logos, speech bubbles with writing, extra characters, a second Xiaohei, outline-only eyes, thin stick figure body, 3D render, gradients, drop shadows, photo, scenery background, the original crank machine",
+  "shots": [
+    {
+      "id": "hook",
+      "reference": "public/assets/replica/mit-miss/00_send_hook.png",
+      "purpose": "钩子：天平一边小灰砝码（让步）、一边大橙砝码（自己的主要理由）",
+      "states": [
+        {
+          "id": "scale",
+          "prompt": "Remove the crank machine entirely. Xiaohei stands beside a simple hand-drawn balance scale on a small stand. A small grey weight already sits on the left pan; Xiaohei is lowering a larger orange weight onto the right pan, so the right side is starting to tip down. Xiaohei is the clear actor and the scale stays at Xiaohei's height. Plain white background."
+        }
+      ]
+    },
+    {
+      "id": "concede",
+      "reference": "public/assets/replica/mit-miss/00_send_hook.png",
+      "purpose": "让步：小黑对灰色牌子摊开手掌，承认对方有道理",
+      "states": [
+        {
+          "id": "nod",
+          "prompt": "Remove the crank machine entirely. Xiaohei stands facing a small blank grey sign on a short post, body tilted slightly forward in a calm nod, one open hand extended palm-up toward the sign in a 'fair point' gesture. The sign is blank, no writing. Plain white background."
+        }
+      ]
+    },
+    {
+      "id": "turn",
+      "reference": "public/assets/replica/mit-miss/00_send_hook.png",
+      "purpose": "转折：小黑把橙色箭头路牌扳向另一边（However）",
+      "states": [
+        {
+          "id": "arrow",
+          "prompt": "Remove the crank machine entirely. Xiaohei grips a large orange arrow-shaped signpost with both hands and swings it around so the arrow now points the opposite way, with two short curved motion marks showing the turn. The arrow is blank, no writing. Plain white background."
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "reference": "public/assets/replica/mit-miss/00_send_hook.png",
+      "purpose": "论证：小黑把最后一块浅蓝积木塞到橙色箭头牌下面，把理由撑稳",
+      "states": [
+        {
+          "id": "blocks",
+          "prompt": "Remove the crank machine entirely. Xiaohei pushes a light-blue block into place as the last piece of a sturdy stack of three light-blue blocks that holds up a small orange arrow sign standing on top. The sign is blank, no writing. Plain white background."
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "reference": "public/assets/replica/mit-miss/00_send_hook.png",
+      "purpose": "练习：小黑坐在小书桌前用铅笔写作文，桌上一个橙色计时器",
+      "states": [
+        {
+          "id": "write",
+          "prompt": "Remove the crank machine entirely. Xiaohei sits on a small stool at a simple wooden desk, writing on a sheet of paper with a pencil, focused. The paper shows only a few short grey lines, no letters. A small orange timer sits on the desk. Plain white background."
+        }
+      ]
+    }
+  ]
+}

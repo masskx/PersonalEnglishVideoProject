@@ -1,0 +1,43 @@
+{
+  "short": "concession-sentence",
+  "variant": "A",
+  "seconds": 35.233333333333334,
+  "beats": [
+    {
+      "id": "hook-a",
+      "kind": "mistake",
+      "from": 0,
+      "seconds": 5.07
+    },
+    {
+      "id": "fix-concede",
+      "kind": "fix",
+      "from": 5.07,
+      "seconds": 4.93
+    },
+    {
+      "id": "fix-turn",
+      "kind": "fix",
+      "from": 10,
+      "seconds": 5.17
+    },
+    {
+      "id": "test",
+      "kind": "test",
+      "from": 15.17,
+      "seconds": 8.07
+    },
+    {
+      "id": "answer",
+      "kind": "answer",
+      "from": 23.23,
+      "seconds": 5.23
+    },
+    {
+      "id": "cta",
+      "kind": "cta",
+      "from": 28.47,
+      "seconds": 6.77
+    }
+  ]
+}

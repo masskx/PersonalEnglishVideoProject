@@ -183,7 +183,9 @@ export const editOpenAICompatibleImage = async ({
     const form = new FormData();
     form.set('model', model);
     form.set('prompt', prompt);
-    form.set('image', new Blob([readFileSync(imagePath)]), path.basename(imagePath));
+    // The relay rejects an untyped upload (application/octet-stream); label the reference image.
+    const mime = /\.jpe?g$/i.test(imagePath) ? 'image/jpeg' : /\.webp$/i.test(imagePath) ? 'image/webp' : 'image/png';
+    form.set('image', new Blob([readFileSync(imagePath)], {type: mime}), path.basename(imagePath));
     form.set('size', size);
     form.set('quality', quality);
     form.set('response_format', 'b64_json');

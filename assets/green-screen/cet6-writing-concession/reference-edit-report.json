@@ -1,0 +1,229 @@
+{
+  "generatedAt": "2026-10-14T06:53:35.542Z",
+  "plan": "planning/cet6-writing-concession-art.json",
+  "model": "gpt-image-2.5-sunburst",
+  "size": "1536x864",
+  "quality": "high",
+  "items": [
+    {
+      "shot": "concede",
+      "state": "nod",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "assets/green-screen/cet6-writing-concession/concede-nod-source.png",
+      "alpha": "public/assets/replica/cet6-writing-concession/concede-nod.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "/home/user/PersonalEnglishVideoProject/public/assets/replica/cet6-writing-concession/concede-nod.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.1509060329861111,
+          "opaqueCoverage": 0.1509060329861111,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.17529296875,
+          "maxInnerVerticalBandRatio": 0,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 435,
+            "top": 165,
+            "right": 1548,
+            "bottom": 975
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "hook",
+      "state": "scale",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "assets/green-screen/cet6-writing-concession/hook-scale-source.png",
+      "alpha": "public/assets/replica/cet6-writing-concession/hook-scale.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "/home/user/PersonalEnglishVideoProject/public/assets/replica/cet6-writing-concession/hook-scale.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.15925894843207467,
+          "opaqueCoverage": 0.15925386216905382,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.14501953125,
+          "maxInnerVerticalBandRatio": 0,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 417,
+            "top": 173,
+            "right": 1514,
+            "bottom": 988
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "practice",
+      "state": "write",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "assets/green-screen/cet6-writing-concession/practice-write-source.png",
+      "alpha": "public/assets/replica/cet6-writing-concession/practice-write.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "/home/user/PersonalEnglishVideoProject/public/assets/replica/cet6-writing-concession/practice-write.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.16597790188259548,
+          "opaqueCoverage": 0.16597790188259548,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.23095703125,
+          "maxInnerVerticalBandRatio": 0,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 597,
+            "top": 156,
+            "right": 1507,
+            "bottom": 1054
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "support",
+      "state": "blocks",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "assets/green-screen/cet6-writing-concession/support-blocks-source.png",
+      "alpha": "public/assets/replica/cet6-writing-concession/support-blocks.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "/home/user/PersonalEnglishVideoProject/public/assets/replica/cet6-writing-concession/support-blocks.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.19381883409288195,
+          "opaqueCoverage": 0.19380357530381945,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.2587890625,
+          "maxInnerVerticalBandRatio": 0,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 416,
+            "top": 187,
+            "right": 1525,
+            "bottom": 984
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "shot": "turn",
+      "state": "arrow",
+      "status": "generated",
+      "origin": "reference-edit",
+      "source": "assets/green-screen/cet6-writing-concession/turn-arrow-source.png",
+      "alpha": "public/assets/replica/cet6-writing-concession/turn-arrow.png",
+      "verification": {
+        "ok": true,
+        "metrics": {
+          "file": "/home/user/PersonalEnglishVideoProject/public/assets/replica/cet6-writing-concession/turn-arrow.png",
+          "width": 2048,
+          "height": 1152,
+          "colorType": 6,
+          "bitDepth": 8,
+          "cornerAlpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "cornerPatchTransparentRatio": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subjectCoverage": 0.15603764851888022,
+          "opaqueCoverage": 0.15603764851888022,
+          "greenResidualRatio": 0,
+          "maxInnerHorizontalBandRatio": 0.23193359375,
+          "maxInnerVerticalBandRatio": 0,
+          "maxInnerHorizontalBandThicknessRatio": 0,
+          "maxInnerVerticalBandThicknessRatio": 0,
+          "subjectBounds": {
+            "left": 531,
+            "top": 122,
+            "right": 1535,
+            "bottom": 988
+          }
+        },
+        "errors": []
+      }
+    }
+  ]
+}
