@@ -1196,4 +1196,5 @@ Validated 2256 exclusive image-frame intervals; extracted/reviewed 128 encoded f
 - 新增 `src/replica/autoContinuousStage.ts`：从分镜自动生成 ten-tain 同款连续舞台，回归测试确认与 ten-tain 手写配置一致。新增 `src/replica/pacing.ts` 节奏闸门（最长静止 8 秒、3.5 秒以上静止合计 20%、首次变化 1.5 秒、第二次 3 秒），新期在 `replica:validate` 中失败即停，`project:test` 增加 `pacing.test.ts`。
 - clud-clus 改为连续舞台；不新增配音和生图，把旁白里已有的例句、中文释义、搭配、对比做成与旁白同步进场的画面层，开头加入 include 三态动作。最长静止 12.5 → 5.9 秒，静止占比 39% → 11%，首次画面变化 2.18 → 0.55 秒。
 - 恢复 2026-10-13 整理时误删的 pon-pos 角色锚点到 `references/anchors/pon-pos-accepted-anchor.png`；工作台不再把本机 `work/drafts` 草稿写进期页（在 GitHub 上是死链）。
+- 云端已用 `replica:produce --stage=deliver` 完整跑通重剪版（横屏、双封面、整片预览、竖屏、预告、复习卡、小红书卡片、文案），但云端网络禁止上传新的 LFS 媒体，仓库里的 `outputs/clud-clus/` 仍是首版文件。本机执行 `npm run replica:produce -- --project=clud-clus --stage=deliver` 即可在本机生成并提交重剪版（只用已有配音和插图，不花费额度）。
 
