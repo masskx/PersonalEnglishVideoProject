@@ -18,9 +18,14 @@ for (const [sceneId, plan] of Object.entries(tenTain.continuousStage!.scenePlans
 }
 assert.deepEqual(measurePacing(tenTain.storyboard).errors, [], 'ten-tain baseline must pass the pacing gate');
 
-const current = replicaProjects.filter((project) => !PACING_LEGACY_EPISODES.has(project.slug));
+const current = replicaProjects.filter((project) => !PACING_LEGACY_EPISODES.has(project.slug) && project.slug !== 'ten-tain');
 for (const project of current) {
   assert.equal(project.visualRenderer, 'continuous', `${project.slug}: new episodes use the ten-tain continuous stage`);
   assert.deepEqual(measurePacing(project.storyboard).errors, [], `${project.slug}: pacing gate`);
 }
 console.log(`pacing: ten-tain template reproduced; ${current.length} current episode(s) pass (${current.map((p) => p.slug).join(', ')}).`);
+
+// 小黑实心黑：自动舞台不得把插图画成半透明（0.9 会让黑色变成 RGB 27 的深灰）。
+for (const project of current) {
+  if (project.continuousStage) assert.equal(project.continuousStage.staticImageOpacity ?? 1, 1, `${project.slug}: illustrations must render at full opacity`);
+}
