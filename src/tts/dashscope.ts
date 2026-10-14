@@ -64,7 +64,9 @@ export const synthesizeDashscope = async (text: string, options: DashscopeTtsOpt
   if (audioData) return Buffer.from(audioData, 'base64');
   const audioUrl = payload.output?.audio?.url;
   if (!audioUrl) throw new Error(`DashScope response has no audio: ${JSON.stringify(payload)}`);
-  const audioResponse = await fetchWithRetry(audioUrl);
+  // DashScope returns a plain-http OSS link; the same object is served over https, which proxied
+  // (cloud) networks require.
+  const audioResponse = await fetchWithRetry(audioUrl.replace(/^http:\/\//, 'https://'));
   if (!audioResponse.ok) throw new Error(`Audio download failed: HTTP ${audioResponse.status}`);
   return Buffer.from(await audioResponse.arrayBuffer());
 };

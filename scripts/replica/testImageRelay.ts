@@ -32,8 +32,8 @@ const reuseSource = process.argv.includes('--reuse-source');
 const chromaScript = path.resolve(repoRoot, 'scripts', 'replica', 'removeGeneratedPlate.py');
 const bundledFfmpeg = path.resolve(repoRoot, 'node_modules', '@remotion', 'compositor-win32-x64-msvc', 'ffmpeg.exe');
 const bundledFfprobe = path.resolve(repoRoot, 'node_modules', '@remotion', 'compositor-win32-x64-msvc', 'ffprobe.exe');
-const ffmpeg = process.env.FFMPEG_PATH ?? (existsSync(bundledFfmpeg) ? bundledFfmpeg : 'ffmpeg');
-const ffprobe = process.env.FFPROBE_PATH ?? (existsSync(bundledFfprobe) ? bundledFfprobe : 'ffprobe');
+const ffmpeg = process.env.FFMPEG_PATH ?? (process.platform==='win32'&&existsSync(bundledFfmpeg) ? bundledFfmpeg : 'ffmpeg');
+const ffprobe = process.env.FFPROBE_PATH ?? (process.platform==='win32'&&existsSync(bundledFfprobe) ? bundledFfprobe : 'ffprobe');
 
 console.log(`Calling Images2 relay: ${model}, ${size}, quality=${quality}`);
 const bytes = reuseSource && existsSync(sourcePath)
