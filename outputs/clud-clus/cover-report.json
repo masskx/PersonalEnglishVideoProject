@@ -1,7 +1,7 @@
 {
   "project": "clud-clus",
   "orientation": "vertical",
-  "input": "work/render-staging/clud-clus-MeZRV7/cover.png",
+  "input": "work/render-staging/clud-clus-tlWso2/cover.png",
   "codec": "png",
   "width": 1080,
   "height": 1440,
@@ -12,8 +12,8 @@
       "y": 0,
       "rgb": [
         255,
-        255,
-        255
+        251,
+        243
       ]
     },
     {
@@ -21,8 +21,8 @@
       "y": 0,
       "rgb": [
         255,
-        255,
-        255
+        251,
+        243
       ]
     },
     {
@@ -30,8 +30,8 @@
       "y": 1439,
       "rgb": [
         255,
-        255,
-        255
+        251,
+        243
       ]
     },
     {
@@ -39,8 +39,8 @@
       "y": 1439,
       "rgb": [
         255,
-        255,
-        255
+        251,
+        243
       ]
     }
   ],

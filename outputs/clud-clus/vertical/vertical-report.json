@@ -1,10 +1,10 @@
 {
   "slug": "clud-clus",
-  "renderedAt": "2026-10-13T06:46:58.905Z",
+  "renderedAt": "2026-10-14T06:27:48.232Z",
   "draft": false,
   "cuts": {
     "full": {
-      "file": "outputs\\clud-clus\\vertical\\clud-clus-vertical.mp4",
+      "file": "outputs/clud-clus/vertical/clud-clus-vertical.mp4",
       "compositionId": "CludClusReplicaVertical",
       "durationSec": 182.16666666666666,
       "scenes": [
@@ -66,17 +66,17 @@
       ],
       "media": {
         "durationSec": 182.229333,
-        "bitRate": 517894,
+        "bitRate": 577971,
         "width": 1080,
         "height": 1920,
         "videoCodec": "h264",
         "audioCodec": "aac"
       },
-      "contactSheet": "outputs\\clud-clus\\vertical\\review\\full-contact-sheet.jpg",
+      "contactSheet": "outputs/clud-clus/vertical/review/full-contact-sheet.jpg",
       "errors": []
     },
     "teaser": {
-      "file": "outputs\\clud-clus\\vertical\\clud-clus-teaser.mp4",
+      "file": "outputs/clud-clus/vertical/clud-clus-teaser.mp4",
       "compositionId": "CludClusReplicaVerticalTeaser",
       "durationSec": 42.9,
       "scenes": [
@@ -103,15 +103,15 @@
       ],
       "media": {
         "durationSec": 42.944,
-        "bitRate": 512731,
+        "bitRate": 604200,
         "width": 1080,
         "height": 1920,
         "videoCodec": "h264",
         "audioCodec": "aac"
       },
-      "contactSheet": "outputs\\clud-clus\\vertical\\review\\teaser-contact-sheet.jpg",
+      "contactSheet": "outputs/clud-clus/vertical/review/teaser-contact-sheet.jpg",
       "errors": []
     }
   },
-  "reviewCard": "outputs\\clud-clus\\vertical\\review-card.png"
+  "reviewCard": "outputs/clud-clus/vertical/review-card.png"
 }
