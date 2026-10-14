@@ -1,24 +1,24 @@
-import type {ShortScript} from './types';
+import {HOOK_ROTATION, type HookType, type ShortScript} from './types';
 
 const clud = (name: string) => `assets/replica/clud-clus/${name}.png`;
 const cet6w = (name: string) => `assets/replica/cet6-writing-concession/${name}.png`;
-const FOLLOW = '关注小黑，每天一个四六级小技巧。';
+const FOLLOW = '关注小黑，每天三十秒学一点英语。';
 const poses = (word: string) => ['before', 'change', 'result'].map((stage) => clud(`${word}-${stage}`));
 
 /**
- * 抖音短视频脚本库。规则见 AGENTS.md 第 7 节“抖音短视频”：
- * 0–2 秒钩子（错误/挑战/反差/结果先行，画面第一帧就有大字和小黑）→ 讲一个点 → 暂停作答 → 答案 + 收藏。
- * 每段旁白控制在 3–6 秒；全片 30–40 秒。旁白里的例句写进 example，和旁白同时上屏。
+ * 竖屏短视频脚本库（抖音与小红书发同一条）。规则见 AGENTS.md 第 7 节：
+ * 0–2 秒钩子（画面第一帧就有大字和小黑）→ 讲一个点 → 暂停作答 → 答案 + 收藏。
+ * 数组顺序 = 发布顺序；第 i 条的钩子类型必须是 HOOK_ROTATION[i % 4]（挑战 → 错误 → 反差 → 结果先行）。
+ * 新视频追加在末尾，用 nextHookType() 取它该用的钩子类型。每段旁白 3–6 秒；全片 30–40 秒。
  */
 export const shortLibrary: readonly ShortScript[] = [
   {
     id: 'include-exclude',
     episode: 'clud-clus',
+    category: '四六级词汇',
     topic: 'include 和 exclude：早餐算不算钱',
-    hooks: {
-      A: {id: 'hook-a', kind: 'hook', headline: '早餐另付钱\n填 **include** 还是 **exclude**？', voice: '早餐另付钱，用 include 还是 exclude？先选一个。', art: clud('exclude-result')},
-      B: {id: 'hook-b', kind: 'mistake', headline: '“价格不含早餐”\n很多人写反了', wrong: 'The price includes breakfast.', right: 'The price excludes breakfast.', voice: '价格不含早餐，很多人写成 includes，意思正好反了。', art: clud('include-result')},
-    },
+    hookType: 'challenge',
+    hook: {id: 'hook', kind: 'hook', headline: '早餐另付钱\n填 **include** 还是 **exclude**？', voice: '早餐另付钱，用 include 还是 exclude？先选一个。', art: clud('exclude-result')},
     body: [
       {id: 'fix-in', kind: 'fix', headline: '**in-** = 收进里面', voice: 'in 是收进里面。餐盘放进盒子，盖上，早餐算在价格里。', arts: poses('include'), example: 'Breakfast is included.  含早餐'},
       {id: 'fix-ex', kind: 'fix', headline: '**ex-** = 留在外面', voice: 'ex 是留在外面。盒子盖上了，餐盘还在外面，早餐不算。', arts: poses('exclude'), example: 'Breakfast is excluded.  不含早餐'},
@@ -27,42 +27,20 @@ export const shortLibrary: readonly ShortScript[] = [
       {id: 'cta', kind: 'cta', headline: '收藏这条\n订酒店、写作文都用得上', voice: `收藏这条，考前翻出来。${FOLLOW}`, art: clud('include-result')},
     ],
     publish: {
-      titles: {A: '早餐另付钱，用include还是exclude？', B: '“价格不含早餐”很多人写反了'},
+      title: '早餐另付钱，用include还是exclude？',
+      xhsTitle: 'include和exclude怎么分',
       body: 'in- 收进里面，ex- 留在外面。看小黑一个盒子记住 include / exclude，最后有一道小题，评论区交答案。',
       tags: ['#四级词汇', '#六级词汇', '#英语单词', '#词根词缀', '#四六级备考', '#小黑英语'],
       pinnedComment: '答案：The fee excludes meals.（费用不含餐）你选对了吗？评论区说说你还容易把哪两个词搞反～',
     },
   },
   {
-    id: 'exclude-preclude',
-    episode: 'clud-clus',
-    topic: 'exclude 和 preclude：排除，还是办不成',
-    hooks: {
-      A: {id: 'hook-a', kind: 'hook', headline: '受伤**没法**参赛\n用 excluded 还是 **precluded**？', voice: '受伤没法参赛，用 excluded 还是 precluded？很多人选错。', art: clud('preclude-result')},
-      B: {id: 'hook-b', kind: 'hook', headline: '都能翻成“排除”\n**exclude** 和 **preclude** 差在哪', voice: 'exclude 和 preclude 都能翻成排除，用法差了一大截。', art: clud('exclude-result')},
-    },
-    body: [
-      {id: 'fix-ex', kind: 'fix', headline: '**exclude**：不纳入', voice: 'exclude 是不纳入。把人或费用，留在名单外面。', arts: poses('exclude'), example: 'He was excluded from the team.'},
-      {id: 'fix-pre', kind: 'fix', headline: '**preclude**：让事情办不成', voice: 'preclude 是提前堵住。球还没滚过去，闸门先关上，事情就办不成。', arts: poses('preclude'), example: 'The injury precluded him from playing.', exampleAt: 0.55},
-      {id: 'test', kind: 'test', headline: 'Heavy rain ___ the game.\n（大雨让比赛办不成）', options: ['excluded', 'precluded'], correct: 1, pause: 3, voice: '考考你：大雨让比赛办不成，选哪个？'},
-      {id: 'answer', kind: 'answer', headline: '答案：**precluded**', voice: '答案是 precluded。事情办不成，就用 preclude。', art: clud('preclude-result'), example: 'Heavy rain precluded the game.', exampleAt: 0.1},
-      {id: 'cta', kind: 'cta', headline: '收藏这条\n写作文少踩一个坑', voice: `收藏这条，写作文少踩一个坑。${FOLLOW}`, art: clud('preclude-result')},
-    ],
-    publish: {
-      titles: {A: '受伤没法参赛，用excluded还是precluded？', B: 'exclude和preclude都是“排除”？差在这'},
-      body: 'exclude 是不纳入，preclude 是让事情办不成。一个闸门记住区别，结尾有小题，评论区交答案。',
-      tags: ['#六级词汇', '#考研英语', '#英语单词', '#易混词', '#四六级备考', '#小黑英语'],
-      pinnedComment: '答案：Heavy rain precluded the game. 你选对了吗？还有哪组“意思差不多”的词想看，评论区告诉我～',
-    },
-  },
-  {
     id: 'concession-sentence',
     episode: 'cet6-writing-concession',
+    category: '六级作文',
     topic: '六级作文让步句：It is true that… However…',
-    hooks: {
-      A: {id: 'hook-a', kind: 'mistake', headline: '六级作文开头\n只会写 I totally agree？', wrong: 'I totally agree. Part-time jobs are good.', right: 'It is true that … However, …', voice: '六级作文一上来就写 I totally agree？读起来像喊口号。', art: cet6w('hook-scale')},
-      B: {id: 'hook-b', kind: 'hook', headline: '作文多加**一句话**\n说服力马上不一样', voice: '六级作文多加一句话，说服力马上不一样。', art: cet6w('concede-nod')},
-    },
+    hookType: 'mistake',
+    hook: {id: 'hook', kind: 'mistake', headline: '六级作文开头\n只会写 I totally agree？', wrong: 'I totally agree. Part-time jobs are good.', right: 'It is true that … However, …', voice: '六级作文一上来就写 I totally agree？读起来像喊口号。', art: cet6w('hook-scale')},
     body: [
       {id: 'fix-concede', kind: 'fix', headline: '先让步：\n**It is true that …**', voice: '第一句先承认对方：It is true that part-time jobs take time.', art: cet6w('concede-nod'), english: true, example: 'It is true that part-time jobs take time.', exampleAt: 0.3},
       {id: 'fix-turn', kind: 'fix', headline: '再转回：\n**However, …**', voice: '第二句转回来：However, they teach students to plan their time.', art: cet6w('turn-arrow'), english: true, example: 'However, they teach students to plan their time.', exampleAt: 0.3},
@@ -71,13 +49,39 @@ export const shortLibrary: readonly ShortScript[] = [
       {id: 'cta', kind: 'cta', headline: '收藏这条\n考前背熟这两句', voice: `收藏这条，考前背熟这两句。${FOLLOW}`, art: cet6w('hook-scale')},
     ],
     publish: {
-      titles: {A: '六级作文只会写I totally agree？', B: '六级作文多加一句话，说服力马上不一样'},
+      title: '六级作文只会写I totally agree？',
+      xhsTitle: '六级作文让步句，考前背熟',
       body: '让步一句 It is true that…，转折一句 However…，再给一个例子。结尾有小题，评论区交答案。',
       tags: ['#六级作文', '#六级写作', '#英语六级', '#英语写作', '#四六级备考', '#小黑英语'],
       pinnedComment: '答案：B. Admittedly, online courses are flexible. 下一句你会怎么用 However 转回来？评论区写写看～',
     },
   },
+  {
+    id: 'exclude-preclude',
+    episode: 'clud-clus',
+    category: '六级 · 考研词汇',
+    topic: 'exclude 和 preclude：排除，还是办不成',
+    hookType: 'contrast',
+    hook: {id: 'hook', kind: 'hook', headline: '都能翻成“排除”\n**exclude** 和 **preclude** 差在哪', voice: 'exclude 和 preclude 都能翻成排除，用法差了一大截。', art: clud('exclude-result')},
+    body: [
+      {id: 'fix-ex', kind: 'fix', headline: '**exclude**：不纳入', voice: 'exclude 是不纳入。把人或费用，留在名单外面。', arts: poses('exclude'), example: 'He was excluded from the team.'},
+      {id: 'fix-pre', kind: 'fix', headline: '**preclude**：让事情办不成', voice: 'preclude 是提前堵住。球还没滚过去，闸门先关上，事情就办不成。', arts: poses('preclude'), example: 'The injury precluded him from playing.', exampleAt: 0.55},
+      {id: 'test', kind: 'test', headline: 'Heavy rain ___ the game.\n（大雨让比赛办不成）', options: ['excluded', 'precluded'], correct: 1, pause: 3, voice: '考考你：大雨让比赛办不成，选哪个？'},
+      {id: 'answer', kind: 'answer', headline: '答案：**precluded**', voice: '答案是 precluded。事情办不成，就用 preclude。', art: clud('preclude-result'), example: 'Heavy rain precluded the game.', exampleAt: 0.1},
+      {id: 'cta', kind: 'cta', headline: '收藏这条\n写作文少踩一个坑', voice: `收藏这条，写作文少踩一个坑。${FOLLOW}`, art: clud('preclude-result')},
+    ],
+    publish: {
+      title: 'exclude和preclude都是“排除”？差在这',
+      xhsTitle: 'exclude和preclude差在哪',
+      body: 'exclude 是不纳入，preclude 是让事情办不成。一个闸门记住区别，结尾有小题，评论区交答案。',
+      tags: ['#六级词汇', '#考研英语', '#英语单词', '#易混词', '#四六级备考', '#小黑英语'],
+      pinnedComment: '答案：Heavy rain precluded the game. 你选对了吗？还有哪组“意思差不多”的词想看，评论区告诉我～',
+    },
+  },
 ];
+
+/** 下一条新视频该用的钩子类型（按发布顺序轮换）。 */
+export const nextHookType = (): HookType => HOOK_ROTATION[shortLibrary.length % HOOK_ROTATION.length];
 
 export const findShort = (id: string) => {
   const short = shortLibrary.find((item) => item.id === id);

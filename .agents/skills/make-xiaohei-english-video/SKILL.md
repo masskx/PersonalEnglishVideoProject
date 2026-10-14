@@ -1,6 +1,6 @@
 ---
 name: make-xiaohei-english-video
-description: Make or resume an English-learning video in this Xiaohei project, including autonomous topic selection when the user names only a column such as root words, confusing words, CET writing, reading, or translation. Use for production requests; do not trigger for discussion, inventory, or rule recording alone.
+description: Make or resume an English-learning video in this Xiaohei project (default a 30–40 s vertical short posted to both Douyin and Xiaohongshu), including autonomous topic selection when the user names only a direction such as CET-4/6, graduate-entrance-exam English, root words, confusing words, writing, reading, or translation. Use for production requests; do not trigger for discussion, inventory, or rule recording alone.
 ---
 
 # Make Xiaohei English Video
@@ -80,10 +80,15 @@ episode as reviewed. Midpoint stills alone are not sufficient evidence.
 
 ## Required completion
 
-Unless the user explicitly narrows the task, complete research/source checking, script, narration,
-visuals, Remotion timing, full MP4, vertical full/teaser/review card, two covers, publish copy, appropriate worksheet or review
-evidence, media QA, topic-ledger update, production log, and workbench refresh. Do not publish or
-message others.
+Default deliverable (a short, see below): source check, script appended to `src/shorts/library.ts`,
+narration, `shorts:render` output in `outputs/shorts/<id>/` — one video, three covers, `publish.md`,
+`release.json`, `review/` — contact-sheet and cover review, `project:test`. Do not publish or message
+others.
+
+For a long lesson (only when the user asks for one): research/source checking, script, narration,
+visuals, Remotion timing, full MP4, vertical full version, two covers, publish copy, appropriate
+worksheet or review evidence, media QA, topic-ledger update, production log, and workbench refresh.
+Xiaohongshu image cards and teasers are retired (2026-10-14).
 
 Treat prose instructions as production guidance, not proof that content-to-visual mapping passed.
 If a hard gate can be represented as project data, run the project preflight before expensive
@@ -95,27 +100,37 @@ pose sheets, and assembly intermediates in local `work/` (gitignored), never in 
 Do not revive rules from dated audit snapshots or historical production notes. Those records explain
 how an old episode was made; they do not override the current production baseline.
 
-## Douyin shorts (main Douyin format since 2026-10-14)
+## Shorts: the default format for Douyin and Xiaohongshu (since 2026-10-14)
 
-- The main Douyin format is a native 30–40 s vertical short: one point, a 0–2 s hook (mistake,
-  challenge, contrast or result first), one or two teaching beats, a pause-and-answer test with a
-  3 s countdown, the answer, then one line asking viewers to save and follow. No "today we learn" or
-  channel-name openings; frame 0 shows the big headline and Xiaohei with no fade-in.
-- Scripts live in `src/shorts/library.ts` (A/B hooks, shared body, title/body/tags/pinned comment).
-  They reuse the source episode's art. Use `arts` for before/change/result pose switches inside a
-  beat, and `example` for a sentence the narration says, so it appears on screen at the same time.
-- Commands: `npm run shorts:voice -- --short=<id> [--generate]` → `npm run shorts:render -- --short=<id>`.
-  Output: `outputs/<episode>/douyin-shorts/`. Daily data from the owner goes into
-  `planning/douyin-metrics.json`; `npm run metrics:report` compares hooks (see `docs/DOUYIN-DATA-EN.md`).
-  The next round keeps the stronger hook type and rewrites the weakest part.
-- The full-length vertical below stays as the long version for collections.
+- Content spans all English learning: CET-4/6, graduate-entrance-exam English (考研), root words,
+  confusable words, grammar and everyday usage. Put the label in the script's `category`.
+- The default video is a native 30–40 s vertical short. The same file is posted to Douyin and
+  Xiaohongshu. Structure: one point, a 0–2 s hook, one or two teaching beats, a pause-and-answer test
+  with a 3 s countdown, the answer, then one line asking viewers to save and follow. No "today we
+  learn" or channel-name openings; frame 0 shows the big headline and Xiaohei with no fade-in.
+- Hooks rotate and there are no A/B tests. Library order is posting order, and short #i uses
+  `HOOK_ROTATION[i % 4]`: challenge → mistake → contrast → result first. Append new shorts at the end
+  with `nextHookType()`. The regression test enforces the rotation.
+- Scripts live in `src/shorts/library.ts` (hook, body, `publish` with a Douyin title of 30 chars or
+  less and an `xhsTitle` of 20 chars or less, tags, pinned comment). They reuse the source episode's
+  art. Use `arts` for before/change/result pose switches inside a beat, and `example` for a sentence
+  the narration says, so it appears on screen at the same time.
+- Commands: `npm run shorts:voice -- --short=<id> --generate --prune` →
+  `npm run shorts:render -- --short=<id>`. Output is one folder per video, `outputs/shorts/<id>/`:
+  - `<id>.mp4`
+  - `cover-douyin-vertical.png` (1080×1920; content kept inside the middle 3:4)
+  - `cover-douyin-landscape.png` (1440×1080, 4:3)
+  - `cover-xiaohongshu.png` (1080×1440, 3:4)
+  - `publish.md`, `release.json`, `review/`
+- Daily data from the owner (Douyin and Xiaohongshu) goes into `planning/douyin-metrics.json`.
+  `npm run metrics:report` groups results by hook type and platform (see `docs/DOUYIN-DATA-EN.md`).
+- Xiaohongshu image cards are retired. Never produce them unless the owner asks again.
 
-## Douyin vertical delivery (default since 2026-10-12)
+## Long-lesson vertical version (only when a long lesson is requested)
 
-- Douyin's feed is vertical; a 16:9 upload fills about a third of the phone screen. After the
-  landscape master passes its gates, run `npm run vertical:render -- --project=<slug>` to produce
-  `vertical/<slug>-vertical.mp4`, a ~40 s `vertical/<slug>-teaser.mp4`, and `vertical/review-card.png`
-  in the episode's delivery folder, then regenerate the publish copy.
+- After the landscape master passes its gates, `replica:produce --stage=deliver` runs
+  `vertical:render -- --project=<slug> --cut=full` to produce `vertical/<slug>-vertical.mp4`, then
+  regenerates the publish copy. Teasers and review cards are retired.
 - The vertical renderer (`src/replica/vertical/`) re-flows the same storyboard, narration and episode
   art into a 1080×1920 phone layout. It never regenerates art or changes the script. Check the
   contact sheets: hook and Xiaohei visible on frame 0, content and captions inside Douyin's safe area,

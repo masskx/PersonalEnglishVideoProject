@@ -1,72 +1,86 @@
 # 小黑英语视频项目 · Xiaohei English Videos
 
-Short Chinese-language English lessons (root words, word pairs, CET-4/6 methods) starring the black bean
-character 小黑, made with Remotion. Deliveries target Douyin (vertical video) and Xiaohongshu (image cards).
+Short Chinese-language English lessons starring the black bean character 小黑, made with Remotion.
+**Content covers all of English learning:** CET-4 and CET-6 (vocabulary, writing, reading, translation,
+listening), graduate-entrance-exam English (考研英语), word roots and confusable words, grammar, and everyday
+usage.
+
+**Main format (since 2026-10-14):** 30–40 s vertical videos (1080×1920). **The same video is posted on Douyin
+and Xiaohongshu.** Each video gets its own folder with three covers:
+
+| Cover | Size | Used for |
+| --- | --- | --- |
+| `cover-douyin-vertical.png` | 1080×1920 (9:16) | Douyin vertical cover. Content stays inside the middle 3:4, which is all the desktop upload page keeps. |
+| `cover-douyin-landscape.png` | 1440×1080 (4:3) | Douyin horizontal cover |
+| `cover-xiaohongshu.png` | 1080×1440 (3:4) | Xiaohongshu cover |
+
+Xiaohongshu image cards are no longer made. Hooks rotate from video to video, with no A/B tests:
+challenge question, then common mistake, then contrast, then result first, then back to the challenge question.
 
 ## Start here (English)
 
 | You want to… | Open |
 | --- | --- |
-| Get a finished video, covers, publish text | Double-click [00-打开工作台.html](00-打开工作台.html) (the workbench) |
+| Post a finished video | `outputs/shorts/<video>/`: the video, 3 covers, and `publish.md` (Douyin and Xiaohongshu titles, text, tags, pinned comment) |
+| Send daily numbers | [docs/DOUYIN-DATA-EN.md](docs/DOUYIN-DATA-EN.md) |
 | Make videos with local Codex | [docs/LOCAL-CODEX-QUICKSTART-EN.md](docs/LOCAL-CODEX-QUICKSTART-EN.md) |
 | Know what to type to Codex | [docs/CODEX-PROMPT-GUIDE-EN.md](docs/CODEX-PROMPT-GUIDE-EN.md) |
 | Grow views and promote products later | [docs/growth-playbook-EN.md](docs/growth-playbook-EN.md) |
+| Browse older long lessons | Double-click [00-打开工作台.html](00-打开工作台.html) (the workbench) |
 
-Codex reads [AGENTS.md](AGENTS.md) automatically. That file is the single rule set for agents; everything an
-agent needs (commands, folders, quality bar) is linked from it. Old trials and archives were deleted on
-2026-10-13; git history still has them.
+Codex and Claude read [AGENTS.md](AGENTS.md) automatically. That file is the single rule set for agents;
+everything an agent needs (commands, folders, quality bar) is linked from it.
 
 ## 中文速览
 
-- **成片与发布材料：** 双击 [00-打开工作台.html](00-打开工作台.html)；完整作品表见 [PROJECTS.html](PROJECTS.html)，
-  修改后双击 `刷新项目管理.cmd` 或运行 `npm run project:inventory` 刷新。
+- **主推格式：** 30–40 秒竖屏短视频，抖音和小红书发同一条；一条视频一个文件夹 `outputs/shorts/<视频ID>/`：
+  成片 `<视频ID>.mp4`、抖音竖封面（9:16）、抖音横封面（4:3）、小红书封面（3:4）、`publish.md`（两个平台的标题、
+  正文、话题、置顶评论）、`release.json`、`review/`。不再做小红书图文卡。
+- **内容范围：** 四六级（词汇、作文、阅读、翻译、听力）、考研英语、词根与易混词、语法、日常用法，所有英语学习内容。
+- **钩子轮换：** 挑战题 → 常见错误 → 反差对比 → 结果先行，按发布顺序轮换，不再做 A/B 实验。
 - **智能体规则：** [AGENTS.md](AGENTS.md) → [当前视频制作基准](docs/当前制作基准.md) →
   [新会话制作入口](docs/新会话制作入口.md)（命令顺序与目录）。
-- **当前作品：** 21 期词根/词汇横屏成片（`outputs/<期名>/`，已发布的带“发了”后缀），3 期四六级方法课
-  （四级写作 `cet4-writing-paragraph-v2`、四级翻译 `cet4-translation-main-clause`、六级阅读
-  `cet6-reading-location-paraphrase`）。每期另可生成 `vertical/`（抖音竖屏完整版、预告、复习卡）和
-  `xiaohongshu/`（3:4 图文卡）。
-- **当前基准成片：** [ten / tain](outputs/ten-tain/ten-tain.mp4)；视觉锚点
-  [mit / miss Sunburst](references/visual-baseline/mit-miss-sunburst-full/mit-miss-sunburst-full.mp4)。
+- **素材来源期：** 词根期（`src/replica/`）与四六级方法课（`src/cet-*`、`src/cet6-*`）提供小黑插图和讲解素材；
+  旧的长讲解成片仍在 `outputs/<期名>/`（已发布的带“发了”后缀），工作台 [00-打开工作台.html](00-打开工作台.html)。
 
 ## 下制作指令的方式
 
-- 指定题目：`做一期易混词 affect / effect，完整制作并放工作台。`
-- 只指定栏目：`做一个词根视频。`、`做一个四级写作视频。`、`做一个六级阅读定位视频。`
-- 指定材料：`用这道题做一期四级阅读定位，保留题目来源，完整制作。`
+- 只说“做视频”或指定方向：`做一条考研词汇短视频。`、`做一条六级作文短视频。`、`做一条词根短视频。`
+  → 智能体自主查重选题，按轮到的钩子类型直接做完。
+- 指定题目：`做一条 affect / effect 的短视频。`
+- 指定材料：`用这道四级阅读题做一条短视频。`
 
-“完整制作”包含查重、讲稿、配音、小黑关键姿态、文字动效、横屏成片、双封面、抖音竖屏、小红书图文卡、
-发布文案、检查记录和工作台刷新；不会自动发布到平台。
+“做完”包含查重、讲稿、配音（需要时生图）、竖屏成片、三张封面、两个平台的发布文案和检查；不会自动发布到平台。
 
 ## 目录
 
 ```text
-00-打开工作台.html             日常入口：当前成片、封面、文案、投稿入口
-PROJECTS.html                 全部作品表
-outputs/<期名>/                交付：成片、双封面、文案、release.json、content-qa.md、review/、vertical/、xiaohongshu/
-src/replica/                  词根期：注册表、各期分镜与配音清单、vertical/ 竖屏、xhs/ 小红书
-src/cet-writing/ src/cet-translation/ src/cet6-reading/   四六级方法课
-scripts/                      配音、生图、渲染、封面、文案、检查命令
-public/assets/                渲染运行时素材（每期独立目录）
+outputs/shorts/<视频ID>/       交付（主推）：一条视频 + 三张封面 + publish.md + release.json + review/
+outputs/<期名>/                旧的长讲解交付与素材来源期
+src/shorts/                   短视频脚本库 library.ts、竖屏组件 DouyinShort.tsx、封面 ShortCover.tsx、时间轴
+src/replica/                  词根期：注册表、各期分镜与配音清单、竖屏重排
+src/cet-writing/ src/cet-translation/ src/cet6-reading/ src/cet6-writing/   四六级方法课
+scripts/shorts/               短视频配音、渲染、数据报告、回归测试
+scripts/                      其余配音、生图、渲染、封面、文案、检查命令
+public/assets/                渲染运行时素材（每期独立目录；短视频配音在 audio/shorts/）
 assets/                       生图源图、视觉基线源图、音乐源、品牌
 references/                   小黑风格来源与已验收视觉锚点
-planning/                     默认配置、选题台账、关键姿态计划、增长配置
+planning/                     默认配置、选题台账、增长配置、数据台账 douyin-metrics.json
 docs/                         规则与说明；*-EN.md 为英文指南
 .agents/skills/               制作 Skill
 work/                         本机临时目录（不进 git，可清空）
-样片/                         早期参照样片
 ```
 
 ## 常用命令
 
 ```bash
 npm run keys:check                                   # 密钥是否设置（只显示长度）
-npm run replica:produce -- --project=<期名> --stage=deliver   # 词根期一条命令交付
-npm run xhs:cards -- --project=<期名>                 # 小红书图文卡（词根期或四六级）
-npm run vertical:render -- --project=<期名>           # 抖音竖屏完整版 + 预告 + 复习卡
+npm run shorts:voice -- --short=<视频ID>              # 短视频配音计划；加 --generate 生成，加 --prune 清旧音频
+npm run shorts:render -- --short=<视频ID>             # 竖屏成片 + 三张封面 + 发布文案（--covers-only 只出封面）
+npm run metrics:report                               # 数据报告（按钩子类型、平台汇总）
+npm run replica:keyposes:edit -- --plan=<计划>        # 新素材：从已验收小黑锚点编辑生图（加 --generate）
 npm run project:test                                 # 回归测试 + 密钥扫描
 npm run project:check                                # 交付文件与运行时素材完整性
-npm run project:inventory                            # 刷新工作台与作品表
 npm run typecheck                                    # TypeScript 检查
 ```
 

@@ -62,50 +62,39 @@ The rules are written in Chinese, so short Chinese prompts work best. Meanings i
 
 | You type | What happens |
 | --- | --- |
-| `做一个词根视频` (make a root-word video) | Codex picks an unused root, then writes the script, generates voice and new Xiaohei art, and renders everything |
-| `做一期 spect 词根` (make a "spect" episode) | Same, for the root you name (old versions are kept) |
-| `做一个易混词视频` (make a confusing-words video) | Picks an unused word pair |
-| `给 ten-tain 生成小红书图文` (Xiaohongshu cards for ten-tain) | Runs `npm run xhs:cards -- --project=ten-tain` |
-| `把 pon-pos 做成竖屏` (vertical version of pon-pos) | Runs `npm run vertical:render -- --project=pon-pos` |
-| `给 cet4-translation-main-clause 生成小红书图文` (cards for a CET lesson) | Same command; CET lessons get method cards (problem → steps → checklist → practice → answer) |
+| `做一条视频` (make a video) | Codex picks an unused topic and makes a 30–40 s vertical short with the next hook type in the rotation |
+| `做一条考研词汇视频` / `做一条六级作文视频` / `做一条词根视频` | Same, in the direction you name (graduate-entrance-exam vocabulary, CET-6 writing, root words…) |
+| `做一条 affect / effect 的视频` (a video on affect / effect) | Same, for the exact topic you name |
+| `把 include-exclude 的封面改大字` (change a cover) | Edits the script or cover and runs `npm run shorts:render -- --short=include-exclude --covers-only` |
+| `做一期 spect 长讲解` (a long lesson on "spect") | Only when you ask: the 2–3 minute long-lesson pipeline |
 
-To make a finished episode in one go, Codex can run
-`npm run replica:produce -- --project=<slug> --stage=deliver`. The deliver stage renders the landscape
-master, the Douyin vertical version, the teaser, the review card and the Xiaohongshu cards, then
-writes the post text.
+## 3. What you get for each video
 
-## 3. What you get for each episode
+One video per folder, posted to **both Douyin and Xiaohongshu**:
 
 ```text
-outputs/<episode>/
-  <episode>.mp4                 landscape master (Bilibili, Xigua)
-  cover.png, cover-landscape.png
-  publish-copy.md               Douyin / shared post text
-  vertical/<episode>-vertical.mp4   Douyin full version (9:16)
-  vertical/<episode>-teaser.mp4     ~40 s teaser
-  vertical/review-card.png
-  xiaohongshu/01-cover.png …        Xiaohongshu carousel (3:4, 1080×1440)
-  xiaohongshu/xhs-note.md           Xiaohongshu title options, body, tags
+outputs/shorts/<video>/
+  <video>.mp4                    the video (1080×1920, 30–40 s)
+  cover-douyin-vertical.png      Douyin vertical cover (9:16; content inside the middle 3:4)
+  cover-douyin-landscape.png     Douyin horizontal cover (4:3)
+  cover-xiaohongshu.png          Xiaohongshu cover (3:4)
+  publish.md                     Douyin and Xiaohongshu titles, body, tags, pinned comment
+  release.json, review/          status (draft) and review files
 ```
 
-Open `00-打开工作台.html` (the workbench) in the repository root to browse everything.
+Xiaohongshu image cards are no longer made (since 2026-10-14). Posting steps and the daily numbers to
+send: [DOUYIN-DATA-EN.md](DOUYIN-DATA-EN.md).
 
-## 4. Xiaohongshu: what the cards are built for
+## 4. Hooks rotate
 
-Xiaohongshu users browse a two-column feed of covers and save useful notes. They are less likely to
-watch a long lecture video. So for Xiaohongshu the project now makes an **image carousel**:
+Each new video uses the next opening style in a fixed rotation, with no A/B tests:
 
-1. **Cover:** the root in huge type, the meaning with a highlighter mark, Xiaohei, all the words, and a
-   "建议收藏" (worth saving) ribbon.
-2. **One card per word:** the word with its root highlighted, the word-part formula, a big meaning,
-   Xiaohei's action and an example sentence.
-3. **One-page summary:** the card people save.
-4. **Self-test:** prompts comments ("先别往回翻").
-5. **Follow card:** follow prompt plus a comment prompt.
+1. challenge question
+2. common mistake
+3. contrast
+4. result first
 
-Post the images in file-name order and use one of the titles in `xhs-note.md`; Xiaohongshu allows
-20 characters, and the note flags any title that is too long. To change the wording, colours of the
-CTA or tags for every future note, edit the `xiaohongshu` section of `planning/growth-promotion.json`.
+After a few rounds, the daily numbers show which style works best.
 
 ## 5. Before you post
 

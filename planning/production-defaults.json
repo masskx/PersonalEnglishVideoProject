@@ -35,8 +35,7 @@
     "stage_only_referenced_public_assets_then_render_full_video",
     "build_full_video_preview_and_pass_layout_gate",
     "render_two_covers_and_publish_copy",
-    "render_vertical_full_teaser_and_review_card",
-    "render_xiaohongshu_cards_and_note",
+    "render_vertical_full_version",
     "run_media_and_content_review",
     "update_ledger_logs_and_workbench"
   ],
@@ -153,8 +152,27 @@
     "growthConfig": "planning/growth-promotion.json",
     "ownerGuideEnglish": "docs/growth-playbook-EN.md"
   },
+  "shortsDelivery": {
+    "since": "2026-10-14",
+    "default": true,
+    "note": "主推 30–40 秒竖屏短视频，抖音和小红书发同一条；一条视频一个文件夹，三张封面；钩子按 HOOK_ROTATION 轮换，不做 A/B。",
+    "folder": "outputs/shorts/<id>/",
+    "commands": ["npm run shorts:voice -- --short=<id> --generate --prune", "npm run shorts:render -- --short=<id>"],
+    "video": [1080, 1920],
+    "durationSeconds": [30, 40],
+    "covers": {
+      "cover-douyin-vertical.png": [1080, 1920],
+      "cover-douyin-landscape.png": [1440, 1080],
+      "cover-xiaohongshu.png": [1080, 1440]
+    },
+    "hookRotation": ["challenge", "mistake", "contrast", "result"],
+    "maxDouyinTitleChars": 30,
+    "maxXiaohongshuTitleChars": 20
+  },
   "xiaohongshuDelivery": {
     "since": "2026-10-12",
+    "retired": "2026-10-14",
+    "retiredNote": "用户决定不再做小红书图文卡，小红书发同一条短视频。以下为旧配置，仅供追溯。",
     "reason": "owner_found_lecture_videos_unappealing_for_xiaohongshu_feed",
     "command": "npm run xhs:cards -- --project=<slug>",
     "size": [1080, 1440],
@@ -175,9 +193,6 @@
       "coverPortrait",
       "coverLandscape",
       "verticalVideo",
-      "verticalTeaser",
-      "reviewCard",
-      "xiaohongshuCards",
       "publishCopy",
       "reviewEvidence",
       "topicLedgerUpdate",

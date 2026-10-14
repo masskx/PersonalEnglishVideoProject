@@ -19,8 +19,10 @@
 - 3 期四六级方法课：`cet4-writing-paragraph-v2`、`cet4-translation-main-clause`、`cet6-reading-location-paraphrase`。
 - 当前基准成片：`outputs/ten-tain/ten-tain.mp4`；视觉锚点：`references/visual-baseline/mit-miss-sunburst-full/`；
   生图角色参考：`public/assets/replica/mit-miss-images2-keyposes/` 与 `public/assets/replica/mit-miss/00_send_hook.png`。
-- 平台交付：抖音竖屏（`vertical/`）、小红书图文卡（`xiaohongshu/`）均可由命令生成；推广配置在
-  `planning/growth-promotion.json`。所有 release 仍为 draft，发布前需用户手机外放与耳机完整听看。
+- **主推格式（2026-10-14 用户决定）：** 30–40 秒竖屏短视频，抖音和小红书发同一条；一条视频一个文件夹
+  `outputs/shorts/<视频ID>/`，每条三张封面（抖音竖 9:16、抖音横 4:3、小红书 3:4）；钩子按挑战 → 错误 → 反差 →
+  结果先行轮换，不做 A/B；不再做小红书图文卡和预告。内容覆盖四六级、考研、词根、易混词、语法与日常用法。
+  推广配置在 `planning/growth-promotion.json`。所有 release 仍为 draft，发布前需用户手机外放与耳机完整听看。
 
 ## 视觉配色（2026-10-14 用户确认）
 
@@ -70,3 +72,5 @@
   恢复 2026-10-13 误删的 pon-pos 角色锚点到 `references/anchors/`。
 - 2026-10-14 纸面配色成为全栏目统一风格（取代纯白画布）；验证脚本改为检查纸面颜色；四六级白底插图用 multiply 融进纸面；
   自动连续舞台插图改为 100% 不透明（小黑纯黑）；云端缺微软雅黑时用思源黑体代替以保证中文标点紧凑。
+- 2026-10-14 短视频定型：停止 A/B 实验，钩子轮换（`HOOK_ROTATION`、`nextHookType()`）；一条视频一个文件夹
+  `outputs/shorts/<id>/`，`ShortCover` 同时出抖音竖封面、抖音横封面、小红书封面；小红书图文卡与预告停用；README 改为全英语内容定位。

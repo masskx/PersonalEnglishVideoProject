@@ -87,7 +87,8 @@ const historyDeliveries = history.topics.flatMap((topic) => [
   ...(topic.versions ?? []).map((version) => version.directory),
 ]).filter((value): value is string => Boolean(value?.startsWith('outputs/')))
   .map((value) => path.basename(value));
-const known = new Set([...replicaProjects.flatMap((p) => [p.slug, `${p.slug}发了`]), ...historyDeliveries]);
+// outputs/shorts/ holds one folder per short video (checked by scripts/shorts/shorts.test.ts).
+const known = new Set(['shorts', ...replicaProjects.flatMap((p) => [p.slug, `${p.slug}发了`]), ...historyDeliveries]);
 for (const entry of readdirSync(path.join(root, 'outputs'), {withFileTypes: true})) {
   if (entry.isDirectory() && !known.has(entry.name)) notes.push(`Unregistered delivery directory: outputs/${entry.name}`);
 }

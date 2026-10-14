@@ -5,7 +5,7 @@ import {REPLICA_THEME, SOFT_BLUE, SOFT_ORANGE, highlighterStyle, paperStyle} fro
 import type {ShortTimeline, TimedShortBeat} from './types';
 
 /**
- * 抖音竖屏短视频 1080×1920（主推格式）。所有内容在抖音安全区内：顶部 200px、底部 440px、右侧 128px 按钮列。
+ * 竖屏短视频 1080×1920（抖音、小红书同一条）。所有内容在抖音安全区内：顶部 200px、底部 440px、右侧 128px 按钮列。
  * 第一帧就有大字钩子和小黑；字幕大字、短句；结尾停在收藏页，适合循环播放。
  */
 export const SHORT = {width: 1080, height: 1920, fps: 30, left: 64, right: 952, top: 200, bottom: 1480} as const;
@@ -13,7 +13,7 @@ const W = SHORT.right - SHORT.left;
 const C = {blue: REPLICA_THEME.primary, orange: REPLICA_THEME.accent, ink: '#111111', muted: '#6673A7', red: '#D6402E', green: '#1F8A4C'};
 const FONT = REPLICA_THEME.fontFamily;
 
-export type DouyinShortProps = {timeline: ShortTimeline; series: string; topicLabel: string};
+export type DouyinShortProps = {timeline: ShortTimeline; series: string; category: string};
 
 export const calculateShortMetadata = ({props}: {props: DouyinShortProps}) => ({
   durationInFrames: Math.max(30, props.timeline.totalFrames),
@@ -23,7 +23,7 @@ export const calculateShortMetadata = ({props}: {props: DouyinShortProps}) => ({
 });
 
 /** **重点** → 橙色 + 荧光色带（随节拍划出）。 */
-const Rich: React.FC<{text: string; progress: number}> = ({text, progress}) => (
+export const Rich: React.FC<{text: string; progress: number}> = ({text, progress}) => (
   <>
     {text.split('\n').map((line, row) => (
       <div key={row}>
@@ -194,7 +194,7 @@ const musicVolume = (timeline: ShortTimeline) => (frame: number) => {
 
 const SFX: Record<TimedShortBeat['kind'], string | null> = {hook: null, mistake: 'hit', fix: 'whoosh', test: 'pop', answer: 'stamp', cta: 'pop'};
 
-export const DouyinShort: React.FC<DouyinShortProps> = ({timeline, series, topicLabel}) => {
+export const DouyinShort: React.FC<DouyinShortProps> = ({timeline, series, category}) => {
   const frame = useCurrentFrame();
   const index = Math.max(0, timeline.beats.findIndex((beat) => frame >= beat.from && frame < beat.from + beat.frames));
   const beat = timeline.beats[index] ?? timeline.beats.at(-1)!;
@@ -206,7 +206,7 @@ export const DouyinShort: React.FC<DouyinShortProps> = ({timeline, series, topic
     <AbsoluteFill style={{...paperStyle(40), fontFamily: FONT, color: C.ink, overflow: 'hidden'}}>
       <div style={{position: 'absolute', left: SHORT.left, top: SHORT.top + 12, display: 'flex', alignItems: 'center', gap: 16, fontSize: 32, fontWeight: 850}}>
         <span style={{background: C.blue, color: '#fff', padding: '8px 18px', borderRadius: 14}}>{series}</span>
-        <span style={{color: C.blue}}>{topicLabel}</span>
+        <span style={{color: C.blue}}>{category}</span>
       </div>
       <div style={{position: 'absolute', left: SHORT.left, top: 300, width: W, fontSize: headlineSize(beat.headline), fontWeight: 900, lineHeight: 1.22, color: C.blue,
         opacity: headIn, transform: `translateY(${18 * (1 - headIn)}px)`}}>

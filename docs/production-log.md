@@ -1218,3 +1218,10 @@ Validated 2256 exclusive image-frame intervals; extracted/reviewed 128 encoded f
 - 新增原生竖屏短视频链路：`src/shorts/`（`library.ts` 脚本库、`DouyinShort.tsx` 1080×1920 组件）、`scripts/shorts/`（`shorts:voice`、`shorts:render`、`metrics:report`）、`scripts/shorts/shorts.test.ts` 回归（并入 `project:test`）。结构：0–2 秒钩子 → 讲点 → 暂停作答（3 秒倒计时）→ 答案 → 收藏 + 关注；每条 A/B 两个钩子。
 - 首批 3 条 × 2 钩子 = 6 条，33–35 秒：`include-exclude`、`exclude-preclude`（素材来自 clud-clus）、`concession-sentence`（来自 cet6-writing-concession）。成片、首帧封面、联系图、发布文案（标题、正文、话题、置顶评论）在 `outputs/<来源期>/douyin-shorts/`。
 - 数据台账 `planning/douyin-metrics.json`，用户指南 `docs/DOUYIN-DATA-EN.md`；规则写入 AGENTS.md 第 7 节、新会话制作入口 4b 节、制作 Skill。
+
+## 2026-10-14 短视频定型：钩子轮换、一条视频一个文件夹、三张封面
+
+- 用户决定停止 A/B 实验：钩子按发布顺序轮换（挑战 → 错误 → 反差 → 结果先行，`HOOK_ROTATION`），脚本库每条只有一个钩子，`nextHookType()` 给出下一条的类型，回归测试检查轮换。
+- 抖音和小红书发同一条视频；一条视频一个文件夹 `outputs/shorts/<id>/`：成片、抖音竖封面 1080×1920（内容在中间 3:4 内）、抖音横封面 1440×1080、小红书封面 1080×1440（新组件 `src/shorts/ShortCover.tsx`）、`publish.md`（两个平台的标题与文案）、`release.json`、`review/`。旧的 `outputs/<期>/douyin-shorts/` A/B 成片已删除。
+- 不再做小红书图文卡；`replica:produce` 交付阶段去掉 `xhs:cards` 和预告。内容定位扩展为全部英语学习（四六级、考研、词根、易混词、语法、日常用法），README、AGENTS、制作基准、新会话入口、Skill 与英文指南同步更新。
+- 首批 3 条按轮换重排并重配钩子与结尾：include-exclude（挑战）、concession-sentence（错误）、exclude-preclude（反差）；下一条用“结果先行”。
