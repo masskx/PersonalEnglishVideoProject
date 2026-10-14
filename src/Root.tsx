@@ -12,6 +12,7 @@ import {
 import {jectProject} from './replica/projects/ject';
 import {CetTranslationVideo,CetTranslationCover,translationTimeline} from './cet-translation/CetTranslationVideo';
 import {Cet6ReadingVideo,Cet6ReadingCover,readingTimeline} from './cet6-reading/Cet6ReadingVideo';
+import {Cet6WritingVideo,Cet6WritingCover,writingTimeline as cet6WritingTimeline} from './cet6-writing/Cet6WritingVideo';
 import {VerticalReplicaVideo} from './replica/vertical/VerticalReplicaVideo';
 import {VERTICAL_CANVAS} from './replica/vertical/verticalLayout';
 import {buildVerticalProps, supportsTeaser, verticalCompositionId} from './replica/vertical/verticalProjects';
@@ -32,6 +33,9 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Cet6ReadingLocationParaphrase" component={Cet6ReadingVideo} durationInFrames={readingTimeline.totalFrames} fps={30} width={1920} height={1080}/>
     <Composition id="Cet6ReadingCover" component={Cet6ReadingCover} durationInFrames={1} fps={ROOT_WORD_COVER.fps} width={ROOT_WORD_COVER.width} height={ROOT_WORD_COVER.height} defaultProps={{landscape:false}}/>
     <Composition id="Cet6ReadingLandscapeCover" component={Cet6ReadingCover} durationInFrames={1} fps={ROOT_WORD_LANDSCAPE_COVER.fps} width={ROOT_WORD_LANDSCAPE_COVER.width} height={ROOT_WORD_LANDSCAPE_COVER.height} defaultProps={{landscape:true}}/>
+    <Composition id="Cet6WritingConcession" component={Cet6WritingVideo} durationInFrames={cet6WritingTimeline.totalFrames} fps={30} width={1920} height={1080}/>
+    <Composition id="Cet6WritingCover" component={Cet6WritingCover} durationInFrames={1} fps={ROOT_WORD_COVER.fps} width={ROOT_WORD_COVER.width} height={ROOT_WORD_COVER.height} defaultProps={{landscape:false}}/>
+    <Composition id="Cet6WritingLandscapeCover" component={Cet6WritingCover} durationInFrames={1} fps={ROOT_WORD_LANDSCAPE_COVER.fps} width={ROOT_WORD_LANDSCAPE_COVER.width} height={ROOT_WORD_LANDSCAPE_COVER.height} defaultProps={{landscape:true}}/>
     <Composition
       id="RootWordCover"
       component={RootWordCover}

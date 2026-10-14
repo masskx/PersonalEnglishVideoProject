@@ -1204,3 +1204,10 @@ Validated 2256 exclusive image-frame intervals; extracted/reviewed 128 encoded f
 - `verifyRender` / `verifyCover` 改为按 `PAPER_RGB` 检查四角。规则文件（AGENTS、当前制作基准、制作说明、角色验收、Skill）统一改写：成片底色为纸面；“白底复核”只指把插图放在纯白上检查角色本身。
 - 自动连续舞台插图改为 100% 不透明（原沿用 ten-tain 的 0.9，小黑变深灰）。
 
+## 2026-10-14 六级作文：先让步，再反驳（云端完整制作）
+
+- 用户只说“做一个六级视频”。查重后选六级写作（已有六级阅读、四级写作、四级翻译），主题为议论段的让步与反驳：让步一句 → 转折一句 → 理由加例子，并讲清两条边界（对准同一个点；让步一句、全文用一次）。原创六级风格题目与练习，未冒充真题。
+- 新栏目 `src/cet6-writing/` 与 `scripts/cet6-writing/`（`cet6w:*` 命令），纸面配色；首帧即有题目与小黑，结尾停在总结页。
+- 5 张插图在云端经 gpt-image-2 中转站，从 `mit-miss/00_send_hook.png` 参考编辑生成（计划 `planning/cet6-writing-concession-art.json`），白底复核见交付目录 `review/art-contact-sheet.png`。修正两处只在非 Windows 出现的问题：参考图上传缺少 image/png 类型（`imageRelayClient.ts`）、生成脚本误用 Windows ffmpeg。
+- 15 段 CosyVoice 旁白共约 175 秒；整片预览布局检查通过；小红书方法卡 13 张。四六级课暂无抖音竖屏排版。release 保持 draft，人工整片观看与手机外放、耳机听审待完成。
+

@@ -73,6 +73,9 @@
 - 四级写作：`writing:voice` → `writing:prepare` → `writing:render` → `writing:delivery`
 - 四级翻译：`translation:voice` → `translation:prepare` → `translation:render` → `translation:delivery`
 - 六级阅读：`cet6:voice` → `cet6:prepare` → `cet6:render` → `cet6:delivery`
+- 六级写作：`cet6w:voice` → `cet6w:prepare` → `cet6w:render`（静帧 + 双封面）→ `cet6w:render -- --video` → `cet6w:delivery`
+  → `replica:full-preview -- --project=<期名>` → `xhs:cards -- --project=<期名>`；插图用 `replica:keyposes:edit` 按
+  `planning/<期名>-art.json` 从已验收小黑锚点参考编辑生成（云端可跑）
 - 新四六级栏目：参照最接近的现有栏目新建 `src/<栏目>/`（`lesson.ts`、视频组件、`xhs.ts`），在
   `src/replica/xhs/methodDecks.ts` 登记 deck；至少 3 张不同的小黑插图；最后 `npm run xhs:cards -- --project=<期名>`。
 

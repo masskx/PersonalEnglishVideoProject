@@ -863,6 +863,65 @@
       "latestDelivery": "outputs/clud-clus",
       "publicationStatus": "未发布",
       "reviewStatus": "15/15 本期三态插图通过；182.167 秒横屏与竖屏、42.9 秒预告、双封面及 9 张小红书卡已交付；全时间轴联系图、关键切点与首尾帧已检查；TypeScript、project:test、密钥扫描与媒体验证通过，project:check 为 PASS_WITH_NOTES。完整连续观看、手机外放与耳机听审待完成，release 保持 draft。"
+    },
+    {
+      "id": "cet6-writing-concession",
+      "column": "cet6-writing",
+      "title": "六级作文：先让步，再反驳",
+      "aliases": [
+        "六级写作让步段",
+        "让步转折",
+        "It is true that ... However ..."
+      ],
+      "coreTeachingObjective": "用“让步一句 → 转折一句 → 理由加例子”三句写出六级议论段，并说明让步的使用边界。",
+      "status": "produced",
+      "selectionReason": "用户只说“做一个六级视频”。核对台账、内容计划、src、outputs 后：已有六级阅读（定位与同义替换）、四级写作、四级翻译，六级写作尚无成片；选择可直接带走的“让步 + 反驳”议论技巧。",
+      "checkedSources": [
+        "planning/topic-history.json",
+        "planning/content-plan.json",
+        "src/",
+        "outputs/",
+        "docs/production-log.md"
+      ],
+      "publicationStatus": "未发布",
+      "versions": [
+        {
+          "id": "concession-v1",
+          "status": "produced",
+          "directory": "outputs/cet6-writing-concession",
+          "artifacts": [
+            "outputs/cet6-writing-concession/cet6-writing-concession.mp4",
+            "outputs/cet6-writing-concession/cover.png",
+            "outputs/cet6-writing-concession/cover-landscape.png",
+            "outputs/cet6-writing-concession/publish-copy.md",
+            "outputs/cet6-writing-concession/worksheet.html",
+            "outputs/cet6-writing-concession/content-qa.md",
+            "outputs/cet6-writing-concession/review/REVIEW.md",
+            "outputs/cet6-writing-concession/review/full-preview/full-preview.mp4",
+            "outputs/cet6-writing-concession/xiaohongshu/xhs-note.md"
+          ],
+          "technicalReview": "1920×1080、30fps、约 175 秒；H.264/AAC；15 段 CosyVoice 旁白；纸面配色；云端会话完整制作（配音、生图、渲染）。",
+          "humanReview": "待完成：整片观看、手机外放与耳机听审。"
+        }
+      ],
+      "artifacts": [
+        "outputs/cet6-writing-concession/cet6-writing-concession.mp4",
+        "outputs/cet6-writing-concession/cover.png",
+        "outputs/cet6-writing-concession/cover-landscape.png",
+        "outputs/cet6-writing-concession/publish-copy.md",
+        "outputs/cet6-writing-concession/worksheet.html",
+        "outputs/cet6-writing-concession/content-qa.md",
+        "outputs/cet6-writing-concession/review/REVIEW.md",
+        "outputs/cet6-writing-concession/review/full-preview/full-preview.mp4",
+        "outputs/cet6-writing-concession/xiaohongshu/xhs-note.md"
+      ],
+      "material": {
+        "type": "original-practice",
+        "prompt": "Some people think college students should take part-time jobs, while others believe they should focus on their studies.",
+        "practicePrompt": "Some people believe online courses will replace classroom teaching."
+      },
+      "reviewStatus": "讲稿、5 张本期专属插图（白底复核通过）、配音、成片、双封面、小红书方法卡、整片预览布局检查通过；完整人工观看与手机外放/耳机听审待完成。",
+      "latestDelivery": "outputs/cet6-writing-concession"
     }
   ]
 }
