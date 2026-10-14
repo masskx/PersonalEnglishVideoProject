@@ -1,4 +1,5 @@
 import {config as loadDotenv} from 'dotenv';
+import {isProxyInjected} from '../../src/proxyCredentials';
 
 /**
  * 外部服务密钥清单（唯一来源）。密钥只从环境变量或被 gitignore 的 .env 读取，
@@ -50,8 +51,11 @@ export const credentialHost = (spec: CredentialSpec) => {
 /** Values of every configured secret, for exact-match leak scanning. Never print these. */
 export const configuredSecretValues = () =>
   CREDENTIALS.map((spec) => ({name: spec.name, value: process.env[spec.name]?.trim() ?? ''}))
-    .filter((entry) => entry.value.length >= 8);
+    // The cloud Network-secret placeholder is not a secret and appears in docs.
+    .filter((entry) => entry.value.length >= 8 && !isProxyInjected(entry.value));
 
 /** Safe description of a secret: presence and length only, never characters of the value. */
 export const describeSecret = (value: string | undefined) =>
-  value && value.trim() ? `已设置（${value.trim().length} 字符）` : '未设置';
+  isProxyInjected(value)
+    ? '由云端 Network secret 注入（会话内看不到原值）'
+    : value && value.trim() ? `已设置（${value.trim().length} 字符）` : '未设置';

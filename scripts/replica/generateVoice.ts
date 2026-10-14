@@ -5,6 +5,7 @@ import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {getReplicaProject} from '../../src/replica/projects/registry';
 import type {ReplicaAudioManifest} from '../../src/replica/ReplicaVideo';
+import {bearerHeaders} from '../../src/proxyCredentials';
 
 const repoRoot = process.cwd();
 const args = process.argv.slice(2);
@@ -140,7 +141,7 @@ const synthesizeOnce = async (text: string, includeInstruction: boolean) => {
 
   const response = await fetchWithRetry(endpoint, {
     method: 'POST',
-    headers: {Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json'},
+    headers: {...bearerHeaders(apiKey), 'Content-Type': 'application/json'},
     body: JSON.stringify({
       model,
       input: {

@@ -1,6 +1,7 @@
 import {spawnSync} from 'node:child_process';
 import {readFileSync} from 'node:fs';
 import path from 'node:path';
+import {bearerCurlArgs, bearerHeaders} from '../../src/proxyCredentials';
 
 type ImageResponse = {
   data?: Array<{b64_json?: string; url?: string}>;
@@ -29,8 +30,7 @@ const requestJson = async (url: string, apiKey: string, body: Record<string, unk
         '30',
         '--max-time',
         '180',
-        '-H',
-        `Authorization: Bearer ${apiKey}`,
+        ...bearerCurlArgs(apiKey),
         '-H',
         'Content-Type: application/json',
         '--data-binary',
@@ -54,7 +54,7 @@ const requestJson = async (url: string, apiKey: string, body: Record<string, unk
 
   const response = await fetch(url, {
     method: 'POST',
-    headers: {Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json'},
+    headers: {...bearerHeaders(apiKey), 'Content-Type': 'application/json'},
     body: encoded,
     signal: AbortSignal.timeout(180_000),
   });
@@ -147,8 +147,7 @@ export const editOpenAICompatibleImage = async ({
         '30',
         '--max-time',
         '240',
-        '-H',
-        `Authorization: Bearer ${apiKey}`,
+        ...bearerCurlArgs(apiKey),
         '-F',
         `model=${model}`,
         '-F',
@@ -190,7 +189,7 @@ export const editOpenAICompatibleImage = async ({
     form.set('response_format', 'b64_json');
     const response = await fetch(endpoint, {
       method: 'POST',
-      headers: {Authorization: `Bearer ${apiKey}`},
+      headers: {...bearerHeaders(apiKey)},
       body: form,
       signal: AbortSignal.timeout(240_000),
     });

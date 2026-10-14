@@ -1,6 +1,7 @@
 import {existsSync} from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
+import {bearerHeaders} from '../proxyCredentials';
 
 export type DashscopeTtsOptions = {
   apiKey?: string;
@@ -37,7 +38,7 @@ export const synthesizeDashscope = async (text: string, options: DashscopeTtsOpt
   const endpoint = options.endpoint ?? process.env.DASHSCOPE_TTS_ENDPOINT ?? 'https://dashscope.aliyuncs.com/api/v1/services/audio/tts/SpeechSynthesizer';
   const response = await fetchWithRetry(endpoint, {
     method: 'POST',
-    headers: {Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json'},
+    headers: {...bearerHeaders(apiKey), 'Content-Type': 'application/json'},
     body: JSON.stringify({
       model: options.model,
       input: {
