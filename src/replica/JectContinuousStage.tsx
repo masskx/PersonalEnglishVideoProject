@@ -465,7 +465,7 @@ export const JectContinuousStage: React.FC = () => {
   const mapScale = keyframed(frame, [0, 2260, 2320, 2560, 2620, 3149], [1, 1, 0.98, 0.98, 1, 1]);
 
   return (
-    <AbsoluteFill style={{backgroundColor: '#FFFFFF', overflow: 'hidden'}}>
+    <AbsoluteFill style={{backgroundColor: 'transparent', overflow: 'hidden'}}>
       <div style={{position: 'absolute', inset: -28, transform: `translate3d(${drift.x + projectFollow}px, ${drift.y}px, 0) scale(${drift.scale * mapScale})`, transformOrigin: '50% 50%'}}>
         <HookChapter frame={frame} />
         <DirectionChapter frame={frame} />

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T01:58:54.210Z",
+  "generatedAt": "2026-10-14T06:34:38.292Z",
   "scope": "Local file existence and configured metadata; not platform publication or content approval.",
   "projects": [
     {
@@ -1544,21 +1544,21 @@
       "historicalReports": [
         {
           "report": "outputs/clud-clus/render-report.json",
-          "recordedInput": "work/render-staging/clud-clus-HtMl5P/clud-clus.mp4",
+          "recordedInput": "work/render-staging/clud-clus-tlWso2/clud-clus.mp4",
           "currentFile": "outputs/clud-clus/clud-clus.mp4",
           "currentFileExists": true,
           "note": "Historical report retained; current file mapping is not a new acceptance."
         },
         {
           "report": "outputs/clud-clus/cover-report.json",
-          "recordedInput": "work/render-staging/clud-clus-HtMl5P/cover.png",
+          "recordedInput": "work/render-staging/clud-clus-tlWso2/cover.png",
           "currentFile": "outputs/clud-clus/cover.png",
           "currentFileExists": true,
           "note": "Historical report retained; current file mapping is not a new acceptance."
         },
         {
           "report": "outputs/clud-clus/cover-landscape-report.json",
-          "recordedInput": "work/render-staging/clud-clus-HtMl5P/cover-landscape.png",
+          "recordedInput": "work/render-staging/clud-clus-tlWso2/cover-landscape.png",
           "currentFile": "outputs/clud-clus/cover-landscape.png",
           "currentFileExists": true,
           "note": "Historical report retained; current file mapping is not a new acceptance."

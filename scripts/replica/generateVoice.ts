@@ -5,6 +5,7 @@ import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {getReplicaProject} from '../../src/replica/projects/registry';
 import type {ReplicaAudioManifest} from '../../src/replica/ReplicaVideo';
+import {bearerHeaders} from '../../src/proxyCredentials';
 
 const repoRoot = process.cwd();
 const args = process.argv.slice(2);
@@ -140,7 +141,7 @@ const synthesizeOnce = async (text: string, includeInstruction: boolean) => {
 
   const response = await fetchWithRetry(endpoint, {
     method: 'POST',
-    headers: {Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json'},
+    headers: {...bearerHeaders(apiKey), 'Content-Type': 'application/json'},
     body: JSON.stringify({
       model,
       input: {
@@ -174,7 +175,9 @@ const synthesizeOnce = async (text: string, includeInstruction: boolean) => {
   if (audioData) return Buffer.from(audioData, 'base64');
   const audioUrl = payload.output?.audio?.url;
   if (!audioUrl) throw new Error(`DashScope response has no audio: ${JSON.stringify(payload)}`);
-  const audioResponse = await fetchWithRetry(audioUrl);
+  // DashScope returns a plain-http OSS link; the same object is served over https, which proxied
+  // (cloud) networks require.
+  const audioResponse = await fetchWithRetry(audioUrl.replace(/^http:\/\//, 'https://'));
   if (!audioResponse.ok) throw new Error(`Audio download failed: HTTP ${audioResponse.status}`);
   return Buffer.from(await audioResponse.arrayBuffer());
 };

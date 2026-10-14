@@ -7,6 +7,7 @@ import {getReplicaProject} from '../../src/replica/projects/registry';
 import {verifyPressReplicaAsset} from './assetVerifier';
 import {generateOpenAICompatibleImage} from './imageRelayClient';
 import {normalizeImageSource} from './imageSourceNormalizer';
+import {bearerHeaders} from '../../src/proxyCredentials';
 
 // Credentials live in this repository's gitignored .env. REPLICA_IMAGE_ENV_FILE remains a
 // backwards-compatible escape hatch for old machines, but the current project no longer needs it.
@@ -134,7 +135,7 @@ const generateHuoshanImage = async (prompt: string) => {
     'https://ark.cn-beijing.volces.com/api/v3/images/generations';
   const response = await fetchWithRetry(endpoint, {
     method: 'POST',
-    headers: {Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json'},
+    headers: {...bearerHeaders(apiKey), 'Content-Type': 'application/json'},
     body: JSON.stringify({
       model: process.env.HUOSHAN_IMAGE_MODEL ?? project.image.model,
       prompt,

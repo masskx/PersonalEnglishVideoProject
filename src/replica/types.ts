@@ -21,6 +21,8 @@ export type ReplicaTextRun = {
   color?: ReplicaColor | string;
   weight?: number;
   size?: number;
+  /** 纸面配色的强调样式：pill 描边胶囊、tag 橙底小标签、highlight 荧光笔、underline 橙色下划线。 */
+  mark?: 'pill' | 'tag' | 'highlight' | 'underline';
 };
 
 export type ReplicaLayerBase = {

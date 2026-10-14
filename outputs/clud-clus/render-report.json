@@ -1,10 +1,9 @@
 {
   "project": "clud-clus",
-  "input": "work/render-staging/clud-clus-MeZRV7/clud-clus.mp4",
+  "input": "work/render-staging/clud-clus-tlWso2/clud-clus.mp4",
   "expectedFrames": 5465,
   "metadata": {
     "programs": [],
-    "stream_groups": [],
     "streams": [
       {
         "index": 0,
@@ -38,8 +37,8 @@
     ],
     "format": {
       "duration": "182.229333",
-      "size": "12301367",
-      "bit_rate": "540038"
+      "size": "17861943",
+      "bit_rate": "784152"
     }
   },
   "pixelSamples": [
@@ -47,16 +46,16 @@
       "frame": 0,
       "rgb": [
         255,
-        255,
-        255
+        249,
+        242
       ]
     },
     {
       "frame": 5464,
       "rgb": [
         255,
-        255,
-        255
+        249,
+        242
       ]
     }
   ],

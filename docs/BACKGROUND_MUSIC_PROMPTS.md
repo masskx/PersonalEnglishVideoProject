@@ -1,6 +1,6 @@
 # AI 背景音乐生成提示词
 
-本系列是白底、小黑线稿、中文旁白主导的英语词根教学视频。背景音乐只负责提供轻微节奏和
+本系列是暖白纸面、小黑线稿、中文旁白主导的英语词根教学视频。背景音乐只负责提供轻微节奏和
 亲和力，不能抢旁白、不能制造情绪大片感，也不能让观众误以为进入广告或儿童动画。
 
 ## 首选提示词：纸笔感轻节奏
@@ -14,7 +14,7 @@ Create an original instrumental background track for a clean, minimalist educati
 ## 备选 A：更温暖、更有陪伴感
 
 ```text
-Original instrumental music for a friendly English-learning explainer on a pure white visual canvas. Warm acoustic study mood, calm and optimistic, with soft felt piano, gentle nylon guitar harmonics, tiny wooden percussion, quiet hand claps used very sparingly, and a smooth soft bass. Minimal arrangement, restrained dynamics, and generous space for a clear Chinese voice-over. 82 BPM. No catchy lead melody, no dramatic chord changes, no cinematic swell. Seamless 180-second loop, consistent energy from start to finish. No vocals, no speech, no lyrics, no choir.
+Original instrumental music for a friendly English-learning explainer on a warm off-white paper canvas. Warm acoustic study mood, calm and optimistic, with soft felt piano, gentle nylon guitar harmonics, tiny wooden percussion, quiet hand claps used very sparingly, and a smooth soft bass. Minimal arrangement, restrained dynamics, and generous space for a clear Chinese voice-over. 82 BPM. No catchy lead melody, no dramatic chord changes, no cinematic swell. Seamless 180-second loop, consistent energy from start to finish. No vocals, no speech, no lyrics, no choir.
 ```
 
 ## 备选 B：更现代、更适合结构化拆词

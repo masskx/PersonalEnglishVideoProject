@@ -81,10 +81,13 @@ Claude follows these rules in every session. 用户可能会把 API 密钥交给
 1. **Keys stay out of git, always. 密钥永远不进 git。** Never write a key into any tracked file, commit,
    PR, issue, comment, log, report, script output or generated artifact. 不得写入任何被跟踪的文件、提交、PR、
    评论、日志、报告、脚本输出或产物。
-2. **Where keys live. 密钥放哪里。** In Claude cloud sessions: the environment's settings, as environment
-   variables (`DASHSCOPE_API_KEY`, `OPENAI_API_KEY`, `OPENAI_BASE_URL`, `HUOSHAN_API_KEY`). The matching
-   domain must be allowed under Network access. Do not paste keys into chat. On your own PC: the
-   gitignored `.env` (template: `.env.example`). 云端会话放环境设置里的环境变量，并在 Network access 允许对应域名，
+2. **Where keys live. 密钥放哪里。** In Claude cloud sessions: the environment's **Network secrets** (one per
+   service: DashScope → `dashscope.aliyuncs.com`, image relay → the host of `OPENAI_BASE_URL`; header
+   `Authorization`, prefix `Bearer`). The agent proxy adds the key to those requests, so sessions never see it.
+   The environment variables then hold only the placeholder `DASHSCOPE_API_KEY=proxy-injected` /
+   `OPENAI_API_KEY=proxy-injected` plus non-secret settings; the scripts omit their own Authorization header
+   for the placeholder (`src/proxyCredentials.ts`). Do not paste keys into chat. On your own PC: the gitignored
+   `.env` (template: `.env.example`). 云端会话把密钥存成 Network secret，环境变量里只写占位值 `proxy-injected`；
    不在对话里粘贴密钥；本机放被忽略的 `.env`。
 3. **Temporary use only. 只临时使用。** Keys are read from the environment at run time and are not copied
    into other files, caches or memory. When a session ends, nothing keeps the key except your own settings.

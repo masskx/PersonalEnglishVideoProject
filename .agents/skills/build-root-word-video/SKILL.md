@@ -1,6 +1,6 @@
 ---
 name: build-root-word-video
-description: Build, reproduce, or maintain the 1920x1080 white-background Xiaohei English video style, with root-word teaching as its primary recipe. Use for root words, vocabulary families, confusing words, or a scoped change within this project. The visual, audio, cover, and whole-video review contract is shared by every column; only the teaching storyboard changes for CET and other formats.
+description: Build, reproduce, or maintain the 1920x1080 paper-palette Xiaohei English video style (warm dotted paper, see docs/当前制作基准.md), with root-word teaching as its primary recipe. Use for root words, vocabulary families, confusing words, or a scoped change within this project. The visual, audio, cover, and whole-video review contract is shared by every column; only the teaching storyboard changes for CET and other formats.
 ---
 
 # Build Root Word Video
@@ -32,7 +32,7 @@ An explicitly supplied topic takes precedence even if already used; preserve the
 Register the selected topic before production and update its artifacts afterward. This rule persists
 across agents and sessions; it does not turn discussion or project audits into production requests.
 
-This skill defines the current project visual baseline through the root-word recipe. Its white canvas,
+This skill defines the current project visual baseline through the root-word recipe. Its paper canvas,
 character, typography, cover grammar, music policy, animation quality, and whole-video review gate
 are shared by every future column. CET writing, reading, translation, and the four-episode series may
 change the teaching sequence and composition when that improves comprehension, but they must keep the
@@ -86,7 +86,8 @@ the editorial-style lint; a successful media render does not excuse canned copy.
 These three rules are fixed for every new root-word episode and every rework of an existing one:
 
 1. **Generated image style.** New semantic art is generated raster imagery from the built-in
-   `image_gen` model, using the accepted `mit/miss` episode as the visual anchor: pure white field,
+   `image_gen` model, using the accepted `mit/miss` episode as the visual anchor: generated on a pure white field and cut out to
+   transparent PNG (the finished frame places it on the soft-blue panel over the paper canvas),
    one solid-black Xiaohei with white dot eyes, thin black limbs, calm readable pose, wobbly ink
    contours, and only sparse orange/red/blue teaching accents. Generate an anchor composition first,
    then derive the same-camera `before / change / result` poses. Do not ship SVG, vector stand-ins,
@@ -119,7 +120,7 @@ This creates `outputs/<slug>/review/full-preview/full-preview.mp4`, a one-second
 sheet set, and `full-preview-report.json`. Open the preview MP4 and inspect the entire episode, then
 scan every contact-sheet page at feed size. Check text against all four safe margins, punctuation and
 Chinese line breaks, caption crowding, image/text balance, intentional breathing room, scene cuts,
-before/change/result continuity, and any frame that becomes a large empty white field. The script runs
+before/change/result continuity, and any frame that becomes a large empty field. The script runs
 the storyboard text safe-area gate and fails on an estimated text overflow; the human full-watch gate
 still decides whether spacing and hierarchy look right. If anything overflows, leaves an accidental
 blank region, or loses hierarchy, fix the storyboard/layout and re-render before marking the episode
@@ -462,7 +463,9 @@ when ffmpeg itself can open the file.
 
 ## Non-negotiable series invariants
 
-- Use a literal `#FFFFFF` canvas in every scene.
+- Use the paper canvas from `src/replica/theme.ts` (`paperStyle()`: `#FFFBF3` with a static `#EDE4D3` dot grid) in every
+  scene, cover and card; never a literal white canvas. Word pages get the card styling from
+  `src/replica/paperStyleStoryboard.ts` (root highlighter, formula pill, 例句 tag, soft-blue art panel).
 - Resolve system `Microsoft YaHei` first and set letter spacing to zero.
 - Use deep blue `#041FA0` and teaching orange `#E85810` as information colors.
 - Reveal independent information serially and hold the completed idea long enough to read.
@@ -495,7 +498,7 @@ when ffmpeg itself can open the file.
   `-1 dBFS`, reject speech masking and obvious loop clicks, and listen on both speakers and
   headphones before acceptance.
 - Deliver two opaque PNG covers with every new video: `cover.png` at 1080x1440 and
-  `cover-landscape.png` at 1200x900 (4:3, Xiaohongshu landscape). Preserve the shared card grammar: pure white canvas, rounded
+  `cover-landscape.png` at 1200x900 (4:3, Xiaohongshu landscape). Preserve the shared card grammar: dotted paper canvas, soft-blue illustration panel, rounded
   deep-blue keyline, upper-left Xiaohei series mark, upper-right orange series pill, oversized root
   and meaning, a semantic Xiaohei action, highlighted word family, and quiet footer. Reflow these
   zones for landscape; do not crop or stretch the vertical output. All cover text is code-rendered

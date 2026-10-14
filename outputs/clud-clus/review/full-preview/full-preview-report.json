@@ -62,16 +62,52 @@
       "message": "content crosses left safe margin"
     },
     {
-      "scene": "conclude-word",
-      "layer": "conclude-word-word",
+      "scene": "exclude-word",
+      "layer": "exclude-word-example",
       "kind": "text",
       "box": {
-        "x": 130,
-        "y": 50,
-        "width": 1660,
-        "height": 116
+        "x": 980,
+        "y": 665,
+        "width": 860,
+        "height": 51
       },
-      "message": "content crosses top safe margin"
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "exclude-word",
+      "layer": "exclude-word-gloss",
+      "kind": "text",
+      "box": {
+        "x": 980,
+        "y": 722,
+        "width": 860,
+        "height": 46
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "exclude-word",
+      "layer": "exclude-word-note",
+      "kind": "text",
+      "box": {
+        "x": 980,
+        "y": 800,
+        "width": 860,
+        "height": 49
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "conclude-word",
+      "layer": "conclude-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin"
     },
     {
       "scene": "preclude-word",
@@ -120,6 +156,42 @@
         "height": 675
       },
       "message": "content crosses left safe margin"
+    },
+    {
+      "scene": "seclude-word",
+      "layer": "seclude-word-example",
+      "kind": "text",
+      "box": {
+        "x": 980,
+        "y": 665,
+        "width": 860,
+        "height": 51
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "seclude-word",
+      "layer": "seclude-word-gloss",
+      "kind": "text",
+      "box": {
+        "x": 980,
+        "y": 722,
+        "width": 860,
+        "height": 46
+      },
+      "message": "content crosses right safe margin"
+    },
+    {
+      "scene": "seclude-word",
+      "layer": "seclude-word-note",
+      "kind": "text",
+      "box": {
+        "x": 980,
+        "y": 800,
+        "width": 860,
+        "height": 49
+      },
+      "message": "content crosses right safe margin"
     }
   ],
   "layoutErrors": [],
@@ -177,16 +249,55 @@
       "severity": "warning"
     },
     {
-      "scene": "conclude-word",
-      "layer": "conclude-word-word",
+      "scene": "exclude-word",
+      "layer": "exclude-word-example",
       "kind": "text",
       "box": {
-        "x": 130,
-        "y": 50,
-        "width": 1660,
-        "height": 116
+        "x": 980,
+        "y": 665,
+        "width": 860,
+        "height": 51
       },
-      "message": "content crosses top safe margin",
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "exclude-word",
+      "layer": "exclude-word-gloss",
+      "kind": "text",
+      "box": {
+        "x": 980,
+        "y": 722,
+        "width": 860,
+        "height": 46
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "exclude-word",
+      "layer": "exclude-word-note",
+      "kind": "text",
+      "box": {
+        "x": 980,
+        "y": 800,
+        "width": 860,
+        "height": 49
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "conclude-word",
+      "layer": "conclude-word-meaning",
+      "kind": "text",
+      "box": {
+        "x": 83,
+        "y": 515,
+        "width": 825,
+        "height": 64
+      },
+      "message": "content crosses left safe margin",
       "severity": "warning"
     },
     {
@@ -239,6 +350,45 @@
         "height": 675
       },
       "message": "content crosses left safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "seclude-word",
+      "layer": "seclude-word-example",
+      "kind": "text",
+      "box": {
+        "x": 980,
+        "y": 665,
+        "width": 860,
+        "height": 51
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "seclude-word",
+      "layer": "seclude-word-gloss",
+      "kind": "text",
+      "box": {
+        "x": 980,
+        "y": 722,
+        "width": 860,
+        "height": 46
+      },
+      "message": "content crosses right safe margin",
+      "severity": "warning"
+    },
+    {
+      "scene": "seclude-word",
+      "layer": "seclude-word-note",
+      "kind": "text",
+      "box": {
+        "x": 980,
+        "y": 800,
+        "width": 860,
+        "height": 49
+      },
+      "message": "content crosses right safe margin",
       "severity": "warning"
     }
   ],

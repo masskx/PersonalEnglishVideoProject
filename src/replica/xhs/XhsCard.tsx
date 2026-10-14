@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {AbsoluteFill, Img, continueRender, delayRender, staticFile} from 'remotion';
-import {REPLICA_THEME} from '../theme';
+import {HIGHLIGHTER, PAPER, PAPER_DOTS, REPLICA_THEME, SOFT_BLUE, SOFT_ORANGE} from '../theme';
 import {estimateTextLines} from '../vertical/verticalLayout';
 import type {XhsCardSpec, XhsDeck, XhsWordCard} from './xhsCardData';
 
@@ -9,11 +9,8 @@ export const XHS_CARD = {width: 1080, height: 1440, fps: 30} as const;
 
 export const PAD = 72;
 export const INNER = XHS_CARD.width - PAD * 2;
-export const PAPER = '#FFFBF3';
-const DOTS = '#EDE4D3';
-export const HIGHLIGHTER = '#FFE36E';
-export const SOFT_BLUE = '#EAF0FF';
-export const SOFT_ORANGE = '#FFEEE2';
+export {HIGHLIGHTER, PAPER, SOFT_BLUE, SOFT_ORANGE};
+const DOTS = PAPER_DOTS;
 
 export type XhsCardProps = {
   deck: XhsDeck;

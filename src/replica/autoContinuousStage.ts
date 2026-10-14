@@ -55,7 +55,8 @@ export const buildContinuousStage = (
   });
   return {
     staticCardMode: true,
-    staticImageOpacity: 0.9,
+    // 小黑必须是实心黑色：插图按 100% 不透明绘制（ten-tain 手写配置的 0.9 会把黑色冲淡成深灰，不沿用）。
+    staticImageOpacity: 1,
     showSemanticPropOverlay: false,
     root: cover.root.toLowerCase(),
     meaning: cover.englishMeaning.toLowerCase().replace(/\s*·\s*/g, ' / '),

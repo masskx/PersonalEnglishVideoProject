@@ -62,7 +62,7 @@ Before production, read `docs/当前制作基准.md`, the repository-root `AGENT
 
 ## Locked visual, structure, and motion contract
 
-All columns inherit the current production baseline: generated raster imagegen art, pure white teaching canvas, solid-black Xiaohei
+All columns inherit the current production baseline: generated raster imagegen art, the warm dotted-paper teaching canvas (src/replica/theme.ts), solid-black Xiaohei
 with white dot eyes and wobbly ink contours, sparse orange/red/blue accents, and an episode-local
 bitmap asset directory. Use a concrete hook, an explained visual action, readable examples or practice,
 and a summary that closes the teaching loop. Keep text and art in separate safe zones, vary the

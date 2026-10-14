@@ -5,6 +5,7 @@ import {spawnSync} from 'node:child_process';
 import {inflateSync} from 'node:zlib';
 import {getReplicaProject} from '../../src/replica/projects/registry';
 import {resolveDeliveryPaths} from './deliveryPaths';
+import {PAPER_RGB} from '../../src/replica/theme';
 
 const repoRoot = process.cwd();
 const args = process.argv.slice(2);
@@ -198,10 +199,11 @@ const sampleIndexes = Array.from(
   ]),
 );
 const pixelSamples = sampleIndexes.map((frame) => ({frame, rgb: samplePixel(frame)}));
-const tolerance = 4;
+// The canvas is the warm dotted paper (theme PAPER_RGB); H.264 shifts a tinted colour by a few levels.
+const tolerance = 6;
 const first = pixelSamples.find((sample) => sample.frame === 0)?.rgb;
-if (first && first.some((channel) => Math.abs(channel - 255) > tolerance)) {
-  errors.push(`First-frame corner is RGB ${first.join(',')}, expected white.`);
+if (first && first.some((channel, index) => Math.abs(channel - PAPER_RGB[index]) > tolerance)) {
+  errors.push(`First-frame corner is RGB ${first.join(',')}, expected paper ${PAPER_RGB.join(',')}.`);
 }
 
 const endOpacity = project.storyboard.fadeEndOpacity ?? 1;
@@ -211,10 +213,10 @@ for (const sample of pixelSamples) {
     fadeFrames <= 0 || sample.frame < fadeStart
       ? 0
       : (sample.frame - fadeStart) / Math.max(1, lastFrame - fadeStart);
-  const expected = Math.round(255 * (1 - endOpacity * progress));
-  if (sample.rgb.some((channel) => Math.abs(channel - expected) > tolerance)) {
+  const expected = PAPER_RGB.map((channel) => Math.round(channel * (1 - endOpacity * progress)));
+  if (sample.rgb.some((channel, index) => Math.abs(channel - expected[index]) > tolerance)) {
     errors.push(
-      `Frame ${sample.frame} corner is RGB ${sample.rgb.join(',')}, expected about ${expected}.`,
+      `Frame ${sample.frame} corner is RGB ${sample.rgb.join(',')}, expected about ${expected.join(',')}.`,
     );
   }
 }

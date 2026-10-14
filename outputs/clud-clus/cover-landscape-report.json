@@ -1,7 +1,7 @@
 {
   "project": "clud-clus",
   "orientation": "landscape",
-  "input": "work/render-staging/clud-clus-MeZRV7/cover-landscape.png",
+  "input": "work/render-staging/clud-clus-tlWso2/cover-landscape.png",
   "codec": "png",
   "width": 1200,
   "height": 900,
@@ -12,8 +12,8 @@
       "y": 0,
       "rgb": [
         255,
-        255,
-        255
+        251,
+        243
       ]
     },
     {
@@ -21,8 +21,8 @@
       "y": 0,
       "rgb": [
         255,
-        255,
-        255
+        251,
+        243
       ]
     },
     {
@@ -30,8 +30,8 @@
       "y": 899,
       "rgb": [
         255,
-        255,
-        255
+        251,
+        243
       ]
     },
     {
@@ -39,8 +39,8 @@
       "y": 899,
       "rgb": [
         255,
-        255,
-        255
+        251,
+        243
       ]
     }
   ],

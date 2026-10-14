@@ -1198,3 +1198,9 @@ Validated 2256 exclusive image-frame intervals; extracted/reviewed 128 encoded f
 - 恢复 2026-10-13 整理时误删的 pon-pos 角色锚点到 `references/anchors/pon-pos-accepted-anchor.png`；工作台不再把本机 `work/drafts` 草稿写进期页（在 GitHub 上是死链）。
 - 云端已用 `replica:produce --stage=deliver` 完整跑通重剪版（横屏、双封面、整片预览、竖屏、预告、复习卡、小红书卡片、文案），但云端网络禁止上传新的 LFS 媒体，仓库里的 `outputs/clud-clus/` 仍是首版文件。本机执行 `npm run replica:produce -- --project=clud-clus --stage=deliver` 即可在本机生成并提交重剪版（只用已有配音和插图，不花费额度）。
 
+## 2026-10-14 纸面配色统一
+
+- 用户确认以 clud-clus 小红书词卡的配色作为全部画面的统一风格。新增 `theme.ts` 纸面色板（`paperStyle`、`highlighterStyle`、浅蓝 / 浅橙底）与 `paperStyleStoryboard.ts`（词页荧光词根、构词胶囊、深色释义、例句标签），连续舞台词页加浅蓝插图底板，竖屏插图框加底板，封面改纸面底并让文字压在底板之上，四六级课改纸面底与统一蓝橙并用 multiply 去掉白底插图的白框。
+- `verifyRender` / `verifyCover` 改为按 `PAPER_RGB` 检查四角。规则文件（AGENTS、当前制作基准、制作说明、角色验收、Skill）统一改写：成片底色为纸面；“白底复核”只指把插图放在纯白上检查角色本身。
+- 自动连续舞台插图改为 100% 不透明（原沿用 ten-tain 的 0.9，小黑变深灰）。
+
