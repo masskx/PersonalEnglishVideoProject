@@ -54,7 +54,11 @@
     "hookBeatBySeconds": 1.5,
     "secondVisualTurnBySeconds": 3,
     "avoidRepeatedCardLayouts": true,
-    "majorTeachingBeatUsesSemanticImage": true
+    "majorTeachingBeatUsesSemanticImage": true,
+    "maxVisualHoldSeconds": 8,
+    "maxShareOfHoldsOver3_5Seconds": 0.2,
+    "gate": "src/replica/pacing.ts（replica:validate 与 project:test 执行；字幕换句不算画面变化）",
+    "rootWordRenderer": "continuous + buildContinuousStage(storyboard, cover)；新期复制 src/replica/projects/cludClus.ts"
   },
   "visualImpact": {
     "wordPageSafeWidthOccupancyPercent": [78, 84],

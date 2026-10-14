@@ -41,6 +41,11 @@
    生图接口。真正的生产在用户本机 Codex 完成。
 10. **密钥：** 只在运行时从环境变量或被忽略的 `.env` 读取；提交前钩子扫描。用户曾在对话里粘贴密钥，已建议作废更换。
 
+11. **模板必须唯一，节奏必须可测。** clud-clus 首版照着 pon-pos 用了 `'default'` 渲染，五个词撑到 182 秒，
+    每个词页后半段只剩字幕在换，超过 3.5 秒的静止占 39%（ten-tain 17%）；全部技术检查都通过，观感却发闷。
+    根因是规则写着“复制 tenTain 或 ponPos”、Skill 写着连续舞台可选，而检查只看技术指标。现在新期只复制
+    `cludClus.ts`（`buildContinuousStage`），`replica:validate` 带节奏闸门（`src/replica/pacing.ts`）。
+
 ## 已停用路线（不要恢复）
 
 即梦 / Seedream 生图、Wan 图生视频“动态小黑”、meme-vocab 竖屏原型、SVG 或代码绘图插画、全画布机械动效层、
@@ -54,3 +59,6 @@
 - 2026-10-13 全项目整理：删除 `archive/`、`docs/history/`、旧审计与整理报告、`work/` 下全部试验、Wan / Seedream /
   meme-vocab 脚本与未引用素材（约 9,300 个文件）；视觉锚点样片移到 `references/visual-baseline/`；`work/` 改为
   本机临时目录不进 git；AGENTS.md 重写为单一规则入口；新增 `renderEnv.ts` 统一浏览器与 ffmpeg 路径。
+- 2026-10-14 模板统一与节奏闸门：新增 `autoContinuousStage.ts`（自动生成 ten-tain 同款连续舞台）与 `pacing.ts`（画面静止闸门，
+  进入 validate 与 project:test）；clud-clus 改用连续舞台并把旁白里的例句、释义、搭配做成画面节拍，静止占比 39% → 11%；
+  恢复 2026-10-13 误删的 pon-pos 角色锚点到 `references/anchors/`。
