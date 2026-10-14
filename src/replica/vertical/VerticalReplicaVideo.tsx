@@ -4,7 +4,8 @@ import growth from '../../../planning/growth-promotion.json';
 import {BackgroundMusic, SceneNarration, SceneSfx, type ReplicaAudioManifest} from '../ReplicaVideo';
 import {LayerRenderer, ReplicaSceneTransition} from '../visuals';
 import {smoothProgress} from '../smoothMotion';
-import {REPLICA_THEME} from '../theme';
+import {REPLICA_THEME, SOFT_BLUE, paperStyle} from '../theme';
+import {applyPaperStyle} from '../paperStyleStoryboard';
 import type {ReplicaBackgroundMusicDefinition, ReplicaCoverDefinition} from '../projectTypes';
 import type {ReplicaCaptionCue, ReplicaScene, ReplicaStoryboard} from '../types';
 import {
@@ -82,8 +83,21 @@ const CaptionLine: React.FC<{cue: ReplicaCaptionCue}> = ({cue}) => {
 
 const VerticalSceneVisuals: React.FC<{scene: ReplicaScene}> = ({scene}) => {
   const plan = useMemo(() => planVerticalScene(scene), [scene]);
+  // 纸面配色：每个插图框下面放一块浅蓝圆角底板（同一框只放一块，三态姿态叠在上面）。
+  const panels = useMemo(() => {
+    const seen = new Map<string, {x: number; y: number; width: number; height: number}>();
+    for (const placement of plan.placements) {
+      if (placement.kind !== 'art') continue;
+      const box = {x: placement.x, y: placement.y, width: placement.width, height: placement.height};
+      seen.set(`${box.x},${box.y},${box.width},${box.height}`, box);
+    }
+    return [...seen.values()];
+  }, [plan]);
   return (
     <ReplicaSceneTransition scene={scene}>
+      {panels.map((box) => (
+        <div key={`panel-${box.x}-${box.y}`} style={{position: 'absolute', left: box.x, top: box.y, width: box.width, height: box.height, borderRadius: 40, backgroundColor: SOFT_BLUE}} />
+      ))}
       {plan.placements.map((placement) => {
         if (placement.kind === 'scaled') {
           const width = placement.layer.width ?? (placement.layer.kind === 'table' ? 1500 : 900);
@@ -128,7 +142,8 @@ const EndCard: React.FC<{primary: string; secondary: string; startFrame: number}
   );
 };
 
-export const VerticalReplicaVideo: React.FC<VerticalReplicaVideoProps> = ({storyboard, audioManifest, backgroundMusic, cover, cut, hideOverlays = false}) => {
+export const VerticalReplicaVideo: React.FC<VerticalReplicaVideoProps> = ({storyboard: sourceStoryboard, audioManifest, backgroundMusic, cover, cut, hideOverlays = false}) => {
+  const storyboard = useMemo(() => applyPaperStyle(sourceStoryboard), [sourceStoryboard]);
   const frame = useCurrentFrame();
   const totalFrames = Math.round(storyboard.duration * FPS);
   const endCardFrames = Math.round(growth.vertical.endCardSeconds * FPS);
@@ -144,7 +159,7 @@ export const VerticalReplicaVideo: React.FC<VerticalReplicaVideoProps> = ({story
   );
 
   return (
-    <AbsoluteFill style={{backgroundColor: REPLICA_THEME.background, color: REPLICA_THEME.primary, fontFamily: REPLICA_THEME.fontFamily, letterSpacing: 0, overflow: 'hidden'}}>
+    <AbsoluteFill style={{...paperStyle(), color: REPLICA_THEME.primary, fontFamily: REPLICA_THEME.fontFamily, letterSpacing: 0, overflow: 'hidden'}}>
       <BackgroundMusic storyboard={storyboard} audioManifest={audioManifest} music={backgroundMusic} />
       {storyboard.scenes.map((scene) => {
         return (

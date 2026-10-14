@@ -120,7 +120,7 @@ corner-only check; combine row/column occupancy with a white-composite review.
   semantic actor after all icons, diagrams, labels, and effects are composited.
 - Every raster illustration must visibly use the black solid Xiaohei with white dot eyes and thin
   legs/arms as the semantic actor. Reject an image where Xiaohei is only a decorative bystander.
-- Require wobbly black hand-drawn linework, pure white final background, at least 35% quiet space,
+- Require wobbly black hand-drawn linework, the dotted paper final background, at least 35% quiet space,
   and restrained orange/red/blue marks. Reject colored commercial cartoons, cute mascot poses,
   children's illustration, 3D/photorealism, PPT-like grids, scene frames, or scenic backgrounds.
 - Before TTS generation, final scene timing, or rendering, inspect the full pose contact sheet and
@@ -279,17 +279,17 @@ the following:
   function of the Remotion frame.
 - Verify the encoded final MP4 at the action frames and final fade, not only source-render stills.
 
-## 7. White-background and ending gate
+## 7. Paper-background and ending gate
 
 - Render lossless stills from the first beat, a quiet background region in every scene, every
   boundary, the pre-fade frame, mid-fade frame, and final frame.
-- Require source-render background pixels to equal RGB `(255,255,255)` exactly. For decoded H.264,
-  allow at most one code value of compression variance only when the lossless still proves the
-  source is `#FFFFFF`; reject any tint, texture, or gray cast.
-- Check all four corners and several empty interior points, not just an average-whiteness score.
+- Require empty background pixels to equal the theme paper `PAPER_RGB` (`#FFFBF3`) between dots; decoded
+  H.264 may drift a few code values (`verifyRender` allows 6, `verifyCover` 2). Reject pure white patches,
+  white boxes around art, or a gray cast.
+- Check all four corners and several empty interior points, not just an average score.
 - When fade duration or end opacity is zero, require no dark overlay. Otherwise require a
   monotonic black overlay beginning at exactly the configured frame and a final empty-background
-  value within two RGB code values of `255 * (1 - fadeEndOpacity)` after H.264 decoding.
+  value within a few RGB code values of `PAPER_RGB * (1 - fadeEndOpacity)` after H.264 decoding.
 - Reject a black flash, early dimming, or narration continuing audibly after the frame is black.
 
 ## 8. Sample-frame comparison gate

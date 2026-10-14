@@ -1,11 +1,13 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Img, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {smoothProgress} from '../replica/smoothMotion';
+import {REPLICA_THEME, SOFT_BLUE, SOFT_ORANGE, paperStyle} from '../replica/theme';
 import {sentences as s, WRITER_ART, type WritingTimeline, type WritingPanel} from './lesson';
 import timelineJson from './timeline.json';
 
 export const writingTimeline = timelineJson as WritingTimeline;
-const C={blue:'#041FA0',orange:'#E85810',ink:'#142544',muted:'#697590',line:'#DEE4F0',paper:'#F5F7FC'};
+// 全栏目统一纸面配色（见 src/replica/theme.ts）。
+const C={blue:REPLICA_THEME.primary,orange:REPLICA_THEME.accent,ink:'#142544',muted:'#697590',line:'#DEE4F0',paper:SOFT_BLUE};
 const family='"Microsoft YaHei", "微软雅黑", Arial, sans-serif';
 const english='Arial, "Microsoft YaHei", sans-serif';
 const box=(left:number,top:number,width:number):React.CSSProperties=>({position:'absolute',left,top,width});
@@ -16,7 +18,7 @@ const Reveal:React.FC<{frame:number;delay?:number;anchor?:boolean;children:React
 };
 const Em=({children}:{children:React.ReactNode})=><span style={{color:C.orange,boxShadow:'inset 0 -9px #FFF0E4'}}>{children}</span>;
 const Big=({children,size=62}:{children:React.ReactNode;size?:number})=><div style={{fontFamily:english,fontSize:size,fontWeight:700,lineHeight:1.48,color:C.ink}}>{children}</div>;
-const Chip=({children}:{children:React.ReactNode})=><span style={{display:'inline-block',padding:'10px 20px',borderRadius:10,color:C.orange,background:'#FFF0E5',fontSize:27,fontWeight:700}}>{children}</span>;
+const Chip=({children}:{children:React.ReactNode})=><span style={{display:'inline-block',padding:'10px 20px',borderRadius:10,color:C.orange,background:SOFT_ORANGE,fontSize:27,fontWeight:700}}>{children}</span>;
 
 const Margin=({frame,panel}:{frame:number;note:string;panel:WritingPanel})=> ['weak','claim','reason','example','answer'].includes(panel)?<Reveal frame={frame} delay={10} style={box(1450,430,360)}><Img src={staticFile(WRITER_ART)} style={{width:360,height:300,objectFit:'contain'}}/></Reveal>:null;
 
@@ -93,7 +95,7 @@ export const CetWritingVideo:React.FC=()=>{
   const panelEnd=cues[last].from+cues[last].frames;
   const enter=smoothProgress(panelFrame,0,12),leave=smoothProgress(frame,panelEnd-10,9);
   const countdown=cue.pauseAfter&&frame>=cue.from+cue.audioFrames?Math.max(0,Math.ceil((cue.from+cue.frames-frame)/30)):0;
-  return <AbsoluteFill style={{background:'white',fontFamily:family,color:C.ink,overflow:'hidden'}}>
+  return <AbsoluteFill style={{...paperStyle(),fontFamily:family,color:C.ink,overflow:'hidden'}}>
     <div style={{...box(100,56,900),display:'flex',gap:22,alignItems:'center',fontSize:27,fontWeight:800}}><span style={{background:C.blue,color:'white',padding:'10px 16px',borderRadius:11}}>小黑英语</span><span style={{color:C.blue}}>四级写作 · 把观点展开</span></div>
     <div style={{...box(110,147,1700),height:2,background:C.line}}><div style={{height:3,width:`${frame/(writingTimeline.totalFrames-1)*100}%`,background:C.orange}}/></div>
     <AbsoluteFill style={{opacity:enter*(1-leave),transform:`translateY(${12*(1-enter)-8*leave}px)`}}><Body panel={cue.panel} frame={panelFrame} note={cue.note} countdown={countdown}/></AbsoluteFill>
@@ -105,7 +107,7 @@ export const CetWritingVideo:React.FC=()=>{
 
 export const CetWritingCover:React.FC<{landscape?:boolean}>=({landscape=false})=>{
   const w=landscape?1200:1080;
-  return <AbsoluteFill style={{background:'white',fontFamily:family,color:C.blue,padding:landscape?'64px 70px':'96px 80px'}}>
+  return <AbsoluteFill style={{...paperStyle(),fontFamily:family,color:C.blue,padding:landscape?'64px 70px':'96px 80px'}}>
     <div style={{fontSize:landscape?28:38,fontWeight:800,letterSpacing:2}}>小黑英语 / 四级写作</div>
     <div style={{marginTop:landscape?65:100,fontSize:landscape?84:105,fontWeight:850,lineHeight:1.28}}>只会写<br/><span style={{fontFamily:english,color:C.orange,fontSize:landscape?81:96}}>very important?</span></div>
     <div style={{fontSize:landscape?38:47,fontWeight:800,marginTop:landscape?40:65}}>观点 → 原因 → 例子</div>

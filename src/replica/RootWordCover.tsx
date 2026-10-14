@@ -1,7 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Img, staticFile} from 'remotion';
 import type {ReplicaCoverDefinition} from './projectTypes';
-import {REPLICA_THEME} from './theme';
+import {REPLICA_THEME, SOFT_BLUE, highlighterStyle, paperStyle} from './theme';
 
 export const ROOT_WORD_COVER = {
   width: 1080,
@@ -85,7 +85,7 @@ export const RootWordCover: React.FC<RootWordCoverProps> = ({cover}) => {
   return (
     <AbsoluteFill
       style={{
-        background: '#FFFFFF',
+        ...paperStyle(),
         fontFamily: REPLICA_THEME.fontFamily,
         letterSpacing: 0,
         color: REPLICA_THEME.primary,
@@ -128,8 +128,8 @@ export const RootWordCover: React.FC<RootWordCoverProps> = ({cover}) => {
         <span style={{fontSize: 67, fontWeight: 900, color: REPLICA_THEME.primary}}>=</span>
         <span style={{fontSize: meaningFontSize, fontWeight: 900, color: REPLICA_THEME.accent}}>{cover.englishMeaning}</span>
       </div>
-      <div style={{position: 'absolute', left: 82, top: 538, fontSize: chineseFontSize, lineHeight: 1.2, fontWeight: 900, color: REPLICA_THEME.ink}}>
-        {cover.chineseMeaning}
+      <div style={{position: 'absolute', left: 82, top: 538, zIndex: 2, fontSize: chineseFontSize, lineHeight: 1.2, fontWeight: 900, color: REPLICA_THEME.ink}}>
+        <span style={highlighterStyle(1)}>{cover.chineseMeaning}</span>
       </div>
 
       <div style={{position: 'absolute', left: 72, top: 640, width: 295}}>
@@ -144,6 +144,8 @@ export const RootWordCover: React.FC<RootWordCoverProps> = ({cover}) => {
           width: 700,
           height: 590,
           overflow: 'hidden',
+          borderRadius: 48,
+          backgroundColor: SOFT_BLUE,
         }}
       >
         <Img
@@ -165,6 +167,7 @@ export const RootWordCover: React.FC<RootWordCoverProps> = ({cover}) => {
           top: 866,
           padding: '14px 23px 15px',
           borderRadius: 18,
+          zIndex: 2,
           background: REPLICA_THEME.accent,
           color: '#FFFFFF',
           fontSize: 27,
@@ -207,7 +210,8 @@ export const RootWordCover: React.FC<RootWordCoverProps> = ({cover}) => {
 
 export const RootWordLandscapeCover: React.FC<RootWordCoverProps> = ({cover}) => {
   const root = cover.root.replace(/^-|-$/g, '');
-  const rootFontSize = cover.root.length > 11 ? 78 : cover.root.length > 8 ? 92 : 118;
+  // The root must fit the 570px text column; the illustration panel sits right of it.
+  const rootFontSize = cover.root.length > 10 ? 76 : cover.root.length > 8 ? 92 : 118;
   const meaningFontSize = cover.englishMeaning.length > 15 ? 34 : cover.englishMeaning.length > 10 ? 40 : 48;
   const chineseFontSize = cover.chineseMeaning.length > 10 ? 30 : 36;
   const wordCharacterCount = cover.words.join('').length;
@@ -217,7 +221,7 @@ export const RootWordLandscapeCover: React.FC<RootWordCoverProps> = ({cover}) =>
   return (
     <AbsoluteFill
       style={{
-        background: '#FFFFFF',
+        ...paperStyle(),
         fontFamily: REPLICA_THEME.fontFamily,
         letterSpacing: 0,
         color: REPLICA_THEME.primary,
@@ -244,19 +248,19 @@ export const RootWordLandscapeCover: React.FC<RootWordCoverProps> = ({cover}) =>
         <div style={{fontSize: 29, fontWeight: 800, color: REPLICA_THEME.muted}}>{cover.eyebrow ?? '词根就是一个动作'}</div>
       </div>
 
-      <div style={{position: 'absolute', left: 58, top: 168, width: 570}}>
+      <div style={{position: 'absolute', left: 58, top: 168, width: 570, zIndex: 2}}>
         <div style={{fontSize: rootFontSize, lineHeight: 0.95, fontWeight: 900, color: REPLICA_THEME.primary}}>{cover.root}</div>
         <div style={{marginTop: 20, display: 'flex', alignItems: 'baseline', gap: 12}}>
           <span style={{fontSize: 40, fontWeight: 900}}>=</span>
           <span style={{fontSize: meaningFontSize, lineHeight: 1, fontWeight: 900, color: REPLICA_THEME.accent}}>{cover.englishMeaning}</span>
         </div>
-        <div style={{marginTop: 16, fontSize: chineseFontSize, lineHeight: 1.22, fontWeight: 900, color: REPLICA_THEME.ink}}>{cover.chineseMeaning}</div>
+        <div style={{marginTop: 16, fontSize: chineseFontSize, lineHeight: 1.22, fontWeight: 900, color: REPLICA_THEME.ink}}><span style={highlighterStyle(1)}>{cover.chineseMeaning}</span></div>
         <div style={{marginTop: 26, display: 'inline-block', maxWidth: 520, padding: '11px 17px 13px', borderRadius: 14, background: REPLICA_THEME.accent, color: '#FFFFFF', fontSize: 20, lineHeight: 1.35, fontWeight: 800, transform: 'rotate(-1deg)'}}>
           {cover.hook}
         </div>
       </div>
 
-      <div style={{position: 'absolute', right: 38, top: 130, width: 610, height: 530, overflow: 'hidden'}}>
+      <div style={{position: 'absolute', right: 38, top: 130, width: 610, height: 530, overflow: 'hidden', borderRadius: 40, backgroundColor: SOFT_BLUE}}>
         <Img
           src={staticFile(cover.illustrationPath)}
           style={{

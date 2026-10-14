@@ -4,6 +4,9 @@ import {AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame} from 'remot
 import {
   PRESS_REPLICA_CANVAS,
   PRESS_REPLICA_THEME,
+  highlighterStyle,
+  paperStyle,
+  SOFT_ORANGE,
   resolveReplicaColor,
 } from './theme';
 import type {
@@ -175,11 +178,27 @@ const fontFor = (fontFamily: ReplicaTextLayer['fontFamily']) =>
     ? PRESS_REPLICA_THEME.exampleFontFamily
     : PRESS_REPLICA_THEME.fontFamily;
 
+const runMarkStyle = (run: ReplicaTextRun): CSSProperties => {
+  switch (run.mark) {
+    case 'pill':
+      return {display: 'inline-block', border: `3px solid ${PRESS_REPLICA_THEME.primary}`, borderRadius: 999, padding: '0.02em 0.45em 0.08em', marginRight: '0.35em', lineHeight: 1.2};
+    case 'tag':
+      return {display: 'inline-block', background: PRESS_REPLICA_THEME.accent, color: '#FFFFFF', borderRadius: 10, padding: '0.04em 0.32em 0.08em', marginRight: '0.45em', fontSize: '0.78em', lineHeight: 1.2, verticalAlign: '0.12em'};
+    case 'highlight':
+      return highlighterStyle(1);
+    case 'underline':
+      return {textDecorationLine: 'underline', textDecorationColor: PRESS_REPLICA_THEME.accent, textDecorationThickness: '0.08em', textUnderlineOffset: '0.16em'};
+    default:
+      return {};
+  }
+};
+
 const runStyle = (run: ReplicaTextRun, defaultSize: number, defaultWeight: number): CSSProperties => ({
   color: resolveReplicaColor(run.color),
   fontSize: run.size ?? defaultSize,
   fontWeight: run.weight ?? defaultWeight,
   letterSpacing: 0,
+  ...runMarkStyle(run),
 });
 
 const StyledRuns = ({
@@ -512,7 +531,7 @@ const AccentWord = ({row}: {row: ReplicaTableRow}) => {
   return (
     <>
       {row.word.slice(0, index)}
-      <span style={{color: PRESS_REPLICA_THEME.accent}}>
+      <span style={{color: PRESS_REPLICA_THEME.accent, ...highlighterStyle(1)}}>
         {row.word.slice(index, index + row.accent.length)}
       </span>
       {row.word.slice(index + row.accent.length)}
@@ -551,7 +570,9 @@ const TableLayerView = ({
         border: boxed ? `3px solid ${PRESS_REPLICA_THEME.primary}` : undefined,
         borderTop: boxed || open ? undefined : `3px solid ${PRESS_REPLICA_THEME.primary}`,
         borderBottom: boxed || open ? undefined : `3px solid ${PRESS_REPLICA_THEME.primary}`,
-        backgroundColor: '#FFFFFF',
+        backgroundColor: boxed ? '#FFFFFF' : 'transparent',
+        borderRadius: boxed ? 24 : undefined,
+        overflow: boxed ? 'hidden' : undefined,
         fontFamily: PRESS_REPLICA_THEME.fontFamily,
         letterSpacing: 0,
       }}
@@ -578,6 +599,8 @@ const TableLayerView = ({
                 !open && visualRow < visualRows - 1
                   ? `${boxed ? 2 : 1.5}px ${boxed ? 'dashed' : 'solid'} ${boxed ? PRESS_REPLICA_THEME.primary : PRESS_REPLICA_THEME.rule}`
                   : undefined,
+              // 纸面配色：表格行交替浅橙底，与小红书总结卡一致。
+              backgroundColor: visualRow % 2 === 0 ? SOFT_ORANGE : undefined,
               opacity: itemProgress,
               transform: `translateY(${interpolate(itemProgress, [0, 1], [13, 0])}px)`,
               letterSpacing: 0,
@@ -733,7 +756,7 @@ const RadialLayerView = ({
               transform: `translate(-50%, -50%) scale(${interpolate(itemProgress, [0, 1], [0.78, 1])})`,
               opacity: clamp(itemProgress),
               color: resolveReplicaColor(item.color ?? 'primary'),
-              backgroundColor: '#FFFFFF',
+              backgroundColor: PRESS_REPLICA_THEME.background,
               padding: '4px 12px',
               fontSize: 34,
               fontWeight: 700,
@@ -852,7 +875,7 @@ export type ReplicaLayerRendererProps = {
 export const ReplicaLayerRenderer = ({layers, sceneDuration}: ReplicaLayerRendererProps) => (
   <AbsoluteFill
     style={{
-      backgroundColor: '#FFFFFF',
+      backgroundColor: 'transparent',
       color: PRESS_REPLICA_THEME.primary,
       fontFamily: PRESS_REPLICA_THEME.fontFamily,
       letterSpacing: 0,
@@ -865,7 +888,7 @@ export const ReplicaLayerRenderer = ({layers, sceneDuration}: ReplicaLayerRender
   </AbsoluteFill>
 );
 
-/** Apply a sampled whole-scene tail transition while the outer canvas stays white. */
+/** Apply a sampled whole-scene tail transition while the outer paper canvas stays put. */
 export const ReplicaSceneTransition: React.FC<{
   scene: ReplicaScene;
   children: ReactNode;
@@ -907,7 +930,7 @@ export const ReplicaSceneTransition: React.FC<{
         transform,
         transformOrigin: '50% 50%',
         filter,
-        backgroundColor: '#FFFFFF',
+        backgroundColor: 'transparent',
       }}
     >
       {children}
@@ -980,7 +1003,7 @@ export const CaptionTrack = ({cues}: CaptionTrackProps) => {
 export const ReplicaCanvas = ({children}: {children?: ReactNode}) => (
   <AbsoluteFill
     style={{
-      backgroundColor: '#FFFFFF',
+      ...paperStyle(),
       color: PRESS_REPLICA_THEME.primary,
       fontFamily: PRESS_REPLICA_THEME.fontFamily,
       letterSpacing: 0,

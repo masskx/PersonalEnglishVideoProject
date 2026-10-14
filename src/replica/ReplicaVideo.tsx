@@ -10,7 +10,8 @@ import {
 import {CaptionTrack, ReplicaLayerRenderer, ReplicaSceneTransition} from './visuals';
 import {JectContinuousStage} from './JectContinuousStage';
 import {GenericContinuousStage} from './GenericContinuousStage';
-import {REPLICA_CANVAS, REPLICA_THEME} from './theme';
+import {REPLICA_CANVAS, REPLICA_THEME, paperStyle} from './theme';
+import {applyPaperStyle} from './paperStyleStoryboard';
 import type {ContinuousStageDefinition, ReplicaBackgroundMusicDefinition} from './projectTypes';
 import type {ReplicaScene, ReplicaStoryboard} from './types';
 
@@ -185,7 +186,7 @@ const ReplicaSceneView: React.FC<{
   storyboard: ReplicaStoryboard;
   audioManifest: ReplicaAudioManifest;
 }> = ({scene, storyboard, audioManifest}) => (
-  <AbsoluteFill style={{backgroundColor: REPLICA_THEME.background}}>
+  <AbsoluteFill style={{backgroundColor: 'transparent'}}>
     <SceneNarration scene={scene} storyboard={storyboard} audioManifest={audioManifest} />
     <SceneSfx scene={scene} />
     <ReplicaSceneTransition scene={scene}>
@@ -224,15 +225,17 @@ const FadeToBlack: React.FC<{storyboard: ReplicaStoryboard}> = ({storyboard}) =>
 };
 
 export const ReplicaVideo: React.FC<ReplicaVideoProps> = ({
-  storyboard,
+  storyboard: sourceStoryboard,
   audioManifest,
   backgroundMusic,
   visualRenderer = 'default',
   continuousStage,
-}) => (
+}) => {
+  const storyboard = React.useMemo(() => applyPaperStyle(sourceStoryboard), [sourceStoryboard]);
+  return (
   <AbsoluteFill
     style={{
-      backgroundColor: REPLICA_THEME.background,
+      ...paperStyle(),
       color: REPLICA_THEME.primary,
       fontFamily: REPLICA_THEME.fontFamily,
       letterSpacing: 0,
@@ -259,7 +262,8 @@ export const ReplicaVideo: React.FC<ReplicaVideoProps> = ({
     ))}
     <FadeToBlack storyboard={storyboard} />
   </AbsoluteFill>
-);
+  );
+};
 
 export const getReplicaDurationFrames = (storyboard: ReplicaStoryboard) =>
   Math.round(storyboard.duration * FPS);

@@ -8,8 +8,10 @@ visual invariants.
 ## Canvas and palette
 
 - Render at `1920x1080`, `30 fps`, square pixels, 16:9.
-- Set every canvas and scene background explicitly to pure `#FFFFFF`. Do not use off-white,
-  gradients, paper texture, vignettes, colored bands, or a gray page.
+- Use the paper canvas from `src/replica/theme.ts` for every canvas: warm off-white `#FFFBF3` with a
+  static `#EDE4D3` dot grid (`paperStyle()`), the palette the owner approved from the Xiaohongshu cards on
+  2026-10-14. Do not use pure white, gradients, vignettes, colored bands or a gray page. Put Xiaohei on a
+  soft-blue `#EAF0FF` rounded panel; mark roots with the `#FFE36E` highlighter band.
 - Use `#041FA0` as the dominant teaching color: roots, words, headings, arrows, captions, and
   primary outlines.
 - Use `#E85810` sparingly for the morpheme or semantic fragment currently being explained,
@@ -181,10 +183,10 @@ the subject about 40-60% of the canvas. Xiaohei is a deadpan worker, never a cut
 
 ## Transitions and ending
 
-- Build scene transitions from short layer fades into the same pure-white canvas. A restrained
-  near-blank white beat is acceptable; colored wipes, black flashes, 3D transitions, and page
+- Build scene transitions from short layer fades onto the same paper canvas. A restrained
+  near-blank paper beat is acceptable; colored wipes, black flashes, 3D transitions, and page
   turns are not part of this style.
-- Keep cuts invisible by aligning outgoing and incoming white backgrounds. Do not crossfade two
+- Keep cuts invisible: the paper and dot grid stay fixed while layers fade. Do not crossfade two
   dense diagrams on top of each other.
 - Configure the final darkening per project with `fadeToBlackSec` and `fadeEndOpacity`. Use a
   zero duration or zero opacity to disable it; otherwise fade a black full-frame overlay only at
@@ -195,8 +197,8 @@ the subject about 40-60% of the canvas. Xiaohei is a deadpan worker, never a cut
 
 ## Unified Douyin cover cards
 
-- Export `outputs/<slug>/cover.png` at exactly 1080x1440. Keep the background literal `#FFFFFF`
-  and use the same Microsoft YaHei, `#041FA0`, and `#E85810` palette as the episode.
+- Export `outputs/<slug>/cover.png` at exactly 1080x1440 on the same dotted paper canvas, with the
+  illustration on a soft-blue panel, and use the same Microsoft YaHei, `#041FA0`, and `#E85810` palette.
 - Preserve the shared front-end component and its fixed regions: series mark at upper left,
   outlined series pill at upper right, oversized root/meaning in the upper half, Xiaohei action
   in the middle-right illustration zone, word-family chips near the bottom, and the quiet footer.

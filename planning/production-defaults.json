@@ -46,7 +46,7 @@
     "reviewVideo": "references/visual-baseline/mit-miss-sunburst-full/mit-miss-sunburst-full.mp4",
     "fullCanvasSvgOverlay": false,
     "xiaoheiRequired": true,
-    "whiteCanvas": true,
+    "paperCanvas": "src/replica/theme.ts paperStyle()：#FFFBF3 + #EDE4D3 点阵；浅蓝插图底板 #EAF0FF；词根荧光 #FFE36E；2026-10-14 起取代纯白画布",
     "smoothFrameDrivenTypography": true
   },
   "douyinPacing": {

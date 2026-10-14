@@ -11,7 +11,7 @@ You don't need to describe the style in every prompt. Codex reads these files fr
 | File | What it fixes |
 | --- | --- |
 | `AGENTS.md` | All standing rules: topic selection, production chain, Xiaohei quality bar, Douyin vertical, Xiaohongshu cards, key safety |
-| `docs/当前制作基准.md` | The visual baseline: white canvas, solid-black Xiaohei with white-dot eyes, before/change/result poses, smooth text motion, music level |
+| `docs/当前制作基准.md` | The visual baseline: the Xiaohongshu-card paper palette (warm dotted paper, soft-blue art panel, yellow highlighter), solid-black Xiaohei with white-dot eyes, before/change/result poses, smooth text motion, music level |
 | `.agents/skills/make-xiaohei-english-video/` and `build-root-word-video/` | Step-by-step production recipes |
 | `planning/production-defaults.json` | Machine-readable defaults (sizes, gates, deliverables) |
 | `planning/growth-promotion.json` | Calls to action, hashtags, Xiaohongshu titles and tags, products |
@@ -38,7 +38,7 @@ block below can be pasted as is; replace the parts in `<>`.
 ### A. New root-word episode, Codex picks the topic
 
 ```text
-做一个词根视频。按 AGENTS.md 的完整链路制作：查重选题、登记台账、讲稿、配音、小黑生图和白底复核、
+做一个词根视频。按 AGENTS.md 的完整链路制作：查重选题、登记台账、讲稿、配音、小黑生图和素材白底复核、
 渲染、整片预览。最后运行 npm run replica:produce -- --project=<新期名> --stage=deliver，
 告诉我交付目录和需要我手机检查的地方。
 ```

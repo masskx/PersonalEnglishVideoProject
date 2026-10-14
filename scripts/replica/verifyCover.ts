@@ -4,6 +4,7 @@ import {spawnSync} from 'node:child_process';
 import {inflateSync} from 'node:zlib';
 import {getReplicaProject} from '../../src/replica/projects/registry';
 import {resolveDeliveryPaths} from './deliveryPaths';
+import {PAPER_RGB} from '../../src/replica/theme';
 
 const repoRoot = process.cwd();
 const args = process.argv.slice(2);
@@ -182,8 +183,8 @@ for (const spec of specs) {
       ].map(({x, y}) => ({x, y, rgb: samplePixel(spec.input, x, y)}))
     : [];
   for (const corner of corners) {
-    if (corner.rgb.some((value) => value !== 255)) {
-      errors.push(`corner ${corner.x},${corner.y} is RGB ${corner.rgb.join(',')}, expected 255,255,255`);
+    if (corner.rgb.some((value, index) => Math.abs(value - PAPER_RGB[index]) > 2)) {
+      errors.push(`corner ${corner.x},${corner.y} is RGB ${corner.rgb.join(',')}, expected paper ${PAPER_RGB.join(',')}`);
     }
   }
 
@@ -211,7 +212,7 @@ for (const spec of specs) {
   else {
     console.log(
       `Cover ${project.slug} ${spec.label} verified: ${spec.width}x${spec.height} opaque PNG, ` +
-        `four white corners, ${project.cover.words.length} words.`,
+        `four paper corners, ${project.cover.words.length} words.`,
     );
     console.log(`Report: ${path.relative(repoRoot, reportPath)}.`);
   }

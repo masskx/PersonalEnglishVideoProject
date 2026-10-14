@@ -12,7 +12,7 @@ import type {
   ContinuousStageDefinition,
   SemanticAction,
 } from './projectTypes';
-import {REPLICA_CANVAS, REPLICA_THEME} from './theme';
+import {REPLICA_CANVAS, REPLICA_THEME, SOFT_BLUE, highlighterStyle} from './theme';
 import type {ReplicaLayer, ReplicaScene, ReplicaStoryboard, ReplicaTextLayer} from './types';
 import {LayerRenderer} from './visuals';
 
@@ -305,6 +305,8 @@ const DynamicImageLayer: React.FC<{
           position: 'absolute', left: layer.x, top: layer.y, width: layer.width, height: layer.height,
           objectFit: layer.fit ?? 'contain', objectPosition: layer.objectPosition ?? '50% 50%',
           zIndex: layer.zIndex ?? 1, transform, transformOrigin: '50% 50%', opacity,
+          // White-backed legacy frames: multiply drops the white plate onto the paper canvas.
+          mixBlendMode: 'multiply',
         }}
       />
     );
@@ -375,6 +377,7 @@ const MorphWordBuild: React.FC<{
             opacity: clamp01(rootIn),
             transform: `translateY(${(18 * (1 - rootIn)).toFixed(2)}px) scale(${(0.72 + rootIn * 0.28).toFixed(4)})`,
             transformOrigin: '50% 75%',
+            ...highlighterStyle(underline),
           }}
         >
           {build.root}
@@ -391,21 +394,14 @@ const MorphWordBuild: React.FC<{
           </span>
         ) : null}
       </div>
-      <div
-        style={{
-          marginTop: 3,
-          width: '100%',
-          maxWidth: Math.min(layer.width ?? 620, 620),
-          height: 5,
-          borderRadius: 999,
-          backgroundColor: REPLICA_THEME.accent,
-          transform: `scaleX(${underline})`,
-          transformOrigin: '0 50%',
-          opacity: underline * 0.72,
-        }}
-      />
     </div>
   );
+};
+
+/** 纸面配色：词页插图区的浅蓝圆角底板（与小红书词卡相同），位置与 layerInSafeZone 的插图框一致。 */
+const ArtPanel: React.FC<{layout?: ContinuousScenePlan['layout']}> = ({layout}) => {
+  const box = layout === 'text-right' ? {left: 20, top: 70, width: 820, height: 720} : {left: 1030, top: 70, width: 850, height: 720};
+  return <div style={{position: 'absolute', ...box, borderRadius: 40, backgroundColor: SOFT_BLUE, zIndex: 0}} />;
 };
 
 const SemanticOverlay: React.FC<{
@@ -1005,6 +1001,7 @@ const ContinuousScene: React.FC<{
       }}
     >
       {textOnlyLegacy && showRootWatermark ? <LegacyRootWatermark root={root} /> : null}
+      {plan?.wordBuild ? <ArtPanel layout={plan.layout} /> : null}
       {scene.layers.map((layer, index) => {
         if (
           plan?.wordBuild?.layerId === layer.id &&
@@ -1243,7 +1240,7 @@ export const GenericContinuousStage: React.FC<{
       ? definition.semanticPropTrack
       : undefined;
   return (
-    <AbsoluteFill style={{backgroundColor: REPLICA_THEME.background, overflow: 'hidden'}}>
+    <AbsoluteFill style={{backgroundColor: 'transparent', overflow: 'hidden'}}>
       {storyboard.scenes.map((scene) => (
         <ContinuousScene
           key={scene.id}
