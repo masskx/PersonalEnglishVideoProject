@@ -1,43 +1,37 @@
 {
   "short": "include-exclude",
-  "hookType": "challenge",
-  "seconds": 33.03333333333333,
+  "hookType": "contrast",
+  "seconds": 23.766666666666666,
   "beats": [
     {
       "id": "hook",
       "kind": "hook",
       "from": 0,
-      "seconds": 4.73
+      "seconds": 4.37
     },
     {
       "id": "fix-in",
       "kind": "fix",
-      "from": 4.73,
-      "seconds": 5.7
+      "from": 4.37,
+      "seconds": 4.47
     },
     {
       "id": "fix-ex",
       "kind": "fix",
-      "from": 10.43,
-      "seconds": 5.63
+      "from": 8.83,
+      "seconds": 4.8
     },
     {
       "id": "test",
       "kind": "test",
-      "from": 16.07,
-      "seconds": 6.2
+      "from": 13.63,
+      "seconds": 4.67
     },
     {
       "id": "answer",
       "kind": "answer",
-      "from": 22.27,
-      "seconds": 4.5
-    },
-    {
-      "id": "cta",
-      "kind": "cta",
-      "from": 26.77,
-      "seconds": 6.27
+      "from": 18.3,
+      "seconds": 5.47
     }
   ]
 }

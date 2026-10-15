@@ -1,6 +1,6 @@
 ---
 name: make-xiaohei-english-video
-description: Make or resume an English-learning video in this Xiaohei project (default a 30–40 s vertical short posted to both Douyin and Xiaohongshu), including autonomous topic selection when the user names only a direction such as CET-4/6, graduate-entrance-exam English, root words, confusing words, writing, reading, or translation. Use for production requests; do not trigger for discussion, inventory, or rule recording alone.
+description: Make or resume an English-learning video in this Xiaohei project (default a 20–30 s vertical short posted to both Douyin and Xiaohongshu), including autonomous topic selection when the user names only a direction such as CET-4/6, graduate-entrance-exam English, root words, confusing words, writing, reading, or translation. Use for production requests; do not trigger for discussion, inventory, or rule recording alone.
 ---
 
 # Make Xiaohei English Video
@@ -104,9 +104,12 @@ how an old episode was made; they do not override the current production baselin
 
 - Content spans all English learning: CET-4/6, graduate-entrance-exam English (考研), root words,
   confusable words, grammar and everyday usage. Put the label in the script's `category`.
-- The default video is a native 30–40 s vertical short. The same file is posted to Douyin and
-  Xiaohongshu. Structure: one point, a 0–2 s hook, one or two teaching beats, a pause-and-answer test
-  with a 3 s countdown, the answer, then one line asking viewers to save and follow. No "today we
+- The default video is a native 20–30 s vertical short. The same file is posted to Douyin and
+  Xiaohongshu. Structure (v2, since 2026-10-15): one point, a 0–2 s hook (narration 4.5 s or less),
+  one or two teaching beats, a pause-and-answer test with a 2 s countdown, and the answer as the
+  ending. The answer line ends with the save prompt and the answer beat carries the save/follow
+  ribbon; there is no separate closing beat. Reason: the first posted short (35 s, v1) finished at
+  2.29% with a 56.5% two-second exit. Voice clips are trimmed of leading/trailing silence. No "today we
   learn" or channel-name openings; frame 0 shows the big headline and Xiaohei with no fade-in.
 - Hooks rotate and there are no A/B tests. Library order is posting order, and short #i uses
   `HOOK_ROTATION[i % 4]`: challenge → mistake → contrast → result first. Append new shorts at the end
@@ -124,6 +127,8 @@ how an old episode was made; they do not override the current production baselin
   - `publish.md`, `release.json`, `review/`
 - Daily data from the owner (Douyin and Xiaohongshu) goes into `planning/douyin-metrics.json`.
   `npm run metrics:report` groups results by hook type and platform (see `docs/DOUYIN-DATA-EN.md`).
+- Posted shorts are kept in the library as `version: 1` (or their version at posting) and archived in
+  `outputs/shorts/<id>发了/` with `release.json` recording the publish time; never re-render them.
 - Xiaohongshu image cards are retired. Never produce them unless the owner asks again.
 
 ## Long-lesson vertical version (only when a long lesson is requested)

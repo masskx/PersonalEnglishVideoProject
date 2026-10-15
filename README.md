@@ -5,7 +5,7 @@ Short Chinese-language English lessons starring the black bean character 小黑,
 listening), graduate-entrance-exam English (考研英语), word roots and confusable words, grammar, and everyday
 usage.
 
-**Main format (since 2026-10-14):** 30–40 s vertical videos (1080×1920). **The same video is posted on Douyin
+**Main format (since 2026-10-14):** 20–30 s vertical videos (1080×1920). **The same video is posted on Douyin
 and Xiaohongshu.** Each video gets its own folder with three covers:
 
 | Cover | Size | Used for |
@@ -33,7 +33,7 @@ everything an agent needs (commands, folders, quality bar) is linked from it.
 
 ## 中文速览
 
-- **主推格式：** 30–40 秒竖屏短视频，抖音和小红书发同一条；一条视频一个文件夹 `outputs/shorts/<视频ID>/`：
+- **主推格式：** 20–30 秒竖屏短视频，抖音和小红书发同一条；一条视频一个文件夹 `outputs/shorts/<视频ID>/`：
   成片 `<视频ID>.mp4`、抖音竖封面（9:16）、抖音横封面（4:3）、小红书封面（3:4）、`publish.md`（两个平台的标题、
   正文、话题、置顶评论）、`release.json`、`review/`。不再做小红书图文卡。
 - **内容范围：** 四六级（词汇、作文、阅读、翻译、听力）、考研英语、词根与易混词、语法、日常用法，所有英语学习内容。

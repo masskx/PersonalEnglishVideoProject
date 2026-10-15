@@ -155,11 +155,11 @@
   "shortsDelivery": {
     "since": "2026-10-14",
     "default": true,
-    "note": "主推 30–40 秒竖屏短视频，抖音和小红书发同一条；一条视频一个文件夹，三张封面；钩子按 HOOK_ROTATION 轮换，不做 A/B。",
+    "note": "主推 20–30 秒竖屏短视频，抖音和小红书发同一条；一条视频一个文件夹，三张封面；钩子按 HOOK_ROTATION 轮换，不做 A/B。",
     "folder": "outputs/shorts/<id>/",
     "commands": ["npm run shorts:voice -- --short=<id> --generate --prune", "npm run shorts:render -- --short=<id>"],
     "video": [1080, 1920],
-    "durationSeconds": [30, 40],
+    "durationSeconds": [20, 30],
     "covers": {
       "cover-douyin-vertical.png": [1080, 1920],
       "cover-douyin-landscape.png": [1440, 1080],

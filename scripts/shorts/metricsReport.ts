@@ -95,5 +95,5 @@ if (byHook.size) {
   }
 }
 
-// 工作目标：30–45 秒知识短视频的经验区间，用来判断下一轮先改哪里，不是平台官方标准。
-console.log('\nWorking targets for 30–45 s shorts: 2s exit < 30% · 5s finish > 60% · finish > 30% · save/100 > 1.5 · follow/1k > 5');
+// 工作目标：20–30 秒知识短视频的经验区间，用来判断下一轮先改哪里，不是平台官方标准。
+console.log('\nWorking targets for 20–30 s shorts: 2s exit < 30% · 5s finish > 60% · finish > 30% · save/100 > 1.5 · follow/1k > 5');

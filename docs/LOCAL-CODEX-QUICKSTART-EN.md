@@ -62,7 +62,7 @@ The rules are written in Chinese, so short Chinese prompts work best. Meanings i
 
 | You type | What happens |
 | --- | --- |
-| `做一条视频` (make a video) | Codex picks an unused topic and makes a 30–40 s vertical short with the next hook type in the rotation |
+| `做一条视频` (make a video) | Codex picks an unused topic and makes a 20–30 s vertical short with the next hook type in the rotation |
 | `做一条考研词汇视频` / `做一条六级作文视频` / `做一条词根视频` | Same, in the direction you name (graduate-entrance-exam vocabulary, CET-6 writing, root words…) |
 | `做一条 affect / effect 的视频` (a video on affect / effect) | Same, for the exact topic you name |
 | `把 include-exclude 的封面改大字` (change a cover) | Edits the script or cover and runs `npm run shorts:render -- --short=include-exclude --covers-only` |
@@ -74,7 +74,7 @@ One video per folder, posted to **both Douyin and Xiaohongshu**:
 
 ```text
 outputs/shorts/<video>/
-  <video>.mp4                    the video (1080×1920, 30–40 s)
+  <video>.mp4                    the video (1080×1920, 20–30 s)
   cover-douyin-vertical.png      Douyin vertical cover (9:16; content inside the middle 3:4)
   cover-douyin-landscape.png     Douyin horizontal cover (4:3)
   cover-xiaohongshu.png          Xiaohongshu cover (3:4)

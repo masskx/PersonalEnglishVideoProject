@@ -4,8 +4,9 @@ import {shortLibrary} from '../../src/shorts/library';
 import {HOOK_ROTATION, type ShortTimeline} from '../../src/shorts/types';
 
 /**
- * 短视频回归：结构（钩子 → 讲点 → 作答 → 答案 → 收藏）、钩子类型按发布顺序轮换、钩子不用栏目名开场、
- * 插图来自来源期、标题字数（抖音 30、小红书 20）、时间轴 25–45 秒、作答节拍留出倒计时、交付文件夹只放一个视频。
+ * 短视频回归：钩子类型按发布顺序轮换、钩子不用栏目名开场、插图来自来源期、标题字数（抖音 30、小红书 20）、
+ * 交付文件夹只放一个视频。v2（默认）另查：结构钩子 → 讲点 → 作答 → 答案（答案即结尾，没有单独收藏拍）、
+ * 时间轴 18–30 秒、钩子旁白 ≤ 4.5 秒、作答倒计时 ≥ 2 秒。v1 只为已发布视频存档，不查结构与时长。
  */
 const BANNED_OPENINGS = /^(今天|大家好|欢迎|小黑英语|这期)/;
 const ids = new Set<string>();
@@ -13,7 +14,11 @@ shortLibrary.forEach((short, index) => {
   assert.ok(!ids.has(short.id), `${short.id}: duplicate id`);
   ids.add(short.id);
   assert.equal(short.hookType, HOOK_ROTATION[index % HOOK_ROTATION.length], `${short.id}: hook type must follow the rotation (#${index} → ${HOOK_ROTATION[index % HOOK_ROTATION.length]})`);
-  assert.deepEqual(short.body.map((beat) => beat.kind).slice(-3), ['test', 'answer', 'cta'], `${short.id}: body ends with test → answer → cta`);
+  const v2 = (short.version ?? 2) >= 2;
+  if (v2) {
+    assert.deepEqual(short.body.map((beat) => beat.kind).slice(-2), ['test', 'answer'], `${short.id}: v2 body ends with test → answer (the answer is the ending)`);
+    assert.ok(!short.body.some((beat) => beat.kind === 'cta'), `${short.id}: v2 has no separate save/follow beat`);
+  }
   const {hook} = short;
   assert.ok(['hook', 'mistake'].includes(hook.kind), `${short.id}: hook kind`);
   if (short.hookType === 'mistake') assert.ok(hook.kind === 'mistake' && hook.wrong && hook.right, `${short.id}: mistake hook needs wrong/right`);
@@ -38,8 +43,10 @@ shortLibrary.forEach((short, index) => {
   if (existsSync(file)) {
     const timeline = JSON.parse(readFileSync(file, 'utf8')) as ShortTimeline;
     const seconds = timeline.totalFrames / timeline.fps;
-    assert.ok(seconds >= 25 && seconds <= 45, `${short.id}: ${seconds.toFixed(1)}s outside 25–45 s`);
-    assert.ok(timeline.beats[0].audioFrames / timeline.fps <= 6, `${short.id}: hook narration ≤ 6 s`);
+    if (v2) {
+      assert.ok(seconds >= 18 && seconds <= 30, `${short.id}: ${seconds.toFixed(1)}s outside 18–30 s`);
+      assert.ok(timeline.beats[0].audioFrames / timeline.fps <= 4.5, `${short.id}: hook narration ≤ 4.5 s`);
+    }
   }
   for (const dir of [`outputs/shorts/${short.id}`, `outputs/shorts/${short.id}发了`]) {
     if (!existsSync(dir)) continue;

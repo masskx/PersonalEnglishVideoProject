@@ -10,7 +10,7 @@ You don't need to describe the style in every prompt. Codex reads these files fr
 
 | File | What it fixes |
 | --- | --- |
-| `AGENTS.md` | All standing rules: topic selection, production chain, Xiaohei quality bar, the 30–40 s short format (one video for Douyin and Xiaohongshu, three covers, rotating hooks), key safety |
+| `AGENTS.md` | All standing rules: topic selection, production chain, Xiaohei quality bar, the 20–30 s short format (one video for Douyin and Xiaohongshu, three covers, rotating hooks), key safety |
 | `docs/当前制作基准.md` | The visual baseline: the Xiaohongshu-card paper palette (warm dotted paper, soft-blue art panel, yellow highlighter), solid-black Xiaohei with white-dot eyes, before/change/result poses, smooth text motion, music level |
 | `.agents/skills/make-xiaohei-english-video/` and `build-root-word-video/` | Step-by-step production recipes |
 | `planning/production-defaults.json` | Machine-readable defaults (sizes, gates, deliverables) |
@@ -35,7 +35,7 @@ Paste this first. It makes Codex load the rules and check your keys before doing
 Codex works best with short Chinese prompts, because the rules and on-screen text are Chinese. Each
 block below can be pasted as is; replace the parts in `<>`.
 
-The default product is a **30–40 s vertical short** that you post to both Douyin and Xiaohongshu.
+The default product is a **20–30 s vertical short** that you post to both Douyin and Xiaohongshu.
 Content can be anything in English learning: CET-4/6, graduate-entrance-exam English (考研), root words,
 confusable words, grammar, everyday usage.
 

@@ -1,18 +1,18 @@
 {
   "shortId": "exclude-preclude",
   "fps": 30,
-  "totalFrames": 1026,
+  "totalFrames": 1035,
   "beats": [
     {
-      "id": "hook",
+      "id": "hook-a",
       "kind": "hook",
-      "headline": "都能翻成“排除”\n**exclude** 和 **preclude** 差在哪",
-      "voice": "exclude 和 preclude 都能翻成排除，用法差了一大截。",
-      "art": "assets/replica/clud-clus/exclude-result.png",
+      "headline": "受伤**没法**参赛\n用 excluded 还是 **precluded**？",
+      "voice": "受伤没法参赛，用 excluded 还是 precluded？很多人选错。",
+      "art": "assets/replica/clud-clus/preclude-result.png",
       "from": 0,
-      "frames": 145,
-      "audioFrames": 137,
-      "src": "assets/audio/shorts/exclude-preclude/hook-347b4a7df3ee.mp3"
+      "frames": 162,
+      "audioFrames": 154,
+      "src": "assets/audio/shorts/exclude-preclude/hook-a-701cac1e6efa.mp3"
     },
     {
       "id": "fix-ex",
@@ -25,7 +25,7 @@
         "assets/replica/clud-clus/exclude-result.png"
       ],
       "example": "He was excluded from the team.",
-      "from": 145,
+      "from": 162,
       "frames": 146,
       "audioFrames": 138,
       "src": "assets/audio/shorts/exclude-preclude/fix-ex-df7476295397.mp3"
@@ -42,7 +42,7 @@
       ],
       "example": "The injury precluded him from playing.",
       "exampleAt": 0.55,
-      "from": 291,
+      "from": 308,
       "frames": 192,
       "audioFrames": 184,
       "src": "assets/audio/shorts/exclude-preclude/fix-pre-1e73241c064d.mp3"
@@ -58,7 +58,7 @@
       "correct": 1,
       "pause": 3,
       "voice": "考考你：大雨让比赛办不成，选哪个？",
-      "from": 483,
+      "from": 500,
       "frames": 199,
       "audioFrames": 109,
       "src": "assets/audio/shorts/exclude-preclude/test-748a800d727d.mp3"
@@ -71,7 +71,7 @@
       "art": "assets/replica/clud-clus/preclude-result.png",
       "example": "Heavy rain precluded the game.",
       "exampleAt": 0.1,
-      "from": 682,
+      "from": 699,
       "frames": 130,
       "audioFrames": 122,
       "src": "assets/audio/shorts/exclude-preclude/answer-ae57a9d2c3e2.mp3"
@@ -80,12 +80,12 @@
       "id": "cta",
       "kind": "cta",
       "headline": "收藏这条\n写作文少踩一个坑",
-      "voice": "收藏这条，写作文少踩一个坑。关注小黑，每天三十秒学一点英语。",
+      "voice": "收藏这条，写作文少踩一个坑。关注小黑，每天一个四六级小技巧。",
       "art": "assets/replica/clud-clus/preclude-result.png",
-      "from": 812,
-      "frames": 214,
-      "audioFrames": 186,
-      "src": "assets/audio/shorts/exclude-preclude/cta-7cb6e693e2da.mp3"
+      "from": 829,
+      "frames": 206,
+      "audioFrames": 178,
+      "src": "assets/audio/shorts/exclude-preclude/cta-fff23ffa1744.mp3"
     }
   ]
 }

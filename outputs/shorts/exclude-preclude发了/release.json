@@ -1,0 +1,10 @@
+{
+  "video": "exclude-preclude",
+  "status": "published",
+  "template": "v1",
+  "note": "旧模板 v1（钩子 A：挑战题）原样存档；成片即抖音上发布的文件。",
+  "platforms": {
+    "douyin": {"publishedAt": "2026-10-14T20:49+08:00", "title": "受伤没法参赛，用excluded还是precluded？"},
+    "xiaohongshu": null
+  }
+}

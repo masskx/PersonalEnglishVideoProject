@@ -1,7 +1,9 @@
 import 'dotenv/config';
 import {createHash} from 'node:crypto';
 import {existsSync, mkdirSync, readdirSync, renameSync, rmSync, writeFileSync} from 'node:fs';
+import {spawnSync} from 'node:child_process';
 import {probeAudioDuration} from '../../src/tts/dashscope';
+import {ffmpegPath} from '../replica/renderEnv';
 import {bearerHeaders} from '../../src/proxyCredentials';
 import {findShort, shortLibrary} from '../../src/shorts/library';
 import type {ShortBeat, ShortTimeline, TimedShortBeat} from '../../src/shorts/types';
@@ -59,7 +61,15 @@ for (const short of shorts) {
       writeFileSync(`${file}.tmp`, bytes);
       renameSync(`${file}.tmp`, file);
     }
-    return file;
+    if ((short.version ?? 2) < 2) return file;
+    // v2: cut leading/trailing silence (TTS adds ~0.3 s) so the first word lands on frame 0. Local ffmpeg, no API call.
+    const trimmed = file.replace(/\.mp3$/, '.trim.mp3');
+    if (!existsSync(trimmed)) {
+      const strip = 'silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.03';
+      const result = spawnSync(ffmpegPath, ['-v', 'error', '-y', '-i', file, '-af', `${strip},areverse,${strip},areverse`, '-c:a', 'libmp3lame', '-q:a', '2', trimmed]);
+      if (result.status !== 0) throw new Error(`ffmpeg trim failed for ${file}: ${result.stderr}`);
+    }
+    return trimmed;
   };
   const beats = [short.hook, ...short.body];
   let frame = 0;
@@ -81,7 +91,7 @@ for (const short of shorts) {
   console.log(`${short.id}: ${timed.length} beats, ${(frame / FPS).toFixed(1)}s`);
   if (prune) {
     // 删除本条不再引用的 AI 配音（改稿后的旧版本），录音目录不动。
-    const used = new Set(timed.map((beat) => beat.src.split('/').pop()));
+    const used = new Set(timed.flatMap((beat) => { const name = beat.src.split('/').pop()!; return [name, name.replace(/\.trim\.mp3$/, '.mp3')]; }));
     for (const name of readdirSync(dir)) if (name.endsWith('.mp3') && !used.has(name)) { rmSync(`${dir}/${name}`); console.log(`Pruned ${dir}/${name}`); }
   }
 }

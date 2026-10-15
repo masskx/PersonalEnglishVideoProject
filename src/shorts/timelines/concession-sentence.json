@@ -1,7 +1,7 @@
 {
   "shortId": "concession-sentence",
   "fps": 30,
-  "totalFrames": 1057,
+  "totalFrames": 685,
   "beats": [
     {
       "id": "hook",
@@ -9,40 +9,40 @@
       "headline": "六级作文开头\n只会写 I totally agree？",
       "wrong": "I totally agree. Part-time jobs are good.",
       "right": "It is true that … However, …",
-      "voice": "六级作文一上来就写 I totally agree？读起来像喊口号。",
+      "voice": "六级作文开头只会写 I totally agree？像喊口号。",
       "art": "assets/replica/cet6-writing-concession/hook-scale.png",
       "from": 0,
-      "frames": 152,
-      "audioFrames": 144,
-      "src": "assets/audio/shorts/concession-sentence/hook-06e0f6cb36fb.mp3"
+      "frames": 120,
+      "audioFrames": 112,
+      "src": "assets/audio/shorts/concession-sentence/hook-0376f37d00f0.trim.mp3"
     },
     {
       "id": "fix-concede",
       "kind": "fix",
       "headline": "先让步：\n**It is true that …**",
-      "voice": "第一句先承认对方：It is true that part-time jobs take time.",
+      "voice": "先承认对方：It is true that part-time jobs take time.",
       "art": "assets/replica/cet6-writing-concession/concede-nod.png",
       "english": true,
       "example": "It is true that part-time jobs take time.",
-      "exampleAt": 0.3,
-      "from": 152,
-      "frames": 148,
-      "audioFrames": 140,
-      "src": "assets/audio/shorts/concession-sentence/fix-concede-4d60983f60e8.mp3"
+      "exampleAt": 0.25,
+      "from": 120,
+      "frames": 118,
+      "audioFrames": 110,
+      "src": "assets/audio/shorts/concession-sentence/fix-concede-55def0c84d76.trim.mp3"
     },
     {
       "id": "fix-turn",
       "kind": "fix",
       "headline": "再转回：\n**However, …**",
-      "voice": "第二句转回来：However, they teach students to plan their time.",
+      "voice": "再转回来：However, they teach students to plan their time.",
       "art": "assets/replica/cet6-writing-concession/turn-arrow.png",
       "english": true,
       "example": "However, they teach students to plan their time.",
-      "exampleAt": 0.3,
-      "from": 300,
-      "frames": 155,
-      "audioFrames": 147,
-      "src": "assets/audio/shorts/concession-sentence/fix-turn-40c6ade143ec.mp3"
+      "exampleAt": 0.25,
+      "from": 238,
+      "frames": 128,
+      "audioFrames": 120,
+      "src": "assets/audio/shorts/concession-sentence/fix-turn-3c492c419bbc.trim.mp3"
     },
     {
       "id": "test",
@@ -53,36 +53,25 @@
         "Admittedly, online courses are flexible."
       ],
       "correct": 1,
-      "pause": 3,
-      "voice": "考考你：写网课会不会取代课堂，哪句是让步开头？",
-      "from": 455,
-      "frames": 242,
-      "audioFrames": 152,
-      "src": "assets/audio/shorts/concession-sentence/test-34e3ff52621f.mp3"
+      "pause": 2,
+      "voice": "考考你：哪句是让步开头？",
+      "from": 366,
+      "frames": 125,
+      "audioFrames": 65,
+      "src": "assets/audio/shorts/concession-sentence/test-43dc88244659.trim.mp3"
     },
     {
       "id": "answer",
       "kind": "answer",
       "headline": "答案：**B. Admittedly …**",
-      "voice": "答案是 B。先承认网课灵活，再用 However 转到课堂。",
+      "voice": "答案是 B：先承认，再用 However 转回来。收藏这条，考前翻出来。",
       "art": "assets/replica/cet6-writing-concession/turn-arrow.png",
       "example": "Admittedly, … However, …",
-      "exampleAt": 0.1,
-      "from": 697,
-      "frames": 157,
-      "audioFrames": 149,
-      "src": "assets/audio/shorts/concession-sentence/answer-cfff0f9b6387.mp3"
-    },
-    {
-      "id": "cta",
-      "kind": "cta",
-      "headline": "收藏这条\n考前背熟这两句",
-      "voice": "收藏这条，考前背熟这两句。关注小黑，每天三十秒学一点英语。",
-      "art": "assets/replica/cet6-writing-concession/hook-scale.png",
-      "from": 854,
-      "frames": 203,
-      "audioFrames": 175,
-      "src": "assets/audio/shorts/concession-sentence/cta-b70ef83e5d95.mp3"
+      "exampleAt": 0.05,
+      "from": 491,
+      "frames": 194,
+      "audioFrames": 166,
+      "src": "assets/audio/shorts/concession-sentence/answer-a44aff714dfc.trim.mp3"
     }
   ]
 }

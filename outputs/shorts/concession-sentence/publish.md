@@ -1,6 +1,6 @@
 # 六级作文让步句：It is true that… However…
 
-- 视频：concession-sentence.mp4（35.2 秒，1080×1920）——抖音、小红书发同一条
+- 视频：concession-sentence.mp4（22.8 秒，1080×1920）——抖音、小红书发同一条
 - 抖音竖封面：cover-douyin-vertical.png（9:16，电脑端裁成中间 3:4 也完整）
 - 抖音横封面：cover-douyin-landscape.png（4:3）
 - 小红书封面：cover-xiaohongshu.png（3:4）

@@ -1,4 +1,19 @@
 {
-  "note": "抖音创作者中心数据台账。每条记录是某条视频某天的累计快照；同一视频可以有多天记录，报告取最新一天。比率填百分数（32.5 表示 32.5%），时长填秒。用 npm run metrics:report 查看对比。",
-  "snapshots": []
+  "note": "抖音 / 小红书数据台账。每条记录是某条视频在某个平台某天的累计快照（platform 默认 douyin）；同一视频可以有多天记录，报告取最新一天。比率填百分数（32.5 表示 32.5%），时长填秒。用 npm run metrics:report 查看对比。",
+  "snapshots": [
+    {
+      "date": "2026-10-15",
+      "id": "exclude-preclude",
+      "platform": "douyin",
+      "views": 3372,
+      "completionRate": 2.29,
+      "bounce2s": 56.52,
+      "likes": 56,
+      "comments": 2,
+      "saves": 23,
+      "shares": 2,
+      "follows": 8,
+      "note": "v1 模板 34.5 秒，钩子 A（挑战题）；2026-10-14 20:49 发布，账号久未更新后的第一条；截至次日的累计。没有平均播放时长和 5 秒完播率。"
+    }
+  ]
 }

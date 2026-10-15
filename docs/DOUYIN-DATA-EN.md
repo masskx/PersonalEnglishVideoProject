@@ -1,6 +1,6 @@
 # Posting and daily data: Douyin and Xiaohongshu (English guide)
 
-Every video is a 30–40 s vertical short. **Post the same video on Douyin and Xiaohongshu.** I keep
+Every video is a 20–30 s vertical short. **Post the same video on Douyin and Xiaohongshu.** I keep
 making them; you post them and send me the numbers, and I adjust the next ones from the data.
 
 ## 1. What is in each folder
@@ -63,6 +63,11 @@ Screenshots are fine. Or one line per video and platform:
 2026-10-16 include-exclude 小红书: 观看 860, 均播 12s, 赞 25, 藏 30, 评 3, 粉 6
 ```
 
+**Most useful extra:** a screenshot of the retention curve (作品分析 → 观看分析 / 观众留存, the line
+showing how many viewers remain at each second). It shows exactly where people swipe away, so I can
+fix that second instead of guessing. Please also include 平均播放时长 and 5s完播率. They were missing
+from the first screenshot.
+
 Also tell me anything unusual: a video was throttled or flagged, it suddenly got pushed, or comments
 asked for a topic.
 
@@ -79,7 +84,7 @@ shows per-100-view rates per video and platform, and averages by hook type.
 | Saves per 100 views | Is it useful enough to keep? | over 1.5 |
 | Follows per 1,000 views | Does it make people want more? | over 5 |
 
-These are working targets for 30–40 s study videos, not official platform numbers.
+These are working targets for 20–30 s study videos, not official platform numbers.
 
 ## 5. Optional: your own voice
 
@@ -89,5 +94,5 @@ A real voice usually beats AI voice. To replace any line, record it and save it 
 public/assets/audio/shorts/<video>/recorded/<line-id>.mp3
 ```
 
-Line IDs are `hook`, `fix-…`, `test`, `answer`, `cta` (see `src/shorts/library.ts`). Then run
+Line IDs are `hook`, `fix-…`, `test`, `answer` (see `src/shorts/library.ts`). Then run
 `npm run shorts:voice -- --short=<video>` and `npm run shorts:render -- --short=<video>`.

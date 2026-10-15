@@ -7,7 +7,7 @@ guarantees a result. These are the main levers that drive Douyin distribution, a
 project.
 
 > **Current format (updated 2026-10-14).** Some sections below are history. The main product is now
-> a **30–40 s vertical short, posted as the same video on Douyin and Xiaohongshu**:
+> a **20–30 s vertical short, posted as the same video on Douyin and Xiaohongshu**:
 >
 > - **Folder:** one video per folder in `outputs/shorts/<video>/`.
 > - **Covers:** each folder has three: Douyin vertical (9:16), Douyin horizontal (4:3) and

@@ -1225,3 +1225,10 @@ Validated 2256 exclusive image-frame intervals; extracted/reviewed 128 encoded f
 - 抖音和小红书发同一条视频；一条视频一个文件夹 `outputs/shorts/<id>/`：成片、抖音竖封面 1080×1920（内容在中间 3:4 内）、抖音横封面 1440×1080、小红书封面 1080×1440（新组件 `src/shorts/ShortCover.tsx`）、`publish.md`（两个平台的标题与文案）、`release.json`、`review/`。旧的 `outputs/<期>/douyin-shorts/` A/B 成片已删除。
 - 不再做小红书图文卡；`replica:produce` 交付阶段去掉 `xhs:cards` 和预告。内容定位扩展为全部英语学习（四六级、考研、词根、易混词、语法、日常用法），README、AGENTS、制作基准、新会话入口、Skill 与英文指南同步更新。
 - 首批 3 条按轮换重排并重配钩子与结尾：include-exclude（挑战）、concession-sentence（错误）、exclude-preclude（反差）；下一条用“结果先行”。
+
+## 2026-10-15 首条短视频数据 → 模板 v2（20–30 秒、答案即结尾）
+
+- 首条发布：exclude-preclude（旧模板 v1，34.5 秒，钩子 A 挑战题），2026-10-14 20:49 抖音。截至次日：播放 3372、赞 56、评 2、转 2、藏 23、完播率 2.29%、2 秒跳出 56.52%、涨粉 8。播放、点赞、涨粉都高于账号以往作品（账号久未更新）。
+- 判断：内容有吸引力（每百播放 1.66 赞、每千播放 2.4 粉），流失在开头 2 秒和结尾——收藏 / 关注节拍占最后 6.6 秒，看到答案的人在结尾前划走，完播率极低。
+- 模板 v2：去掉单独收藏节拍，答案即结尾（答案旁白末句收藏提示 + 画面角标）；作答倒计时 3 → 2 秒；钩子旁白 ≤ 4.5 秒、首帧标题最大 104px；配音自动去掉首尾静音（每段约 0.3 秒），第一个字落在第 0 帧。全片 20–30 秒，回归测试同步。
+- 已发布视频原样存档：脚本标 version: 1，outputs/shorts/exclude-preclude发了/（成片即发布文件，release.json 写发布时间）。轮换按实际发布顺序重排：exclude-preclude（挑战，已发）→ concession-sentence（错误，22.8 秒）→ include-exclude（反差，新钩子“只差两个字母”，23.8 秒）；下一条用“结果先行”。

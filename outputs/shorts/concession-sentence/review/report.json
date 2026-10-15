@@ -1,43 +1,37 @@
 {
   "short": "concession-sentence",
   "hookType": "mistake",
-  "seconds": 35.233333333333334,
+  "seconds": 22.833333333333332,
   "beats": [
     {
       "id": "hook",
       "kind": "mistake",
       "from": 0,
-      "seconds": 5.07
+      "seconds": 4
     },
     {
       "id": "fix-concede",
       "kind": "fix",
-      "from": 5.07,
-      "seconds": 4.93
+      "from": 4,
+      "seconds": 3.93
     },
     {
       "id": "fix-turn",
       "kind": "fix",
-      "from": 10,
-      "seconds": 5.17
+      "from": 7.93,
+      "seconds": 4.27
     },
     {
       "id": "test",
       "kind": "test",
-      "from": 15.17,
-      "seconds": 8.07
+      "from": 12.2,
+      "seconds": 4.17
     },
     {
       "id": "answer",
       "kind": "answer",
-      "from": 23.23,
-      "seconds": 5.23
-    },
-    {
-      "id": "cta",
-      "kind": "cta",
-      "from": 28.47,
-      "seconds": 6.77
+      "from": 16.37,
+      "seconds": 6.47
     }
   ]
 }
