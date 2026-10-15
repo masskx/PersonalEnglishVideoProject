@@ -10,11 +10,11 @@ You don't need to describe the style in every prompt. Codex reads these files fr
 
 | File | What it fixes |
 | --- | --- |
-| `AGENTS.md` | All standing rules: topic selection, production chain, Xiaohei quality bar, Douyin vertical, Xiaohongshu cards, key safety |
+| `AGENTS.md` | All standing rules: topic selection, production chain, Xiaohei quality bar, the 20–30 s short format (one video for Douyin and Xiaohongshu, three covers, rotating hooks), key safety |
 | `docs/当前制作基准.md` | The visual baseline: the Xiaohongshu-card paper palette (warm dotted paper, soft-blue art panel, yellow highlighter), solid-black Xiaohei with white-dot eyes, before/change/result poses, smooth text motion, music level |
 | `.agents/skills/make-xiaohei-english-video/` and `build-root-word-video/` | Step-by-step production recipes |
 | `planning/production-defaults.json` | Machine-readable defaults (sizes, gates, deliverables) |
-| `planning/growth-promotion.json` | Calls to action, hashtags, Xiaohongshu titles and tags, products |
+| `planning/growth-promotion.json` | Calls to action, account bio, collections, cover ribbon, products |
 | `planning/topic-history.json` | Every topic already made, so Codex doesn't repeat one |
 
 **The rule of thumb:** if you want a change to stick for every future episode, ask Codex to write it into
@@ -35,83 +35,70 @@ Paste this first. It makes Codex load the rules and check your keys before doing
 Codex works best with short Chinese prompts, because the rules and on-screen text are Chinese. Each
 block below can be pasted as is; replace the parts in `<>`.
 
-### A. New root-word episode, Codex picks the topic
+The default product is a **20–30 s vertical short** that you post to both Douyin and Xiaohongshu.
+Content can be anything in English learning: CET-4/6, graduate-entrance-exam English (考研), root words,
+confusable words, grammar, everyday usage.
+
+### A. New short, Codex picks the topic
 
 ```text
-做一个词根视频。按 AGENTS.md 的完整链路制作：查重选题、登记台账、讲稿、配音、小黑生图和素材白底复核、
-渲染、整片预览。最后运行 npm run replica:produce -- --project=<新期名> --stage=deliver，
-告诉我交付目录和需要我手机检查的地方。
+做一条视频。按 AGENTS.md 第 7 节：查重选题，钩子类型用 nextHookType()，脚本追加到 src/shorts/library.ts，
+配音、渲染，最后告诉我 outputs/shorts/ 下的文件夹名，并把三张封面给我看。
 ```
-*(Make a root-word video with the full chain; finish with the deliver stage and tell me where the files are.)*
+*(Make a short: pick an unused topic, use the next hook type, voice, render, show me the folder and the three covers.)*
 
-### B. A root you choose
-
-```text
-做一期 <struct> 词根视频，6 到 8 个四六级高频词，每个词有自己的 before/change/result 小黑动作，
-最后有一道小练习。完成后同样跑 deliver。
-```
-
-### C. Confusing words
+### B. A direction or exact topic you choose
 
 ```text
-做一个易混词视频：<affect / effect>。先用一个具体场景让人选错，再讲区别和替换测试，最后一道自测题。
-```
-
-### D. CET-4 / CET-6 lesson (writing, reading, translation)
-
-```text
-做一期<四级翻译>视频，主题：<定语从句怎么翻>。用原创模拟题，不要冒充真题。
-参照 src/cet-translation 的结构新建一期：lesson.ts、视频组件、src/<新目录>/xhs.ts 小红书 deck，
-并把 deck 加到 src/replica/xhs/methodDecks.ts。至少生成 3 张不同的小黑插图。
-完成后渲染视频、双封面、练习单，并运行 npm run xhs:cards -- --project=<新期名>。
-```
-*(Make a CET translation lesson on relative clauses with an original practice item; copy the existing CET lesson structure, including the Xiaohongshu deck; at least 3 different Xiaohei images.)*
-
-The three existing CET lessons are good templates:
-- `src/cet-writing`: weak sentence → claim → reason → example → practice
-- `src/cet-translation`: find the main clause → add modifiers → natural collocations → reassemble
-- `src/cet6-reading`: question type → keywords → locate evidence → paraphrase → eliminate distractors
-
-### E. Only Xiaohongshu cards, or only the Douyin vertical version
-
-```text
-给 <cred> 生成小红书图文卡，检查 xhs-note.md 的标题都在 20 字以内，然后把联系图给我看。
+做一条考研词汇视频：<abandon / desert 的区别>。
 ```
 ```text
-把 <pon-pos> 做成抖音竖屏完整版和预告，跑 npm run vertical:render -- --project=<pon-pos>，看联系图有没有文字溢出。
+做一条四级作文视频：<开头怎么写观点句>。用原创例句，不要冒充真题。
 ```
 
-### F. Fix one thing without redoing everything
+### C. Several at once (a week of posts)
 
 ```text
-只改 <ten-tain> 这一期：第 <5> 张小红书卡的例句字太小，调大并重新出这一期的卡片。不要改其他期。
-```
-```text
-<pon-pos> 讲稿第 3 段改得更口语一点，只重新生成这一段的配音，然后重新渲染这一期。
+连续做 5 条视频：四六级词汇、六级作文、考研词汇、词根各至少一条，钩子按轮换。每条做完都跑 project:test。
 ```
 
-### G. Resume unfinished work
+### D. A long lesson (only when you want one)
 
 ```text
-继续制作 <期名>。先看 planning/topic-history.json 和 docs/production-log.md 里它的状态，
-从中断的那一步继续；已经通过检查的配音和图片不要重做。
-```
-*(Continue episode X from where it stopped; don't regenerate assets that already passed.)*
-
-If you don't know the name, ask: `列出 topic-history.json 里状态是 in_progress 的期数。`
-
-### H. Change the style for all future episodes
-
-```text
-以后小红书封面的标题再大一号，收藏条改成“考前必看”。把这条写进 AGENTS.md 的小红书段落和
-planning/growth-promotion.json，然后用 <ten-tain> 重新出一次卡片给我看效果。
+做一期 <spect> 词根长讲解，2–3 分钟，按 AGENTS.md 第 3 节长讲解链路，最后跑 deliver。
 ```
 
-### I. Check before posting (no new production)
+### E. Fix one thing without redoing everything
 
 ```text
-检查 <ten-tain> 的交付是否齐全：横屏、竖屏、预告、复习卡、小红书卡片、双封面、文案。
-列出缺什么和需要我人工确认的地方。只检查，不要开始制作。
+只改 <include-exclude>：封面标题再大一号，重新出三张封面（shorts:render --covers-only），视频不用重渲染。
+```
+```text
+<include-exclude> 的第二拍旁白改得更口语一点，只重配这一拍，然后重新渲染这一条。
+```
+
+### F. Resume unfinished work
+
+```text
+继续上次没做完的视频。看 src/shorts/library.ts 末尾和 git status，从中断的那一步继续；已通过检查的配音和图片不要重做。
+```
+
+### G. Change the style for all future videos
+
+```text
+以后封面角标改成“考前必看”。写进 planning/growth-promotion.json 和 AGENTS.md，然后重新出 <include-exclude> 的封面给我看。
+```
+
+### H. Check before posting (no new production)
+
+```text
+检查 outputs/shorts/ 下每个文件夹是否齐全：一个视频、三张封面、publish.md。只检查，不要开始制作。
+```
+
+### I. Log the daily numbers
+
+```text
+记录今天的数据（截图/文字在下面），写进 planning/douyin-metrics.json，跑 npm run metrics:report，告诉我哪种钩子更好、下一条该怎么改。
 ```
 
 ### J. Save the work to GitHub
@@ -123,31 +110,30 @@ planning/growth-promotion.json，然后用 <ten-tain> 重新出一次卡片给�
 ## 4. Writing good prompts
 
 1. **Say the column, and either the topic or "自选" (you choose).** For example `做一个词根视频`, `做一期 spect 词根`, `做一期六级阅读`.
-2. **Say the scope.** Which outputs do you want: full production, only cards, only vertical, or only a fix?
+2. **Say the scope.** A new short, several shorts, a long lesson, only covers, or only a fix?
 3. **Name what must not change.** For example `只改这一期`, `已通过的素材不要重做`, `不要改讲稿`.
 4. **Ask to see before the expensive step.** For example `生图前先给我看讲稿和词图映射表`
    (show me the script and word-to-picture plan before generating images). Voice and images cost money.
 5. **One goal per prompt.** Finish and check one thing, then ask for the next.
-6. **Refer to episodes by their folder name** (`ten-tain`, `cet4-translation-main-clause`).
+6. **Refer to videos by their folder name** (`include-exclude`, `concession-sentence`).
 7. **Make good feedback permanent:** `把这条写进 AGENTS.md`.
 
 ## 5. A typical production day
 
 1. Start the session (section 2).
-2. Ask for a new episode (A–D). Approve the script before images if you asked for that.
-3. Codex finishes with the deliver stage. Open `00-打开工作台.html` or the episode folder.
-4. Watch and flip through everything **on your phone**: video with speaker and headphones, cards at
-   phone size, and the title character count.
-5. Ask for any fixes (F).
-6. Post: the Douyin vertical version on Douyin, the card carousel on Xiaohongshu, the landscape
-   master on Bilibili. Codex never posts for you.
-7. A week later, record plays, saves and follows, and tell Codex what worked so it can update
-   `AGENTS.md` for the next episodes.
+2. Ask for a new short (A–C). Approve the script before images if you asked for that.
+3. Open `outputs/shorts/<video>/`: one video, three covers, `publish.md`.
+4. Watch it **on your phone** with the speaker and with headphones, and check the covers.
+5. Ask for any fixes (E).
+6. Post the same video on Douyin (vertical + horizontal cover) and Xiaohongshu (3:4 cover), using the
+   titles in `publish.md`. Codex never posts for you.
+7. The next day, send the numbers (I) so the following videos improve.
 
 ## 6. Saving money and time
 
-- `npm run replica:produce -- --project=<slug> --stage=plan` runs only the planning checks. No paid calls.
-- Voice and image generation happen only for the episode you are making, with limited retries.
+- `npm run shorts:voice -- --short=<video>` without `--generate` only lists the missing voice lines. No paid calls.
+- Voice and image generation happen only for the video you are making, with limited retries.
+- `npm run shorts:render -- --short=<video> --covers-only` re-makes just the three covers in seconds.
 - `npm run vertical:stills -- --project=<slug>` checks the phone layout in about a minute, without rendering video.
 
 ## 7. When something goes wrong

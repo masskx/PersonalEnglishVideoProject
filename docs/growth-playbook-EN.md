@@ -6,6 +6,19 @@ changed to raise play counts, how to publish, and how product promotion is prepa
 guarantees a result. These are the main levers that drive Douyin distribution, applied to this
 project.
 
+> **Current format (updated 2026-10-14).** Some sections below are history. The main product is now
+> a **20–30 s vertical short, posted as the same video on Douyin and Xiaohongshu**:
+>
+> - **Folder:** one video per folder in `outputs/shorts/<video>/`.
+> - **Covers:** each folder has three: Douyin vertical (9:16), Douyin horizontal (4:3) and
+>   Xiaohongshu (3:4).
+> - **Hooks:** they rotate (challenge → mistake → contrast → result first), with no A/B tests.
+> - **Retired:** Xiaohongshu image carousels and teasers.
+> - **Content:** all English learning (CET-4/6, graduate-entrance-exam English, root words,
+>   confusable words, grammar, everyday usage).
+>
+> Posting steps and daily numbers: [DOUYIN-DATA-EN.md](DOUYIN-DATA-EN.md).
+
 ## 1. Why play counts were stuck: what the audit found
 
 | Problem | Evidence in the repo | Why it hurts on Douyin |
@@ -56,7 +69,7 @@ edit this file; no code changes are needed.
   #大学英语 / #考研英语), topic tags and the root tag;
 - review-card and lead-magnet instructions.
 
-### Xiaohongshu image carousels (added later the same day)
+### Xiaohongshu image carousels (added later the same day; retired 2026-10-14)
 
 The owner found the lecture-style videos unappealing for Xiaohongshu. Xiaohongshu users skim covers
 and save practical notes, so each episode now also gets a 3:4 carousel. Run

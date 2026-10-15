@@ -22,8 +22,10 @@ import {cetTranslationDeck} from './cet-translation/xhs';
 import {buildXhsDeck} from './replica/xhs/xhsCardData';
 import {tenTainProject} from './replica/projects/tenTain';
 import {DouyinShort, SHORT, calculateShortMetadata, type DouyinShortProps} from './shorts/DouyinShort';
+import {ShortCover, calculateShortCoverMetadata, type ShortCoverProps} from './shorts/ShortCover';
 
-const SHORT_PREVIEW: DouyinShortProps = {series: '小黑英语', topicLabel: '四六级30秒', timeline: {shortId: 'preview', variant: 'A', fps: 30, totalFrames: 60, beats: []}};
+const SHORT_PREVIEW: DouyinShortProps = {series: '小黑英语', category: '四六级词汇', timeline: {shortId: 'preview', fps: 30, totalFrames: 60, beats: []}};
+const SHORT_COVER_PREVIEW: ShortCoverProps = {format: 'douyin-vertical', headline: '早餐另付钱\n填 **include** 还是 **exclude**？', art: 'assets/replica/clud-clus/exclude-result.png', series: '小黑英语', category: '四六级词汇', ribbon: '30秒学会 · 结尾有小测'};
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -37,6 +39,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Cet6ReadingCover" component={Cet6ReadingCover} durationInFrames={1} fps={ROOT_WORD_COVER.fps} width={ROOT_WORD_COVER.width} height={ROOT_WORD_COVER.height} defaultProps={{landscape:false}}/>
     <Composition id="Cet6ReadingLandscapeCover" component={Cet6ReadingCover} durationInFrames={1} fps={ROOT_WORD_LANDSCAPE_COVER.fps} width={ROOT_WORD_LANDSCAPE_COVER.width} height={ROOT_WORD_LANDSCAPE_COVER.height} defaultProps={{landscape:true}}/>
     <Composition id="DouyinShort" component={DouyinShort} durationInFrames={60} fps={SHORT.fps} width={SHORT.width} height={SHORT.height} defaultProps={SHORT_PREVIEW} calculateMetadata={calculateShortMetadata}/>
+    <Composition id="ShortCover" component={ShortCover} durationInFrames={1} fps={30} width={1080} height={1920} defaultProps={SHORT_COVER_PREVIEW} calculateMetadata={calculateShortCoverMetadata}/>
     <Composition id="Cet6WritingConcession" component={Cet6WritingVideo} durationInFrames={cet6WritingTimeline.totalFrames} fps={30} width={1920} height={1080}/>
     <Composition id="Cet6WritingCover" component={Cet6WritingCover} durationInFrames={1} fps={ROOT_WORD_COVER.fps} width={ROOT_WORD_COVER.width} height={ROOT_WORD_COVER.height} defaultProps={{landscape:false}}/>
     <Composition id="Cet6WritingLandscapeCover" component={Cet6WritingCover} durationInFrames={1} fps={ROOT_WORD_LANDSCAPE_COVER.fps} width={ROOT_WORD_LANDSCAPE_COVER.width} height={ROOT_WORD_LANDSCAPE_COVER.height} defaultProps={{landscape:true}}/>

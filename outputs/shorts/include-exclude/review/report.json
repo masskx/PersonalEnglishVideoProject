@@ -1,0 +1,37 @@
+{
+  "short": "include-exclude",
+  "hookType": "contrast",
+  "seconds": 23.766666666666666,
+  "beats": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "from": 0,
+      "seconds": 4.37
+    },
+    {
+      "id": "fix-in",
+      "kind": "fix",
+      "from": 4.37,
+      "seconds": 4.47
+    },
+    {
+      "id": "fix-ex",
+      "kind": "fix",
+      "from": 8.83,
+      "seconds": 4.8
+    },
+    {
+      "id": "test",
+      "kind": "test",
+      "from": 13.63,
+      "seconds": 4.67
+    },
+    {
+      "id": "answer",
+      "kind": "answer",
+      "from": 18.3,
+      "seconds": 5.47
+    }
+  ]
+}

@@ -1,8 +1,12 @@
 /**
- * 抖音竖屏短视频（30–45 秒，主推格式）。一条短视频 = 两个钩子版本 A/B + 共用的正文节拍。
- * 标题里用 **双星号** 标出重点词，渲染成橙色 + 荧光色带。
+ * 竖屏短视频（20–30 秒，抖音与小红书同一条视频）。一条短视频 = 一个钩子 + 正文节拍，一个交付文件夹。
+ * 钩子类型按 HOOK_ROTATION 轮换（脚本库顺序 = 发布顺序）。标题里用 **双星号** 标出重点词，渲染成橙色 + 荧光色带。
  */
 export type ShortBeatKind = 'hook' | 'mistake' | 'fix' | 'test' | 'answer' | 'cta';
+
+/** 钩子类型轮换：挑战题 → 常见错误 → 反差对比 → 结果先行 → 回到挑战题……（第 i 条用 HOOK_ROTATION[i % 4]）。 */
+export const HOOK_ROTATION = ['challenge', 'mistake', 'contrast', 'result'] as const;
+export type HookType = (typeof HOOK_ROTATION)[number];
 
 export type ShortBeat = {
   id: string;
@@ -11,11 +15,11 @@ export type ShortBeat = {
   voice: string;
   /** 大标题，可用 \n 换行、**重点**。 */
   headline: string;
-  /** 本期素材目录里的小黑插图（public/ 相对路径）。 */
+  /** 来源期素材目录里的小黑插图（public/ 相对路径）。 */
   art?: string;
   /** 同一母版的 before / change / result：在本节拍内按顺序切换姿态（优先于 art）。 */
   arts?: string[];
-  /** 旁白里说到的例句或要点卡：在 exampleAt（占旁白时长的比例，默认 0.4）时进场。 */
+  /** 旁白里说到的例句或要点卡：在 exampleAt（占旁白时长的比例，默认 0.4）时进场；两个空格后为灰色中文释义。 */
   example?: string;
   exampleAt?: number;
   /** mistake 节拍：错误写法（会被划掉）与正确写法。 */
@@ -30,14 +34,28 @@ export type ShortBeat = {
 };
 
 export type ShortScript = {
+  /** 视频 ID = 交付文件夹名 outputs/shorts/<id>/（已发布为 <id>发了/）。 */
   id: string;
-  /** 素材来源期数：插图取自这期，成片放在 outputs/<episode>/douyin-shorts/。 */
+  /**
+   * 模板版本，默认 2。v1 = 2026-10-14 首批旧模板（35 秒、单独收藏节拍），只为已发布的视频原样存档，不再新做。
+   * v2（2026-10-15 起，依据首条数据：完播 2.29%、2 秒跳出 56.5%）：20–30 秒，答案即结尾，收藏提示叠在答案拍上，旁白去掉首尾静音。
+   */
+  version?: 1 | 2;
+  /** 素材来源期数：插图取自 public/assets/replica/<episode>/。 */
   episode: string;
+  /** 内容分类，显示在画面顶部和封面上：四级词汇、六级作文、考研英语、词根…… */
+  category: string;
   topic: string;
-  hooks: {A: ShortBeat; B: ShortBeat};
+  hookType: HookType;
+  hook: ShortBeat;
   body: ShortBeat[];
+  /** 封面（抖音竖封面、抖音横封面、小红书封面共用内容）；默认取钩子标题与插图。 */
+  cover?: {headline: string; art: string};
   publish: {
-    titles: {A: string; B: string};
+    /** 抖音标题（30 字内）。 */
+    title: string;
+    /** 小红书标题（20 字内）。 */
+    xhsTitle: string;
     body: string;
     tags: string[];
     /** 置顶评论：公布答案 + 引导评论。 */
@@ -45,7 +63,5 @@ export type ShortScript = {
   };
 };
 
-export type ShortVariant = 'A' | 'B';
-
 export type TimedShortBeat = ShortBeat & {from: number; frames: number; audioFrames: number; src: string};
-export type ShortTimeline = {shortId: string; variant: ShortVariant; fps: number; totalFrames: number; beats: TimedShortBeat[]};
+export type ShortTimeline = {shortId: string; fps: number; totalFrames: number; beats: TimedShortBeat[]};

@@ -5,6 +5,9 @@
 
 **沟通语言：** 用户读英文、不读中文。和用户对话一律用英文；仓库文档、讲稿、字幕和画面文字保持中文。
 
+**内容范围（2026-10-14 用户确认）：** 所有英语学习内容——四六级（词汇、作文、阅读、翻译、听力）、考研英语、
+词根与易混词、语法、日常用法。**主推格式：** 20–30 秒竖屏短视频，抖音和小红书发同一条（见第 7 节）。
+
 ## 0. 开始任何任务前
 
 1. 读本文件，再读 [当前视频制作基准](docs/当前制作基准.md)（视觉、声音与验收的唯一基准）和
@@ -19,7 +22,8 @@
 
 | 用户说法 | 做法 |
 | --- | --- |
-| 只给栏目：“做一个词根视频 / 易混词视频 / 四级作文、阅读、翻译视频” | 自主选一个没做过的题目，查重后在台账登记 `in_progress`，直接完整制作。不要让用户挑题或确认普通选题，不要停在计划阶段 |
+| 只说“做视频”或只给方向：“做一条考研词汇 / 六级作文 / 词根视频” | 自主选一个没做过的题目，查重后直接做成 20–30 秒短视频（第 7 节），钩子类型按轮换取 `nextHookType()`。不要让用户挑题或确认普通选题，不要停在计划阶段，不做 A/B 实验 |
+| 明确要“长讲解 / 完整一期 / 2–3 分钟” | 按第 3 节长讲解链路制作，台账登记 `in_progress` |
 | 给了具体题目、词根、试题或材料 | 严格按指定内容制作；做过也做新版本并保留旧版，不换题 |
 | 讨论、检查、整理、记录规则 | 只做这件事，不开始制作新视频 |
 | 修改某一期 | 只改那一期；已通过检查的配音和图片不重做 |
@@ -33,9 +37,11 @@
 
 | 路径 | 内容 |
 | --- | --- |
-| `outputs/<期名>/`（已发布为 `<期名>发了/`） | 每期交付：成片、双封面、文案、`release.json`、`content-qa.md`、`review/`、`vertical/`、`xiaohongshu/` |
-| `src/replica/` | 词根期：`projects/registry.ts` 注册表、各期 storyboard 与配音清单、`vertical/` 竖屏重排、`xhs/` 小红书卡片 |
-| `src/cet-writing/`、`src/cet-translation/`、`src/cet6-reading/` | 四六级方法课：`lesson.ts` 讲稿数据、视频组件、`xhs.ts` 小红书 deck |
+| `outputs/shorts/<视频ID>/`（已发布为 `<视频ID>发了/`） | **主推交付**：一条视频一个文件夹（见第 4 节） |
+| `outputs/<期名>/`（已发布为 `<期名>发了/`） | 长讲解交付与短视频的素材来源期 |
+| `src/shorts/`、`scripts/shorts/` | 短视频：脚本库 `library.ts`、竖屏组件、封面 `ShortCover.tsx`、时间轴；配音、渲染、数据报告 |
+| `src/replica/` | 词根期：`projects/registry.ts` 注册表、各期 storyboard 与配音清单、`vertical/` 竖屏重排（`xhs/` 为已停用的小红书卡片代码） |
+| `src/cet-writing/`、`src/cet-translation/`、`src/cet6-reading/` | 四六级方法课：`lesson.ts` 讲稿数据、视频组件（`xhs.ts` 已停用） |
 | `scripts/replica/` | 配音、生图、渲染、封面、文案、检查命令；`renderEnv.ts` 统一浏览器与 ffmpeg 路径 |
 | `public/assets/` | 渲染运行时素材，每期一个独立目录 |
 | `assets/` | 生图源文件（绿底源、视觉基线）、背景音乐源、品牌 |
@@ -47,7 +53,12 @@
 
 ## 3. 制作链路与命令
 
-词根 / 词汇 / 易混词（注册在 `src/replica/projects/registry.ts`）：
+**短视频（默认）：** 查重选题 → 在 `src/shorts/library.ts` 末尾追加脚本（钩子类型 = `nextHookType()`）→
+复用来源期插图；没有合适插图时先按下面的长讲解第 4 步从已验收小黑锚点编辑生图，放进来源期素材目录 →
+`npm run shorts:voice -- --short=<视频ID> --generate --prune` → `npm run shorts:render -- --short=<视频ID>` →
+看 `review/contact-sheet.jpg` 和三张封面 → `npm run project:test`。
+
+**长讲解（用户明确要求时）** 词根 / 词汇 / 易混词（注册在 `src/replica/projects/registry.ts`）：
 
 1. 查重选题 → 台账登记 `in_progress`。
 2. 资料核对（可靠词典、词源；区分真实构词与记忆联想）→ 自然口语讲稿。
@@ -64,7 +75,7 @@
    合计不超过全片 20%；第一次画面变化早于 1.5 秒、第二次早于 3 秒。不通过就在那段旁白里加画面层
    （例句卡、中文释义、搭配、对比、姿态切换），或把讲稿写短重配；不要放宽阈值。
 6. 交付：`npm run replica:produce -- --project=<期名> --stage=deliver`（横屏高质量成片、双封面、
-   抖音竖屏完整版 + 预告 + 复习卡、小红书图文卡、发布文案、`release.json` 保持 draft、刷新工作台）。
+   抖音竖屏完整版、发布文案、`release.json` 保持 draft、刷新工作台）。
 7. 人工终审：打开 `review/full-preview/` 整片低清预览连续观看；手机外放和耳机都听一遍。
 8. 收尾：填 `content-qa.md`、台账改 `produced` 并写产物路径、`docs/production-log.md` 记一条。
 
@@ -74,26 +85,33 @@
 - 四级翻译：`translation:voice` → `translation:prepare` → `translation:render` → `translation:delivery`
 - 六级阅读：`cet6:voice` → `cet6:prepare` → `cet6:render` → `cet6:delivery`
 - 六级写作：`cet6w:voice` → `cet6w:prepare` → `cet6w:render`（静帧 + 双封面）→ `cet6w:render -- --video` → `cet6w:delivery`
-  → `replica:full-preview -- --project=<期名>` → `xhs:cards -- --project=<期名>`；插图用 `replica:keyposes:edit` 按
+  → `replica:full-preview -- --project=<期名>`；插图用 `replica:keyposes:edit` 按
   `planning/<期名>-art.json` 从已验收小黑锚点参考编辑生成（云端可跑）
-- 新四六级栏目：参照最接近的现有栏目新建 `src/<栏目>/`（`lesson.ts`、视频组件、`xhs.ts`），在
-  `src/replica/xhs/methodDecks.ts` 登记 deck；至少 3 张不同的小黑插图；最后 `npm run xhs:cards -- --project=<期名>`。
+- 新四六级栏目：参照最接近的现有栏目新建 `src/<栏目>/`（`lesson.ts`、视频组件）；至少 3 张不同的小黑插图。
 
 配音、生图命令不带 `--generate` 时只显示计划，不花钱；先看计划再生成。
 
-## 4. 每期交付清单
+## 4. 交付清单（一条视频一个文件夹）
 
-横屏成片（1920×1080）、竖封面 `cover.png`（1080×1440）、横封面 `cover-landscape.png`（1200×900）、
-`publish-copy.md`、`content-qa.md`、`release.json`、`review/`（含整片预览）、`vertical/`（抖音竖屏完整版、
-预告、复习卡）、`xiaohongshu/`（3:4 图文卡与 `xhs-note.md`）。四六级另加练习单。交付不等于发布。
+`outputs/shorts/<视频ID>/` 只放**一个视频**：
+
+- `<视频ID>.mp4`（1080×1920，抖音和小红书发同一条）
+- `cover-douyin-vertical.png`：抖音竖封面 1080×1920（9:16；电脑端上传裁成中间 3:4，内容全部在中间 1080×1440 内）
+- `cover-douyin-landscape.png`：抖音横封面 1440×1080（4:3）
+- `cover-xiaohongshu.png`：小红书封面 1080×1440（3:4）
+- `publish.md`：抖音标题（30 字内）、小红书标题（20 字内）、正文、话题、置顶评论
+- `release.json`（保持 draft，用户确认发布后才改）、`review/`（联系图、时间报告）
+
+三张封面每条都要，由 `shorts:render` 用 `src/shorts/ShortCover.tsx` 同时生成。**不再做小红书图文卡**
+（`xhs:cards` 已停用）。长讲解另有横屏成片与 `vertical/`，交付不等于发布。
 
 ## 5. 内容、画面与声音标准（细节见当前制作基准）
 
-- 时长默认 2–3 分钟（用户要短片时按要求）。偏四六级应试但易懂有趣：一个可带走的知识点 → 演示 →
+- 时长默认 20–30 秒短视频；长讲解 2–3 分钟只在用户要求时做。偏应试但易懂有趣：一个可带走的知识点 → 演示 →
   小练习 → 讲答案与使用边界。不承诺分数，不把某个结构称作万能模板。
 - **配色（2026-10-14 用户确认，全部画面统一）：小红书词卡的纸面配色**——暖白点阵纸底、深蓝 + 橙、
   词根荧光黄色带、小黑放在浅蓝圆角底板上、构词式描边胶囊、例句橙色小标签、总结表浅橙交替行。
-  唯一色值来源 `src/replica/theme.ts`；横屏、竖屏、封面、小红书卡、四六级课都用它，**不再用纯白画布**。
+  唯一色值来源 `src/replica/theme.ts`；横屏、竖屏、短视频、封面、四六级课都用它，**不再用纯白画布**。
   词页样式由 `src/replica/paperStyleStoryboard.ts` 自动套用，分镜只写内容。细则见当前制作基准。
 - 生图：内置 `image_gen` 栅格位图，风格锚定已验收 mit/miss：纯白背景生成后去底为透明 PNG、实心黑色小黑、
   白点眼、手绘线条、少量橙红蓝；成片里插图 100% 不透明。词根动作用同母版 before / change / result。
@@ -106,7 +124,7 @@
 - 文风：具体场景、动作、自然短句；避免“不是……而是……”“别再……”“先别……”“抓住……立刻……”
   “一个动作串起……”等模板腔。改稿后让对应配音缓存失效重配。
 - 正片只放对观众有用的标题、例句、重点和字幕；不放步骤导航、流程标签、调试小字。
-- 封面统一用 `RootWordCover` / `RootWordLandscapeCover` 母版，只换内容。
+- 封面：短视频统一用 `ShortCover`（三种尺寸同一内容）；长讲解用 `RootWordCover` / `RootWordLandscapeCover`，只换内容。
 
 ## 6. 小黑角色质量门槛
 
@@ -120,24 +138,27 @@
 - TTS 指令遵循所选模型与音色支持的格式；文本或音色变化就重新生成，不静默去掉 instruction 降级重试。
   网络临时失败有限重试，从失败项续跑。
 
-## 7. 抖音与小红书
+## 7. 抖音与小红书（同一条视频）
 
-- **抖音主推 30–40 秒原生竖屏短视频（2026-10-14 起）**：脚本写在 `src/shorts/library.ts`，素材复用来源期的
-  插图，成片在 `outputs/<来源期>/douyin-shorts/`。命令：`npm run shorts:voice -- --short=<id> [--generate]` →
-  `npm run shorts:render -- --short=<id>`；数据台账 `planning/douyin-metrics.json`，`npm run metrics:report` 出报告；
-  用户每天发的数据按 [抖音数据指南](docs/DOUYIN-DATA-EN.md) 记录。短视频规则：
-  - 一条只讲一个点；结构：钩子 → 讲点（1–2 拍）→ 暂停作答（倒计时 3 秒）→ 答案 → 收藏 + 关注。
-  - 0–2 秒钩子用错误、挑战、反差或结果先行（“早餐另付钱，用 include 还是 exclude？”）；不用“今天讲……”
-    “大家好”“栏目名”开场。第一帧不淡入，直接有大字标题和小黑。
-  - 每拍旁白 3–6 秒，口语短句；旁白里的例句写进 `example` 同时上屏；同母版 before / change / result 用 `arts`
-    在一拍内切换姿态。
-  - 每条做 A/B 两个钩子，正文共用；标题、正文、话题、置顶评论（公布答案 + 引导评论）写在脚本 `publish` 里。
-  - 收藏提示放在答案之后；行动号召一句话，不拖尾。下一轮按数据保留更强的钩子类型。
-- 长讲解竖屏完整版：`vertical/<期名>-vertical.mp4`（同一 storyboard 重排为 1080×1920，不重新生图、不改讲稿），
-  放合集。首帧要有题目和小黑；正文和字幕在安全区内（顶部 200px、底部 440px、右侧按钮列）；英文不被切断；
-  结尾停在纸面总结页便于循环。版式抽查：`npm run vertical:stills -- --project=<期名>`。
-- 小红书主推图文：`npm run xhs:cards -- --project=<期名>`，词根期出词卡（封面、每词一张、总结、自测、
-  关注卡），四六级出方法卡（题目、常见错误、步骤、检查清单、练习、答案、关注卡）。最多 18 张；标题 20 字内。
+- **主推 20–30 秒原生竖屏短视频（2026-10-14 起），抖音和小红书发同一条视频、同一套封面。** 脚本写在
+  `src/shorts/library.ts`，素材复用来源期插图，成片在 `outputs/shorts/<视频ID>/`。命令：
+  `npm run shorts:voice -- --short=<id> [--generate] [--prune]` → `npm run shorts:render -- --short=<id>`；数据台账
+  `planning/douyin-metrics.json`（抖音、小红书分平台记录），`npm run metrics:report` 出报告；用户发来的数据按
+  [数据指南](docs/DOUYIN-DATA-EN.md) 记录。短视频规则：
+  - 一条只讲一个点；结构（v2，2026-10-15 起）：钩子 → 讲点（1–2 拍）→ 暂停作答（倒计时 2 秒）→ 答案即结尾。
+    依据首条数据（35 秒旧模板：完播 2.29%、2 秒跳出 56.5%）：不再做单独的收藏 / 关注节拍——答案旁白最后一句
+    “收藏这条，考前翻出来。”，画面在答案拍叠“收藏 + 关注”角标；旁白自动去掉首尾静音，第一个字落在第 0 帧。
+  - **钩子轮换，不做 A/B：** 脚本库顺序 = 发布顺序，第 i 条用 `HOOK_ROTATION[i % 4]`：挑战题（challenge）→
+    常见错误（mistake，划掉错误写法再给正确写法）→ 反差对比（contrast）→ 结果先行（result）→ 回到挑战题。
+    新视频追加在末尾，`nextHookType()` 给出该用的类型；回归测试会检查轮换。
+  - 0–2 秒钩子不用“今天讲……”“大家好”“栏目名”开场。第一帧不淡入，直接有大字标题和小黑。
+  - 钩子旁白 ≤ 4.5 秒，每拍旁白 3–5 秒，口语短句；钩子标题每行 ≤ 10 个字，越短字越大；旁白里的例句写进 `example` 同时上屏；同母版 before / change / result 用 `arts`
+    在一拍内切换姿态。画面顶部标签用 `category`（如“四六级词汇”“六级作文”“考研英语”）。
+  - 标题、正文、话题、置顶评论写在脚本 `publish` 里（抖音标题 30 字内，小红书标题 `xhsTitle` 20 字内）。
+  - 已发布的视频在脚本里标 `version: 1` 原样存档（文件夹改名 `<id>发了/`，`release.json` 写发布时间），不再改动。
+  - 正文和字幕在抖音安全区内（顶部 200px、底部 440px、右侧按钮列）；英文不被切断。
+- **不再做小红书图文卡**（2026-10-14 用户决定）；小红书发同一条视频，封面用 `cover-xiaohongshu.png`。
+- 长讲解竖屏完整版（用户要求长讲解时）：`vertical/<期名>-vertical.mp4`，同一 storyboard 重排为 1080×1920。
 - 行动号召、合集名、话题、资料产品与领取开关只改 `planning/growth-promotion.json`。资料未上架、领取未开启时
   不出现购买或领取引导。任何位置都不放微信号、二维码或站外链接。
 
@@ -159,7 +180,7 @@
 
 ## 10. 收尾检查
 
-`npm run project:test`（管理、竖屏版式、小红书卡片、模板与节奏回归 + 密钥扫描）、`npm run project:check`
+`npm run project:test`（管理、竖屏版式、模板与节奏、短视频回归 + 密钥扫描）、`npm run project:check`
 （文件与运行时路径完整性）、`npm run project:inventory`（刷新工作台 `00-打开工作台.html` 与 `PROJECTS.html`）。
 
 给用户的英文指南：[本机 Codex 上手](docs/LOCAL-CODEX-QUICKSTART-EN.md) ·

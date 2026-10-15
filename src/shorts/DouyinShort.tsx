@@ -5,7 +5,7 @@ import {REPLICA_THEME, SOFT_BLUE, SOFT_ORANGE, highlighterStyle, paperStyle} fro
 import type {ShortTimeline, TimedShortBeat} from './types';
 
 /**
- * 抖音竖屏短视频 1080×1920（主推格式）。所有内容在抖音安全区内：顶部 200px、底部 440px、右侧 128px 按钮列。
+ * 竖屏短视频 1080×1920（抖音、小红书同一条）。所有内容在抖音安全区内：顶部 200px、底部 440px、右侧 128px 按钮列。
  * 第一帧就有大字钩子和小黑；字幕大字、短句；结尾停在收藏页，适合循环播放。
  */
 export const SHORT = {width: 1080, height: 1920, fps: 30, left: 64, right: 952, top: 200, bottom: 1480} as const;
@@ -13,7 +13,7 @@ const W = SHORT.right - SHORT.left;
 const C = {blue: REPLICA_THEME.primary, orange: REPLICA_THEME.accent, ink: '#111111', muted: '#6673A7', red: '#D6402E', green: '#1F8A4C'};
 const FONT = REPLICA_THEME.fontFamily;
 
-export type DouyinShortProps = {timeline: ShortTimeline; series: string; topicLabel: string};
+export type DouyinShortProps = {timeline: ShortTimeline; series: string; category: string};
 
 export const calculateShortMetadata = ({props}: {props: DouyinShortProps}) => ({
   durationInFrames: Math.max(30, props.timeline.totalFrames),
@@ -23,7 +23,7 @@ export const calculateShortMetadata = ({props}: {props: DouyinShortProps}) => ({
 });
 
 /** **重点** → 橙色 + 荧光色带（随节拍划出）。 */
-const Rich: React.FC<{text: string; progress: number}> = ({text, progress}) => (
+export const Rich: React.FC<{text: string; progress: number}> = ({text, progress}) => (
   <>
     {text.split('\n').map((line, row) => (
       <div key={row}>
@@ -40,7 +40,7 @@ const Rich: React.FC<{text: string; progress: number}> = ({text, progress}) => (
 );
 
 const visibleLength = (text: string) => text.replace(/\*\*/g, '').split('\n').reduce((max, line) => Math.max(max, [...line].reduce((sum, ch) => sum + (/[\u0000-ÿ]/.test(ch) ? 0.55 : 1), 0)), 0);
-const headlineSize = (text: string) => Math.max(58, Math.min(84, Math.floor(W / Math.max(1, visibleLength(text)))));
+const headlineSize = (text: string, max = 84) => Math.max(58, Math.min(max, Math.floor(W / Math.max(1, visibleLength(text)))));
 
 /** Split narration into short subtitle chunks (≈ one breath each) and time them by length. */
 export const subtitleChunks = (voice: string, audioFrames: number) => {
@@ -111,7 +111,7 @@ const ExampleCard: React.FC<{text: string; progress: number}> = ({text, progress
   );
 };
 
-const Visual: React.FC<{beat: TimedShortBeat; local: number; instant: boolean}> = ({beat, local, instant}) => {
+const Visual: React.FC<{beat: TimedShortBeat; local: number; instant: boolean; last: boolean}> = ({beat, local, instant, last}) => {
   const p = instant ? 1 : smoothProgress(local, 0, 8);
   if (beat.kind === 'mistake' && beat.wrong) {
     // 小黑在上（第一帧可见），错误写法在旁白说到时划掉，正确写法随后出现。
@@ -173,10 +173,17 @@ const Visual: React.FC<{beat: TimedShortBeat; local: number; instant: boolean}> 
     );
   }
   const exampleIn = beat.example ? smoothProgress(local, Math.round((beat.exampleAt ?? 0.4) * beat.audioFrames), 9) : 0;
+  // v2: the answer is the ending, so the save prompt rides on it instead of a separate closing beat.
+  const saveIn = beat.kind === 'answer' && last ? smoothProgress(local, Math.round(0.5 * beat.audioFrames), 10) : 0;
   return (
     <>
       {beat.art || beat.arts?.length ? <ArtPanel beat={beat} local={local} progress={p} shrink={exampleIn} /> : null}
       {beat.example ? <ExampleCard text={beat.example} progress={exampleIn} /> : null}
+      {saveIn > 0 ? (
+        <div style={{position: 'absolute', left: SHORT.left, top: PANEL.top + PANEL.shrunk + 22 + 118 + 14, width: W, display: 'flex', justifyContent: 'center', opacity: saveIn, transform: `translateY(${14 * (1 - saveIn)}px)`}}>
+          <div style={{background: C.orange, color: '#fff', borderRadius: 18, padding: '8px 28px', fontFamily: FONT, fontSize: 34, fontWeight: 900, boxShadow: '0 6px 0 rgba(232,88,16,0.18)'}}>收藏 + 关注，考前翻出来</div>
+        </div>
+      ) : null}
     </>
   );
 };
@@ -194,7 +201,7 @@ const musicVolume = (timeline: ShortTimeline) => (frame: number) => {
 
 const SFX: Record<TimedShortBeat['kind'], string | null> = {hook: null, mistake: 'hit', fix: 'whoosh', test: 'pop', answer: 'stamp', cta: 'pop'};
 
-export const DouyinShort: React.FC<DouyinShortProps> = ({timeline, series, topicLabel}) => {
+export const DouyinShort: React.FC<DouyinShortProps> = ({timeline, series, category}) => {
   const frame = useCurrentFrame();
   const index = Math.max(0, timeline.beats.findIndex((beat) => frame >= beat.from && frame < beat.from + beat.frames));
   const beat = timeline.beats[index] ?? timeline.beats.at(-1)!;
@@ -206,13 +213,13 @@ export const DouyinShort: React.FC<DouyinShortProps> = ({timeline, series, topic
     <AbsoluteFill style={{...paperStyle(40), fontFamily: FONT, color: C.ink, overflow: 'hidden'}}>
       <div style={{position: 'absolute', left: SHORT.left, top: SHORT.top + 12, display: 'flex', alignItems: 'center', gap: 16, fontSize: 32, fontWeight: 850}}>
         <span style={{background: C.blue, color: '#fff', padding: '8px 18px', borderRadius: 14}}>{series}</span>
-        <span style={{color: C.blue}}>{topicLabel}</span>
+        <span style={{color: C.blue}}>{category}</span>
       </div>
-      <div style={{position: 'absolute', left: SHORT.left, top: 300, width: W, fontSize: headlineSize(beat.headline), fontWeight: 900, lineHeight: 1.22, color: C.blue,
+      <div style={{position: 'absolute', left: SHORT.left, top: 300, width: W, fontSize: headlineSize(beat.headline, first ? 104 : 84), fontWeight: 900, lineHeight: 1.22, color: C.blue,
         opacity: headIn, transform: `translateY(${18 * (1 - headIn)}px)`}}>
         <Rich text={beat.headline} progress={highlight} />
       </div>
-      <Visual beat={beat} local={local} instant={first} />
+      <Visual beat={beat} local={local} instant={first} last={index === timeline.beats.length - 1} />
       <Subtitle beat={beat} local={local} instant={first} />
       <Audio src={staticFile('assets/music/root-word-series-bgm.mp3')} loop volume={musicVolume(timeline)} />
       {timeline.beats.map((item) => (
