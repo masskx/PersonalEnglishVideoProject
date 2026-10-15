@@ -2,6 +2,11 @@
   "short": "include-exclude",
   "hookType": "contrast",
   "seconds": 23.766666666666666,
+  "loudness": {
+    "integratedLufs": -14,
+    "truePeakDb": -1.2
+  },
+  "blankFrames": [],
   "beats": [
     {
       "id": "hook",

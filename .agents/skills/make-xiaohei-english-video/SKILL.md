@@ -131,6 +131,29 @@ how an old episode was made; they do not override the current production baselin
   `outputs/shorts/<id>发了/` with `release.json` recording the publish time; never re-render them.
 - Xiaohongshu image cards are retired. Never produce them unless the owner asks again.
 
+## Motion and sound craft for shorts (since 2026-10-15, learned from awesome-ai-motion)
+
+Distilled from the public prompts in `guanmo-ai/awesome-ai-motion`; the full table is in
+`docs/当前制作基准.md` ("动效与声音工艺") and the owner's guide is `docs/MOTION-CRAFT-EN.md`.
+
+- Every style is a pure function of the frame. Use `settle()` (closed-form spring, ~0.2% overshoot) for
+  entrances and morphs; no bounce, drift, particles, glows or shake.
+- One shape never cuts: the light-blue art panel persists across beats and springs between layouts
+  (`panelRect()`); it closes for the test and reopens for the answer. No beat change may show empty paper.
+- Content enters after its container starts moving and leaves before the next move: headlines exit
+  upward (frames 0–6) and the new one rises in from frame 5 inside a mask.
+- Pose changes are hard cuts with a 1.025→1 settle. When the panel opens/closes the art is cropped like
+  a blind, never scaled down and never semi-transparent.
+- One timing table drives picture and sound: `shortMoments()` gives each event's frame; `shortEvents()`
+  turns them into SFX. The render measures each SFX's peak, normalizes its level and starts it early so
+  the peak lands on the event.
+- Audio is loudness-normalized to -14 LUFS / -1.5 dBTP (two-pass, video copied). Music 0.07 under
+  speech, 0.10 in gaps.
+- Review: `review/beats-sheet.jpg` shows four frames per beat around each change; the blank-frame gate
+  fails the render when a frame near a change has under 4% ink. Fix the transition, never the threshold.
+- Rejected on purpose: snapping cuts to the music beat grid (narration sets the pace), 60 fps subframe
+  motion blur (little gain on flat paper motion), first-frame = last-frame loops (the ending is the answer).
+
 ## Long-lesson vertical version (only when a long lesson is requested)
 
 - After the landscape master passes its gates, `replica:produce --stage=deliver` runs

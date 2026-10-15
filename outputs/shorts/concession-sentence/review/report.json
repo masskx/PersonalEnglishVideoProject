@@ -2,6 +2,11 @@
   "short": "concession-sentence",
   "hookType": "mistake",
   "seconds": 22.833333333333332,
+  "loudness": {
+    "integratedLufs": -14.2,
+    "truePeakDb": -1.1
+  },
+  "blankFrames": [],
   "beats": [
     {
       "id": "hook",

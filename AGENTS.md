@@ -56,7 +56,7 @@
 **短视频（默认）：** 查重选题 → 在 `src/shorts/library.ts` 末尾追加脚本（钩子类型 = `nextHookType()`）→
 复用来源期插图；没有合适插图时先按下面的长讲解第 4 步从已验收小黑锚点编辑生图，放进来源期素材目录 →
 `npm run shorts:voice -- --short=<视频ID> --generate --prune` → `npm run shorts:render -- --short=<视频ID>` →
-看 `review/contact-sheet.jpg` 和三张封面 → `npm run project:test`。
+看 `review/contact-sheet.jpg`、`review/beats-sheet.jpg`（每拍换场）和三张封面 → `npm run project:test`。
 
 **长讲解（用户明确要求时）** 词根 / 词汇 / 易混词（注册在 `src/replica/projects/registry.ts`）：
 
@@ -125,6 +125,10 @@
   “一个动作串起……”等模板腔。改稿后让对应配音缓存失效重配。
 - 正片只放对观众有用的标题、例句、重点和字幕；不放步骤导航、流程标签、调试小字。
 - 封面：短视频统一用 `ShortCover`（三种尺寸同一内容）；长讲解用 `RootWordCover` / `RootWordLandscapeCover`，只换内容。
+- **动效与声音工艺（2026-10-15，借鉴 awesome-ai-motion，细则见当前制作基准同名一节）：** 浅蓝底板贯穿全片、节拍间用弹簧
+  变形，换场不清屏；标题遮罩换场（旧的先退、新的后进）；姿态硬切 + 轻微回弹，底板收起时插图只被裁切，小黑不半透明、
+  不缩小；画面事件与音效共用 `shortMoments()` 一份时间，音效按实测峰值对齐；成片 -14 LUFS。`shorts:render` 自动出
+  `review/beats-sheet.jpg`，换场附近出现空白纸面帧直接报错——改换场，不要放宽阈值。
 
 ## 6. 小黑角色质量门槛
 

@@ -1232,3 +1232,10 @@ Validated 2256 exclusive image-frame intervals; extracted/reviewed 128 encoded f
 - 判断：内容有吸引力（每百播放 1.66 赞、每千播放 2.4 粉），流失在开头 2 秒和结尾——收藏 / 关注节拍占最后 6.6 秒，看到答案的人在结尾前划走，完播率极低。
 - 模板 v2：去掉单独收藏节拍，答案即结尾（答案旁白末句收藏提示 + 画面角标）；作答倒计时 3 → 2 秒；钩子旁白 ≤ 4.5 秒、首帧标题最大 104px；配音自动去掉首尾静音（每段约 0.3 秒），第一个字落在第 0 帧。全片 20–30 秒，回归测试同步。
 - 已发布视频原样存档：脚本标 version: 1，outputs/shorts/exclude-preclude发了/（成片即发布文件，release.json 写发布时间）。轮换按实际发布顺序重排：exclude-preclude（挑战，已发）→ concession-sentence（错误，22.8 秒）→ include-exclude（反差，新钩子“只差两个字母”，23.8 秒）；下一条用“结果先行”。
+
+## 2026-10-15 短视频动效与声音工艺（借鉴 awesome-ai-motion）
+
+- 研究 guanmo-ai/awesome-ai-motion（838 个 AI 写代码动效案例、114 份公开提示词），提炼出与本项目相关的工艺原则，写进当前制作基准“动效与声音工艺”、AGENTS、制作 Skill 和 docs/MOTION-CRAFT-EN.md。只改画质与声音，脚本、文案、封面内容不变。
+- `DouyinShort`：浅蓝底板贯穿全片、节拍间弹簧变形（不再每次换拍清屏）；标题遮罩换场；姿态硬切 + 轻微回弹，底板收起 / 打开时插图像卷帘一样只被裁切（小黑不再半透明变灰）；底板加高、字幕下移，用满安全区；`shortMoments()` 一份事件时间同时驱动画面和音效。
+- `shorts:render`：音效统一峰值电平并按实测峰值对齐画面事件；成片两遍 loudnorm 到 -14 LUFS；新增 `review/beats-sheet.jpg` 和换场空白帧闸门；已发布 v1 不再重新渲染。
+- 重渲两条未发布草稿：include-exclude（换场空白帧 5 → 0；-17.6 → -14.0 LUFS）、concession-sentence（-14.2 LUFS，空白帧 0）。封面不变。

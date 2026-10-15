@@ -5,15 +5,20 @@ import {bundle} from '@remotion/bundler';
 import {renderMedia, renderStill, selectComposition} from '@remotion/renderer';
 import growth from '../../planning/growth-promotion.json';
 import {findShort, shortLibrary} from '../../src/shorts/library';
+import {SFX_NAMES, type DouyinShortProps, type SfxName} from '../../src/shorts/DouyinShort';
 import {SHORT_COVER_FORMATS, type ShortCoverFormat, type ShortCoverProps} from '../../src/shorts/ShortCover';
 import type {ShortScript, ShortTimeline} from '../../src/shorts/types';
 import {browserExecutable, ffmpegPath} from '../replica/renderEnv';
+import {beatSheet, findBlankFrames, normalizeLoudness, stageSfx} from './quality';
 
 /**
  * 短视频渲染：npm run shorts:render -- --short=<id>|--all [--covers-only]
  * 一条视频一个文件夹 outputs/shorts/<id>/（发布后改名 <id>发了/）：
  *   <id>.mp4（1080×1920）、cover-douyin-vertical.png（9:16）、cover-douyin-landscape.png（4:3）、
- *   cover-xiaohongshu.png（3:4）、publish.md（抖音 + 小红书文案）、release.json（draft）、review/（联系图、时间报告）。
+ *   cover-xiaohongshu.png（3:4）、publish.md（抖音 + 小红书文案）、release.json（draft）、
+ *   review/（contact-sheet.jpg 每 2 秒一帧、beats-sheet.jpg 每拍换场前后、report.json 时间 + 响度 + 空白帧检查）。
+ * 成片工艺：音效统一电平并按峰值对齐画面事件；音频两遍归一到 -14 LUFS；换场附近出现空白纸面帧就报错。
+ * 已发布（version: 1）的视频原样存档，不重新渲染。
  */
 const args = process.argv.slice(2);
 const only = args.find((arg) => arg.startsWith('--short='))?.slice('--short='.length);
@@ -61,6 +66,7 @@ ${short.publish.tags.join(' ')}
 `;
 
 for (const short of shorts) {
+  if ((short.version ?? 2) < 2) { console.log(`${short.id}: archived v${short.version} (already posted), not re-rendered.`); continue; }
   const timelineFile = `src/shorts/timelines/${short.id}.json`;
   if (!existsSync(timelineFile)) throw new Error(`Missing ${timelineFile}. Run npm run shorts:voice -- --short=${short.id} --generate first.`);
   const saved = JSON.parse(readFileSync(timelineFile, 'utf8')) as ShortTimeline;
@@ -78,13 +84,21 @@ for (const short of shorts) {
   // Isolated public dir: only this short's art, audio, music and SFX.
   const stage = path.resolve('work', 'render-staging', `short-${short.id}`);
   rmSync(stage, {recursive: true, force: true});
-  const assets = new Set<string>([cover.art, 'assets/music/root-word-series-bgm.mp3', ...['hit', 'whoosh', 'pop', 'stamp'].map((name) => `assets/sfx/${name}.mp3`)]);
+  const assets = new Set<string>([cover.art, 'assets/music/root-word-series-bgm.mp3']);
   for (const beat of timeline.beats) { assets.add(beat.src); for (const art of [beat.art, ...(beat.arts ?? [])]) if (art) assets.add(art); }
   for (const rel of assets) {
     const source = path.resolve('public', rel);
     if (!existsSync(source)) throw new Error(`Missing asset public/${rel} (run git lfs pull).`);
     mkdirSync(path.dirname(path.join(stage, rel)), {recursive: true});
     copyFileSync(source, path.join(stage, rel));
+  }
+  // SFX: same peak level for every effect, and the measured peak offset so each hit lands on its on-screen event.
+  const sfxPeaks: Partial<Record<SfxName, number>> = {};
+  mkdirSync(path.join(stage, 'assets', 'sfx'), {recursive: true});
+  for (const name of SFX_NAMES) {
+    const source = path.resolve('public', 'assets', 'sfx', `${name}.mp3`);
+    if (!existsSync(source)) throw new Error(`Missing asset public/assets/sfx/${name}.mp3 (run git lfs pull).`);
+    sfxPeaks[name] = stageSfx(source, path.join(stage, 'assets', 'sfx', `${name}.mp3`));
   }
   const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts'), publicDir: stage});
   const outDir = shortDeliveryDir(short.id);
@@ -97,12 +111,16 @@ for (const short of shorts) {
     await renderStill({serveUrl, composition, inputProps, output: path.join(outDir, SHORT_COVER_FORMATS[format].file), frame: 0, imageFormat: 'png', browserExecutable});
   }
   if (!coversOnly) {
-    const inputProps = {timeline, series: cfg.series, category: short.category};
+    const inputProps: DouyinShortProps = {timeline, series: cfg.series, category: short.category, sfxPeaks};
     const composition = await selectComposition({serveUrl, id: 'DouyinShort', inputProps, browserExecutable});
     const video = path.join(outDir, `${short.id}.mp4`);
     await renderMedia({serveUrl, composition, inputProps, outputLocation: video, codec: 'h264', crf: 17, pixelFormat: 'yuv420p', audioCodec: 'aac', audioBitrate: '192k', imageFormat: 'jpeg', jpegQuality: 95, concurrency: 4, browserExecutable});
+    const loudness = normalizeLoudness(video);
     spawnSync(ffmpegPath, ['-v', 'error', '-y', '-i', video, '-vf', 'fps=1/2,scale=216:-1,tile=10x2:padding=4:color=0xcccccc', '-frames:v', '1', path.join(outDir, 'review', 'contact-sheet.jpg')]);
-    writeFileSync(path.join(outDir, 'review', 'report.json'), `${JSON.stringify({short: short.id, hookType: short.hookType, seconds, beats: timeline.beats.map((beat) => ({id: beat.id, kind: beat.kind, from: +(beat.from / 30).toFixed(2), seconds: +(beat.frames / 30).toFixed(2)}))}, null, 2)}\n`);
+    beatSheet(video, timeline, path.join(outDir, 'review', 'beats-sheet.jpg'));
+    const blankFrames = findBlankFrames(video, timeline);
+    writeFileSync(path.join(outDir, 'review', 'report.json'), `${JSON.stringify({short: short.id, hookType: short.hookType, seconds, loudness, blankFrames, beats: timeline.beats.map((beat) => ({id: beat.id, kind: beat.kind, from: +(beat.from / 30).toFixed(2), seconds: +(beat.frames / 30).toFixed(2)}))}, null, 2)}\n`);
+    if (blankFrames.length) throw new Error(`${short.id}: near-blank paper frames at beat changes ${blankFrames.map((b) => b.frame).join(', ')} — see review/beats-sheet.jpg.`);
   }
   writeFileSync(path.join(outDir, 'publish.md'), publishCopy(short, seconds));
   const releaseFile = path.join(outDir, 'release.json');

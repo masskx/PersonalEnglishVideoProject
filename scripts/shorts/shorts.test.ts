@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import {existsSync, readFileSync} from 'node:fs';
+import {shortEvents, shortMoments} from '../../src/shorts/DouyinShort';
 import {shortLibrary} from '../../src/shorts/library';
 import {HOOK_ROTATION, type ShortTimeline} from '../../src/shorts/types';
 
@@ -46,6 +47,12 @@ shortLibrary.forEach((short, index) => {
     if (v2) {
       assert.ok(seconds >= 18 && seconds <= 30, `${short.id}: ${seconds.toFixed(1)}s outside 18–30 s`);
       assert.ok(timeline.beats[0].audioFrames / timeline.fps <= 4.5, `${short.id}: hook narration ≤ 4.5 s`);
+      // 动效与声音工艺：音效时间来自画面事件表，全部落在片内；每次换场都有一个音效；选项在倒计时前全部进场。
+      const events = shortEvents(timeline);
+      assert.ok(events.every((event) => event.frame >= 0 && event.frame < timeline.totalFrames), `${short.id}: SFX events inside the video`);
+      for (const beat of timeline.beats.slice(1)) assert.ok(events.some((event) => event.frame === beat.from), `${short.id}/${beat.id}: beat change has a transition SFX`);
+      const testBeat = timeline.beats.find((beat) => beat.kind === 'test')!;
+      assert.ok(Math.max(...shortMoments(testBeat, false).options) < testBeat.audioFrames, `${short.id}: all options are on screen before the countdown`);
     }
   }
   for (const dir of [`outputs/shorts/${short.id}`, `outputs/shorts/${short.id}发了`]) {
