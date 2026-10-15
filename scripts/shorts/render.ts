@@ -33,6 +33,7 @@ const publishCopy = (short: ShortScript, seconds: number) => `# ${short.topic}
 - 抖音横封面：cover-douyin-landscape.png（4:3）
 - 小红书封面：cover-xiaohongshu.png（3:4）
 - 钩子类型：${short.hookType}
+- 建议发布时间：${cfg.postingTime}
 
 ## 抖音
 
@@ -62,7 +63,16 @@ ${short.publish.tags.join(' ')}
 for (const short of shorts) {
   const timelineFile = `src/shorts/timelines/${short.id}.json`;
   if (!existsSync(timelineFile)) throw new Error(`Missing ${timelineFile}. Run npm run shorts:voice -- --short=${short.id} --generate first.`);
-  const timeline = JSON.parse(readFileSync(timelineFile, 'utf8')) as ShortTimeline;
+  const saved = JSON.parse(readFileSync(timelineFile, 'utf8')) as ShortTimeline;
+  // On-screen fields (headline, art, example…) always come from the current script; only timing and audio come
+  // from the saved timeline. Changed narration needs new audio, so stop instead of rendering mismatched speech.
+  const scriptBeats = new Map([short.hook, ...short.body].map((beat) => [beat.id, beat]));
+  const timeline: ShortTimeline = {...saved, beats: saved.beats.map((beat) => {
+    const current = scriptBeats.get(beat.id);
+    if (!current || current.voice !== beat.voice) throw new Error(`${short.id}/${beat.id}: script changed since the voice step. Run npm run shorts:voice -- --short=${short.id} --generate first.`);
+    return {...current, from: beat.from, frames: beat.frames, audioFrames: beat.audioFrames, src: beat.src};
+  })};
+  if (timeline.beats.length !== scriptBeats.size) throw new Error(`${short.id}: beat list changed since the voice step. Run npm run shorts:voice -- --short=${short.id} --generate first.`);
   const cover = short.cover ?? {headline: short.hook.headline, art: short.hook.art ?? short.hook.arts?.[0] ?? ''};
   if (!cover.art) throw new Error(`${short.id}: cover needs art (set hook.art or cover.art).`);
   // Isolated public dir: only this short's art, audio, music and SFX.

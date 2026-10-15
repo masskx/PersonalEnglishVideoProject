@@ -43,7 +43,7 @@ export const shortLibrary: readonly ShortScript[] = [
     category: '六级作文',
     topic: '六级作文让步句：It is true that… However…',
     hookType: 'mistake',
-    hook: {id: 'hook', kind: 'mistake', headline: '六级作文开头\n只会写 I totally agree？', wrong: 'I totally agree. Part-time jobs are good.', right: 'It is true that … However, …', voice: '六级作文开头只会写 I totally agree？像喊口号。', art: cet6w('hook-scale')},
+    hook: {id: 'hook', kind: 'mistake', headline: '作文开头写\n**I totally agree**？', wrong: 'I totally agree. Part-time jobs are good.', right: 'It is true that … However, …', voice: '六级作文开头只会写 I totally agree？像喊口号。', art: cet6w('hook-scale')},
     body: [
       {id: 'fix-concede', kind: 'fix', headline: '先让步：\n**It is true that …**', voice: '先承认对方：It is true that part-time jobs take time.', art: cet6w('concede-nod'), english: true, example: 'It is true that part-time jobs take time.', exampleAt: 0.25},
       {id: 'fix-turn', kind: 'fix', headline: '再转回：\n**However, …**', voice: '再转回来：However, they teach students to plan their time.', art: cet6w('turn-arrow'), english: true, example: 'However, they teach students to plan their time.', exampleAt: 0.25},
